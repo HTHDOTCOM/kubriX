@@ -14,7 +14,7 @@
         <td>CVE-2025-5914</td>
         <td>HIGH</td>
         <td>3.5.3-5.el9_6</td>
-        <td></td>
+        <td>3.5.3-6.el9_6</td>
     </tr>
     <tr>
         <td><code>libxml2</code></td>
@@ -87,7 +87,7 @@
         <td>CVE-2025-5914</td>
         <td>HIGH</td>
         <td>3.5.3-4.el9</td>
-        <td></td>
+        <td>3.5.3-6.el9_6</td>
     </tr>
     <tr>
         <td><code>libxml2</code></td>
