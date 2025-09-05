@@ -346,7 +346,7 @@
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/argocd</code></h3>
-<h4>Vulnerabilities (2)</h4>
+<h4>Vulnerabilities (3)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -354,6 +354,13 @@
         <th>Severity</th>
         <th>Installed Version</th>
         <th>Fixed Version</th>
+    </tr>
+    <tr>
+        <td><code>github.com/argoproj/argo-cd/v3</code></td>
+        <td>CVE-2025-55190</td>
+        <td>CRITICAL</td>
+        <td>3.0.11</td>
+        <td>3.0.14, 3.1.2</td>
     </tr>
     <tr>
         <td><code>github.com/expr-lang/expr</code></td>
