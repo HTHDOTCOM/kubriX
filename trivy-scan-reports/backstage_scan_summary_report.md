@@ -2095,7 +2095,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>Node.js</code></h3>
-<h4>Vulnerabilities (15)</h4>
+<h4>Vulnerabilities (16)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2208,6 +2208,13 @@
         <td>CRITICAL</td>
         <td>2.4.11</td>
         <td>2.4.12</td>
+    </tr>
+    <tr>
+        <td><code>tar-fs</code></td>
+        <td>CVE-2025-59343</td>
+        <td>HIGH</td>
+        <td>3.0.9</td>
+        <td>3.1.1, 2.1.3, 1.16.5</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
