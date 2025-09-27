@@ -3,7 +3,7 @@
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>bin/rollouts-controller</code></h3>
-<h4>Vulnerabilities (8)</h4>
+<h4>Vulnerabilities (7)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -53,13 +53,6 @@
         <td>HIGH</td>
         <td>v1.29.3</td>
         <td>1.27.16, 1.28.12, 1.29.7, 1.30.3</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-47906</td>
-        <td>HIGH</td>
-        <td>v1.23.9</td>
-        <td>1.23.12, 1.24.6</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
