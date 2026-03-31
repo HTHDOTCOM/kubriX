@@ -1,0 +1,13 @@
+apiVersion: v2
+name: sx-k8sgpt
+description: A Helm chart for k8sgpt-operator - AI-powered Kubernetes cluster analysis
+
+type: application
+
+version: 0.1.0
+appVersion: "1.0.0"
+
+dependencies:
+  - name: k8sgpt-operator
+    version: 0.2.5
+    repository: https://charts.k8sgpt.ai/

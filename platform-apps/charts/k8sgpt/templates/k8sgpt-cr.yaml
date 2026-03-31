@@ -1,0 +1,25 @@
+{{- if .Values.k8sgpt.enabled }}
+apiVersion: core.k8sgpt.ai/v1alpha1
+kind: K8sGPT
+metadata:
+  name: k8sgpt
+  namespace: {{ .Release.Namespace }}
+spec:
+  ai:
+    enabled: true
+    model: {{ .Values.k8sgpt.model }}
+    backend: {{ .Values.k8sgpt.backend }}
+    {{- if .Values.k8sgpt.baseUrl }}
+    baseUrl: {{ .Values.k8sgpt.baseUrl }}
+    {{- end }}
+  {{- if .Values.k8sgpt.filters }}
+  filters:
+    {{- toYaml .Values.k8sgpt.filters | nindent 4 }}
+  {{- end }}
+  {{- if .Values.k8sgpt.targetNamespace }}
+  targetNamespace: {{ .Values.k8sgpt.targetNamespace }}
+  {{- end }}
+  extraOptions:
+    backstage:
+      enabled: {{ .Values.k8sgpt.extraOptions.backstage.enabled }}
+{{- end }}

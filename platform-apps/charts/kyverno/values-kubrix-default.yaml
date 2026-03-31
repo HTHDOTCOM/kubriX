@@ -14,3 +14,15 @@ kyverno:
       app.kubernetes.io/managed-by: helm
     annotations:
       foo: bar
+
+# Compliance policies - Audit mode by default, set to Enforce to block violations
+kyvernoPolicies:
+  disallowPrivilegeEscalation:
+    enabled: true
+    validationFailureAction: Audit
+  requireNonRoot:
+    enabled: true
+    validationFailureAction: Audit
+  disallowLatestTag:
+    enabled: true
+    validationFailureAction: Audit

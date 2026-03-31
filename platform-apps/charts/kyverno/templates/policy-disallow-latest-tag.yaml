@@ -1,0 +1,60 @@
+{{ if .Values.kyvernoPolicies.disallowLatestTag.enabled }}
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: disallow-latest-tag
+  annotations:
+    policies.kyverno.io/title: Disallow Latest Tag
+    policies.kyverno.io/category: Best Practices, kubrix
+    policies.kyverno.io/severity: medium
+    policies.kyverno.io/subject: Pod
+    policies.kyverno.io/minversion: 1.6.0
+    policies.kyverno.io/description: >-
+      The ':latest' tag is mutable and can lead to unexpected errors when pulling
+      images. This policy validates that container images are pinned to a specific
+      tag and that tag is not 'latest'.
+spec:
+  validationFailureAction: {{ .Values.kyvernoPolicies.disallowLatestTag.validationFailureAction | default "Audit" }}
+  background: true
+  rules:
+  - name: require-image-tag
+    match:
+      any:
+      - resources:
+          kinds:
+          - Pod
+    exclude:
+      any:
+      - resources:
+          namespaces:
+          - kube-system
+          - kyverno
+    validate:
+      message: "An image tag is required and must not be 'latest'."
+      pattern:
+        spec:
+          containers:
+          - image: "*:*"
+          =(initContainers):
+          - image: "*:*"
+  - name: disallow-latest-tag
+    match:
+      any:
+      - resources:
+          kinds:
+          - Pod
+    exclude:
+      any:
+      - resources:
+          namespaces:
+          - kube-system
+          - kyverno
+    validate:
+      message: "Using the ':latest' image tag is not allowed."
+      pattern:
+        spec:
+          containers:
+          - image: "!*:latest"
+          =(initContainers):
+          - image: "!*:latest"
+{{- end }}

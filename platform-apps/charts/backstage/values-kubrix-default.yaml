@@ -255,6 +255,18 @@ backstage:
                 # supports ISO duration, "human duration" as used in code
                 timeout: { minutes: 3 } # Customize this to fit your needs
                 initialDelay: { seconds: 10 } # Customize this to fit your needs
+          # Auto-Ingest Apps: GitHub Discovery automatically scans all repos for catalog-info.yaml
+          github:
+            default:
+              organization: ${GITHUB_ORG}
+              catalogPath: /catalog-info.yaml
+              filters:
+                branch: main
+                repository: '.*'
+              schedule:
+                frequency: { minutes: 10 }
+                timeout: { minutes: 5 }
+                initialDelay: { seconds: 30 }
 
       kubernetes:
         serviceLocatorMethod:

@@ -1,0 +1,28 @@
+k8sgpt-operator:
+  serviceMonitor:
+    enabled: true
+
+# K8sGPT AI analysis configuration
+# Deploy a K8sGPT CR to enable continuous cluster analysis
+k8sgpt:
+  enabled: true
+  # AI backend - localai uses an in-cluster model, set to openai for external
+  backend: localai
+  # Model to use for analysis
+  model: mistral
+  # localai endpoint (configure if using in-cluster LLM)
+  baseUrl: http://localai.localai.svc.cluster.local:8080/v1
+  # Filters to analyse (leave empty for all)
+  filters: []
+  # Sink for results - integrates with Backstage via k8sgpt CRDs
+  sink:
+    type: slack
+    enabled: false
+  # How often to run analysis
+  schedule: "0 * * * *"
+  # Namespace to analyse (empty = all)
+  targetNamespace: ""
+  # Extra configuration
+  extraOptions:
+    backstage:
+      enabled: true

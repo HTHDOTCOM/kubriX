@@ -1,0 +1,47 @@
+{{ if .Values.kyvernoPolicies.disallowPrivilegeEscalation.enabled }}
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: disallow-privilege-escalation
+  annotations:
+    policies.kyverno.io/title: Disallow Privilege Escalation
+    policies.kyverno.io/category: Pod Security Standards (Restricted), kubrix
+    policies.kyverno.io/severity: high
+    policies.kyverno.io/subject: Pod
+    policies.kyverno.io/minversion: 1.6.0
+    policies.kyverno.io/description: >-
+      Privilege escalation, such as via set-user-ID or set-group-ID file mode,
+      must not be allowed. This policy ensures that containers do not allow
+      privilege escalation by setting allowPrivilegeEscalation to false.
+spec:
+  validationFailureAction: {{ .Values.kyvernoPolicies.disallowPrivilegeEscalation.validationFailureAction | default "Audit" }}
+  background: true
+  rules:
+  - name: no-privilege-escalation
+    match:
+      any:
+      - resources:
+          kinds:
+          - Pod
+    exclude:
+      any:
+      - resources:
+          namespaces:
+          - kube-system
+          - kyverno
+    validate:
+      message: >-
+        Privilege escalation is disallowed. Set
+        securityContext.allowPrivilegeEscalation to false.
+      pattern:
+        spec:
+          containers:
+          - securityContext:
+              allowPrivilegeEscalation: "false"
+          =(initContainers):
+          - securityContext:
+              allowPrivilegeEscalation: "false"
+          =(ephemeralContainers):
+          - securityContext:
+              allowPrivilegeEscalation: "false"
+{{- end }}

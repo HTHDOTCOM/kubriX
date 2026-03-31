@@ -73,7 +73,11 @@ applications:
   - name: kyverno
     syncOptions:
       - ServerSideApply=true
-      
+
+  - name: k8sgpt
+    syncOptions:
+      - ServerSideApply=true
+
   - name: backstage
     annotations:
       argocd.argoproj.io/sync-wave: "10"

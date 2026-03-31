@@ -1,0 +1,325 @@
+apiVersion: 1
+groups:
+  - orgId: 1
+    name: SecurityAlerts
+    folder: Security
+    interval: 5m
+    rules:
+
+      # ── Trivy: Critical CVEs detected ────────────────────────────────────────
+      - uid: trivy-critical-cve
+        title: Critical CVE Detected
+        condition: threshold
+        data:
+          - refId: query
+            queryType: prometheus
+            relativeTimeRange:
+              from: 600
+              to: 0
+            datasourceUid: mimir
+            model:
+              expr: >-
+                sum by (namespace, resource, image_tag)
+                (trivy_image_vulnerabilities{severity="CRITICAL"}) > 0
+              instant: true
+              intervalMs: 1000
+              maxDataPoints: 43200
+              refId: query
+          - refId: threshold
+            datasourceUid: __expr__
+            model:
+              conditions:
+                - evaluator:
+                    params:
+                      - 0
+                    type: gt
+                  operator:
+                    type: and
+                  query:
+                    params:
+                      - query
+                  reducer:
+                    type: last
+                  type: query
+              datasource:
+                type: __expr__
+                uid: __expr__
+              expression: query
+              refId: threshold
+              type: threshold
+        noDataState: OK
+        execErrState: OK
+        for: 5m
+        annotations:
+          description: >-
+            Critical CVE detected in image {{ $labels.image_tag }} in namespace
+            {{ $labels.namespace }}. Immediate remediation required.
+          summary: Critical vulnerability found in running container image
+        labels:
+          severity: critical
+          category: security
+
+      # ── Trivy: High CVEs spike ────────────────────────────────────────────────
+      - uid: trivy-high-cve-spike
+        title: High CVE Count Spike
+        condition: threshold
+        data:
+          - refId: query
+            queryType: prometheus
+            relativeTimeRange:
+              from: 600
+              to: 0
+            datasourceUid: mimir
+            model:
+              expr: >-
+                sum by (namespace)
+                (trivy_image_vulnerabilities{severity="HIGH"}) > 10
+              instant: true
+              intervalMs: 1000
+              maxDataPoints: 43200
+              refId: query
+          - refId: threshold
+            datasourceUid: __expr__
+            model:
+              conditions:
+                - evaluator:
+                    params:
+                      - 10
+                    type: gt
+                  operator:
+                    type: and
+                  query:
+                    params:
+                      - query
+                  reducer:
+                    type: last
+                  type: query
+              datasource:
+                type: __expr__
+                uid: __expr__
+              expression: query
+              refId: threshold
+              type: threshold
+        noDataState: OK
+        execErrState: OK
+        for: 10m
+        annotations:
+          description: >-
+            High number of HIGH severity CVEs detected in namespace
+            {{ $labels.namespace }}. Review and remediate affected images.
+          summary: High CVE count spike in namespace
+        labels:
+          severity: warning
+          category: security
+
+      # ── Trivy: Config audit failures ─────────────────────────────────────────
+      - uid: trivy-config-audit-critical
+        title: Critical Config Audit Failure
+        condition: threshold
+        data:
+          - refId: query
+            queryType: prometheus
+            relativeTimeRange:
+              from: 600
+              to: 0
+            datasourceUid: mimir
+            model:
+              expr: >-
+                sum by (namespace, resource_name)
+                (trivy_resource_configaudits{severity="CRITICAL"}) > 0
+              instant: true
+              intervalMs: 1000
+              maxDataPoints: 43200
+              refId: query
+          - refId: threshold
+            datasourceUid: __expr__
+            model:
+              conditions:
+                - evaluator:
+                    params:
+                      - 0
+                    type: gt
+                  operator:
+                    type: and
+                  query:
+                    params:
+                      - query
+                  reducer:
+                    type: last
+                  type: query
+              datasource:
+                type: __expr__
+                uid: __expr__
+              expression: query
+              refId: threshold
+              type: threshold
+        noDataState: OK
+        execErrState: OK
+        for: 5m
+        annotations:
+          description: >-
+            Critical misconfiguration detected in {{ $labels.resource_name }}
+            in namespace {{ $labels.namespace }}.
+          summary: Critical Kubernetes misconfiguration detected by Trivy
+        labels:
+          severity: critical
+          category: security
+
+      # ── Falco: High-severity runtime security events ──────────────────────────
+      - uid: falco-high-severity-event
+        title: Falco High Severity Runtime Event
+        condition: threshold
+        data:
+          - refId: query
+            queryType: prometheus
+            relativeTimeRange:
+              from: 300
+              to: 0
+            datasourceUid: mimir
+            model:
+              expr: >-
+                sum by (rule, namespace)
+                (rate(falco_events{priority=~"Critical|Emergency|Alert|Error"}[5m])) > 0
+              instant: true
+              intervalMs: 1000
+              maxDataPoints: 43200
+              refId: query
+          - refId: threshold
+            datasourceUid: __expr__
+            model:
+              conditions:
+                - evaluator:
+                    params:
+                      - 0
+                    type: gt
+                  operator:
+                    type: and
+                  query:
+                    params:
+                      - query
+                  reducer:
+                    type: last
+                  type: query
+              datasource:
+                type: __expr__
+                uid: __expr__
+              expression: query
+              refId: threshold
+              type: threshold
+        noDataState: OK
+        execErrState: OK
+        for: 1m
+        annotations:
+          description: >-
+            Falco detected a high-severity runtime security event: rule
+            "{{ $labels.rule }}" triggered in namespace {{ $labels.namespace }}.
+          summary: Falco runtime security violation detected
+        labels:
+          severity: critical
+          category: security
+
+      # ── Falco: Suspicious shell in container ──────────────────────────────────
+      - uid: falco-shell-in-container
+        title: Shell Spawned in Container
+        condition: threshold
+        data:
+          - refId: query
+            queryType: prometheus
+            relativeTimeRange:
+              from: 300
+              to: 0
+            datasourceUid: mimir
+            model:
+              expr: >-
+                sum by (namespace, pod)
+                (rate(falco_events{rule=~".*shell.*|.*Terminal.*"}[5m])) > 0
+              instant: true
+              intervalMs: 1000
+              maxDataPoints: 43200
+              refId: query
+          - refId: threshold
+            datasourceUid: __expr__
+            model:
+              conditions:
+                - evaluator:
+                    params:
+                      - 0
+                    type: gt
+                  operator:
+                    type: and
+                  query:
+                    params:
+                      - query
+                  reducer:
+                    type: last
+                  type: query
+              datasource:
+                type: __expr__
+                uid: __expr__
+              expression: query
+              refId: threshold
+              type: threshold
+        noDataState: OK
+        execErrState: OK
+        for: 1m
+        annotations:
+          description: >-
+            A shell was spawned inside a container in pod {{ $labels.pod }}
+            in namespace {{ $labels.namespace }}. This may indicate a breach attempt.
+          summary: Interactive shell detected inside a running container
+        labels:
+          severity: critical
+          category: security
+
+      # ── Kyverno: Policy violations ────────────────────────────────────────────
+      - uid: kyverno-policy-violations
+        title: Kyverno Policy Violations Detected
+        condition: threshold
+        data:
+          - refId: query
+            queryType: prometheus
+            relativeTimeRange:
+              from: 600
+              to: 0
+            datasourceUid: mimir
+            model:
+              expr: >-
+                sum by (policy_name, namespace)
+                (kyverno_policy_results_total{rule_result="fail"}) > 0
+              instant: true
+              intervalMs: 1000
+              maxDataPoints: 43200
+              refId: query
+          - refId: threshold
+            datasourceUid: __expr__
+            model:
+              conditions:
+                - evaluator:
+                    params:
+                      - 0
+                    type: gt
+                  operator:
+                    type: and
+                  query:
+                    params:
+                      - query
+                  reducer:
+                    type: last
+                  type: query
+              datasource:
+                type: __expr__
+                uid: __expr__
+              expression: query
+              refId: threshold
+              type: threshold
+        noDataState: OK
+        execErrState: OK
+        for: 5m
+        annotations:
+          description: >-
+            Kyverno policy "{{ $labels.policy_name }}" has violations in
+            namespace {{ $labels.namespace }}.
+          summary: Kyverno compliance policy violation detected
+        labels:
+          severity: warning
+          category: security
