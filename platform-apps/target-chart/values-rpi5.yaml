@@ -1,0 +1,128 @@
+# kubriX target chart values for Raspberry Pi 5 (ARM64, 8GB RAM)
+# Kubernetes: k3s (recommended)
+# OS: Kali Linux 64-bit (ARM64)
+#
+# Excluded (too resource-heavy for 8GB):
+#   - mimir        (needs 6GB+ RAM alone)
+#   - testkube     (ARM64 images not reliable)
+#   - kubecost     (ARM64 not well supported)
+#   - kubevirt     (requires hardware virt extensions)
+#   - k8sgpt       (needs local LLM, very GPU/RAM heavy)
+#   - argo-rollouts (optional delivery tool, save RAM)
+#
+# Storage: k3s provides 'local-path' StorageClass by default.
+# Use a USB3 SSD or NVMe HAT — SD card will fail under etcd I/O.
+
+default:
+  valueFiles:
+    - values-kubrix-default.yaml
+    - values-cluster-rpi5.yaml
+
+applications:
+
+  # ── Core infrastructure ────────────────────────────────────────────────────
+  - name: prometheus-operator-crds
+    annotations:
+      argocd.argoproj.io/sync-wave: "-11"
+    syncOptions:
+      - ServerSideApply=true
+
+  - name: traefik
+    annotations:
+      argocd.argoproj.io/sync-wave: "-11"
+
+  - name: cert-manager
+    annotations:
+      argocd.argoproj.io/sync-wave: "-10"
+
+  - name: crossplane
+    annotations:
+      argocd.argoproj.io/sync-wave: "-9"
+
+  - name: argocd
+    annotations:
+      argocd.argoproj.io/sync-wave: "-9"
+    syncOptions:
+      - ServerSideApply=true
+
+  - name: external-secrets
+    annotations:
+      argocd.argoproj.io/sync-wave: "-8"
+    syncOptions:
+      - ServerSideApply=true
+
+  - name: openbao
+    annotations:
+      argocd.argoproj.io/sync-wave: "-7"
+
+  - name: cnpg
+    annotations:
+      argocd.argoproj.io/compare-options: ServerSideDiff=true
+      argocd.argoproj.io/sync-wave: "-6"
+    syncOptions:
+      - ServerSideApply=true
+
+  # ── Observability (lightweight — Mimir excluded, use k8s-monitoring storage) ─
+  - name: k8s-monitoring
+    annotations:
+      argocd.argoproj.io/compare-options: ServerSideDiff=true
+      argocd.argoproj.io/sync-wave: "-6"
+    syncOptions:
+      - ServerSideApply=true
+
+  - name: grafana
+    annotations:
+      argocd.argoproj.io/compare-options: ServerSideDiff=true
+    syncOptions:
+      - ServerSideApply=true
+
+  - name: loki
+    annotations:
+      argocd.argoproj.io/compare-options: ServerSideDiff=true
+    helmOptions:
+      skipCrds: true
+    syncOptions:
+      - ServerSideApply=true
+
+  - name: tempo
+
+  # ── Security ───────────────────────────────────────────────────────────────
+  - name: kyverno
+    syncOptions:
+      - ServerSideApply=true
+
+  - name: trivy
+    syncOptions:
+      - ServerSideApply=true
+
+  # Falco: works on RPi5 ARM64 with modern-bpf driver.
+  # Kali Linux uses a non-standard kernel — verify your kernel version supports
+  # BTF (BPF Type Format): `bpftool feature | grep btf`
+  # If BTF is unavailable, disable falco or set driver.kind to 'none'.
+  - name: falco
+    annotations:
+      argocd.argoproj.io/compare-options: ServerSideDiff=true
+    helmOptions:
+      skipCrds: true
+    syncOptions:
+      - ServerSideApply=true
+
+  # ── Auth & Identity ────────────────────────────────────────────────────────
+  - name: keycloak
+    annotations:
+      argocd.argoproj.io/sync-wave: "-5"
+
+  # ── Developer Portal ───────────────────────────────────────────────────────
+  - name: backstage
+    annotations:
+      argocd.argoproj.io/sync-wave: "10"
+
+  # ── Delivery ───────────────────────────────────────────────────────────────
+  - name: kargo
+
+  # ── Multi-tenancy ──────────────────────────────────────────────────────────
+  - name: team-onboarding
+    destinationNamespaceOverwrite: argocd
+    namespaceResourceTracking: false
+    annotations:
+      argocd.argoproj.io/sync-wave: "15"

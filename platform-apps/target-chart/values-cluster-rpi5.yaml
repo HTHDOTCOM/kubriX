@@ -1,0 +1,199 @@
+# kubriX cluster-specific overrides for Raspberry Pi 5 (ARM64, 8GB RAM)
+# Reduces resource requests/limits and tunes configs for constrained hardware.
+# StorageClass: local-path (k3s default)
+
+# ── ArgoCD ─────────────────────────────────────────────────────────────────
+argocd:
+  server:
+    resources:
+      requests:
+        cpu: 100m
+        memory: 128Mi
+      limits:
+        memory: 512Mi
+  applicationSet:
+    resources:
+      requests:
+        cpu: 50m
+        memory: 64Mi
+      limits:
+        memory: 256Mi
+  controller:
+    resources:
+      requests:
+        cpu: 100m
+        memory: 256Mi
+      limits:
+        memory: 1Gi
+
+# ── Grafana ────────────────────────────────────────────────────────────────
+grafana:
+  grafana:
+    resources:
+      requests:
+        cpu: 100m
+        memory: 128Mi
+      limits:
+        memory: 512Mi
+    persistence:
+      storageClassName: local-path
+    ingress:
+      ingressClassName: traefik
+
+# ── Loki (single-binary mode to save RAM) ──────────────────────────────────
+loki:
+  loki:
+    commonConfig:
+      replication_factor: 1
+    storage:
+      type: filesystem
+    deploymentMode: SingleBinary
+  singleBinary:
+    replicas: 1
+    resources:
+      requests:
+        cpu: 100m
+        memory: 256Mi
+      limits:
+        memory: 1Gi
+    persistence:
+      storageClass: local-path
+      size: 10Gi
+  # Disable object storage dependencies
+  minio:
+    enabled: false
+  backend:
+    replicas: 0
+  read:
+    replicas: 0
+  write:
+    replicas: 0
+  gateway:
+    ingress:
+      ingressClassName: traefik
+
+# ── Tempo ──────────────────────────────────────────────────────────────────
+tempo:
+  tempo:
+    resources:
+      requests:
+        cpu: 50m
+        memory: 128Mi
+      limits:
+        memory: 512Mi
+    storage:
+      trace:
+        backend: local
+        local:
+          path: /var/tempo/traces
+
+# ── k8s-monitoring ─────────────────────────────────────────────────────────
+k8s-monitoring:
+  prometheus:
+    server:
+      resources:
+        requests:
+          cpu: 100m
+          memory: 512Mi
+        limits:
+          memory: 1.5Gi
+      persistentVolume:
+        storageClass: local-path
+        size: 10Gi
+
+# ── Keycloak ───────────────────────────────────────────────────────────────
+keycloak:
+  keycloak:
+    resources:
+      requests:
+        cpu: 100m
+        memory: 512Mi
+      limits:
+        memory: 1Gi
+
+# ── OpenBao ────────────────────────────────────────────────────────────────
+openbao:
+  openbao:
+    dataStorage:
+      storageClass: local-path
+      size: 5Gi
+    resources:
+      requests:
+        cpu: 50m
+        memory: 128Mi
+      limits:
+        memory: 512Mi
+    # Single replica for RPi5 (no HA needed on single node)
+    ha:
+      enabled: false
+    standalone:
+      enabled: true
+
+# ── Backstage ──────────────────────────────────────────────────────────────
+backstage:
+  backstage:
+    resources:
+      requests:
+        cpu: 100m
+        memory: 256Mi
+      limits:
+        memory: 1Gi
+    ingress:
+      ingressClassName: traefik
+
+# ── CNPG (PostgreSQL for Backstage) ────────────────────────────────────────
+cnpg:
+  cluster:
+    instances: 1
+    storage:
+      storageClass: local-path
+      size: 5Gi
+
+# ── Kyverno ────────────────────────────────────────────────────────────────
+kyverno:
+  kyverno:
+    backgroundController:
+      resources:
+        limits:
+          memory: 512Mi
+    reportsController:
+      resources:
+        limits:
+          memory: 512Mi
+
+# ── Trivy Operator ─────────────────────────────────────────────────────────
+trivy:
+  trivy-operator:
+    resources:
+      requests:
+        cpu: 50m
+        memory: 64Mi
+      limits:
+        memory: 512Mi
+
+# ── Falco ──────────────────────────────────────────────────────────────────
+falco:
+  falco:
+    driver:
+      kind: modern-bpf   # ARM64 + RPi5 kernel — requires BTF support
+    resources:
+      requests:
+        cpu: 100m
+        memory: 128Mi
+      limits:
+        memory: 512Mi
+  falcosidekick:
+    webui:
+      ingress:
+        annotations:
+          kubernetes.io/ingress.class: traefik
+
+# ── Traefik ────────────────────────────────────────────────────────────────
+traefik:
+  traefik:
+    resources:
+      requests:
+        cpu: 50m
+        memory: 64Mi
+      limits:
+        memory: 256Mi
