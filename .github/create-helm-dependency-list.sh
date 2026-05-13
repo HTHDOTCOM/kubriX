@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-helm plugin install https://github.com/origranot/helm-cascade || true
+if ! helm plugin list | grep -q "^cascade"; then
+  helm plugin install https://github.com/origranot/helm-cascade
+fi
 
 mkdir -p helm-chart-list
 
