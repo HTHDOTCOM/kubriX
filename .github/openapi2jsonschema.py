@@ -31,7 +31,7 @@ def additional_properties(data, skip=True):
             if "additionalProperties" not in data:
                 data["additionalProperties"] = False
         for _, v in data.items():
-            additional_properties(v)
+            additional_properties(v, skip=False)
     return data
 
 def test_replace_int_or_string():
@@ -64,6 +64,30 @@ def replace_int_or_string(data):
         return new
     except AttributeError:
         return data
+
+def test_allow_null_optional_fields():
+    for test in iter([{
+        "name": "basic type conversion",
+        "input": {"type": "string"},
+        "expect": {"type": ["string", "null"]}
+    },{
+        "name": "skip required fields",
+        "input": {"required": ["foo"], "properties": {"foo": {"type": "string"}, "bar": {"type": "integer"}}},
+        "expect": {"required": ["foo"], "properties": {"foo": {"type": "string"}, "bar": {"type": "integer"}}}
+    },{
+        "name": "nested structure",
+        "input": {"properties": {"foo": {"type": "object", "properties": {"bar": {"type": "string"}}}}},
+        "expect": {"properties": {"foo": {"type": ["object", "null"], "properties": {"bar": {"type": ["string", "null"]}}}}}
+    },{
+        "name": "list of types",
+        "input": {"items": [{"type": "string"}, {"type": "integer"}]},
+        "expect": {"items": [{"type": ["string", "null"]}, {"type": ["integer", "null"]}]}
+    },{
+        "name": "already null type",
+        "input": {"type": "null"},
+        "expect": {"type": "null"}
+    }]):
+        assert allow_null_optional_fields(test["input"]) == test["expect"], f"Failed test case: {test['name']}"
 
 def allow_null_optional_fields(data, parent=None, grand_parent=None, key=None):
     new = {}
