@@ -4,8 +4,9 @@
 
 set -e
 
-# TODO: better check with 'helm plugin list |grep ^images'
-helm plugin install https://github.com/nikhilsbhat/helm-images || true
+if ! helm plugin list | grep -q "^images"; then
+  helm plugin install https://github.com/nikhilsbhat/helm-images
+fi
 
 mkdir -p image-list
 

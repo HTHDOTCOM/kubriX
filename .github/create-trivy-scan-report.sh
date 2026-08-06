@@ -10,7 +10,9 @@ tar -xzvf trivy.tar.gz trivy
 chmod u+x trivy
 
 # install helm images plugin
-helm plugin install https://github.com/nikhilsbhat/helm-images || true
+if ! helm plugin list | grep -q "^images"; then
+  helm plugin install https://github.com/nikhilsbhat/helm-images
+fi
 
 mkdir -p trivy-scan-reports
 rm -f trivy-scan-reports/*
