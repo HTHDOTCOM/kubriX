@@ -1,0 +1,877 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.0"
+  },
+  "ReportID": "01a13a7c-f9e3-7d50-9141-3d1cd0b48921",
+  "CreatedAt": "2026-10-14T14:57:11.395874226+02:00",
+  "ArtifactID": "sha256:3adc6489bba3c5cf03db9f0b337dc291e28545bcfbd2032c8ca4af1983cba91f",
+  "ArtifactName": "docker.io/pgsty/mc:RELEASE.2026-09-13T00-00-00Z",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 55511040,
+    "OS": {
+      "Family": "redhat",
+      "Name": "9.8"
+    },
+    "ImageID": "sha256:76115b68d035cda46303e6125213c30a944c1edd652375fd4c6dad79c475e159",
+    "DiffIDs": [
+      "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d",
+      "sha256:a8c22268b5dd910d47f0f5c7f28dd7043659ff5ba5f62baf9213fc96e168890f",
+      "sha256:d8717a8403d55d88b06abd38e7b4f7daadc9d8bec9b44d1686a9805047ddd95e",
+      "sha256:54729df0c7a84a4c07b3dce1779c9fdd89f76cd4a4c0f6b60130ccbed6be2ad8",
+      "sha256:793a757b6293006d7e5fd782b944bc1c9f6d73f20270845029e07e92ea3d27ee",
+      "sha256:32c812aaf11e6b4c1328ca5d8097dfe2bd93ba71d2d8be11a8f03a1e0fbaa7ec",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+    ],
+    "RepoTags": [
+      "pgsty/mc:RELEASE.2026-09-13T00-00-00Z"
+    ],
+    "RepoDigests": [
+      "pgsty/mc@sha256:aa5cc1401b3e1ab482d215d5717e9e69b4f14970a3656f330ed20a549fe19020"
+    ],
+    "Reference": "pgsty/mc:RELEASE.2026-09-13T00-00-00Z",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2026-09-13T01:48:06.054090272Z",
+      "history": [
+        {
+          "created": "2026-08-26T21:14:04.433020365Z",
+          "created_by": "/bin/sh -c #(nop) LABEL maintainer=\"Red Hat, Inc.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.446032147Z",
+          "created_by": "/bin/sh -c #(nop) LABEL vendor=\"Red Hat, Inc.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.458120889Z",
+          "created_by": "/bin/sh -c #(nop) LABEL url=\"https://catalog.redhat.com/en/search?searchType=containers\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.470332451Z",
+          "created_by": "/bin/sh -c #(nop) LABEL com.redhat.component=\"ubi9-micro-container\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.483139098Z",
+          "created_by": "/bin/sh -c #(nop) LABEL name=\"ubi9/ubi-micro\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.49734233Z",
+          "created_by": "/bin/sh -c #(nop) LABEL version=\"9.8\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.510182949Z",
+          "created_by": "/bin/sh -c #(nop) LABEL cpe=\"cpe:/a:redhat:enterprise_linux:9::appstream\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.522552553Z",
+          "created_by": "/bin/sh -c #(nop) LABEL distribution-scope=\"public\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.537095501Z",
+          "created_by": "/bin/sh -c #(nop) LABEL com.redhat.license_terms=\"https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.550474961Z",
+          "created_by": "/bin/sh -c #(nop) LABEL summary=\"ubi9 micro image\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.561521865Z",
+          "created_by": "/bin/sh -c #(nop) LABEL description=\"Very small image which doesn't install the package manager.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.573776799Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.k8s.description=\"Very small image which doesn't install the package manager.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.585775825Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.k8s.display-name=\"Red Hat Universal Base Image 9 Micro\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.598405429Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.openshift.expose-services=\"\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.795267689Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:21269f5d73218e2f10a7410aa1f89db2161fc62a674e4fde009bbc3fb15d7c29 in /      ",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.866094595Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/      ",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.878764861Z",
+          "created_by": "/bin/sh -c #(nop) CMD /bin/sh",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.942324579Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:95f81fb2260e27b51aeb0930bd86656d53465579d437a44d768c52d7e1e05d25 in /usr/share/buildinfo/      ",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:05.00750514Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:95f81fb2260e27b51aeb0930bd86656d53465579d437a44d768c52d7e1e05d25 in /root/buildinfo/      ",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:05.100091419Z",
+          "created_by": "/bin/sh -c #(nop) LABEL \"org.opencontainers.image.created\"=\"2026-08-26T21:13:51Z\" \"org.opencontainers.image.revision\"=\"f4a035c7f61947bd47d6abfc6b65c983adc04b2a\" \"build-date\"=\"2026-08-26T21:13:51Z\" \"architecture\"=\"x86_64\" \"vcs-ref\"=\"f4a035c7f61947bd47d6abfc6b65c983adc04b2a\" \"vcs-type\"=\"git\" \"release\"=\"1787778798\"org.opencontainers.image.created=2026-08-26T21:13:51Z,org.opencontainers.image.revision=f4a035c7f61947bd47d6abfc6b65c983adc04b2a"
+        },
+        {
+          "created": "2026-09-13T01:48:05.874456455Z",
+          "created_by": "LABEL maintainer=Ruohang Feng (@Vonng) <rh@vonng.com> vendor=PGSTY url=https://silo.pgsty.com org.opencontainers.image.vendor=PGSTY org.opencontainers.image.url=https://silo.pgsty.com org.opencontainers.image.source=https://github.com/pgsty/mc org.opencontainers.image.description=Silo object storage client (mcli), a community-maintained fork of the MinIO Client. org.opencontainers.image.licenses=AGPL-3.0-or-later description=Silo object storage client (mcli), a community-maintained fork of the MinIO Client.",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-13T01:48:05.874456455Z",
+          "created_by": "COPY /tmp/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-13T01:48:05.955561309Z",
+          "created_by": "COPY mc /usr/bin/mc # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-13T01:48:05.963746926Z",
+          "created_by": "COPY LICENSE /licenses/LICENSE # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-13T01:48:05.971601729Z",
+          "created_by": "COPY CREDITS /licenses/CREDITS # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-13T01:48:05.979753752Z",
+          "created_by": "COPY NOTICE /licenses/NOTICE # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-13T01:48:06.054090272Z",
+          "created_by": "RUN /bin/sh -c chmod +x /usr/bin/mc # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-13T01:48:06.054090272Z",
+          "created_by": "ENTRYPOINT [\"/usr/bin/mc\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d",
+          "sha256:a8c22268b5dd910d47f0f5c7f28dd7043659ff5ba5f62baf9213fc96e168890f",
+          "sha256:d8717a8403d55d88b06abd38e7b4f7daadc9d8bec9b44d1686a9805047ddd95e",
+          "sha256:54729df0c7a84a4c07b3dce1779c9fdd89f76cd4a4c0f6b60130ccbed6be2ad8",
+          "sha256:793a757b6293006d7e5fd782b944bc1c9f6d73f20270845029e07e92ea3d27ee",
+          "sha256:32c812aaf11e6b4c1328ca5d8097dfe2bd93ba71d2d8be11a8f03a1e0fbaa7ec",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/usr/bin/mc"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Labels": {
+          "architecture": "x86_64",
+          "build-date": "2026-08-26T21:13:51Z",
+          "com.redhat.component": "ubi9-micro-container",
+          "com.redhat.license_terms": "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI",
+          "cpe": "cpe:/a:redhat:enterprise_linux:9::appstream",
+          "description": "Silo object storage client (mcli), a community-maintained fork of the MinIO Client.",
+          "distribution-scope": "public",
+          "io.buildah.version": "1.44.0",
+          "io.k8s.description": "Very small image which doesn't install the package manager.",
+          "io.k8s.display-name": "Red Hat Universal Base Image 9 Micro",
+          "io.openshift.expose-services": "",
+          "maintainer": "Ruohang Feng (@Vonng) <rh@vonng.com>",
+          "name": "ubi9/ubi-micro",
+          "org.opencontainers.image.created": "2026-09-13T01:47:11Z",
+          "org.opencontainers.image.description": "Silo object storage client (mcli), a community-maintained fork of the MinIO Client.",
+          "org.opencontainers.image.licenses": "AGPL-3.0-or-later",
+          "org.opencontainers.image.revision": "4f609a4da3bb8548446715867b68ab6c2d53a097",
+          "org.opencontainers.image.source": "https://github.com/pgsty/mc",
+          "org.opencontainers.image.url": "https://silo.pgsty.com",
+          "org.opencontainers.image.vendor": "PGSTY",
+          "org.opencontainers.image.version": "RELEASE.2026-09-13T00-00-00Z",
+          "release": "1787778798",
+          "summary": "ubi9 micro image",
+          "url": "https://silo.pgsty.com",
+          "vcs-ref": "f4a035c7f61947bd47d6abfc6b65c983adc04b2a",
+          "vcs-type": "git",
+          "vendor": "PGSTY",
+          "version": "9.8"
+        },
+        "WorkingDir": "/"
+      }
+    },
+    "Layers": [
+      {
+        "Size": 23591424,
+        "Digest": "sha256:44bb90d0dc2d3c7487076e80e560778499b9e86c5c8709287bce0be56c5fb385",
+        "DiffID": "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d"
+      },
+      {
+        "Size": 227328,
+        "Digest": "sha256:e3c6102a52375f0a7777a62d03f22f509141d8739d729a37ffc177293de25a00",
+        "DiffID": "sha256:a8c22268b5dd910d47f0f5c7f28dd7043659ff5ba5f62baf9213fc96e168890f"
+      },
+      {
+        "Size": 31058944,
+        "Digest": "sha256:44b758095b1463d9b84930e7f10fb73d61bed92f41f02727ad0a8b7abd24ca3b",
+        "DiffID": "sha256:d8717a8403d55d88b06abd38e7b4f7daadc9d8bec9b44d1686a9805047ddd95e"
+      },
+      {
+        "Size": 36864,
+        "Digest": "sha256:bb0e6fae8dd9e46aae3115aa5e9f64131e319f642c43c91e2cd7ca229e0726e6",
+        "DiffID": "sha256:54729df0c7a84a4c07b3dce1779c9fdd89f76cd4a4c0f6b60130ccbed6be2ad8"
+      },
+      {
+        "Size": 592384,
+        "Digest": "sha256:4c0f2ca97e9a80dbc3d13bcc6380e79035cfa11d7af7cb791b15e909f91b68c9",
+        "DiffID": "sha256:793a757b6293006d7e5fd782b944bc1c9f6d73f20270845029e07e92ea3d27ee"
+      },
+      {
+        "Size": 3072,
+        "Digest": "sha256:5d725590ecdc03691b9ff6c8544a8d4a6e00d751b0617eb4a56c1b782394f788",
+        "DiffID": "sha256:32c812aaf11e6b4c1328ca5d8097dfe2bd93ba71d2d8be11a8f03a1e0fbaa7ec"
+      },
+      {
+        "Size": 1024,
+        "Digest": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1",
+        "DiffID": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "docker.io/pgsty/mc:RELEASE.2026-09-13T00-00-00Z (redhat 9.8)",
+      "Class": "os-pkgs",
+      "Type": "redhat",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-103111",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2@10.40-6.el9.x86_64",
+          "PkgName": "pcre2",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2@10.40-6.el9?arch=x86_64&distro=redhat-9.8",
+            "UID": "1d1b871572f9d872"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44bb90d0dc2d3c7487076e80e560778499b9e86c5c8709287bce0be56c5fb385",
+            "DiffID": "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-103111",
+          "Fingerprint": "sha256:c3293b08b570b0ced53106fd0e4877f17d39bb85b6b1b5ebe167384828cb50ec",
+          "Title": "pcre2: pcre2: Out-of-bounds write via crafted regular expression",
+          "Description": "PCRE2 before 10.49, when there is an attacker-controlled regular expression and certain JIT API usage, allows an out-of-bounds write with arbitrary data.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L",
+              "V3Score": 7.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-103111",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-r9hj-j2rw-4q3m",
+            "https://linux.oracle.com/cve/CVE-2026-103111.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81613.html",
+            "https://lists.debian.org/debian-lts-announce/2026/10/msg00008.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-103111",
+            "https://www.cve.org/CVERecord?id=CVE-2026-103111"
+          ],
+          "PublishedDate": "2026-09-30T05:16:45.863Z",
+          "LastModifiedDate": "2026-10-04T00:16:35.563Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-86145",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2@10.40-6.el9.x86_64",
+          "PkgName": "pcre2",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2@10.40-6.el9?arch=x86_64&distro=redhat-9.8",
+            "UID": "1d1b871572f9d872"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44bb90d0dc2d3c7487076e80e560778499b9e86c5c8709287bce0be56c5fb385",
+            "DiffID": "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-86145",
+          "Fingerprint": "sha256:3bdf5c8423b1df21c736eca008751188e8ceb4ae9570c06fec551bb994c7cf99",
+          "Title": "pcre2: PCRE2: Out-of-bounds write allows arbitrary code execution via crafted regular expressions",
+          "Description": "PCRE2 before 10.48 allows a pcre2_dfa_match out-of-bounds write because reuse of a cached workspace block, in a recursive DFA matching workspace, lacks a size check (even though a newly allocated block, for the same purpose, does have a size check). This outcome requires an attacker-controlled regular expression, or a recursive pattern in conjunction with a small heap limit (this can be set through the API).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-424"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "azure": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L",
+              "V3Score": 8.2
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/09/05/3",
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-86145",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48",
+            "https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-3r4p-g7gg-ppmf",
+            "https://linux.oracle.com/cve/CVE-2026-86145.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81613.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-86145",
+            "https://www.cve.org/CVERecord?id=CVE-2026-86145"
+          ],
+          "PublishedDate": "2026-09-05T06:17:10.37Z",
+          "LastModifiedDate": "2026-09-09T16:04:24.933Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-89161",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2@10.40-6.el9.x86_64",
+          "PkgName": "pcre2",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2@10.40-6.el9?arch=x86_64&distro=redhat-9.8",
+            "UID": "1d1b871572f9d872"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44bb90d0dc2d3c7487076e80e560778499b9e86c5c8709287bce0be56c5fb385",
+            "DiffID": "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-89161",
+          "Fingerprint": "sha256:c313b6a82c62065ad22f7cf9409f6400d9addc0bd521e01e8a789e305b9a6adc",
+          "Title": "pcre2: PCRE2: Memory corruption vulnerability in pcre2_jit_match",
+          "Description": "In PCRE2 before 10.48, pcre2_jit_match mishandles a previously copied subject being passed in as a context. An incorrect free operation can occur.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-590"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-89161",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/commit/1dcd0cf42a6a7cb62cc9a7c024196733abcfda95%20%28pcre2-10.48-RC1%29",
+            "https://github.com/PCRE2Project/pcre2/pull/937",
+            "https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48",
+            "https://linux.oracle.com/cve/CVE-2026-89161.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81522.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-89161",
+            "https://www.cve.org/CVERecord?id=CVE-2026-89161"
+          ],
+          "PublishedDate": "2026-09-11T04:18:04.47Z",
+          "LastModifiedDate": "2026-09-16T19:10:47.78Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-103111",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2-syntax@10.40-6.el9.noarch",
+          "PkgName": "pcre2-syntax",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2-syntax@10.40-6.el9?arch=noarch&distro=redhat-9.8",
+            "UID": "459af584b3a3a6aa"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44bb90d0dc2d3c7487076e80e560778499b9e86c5c8709287bce0be56c5fb385",
+            "DiffID": "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-103111",
+          "Fingerprint": "sha256:c1e14c25b02c59689f445ca5a05ab3096b7f75ca4d31301f4fb3198232230cb7",
+          "Title": "pcre2: pcre2: Out-of-bounds write via crafted regular expression",
+          "Description": "PCRE2 before 10.49, when there is an attacker-controlled regular expression and certain JIT API usage, allows an out-of-bounds write with arbitrary data.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L",
+              "V3Score": 7.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-103111",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-r9hj-j2rw-4q3m",
+            "https://linux.oracle.com/cve/CVE-2026-103111.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81613.html",
+            "https://lists.debian.org/debian-lts-announce/2026/10/msg00008.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-103111",
+            "https://www.cve.org/CVERecord?id=CVE-2026-103111"
+          ],
+          "PublishedDate": "2026-09-30T05:16:45.863Z",
+          "LastModifiedDate": "2026-10-04T00:16:35.563Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-86145",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2-syntax@10.40-6.el9.noarch",
+          "PkgName": "pcre2-syntax",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2-syntax@10.40-6.el9?arch=noarch&distro=redhat-9.8",
+            "UID": "459af584b3a3a6aa"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44bb90d0dc2d3c7487076e80e560778499b9e86c5c8709287bce0be56c5fb385",
+            "DiffID": "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-86145",
+          "Fingerprint": "sha256:a9a9361323d42626470a36a6a63eace18040d0274041e1fa5623cbd5f7372f47",
+          "Title": "pcre2: PCRE2: Out-of-bounds write allows arbitrary code execution via crafted regular expressions",
+          "Description": "PCRE2 before 10.48 allows a pcre2_dfa_match out-of-bounds write because reuse of a cached workspace block, in a recursive DFA matching workspace, lacks a size check (even though a newly allocated block, for the same purpose, does have a size check). This outcome requires an attacker-controlled regular expression, or a recursive pattern in conjunction with a small heap limit (this can be set through the API).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-424"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "azure": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L",
+              "V3Score": 8.2
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/09/05/3",
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-86145",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48",
+            "https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-3r4p-g7gg-ppmf",
+            "https://linux.oracle.com/cve/CVE-2026-86145.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81613.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-86145",
+            "https://www.cve.org/CVERecord?id=CVE-2026-86145"
+          ],
+          "PublishedDate": "2026-09-05T06:17:10.37Z",
+          "LastModifiedDate": "2026-09-09T16:04:24.933Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-89161",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2-syntax@10.40-6.el9.noarch",
+          "PkgName": "pcre2-syntax",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2-syntax@10.40-6.el9?arch=noarch&distro=redhat-9.8",
+            "UID": "459af584b3a3a6aa"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44bb90d0dc2d3c7487076e80e560778499b9e86c5c8709287bce0be56c5fb385",
+            "DiffID": "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-89161",
+          "Fingerprint": "sha256:f0ecd44adc0603efbfc1d94bf35e9e55dac8725bdd5b08451722505a63175f15",
+          "Title": "pcre2: PCRE2: Memory corruption vulnerability in pcre2_jit_match",
+          "Description": "In PCRE2 before 10.48, pcre2_jit_match mishandles a previously copied subject being passed in as a context. An incorrect free operation can occur.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-590"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-89161",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/commit/1dcd0cf42a6a7cb62cc9a7c024196733abcfda95%20%28pcre2-10.48-RC1%29",
+            "https://github.com/PCRE2Project/pcre2/pull/937",
+            "https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48",
+            "https://linux.oracle.com/cve/CVE-2026-89161.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81522.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-89161",
+            "https://www.cve.org/CVERecord?id=CVE-2026-89161"
+          ],
+          "PublishedDate": "2026-09-11T04:18:04.47Z",
+          "LastModifiedDate": "2026-09-16T19:10:47.78Z"
+        }
+      ]
+    },
+    {
+      "Target": "usr/bin/mc",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "golang.org/x/net@v0.59.0",
+          "PkgName": "golang.org/x/net",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/golang.org/x/net@v0.59.0",
+            "UID": "cc02599ca7993bf6"
+          },
+          "InstalledVersion": "v0.59.0",
+          "FixedVersion": "0.60.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44b758095b1463d9b84930e7f10fb73d61bed92f41f02727ad0a8b7abd24ca3b",
+            "DiffID": "sha256:d8717a8403d55d88b06abd38e7b4f7daadc9d8bec9b44d1686a9805047ddd95e"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:0046671f55ae153f1d6d29ba5256d96d552f553ff5dee7fabc4ada167427028e",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78667",
+          "VendorIDs": [
+            "GO-2026-6609"
+          ],
+          "PkgID": "stdlib@v1.27.1",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.27.1",
+            "UID": "449599acae49f7c7"
+          },
+          "InstalledVersion": "v1.27.1",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44b758095b1463d9b84930e7f10fb73d61bed92f41f02727ad0a8b7abd24ca3b",
+            "DiffID": "sha256:d8717a8403d55d88b06abd38e7b4f7daadc9d8bec9b44d1686a9805047ddd95e"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78667",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:5f1000df72e9169441602428300a7e5689d481bbb9d6d6a434112d9d69f2f18d",
+          "Title": "net/http: golang: golang: Denial of Service via crafted HTTP Range headers",
+          "Description": "When parsing a Range header containing a large number of small ranges, FileServer(FS), ServeContent, and ServeFile(FS) can consume an excessive amount of CPU.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78667",
+            "https://go.dev/cl/847309",
+            "https://go.dev/issue/81858",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78667",
+            "https://pkg.go.dev/vuln/GO-2026-6609",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78667"
+          ],
+          "PublishedDate": "2026-10-08T23:17:03.88Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.69Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "stdlib@v1.27.1",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.27.1",
+            "UID": "449599acae49f7c7"
+          },
+          "InstalledVersion": "v1.27.1",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44b758095b1463d9b84930e7f10fb73d61bed92f41f02727ad0a8b7abd24ca3b",
+            "DiffID": "sha256:d8717a8403d55d88b06abd38e7b4f7daadc9d8bec9b44d1686a9805047ddd95e"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:8e163a764018ddaa5c2807fa29665294bbe52f3def0ea51b9f7a5b66436c9d88",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-97031",
+          "VendorIDs": [
+            "GO-2026-6607"
+          ],
+          "PkgID": "stdlib@v1.27.1",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.27.1",
+            "UID": "449599acae49f7c7"
+          },
+          "InstalledVersion": "v1.27.1",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44b758095b1463d9b84930e7f10fb73d61bed92f41f02727ad0a8b7abd24ca3b",
+            "DiffID": "sha256:d8717a8403d55d88b06abd38e7b4f7daadc9d8bec9b44d1686a9805047ddd95e"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-97031",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:5ec1cf1178f2e9f746c8434c2fe5d7873f1f669e40594b1ac3696edbe26e86b7",
+          "Title": "crypto/tls: golang: crypto/tls: Denial of Service via multiple ECH outer extension references",
+          "Description": "Multiple ECH outer extension references are not permitted under RFC 9849; previously, a client could send a well-crafted packet that could trigger memory exhaustion in the server process by specifying multiple references. We now reject these as malformed and curb the memory amplification vector as a result.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-97031",
+            "https://go.dev/cl/847312",
+            "https://go.dev/issue/81855",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-97031",
+            "https://pkg.go.dev/vuln/GO-2026-6607",
+            "https://www.cve.org/CVERecord?id=CVE-2026-97031"
+          ],
+          "PublishedDate": "2026-10-08T23:17:06.037Z",
+          "LastModifiedDate": "2026-10-09T16:35:35.9Z"
+        }
+      ]
+    }
+  ]
+}

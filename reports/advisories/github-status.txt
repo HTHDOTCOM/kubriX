@@ -1,0 +1,3 @@
+GitHub Advisory Database checks are unknown for all applications because GITHUB_TOKEN was not set in the environment. No unauthenticated fallback was used, and no missing or failed result is recorded as zero.
+
+OSV Go-module checks are in osv-go-queries.json and osv-go-results.json. Each query uses the exact rendered application version and module path; querybatch returns only advisories matching that version's affected range.

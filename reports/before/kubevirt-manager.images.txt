@@ -1,0 +1,1 @@
+kubevirtmanager/kubevirt-manager:1.5.0

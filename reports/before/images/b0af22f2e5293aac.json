@@ -1,0 +1,637 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.0"
+  },
+  "ReportID": "01a13a79-6a66-7d26-b31d-403c970ea115",
+  "CreatedAt": "2026-10-14T14:53:18.054862959+02:00",
+  "ArtifactID": "sha256:209157da371825d9eea2e9ddc5118f30f285c260616398637fd2ae16c8296b70",
+  "ArtifactName": "docker.io/bats/bats:1.14.0",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 64150016,
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.24.1"
+    },
+    "ImageID": "sha256:f9fcacde687f983a70c29177f7409e8ef8834cde9c044af373078e78bd1539a0",
+    "DiffIDs": [
+      "sha256:34884abbe92863fce933ed7c39c0e045631af0ed86d5cc0dfbdf9fdca426ce3c",
+      "sha256:4c119cb2d26076600570f14a276f375b852fc7d1890450b337071449211944a7",
+      "sha256:6b4f743cc1e14e1b14be3e0807f9e29fbdae990e1e4a2cbb1001634eff5d0a34",
+      "sha256:e3218f287b737acd064e0bd1e7dcc9710289edf2560066fe436d8ba9db0dd7b0",
+      "sha256:854698cfcf3171690ce411033bfd71214712a4242e4aaf98e190edf1ac43e1b6",
+      "sha256:565403ea06e34a2ce3c09c0983d5eb922b73cfb67bb83561cb29a287e5e4c228",
+      "sha256:590cb6a8788e7441af711eb43baa465d8e6e7a8178c1d14e53db339c355b1b19",
+      "sha256:e38155fde39ad4f76671fb693b575bb09433f57c5c6f5e39e7b6f15481636e57",
+      "sha256:69ce42c49506335d43ab2c9c5724e050dc508829a58b35abec6988b78857a20d",
+      "sha256:b1737d59effc51e54cd3467fd9d9c72173602691202f83d477ce9d7c165a8430",
+      "sha256:a23ad15fff03da31949164b38e7e3e71160eebadea916ce875400b4f97ef19e0",
+      "sha256:b3c7523bd6c04296cc5e422c7f2ce1c6b8d3ba357d76845ca54937b2250f325a",
+      "sha256:ac3b982263556d850224ab373cc247fcaf67d48c7e1191c5a59c4ebfcbaad0df",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+    ],
+    "RepoTags": [
+      "bats/bats:1.14.0"
+    ],
+    "RepoDigests": [
+      "bats/bats@sha256:5322b877351fda0cc435de8c6116de7d0a2ec79d7c680132a0ef329a633bc66f"
+    ],
+    "Reference": "bats/bats:1.14.0",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2026-07-21T19:57:04.57702086Z",
+      "history": [
+        {
+          "created": "2026-06-16T00:01:29.967161902Z",
+          "created_by": "ADD alpine-minirootfs-3.24.1-x86_64.tar.gz / # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-06-16T00:01:29.967161902Z",
+          "created_by": "CMD [\"/bin/sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-06-16T00:11:58.40902543Z",
+          "created_by": "ENV _BASH_VERSION=5.3.15",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-06-16T00:11:58.40902543Z",
+          "created_by": "ENV _BASH_BASELINE=5.3",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-06-16T00:11:58.40902543Z",
+          "created_by": "ENV _BASH_LATEST_PATCH=15",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-06-16T00:11:58.40902543Z",
+          "created_by": "RUN /bin/sh -c set -eux; \t\tapk add --no-cache --virtual .build-deps \t\tbison \t\tcoreutils \t\tdpkg-dev dpkg \t\tgcc \t\tlibc-dev \t\tmake \t\tncurses-dev \t\tpatch \t\ttar \t; \t\twget -O bash.tar.gz \"https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz\"; \twget -O bash.tar.gz.sig \"https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz.sig\"; \t\t: \"${_BASH_BASELINE_PATCH:=0}\" \"${_BASH_LATEST_PATCH:=0}\"; \tif [ \"$_BASH_LATEST_PATCH\" -gt \"$_BASH_BASELINE_PATCH\" ]; then \t\tmkdir -p bash-patches; \t\tfirst=\"$(printf '%03d' \"$(( _BASH_BASELINE_PATCH + 1 ))\")\"; \t\tlast=\"$(printf '%03d' \"$_BASH_LATEST_PATCH\")\"; \t\tmajorMinor=\"${_BASH_VERSION%.*}\"; \t\tfor patch in $(seq -w \"$first\" \"$last\"); do \t\t\turl=\"https://ftp.gnu.org/gnu/bash/bash-$majorMinor-patches/bash${majorMinor//./}-$patch\"; \t\t\twget -O \"bash-patches/$patch\" \"$url\"; \t\t\twget -O \"bash-patches/$patch.sig\" \"$url.sig\"; \t\tdone; \tfi; \t\tapk add --no-cache --virtual .gpg-deps gnupg; \texport GNUPGHOME=\"$(mktemp -d)\"; \tgpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7C0135FB088AAF6C66C650B9BB5869F064EA74AB; \tgpg --batch --verify bash.tar.gz.sig bash.tar.gz; \trm bash.tar.gz.sig; \tif [ -d bash-patches ]; then \t\tfor sig in bash-patches/*.sig; do \t\t\tp=\"${sig%.sig}\"; \t\t\tgpg --batch --verify \"$sig\" \"$p\"; \t\t\trm \"$sig\"; \t\tdone; \tfi; \tgpgconf --kill all; \trm -rf \"$GNUPGHOME\"; \tapk del --no-network .gpg-deps; \t\tmkdir -p /usr/local/src/bash; \ttar \t\t--extract \t\t--file=bash.tar.gz \t\t--strip-components=1 \t\t--directory=/usr/local/src/bash \t; \trm bash.tar.gz; \t\tif [ -d bash-patches ]; then \t\tapk add --no-cache --virtual .patch-deps patch; \t\tfor p in bash-patches/*; do \t\t\tpatch \t\t\t\t--directory=/usr/local/src/bash \t\t\t\t--input=\"$(readlink -f \"$p\")\" \t\t\t\t--strip=0 \t\t\t; \t\t\trm \"$p\"; \t\tdone; \t\trmdir bash-patches; \t\tapk del --no-network .patch-deps; \tfi; \t\tcd /usr/local/src/bash; \tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \t./configure \t\t--build=\"$gnuArch\" \t\t--enable-readline \t\t--with-curses \t\t--without-bash-malloc \t|| { \t\tcat >&2 config.log; \t\tfalse; \t}; \tmake -j \"$(nproc)\"; \tmake install; \tcd /; \trm -r /usr/local/src/bash; \t\trm -rf \t\t/usr/local/share/doc/bash/*.html \t\t/usr/local/share/info \t\t/usr/local/share/locale \t\t/usr/local/share/man \t; \t\trunDeps=\"$( \t\tscanelf --needed --nobanner --format '%n#p' --recursive /usr/local \t\t\t| tr ',' '\\n' \t\t\t| sort -u \t\t\t| awk 'system(\"[ -e /usr/local/lib/\" $1 \" ]\") == 0 { next } { print \"so:\" $1 }' \t)\"; \tapk add --no-network --virtual .bash-rundeps $runDeps; \tapk del --no-network .build-deps; \t\t[ \"$(which bash)\" = '/usr/local/bin/bash' ]; \tbash --version; \t[ \"$(bash -c 'echo \"${BASH_VERSION%%[^0-9.]*}\"')\" = \"$_BASH_VERSION\" ]; \tbash -c 'help' > /dev/null # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-06-16T00:11:58.430990878Z",
+          "created_by": "COPY docker-entrypoint.sh /usr/local/bin/ # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-06-16T00:11:58.430990878Z",
+          "created_by": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-06-16T00:11:58.430990878Z",
+          "created_by": "CMD [\"bash\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "ARG TINI_VERSION=v0.19.0",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "ARG TARGETPLATFORM=linux/amd64",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "ARG LIBS_VER_SUPPORT=0.3.0",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "ARG LIBS_VER_FILE=0.4.0",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "ARG LIBS_VER_ASSERT=2.1.0",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "ARG LIBS_VER_DETIK=1.3.2",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "ARG UID=1001",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "ARG GID=115",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "LABEL maintainer=Bats-core Team",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "LABEL org.opencontainers.image.authors=Bats-core Team",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "LABEL org.opencontainers.image.title=Bats",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "LABEL org.opencontainers.image.description=Bash Automated Testing System",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "LABEL org.opencontainers.image.url=https://hub.docker.com/r/bats/bats",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "LABEL org.opencontainers.image.source=https://github.com/bats-core/bats-core",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "LABEL org.opencontainers.image.base.name=docker.io/bash",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-07-21T19:56:50.457739685Z",
+          "created_by": "COPY ./docker /tmp/docker # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-07-21T19:56:55.81277375Z",
+          "created_by": "RUN |8 TINI_VERSION=v0.19.0 TARGETPLATFORM=linux/amd64 LIBS_VER_SUPPORT=0.3.0 LIBS_VER_FILE=0.4.0 LIBS_VER_ASSERT=2.1.0 LIBS_VER_DETIK=1.3.2 UID=1001 GID=115 /bin/sh -c /tmp/docker/install_tini.sh \"${TARGETPLATFORM-linux/amd64}\" # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-07-21T19:56:56.733217381Z",
+          "created_by": "RUN |8 TINI_VERSION=v0.19.0 TARGETPLATFORM=linux/amd64 LIBS_VER_SUPPORT=0.3.0 LIBS_VER_FILE=0.4.0 LIBS_VER_ASSERT=2.1.0 LIBS_VER_DETIK=1.3.2 UID=1001 GID=115 /bin/sh -c /tmp/docker/install_libs.sh support ${LIBS_VER_SUPPORT} # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-07-21T19:56:57.770174236Z",
+          "created_by": "RUN |8 TINI_VERSION=v0.19.0 TARGETPLATFORM=linux/amd64 LIBS_VER_SUPPORT=0.3.0 LIBS_VER_FILE=0.4.0 LIBS_VER_ASSERT=2.1.0 LIBS_VER_DETIK=1.3.2 UID=1001 GID=115 /bin/sh -c /tmp/docker/install_libs.sh file ${LIBS_VER_FILE} # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-07-21T19:56:58.918115381Z",
+          "created_by": "RUN |8 TINI_VERSION=v0.19.0 TARGETPLATFORM=linux/amd64 LIBS_VER_SUPPORT=0.3.0 LIBS_VER_FILE=0.4.0 LIBS_VER_ASSERT=2.1.0 LIBS_VER_DETIK=1.3.2 UID=1001 GID=115 /bin/sh -c /tmp/docker/install_libs.sh assert ${LIBS_VER_ASSERT} # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-07-21T19:56:59.916804834Z",
+          "created_by": "RUN |8 TINI_VERSION=v0.19.0 TARGETPLATFORM=linux/amd64 LIBS_VER_SUPPORT=0.3.0 LIBS_VER_FILE=0.4.0 LIBS_VER_ASSERT=2.1.0 LIBS_VER_DETIK=1.3.2 UID=1001 GID=115 /bin/sh -c /tmp/docker/install_libs.sh detik ${LIBS_VER_DETIK} # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-07-21T19:57:02.992447732Z",
+          "created_by": "RUN |8 TINI_VERSION=v0.19.0 TARGETPLATFORM=linux/amd64 LIBS_VER_SUPPORT=0.3.0 LIBS_VER_FILE=0.4.0 LIBS_VER_ASSERT=2.1.0 LIBS_VER_DETIK=1.3.2 UID=1001 GID=115 /bin/sh -c apk add --no-cache parallel ncurses &&     mkdir -p ~/.parallel && touch ~/.parallel/will-cite     && mkdir /code # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-07-21T19:57:03.457460095Z",
+          "created_by": "RUN |8 TINI_VERSION=v0.19.0 TARGETPLATFORM=linux/amd64 LIBS_VER_SUPPORT=0.3.0 LIBS_VER_FILE=0.4.0 LIBS_VER_ASSERT=2.1.0 LIBS_VER_DETIK=1.3.2 UID=1001 GID=115 /bin/sh -c ln -s \"$(/usr/bin/env which bash)\" \"/bin/bash\" # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-07-21T19:57:03.613492806Z",
+          "created_by": "RUN |8 TINI_VERSION=v0.19.0 TARGETPLATFORM=linux/amd64 LIBS_VER_SUPPORT=0.3.0 LIBS_VER_FILE=0.4.0 LIBS_VER_ASSERT=2.1.0 LIBS_VER_DETIK=1.3.2 UID=1001 GID=115 /bin/sh -c ln -s /opt/bats/bin/bats /usr/local/bin/bats # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-07-21T19:57:04.423113705Z",
+          "created_by": "COPY . /opt/bats/ # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-07-21T19:57:04.57702086Z",
+          "created_by": "WORKDIR /code/",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-07-21T19:57:04.57702086Z",
+          "created_by": "ENTRYPOINT [\"/tini\" \"--\" \"/usr/local/bin/bash\" \"/usr/local/bin/bats\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:34884abbe92863fce933ed7c39c0e045631af0ed86d5cc0dfbdf9fdca426ce3c",
+          "sha256:4c119cb2d26076600570f14a276f375b852fc7d1890450b337071449211944a7",
+          "sha256:6b4f743cc1e14e1b14be3e0807f9e29fbdae990e1e4a2cbb1001634eff5d0a34",
+          "sha256:e3218f287b737acd064e0bd1e7dcc9710289edf2560066fe436d8ba9db0dd7b0",
+          "sha256:854698cfcf3171690ce411033bfd71214712a4242e4aaf98e190edf1ac43e1b6",
+          "sha256:565403ea06e34a2ce3c09c0983d5eb922b73cfb67bb83561cb29a287e5e4c228",
+          "sha256:590cb6a8788e7441af711eb43baa465d8e6e7a8178c1d14e53db339c355b1b19",
+          "sha256:e38155fde39ad4f76671fb693b575bb09433f57c5c6f5e39e7b6f15481636e57",
+          "sha256:69ce42c49506335d43ab2c9c5724e050dc508829a58b35abec6988b78857a20d",
+          "sha256:b1737d59effc51e54cd3467fd9d9c72173602691202f83d477ce9d7c165a8430",
+          "sha256:a23ad15fff03da31949164b38e7e3e71160eebadea916ce875400b4f97ef19e0",
+          "sha256:b3c7523bd6c04296cc5e422c7f2ce1c6b8d3ba357d76845ca54937b2250f325a",
+          "sha256:ac3b982263556d850224ab373cc247fcaf67d48c7e1191c5a59c4ebfcbaad0df",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/tini",
+          "--",
+          "/usr/local/bin/bash",
+          "/usr/local/bin/bats"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "_BASH_VERSION=5.3.15",
+          "_BASH_BASELINE=5.3",
+          "_BASH_LATEST_PATCH=15"
+        ],
+        "Labels": {
+          "maintainer": "Bats-core Team",
+          "org.opencontainers.image.authors": "Bats-core Team",
+          "org.opencontainers.image.base.name": "docker.io/bash",
+          "org.opencontainers.image.description": "Bash Automated Testing System",
+          "org.opencontainers.image.source": "https://github.com/bats-core/bats-core",
+          "org.opencontainers.image.title": "Bats",
+          "org.opencontainers.image.url": "https://hub.docker.com/r/bats/bats"
+        },
+        "WorkingDir": "/code/"
+      }
+    },
+    "Layers": [
+      {
+        "Size": 8697856,
+        "Digest": "sha256:55afa1ecc21d2bb5e5045f32dafee56272ffd89860bac26f6c32123439af26a4",
+        "DiffID": "sha256:34884abbe92863fce933ed7c39c0e045631af0ed86d5cc0dfbdf9fdca426ce3c"
+      },
+      {
+        "Size": 7373824,
+        "Digest": "sha256:3aa13943dde2ce0ec070258dd06dca701ef996fc8464331f3ef0a9752157e6e1",
+        "DiffID": "sha256:4c119cb2d26076600570f14a276f375b852fc7d1890450b337071449211944a7"
+      },
+      {
+        "Size": 3584,
+        "Digest": "sha256:67a7137023b66c4652cf34cfe884e1fc393f72bc13d8f9d1ec2e8f0f241fcfef",
+        "DiffID": "sha256:6b4f743cc1e14e1b14be3e0807f9e29fbdae990e1e4a2cbb1001634eff5d0a34"
+      },
+      {
+        "Size": 13824,
+        "Digest": "sha256:135f75324e155d82d954048ba1655484ff15ae3cf407fb6cb6204166972a461f",
+        "DiffID": "sha256:e3218f287b737acd064e0bd1e7dcc9710289edf2560066fe436d8ba9db0dd7b0"
+      },
+      {
+        "Size": 4040704,
+        "Digest": "sha256:67d1efd5310c3432f8fc2adaf1ffdb52b19c579a89d392afde3dd5163f2a783f",
+        "DiffID": "sha256:854698cfcf3171690ce411033bfd71214712a4242e4aaf98e190edf1ac43e1b6"
+      },
+      {
+        "Size": 16384,
+        "Digest": "sha256:d5f2ab4eb42aeefd47974c243bbcf0d41343718f35ccd276967de5451509f7e9",
+        "DiffID": "sha256:565403ea06e34a2ce3c09c0983d5eb922b73cfb67bb83561cb29a287e5e4c228"
+      },
+      {
+        "Size": 40448,
+        "Digest": "sha256:458abd52b04d6aa2e1263c4ca6bb1536fca783cca7f597e5af85e9b696a49554",
+        "DiffID": "sha256:590cb6a8788e7441af711eb43baa465d8e6e7a8178c1d14e53db339c355b1b19"
+      },
+      {
+        "Size": 53248,
+        "Digest": "sha256:c184a186db87e6b04e47f527e480bf3a65a362937ff87671c007b571e06d8b42",
+        "DiffID": "sha256:e38155fde39ad4f76671fb693b575bb09433f57c5c6f5e39e7b6f15481636e57"
+      },
+      {
+        "Size": 26624,
+        "Digest": "sha256:a2caa89c2ea82229be8b4e10cedc2d0a83ce1f80cce447f8e0957acc37b0eadb",
+        "DiffID": "sha256:69ce42c49506335d43ab2c9c5724e050dc508829a58b35abec6988b78857a20d"
+      },
+      {
+        "Size": 42830848,
+        "Digest": "sha256:1d163999a93844a24663cc597f9a60860d96633e0feb5cf123bb70404091b313",
+        "DiffID": "sha256:b1737d59effc51e54cd3467fd9d9c72173602691202f83d477ce9d7c165a8430"
+      },
+      {
+        "Size": 2048,
+        "Digest": "sha256:e5f74b44b2d2d02c86ff336afa8bd6a26de4643ca4ecc58aa40a52389279dd26",
+        "DiffID": "sha256:a23ad15fff03da31949164b38e7e3e71160eebadea916ce875400b4f97ef19e0"
+      },
+      {
+        "Size": 3072,
+        "Digest": "sha256:8fdaeabd09cdadf50253ac02458a49caf44043e29737c7765f67dc73182dcff4",
+        "DiffID": "sha256:b3c7523bd6c04296cc5e422c7f2ce1c6b8d3ba357d76845ca54937b2250f325a"
+      },
+      {
+        "Size": 1046528,
+        "Digest": "sha256:f5f437edfc0310134bc6934997b453f1d50bee12c7dc1cb02c908ebaab75b7b3",
+        "DiffID": "sha256:ac3b982263556d850224ab373cc247fcaf67d48c7e1191c5a59c4ebfcbaad0df"
+      },
+      {
+        "Size": 1024,
+        "Digest": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1",
+        "DiffID": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "docker.io/bats/bats:1.14.0 (alpine 3.24.1)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-14456",
+          "PkgID": "libcrypto3@3.5.7-r0",
+          "PkgName": "libcrypto3",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/libcrypto3@3.5.7-r0?arch=x86_64&distro=3.24.1",
+            "UID": "9ce2cdb3f0bf014b"
+          },
+          "InstalledVersion": "3.5.7-r0",
+          "FixedVersion": "3.5.8-r0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:55afa1ecc21d2bb5e5045f32dafee56272ffd89860bac26f6c32123439af26a4",
+            "DiffID": "sha256:34884abbe92863fce933ed7c39c0e045631af0ed86d5cc0dfbdf9fdca426ce3c"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-14456",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:9cc365ea822bfc232b6e4f9b54e4dd9960c571846375d1bac8a36a42156ded27",
+          "Title": "openssl: OpenSSL: Denial of Service via unbounded memory growth in QUIC server",
+          "Description": "Issue summary: When an OpenSSL QUIC server (Listener SSL object) processes\nvalid QUIC Initial packets for unknown destination connection IDs, it\ncan allocate and queue new incoming channels without enforcing any limit.\n\nImpact summary: A remote peer that can make many Initial packets reach the\nserver listener faster than the application accepts connections, can cause the\nmemory allocated to store the per-channel state to grow without any limits,\npotentially making the QUIC listener unavailable and causing Denial of Service.\n\nCWE: CWE-770: Allocation of Resources Without Limits or Throttling\n\nDescription: The function that handles inbound QUIC packets uses\nConnection-Id from the packet header to find an existing connection\n(QUIC channel). If no existing connection is found and the packet\ntype is INITIAL, the function treats the packet as a new connection. It\nallocates a new channel object and inserts it into a queue where it\nwaits to be accepted by the local application with SSL_accept(3ossl).\nThe memory occupied by these initial channel objects may grow\nwithout bounds if the application is not able to call SSL_accept()\nfrequently enough to serve these inbound connection requests.\n\nThe issue is present since OpenSSL 3.5 when the QUIC server implementation\nwas added.\n\nThe fix introduces a limit for pending connections. The default limit is set\nto 256 pending connections (waiting to be accepted by the local application).\nApplications may change the default by calling SSL_set_value_uint(3ossl).\n\nFIPS impact: no\nThe FIPS module is not affected as the QUIC implementation is outside of\nthe OpenSSL FIPS module boundary.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/08/13/4",
+            "https://access.redhat.com/errata/RHSA-2026:67154",
+            "https://access.redhat.com/errata/RHSA-2026:67165",
+            "https://access.redhat.com/security/cve/CVE-2026-14456",
+            "https://bugzilla.redhat.com/2515348",
+            "https://bugzilla.redhat.com/2517559",
+            "https://bugzilla.redhat.com/2517560",
+            "https://bugzilla.redhat.com/2517561",
+            "https://bugzilla.redhat.com/2517562",
+            "https://bugzilla.redhat.com/2517564",
+            "https://bugzilla.redhat.com/2517565",
+            "https://bugzilla.redhat.com/2517566",
+            "https://bugzilla.redhat.com/2517570",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2515348",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517559",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517560",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517561",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517562",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517564",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517565",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517566",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517570",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-14456",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-14457",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-18798",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54874",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63072",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63073",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63074",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63075",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63076",
+            "https://errata.almalinux.org/10/ALSA-2026-67154.html",
+            "https://errata.rockylinux.org/RLSA-2026:67165",
+            "https://github.com/openssl/openssl/commit/08e7756c3900bcfd77a720e7b74e27d6e4ed01a9",
+            "https://github.com/openssl/openssl/commit/4084152e040329ca0194c4c1750b9b46d00a5b6b",
+            "https://github.com/openssl/openssl/commit/f2f1465f2d2e5c61dfeac4d20fd093797d821139",
+            "https://linux.oracle.com/cve/CVE-2026-14456.html",
+            "https://linux.oracle.com/errata/ELSA-2026-67165-0.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-14456",
+            "https://openssl-library.org/news/secadv/20260813.txt",
+            "https://ubuntu.com/security/notices/USN-8678-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-14456"
+          ],
+          "PublishedDate": "2026-08-13T15:19:31.82Z",
+          "LastModifiedDate": "2026-08-28T19:46:29.323Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-14456",
+          "PkgID": "libssl3@3.5.7-r0",
+          "PkgName": "libssl3",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/libssl3@3.5.7-r0?arch=x86_64&distro=3.24.1",
+            "UID": "a25152af95b643e0"
+          },
+          "InstalledVersion": "3.5.7-r0",
+          "FixedVersion": "3.5.8-r0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:55afa1ecc21d2bb5e5045f32dafee56272ffd89860bac26f6c32123439af26a4",
+            "DiffID": "sha256:34884abbe92863fce933ed7c39c0e045631af0ed86d5cc0dfbdf9fdca426ce3c"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-14456",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:37edda4a3c4898057b2d80f53fd43763590114e3179fb32570405d01b12e526c",
+          "Title": "openssl: OpenSSL: Denial of Service via unbounded memory growth in QUIC server",
+          "Description": "Issue summary: When an OpenSSL QUIC server (Listener SSL object) processes\nvalid QUIC Initial packets for unknown destination connection IDs, it\ncan allocate and queue new incoming channels without enforcing any limit.\n\nImpact summary: A remote peer that can make many Initial packets reach the\nserver listener faster than the application accepts connections, can cause the\nmemory allocated to store the per-channel state to grow without any limits,\npotentially making the QUIC listener unavailable and causing Denial of Service.\n\nCWE: CWE-770: Allocation of Resources Without Limits or Throttling\n\nDescription: The function that handles inbound QUIC packets uses\nConnection-Id from the packet header to find an existing connection\n(QUIC channel). If no existing connection is found and the packet\ntype is INITIAL, the function treats the packet as a new connection. It\nallocates a new channel object and inserts it into a queue where it\nwaits to be accepted by the local application with SSL_accept(3ossl).\nThe memory occupied by these initial channel objects may grow\nwithout bounds if the application is not able to call SSL_accept()\nfrequently enough to serve these inbound connection requests.\n\nThe issue is present since OpenSSL 3.5 when the QUIC server implementation\nwas added.\n\nThe fix introduces a limit for pending connections. The default limit is set\nto 256 pending connections (waiting to be accepted by the local application).\nApplications may change the default by calling SSL_set_value_uint(3ossl).\n\nFIPS impact: no\nThe FIPS module is not affected as the QUIC implementation is outside of\nthe OpenSSL FIPS module boundary.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/08/13/4",
+            "https://access.redhat.com/errata/RHSA-2026:67154",
+            "https://access.redhat.com/errata/RHSA-2026:67165",
+            "https://access.redhat.com/security/cve/CVE-2026-14456",
+            "https://bugzilla.redhat.com/2515348",
+            "https://bugzilla.redhat.com/2517559",
+            "https://bugzilla.redhat.com/2517560",
+            "https://bugzilla.redhat.com/2517561",
+            "https://bugzilla.redhat.com/2517562",
+            "https://bugzilla.redhat.com/2517564",
+            "https://bugzilla.redhat.com/2517565",
+            "https://bugzilla.redhat.com/2517566",
+            "https://bugzilla.redhat.com/2517570",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2515348",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517559",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517560",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517561",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517562",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517564",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517565",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517566",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517570",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-14456",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-14457",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-18798",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54874",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63072",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63073",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63074",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63075",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63076",
+            "https://errata.almalinux.org/10/ALSA-2026-67154.html",
+            "https://errata.rockylinux.org/RLSA-2026:67165",
+            "https://github.com/openssl/openssl/commit/08e7756c3900bcfd77a720e7b74e27d6e4ed01a9",
+            "https://github.com/openssl/openssl/commit/4084152e040329ca0194c4c1750b9b46d00a5b6b",
+            "https://github.com/openssl/openssl/commit/f2f1465f2d2e5c61dfeac4d20fd093797d821139",
+            "https://linux.oracle.com/cve/CVE-2026-14456.html",
+            "https://linux.oracle.com/errata/ELSA-2026-67165-0.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-14456",
+            "https://openssl-library.org/news/secadv/20260813.txt",
+            "https://ubuntu.com/security/notices/USN-8678-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-14456"
+          ],
+          "PublishedDate": "2026-08-13T15:19:31.82Z",
+          "LastModifiedDate": "2026-08-28T19:46:29.323Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-13221",
+          "PkgID": "perl@5.42.2-r0",
+          "PkgName": "perl",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/perl@5.42.2-r0?arch=x86_64&distro=3.24.1",
+            "UID": "aae77b86338d8dba"
+          },
+          "InstalledVersion": "5.42.2-r0",
+          "FixedVersion": "5.42.2-r1",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:1d163999a93844a24663cc597f9a60860d96633e0feb5cf123bb70404091b313",
+            "DiffID": "sha256:b1737d59effc51e54cd3467fd9d9c72173602691202f83d477ce9d7c165a8430"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-13221",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:d7d6c4b1568c92bbd60f6f66f2d1daf64f55a1187d010f76057c486b81066a8a",
+          "Title": "perl: Perl: Incorrect regular expression processing via large regular expressions",
+          "Description": "Perl versions before 5.40.5-RC1, from 5.41.0 before 5.42.3-RC1, from 5.43.0 before 5.43.10 produce silently incorrect regular expression matches when an alternation of more than 65535 fixed string branches is compiled into a trie in Perl_study_chunk.\n\nWhen such branches are combined into a trie, the delta between the first branch and the shared tail is stored in a 16-bit field. A branch count above 65535 overflows the field, and the trie's match decision table is truncated with no warning or error.\n\nA pattern of this shape produces false positive matches (matching strings it should not) and false negative matches (failing to match strings it should). When such a pattern gates an access or filtering decision, the result is wrong.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "amazon": 2,
+            "azure": 2,
+            "nvd": 4,
+            "oracle-oval": 2,
+            "photon": 4,
+            "redhat": 2,
+            "rocky": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/07/13/5",
+            "https://access.redhat.com/errata/RHSA-2026:67155",
+            "https://access.redhat.com/errata/RHSA-2026:67156",
+            "https://access.redhat.com/security/cve/CVE-2026-13221",
+            "https://bugzilla.redhat.com/2499727",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2499727",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-13221",
+            "https://errata.almalinux.org/10/ALSA-2026-67156.html",
+            "https://errata.rockylinux.org/RLSA-2026:67155",
+            "https://github.com/Perl/perl5/commit/03f74bbbd3a68350d926ee93d56ee4808c28c4c7.patch",
+            "https://github.com/Perl/perl5/issues/23388",
+            "https://linux.oracle.com/cve/CVE-2026-13221.html",
+            "https://linux.oracle.com/errata/ELSA-2026-67278-0.html",
+            "https://lists.security.metacpan.org/cve-announce/msg/41780104/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-13221",
+            "https://ubuntu.com/security/notices/USN-8675-1",
+            "https://ubuntu.com/security/notices/USN-8675-2",
+            "https://ubuntu.com/security/notices/USN-8684-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-13221"
+          ],
+          "PublishedDate": "2026-07-13T17:16:48.923Z",
+          "LastModifiedDate": "2026-09-08T22:17:37.217Z"
+        }
+      ]
+    },
+    {
+      "Target": "Node.js",
+      "Class": "lang-pkgs",
+      "Type": "node-pkg"
+    }
+  ]
+}

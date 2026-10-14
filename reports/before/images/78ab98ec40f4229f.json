@@ -1,0 +1,364 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.0"
+  },
+  "ReportID": "01a13a85-6c24-7ad5-a76b-7392c470b0df",
+  "CreatedAt": "2026-10-14T15:06:24.932710727+02:00",
+  "ArtifactID": "sha256:ac4ecbd60c915a587336085718447a5a5b2177c5c15c8b38989e55ab3d35b403",
+  "ArtifactName": "xpkg.crossplane.io/crossplane/crossplane:v2.4.2",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 81244160,
+    "ImageID": "sha256:82180be9d2bedf0cd9175f153a44f1357577849961ae247983d3b7be8ea920be",
+    "DiffIDs": [
+      "sha256:6242e87d9548e7a33651a99952a92d487c7c5f28708d70e2c2e6cc5e9fa2e020",
+      "sha256:2648da0f94e38854fdcb138bacdaa37353e30a6efab51780823b80f7aad07de9",
+      "sha256:5102778d2ed921f25870485ffcfb5103a18ce0786e19068c9722856b2dfe47b9",
+      "sha256:481ac2668fa759af6f80b0cc315423bdff4b6e1b99b9fcb2418302ab2af6fa8d",
+      "sha256:5d7f778e8eb9677b766ff57384a44ab266d90b0a7a085e6c54e0e38cbeeb8a11",
+      "sha256:039fea23178d160035986544a0c700abc7a9e3f0418f991753b465fc63310830",
+      "sha256:96dc0110af381649bc61eec46d70d7e051aa958fb483e21d9a99f793f4434892",
+      "sha256:664df523fcdb1f6828c710676d813db3d5d6c37dc259fe7a6b5643ccd0c0ad11"
+    ],
+    "RepoTags": [
+      "xpkg.crossplane.io/crossplane/crossplane:v2.4.2"
+    ],
+    "RepoDigests": [
+      "xpkg.crossplane.io/crossplane/crossplane@sha256:cfa88491dca479686747ccd0f0d1888ec8a7d1ee34629f19d45f509d6995148b"
+    ],
+    "Reference": "xpkg.crossplane.io/crossplane/crossplane:v2.4.2",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2026-09-22T18:52:24.943976Z",
+      "history": [
+        {
+          "created": "2026-09-22T18:52:24.943976Z",
+          "comment": "store paths: ['/nix/store/h6q94p1jw42irzqybm1049fmxakh8701-mailcap-2.1.54']"
+        },
+        {
+          "created": "2026-09-22T18:52:24.943976Z",
+          "comment": "store paths: ['/nix/store/d5jj34synqyn1bc5n362pric9a695a0h-iana-etc-20251215']"
+        },
+        {
+          "created": "2026-09-22T18:52:24.943976Z",
+          "comment": "store paths: ['/nix/store/nb6fq3nrjmyx9f9syrfnmsyfhx1ks9vg-iana-etc-20251215']"
+        },
+        {
+          "created": "2026-09-22T18:52:24.943976Z",
+          "comment": "store paths: ['/nix/store/206m56yfhycp91zp3y6ry3ddirqflnxs-nss-cacert-3.126']"
+        },
+        {
+          "created": "2026-09-22T18:52:24.943976Z",
+          "comment": "store paths: ['/nix/store/m2sv1rizzbnsb35hv3ii0dnf3rvfy3n3-tzdata-2026c']"
+        },
+        {
+          "created": "2026-09-22T18:52:24.943976Z",
+          "comment": "store paths: ['/nix/store/p0ff33dca0fbkskqwrl3spvxcn5974h0-tzdata-2026c']"
+        },
+        {
+          "created": "2026-09-22T18:52:24.943976Z",
+          "comment": "store paths: ['/nix/store/rqbzgi3apx9jfsbrld3k85rwn8s8i2pd-crossplane-linux-amd64-v2.4.2']"
+        },
+        {
+          "created": "2026-09-22T18:52:24.943976Z",
+          "comment": "store paths: ['/nix/store/lnwn7iip7v06b43na7l05kih87c765fm-crossplane-customisation-layer']"
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:6242e87d9548e7a33651a99952a92d487c7c5f28708d70e2c2e6cc5e9fa2e020",
+          "sha256:2648da0f94e38854fdcb138bacdaa37353e30a6efab51780823b80f7aad07de9",
+          "sha256:5102778d2ed921f25870485ffcfb5103a18ce0786e19068c9722856b2dfe47b9",
+          "sha256:481ac2668fa759af6f80b0cc315423bdff4b6e1b99b9fcb2418302ab2af6fa8d",
+          "sha256:5d7f778e8eb9677b766ff57384a44ab266d90b0a7a085e6c54e0e38cbeeb8a11",
+          "sha256:039fea23178d160035986544a0c700abc7a9e3f0418f991753b465fc63310830",
+          "sha256:96dc0110af381649bc61eec46d70d7e051aa958fb483e21d9a99f793f4434892",
+          "sha256:664df523fcdb1f6828c710676d813db3d5d6c37dc259fe7a6b5643ccd0c0ad11"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/bin/crossplane"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "SSL_CERT_FILE=/nix/store/206m56yfhycp91zp3y6ry3ddirqflnxs-nss-cacert-3.126/etc/ssl/certs/ca-certificates.crt"
+        ],
+        "Labels": {
+          "org.opencontainers.image.source": "https://github.com/crossplane/crossplane",
+          "org.opencontainers.image.version": "v2.4.2"
+        },
+        "User": "65532",
+        "ExposedPorts": {
+          "8080/tcp": {}
+        }
+      }
+    },
+    "Layers": [
+      {
+        "Size": 133120,
+        "Digest": "sha256:45b2bf3b2a0db31af0736aa14bb1a5750963ce4a6b2fee0ce58c216e5d78ee70",
+        "DiffID": "sha256:6242e87d9548e7a33651a99952a92d487c7c5f28708d70e2c2e6cc5e9fa2e020"
+      },
+      {
+        "Size": 583680,
+        "Digest": "sha256:10326449c8af78c0601410f286e6fc541f36eb1353edcb9bf78ecd72ae5bbaf5",
+        "DiffID": "sha256:2648da0f94e38854fdcb138bacdaa37353e30a6efab51780823b80f7aad07de9"
+      },
+      {
+        "Size": 583680,
+        "Digest": "sha256:70f2593323d3789207e78ac1864b9ccfb8f35c6b3f4799300c4b60a278ab6c68",
+        "DiffID": "sha256:5102778d2ed921f25870485ffcfb5103a18ce0786e19068c9722856b2dfe47b9"
+      },
+      {
+        "Size": 675840,
+        "Digest": "sha256:857fc46e9c21b4ebbcfc0b26313da6644aba651471ca8eb8e991e01ac04ab38a",
+        "DiffID": "sha256:481ac2668fa759af6f80b0cc315423bdff4b6e1b99b9fcb2418302ab2af6fa8d"
+      },
+      {
+        "Size": 2928640,
+        "Digest": "sha256:50085cfb784e545f570a43b330c719faa5bd0e51f0313816526bf10d0607d65b",
+        "DiffID": "sha256:5d7f778e8eb9677b766ff57384a44ab266d90b0a7a085e6c54e0e38cbeeb8a11"
+      },
+      {
+        "Size": 2928640,
+        "Digest": "sha256:2c5abb49d5fe3070889528e3355b5ca0f54e84817af9988d92bc730c494e0573",
+        "DiffID": "sha256:039fea23178d160035986544a0c700abc7a9e3f0418f991753b465fc63310830"
+      },
+      {
+        "Size": 71628800,
+        "Digest": "sha256:ca22a1fb268d6377e8dfe2683e6fb1898e1d387d79986e25835d805799383326",
+        "DiffID": "sha256:96dc0110af381649bc61eec46d70d7e051aa958fb483e21d9a99f793f4434892"
+      },
+      {
+        "Size": 1781760,
+        "Digest": "sha256:6283ce182c7094dd8d3fcf3c0044eb8a0d4959bf696f1c9a0976515c98cf6c2d",
+        "DiffID": "sha256:664df523fcdb1f6828c710676d813db3d5d6c37dc259fe7a6b5643ccd0c0ad11"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "nix/store/rqbzgi3apx9jfsbrld3k85rwn8s8i2pd-crossplane-linux-amd64-v2.4.2/bin/crossplane",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "golang.org/x/net@v0.58.0",
+          "PkgName": "golang.org/x/net",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/golang.org/x/net@v0.58.0",
+            "UID": "51772708be853936"
+          },
+          "InstalledVersion": "v0.58.0",
+          "FixedVersion": "0.60.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:ca22a1fb268d6377e8dfe2683e6fb1898e1d387d79986e25835d805799383326",
+            "DiffID": "sha256:96dc0110af381649bc61eec46d70d7e051aa958fb483e21d9a99f793f4434892"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:64d2512462ad4b21515112561d8ed6e4f9ba6d627f51a10845c0b6444dcaeac5",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78667",
+          "VendorIDs": [
+            "GO-2026-6609"
+          ],
+          "PkgID": "stdlib@v1.26.7",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.26.7",
+            "UID": "19e61b5ce29fb260"
+          },
+          "InstalledVersion": "v1.26.7",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:ca22a1fb268d6377e8dfe2683e6fb1898e1d387d79986e25835d805799383326",
+            "DiffID": "sha256:96dc0110af381649bc61eec46d70d7e051aa958fb483e21d9a99f793f4434892"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78667",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:d19387a56e6aae1abb8ec6bc4eb0e94d5196174c6c47a5013243ad70883be17b",
+          "Title": "net/http: golang: golang: Denial of Service via crafted HTTP Range headers",
+          "Description": "When parsing a Range header containing a large number of small ranges, FileServer(FS), ServeContent, and ServeFile(FS) can consume an excessive amount of CPU.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78667",
+            "https://go.dev/cl/847309",
+            "https://go.dev/issue/81858",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78667",
+            "https://pkg.go.dev/vuln/GO-2026-6609",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78667"
+          ],
+          "PublishedDate": "2026-10-08T23:17:03.88Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.69Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "stdlib@v1.26.7",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.26.7",
+            "UID": "19e61b5ce29fb260"
+          },
+          "InstalledVersion": "v1.26.7",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:ca22a1fb268d6377e8dfe2683e6fb1898e1d387d79986e25835d805799383326",
+            "DiffID": "sha256:96dc0110af381649bc61eec46d70d7e051aa958fb483e21d9a99f793f4434892"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:64a0d0fb3440c149c7940f4f3eb6cfe38ff2cc557a09681f7c816fdfbcc6bb89",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-97031",
+          "VendorIDs": [
+            "GO-2026-6607"
+          ],
+          "PkgID": "stdlib@v1.26.7",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.26.7",
+            "UID": "19e61b5ce29fb260"
+          },
+          "InstalledVersion": "v1.26.7",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:ca22a1fb268d6377e8dfe2683e6fb1898e1d387d79986e25835d805799383326",
+            "DiffID": "sha256:96dc0110af381649bc61eec46d70d7e051aa958fb483e21d9a99f793f4434892"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-97031",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:7405e7847b493bfc1dc607434ff18a152fb68193f4dba6bc0d1669b4650992c0",
+          "Title": "crypto/tls: golang: crypto/tls: Denial of Service via multiple ECH outer extension references",
+          "Description": "Multiple ECH outer extension references are not permitted under RFC 9849; previously, a client could send a well-crafted packet that could trigger memory exhaustion in the server process by specifying multiple references. We now reject these as malformed and curb the memory amplification vector as a result.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-97031",
+            "https://go.dev/cl/847312",
+            "https://go.dev/issue/81855",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-97031",
+            "https://pkg.go.dev/vuln/GO-2026-6607",
+            "https://www.cve.org/CVERecord?id=CVE-2026-97031"
+          ],
+          "PublishedDate": "2026-10-08T23:17:06.037Z",
+          "LastModifiedDate": "2026-10-09T16:35:35.9Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.0"
+  },
+  "ReportID": "01a13a79-3ccd-7749-a979-9eb9412c0a8a",
+  "CreatedAt": "2026-10-14T14:53:06.381478274+02:00",
+  "ArtifactID": "sha256:df1b02a183be694638f28060edb2359238cb9bfd0509acc511ec5a2e4a218d8b",
+  "ArtifactName": "alpine/curl:latest",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 14049792,
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.24.2"
+    },
+    "ImageID": "sha256:fecceaf5f514c02d3c4eedd2765e6daac921e7bcd371b17db3dea3206583a388",
+    "DiffIDs": [
+      "sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc30323ce36760701b0b7f711",
+      "sha256:288e097510c5e4439e409634cac8c36f7321e8cc48a7a7a326deb402af048608",
+      "sha256:772ae41a30767818745f853ad05710b83765d77a1026ccbe0aec0fab9a74d580"
+    ],
+    "RepoTags": [
+      "alpine/curl:latest"
+    ],
+    "RepoDigests": [
+      "alpine/curl@sha256:e17bf3bdfef2efda277af9b73149ece806d30354b3eebd002555f66a8cabb357"
+    ],
+    "Reference": "alpine/curl:latest",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2026-10-10T03:05:06.439700335Z",
+      "history": [
+        {
+          "created": "2026-09-17T20:37:20.889221879Z",
+          "created_by": "ADD alpine-minirootfs-3.24.2-x86_64.tar.gz / # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-17T20:37:20.889221879Z",
+          "created_by": "CMD [\"/bin/sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-10-10T03:05:06.362583556Z",
+          "created_by": "RUN /bin/sh -c apk add --update --no-cache curl # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-10-10T03:05:06.439700335Z",
+          "created_by": "COPY entrypoint.sh / # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-10-10T03:05:06.439700335Z",
+          "created_by": "ENTRYPOINT [\"/entrypoint.sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-10-10T03:05:06.439700335Z",
+          "created_by": "CMD [\"curl\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc30323ce36760701b0b7f711",
+          "sha256:288e097510c5e4439e409634cac8c36f7321e8cc48a7a7a326deb402af048608",
+          "sha256:772ae41a30767818745f853ad05710b83765d77a1026ccbe0aec0fab9a74d580"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "curl"
+        ],
+        "Entrypoint": [
+          "/entrypoint.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "WorkingDir": "/",
+        "ArgsEscaped": true
+      }
+    },
+    "Layers": [
+      {
+        "Size": 8704000,
+        "Digest": "sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e4c4b714dcfde2a102b5",
+        "DiffID": "sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc30323ce36760701b0b7f711"
+      },
+      {
+        "Size": 5343744,
+        "Digest": "sha256:8ab462dd1ea896a25d56bd933f90175faeca450a932f49bd6ff7e6ba8c248120",
+        "DiffID": "sha256:288e097510c5e4439e409634cac8c36f7321e8cc48a7a7a326deb402af048608"
+      },
+      {
+        "Size": 2048,
+        "Digest": "sha256:305ccbf3f3386c60823c3648cecf342d85fc639f64a264bfcf331c2e239259f1",
+        "DiffID": "sha256:772ae41a30767818745f853ad05710b83765d77a1026ccbe0aec0fab9a74d580"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "alpine/curl:latest (alpine 3.24.2)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    }
+  ]
+}

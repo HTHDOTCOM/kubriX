@@ -1,0 +1,328 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.0"
+  },
+  "ReportID": "01a13a80-d8c6-7bcc-a925-d7d67958bad9",
+  "CreatedAt": "2026-10-14T15:01:25.062774714+02:00",
+  "ArtifactID": "sha256:d969bb1b1033937e41e25e52a3352f735b6b0042840050273cbb65f9ff75868d",
+  "ArtifactName": "nats:2.15.0-alpine",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 28863488,
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.22.6"
+    },
+    "ImageID": "sha256:1fba79b99cb8c01be0a0b9d85cc90fa648f79c1d1d4ab4d56c753874e4c19bd7",
+    "DiffIDs": [
+      "sha256:e477571b896b8d18635f33e4efb8851e6c4929111b0a4fe9b17b34a16fd9c37f",
+      "sha256:6959706b8f2d76e42cda56eee703e5d1f869263fe43aaa264663562c760706ca",
+      "sha256:0275b25261caeb776832c4b57c2d79f5318716cd10ea17a3398095d4cf5319a1",
+      "sha256:74f6190d1d05882818c1b1423580ed56ac89298d98a8b0c7c2e1a98fb92a35da"
+    ],
+    "RepoTags": [
+      "nats:2.15.0-alpine"
+    ],
+    "RepoDigests": [
+      "nats@sha256:ac8f88a6494bffc2c2a5289a0ca61cb28a9145c11ba5677cf24265d07f46d8d4"
+    ],
+    "Reference": "nats:2.15.0-alpine",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2026-09-17T21:16:37.445095263Z",
+      "history": [
+        {
+          "created": "2026-09-17T20:37:44.212246058Z",
+          "created_by": "ADD alpine-minirootfs-3.22.6-x86_64.tar.gz / # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-17T20:37:44.212246058Z",
+          "created_by": "CMD [\"/bin/sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-17T21:16:37.400829609Z",
+          "created_by": "ENV NATS_SERVER=2.15.0",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-17T21:16:37.400829609Z",
+          "created_by": "LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.15.0",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-17T21:16:37.400829609Z",
+          "created_by": "RUN /bin/sh -c set -eux;     apkArch=\"$(apk --print-arch)\";     case \"$apkArch\" in     aarch64) natsArch='arm64'; sha256='cdc208f5a3f42963a52b6ab06ef65626bb870315dc936e26ba571780c6351112' ;;     armhf) natsArch='arm6'; sha256='e29421c251dda2003d16b8d503124a0d690d05f4e018923be7e5e64b446e42c2' ;;     armv7) natsArch='arm7'; sha256='ec5f4689d017e07cfa18442e10da051c0f3f9dd2e7f4dc7cdb55a11f1303c952' ;;     x86_64) natsArch='amd64'; sha256='5d2c51caca950333aba84911df7d377f826f3a59ec36061c6539105084f65c92' ;;     x86) natsArch='386'; sha256='f572eccdbb35ab5c7fef7703a5b6ca49e55d039e441920ba5478972ecdcf7a47' ;;     s390x) natsArch='s390x'; sha256='ac50bf4adc8fa6db575ed9293417b6fbec746e71cc9d360aea5cd447e4207bfc' ;;     ppc64le) natsArch='ppc64le'; sha256='a402bf73f91f674735cc85aa0e7d06d5dfa3044b98cda6ea9937cfee4e05a266' ;;     loong64) natsArch='loong64'; sha256='fdce4b595b4b3a9f83d07ee310334b68a0723c799e969c9ab77f3105158fd64e' ;;     *) echo >&2 \"error: $apkArch is not supported!\"; exit 1 ;;     esac;         wget -O nats-server.tar.gz \"https://github.com/nats-io/nats-server/releases/download/v${NATS_SERVER}/nats-server-v${NATS_SERVER}-linux-${natsArch}.tar.gz\";     echo \"${sha256} *nats-server.tar.gz\" | sha256sum -c -;         apk add --no-cache ca-certificates tzdata;         tar -xf nats-server.tar.gz;     rm nats-server.tar.gz;     mv \"nats-server-v${NATS_SERVER}-linux-${natsArch}/nats-server\" /usr/local/bin;     rm -rf \"nats-server-v${NATS_SERVER}-linux-${natsArch}\"; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-17T21:16:37.423933541Z",
+          "created_by": "COPY nats-server.conf /etc/nats/nats-server.conf # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-17T21:16:37.445095263Z",
+          "created_by": "COPY docker-entrypoint.sh /usr/local/bin # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-17T21:16:37.445095263Z",
+          "created_by": "EXPOSE map[4222/tcp:{} 6222/tcp:{} 8222/tcp:{}]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-17T21:16:37.445095263Z",
+          "created_by": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-17T21:16:37.445095263Z",
+          "created_by": "CMD [\"nats-server\" \"--config\" \"/etc/nats/nats-server.conf\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:e477571b896b8d18635f33e4efb8851e6c4929111b0a4fe9b17b34a16fd9c37f",
+          "sha256:6959706b8f2d76e42cda56eee703e5d1f869263fe43aaa264663562c760706ca",
+          "sha256:0275b25261caeb776832c4b57c2d79f5318716cd10ea17a3398095d4cf5319a1",
+          "sha256:74f6190d1d05882818c1b1423580ed56ac89298d98a8b0c7c2e1a98fb92a35da"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "nats-server",
+          "--config",
+          "/etc/nats/nats-server.conf"
+        ],
+        "Entrypoint": [
+          "docker-entrypoint.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "NATS_SERVER=2.15.0"
+        ],
+        "Labels": {
+          "org.opencontainers.image.description": "NATS is an open-source, high-performance, cloud native messaging system.",
+          "org.opencontainers.image.documentation": "https://docs.nats.io",
+          "org.opencontainers.image.licenses": "Apache-2.0",
+          "org.opencontainers.image.source": "https://github.com/nats-io/nats-docker",
+          "org.opencontainers.image.title": "NATS Server",
+          "org.opencontainers.image.url": "https://nats.io",
+          "org.opencontainers.image.vendor": "NATS.io",
+          "org.opencontainers.image.version": "2.15.0"
+        },
+        "WorkingDir": "/",
+        "ExposedPorts": {
+          "4222/tcp": {},
+          "6222/tcp": {},
+          "8222/tcp": {}
+        }
+      }
+    },
+    "Layers": [
+      {
+        "Size": 8581632,
+        "Digest": "sha256:53f8f5e03afd86ade91b7aa57a749f5a3d1419c113be5d8c10e7ee61bb5ab887",
+        "DiffID": "sha256:e477571b896b8d18635f33e4efb8851e6c4929111b0a4fe9b17b34a16fd9c37f"
+      },
+      {
+        "Size": 20274688,
+        "Digest": "sha256:da85ab5e64ac8cf7e05341ffa3f97e7cabb7e9ef0c60d4bd0b33736d0b924965",
+        "DiffID": "sha256:6959706b8f2d76e42cda56eee703e5d1f869263fe43aaa264663562c760706ca"
+      },
+      {
+        "Size": 3584,
+        "Digest": "sha256:77fda42364ac81932aca9b351419b2bd5e21cd7451efedbefb079d99ca91734b",
+        "DiffID": "sha256:0275b25261caeb776832c4b57c2d79f5318716cd10ea17a3398095d4cf5319a1"
+      },
+      {
+        "Size": 3584,
+        "Digest": "sha256:9533547350bb69f285e0e39126451d93273bbaed0d7b1278a7762f81681cdc42",
+        "DiffID": "sha256:74f6190d1d05882818c1b1423580ed56ac89298d98a8b0c7c2e1a98fb92a35da"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "nats:2.15.0-alpine (alpine 3.22.6)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    },
+    {
+      "Target": "usr/local/bin/nats-server",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-78667",
+          "VendorIDs": [
+            "GO-2026-6609"
+          ],
+          "PkgID": "stdlib@v1.27.1",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.27.1",
+            "UID": "136abc3f2fd9c5ea"
+          },
+          "InstalledVersion": "v1.27.1",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:da85ab5e64ac8cf7e05341ffa3f97e7cabb7e9ef0c60d4bd0b33736d0b924965",
+            "DiffID": "sha256:6959706b8f2d76e42cda56eee703e5d1f869263fe43aaa264663562c760706ca"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78667",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:e8bf719dfbd3a376deab3cdc706cb612eb20d1ae4d89dc7e2795503445f3de1a",
+          "Title": "net/http: golang: golang: Denial of Service via crafted HTTP Range headers",
+          "Description": "When parsing a Range header containing a large number of small ranges, FileServer(FS), ServeContent, and ServeFile(FS) can consume an excessive amount of CPU.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78667",
+            "https://go.dev/cl/847309",
+            "https://go.dev/issue/81858",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78667",
+            "https://pkg.go.dev/vuln/GO-2026-6609",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78667"
+          ],
+          "PublishedDate": "2026-10-08T23:17:03.88Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.69Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "stdlib@v1.27.1",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.27.1",
+            "UID": "136abc3f2fd9c5ea"
+          },
+          "InstalledVersion": "v1.27.1",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:da85ab5e64ac8cf7e05341ffa3f97e7cabb7e9ef0c60d4bd0b33736d0b924965",
+            "DiffID": "sha256:6959706b8f2d76e42cda56eee703e5d1f869263fe43aaa264663562c760706ca"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:d3427d4d7dd371a924ac5f0bc2907dc1c69902ab0b8f0b047227b3ec8a0f06af",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-97031",
+          "VendorIDs": [
+            "GO-2026-6607"
+          ],
+          "PkgID": "stdlib@v1.27.1",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.27.1",
+            "UID": "136abc3f2fd9c5ea"
+          },
+          "InstalledVersion": "v1.27.1",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:da85ab5e64ac8cf7e05341ffa3f97e7cabb7e9ef0c60d4bd0b33736d0b924965",
+            "DiffID": "sha256:6959706b8f2d76e42cda56eee703e5d1f869263fe43aaa264663562c760706ca"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-97031",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:bca9fa70e16b9fc82dbdc90d63e9dfc491e67d3e7c923716d67205626e0b39f7",
+          "Title": "crypto/tls: golang: crypto/tls: Denial of Service via multiple ECH outer extension references",
+          "Description": "Multiple ECH outer extension references are not permitted under RFC 9849; previously, a client could send a well-crafted packet that could trigger memory exhaustion in the server process by specifying multiple references. We now reject these as malformed and curb the memory amplification vector as a result.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-97031",
+            "https://go.dev/cl/847312",
+            "https://go.dev/issue/81855",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-97031",
+            "https://pkg.go.dev/vuln/GO-2026-6607",
+            "https://www.cve.org/CVERecord?id=CVE-2026-97031"
+          ],
+          "PublishedDate": "2026-10-08T23:17:06.037Z",
+          "LastModifiedDate": "2026-10-09T16:35:35.9Z"
+        }
+      ]
+    }
+  ]
+}

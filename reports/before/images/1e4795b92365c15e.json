@@ -1,0 +1,85 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.0"
+  },
+  "ReportID": "01a13a79-5e2f-744b-a6b9-07b41b2d93bb",
+  "CreatedAt": "2026-10-14T14:53:14.92728316+02:00",
+  "ArtifactID": "sha256:009b6670891bea8bbd7e665955b6eda7888f8ac2f38190d20e9830bf868d4bfa",
+  "ArtifactName": "curlimages/curl:latest",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 24583168,
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.24.2"
+    },
+    "ImageID": "sha256:c26598c458b66daa4a3e186375df5e0f0dfa9e68a134c2ced87174b9ad7d2146",
+    "DiffIDs": [
+      "sha256:4f8ed8069e579ede0216b546f778cc4bb70394e31bfb5916f6ef26e09b610550"
+    ],
+    "RepoTags": [
+      "curlimages/curl:latest"
+    ],
+    "RepoDigests": [
+      "curlimages/curl@sha256:a134550be58ab783810e613ae96fd253c38f7bdd16d9bf9be350700c7a29ac06"
+    ],
+    "Reference": "curlimages/curl:latest",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2026-10-14T09:16:09.894946758Z",
+      "history": [
+        {
+          "created": "2026-10-14T09:16:09.9524845Z",
+          "created_by": "/bin/sh",
+          "comment": "FROM localhost/curl-base-linux-amd64:8.23.0"
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:4f8ed8069e579ede0216b546f778cc4bb70394e31bfb5916f6ef26e09b610550"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "curl"
+        ],
+        "Entrypoint": [
+          "/entrypoint.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "CURL_CA_BUNDLE=/cacert.pem"
+        ],
+        "Labels": {
+          "docker.cmd": "podman run -it quay.io/curl/curl-linux-amd64:8.23.0:8.23.0",
+          "io.buildah.version": "1.33.7",
+          "maintainer": "James Fuller <jim.fuller@webcomposite.com>",
+          "name": "curl-linux-amd64:8.23.0",
+          "org.opencontainers.image.description": "minimal image for curl",
+          "org.opencontainers.image.licenses": "MIT",
+          "org.opencontainers.image.source": "https://github.com/curl/curl-container",
+          "version": "8.23.0"
+        },
+        "User": "curl_user",
+        "WorkingDir": "/home/curl_user"
+      }
+    },
+    "Layers": [
+      {
+        "Size": 24583168,
+        "Digest": "sha256:410cbd33102be20713d5657442124f310b0edf2636bfa177fc3b01d710d5a2c2",
+        "DiffID": "sha256:4f8ed8069e579ede0216b546f778cc4bb70394e31bfb5916f6ef26e09b610550"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "curlimages/curl:latest (alpine 3.24.2)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    }
+  ]
+}

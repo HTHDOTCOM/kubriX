@@ -1,0 +1,2 @@
+alpine/curl:latest
+quay.io/openbao/openbao:2.7.1

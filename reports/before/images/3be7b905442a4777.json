@@ -1,0 +1,322 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.0"
+  },
+  "ReportID": "01a13a7e-9531-7e9d-bb44-999ca4c42394",
+  "CreatedAt": "2026-10-14T14:58:56.689958772+02:00",
+  "ArtifactID": "sha256:679cb8caefe00fcbb8fdbd31023a34211f3d779bd52dec85e20b9329eb4fd3d4",
+  "ArtifactName": "ghcr.io/kyverno/readiness-checker:v1.19.1",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 27611136,
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.25.0_alpha20260805"
+    },
+    "ImageID": "sha256:bea0970aa480ad97382b88cf3dc54ae85e2d0ac328e93c06f62b79a8d03279b8",
+    "DiffIDs": [
+      "sha256:8c895cefbeb7ddc2046db2421fb64f7a7038163a74267d4d18e78a185f03457c",
+      "sha256:67c90ba121a06d152912db237847a9f960c3d203cc93f971812ad315cdf338d5",
+      "sha256:2afc5a0c97693e3ba133eff81aa2d6ccffd235d73ebc40b60af25f8d742089b8"
+    ],
+    "RepoTags": [
+      "ghcr.io/kyverno/readiness-checker:v1.19.1"
+    ],
+    "RepoDigests": [
+      "ghcr.io/kyverno/readiness-checker@sha256:31bb42ce7f5b2e27c1cf633aeff4f0cad1f5bb63761e2cb09f0e25cdd26572bf"
+    ],
+    "Reference": "ghcr.io/kyverno/readiness-checker:v1.19.1",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "author": "github.com/ko-build/ko",
+      "created": "2026-08-05T18:12:45Z",
+      "history": [
+        {
+          "author": "apko",
+          "created": "2026-08-05T18:12:45Z",
+          "created_by": "apko",
+          "comment": "This is an apko single-layer image"
+        },
+        {
+          "author": "ko",
+          "created": "0001-01-01T00:00:00Z",
+          "created_by": "ko build ko://github.com/kyverno/kyverno/cmd/readiness-checker",
+          "comment": "kodata contents, at $KO_DATA_PATH"
+        },
+        {
+          "author": "ko",
+          "created": "0001-01-01T00:00:00Z",
+          "created_by": "ko build ko://github.com/kyverno/kyverno/cmd/readiness-checker",
+          "comment": "go build output, at /ko-app/readiness-checker"
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:8c895cefbeb7ddc2046db2421fb64f7a7038163a74267d4d18e78a185f03457c",
+          "sha256:67c90ba121a06d152912db237847a9f960c3d203cc93f971812ad315cdf338d5",
+          "sha256:2afc5a0c97693e3ba133eff81aa2d6ccffd235d73ebc40b60af25f8d742089b8"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/ko-app/readiness-checker"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin:/ko-app",
+          "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt",
+          "KO_DATA_PATH=/var/run/ko"
+        ],
+        "Labels": {
+          "org.opencontainers.image.created": "2026-08-05T18:12:45Z"
+        },
+        "User": "65532"
+      }
+    },
+    "Layers": [
+      {
+        "Size": 1179648,
+        "Digest": "sha256:b1c858b679975fb92d55f3e27468e5a834d13e12b2ffd29c409dab48654fd1d4",
+        "DiffID": "sha256:8c895cefbeb7ddc2046db2421fb64f7a7038163a74267d4d18e78a185f03457c"
+      },
+      {
+        "Size": 17920,
+        "Digest": "sha256:5fac7d110919dd92f1bf6bf731f63f35e7814cc0144a5fef30d41e068f44b4f2",
+        "DiffID": "sha256:67c90ba121a06d152912db237847a9f960c3d203cc93f971812ad315cdf338d5"
+      },
+      {
+        "Size": 26413568,
+        "Digest": "sha256:7061e86240f3237fc945dfc197767722e6e9090cfb856a10d137b18f1d3f2025",
+        "DiffID": "sha256:2afc5a0c97693e3ba133eff81aa2d6ccffd235d73ebc40b60af25f8d742089b8"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "ghcr.io/kyverno/readiness-checker:v1.19.1 (alpine 3.25.0_alpha20260805)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    },
+    {
+      "Target": "ko-app/readiness-checker",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "golang.org/x/net@v0.58.0",
+          "PkgName": "golang.org/x/net",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/golang.org/x/net@v0.58.0",
+            "UID": "60fdc5403bc50e5d"
+          },
+          "InstalledVersion": "v0.58.0",
+          "FixedVersion": "0.60.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:7061e86240f3237fc945dfc197767722e6e9090cfb856a10d137b18f1d3f2025",
+            "DiffID": "sha256:2afc5a0c97693e3ba133eff81aa2d6ccffd235d73ebc40b60af25f8d742089b8"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:e2cf7edfaed7399bdfe71d95bc6f1ab3e7f1024e5e8a261e66aace1fb801ae18",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78667",
+          "VendorIDs": [
+            "GO-2026-6609"
+          ],
+          "PkgID": "stdlib@v1.26.6",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.26.6",
+            "UID": "6de749b07c3dd2df"
+          },
+          "InstalledVersion": "v1.26.6",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:7061e86240f3237fc945dfc197767722e6e9090cfb856a10d137b18f1d3f2025",
+            "DiffID": "sha256:2afc5a0c97693e3ba133eff81aa2d6ccffd235d73ebc40b60af25f8d742089b8"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78667",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:dffdf16a601f4c930a1412e4a5266c2419364ddb264de9d9ca8d7624a75be5b2",
+          "Title": "net/http: golang: golang: Denial of Service via crafted HTTP Range headers",
+          "Description": "When parsing a Range header containing a large number of small ranges, FileServer(FS), ServeContent, and ServeFile(FS) can consume an excessive amount of CPU.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78667",
+            "https://go.dev/cl/847309",
+            "https://go.dev/issue/81858",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78667",
+            "https://pkg.go.dev/vuln/GO-2026-6609",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78667"
+          ],
+          "PublishedDate": "2026-10-08T23:17:03.88Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.69Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "stdlib@v1.26.6",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.26.6",
+            "UID": "6de749b07c3dd2df"
+          },
+          "InstalledVersion": "v1.26.6",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:7061e86240f3237fc945dfc197767722e6e9090cfb856a10d137b18f1d3f2025",
+            "DiffID": "sha256:2afc5a0c97693e3ba133eff81aa2d6ccffd235d73ebc40b60af25f8d742089b8"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:9c68111fced7030ce500a4f2828824e4eadc9e029544ee49bad7c93696a575dd",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-97031",
+          "VendorIDs": [
+            "GO-2026-6607"
+          ],
+          "PkgID": "stdlib@v1.26.6",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.26.6",
+            "UID": "6de749b07c3dd2df"
+          },
+          "InstalledVersion": "v1.26.6",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:7061e86240f3237fc945dfc197767722e6e9090cfb856a10d137b18f1d3f2025",
+            "DiffID": "sha256:2afc5a0c97693e3ba133eff81aa2d6ccffd235d73ebc40b60af25f8d742089b8"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-97031",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:7ad9cb530389a6c962a1e674e1324e808daa7451d473623b6db31a1166d2c64e",
+          "Title": "crypto/tls: golang: crypto/tls: Denial of Service via multiple ECH outer extension references",
+          "Description": "Multiple ECH outer extension references are not permitted under RFC 9849; previously, a client could send a well-crafted packet that could trigger memory exhaustion in the server process by specifying multiple references. We now reject these as malformed and curb the memory amplification vector as a result.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-97031",
+            "https://go.dev/cl/847312",
+            "https://go.dev/issue/81855",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-97031",
+            "https://pkg.go.dev/vuln/GO-2026-6607",
+            "https://www.cve.org/CVERecord?id=CVE-2026-97031"
+          ],
+          "PublishedDate": "2026-10-08T23:17:06.037Z",
+          "LastModifiedDate": "2026-10-09T16:35:35.9Z"
+        }
+      ]
+    }
+  ]
+}

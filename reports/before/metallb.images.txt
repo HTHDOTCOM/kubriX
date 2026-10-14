@@ -1,0 +1,4 @@
+quay.io/frrouting/frr:10.4.3
+quay.io/metallb/controller:v0.16.1
+quay.io/metallb/frr-k8s:v0.0.25
+quay.io/metallb/speaker:v0.16.1

@@ -1,0 +1,365 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.0"
+  },
+  "ReportID": "01a13a7c-acf6-72ef-b4f5-f709f0fc8fdd",
+  "CreatedAt": "2026-10-14T14:56:51.702192982+02:00",
+  "ArtifactID": "sha256:1f2f6edf9cbf939246cbc1b19237a1b9bcfef01b1b9668421a63803d318127a2",
+  "ArtifactName": "docker.io/kubeshop/testkube-kubectl:1.37.1",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 78174208,
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.24.2"
+    },
+    "ImageID": "sha256:e2890562313c854f52604a37f88fefdc9f446927abf480e849c836ad902fe370",
+    "DiffIDs": [
+      "sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc30323ce36760701b0b7f711",
+      "sha256:fc3e299b8a4ac96d4b4a9059e4e3f03a1b413e4eb7bfa1ae271f92c705dd0b59",
+      "sha256:fd612782f0f6be9322d53b6d7d4b5c8c0ea03a1fb91a2efb3bfc1527c1031f3d",
+      "sha256:0f3af2ec2752e9adf328948f3dd19dba43a4c6cd03cfd3d79e65e59be488b272"
+    ],
+    "RepoTags": [
+      "kubeshop/testkube-kubectl:1.37.1"
+    ],
+    "RepoDigests": [
+      "kubeshop/testkube-kubectl@sha256:5011b74081fafe5b719ed119c807b8462bc7e8696da732668825e998f356a4a3"
+    ],
+    "Reference": "kubeshop/testkube-kubectl:1.37.1",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2026-10-05T12:13:45.788426267Z",
+      "history": [
+        {
+          "created": "2026-09-17T20:37:20.889221879Z",
+          "created_by": "ADD alpine-minirootfs-3.24.2-x86_64.tar.gz / # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-17T20:37:20.889221879Z",
+          "created_by": "CMD [\"/bin/sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-10-03T03:05:13.851842013Z",
+          "created_by": "RUN /bin/sh -c apk add --update --no-cache curl # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-10-03T03:05:14.734438836Z",
+          "created_by": "RUN /bin/sh -c ARCH=$(uname -m) &&     case $ARCH in         x86_64) ARCH=amd64 ;;         aarch64) ARCH=arm64 ;;         armv7l) ARCH=arm ;;         s390x) ARCH=s390x ;;         ppc64le) ARCH=ppc64le ;;         *) echo \"Unsupported architecture: $ARCH\" && exit 1 ;;     esac &&     KUBECTL_VERSION=$(curl -L -s https://dl.k8s.io/release/stable.txt) &&     curl -LO \"https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/${ARCH}/kubectl\" &&     chmod +x kubectl &&     mv kubectl /usr/local/bin/ # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-10-03T03:05:14.734438836Z",
+          "created_by": "ENTRYPOINT [\"/usr/local/bin/kubectl\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-10-03T03:05:14.734438836Z",
+          "created_by": "CMD [\"--help\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-10-05T12:13:45.788426267Z",
+          "created_by": "LABEL maintainer=Testkube Team description=kubectl - Testkube Edition",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-10-05T12:13:45.788426267Z",
+          "created_by": "RUN /bin/sh -c apk add --no-cache bash # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc30323ce36760701b0b7f711",
+          "sha256:fc3e299b8a4ac96d4b4a9059e4e3f03a1b413e4eb7bfa1ae271f92c705dd0b59",
+          "sha256:fd612782f0f6be9322d53b6d7d4b5c8c0ea03a1fb91a2efb3bfc1527c1031f3d",
+          "sha256:0f3af2ec2752e9adf328948f3dd19dba43a4c6cd03cfd3d79e65e59be488b272"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "--help"
+        ],
+        "Entrypoint": [
+          "/usr/local/bin/kubectl"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Labels": {
+          "description": "kubectl - Testkube Edition",
+          "maintainer": "Testkube Team",
+          "org.opencontainers.image.created": "2026-10-05T12:17:11.501Z",
+          "org.opencontainers.image.description": "All artifacts needed to install and configure Testkube instances",
+          "org.opencontainers.image.licenses": "",
+          "org.opencontainers.image.revision": "3eb32053e6a10d8406103a19f6e62c0a998552dc",
+          "org.opencontainers.image.source": "https://github.com/kubeshop/testkube-thirdparty-artifacts",
+          "org.opencontainers.image.title": "testkube-thirdparty-artifacts",
+          "org.opencontainers.image.url": "https://github.com/kubeshop/testkube-thirdparty-artifacts",
+          "org.opencontainers.image.version": "1.37.1"
+        },
+        "WorkingDir": "/",
+        "ArgsEscaped": true
+      }
+    },
+    "Layers": [
+      {
+        "Size": 8704000,
+        "Digest": "sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e4c4b714dcfde2a102b5",
+        "DiffID": "sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc30323ce36760701b0b7f711"
+      },
+      {
+        "Size": 5343744,
+        "Digest": "sha256:e8804dcc60db97decc9a76a1b087e5e878aef00f79e33145bfb10dc2ca71cd13",
+        "DiffID": "sha256:fc3e299b8a4ac96d4b4a9059e4e3f03a1b413e4eb7bfa1ae271f92c705dd0b59"
+      },
+      {
+        "Size": 61890048,
+        "Digest": "sha256:604feffb5dc7b5bc17efbca522ea682f161b5b206159c66af1feeb25739f5ac7",
+        "DiffID": "sha256:fd612782f0f6be9322d53b6d7d4b5c8c0ea03a1fb91a2efb3bfc1527c1031f3d"
+      },
+      {
+        "Size": 2236416,
+        "Digest": "sha256:7b95cb2ee43e486fb4017b24264c8ec2dd577447be1a402a465de72436e6da1d",
+        "DiffID": "sha256:0f3af2ec2752e9adf328948f3dd19dba43a4c6cd03cfd3d79e65e59be488b272"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "docker.io/kubeshop/testkube-kubectl:1.37.1 (alpine 3.24.2)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    },
+    {
+      "Target": "usr/local/bin/kubectl",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "golang.org/x/net@v0.57.0",
+          "PkgName": "golang.org/x/net",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/golang.org/x/net@v0.57.0",
+            "UID": "18be6949653f7282"
+          },
+          "InstalledVersion": "v0.57.0",
+          "FixedVersion": "0.60.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:604feffb5dc7b5bc17efbca522ea682f161b5b206159c66af1feeb25739f5ac7",
+            "DiffID": "sha256:fd612782f0f6be9322d53b6d7d4b5c8c0ea03a1fb91a2efb3bfc1527c1031f3d"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:2082d34edfbc7152a570af8b981c80c7d87ed66e0d28ce86243abd55158a3582",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78667",
+          "VendorIDs": [
+            "GO-2026-6609"
+          ],
+          "PkgID": "stdlib@v1.26.8",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.26.8",
+            "UID": "c337c232cc6189b"
+          },
+          "InstalledVersion": "v1.26.8",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:604feffb5dc7b5bc17efbca522ea682f161b5b206159c66af1feeb25739f5ac7",
+            "DiffID": "sha256:fd612782f0f6be9322d53b6d7d4b5c8c0ea03a1fb91a2efb3bfc1527c1031f3d"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78667",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:73149b51547d88d3a31c49e582eae0de1f40f82c0cdd6998400bc3085b93a3b9",
+          "Title": "net/http: golang: golang: Denial of Service via crafted HTTP Range headers",
+          "Description": "When parsing a Range header containing a large number of small ranges, FileServer(FS), ServeContent, and ServeFile(FS) can consume an excessive amount of CPU.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78667",
+            "https://go.dev/cl/847309",
+            "https://go.dev/issue/81858",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78667",
+            "https://pkg.go.dev/vuln/GO-2026-6609",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78667"
+          ],
+          "PublishedDate": "2026-10-08T23:17:03.88Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.69Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "stdlib@v1.26.8",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.26.8",
+            "UID": "c337c232cc6189b"
+          },
+          "InstalledVersion": "v1.26.8",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:604feffb5dc7b5bc17efbca522ea682f161b5b206159c66af1feeb25739f5ac7",
+            "DiffID": "sha256:fd612782f0f6be9322d53b6d7d4b5c8c0ea03a1fb91a2efb3bfc1527c1031f3d"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:93206684dfffcc498fa64f231edb1ca0a448132c114b844eaade956d60715076",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-97031",
+          "VendorIDs": [
+            "GO-2026-6607"
+          ],
+          "PkgID": "stdlib@v1.26.8",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.26.8",
+            "UID": "c337c232cc6189b"
+          },
+          "InstalledVersion": "v1.26.8",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:604feffb5dc7b5bc17efbca522ea682f161b5b206159c66af1feeb25739f5ac7",
+            "DiffID": "sha256:fd612782f0f6be9322d53b6d7d4b5c8c0ea03a1fb91a2efb3bfc1527c1031f3d"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-97031",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:3d365adbc91f0c4943be2a58425e0c8df876a5c743f82483cc2b94d59f09aed9",
+          "Title": "crypto/tls: golang: crypto/tls: Denial of Service via multiple ECH outer extension references",
+          "Description": "Multiple ECH outer extension references are not permitted under RFC 9849; previously, a client could send a well-crafted packet that could trigger memory exhaustion in the server process by specifying multiple references. We now reject these as malformed and curb the memory amplification vector as a result.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-97031",
+            "https://go.dev/cl/847312",
+            "https://go.dev/issue/81855",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-97031",
+            "https://pkg.go.dev/vuln/GO-2026-6607",
+            "https://www.cve.org/CVERecord?id=CVE-2026-97031"
+          ],
+          "PublishedDate": "2026-10-08T23:17:06.037Z",
+          "LastModifiedDate": "2026-10-09T16:35:35.9Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+quay.io/argoproj/argo-rollouts:v1.10.0
