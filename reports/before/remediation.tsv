@@ -1,0 +1,2348 @@
+falco	HIGH	CVE-2018-0732	libressl2.6-libcrypto	2.6.3-r0	2.6.5-r0
+falco	HIGH	CVE-2018-0732	libressl2.6-libssl	2.6.3-r0	2.6.5-r0
+falco	HIGH	CVE-2018-16890	curl	7.59.0-r0	7.61.1-r2
+falco	HIGH	CVE-2018-16890	libcurl	7.59.0-r0	7.61.1-r2
+falco	HIGH	CVE-2019-3823	curl	7.59.0-r0	7.61.1-r2
+falco	HIGH	CVE-2019-3823	libcurl	7.59.0-r0	7.61.1-r2
+falco	HIGH	CVE-2022-27664	stdlib	v1.17.13	1.18.6, 1.19.1
+falco	HIGH	CVE-2022-2879	stdlib	v1.17.13	1.18.7, 1.19.2
+falco	HIGH	CVE-2022-2880	stdlib	v1.17.13	1.18.7, 1.19.2
+falco	HIGH	CVE-2022-41715	stdlib	v1.17.13	1.18.7, 1.19.2
+falco	HIGH	CVE-2022-41716	stdlib	v1.17.13	1.18.8, 1.19.3
+falco	HIGH	CVE-2022-41720	stdlib	v1.17.13	1.18.9, 1.19.4
+falco	HIGH	CVE-2022-41722	stdlib	v1.17.13	1.19.6, 1.20.1
+falco	HIGH	CVE-2022-41723	stdlib	v1.17.13	1.19.6, 1.20.1
+falco	HIGH	CVE-2022-41724	stdlib	v1.17.13	1.19.6, 1.20.1
+falco	HIGH	CVE-2022-41725	stdlib	v1.17.13	1.19.6, 1.20.1
+falco	HIGH	CVE-2023-24534	stdlib	v1.17.13	1.19.8, 1.20.3
+falco	HIGH	CVE-2023-24536	stdlib	v1.17.13	1.19.8, 1.20.3
+falco	HIGH	CVE-2023-24537	stdlib	v1.17.13	1.19.8, 1.20.3
+falco	HIGH	CVE-2023-24539	stdlib	v1.17.13	1.19.9, 1.20.4
+falco	HIGH	CVE-2023-29400	stdlib	v1.17.13	1.19.9, 1.20.4
+falco	HIGH	CVE-2023-29403	stdlib	v1.17.13	1.19.10, 1.20.5
+testkube	HIGH	CVE-2023-2953	libldap-2.5-0	2.5.13+dfsg-5	none
+velero-ui	HIGH	CVE-2023-2953	libldap-2.5-0	2.5.13+dfsg-5	none
+velero-ui	HIGH	CVE-2023-31484	libperl5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u3
+velero-ui	HIGH	CVE-2023-31484	perl	5.36.0-7+deb12u2	5.36.0-7+deb12u3
+velero-ui	HIGH	CVE-2023-31484	perl-base	5.36.0-7+deb12u2	5.36.0-7+deb12u3
+velero-ui	HIGH	CVE-2023-31484	perl-modules-5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u3
+falco	HIGH	CVE-2023-39325	golang.org/x/net	v0.14.0	0.17.0
+falco	HIGH	CVE-2023-39325	golang.org/x/net	v0.7.0	0.17.0
+falco	HIGH	CVE-2023-39325	stdlib	v1.17.13	1.20.10, 1.21.3
+falco	HIGH	CVE-2023-39325	stdlib	v1.20.8	1.20.10, 1.21.3
+falco	HIGH	CVE-2023-39810	busybox	1.37.0-r57	1.37.0-r58
+falco	HIGH	CVE-2023-45283	stdlib	v1.17.13	1.20.11, 1.21.4, 1.20.12, 1.21.5
+falco	HIGH	CVE-2023-45283	stdlib	v1.20.8	1.20.11, 1.21.4, 1.20.12, 1.21.5
+falco	HIGH	CVE-2023-45287	stdlib	v1.17.13	1.20.0
+falco	HIGH	CVE-2023-45288	golang.org/x/net	v0.14.0	0.23.0
+falco	HIGH	CVE-2023-45288	golang.org/x/net	v0.7.0	0.23.0
+falco	HIGH	CVE-2023-45288	stdlib	v1.17.13	1.21.9, 1.22.2
+falco	HIGH	CVE-2023-45288	stdlib	v1.20.8	1.21.9, 1.22.2
+kyverno	HIGH	CVE-2023-47630	github.com/kyverno/kyverno	v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty	1.10.5
+velero-ui	HIGH	CVE-2023-52425	libexpat1	2.5.0-1+deb12u1	2.5.0-1+deb12u2
+kubevirt-manager	HIGH	CVE-2024-12797	libcrypto3	3.3.2-r1	3.3.3-r0
+kubevirt-manager	HIGH	CVE-2024-12797	libssl3	3.3.2-r1	3.3.3-r0
+velero-ui	HIGH	CVE-2024-21538	cross-spawn	7.0.3	7.0.5, 6.0.6
+velero-ui	HIGH	CVE-2024-23342	ecdsa	0.19.0	none
+velero-ui	HIGH	CVE-2024-28757	libexpat1	2.5.0-1+deb12u1	2.5.0-1+deb12u4
+velero-ui	HIGH	CVE-2024-29415	ip	2.0.0	none
+falco	HIGH	CVE-2024-34156	stdlib	v1.17.13	1.22.7, 1.23.1
+falco	HIGH	CVE-2024-34156	stdlib	v1.20.8	1.22.7, 1.23.1
+velero-ui	HIGH	CVE-2024-34156	stdlib	v1.22.5	1.22.7, 1.23.1
+falco	HIGH	CVE-2024-45337	golang.org/x/crypto	v0.12.0	0.31.0
+falco	HIGH	CVE-2024-45338	golang.org/x/net	v0.14.0	0.33.0
+falco	HIGH	CVE-2024-45338	golang.org/x/net	v0.7.0	0.33.0
+k8s-monitoring	HIGH	CVE-2024-45338	golang.org/x/net	v0.23.0	0.33.0
+k8s-monitoring	HIGH	CVE-2024-45338	golang.org/x/net	v0.26.0	0.33.0
+k8s-monitoring	HIGH	CVE-2024-45338	golang.org/x/net	v0.30.0	0.33.0
+kubevirt-manager	HIGH	CVE-2024-45338	golang.org/x/net	v0.30.0	0.33.0
+velero-ui	HIGH	CVE-2024-45338	golang.org/x/net	v0.26.0	0.33.0
+kyverno	HIGH	CVE-2024-48921	github.com/kyverno/kyverno	v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty	1.13.0
+kubevirt-manager	HIGH	CVE-2024-55549	libxslt	1.1.39-r1	1.1.39-r2
+kubevirt	HIGH	CVE-2024-6119	libssl3	3.0.13-1~deb12u1	3.0.14-1~deb12u2
+velero-ui	HIGH	CVE-2024-6119	libcrypto3	3.1.4-r2	3.1.7-r0
+velero-ui	HIGH	CVE-2024-6119	libssl3	3.1.4-r2	3.1.7-r0
+velero-ui	HIGH	CVE-2024-6345	setuptools	65.5.1	70.0.0
+velero-ui	HIGH	CVE-2025-13836	libpython3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u7
+velero-ui	HIGH	CVE-2025-13836	libpython3.11-stdlib	3.11.2-6+deb12u6	3.11.2-6+deb12u7
+velero-ui	HIGH	CVE-2025-13836	python3.11	3.11.2-6+deb12u6	3.11.2-6+deb12u7
+velero-ui	HIGH	CVE-2025-13836	python3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u7
+backstage,keycloak	HIGH	CVE-2025-15467	libcrypto3	3.0.15-r0	3.0.19-r0
+backstage,keycloak	HIGH	CVE-2025-15467	libssl3	3.0.15-r0	3.0.19-r0
+falco	HIGH	CVE-2025-15467	libcrypto3	3.5.1-r0	3.5.5-r0
+falco	HIGH	CVE-2025-15467	libssl3	3.5.1-r0	3.5.5-r0
+k8s-monitoring	HIGH	CVE-2025-15467	libcrypto3	3.5.4-r0	3.5.5-r0
+k8s-monitoring	HIGH	CVE-2025-15467	libssl3	3.5.4-r0	3.5.5-r0
+kubecost	HIGH	CVE-2025-15467	openssl-libs	1:3.5.1-4.el9_7	1:3.5.1-7.el9_7
+kubevirt	HIGH	CVE-2025-15467	libssl3	3.0.13-1~deb12u1	3.0.18-1~deb12u2
+kubevirt-manager	HIGH	CVE-2025-15467	libcrypto3	3.3.2-r1	3.3.6-r0
+kubevirt-manager	HIGH	CVE-2025-15467	libssl3	3.3.2-r1	3.3.6-r0
+velero-ui	HIGH	CVE-2025-15467	libssl3	3.0.15-1~deb12u1	3.0.18-1~deb12u2
+velero-ui	HIGH	CVE-2025-15467	libssl3	3.0.16-1~deb12u1	3.0.18-1~deb12u2
+velero-ui	HIGH	CVE-2025-15467	openssl	3.0.15-1~deb12u1	3.0.18-1~deb12u2
+velero-ui	HIGH	CVE-2025-15467	openssl	3.0.16-1~deb12u1	3.0.18-1~deb12u2
+falco	HIGH	CVE-2025-15558	github.com/docker/cli	v29.0.3+incompatible	29.2.0
+k8s-monitoring	HIGH	CVE-2025-22868	golang.org/x/oauth2	v0.10.0	0.27.0
+k8s-monitoring	HIGH	CVE-2025-22868	golang.org/x/oauth2	v0.21.0	0.27.0
+k8s-monitoring	HIGH	CVE-2025-22868	golang.org/x/oauth2	v0.23.0	0.27.0
+kubevirt-manager	HIGH	CVE-2025-22868	golang.org/x/oauth2	v0.23.0	0.27.0
+velero-ui	HIGH	CVE-2025-22868	golang.org/x/oauth2	v0.21.0	0.27.0
+falco	HIGH	CVE-2025-22869	golang.org/x/crypto	v0.12.0	0.35.0
+argocd	HIGH	CVE-2025-22874	stdlib	v1.24.0	1.24.4
+kubevirt-manager	HIGH	CVE-2025-24855	libxslt	1.1.39-r1	1.1.39-r2
+kubevirt-manager	HIGH	CVE-2025-24928	libxml2	2.12.7-r0	2.12.7-r1
+backstage,keycloak	HIGH	CVE-2025-26519	musl	1.2.3-r5	1.2.3-r6
+backstage,keycloak	HIGH	CVE-2025-26519	musl-utils	1.2.3-r5	1.2.3-r6
+falco	HIGH	CVE-2025-26519	musl	1.2.3-r2	1.2.3-r4
+falco	HIGH	CVE-2025-26519	musl-utils	1.2.3-r2	1.2.3-r4
+kubevirt-manager	HIGH	CVE-2025-26519	musl	1.2.5-r0	1.2.5-r1
+kubevirt-manager	HIGH	CVE-2025-26519	musl-utils	1.2.5-r0	1.2.5-r1
+velero-ui	HIGH	CVE-2025-26519	musl	1.2.4_git20230717-r4	1.2.4_git20230717-r5
+velero-ui	HIGH	CVE-2025-26519	musl-utils	1.2.4_git20230717-r4	1.2.4_git20230717-r5
+kubevirt-manager	HIGH	CVE-2025-27113	libxml2	2.12.7-r0	2.12.7-r2
+falco	HIGH	CVE-2025-30204	github.com/golang-jwt/jwt	v3.2.2+incompatible	none
+komoplane	HIGH	CVE-2025-30204	github.com/golang-jwt/jwt	v3.2.2+incompatible	none
+kubevirt-manager	HIGH	CVE-2025-31115	xz-libs	5.6.2-r0	5.6.2-r1
+kubevirt-manager	HIGH	CVE-2025-32414	libxml2	2.12.7-r0	2.12.10-r0
+kubevirt-manager	HIGH	CVE-2025-32415	libxml2	2.12.7-r0	2.12.10-r0
+velero-ui	HIGH	CVE-2025-32988	libgnutls30	3.7.9-2+deb12u4	3.7.9-2+deb12u5
+velero-ui	HIGH	CVE-2025-32990	libgnutls30	3.7.9-2+deb12u4	3.7.9-2+deb12u5
+kyverno	HIGH	CVE-2025-46342	github.com/kyverno/kyverno	v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty	1.13.5, 1.14.0
+backstage	HIGH	CVE-2025-47273	setuptools	70.3.0	78.1.1
+grafana	HIGH	CVE-2025-47273	setuptools	70.3.0	78.1.1
+loki	HIGH	CVE-2025-47273	setuptools	70.3.0	78.1.1
+velero-ui	HIGH	CVE-2025-47273	python3-pkg-resources	66.1.1-1+deb12u1	66.1.1-1+deb12u2
+velero-ui	HIGH	CVE-2025-47273	python3-setuptools	66.1.1-1+deb12u1	66.1.1-1+deb12u2
+velero-ui	HIGH	CVE-2025-47273	setuptools	65.5.1	78.1.1
+kyverno	HIGH	CVE-2025-47281	github.com/kyverno/kyverno	v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty	1.14.2
+argocd	HIGH	CVE-2025-47913	golang.org/x/crypto	v0.36.0	0.43.0
+falco	HIGH	CVE-2025-47913	golang.org/x/crypto	v0.12.0	0.43.0
+falco	HIGH	CVE-2025-47913	golang.org/x/crypto	v0.41.0	0.43.0
+kubecost	HIGH	CVE-2025-47913	golang.org/x/crypto	v0.40.0	0.43.0
+velero-ui	HIGH	CVE-2025-48384	git	1:2.39.5-0+deb12u2	1:2.39.5-0+deb12u3
+velero-ui	HIGH	CVE-2025-48384	git-man	1:2.39.5-0+deb12u2	1:2.39.5-0+deb12u3
+velero-ui	HIGH	CVE-2025-48385	git	1:2.39.5-0+deb12u2	1:2.39.5-0+deb12u3
+velero-ui	HIGH	CVE-2025-48385	git-man	1:2.39.5-0+deb12u2	1:2.39.5-0+deb12u3
+kubecost	HIGH	CVE-2025-59375	python3.12	3.12.12-1.el9_7	3.12.13-2.el9_8
+kubecost	HIGH	CVE-2025-59375	python3.12-libs	3.12.12-1.el9_7	3.12.13-2.el9_8
+kubevirt-manager	HIGH	CVE-2025-59375	libexpat	2.6.4-r0	2.7.2-r0
+velero-ui	HIGH	CVE-2025-59375	libexpat1	2.5.0-1+deb12u1	2.5.0-1+deb12u4
+velero-ui	HIGH	CVE-2025-6020	libpam-modules	1.5.2-6+deb12u1	1.5.2-6+deb12u2
+velero-ui	HIGH	CVE-2025-6020	libpam-modules-bin	1.5.2-6+deb12u1	1.5.2-6+deb12u2
+velero-ui	HIGH	CVE-2025-6020	libpam-runtime	1.5.2-6+deb12u1	1.5.2-6+deb12u2
+velero-ui	HIGH	CVE-2025-6020	libpam0g	1.5.2-6+deb12u1	1.5.2-6+deb12u2
+argocd	HIGH	CVE-2025-61726	stdlib	v1.24.0	1.24.12, 1.25.6
+argocd	HIGH	CVE-2025-61726	stdlib	v1.25.3	1.24.12, 1.25.6
+falco	HIGH	CVE-2025-61726	stdlib	v1.17.13	1.24.12, 1.25.6
+falco	HIGH	CVE-2025-61726	stdlib	v1.20.8	1.24.12, 1.25.6
+falco	HIGH	CVE-2025-61726	stdlib	v1.25.1	1.24.12, 1.25.6
+k8s-monitoring	HIGH	CVE-2025-61726	stdlib	v1.23.10	1.24.12, 1.25.6
+k8s-monitoring	HIGH	CVE-2025-61726	stdlib	v1.23.6	1.24.12, 1.25.6
+k8s-monitoring	HIGH	CVE-2025-61726	stdlib	v1.24.9	1.24.12, 1.25.6
+kubecost	HIGH	CVE-2025-61726	stdlib	v1.24.11	1.24.12, 1.25.6
+kubecost	HIGH	CVE-2025-61726	stdlib	v1.25.5	1.24.12, 1.25.6
+kubevirt	HIGH	CVE-2025-61726	stdlib	v1.23.4	1.24.12, 1.25.6
+kubevirt	HIGH	CVE-2025-61726	stdlib	v1.23.6	1.24.12, 1.25.6
+kubevirt-manager	HIGH	CVE-2025-61726	stdlib	v1.23.3	1.24.12, 1.25.6
+testkube	HIGH	CVE-2025-61726	stdlib	v1.25.0	1.24.12, 1.25.6
+velero	HIGH	CVE-2025-61726	stdlib	v1.23.6	1.24.12, 1.25.6
+velero-ui	HIGH	CVE-2025-61726	stdlib	v1.22.5	1.24.12, 1.25.6
+velero-ui	HIGH	CVE-2025-61726	stdlib	v1.23.7	1.24.12, 1.25.6
+argocd	HIGH	CVE-2025-61729	stdlib	v1.24.0	1.24.11, 1.25.5
+argocd	HIGH	CVE-2025-61729	stdlib	v1.25.3	1.24.11, 1.25.5
+falco	HIGH	CVE-2025-61729	stdlib	v1.17.13	1.24.11, 1.25.5
+falco	HIGH	CVE-2025-61729	stdlib	v1.20.8	1.24.11, 1.25.5
+falco	HIGH	CVE-2025-61729	stdlib	v1.25.1	1.24.11, 1.25.5
+k8s-monitoring	HIGH	CVE-2025-61729	stdlib	v1.23.10	1.24.11, 1.25.5
+k8s-monitoring	HIGH	CVE-2025-61729	stdlib	v1.23.6	1.24.11, 1.25.5
+k8s-monitoring	HIGH	CVE-2025-61729	stdlib	v1.24.9	1.24.11, 1.25.5
+kubevirt	HIGH	CVE-2025-61729	stdlib	v1.23.4	1.24.11, 1.25.5
+kubevirt	HIGH	CVE-2025-61729	stdlib	v1.23.6	1.24.11, 1.25.5
+kubevirt-manager	HIGH	CVE-2025-61729	stdlib	v1.23.3	1.24.11, 1.25.5
+testkube	HIGH	CVE-2025-61729	stdlib	v1.25.0	1.24.11, 1.25.5
+velero	HIGH	CVE-2025-61729	stdlib	v1.23.6	1.24.11, 1.25.5
+velero-ui	HIGH	CVE-2025-61729	stdlib	v1.22.5	1.24.11, 1.25.5
+velero-ui	HIGH	CVE-2025-61729	stdlib	v1.23.7	1.24.11, 1.25.5
+velero-ui	HIGH	CVE-2025-62727	starlette	0.45.3	0.49.1
+kubevirt-manager	HIGH	CVE-2025-64720	libpng	1.6.44-r0	1.6.53-r0
+velero-ui	HIGH	CVE-2025-64756	glob	10.3.10	11.1.0, 10.5.0
+kubevirt-manager	HIGH	CVE-2025-65018	libpng	1.6.44-r0	1.6.53-r0
+kubevirt-manager	HIGH	CVE-2025-66293	libpng	1.6.44-r0	1.6.53-r0
+velero-ui	HIGH	CVE-2025-66418	urllib3	2.3.0	2.6.0
+velero-ui	HIGH	CVE-2025-66471	urllib3	2.3.0	2.6.0
+falco	HIGH	CVE-2025-68973	gpgv	2.2.27-3ubuntu2.1	2.2.27-3ubuntu2.5
+kubecost	HIGH	CVE-2025-68973	gnupg2	2.3.3-4.el9	2.3.3-5.el9_7
+velero-ui	HIGH	CVE-2025-68973	gpgv	2.2.40-1.1	2.2.40-1.1+deb12u2
+velero-ui	HIGH	CVE-2025-69223	aiohttp	3.12.12	3.13.3
+backstage,keycloak	HIGH	CVE-2025-69421	libcrypto3	3.0.15-r0	3.0.19-r0
+backstage,keycloak	HIGH	CVE-2025-69421	libssl3	3.0.15-r0	3.0.19-r0
+falco	HIGH	CVE-2025-69421	libcrypto3	3.5.1-r0	3.5.5-r0
+falco	HIGH	CVE-2025-69421	libssl3	3.5.1-r0	3.5.5-r0
+k8s-monitoring	HIGH	CVE-2025-69421	libcrypto3	3.5.4-r0	3.5.5-r0
+k8s-monitoring	HIGH	CVE-2025-69421	libssl3	3.5.4-r0	3.5.5-r0
+kubevirt	HIGH	CVE-2025-69421	libssl3	3.0.13-1~deb12u1	3.0.18-1~deb12u2
+kubevirt-manager	HIGH	CVE-2025-69421	libcrypto3	3.3.2-r1	3.3.6-r0
+kubevirt-manager	HIGH	CVE-2025-69421	libssl3	3.3.2-r1	3.3.6-r0
+velero-ui	HIGH	CVE-2025-69421	libssl3	3.0.15-1~deb12u1	3.0.18-1~deb12u2
+velero-ui	HIGH	CVE-2025-69421	libssl3	3.0.16-1~deb12u1	3.0.18-1~deb12u2
+velero-ui	HIGH	CVE-2025-69421	openssl	3.0.15-1~deb12u1	3.0.18-1~deb12u2
+velero-ui	HIGH	CVE-2025-69421	openssl	3.0.16-1~deb12u1	3.0.18-1~deb12u2
+velero-ui	HIGH	CVE-2025-69534	libpython3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2025-69534	libpython3.11-stdlib	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2025-69534	python3.11	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2025-69534	python3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2025-6965	libsqlite3-0	3.40.1-2+deb12u1	3.40.1-2+deb12u2
+testkube	HIGH	CVE-2025-69720	libncursesw6	6.4-4	none
+testkube	HIGH	CVE-2025-69720	libtinfo6	6.4-4	none
+testkube	HIGH	CVE-2025-69720	ncurses-base	6.4-4	none
+testkube	HIGH	CVE-2025-69720	ncurses-bin	6.4-4	none
+velero-ui	HIGH	CVE-2025-69720	libncursesw6	6.4-4	none
+velero-ui	HIGH	CVE-2025-69720	libtinfo6	6.4-4	none
+velero-ui	HIGH	CVE-2025-69720	ncurses-base	6.4-4	none
+velero-ui	HIGH	CVE-2025-69720	ncurses-bin	6.4-4	none
+backstage	HIGH	CVE-2026-100722	vm2	3.11.6	3.12.2
+backstage	HIGH	CVE-2026-101898	axios	1.14.0	1.20.0
+backstage	HIGH	CVE-2026-101901	axios	1.14.0	1.20.0
+backstage	HIGH	CVE-2026-101916	@grpc/grpc-js	1.14.3	1.13.6, 1.14.5
+backstage	HIGH	CVE-2026-102276	brace-expansion	1.1.13	5.0.10, 3.0.7, 2.1.5, 1.1.19
+backstage	HIGH	CVE-2026-102276	brace-expansion	2.0.3	5.0.10, 3.0.7, 2.1.5, 1.1.19
+backstage	HIGH	CVE-2026-102276	brace-expansion	5.0.5	5.0.10, 3.0.7, 2.1.5, 1.1.19
+backstage	HIGH	CVE-2026-102276	npm-12	12.0.2-r2	12.1.0-r2
+velero-ui	HIGH	CVE-2026-102276	brace-expansion	2.0.1	5.0.10, 3.0.7, 2.1.5, 1.1.19
+backstage	HIGH	CVE-2026-102278	brace-expansion	1.1.13	5.0.11, 3.0.8, 2.1.6, 1.1.20
+backstage	HIGH	CVE-2026-102278	brace-expansion	2.0.3	5.0.11, 3.0.8, 2.1.6, 1.1.20
+backstage	HIGH	CVE-2026-102278	brace-expansion	5.0.5	5.0.11, 3.0.8, 2.1.6, 1.1.20
+backstage	HIGH	CVE-2026-102278	npm-12	12.0.2-r2	12.2.0-r1
+velero-ui	HIGH	CVE-2026-102278	brace-expansion	2.0.1	5.0.11, 3.0.8, 2.1.6, 1.1.20
+backstage	HIGH	CVE-2026-102282	adm-zip	0.5.17	0.6.1
+backstage	HIGH	CVE-2026-102990	basic-ftp	5.2.0	6.2.1
+k8s-monitoring	HIGH	CVE-2026-103111	pcre2	10.40-6.el9	10.40-7.el9_8
+k8s-monitoring	HIGH	CVE-2026-103111	pcre2-syntax	10.40-6.el9	10.40-7.el9_8
+keycloak	HIGH	CVE-2026-103111	pcre2	10.40-6.el9	10.40-7.el9_8
+keycloak	HIGH	CVE-2026-103111	pcre2-syntax	10.40-6.el9	10.40-7.el9_8
+kubecost	HIGH	CVE-2026-103111	pcre2	10.40-6.el9	10.40-7.el9_8
+kubecost	HIGH	CVE-2026-103111	pcre2-syntax	10.40-6.el9	10.40-7.el9_8
+loki,mimir,minio	HIGH	CVE-2026-103111	pcre2	10.40-6.el9	10.40-7.el9_8
+loki,mimir,minio	HIGH	CVE-2026-103111	pcre2-syntax	10.40-6.el9	10.40-7.el9_8
+mimir	HIGH	CVE-2026-103111	pcre2	10.47-r0	10.49-r0
+testkube	HIGH	CVE-2026-103111	libpcre2-8-0	10.42-1	10.42-1+deb12u2
+velero-ui	HIGH	CVE-2026-103111	libpcre2-8-0	10.42-1	10.42-1+deb12u2
+backstage	HIGH	CVE-2026-104850	@modelcontextprotocol/sdk	1.29.0	1.31.0
+backstage	HIGH	CVE-2026-104852	@graphql-tools/utils	8.13.1	12.0.1
+backstage	HIGH	CVE-2026-104852	@graphql-tools/utils	8.9.0	12.0.1
+backstage	HIGH	CVE-2026-106455	@backstage/plugin-techdocs-node	1.15.0	1.14.7, 1.15.5
+backstage	HIGH	CVE-2026-106488	@backstage/plugin-auth-backend-module-oidc-provider	0.4.16	0.4.20
+backstage	HIGH	CVE-2026-106492	@backstage/backend-defaults	0.12.2	0.17.8
+backstage	HIGH	CVE-2026-106492	@backstage/backend-defaults	0.13.3	0.17.8
+backstage	HIGH	CVE-2026-106492	@backstage/backend-defaults	0.15.2	0.17.8
+backstage	HIGH	CVE-2026-106492	@backstage/backend-defaults	0.16.0	0.17.8
+backstage	HIGH	CVE-2026-106492	@backstage/backend-defaults	0.17.0	0.17.8
+backstage	HIGH	CVE-2026-106492	@backstage/backend-defaults	0.17.1	0.17.8
+backstage	HIGH	CVE-2026-106492	@backstage/backend-defaults	0.17.3	0.17.8
+backstage	HIGH	CVE-2026-106498	@backstage/plugin-catalog-backend	3.5.0	3.9.1
+backstage	HIGH	CVE-2026-106498	@backstage/plugin-catalog-backend	3.7.0	3.9.1
+backstage	HIGH	CVE-2026-106498	@backstage/plugin-catalog-backend	3.8.0	3.9.1
+backstage	HIGH	CVE-2026-106500	@backstage/plugin-scaffolder-backend	4.0.0	4.1.0
+backstage	HIGH	CVE-2026-106503	@backstage/plugin-scaffolder-backend	4.0.0	3.3.1, 3.4.1, 4.0.3, 4.1.0
+backstage	HIGH	CVE-2026-106505	@backstage/plugin-techdocs-node	1.15.0	1.15.4
+backstage	HIGH	CVE-2026-106509	@backstage/plugin-techdocs-node	1.15.0	1.15.4
+backstage	HIGH	CVE-2026-106510	@backstage/plugin-techdocs-node	1.15.0	1.15.4
+backstage	HIGH	CVE-2026-106557	@backstage/plugin-techdocs-node	1.15.0	1.15.4
+backstage	HIGH	CVE-2026-106558	@backstage/plugin-techdocs-node	1.15.0	1.15.4
+mimir	HIGH	CVE-2026-11352	curl	8.17.0-r1	8.22.0-r0
+mimir	HIGH	CVE-2026-11352	libcurl	8.17.0-r1	8.22.0-r0
+mimir	HIGH	CVE-2026-11586	curl	8.17.0-r1	8.22.0-r0
+mimir	HIGH	CVE-2026-11586	libcurl	8.17.0-r1	8.22.0-r0
+k8s-monitoring	HIGH	CVE-2026-11822	sqlite-libs	3.34.1-10.el9_8	3.34.1-11.el9_8
+kubecost	HIGH	CVE-2026-11822	sqlite-libs	3.34.1-10.el9_8	3.34.1-11.el9_8
+kubecost	HIGH	CVE-2026-11822	sqlite-libs	3.34.1-9.el9_7	3.34.1-11.el9_8
+velero-ui	HIGH	CVE-2026-11822	libsqlite3-0	3.40.1-2+deb12u1	none
+k8s-monitoring	HIGH	CVE-2026-11824	sqlite-libs	3.34.1-10.el9_8	3.34.1-11.el9_8
+kubecost	HIGH	CVE-2026-11824	sqlite-libs	3.34.1-10.el9_8	3.34.1-11.el9_8
+kubecost	HIGH	CVE-2026-11824	sqlite-libs	3.34.1-9.el9_7	3.34.1-11.el9_8
+velero-ui	HIGH	CVE-2026-11824	libsqlite3-0	3.40.1-2+deb12u1	none
+kubecost	HIGH	CVE-2026-11940	python3.12	3.12.12-1.el9_7	3.12.14-1.el9_8
+kubecost	HIGH	CVE-2026-11940	python3.12-libs	3.12.12-1.el9_7	3.12.14-1.el9_8
+metallb	HIGH	CVE-2026-11940	pyc	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-11940	python3	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-11940	python3-pyc	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-11940	python3-pycache-pyc0	3.12.12-r0	3.12.14-r0
+velero-ui	HIGH	CVE-2026-11940	libpython3.11-minimal	3.11.2-6+deb12u6	none
+velero-ui	HIGH	CVE-2026-11940	libpython3.11-stdlib	3.11.2-6+deb12u6	none
+velero-ui	HIGH	CVE-2026-11940	python3.11	3.11.2-6+deb12u6	none
+velero-ui	HIGH	CVE-2026-11940	python3.11-minimal	3.11.2-6+deb12u6	none
+mimir	HIGH	CVE-2026-12064	curl	8.17.0-r1	8.22.0-r0
+mimir	HIGH	CVE-2026-12064	libcurl	8.17.0-r1	8.22.0-r0
+testkube	HIGH	CVE-2026-12064	curl	7.88.1-10+deb12u14	none
+testkube	HIGH	CVE-2026-12064	libcurl4	7.88.1-10+deb12u14	none
+velero-ui	HIGH	CVE-2026-12064	curl	7.88.1-10+deb12u12	none
+velero-ui	HIGH	CVE-2026-12064	libcurl3-gnutls	7.88.1-10+deb12u12	none
+velero-ui	HIGH	CVE-2026-12064	libcurl4	7.88.1-10+deb12u12	none
+backstage	HIGH	CVE-2026-12143	form-data	2.5.5	2.5.6, 3.0.5, 4.0.6
+backstage	HIGH	CVE-2026-12143	form-data	4.0.5	2.5.6, 3.0.5, 4.0.6
+backstage	HIGH	CVE-2026-12151	undici	5.29.0	6.27.0, 7.28.0, 8.5.0
+backstage	HIGH	CVE-2026-12151	undici	7.24.7	6.27.0, 7.28.0, 8.5.0
+backstage	HIGH	CVE-2026-12151	undici	7.25.0	6.27.0, 7.28.0, 8.5.0
+backstage	HIGH	CVE-2026-13149	brace-expansion	1.1.13	5.0.7, 1.1.16, 2.1.2
+backstage	HIGH	CVE-2026-13149	brace-expansion	2.0.3	5.0.7, 1.1.16, 2.1.2
+backstage	HIGH	CVE-2026-13149	brace-expansion	5.0.5	5.0.7, 1.1.16, 2.1.2
+velero-ui	HIGH	CVE-2026-13149	brace-expansion	2.0.1	5.0.7, 1.1.16, 2.1.2
+backstage	HIGH	CVE-2026-13676	fast-uri	3.1.0	4.0.1, 3.1.3, 2.4.2
+velero-ui	HIGH	CVE-2026-13676	fast-uri	3.0.6	4.0.1, 3.1.3, 2.4.2
+backstage	HIGH	CVE-2026-13697	undici	7.24.7	7.29.0, 8.9.0
+backstage	HIGH	CVE-2026-13697	undici	7.25.0	7.29.0, 8.9.0
+backstage	HIGH	CVE-2026-13697	undici	7.28.0	7.29.0, 8.9.0
+backstage	HIGH	CVE-2026-14257	brace-expansion	1.1.13	5.0.8, 3.0.3, 2.1.3, 1.1.17
+backstage	HIGH	CVE-2026-14257	brace-expansion	2.0.3	5.0.8, 3.0.3, 2.1.3, 1.1.17
+backstage	HIGH	CVE-2026-14257	brace-expansion	5.0.5	5.0.8, 3.0.3, 2.1.3, 1.1.17
+velero-ui	HIGH	CVE-2026-14257	brace-expansion	2.0.1	5.0.8, 3.0.3, 2.1.3, 1.1.17
+argocd	HIGH	CVE-2026-14456	libcrypto3	3.5.7-r0	3.5.8-r0
+argocd	HIGH	CVE-2026-14456	libssl3	3.5.7-r0	3.5.8-r0
+falco	HIGH	CVE-2026-14456	libcrypto3	3.5.1-r0	3.5.8-r0
+falco	HIGH	CVE-2026-14456	libcrypto3	3.6.1-r4	3.6.3-r5
+falco	HIGH	CVE-2026-14456	libssl3	3.5.1-r0	3.5.8-r0
+falco	HIGH	CVE-2026-14456	libssl3	3.6.1-r4	3.6.3-r5
+grafana	HIGH	CVE-2026-14456	libcrypto3	3.5.7-r0	3.5.8-r0
+grafana	HIGH	CVE-2026-14456	libssl3	3.5.7-r0	3.5.8-r0
+k8s-monitoring	HIGH	CVE-2026-14456	libcrypto3	3.5.4-r0	3.5.8-r0
+k8s-monitoring	HIGH	CVE-2026-14456	libssl3	3.5.4-r0	3.5.8-r0
+k8s-monitoring	HIGH	CVE-2026-14456	openssl-libs	1:3.5.5-4.el9_8	1:3.5.8-1.el9_8
+komoplane	HIGH	CVE-2026-14456	libcrypto3	3.5.5-r0	3.5.8-r0
+komoplane	HIGH	CVE-2026-14456	libssl3	3.5.5-r0	3.5.8-r0
+kubecost	HIGH	CVE-2026-14456	libcrypto3	3.5.7-r0	3.5.8-r0
+kubecost	HIGH	CVE-2026-14456	libssl3	3.5.7-r0	3.5.8-r0
+kubecost	HIGH	CVE-2026-14456	openssl	1:3.5.5-4.el9_8	1:3.5.8-1.el9_8
+kubecost	HIGH	CVE-2026-14456	openssl-libs	1:3.5.1-4.el9_7	1:3.5.8-1.el9_8
+kubecost	HIGH	CVE-2026-14456	openssl-libs	1:3.5.5-4.el9_8	1:3.5.8-1.el9_8
+metallb	HIGH	CVE-2026-14456	libcrypto3	3.5.5-r0	3.5.8-r0
+metallb	HIGH	CVE-2026-14456	libcrypto3	3.5.6-r0	3.5.8-r0
+metallb	HIGH	CVE-2026-14456	libssl3	3.5.5-r0	3.5.8-r0
+metallb	HIGH	CVE-2026-14456	libssl3	3.5.6-r0	3.5.8-r0
+mimir	HIGH	CVE-2026-14456	libcrypto3	3.5.6-r0	3.5.8-r0
+mimir	HIGH	CVE-2026-14456	libssl3	3.5.6-r0	3.5.8-r0
+testkube	HIGH	CVE-2026-14456	libcrypto3	3.5.7-r0	3.5.8-r0
+testkube	HIGH	CVE-2026-14456	libssl3	3.5.7-r0	3.5.8-r0
+backstage	HIGH	CVE-2026-1526	undici	5.29.0	6.24.0, 7.24.0
+kubecost	HIGH	CVE-2026-15308	python3.12	3.12.12-1.el9_7	3.12.13-3.el9_8.1
+kubecost	HIGH	CVE-2026-15308	python3.12-libs	3.12.12-1.el9_7	3.12.13-3.el9_8.1
+metallb	HIGH	CVE-2026-15308	pyc	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-15308	python3	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-15308	python3-pyc	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-15308	python3-pycache-pyc0	3.12.12-r0	3.12.14-r0
+velero-ui	HIGH	CVE-2026-15308	libpython3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2026-15308	libpython3.11-stdlib	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2026-15308	python3.11	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2026-15308	python3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+backstage	HIGH	CVE-2026-16221	fast-uri	3.1.0	2.4.3, 3.1.4, 4.1.1
+velero-ui	HIGH	CVE-2026-16221	fast-uri	3.0.6	2.4.3, 3.1.4, 4.1.1
+testkube	HIGH	CVE-2026-16742	libsystemd0	252.39-1~deb12u2	none
+testkube	HIGH	CVE-2026-16742	libudev1	252.39-1~deb12u2	none
+velero-ui	HIGH	CVE-2026-16742	libsystemd0	252.36-1~deb12u1	none
+velero-ui	HIGH	CVE-2026-16742	libsystemd0	252.38-1~deb12u1	none
+velero-ui	HIGH	CVE-2026-16742	libudev1	252.36-1~deb12u1	none
+velero-ui	HIGH	CVE-2026-16742	libudev1	252.38-1~deb12u1	none
+falco	HIGH	CVE-2026-17106	github.com/moby/go-archive	v0.1.0	0.3.0
+backstage	HIGH	CVE-2026-18446	fast-uri	3.1.0	2.4.4, 3.1.5, 4.1.2
+velero-ui	HIGH	CVE-2026-18446	fast-uri	3.0.6	2.4.4, 3.1.5, 4.1.2
+kubecost	HIGH	CVE-2026-19445	python3.12	3.12.12-1.el9_7	3.12.15-1.el9_8
+kubecost	HIGH	CVE-2026-19445	python3.12-libs	3.12.12-1.el9_7	3.12.15-1.el9_8
+metallb	HIGH	CVE-2026-19445	pyc	3.12.12-r0	3.12.15-r0
+metallb	HIGH	CVE-2026-19445	python3	3.12.12-r0	3.12.15-r0
+metallb	HIGH	CVE-2026-19445	python3-pyc	3.12.12-r0	3.12.15-r0
+metallb	HIGH	CVE-2026-19445	python3-pycache-pyc0	3.12.12-r0	3.12.15-r0
+velero-ui	HIGH	CVE-2026-19445	libpython3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2026-19445	libpython3.11-stdlib	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2026-19445	python3.11	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2026-19445	python3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+backstage	HIGH	CVE-2026-19481	@fastify/busboy	2.1.1	3.2.1
+backstage	HIGH	CVE-2026-19534	undici	7.24.7	6.28.1, 7.29.1, 8.10.2
+backstage	HIGH	CVE-2026-19534	undici	7.25.0	6.28.1, 7.29.1, 8.10.2
+backstage	HIGH	CVE-2026-19534	undici	7.28.0	6.28.1, 7.29.1, 8.10.2
+kubecost	HIGH	CVE-2026-19553	python3.12	3.12.12-1.el9_7	3.12.15-1.el9_8
+kubecost	HIGH	CVE-2026-19553	python3.12-libs	3.12.12-1.el9_7	3.12.15-1.el9_8
+metallb	HIGH	CVE-2026-19553	pyc	3.12.12-r0	3.12.15-r0
+metallb	HIGH	CVE-2026-19553	python3	3.12.12-r0	3.12.15-r0
+metallb	HIGH	CVE-2026-19553	python3-pyc	3.12.12-r0	3.12.15-r0
+metallb	HIGH	CVE-2026-19553	python3-pycache-pyc0	3.12.12-r0	3.12.15-r0
+velero-ui	HIGH	CVE-2026-19553	libpython3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2026-19553	libpython3.11-stdlib	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2026-19553	python3.11	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2026-19553	python3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2026-21441	urllib3	2.3.0	2.6.3
+grafana	HIGH	CVE-2026-21728	github.com/grafana/tempo	v1.5.1-0.20260910130453-bcfe9f230c1d	2.8.4, 2.9.2, 2.10.2
+falco	HIGH	CVE-2026-22184	zlib	1.3.1-r2	1.3.2-r0
+k8s-monitoring	HIGH	CVE-2026-22184	zlib	1.3.1-r2	1.3.2-r0
+komoplane	HIGH	CVE-2026-22184	zlib	1.3.1-r2	1.3.2-r0
+kubevirt-manager	HIGH	CVE-2026-22184	zlib	1.3.1-r1	1.3.2-r0
+metallb	HIGH	CVE-2026-22184	zlib	1.3.1-r2	1.3.2-r0
+metallb	HIGH	CVE-2026-22184	zlib-dev	1.3.1-r2	1.3.2-r0
+backstage	HIGH	CVE-2026-2229	undici	5.29.0	6.24.0, 7.24.0
+kubevirt-manager	HIGH	CVE-2026-22695	libpng	1.6.44-r0	1.6.54-r0
+kubevirt-manager	HIGH	CVE-2026-22801	libpng	1.6.44-r0	1.6.54-r0
+velero-ui	HIGH	CVE-2026-23490	pyasn1	0.6.1	0.6.2
+backstage	HIGH	CVE-2026-23745	tar	6.2.1	7.5.3
+velero-ui	HIGH	CVE-2026-23745	tar	6.2.0	7.5.3
+kyverno	HIGH	CVE-2026-23881	github.com/kyverno/kyverno	v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty	1.15.3, 1.16.3
+kubecost	HIGH	CVE-2026-23949	jaraco.context	5.3.0	6.1.0
+backstage	HIGH	CVE-2026-23950	tar	6.2.1	7.5.4
+velero-ui	HIGH	CVE-2026-23950	tar	6.2.0	7.5.4
+kubecost	HIGH	CVE-2026-24049	wheel	0.45.1	0.46.2
+velero-ui	HIGH	CVE-2026-24049	wheel	0.45.1	0.46.2
+falco	HIGH	CVE-2026-24051	go.opentelemetry.io/otel/sdk	v1.38.0	1.40.0
+falco	HIGH	CVE-2026-24051	go.opentelemetry.io/otel/sdk	v1.39.0	1.40.0
+kubecost	HIGH	CVE-2026-24051	go.opentelemetry.io/otel/sdk	v1.36.0	1.40.0
+kubecost	HIGH	CVE-2026-24051	go.opentelemetry.io/otel/sdk	v1.39.0	1.40.0
+testkube	HIGH	CVE-2026-24051	go.opentelemetry.io/otel/sdk	v1.39.0	1.40.0
+velero-ui	HIGH	CVE-2026-24486	python-multipart	0.0.19	0.0.22
+backstage	HIGH	CVE-2026-24842	tar	6.2.1	7.5.7
+velero-ui	HIGH	CVE-2026-24842	tar	6.2.0	7.5.7
+kubevirt-manager	HIGH	CVE-2026-25210	libexpat	2.6.4-r0	2.7.4-r0
+velero-ui	HIGH	CVE-2026-25210	libexpat1	2.5.0-1+deb12u1	2.5.0-1+deb12u4
+kubevirt-manager	HIGH	CVE-2026-25646	libpng	1.6.44-r0	1.6.55-r0
+argocd	HIGH	CVE-2026-25679	stdlib	v1.24.0	1.25.8, 1.26.1
+argocd	HIGH	CVE-2026-25679	stdlib	v1.25.3	1.25.8, 1.26.1
+falco	HIGH	CVE-2026-25679	stdlib	v1.17.13	1.25.8, 1.26.1
+falco	HIGH	CVE-2026-25679	stdlib	v1.20.8	1.25.8, 1.26.1
+falco	HIGH	CVE-2026-25679	stdlib	v1.25.1	1.25.8, 1.26.1
+falco	HIGH	CVE-2026-25679	stdlib	v1.25.6	1.25.8, 1.26.1
+k8s-monitoring	HIGH	CVE-2026-25679	stdlib	v1.23.10	1.25.8, 1.26.1
+k8s-monitoring	HIGH	CVE-2026-25679	stdlib	v1.23.6	1.25.8, 1.26.1
+k8s-monitoring	HIGH	CVE-2026-25679	stdlib	v1.24.9	1.25.8, 1.26.1
+kubecost	HIGH	CVE-2026-25679	stdlib	v1.24.11	1.25.8, 1.26.1
+kubecost	HIGH	CVE-2026-25679	stdlib	v1.25.5	1.25.8, 1.26.1
+kubevirt	HIGH	CVE-2026-25679	stdlib	v1.23.4	1.25.8, 1.26.1
+kubevirt	HIGH	CVE-2026-25679	stdlib	v1.23.6	1.25.8, 1.26.1
+kubevirt-manager	HIGH	CVE-2026-25679	stdlib	v1.23.3	1.25.8, 1.26.1
+testkube	HIGH	CVE-2026-25679	stdlib	v1.25.0	1.25.8, 1.26.1
+testkube	HIGH	CVE-2026-25679	stdlib	v1.26.0	1.25.8, 1.26.1
+velero	HIGH	CVE-2026-25679	stdlib	v1.23.6	1.25.8, 1.26.1
+velero	HIGH	CVE-2026-25679	stdlib	v1.25.7	1.25.8, 1.26.1
+velero-ui	HIGH	CVE-2026-25679	stdlib	v1.22.5	1.25.8, 1.26.1
+velero-ui	HIGH	CVE-2026-25679	stdlib	v1.23.7	1.25.8, 1.26.1
+argocd	HIGH	CVE-2026-25681	golang.org/x/net	v0.38.0	0.55.0
+argocd	HIGH	CVE-2026-25681	golang.org/x/net	v0.40.0	0.55.0
+falco	HIGH	CVE-2026-25681	golang.org/x/net	v0.14.0	0.55.0
+falco	HIGH	CVE-2026-25681	golang.org/x/net	v0.43.0	0.55.0
+falco	HIGH	CVE-2026-25681	golang.org/x/net	v0.48.0	0.55.0
+falco	HIGH	CVE-2026-25681	golang.org/x/net	v0.7.0	0.55.0
+k8s-monitoring	HIGH	CVE-2026-25681	golang.org/x/net	v0.23.0	0.55.0
+k8s-monitoring	HIGH	CVE-2026-25681	golang.org/x/net	v0.26.0	0.55.0
+k8s-monitoring	HIGH	CVE-2026-25681	golang.org/x/net	v0.30.0	0.55.0
+k8s-monitoring	HIGH	CVE-2026-25681	golang.org/x/net	v0.38.0	0.55.0
+komoplane	HIGH	CVE-2026-25681	golang.org/x/net	v0.47.0	0.55.0
+kubecost	HIGH	CVE-2026-25681	golang.org/x/net	v0.42.0	0.55.0
+kubecost	HIGH	CVE-2026-25681	golang.org/x/net	v0.48.0	0.55.0
+kubevirt-manager	HIGH	CVE-2026-25681	golang.org/x/net	v0.30.0	0.55.0
+metallb	HIGH	CVE-2026-25681	golang.org/x/net	v0.39.0	0.55.0
+metallb	HIGH	CVE-2026-25681	golang.org/x/net	v0.53.0	0.55.0
+testkube	HIGH	CVE-2026-25681	golang.org/x/net	v0.48.0	0.55.0
+velero	HIGH	CVE-2026-25681	golang.org/x/net	v0.37.0	0.55.0
+velero	HIGH	CVE-2026-25681	golang.org/x/net	v0.47.0	0.55.0
+velero-ui	HIGH	CVE-2026-25681	golang.org/x/net	v0.26.0	0.55.0
+falco	HIGH	CVE-2026-26157	busybox	1.37.0-r57	1.37.0-r58
+falco	HIGH	CVE-2026-26158	busybox	1.37.0-r57	1.37.0-r58
+backstage	HIGH	CVE-2026-26960	tar	6.2.1	7.5.8
+velero-ui	HIGH	CVE-2026-26960	tar	6.2.0	7.5.8
+velero-ui	HIGH	CVE-2026-26996	minimatch	9.0.3	10.2.1, 9.0.6, 8.0.5, 7.4.7, 6.2.1, 5.1.7, 4.2.4, 3.1.3
+k8s-monitoring	HIGH	CVE-2026-27135	nghttp2-libs	1.65.0-r0	1.68.1
+kubecost	HIGH	CVE-2026-27135	libnghttp2	1.43.0-6.el9	1.43.0-6.el9_7.1
+velero-ui	HIGH	CVE-2026-27135	libnghttp2-14	1.52.0-1+deb12u2	1.52.0-1+deb12u3
+argocd	HIGH	CVE-2026-27136	golang.org/x/net	v0.38.0	0.55.0
+argocd	HIGH	CVE-2026-27136	golang.org/x/net	v0.40.0	0.55.0
+falco	HIGH	CVE-2026-27136	golang.org/x/net	v0.14.0	0.55.0
+falco	HIGH	CVE-2026-27136	golang.org/x/net	v0.43.0	0.55.0
+falco	HIGH	CVE-2026-27136	golang.org/x/net	v0.48.0	0.55.0
+falco	HIGH	CVE-2026-27136	golang.org/x/net	v0.7.0	0.55.0
+k8s-monitoring	HIGH	CVE-2026-27136	golang.org/x/net	v0.23.0	0.55.0
+k8s-monitoring	HIGH	CVE-2026-27136	golang.org/x/net	v0.26.0	0.55.0
+k8s-monitoring	HIGH	CVE-2026-27136	golang.org/x/net	v0.30.0	0.55.0
+k8s-monitoring	HIGH	CVE-2026-27136	golang.org/x/net	v0.38.0	0.55.0
+komoplane	HIGH	CVE-2026-27136	golang.org/x/net	v0.47.0	0.55.0
+kubecost	HIGH	CVE-2026-27136	golang.org/x/net	v0.42.0	0.55.0
+kubecost	HIGH	CVE-2026-27136	golang.org/x/net	v0.48.0	0.55.0
+kubevirt-manager	HIGH	CVE-2026-27136	golang.org/x/net	v0.30.0	0.55.0
+metallb	HIGH	CVE-2026-27136	golang.org/x/net	v0.39.0	0.55.0
+metallb	HIGH	CVE-2026-27136	golang.org/x/net	v0.53.0	0.55.0
+testkube	HIGH	CVE-2026-27136	golang.org/x/net	v0.48.0	0.55.0
+velero	HIGH	CVE-2026-27136	golang.org/x/net	v0.37.0	0.55.0
+velero	HIGH	CVE-2026-27136	golang.org/x/net	v0.47.0	0.55.0
+velero-ui	HIGH	CVE-2026-27136	golang.org/x/net	v0.26.0	0.55.0
+testkube	HIGH	CVE-2026-27137	stdlib	v1.26.0	1.26.1
+argocd	HIGH	CVE-2026-27145	stdlib	v1.24.0	1.25.11, 1.26.4
+argocd	HIGH	CVE-2026-27145	stdlib	v1.25.3	1.25.11, 1.26.4
+argocd	HIGH	CVE-2026-27145	stdlib	v1.26.2	1.25.11, 1.26.4
+falco	HIGH	CVE-2026-27145	stdlib	v1.17.13	1.25.11, 1.26.4
+falco	HIGH	CVE-2026-27145	stdlib	v1.20.8	1.25.11, 1.26.4
+falco	HIGH	CVE-2026-27145	stdlib	v1.25.1	1.25.11, 1.26.4
+falco	HIGH	CVE-2026-27145	stdlib	v1.25.6	1.25.11, 1.26.4
+k8s-monitoring	HIGH	CVE-2026-27145	stdlib	v1.23.10	1.25.11, 1.26.4
+k8s-monitoring	HIGH	CVE-2026-27145	stdlib	v1.23.6	1.25.11, 1.26.4
+k8s-monitoring	HIGH	CVE-2026-27145	stdlib	v1.24.9	1.25.11, 1.26.4
+komoplane	HIGH	CVE-2026-27145	stdlib	v1.26.2	1.25.11, 1.26.4
+kubecost	HIGH	CVE-2026-27145	stdlib	v1.24.11	1.25.11, 1.26.4
+kubecost	HIGH	CVE-2026-27145	stdlib	v1.25.5	1.25.11, 1.26.4
+kubevirt	HIGH	CVE-2026-27145	stdlib	v1.23.4	1.25.11, 1.26.4
+kubevirt	HIGH	CVE-2026-27145	stdlib	v1.23.6	1.25.11, 1.26.4
+kubevirt-manager	HIGH	CVE-2026-27145	stdlib	v1.23.3	1.25.11, 1.26.4
+metallb	HIGH	CVE-2026-27145	stdlib	v1.25.8	1.25.11, 1.26.4
+metallb	HIGH	CVE-2026-27145	stdlib	v1.25.9	1.25.11, 1.26.4
+testkube	HIGH	CVE-2026-27145	stdlib	v1.25.0	1.25.11, 1.26.4
+testkube	HIGH	CVE-2026-27145	stdlib	v1.26.0	1.25.11, 1.26.4
+velero	HIGH	CVE-2026-27145	stdlib	v1.23.6	1.25.11, 1.26.4
+velero	HIGH	CVE-2026-27145	stdlib	v1.25.7	1.25.11, 1.26.4
+velero-ui	HIGH	CVE-2026-27145	stdlib	v1.22.5	1.25.11, 1.26.4
+velero-ui	HIGH	CVE-2026-27145	stdlib	v1.23.7	1.25.11, 1.26.4
+velero-ui	HIGH	CVE-2026-27903	minimatch	9.0.3	10.2.3, 9.0.7, 8.0.6, 7.4.8, 6.2.2, 5.1.8, 4.2.5, 3.1.3
+velero-ui	HIGH	CVE-2026-27904	minimatch	9.0.3	10.2.3, 9.0.7, 8.0.6, 7.4.8, 6.2.2, 5.1.8, 4.2.5, 3.1.4
+grafana	HIGH	CVE-2026-28377	github.com/grafana/tempo	v1.5.1-0.20260910130453-bcfe9f230c1d	2.10.3
+falco	HIGH	CVE-2026-28386	libcrypto3	3.6.1-r4	3.6.2-r0
+falco	HIGH	CVE-2026-28386	libssl3	3.6.1-r4	3.6.2-r0
+falco	HIGH	CVE-2026-28387	libcrypto3	3.5.1-r0	3.5.6-r0
+falco	HIGH	CVE-2026-28387	libcrypto3	3.6.1-r4	3.6.2-r0
+falco	HIGH	CVE-2026-28387	libssl3	3.5.1-r0	3.5.6-r0
+falco	HIGH	CVE-2026-28387	libssl3	3.6.1-r4	3.6.2-r0
+k8s-monitoring	HIGH	CVE-2026-28387	libcrypto3	3.5.4-r0	3.5.6-r0
+k8s-monitoring	HIGH	CVE-2026-28387	libssl3	3.5.4-r0	3.5.6-r0
+komoplane	HIGH	CVE-2026-28387	libcrypto3	3.5.5-r0	3.5.6-r0
+komoplane	HIGH	CVE-2026-28387	libssl3	3.5.5-r0	3.5.6-r0
+kubevirt	HIGH	CVE-2026-28387	libssl3	3.0.13-1~deb12u1	3.0.19-1~deb12u2
+kubevirt-manager	HIGH	CVE-2026-28387	libcrypto3	3.3.2-r1	3.3.7-r0
+kubevirt-manager	HIGH	CVE-2026-28387	libssl3	3.3.2-r1	3.3.7-r0
+metallb	HIGH	CVE-2026-28387	libcrypto3	3.5.5-r0	3.5.6-r0
+metallb	HIGH	CVE-2026-28387	libssl3	3.5.5-r0	3.5.6-r0
+velero-ui	HIGH	CVE-2026-28387	libssl3	3.0.15-1~deb12u1	3.0.19-1~deb12u2
+velero-ui	HIGH	CVE-2026-28387	libssl3	3.0.16-1~deb12u1	3.0.19-1~deb12u2
+velero-ui	HIGH	CVE-2026-28387	openssl	3.0.15-1~deb12u1	3.0.19-1~deb12u2
+velero-ui	HIGH	CVE-2026-28387	openssl	3.0.16-1~deb12u1	3.0.19-1~deb12u2
+falco	HIGH	CVE-2026-28388	libcrypto3	3.5.1-r0	3.5.6-r0
+falco	HIGH	CVE-2026-28388	libcrypto3	3.6.1-r4	3.6.2-r0
+falco	HIGH	CVE-2026-28388	libssl3	3.5.1-r0	3.5.6-r0
+falco	HIGH	CVE-2026-28388	libssl3	3.6.1-r4	3.6.2-r0
+k8s-monitoring	HIGH	CVE-2026-28388	libcrypto3	3.5.4-r0	3.5.6-r0
+k8s-monitoring	HIGH	CVE-2026-28388	libssl3	3.5.4-r0	3.5.6-r0
+komoplane	HIGH	CVE-2026-28388	libcrypto3	3.5.5-r0	3.5.6-r0
+komoplane	HIGH	CVE-2026-28388	libssl3	3.5.5-r0	3.5.6-r0
+kubevirt	HIGH	CVE-2026-28388	libssl3	3.0.13-1~deb12u1	3.0.19-1~deb12u2
+kubevirt-manager	HIGH	CVE-2026-28388	libcrypto3	3.3.2-r1	3.3.7-r0
+kubevirt-manager	HIGH	CVE-2026-28388	libssl3	3.3.2-r1	3.3.7-r0
+metallb	HIGH	CVE-2026-28388	libcrypto3	3.5.5-r0	3.5.6-r0
+metallb	HIGH	CVE-2026-28388	libssl3	3.5.5-r0	3.5.6-r0
+velero-ui	HIGH	CVE-2026-28388	libssl3	3.0.15-1~deb12u1	3.0.19-1~deb12u2
+velero-ui	HIGH	CVE-2026-28388	libssl3	3.0.16-1~deb12u1	3.0.19-1~deb12u2
+velero-ui	HIGH	CVE-2026-28388	openssl	3.0.15-1~deb12u1	3.0.19-1~deb12u2
+velero-ui	HIGH	CVE-2026-28388	openssl	3.0.16-1~deb12u1	3.0.19-1~deb12u2
+falco	HIGH	CVE-2026-28389	libcrypto3	3.5.1-r0	3.5.6-r0
+falco	HIGH	CVE-2026-28389	libcrypto3	3.6.1-r4	3.6.2-r0
+falco	HIGH	CVE-2026-28389	libssl3	3.5.1-r0	3.5.6-r0
+falco	HIGH	CVE-2026-28389	libssl3	3.6.1-r4	3.6.2-r0
+k8s-monitoring	HIGH	CVE-2026-28389	libcrypto3	3.5.4-r0	3.5.6-r0
+k8s-monitoring	HIGH	CVE-2026-28389	libssl3	3.5.4-r0	3.5.6-r0
+komoplane	HIGH	CVE-2026-28389	libcrypto3	3.5.5-r0	3.5.6-r0
+komoplane	HIGH	CVE-2026-28389	libssl3	3.5.5-r0	3.5.6-r0
+kubevirt	HIGH	CVE-2026-28389	libssl3	3.0.13-1~deb12u1	3.0.19-1~deb12u2
+kubevirt-manager	HIGH	CVE-2026-28389	libcrypto3	3.3.2-r1	3.3.7-r0
+kubevirt-manager	HIGH	CVE-2026-28389	libssl3	3.3.2-r1	3.3.7-r0
+metallb	HIGH	CVE-2026-28389	libcrypto3	3.5.5-r0	3.5.6-r0
+metallb	HIGH	CVE-2026-28389	libssl3	3.5.5-r0	3.5.6-r0
+velero-ui	HIGH	CVE-2026-28389	libssl3	3.0.15-1~deb12u1	3.0.19-1~deb12u2
+velero-ui	HIGH	CVE-2026-28389	libssl3	3.0.16-1~deb12u1	3.0.19-1~deb12u2
+velero-ui	HIGH	CVE-2026-28389	openssl	3.0.15-1~deb12u1	3.0.19-1~deb12u2
+velero-ui	HIGH	CVE-2026-28389	openssl	3.0.16-1~deb12u1	3.0.19-1~deb12u2
+falco	HIGH	CVE-2026-28390	libcrypto3	3.5.1-r0	3.5.6-r0
+falco	HIGH	CVE-2026-28390	libcrypto3	3.6.1-r4	3.6.2-r0
+falco	HIGH	CVE-2026-28390	libssl3	3.5.1-r0	3.5.6-r0
+falco	HIGH	CVE-2026-28390	libssl3	3.6.1-r4	3.6.2-r0
+k8s-monitoring	HIGH	CVE-2026-28390	libcrypto3	3.5.4-r0	3.5.6-r0
+k8s-monitoring	HIGH	CVE-2026-28390	libssl3	3.5.4-r0	3.5.6-r0
+komoplane	HIGH	CVE-2026-28390	libcrypto3	3.5.5-r0	3.5.6-r0
+komoplane	HIGH	CVE-2026-28390	libssl3	3.5.5-r0	3.5.6-r0
+kubevirt	HIGH	CVE-2026-28390	libssl3	3.0.13-1~deb12u1	3.0.19-1~deb12u2
+kubevirt-manager	HIGH	CVE-2026-28390	libcrypto3	3.3.2-r1	3.3.7-r0
+kubevirt-manager	HIGH	CVE-2026-28390	libssl3	3.3.2-r1	3.3.7-r0
+metallb	HIGH	CVE-2026-28390	libcrypto3	3.5.5-r0	3.5.6-r0
+metallb	HIGH	CVE-2026-28390	libssl3	3.5.5-r0	3.5.6-r0
+velero-ui	HIGH	CVE-2026-28390	libssl3	3.0.15-1~deb12u1	3.0.19-1~deb12u2
+velero-ui	HIGH	CVE-2026-28390	libssl3	3.0.16-1~deb12u1	3.0.19-1~deb12u2
+velero-ui	HIGH	CVE-2026-28390	openssl	3.0.15-1~deb12u1	3.0.19-1~deb12u2
+velero-ui	HIGH	CVE-2026-28390	openssl	3.0.16-1~deb12u1	3.0.19-1~deb12u2
+argo-rollouts	HIGH	CVE-2026-29181	go.opentelemetry.io/otel	v1.39.0	1.41.0
+falco	HIGH	CVE-2026-29181	go.opentelemetry.io/otel	v1.38.0	1.41.0
+falco	HIGH	CVE-2026-29181	go.opentelemetry.io/otel	v1.39.0	1.41.0
+kubecost	HIGH	CVE-2026-29181	go.opentelemetry.io/otel	v1.36.0	1.41.0
+kubecost	HIGH	CVE-2026-29181	go.opentelemetry.io/otel	v1.39.0	1.41.0
+metallb	HIGH	CVE-2026-29181	go.opentelemetry.io/otel	v1.40.0	1.41.0
+testkube	HIGH	CVE-2026-29181	go.opentelemetry.io/otel	v1.39.0	1.41.0
+backstage	HIGH	CVE-2026-29786	tar	6.2.1	7.5.10
+velero-ui	HIGH	CVE-2026-29786	tar	6.2.0	7.5.10
+velero-ui	HIGH	CVE-2026-30922	pyasn1	0.4.6	0.6.3
+velero-ui	HIGH	CVE-2026-30922	pyasn1	0.6.1	0.6.3
+backstage	HIGH	CVE-2026-31802	tar	6.2.1	7.5.11
+velero-ui	HIGH	CVE-2026-31802	tar	6.2.0	7.5.11
+argocd	HIGH	CVE-2026-32280	stdlib	v1.24.0	1.25.9, 1.26.2
+argocd	HIGH	CVE-2026-32280	stdlib	v1.25.3	1.25.9, 1.26.2
+falco	HIGH	CVE-2026-32280	stdlib	v1.17.13	1.25.9, 1.26.2
+falco	HIGH	CVE-2026-32280	stdlib	v1.20.8	1.25.9, 1.26.2
+falco	HIGH	CVE-2026-32280	stdlib	v1.25.1	1.25.9, 1.26.2
+falco	HIGH	CVE-2026-32280	stdlib	v1.25.6	1.25.9, 1.26.2
+k8s-monitoring	HIGH	CVE-2026-32280	stdlib	v1.23.10	1.25.9, 1.26.2
+k8s-monitoring	HIGH	CVE-2026-32280	stdlib	v1.23.6	1.25.9, 1.26.2
+k8s-monitoring	HIGH	CVE-2026-32280	stdlib	v1.24.9	1.25.9, 1.26.2
+kubecost	HIGH	CVE-2026-32280	stdlib	v1.24.11	1.25.9, 1.26.2
+kubecost	HIGH	CVE-2026-32280	stdlib	v1.25.5	1.25.9, 1.26.2
+kubevirt	HIGH	CVE-2026-32280	stdlib	v1.23.4	1.25.9, 1.26.2
+kubevirt	HIGH	CVE-2026-32280	stdlib	v1.23.6	1.25.9, 1.26.2
+kubevirt-manager	HIGH	CVE-2026-32280	stdlib	v1.23.3	1.25.9, 1.26.2
+metallb	HIGH	CVE-2026-32280	stdlib	v1.25.8	1.25.9, 1.26.2
+testkube	HIGH	CVE-2026-32280	stdlib	v1.25.0	1.25.9, 1.26.2
+testkube	HIGH	CVE-2026-32280	stdlib	v1.26.0	1.25.9, 1.26.2
+velero	HIGH	CVE-2026-32280	stdlib	v1.23.6	1.25.9, 1.26.2
+velero	HIGH	CVE-2026-32280	stdlib	v1.25.7	1.25.9, 1.26.2
+velero-ui	HIGH	CVE-2026-32280	stdlib	v1.22.5	1.25.9, 1.26.2
+velero-ui	HIGH	CVE-2026-32280	stdlib	v1.23.7	1.25.9, 1.26.2
+argocd	HIGH	CVE-2026-32281	stdlib	v1.24.0	1.25.9, 1.26.2
+argocd	HIGH	CVE-2026-32281	stdlib	v1.25.3	1.25.9, 1.26.2
+falco	HIGH	CVE-2026-32281	stdlib	v1.17.13	1.25.9, 1.26.2
+falco	HIGH	CVE-2026-32281	stdlib	v1.20.8	1.25.9, 1.26.2
+falco	HIGH	CVE-2026-32281	stdlib	v1.25.1	1.25.9, 1.26.2
+falco	HIGH	CVE-2026-32281	stdlib	v1.25.6	1.25.9, 1.26.2
+k8s-monitoring	HIGH	CVE-2026-32281	stdlib	v1.23.10	1.25.9, 1.26.2
+k8s-monitoring	HIGH	CVE-2026-32281	stdlib	v1.23.6	1.25.9, 1.26.2
+k8s-monitoring	HIGH	CVE-2026-32281	stdlib	v1.24.9	1.25.9, 1.26.2
+kubecost	HIGH	CVE-2026-32281	stdlib	v1.24.11	1.25.9, 1.26.2
+kubecost	HIGH	CVE-2026-32281	stdlib	v1.25.5	1.25.9, 1.26.2
+kubevirt	HIGH	CVE-2026-32281	stdlib	v1.23.4	1.25.9, 1.26.2
+kubevirt	HIGH	CVE-2026-32281	stdlib	v1.23.6	1.25.9, 1.26.2
+kubevirt-manager	HIGH	CVE-2026-32281	stdlib	v1.23.3	1.25.9, 1.26.2
+metallb	HIGH	CVE-2026-32281	stdlib	v1.25.8	1.25.9, 1.26.2
+testkube	HIGH	CVE-2026-32281	stdlib	v1.25.0	1.25.9, 1.26.2
+testkube	HIGH	CVE-2026-32281	stdlib	v1.26.0	1.25.9, 1.26.2
+velero	HIGH	CVE-2026-32281	stdlib	v1.23.6	1.25.9, 1.26.2
+velero	HIGH	CVE-2026-32281	stdlib	v1.25.7	1.25.9, 1.26.2
+velero-ui	HIGH	CVE-2026-32281	stdlib	v1.22.5	1.25.9, 1.26.2
+velero-ui	HIGH	CVE-2026-32281	stdlib	v1.23.7	1.25.9, 1.26.2
+argocd	HIGH	CVE-2026-32283	stdlib	v1.24.0	1.25.9, 1.26.2
+argocd	HIGH	CVE-2026-32283	stdlib	v1.25.3	1.25.9, 1.26.2
+falco	HIGH	CVE-2026-32283	stdlib	v1.17.13	1.25.9, 1.26.2
+falco	HIGH	CVE-2026-32283	stdlib	v1.20.8	1.25.9, 1.26.2
+falco	HIGH	CVE-2026-32283	stdlib	v1.25.1	1.25.9, 1.26.2
+falco	HIGH	CVE-2026-32283	stdlib	v1.25.6	1.25.9, 1.26.2
+k8s-monitoring	HIGH	CVE-2026-32283	stdlib	v1.23.10	1.25.9, 1.26.2
+k8s-monitoring	HIGH	CVE-2026-32283	stdlib	v1.23.6	1.25.9, 1.26.2
+k8s-monitoring	HIGH	CVE-2026-32283	stdlib	v1.24.9	1.25.9, 1.26.2
+kubecost	HIGH	CVE-2026-32283	stdlib	v1.24.11	1.25.9, 1.26.2
+kubecost	HIGH	CVE-2026-32283	stdlib	v1.25.5	1.25.9, 1.26.2
+kubevirt	HIGH	CVE-2026-32283	stdlib	v1.23.4	1.25.9, 1.26.2
+kubevirt	HIGH	CVE-2026-32283	stdlib	v1.23.6	1.25.9, 1.26.2
+kubevirt-manager	HIGH	CVE-2026-32283	stdlib	v1.23.3	1.25.9, 1.26.2
+metallb	HIGH	CVE-2026-32283	stdlib	v1.25.8	1.25.9, 1.26.2
+testkube	HIGH	CVE-2026-32283	stdlib	v1.25.0	1.25.9, 1.26.2
+testkube	HIGH	CVE-2026-32283	stdlib	v1.26.0	1.25.9, 1.26.2
+velero	HIGH	CVE-2026-32283	stdlib	v1.23.6	1.25.9, 1.26.2
+velero	HIGH	CVE-2026-32283	stdlib	v1.25.7	1.25.9, 1.26.2
+velero-ui	HIGH	CVE-2026-32283	stdlib	v1.22.5	1.25.9, 1.26.2
+velero-ui	HIGH	CVE-2026-32283	stdlib	v1.23.7	1.25.9, 1.26.2
+testkube	HIGH	CVE-2026-32285	github.com/buger/jsonparser	v1.1.1	1.1.2
+falco	HIGH	CVE-2026-32316	jq	1.8.1-r4	1.8.1-r5
+k8s-monitoring	HIGH	CVE-2026-32316	jq	1.8.0-r0	1.8.2-r0
+kubecost	HIGH	CVE-2026-32316	jq	1.8.1-r0	1.8.2-r0
+kubecost	HIGH	CVE-2026-33487	github.com/russellhaering/goxmldsig	v1.5.0	1.6.0
+k8s-monitoring	HIGH	CVE-2026-33630	c-ares	1.34.5-r0	1.34.8-r0
+kubecost	HIGH	CVE-2026-33630	c-ares	1.34.6-r0	1.34.8-r0
+metallb	HIGH	CVE-2026-33630	c-ares	1.34.6-r0	1.34.8-r0
+mimir	HIGH	CVE-2026-33630	c-ares	1.34.6-r0	1.34.8-r0
+testkube	HIGH	CVE-2026-33810	stdlib	v1.26.0	1.26.2
+argocd	HIGH	CVE-2026-33811	stdlib	v1.24.0	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-33811	stdlib	v1.25.3	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-33811	stdlib	v1.26.2	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-33811	stdlib	v1.17.13	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-33811	stdlib	v1.20.8	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-33811	stdlib	v1.25.1	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-33811	stdlib	v1.25.6	1.25.10, 1.26.3
+k8s-monitoring	HIGH	CVE-2026-33811	stdlib	v1.23.10	1.25.10, 1.26.3
+k8s-monitoring	HIGH	CVE-2026-33811	stdlib	v1.23.6	1.25.10, 1.26.3
+k8s-monitoring	HIGH	CVE-2026-33811	stdlib	v1.24.9	1.25.10, 1.26.3
+komoplane	HIGH	CVE-2026-33811	stdlib	v1.26.2	1.25.10, 1.26.3
+kubecost	HIGH	CVE-2026-33811	stdlib	v1.24.11	1.25.10, 1.26.3
+kubecost	HIGH	CVE-2026-33811	stdlib	v1.25.5	1.25.10, 1.26.3
+kubevirt	HIGH	CVE-2026-33811	stdlib	v1.23.4	1.25.10, 1.26.3
+kubevirt	HIGH	CVE-2026-33811	stdlib	v1.23.6	1.25.10, 1.26.3
+kubevirt-manager	HIGH	CVE-2026-33811	stdlib	v1.23.3	1.25.10, 1.26.3
+metallb	HIGH	CVE-2026-33811	stdlib	v1.25.8	1.25.10, 1.26.3
+metallb	HIGH	CVE-2026-33811	stdlib	v1.25.9	1.25.10, 1.26.3
+testkube	HIGH	CVE-2026-33811	stdlib	v1.25.0	1.25.10, 1.26.3
+testkube	HIGH	CVE-2026-33811	stdlib	v1.26.0	1.25.10, 1.26.3
+velero	HIGH	CVE-2026-33811	stdlib	v1.23.6	1.25.10, 1.26.3
+velero	HIGH	CVE-2026-33811	stdlib	v1.25.7	1.25.10, 1.26.3
+velero-ui	HIGH	CVE-2026-33811	stdlib	v1.22.5	1.25.10, 1.26.3
+velero-ui	HIGH	CVE-2026-33811	stdlib	v1.23.7	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-33814	golang.org/x/net	v0.38.0	0.53.0
+argocd	HIGH	CVE-2026-33814	golang.org/x/net	v0.40.0	0.53.0
+argocd	HIGH	CVE-2026-33814	stdlib	v1.24.0	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-33814	stdlib	v1.25.3	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-33814	stdlib	v1.26.2	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-33814	golang.org/x/net	v0.14.0	0.53.0
+falco	HIGH	CVE-2026-33814	golang.org/x/net	v0.43.0	0.53.0
+falco	HIGH	CVE-2026-33814	golang.org/x/net	v0.48.0	0.53.0
+falco	HIGH	CVE-2026-33814	golang.org/x/net	v0.7.0	0.53.0
+falco	HIGH	CVE-2026-33814	stdlib	v1.17.13	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-33814	stdlib	v1.20.8	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-33814	stdlib	v1.25.1	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-33814	stdlib	v1.25.6	1.25.10, 1.26.3
+k8s-monitoring	HIGH	CVE-2026-33814	golang.org/x/net	v0.23.0	0.53.0
+k8s-monitoring	HIGH	CVE-2026-33814	golang.org/x/net	v0.26.0	0.53.0
+k8s-monitoring	HIGH	CVE-2026-33814	golang.org/x/net	v0.30.0	0.53.0
+k8s-monitoring	HIGH	CVE-2026-33814	golang.org/x/net	v0.38.0	0.53.0
+k8s-monitoring	HIGH	CVE-2026-33814	stdlib	v1.23.10	1.25.10, 1.26.3
+k8s-monitoring	HIGH	CVE-2026-33814	stdlib	v1.23.6	1.25.10, 1.26.3
+k8s-monitoring	HIGH	CVE-2026-33814	stdlib	v1.24.9	1.25.10, 1.26.3
+komoplane	HIGH	CVE-2026-33814	golang.org/x/net	v0.47.0	0.53.0
+komoplane	HIGH	CVE-2026-33814	stdlib	v1.26.2	1.25.10, 1.26.3
+kubecost	HIGH	CVE-2026-33814	golang.org/x/net	v0.42.0	0.53.0
+kubecost	HIGH	CVE-2026-33814	golang.org/x/net	v0.48.0	0.53.0
+kubecost	HIGH	CVE-2026-33814	stdlib	v1.24.11	1.25.10, 1.26.3
+kubecost	HIGH	CVE-2026-33814	stdlib	v1.25.5	1.25.10, 1.26.3
+kubevirt	HIGH	CVE-2026-33814	stdlib	v1.23.4	1.25.10, 1.26.3
+kubevirt	HIGH	CVE-2026-33814	stdlib	v1.23.6	1.25.10, 1.26.3
+kubevirt-manager	HIGH	CVE-2026-33814	golang.org/x/net	v0.30.0	0.53.0
+kubevirt-manager	HIGH	CVE-2026-33814	stdlib	v1.23.3	1.25.10, 1.26.3
+metallb	HIGH	CVE-2026-33814	golang.org/x/net	v0.39.0	0.53.0
+metallb	HIGH	CVE-2026-33814	stdlib	v1.25.8	1.25.10, 1.26.3
+metallb	HIGH	CVE-2026-33814	stdlib	v1.25.9	1.25.10, 1.26.3
+testkube	HIGH	CVE-2026-33814	golang.org/x/net	v0.48.0	0.53.0
+testkube	HIGH	CVE-2026-33814	stdlib	v1.25.0	1.25.10, 1.26.3
+testkube	HIGH	CVE-2026-33814	stdlib	v1.26.0	1.25.10, 1.26.3
+velero	HIGH	CVE-2026-33814	golang.org/x/net	v0.37.0	0.53.0
+velero	HIGH	CVE-2026-33814	golang.org/x/net	v0.47.0	0.53.0
+velero	HIGH	CVE-2026-33814	stdlib	v1.23.6	1.25.10, 1.26.3
+velero	HIGH	CVE-2026-33814	stdlib	v1.25.7	1.25.10, 1.26.3
+velero-ui	HIGH	CVE-2026-33814	golang.org/x/net	v0.26.0	0.53.0
+velero-ui	HIGH	CVE-2026-33814	stdlib	v1.22.5	1.25.10, 1.26.3
+velero-ui	HIGH	CVE-2026-33814	stdlib	v1.23.7	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-33818	stdlib	v1.24.0	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-33818	stdlib	v1.25.3	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-33818	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-33818	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-33818	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-33818	stdlib	v1.17.13	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-33818	stdlib	v1.20.8	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-33818	stdlib	v1.25.1	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-33818	stdlib	v1.25.6	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-33818	stdlib	v1.23.10	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-33818	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-33818	stdlib	v1.24.9	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-33818	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-33818	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+komoplane	HIGH	CVE-2026-33818	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-33818	stdlib	v1.24.11	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-33818	stdlib	v1.25.5	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-33818	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt	HIGH	CVE-2026-33818	stdlib	v1.23.4	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt	HIGH	CVE-2026-33818	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt-manager	HIGH	CVE-2026-33818	stdlib	v1.23.3	1.25.13, 1.26.6, 1.27.0-rc.3
+loki	HIGH	CVE-2026-33818	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+metallb	HIGH	CVE-2026-33818	stdlib	v1.25.8	1.25.13, 1.26.6, 1.27.0-rc.3
+metallb	HIGH	CVE-2026-33818	stdlib	v1.25.9	1.25.13, 1.26.6, 1.27.0-rc.3
+mimir	HIGH	CVE-2026-33818	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-33818	stdlib	v1.25.0	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-33818	stdlib	v1.26.0	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-33818	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-33818	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-33818	stdlib	v1.25.11	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-33818	stdlib	v1.25.7	1.25.13, 1.26.6, 1.27.0-rc.3
+velero-ui	HIGH	CVE-2026-33818	stdlib	v1.22.5	1.25.13, 1.26.6, 1.27.0-rc.3
+velero-ui	HIGH	CVE-2026-33818	stdlib	v1.23.7	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-33845	gnutls	3.8.3-9.el9	3.8.10-4.el9_8
+kubecost	HIGH	CVE-2026-33846	gnutls	3.8.3-9.el9	3.8.10-4.el9_8
+velero-ui	HIGH	CVE-2026-33846	libgnutls30	3.7.9-2+deb12u4	3.7.9-2+deb12u7
+velero-ui	HIGH	CVE-2026-33846	libgnutls30	3.7.9-2+deb12u5	3.7.9-2+deb12u7
+testkube	HIGH	CVE-2026-34204	github.com/minio/minio	v0.0.0-20251015172955-9e49d5e7a648+dirty	none
+falco	HIGH	CVE-2026-34986	github.com/go-jose/go-jose/v4	v4.1.1	4.1.4
+falco	HIGH	CVE-2026-34986	github.com/go-jose/go-jose/v4	v4.1.3	4.1.4
+kubecost	HIGH	CVE-2026-34986	github.com/go-jose/go-jose/v4	v4.0.5	4.1.4
+testkube	HIGH	CVE-2026-34986	github.com/go-jose/go-jose/v4	v4.1.3	4.1.4
+falco	HIGH	CVE-2026-35469	github.com/moby/spdystream	v0.5.0	0.5.1
+k8s-monitoring	HIGH	CVE-2026-35469	github.com/moby/spdystream	v0.2.0	0.5.1
+k8s-monitoring	HIGH	CVE-2026-35469	github.com/moby/spdystream	v0.4.0	0.5.1
+k8s-monitoring	HIGH	CVE-2026-35469	github.com/moby/spdystream	v0.5.0	0.5.1
+kubevirt-manager	HIGH	CVE-2026-35469	github.com/moby/spdystream	v0.5.0	0.5.1
+velero-ui	HIGH	CVE-2026-35469	github.com/moby/spdystream	v0.4.0	0.5.1
+metallb	HIGH	CVE-2026-3644	pyc	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-3644	python3	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-3644	python3-pyc	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-3644	python3-pycache-pyc0	3.12.12-r0	3.12.14-r0
+velero-ui	HIGH	CVE-2026-3644	libpython3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u8
+velero-ui	HIGH	CVE-2026-3644	libpython3.11-stdlib	3.11.2-6+deb12u6	3.11.2-6+deb12u8
+velero-ui	HIGH	CVE-2026-3644	python3.11	3.11.2-6+deb12u6	3.11.2-6+deb12u8
+velero-ui	HIGH	CVE-2026-3644	python3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u8
+velero-ui	HIGH	CVE-2026-3833	libgnutls30	3.7.9-2+deb12u4	3.7.9-2+deb12u7
+velero-ui	HIGH	CVE-2026-3833	libgnutls30	3.7.9-2+deb12u5	3.7.9-2+deb12u7
+falco	HIGH	CVE-2026-38754	busybox	1.37.0-r57	1.38.0-r0
+backstage	HIGH	CVE-2026-39244	adm-zip	0.5.17	0.6.0
+loki,mimir,minio	HIGH	CVE-2026-39414	github.com/minio/minio	v0.0.0-20260903125440-9b11dc9469e6	none
+testkube	HIGH	CVE-2026-39414	github.com/minio/minio	v0.0.0-20251015172955-9e49d5e7a648+dirty	none
+argocd	HIGH	CVE-2026-39820	stdlib	v1.24.0	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-39820	stdlib	v1.25.3	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-39820	stdlib	v1.26.2	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-39820	stdlib	v1.17.13	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-39820	stdlib	v1.20.8	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-39820	stdlib	v1.25.1	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-39820	stdlib	v1.25.6	1.25.10, 1.26.3
+k8s-monitoring	HIGH	CVE-2026-39820	stdlib	v1.23.10	1.25.10, 1.26.3
+k8s-monitoring	HIGH	CVE-2026-39820	stdlib	v1.23.6	1.25.10, 1.26.3
+k8s-monitoring	HIGH	CVE-2026-39820	stdlib	v1.24.9	1.25.10, 1.26.3
+komoplane	HIGH	CVE-2026-39820	stdlib	v1.26.2	1.25.10, 1.26.3
+kubecost	HIGH	CVE-2026-39820	stdlib	v1.24.11	1.25.10, 1.26.3
+kubecost	HIGH	CVE-2026-39820	stdlib	v1.25.5	1.25.10, 1.26.3
+kubevirt	HIGH	CVE-2026-39820	stdlib	v1.23.4	1.25.10, 1.26.3
+kubevirt	HIGH	CVE-2026-39820	stdlib	v1.23.6	1.25.10, 1.26.3
+kubevirt-manager	HIGH	CVE-2026-39820	stdlib	v1.23.3	1.25.10, 1.26.3
+metallb	HIGH	CVE-2026-39820	stdlib	v1.25.8	1.25.10, 1.26.3
+metallb	HIGH	CVE-2026-39820	stdlib	v1.25.9	1.25.10, 1.26.3
+testkube	HIGH	CVE-2026-39820	stdlib	v1.25.0	1.25.10, 1.26.3
+testkube	HIGH	CVE-2026-39820	stdlib	v1.26.0	1.25.10, 1.26.3
+velero	HIGH	CVE-2026-39820	stdlib	v1.23.6	1.25.10, 1.26.3
+velero	HIGH	CVE-2026-39820	stdlib	v1.25.7	1.25.10, 1.26.3
+velero-ui	HIGH	CVE-2026-39820	stdlib	v1.22.5	1.25.10, 1.26.3
+velero-ui	HIGH	CVE-2026-39820	stdlib	v1.23.7	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-39821	golang.org/x/net	v0.38.0	0.55.0
+argocd	HIGH	CVE-2026-39821	golang.org/x/net	v0.40.0	0.55.0
+argocd	HIGH	CVE-2026-39821	stdlib	v1.24.0	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-39821	stdlib	v1.25.3	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-39821	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-39821	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-39821	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-39821	golang.org/x/net	v0.14.0	0.55.0
+falco	HIGH	CVE-2026-39821	golang.org/x/net	v0.43.0	0.55.0
+falco	HIGH	CVE-2026-39821	golang.org/x/net	v0.48.0	0.55.0
+falco	HIGH	CVE-2026-39821	golang.org/x/net	v0.7.0	0.55.0
+falco	HIGH	CVE-2026-39821	stdlib	v1.17.13	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-39821	stdlib	v1.20.8	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-39821	stdlib	v1.25.1	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-39821	stdlib	v1.25.6	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-39821	golang.org/x/net	v0.23.0	0.55.0
+k8s-monitoring	HIGH	CVE-2026-39821	golang.org/x/net	v0.26.0	0.55.0
+k8s-monitoring	HIGH	CVE-2026-39821	golang.org/x/net	v0.30.0	0.55.0
+k8s-monitoring	HIGH	CVE-2026-39821	golang.org/x/net	v0.38.0	0.55.0
+k8s-monitoring	HIGH	CVE-2026-39821	stdlib	v1.23.10	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-39821	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-39821	stdlib	v1.24.9	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-39821	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-39821	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+komoplane	HIGH	CVE-2026-39821	golang.org/x/net	v0.47.0	0.55.0
+komoplane	HIGH	CVE-2026-39821	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-39821	golang.org/x/net	v0.42.0	0.55.0
+kubecost	HIGH	CVE-2026-39821	golang.org/x/net	v0.48.0	0.55.0
+kubecost	HIGH	CVE-2026-39821	stdlib	v1.24.11	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-39821	stdlib	v1.25.5	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-39821	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt	HIGH	CVE-2026-39821	stdlib	v1.23.4	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt	HIGH	CVE-2026-39821	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt-manager	HIGH	CVE-2026-39821	golang.org/x/net	v0.30.0	0.55.0
+kubevirt-manager	HIGH	CVE-2026-39821	stdlib	v1.23.3	1.25.13, 1.26.6, 1.27.0-rc.3
+loki	HIGH	CVE-2026-39821	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+metallb	HIGH	CVE-2026-39821	golang.org/x/net	v0.39.0	0.55.0
+metallb	HIGH	CVE-2026-39821	golang.org/x/net	v0.53.0	0.55.0
+metallb	HIGH	CVE-2026-39821	stdlib	v1.25.8	1.25.13, 1.26.6, 1.27.0-rc.3
+metallb	HIGH	CVE-2026-39821	stdlib	v1.25.9	1.25.13, 1.26.6, 1.27.0-rc.3
+mimir	HIGH	CVE-2026-39821	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-39821	golang.org/x/net	v0.48.0	0.55.0
+testkube	HIGH	CVE-2026-39821	stdlib	v1.25.0	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-39821	stdlib	v1.26.0	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-39821	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-39821	golang.org/x/net	v0.37.0	0.55.0
+velero	HIGH	CVE-2026-39821	golang.org/x/net	v0.47.0	0.55.0
+velero	HIGH	CVE-2026-39821	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-39821	stdlib	v1.25.11	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-39821	stdlib	v1.25.7	1.25.13, 1.26.6, 1.27.0-rc.3
+velero-ui	HIGH	CVE-2026-39821	golang.org/x/net	v0.26.0	0.55.0
+velero-ui	HIGH	CVE-2026-39821	stdlib	v1.22.5	1.25.13, 1.26.6, 1.27.0-rc.3
+velero-ui	HIGH	CVE-2026-39821	stdlib	v1.23.7	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-39822	stdlib	v1.24.0	1.25.12, 1.26.5, 1.27.0-rc.2
+argocd	HIGH	CVE-2026-39822	stdlib	v1.25.3	1.25.12, 1.26.5, 1.27.0-rc.2
+argocd	HIGH	CVE-2026-39822	stdlib	v1.26.2	1.25.12, 1.26.5, 1.27.0-rc.2
+argocd	HIGH	CVE-2026-39822	stdlib	v1.26.4	1.25.12, 1.26.5, 1.27.0-rc.2
+falco	HIGH	CVE-2026-39822	stdlib	v1.17.13	1.25.12, 1.26.5, 1.27.0-rc.2
+falco	HIGH	CVE-2026-39822	stdlib	v1.20.8	1.25.12, 1.26.5, 1.27.0-rc.2
+falco	HIGH	CVE-2026-39822	stdlib	v1.25.1	1.25.12, 1.26.5, 1.27.0-rc.2
+falco	HIGH	CVE-2026-39822	stdlib	v1.25.6	1.25.12, 1.26.5, 1.27.0-rc.2
+k8s-monitoring	HIGH	CVE-2026-39822	stdlib	v1.23.10	1.25.12, 1.26.5, 1.27.0-rc.2
+k8s-monitoring	HIGH	CVE-2026-39822	stdlib	v1.23.6	1.25.12, 1.26.5, 1.27.0-rc.2
+k8s-monitoring	HIGH	CVE-2026-39822	stdlib	v1.24.9	1.25.12, 1.26.5, 1.27.0-rc.2
+k8s-monitoring	HIGH	CVE-2026-39822	stdlib	v1.26.4	1.25.12, 1.26.5, 1.27.0-rc.2
+komoplane	HIGH	CVE-2026-39822	stdlib	v1.26.2	1.25.12, 1.26.5, 1.27.0-rc.2
+kubecost	HIGH	CVE-2026-39822	stdlib	v1.24.11	1.25.12, 1.26.5, 1.27.0-rc.2
+kubecost	HIGH	CVE-2026-39822	stdlib	v1.25.5	1.25.12, 1.26.5, 1.27.0-rc.2
+kubecost	HIGH	CVE-2026-39822	stdlib	v1.26.4	1.25.12, 1.26.5, 1.27.0-rc.2
+kubevirt	HIGH	CVE-2026-39822	stdlib	v1.23.4	1.25.12, 1.26.5, 1.27.0-rc.2
+kubevirt	HIGH	CVE-2026-39822	stdlib	v1.23.6	1.25.12, 1.26.5, 1.27.0-rc.2
+kubevirt-manager	HIGH	CVE-2026-39822	stdlib	v1.23.3	1.25.12, 1.26.5, 1.27.0-rc.2
+metallb	HIGH	CVE-2026-39822	stdlib	v1.25.8	1.25.12, 1.26.5, 1.27.0-rc.2
+metallb	HIGH	CVE-2026-39822	stdlib	v1.25.9	1.25.12, 1.26.5, 1.27.0-rc.2
+testkube	HIGH	CVE-2026-39822	stdlib	v1.25.0	1.25.12, 1.26.5, 1.27.0-rc.2
+testkube	HIGH	CVE-2026-39822	stdlib	v1.26.0	1.25.12, 1.26.5, 1.27.0-rc.2
+velero	HIGH	CVE-2026-39822	stdlib	v1.23.6	1.25.12, 1.26.5, 1.27.0-rc.2
+velero	HIGH	CVE-2026-39822	stdlib	v1.25.11	1.25.12, 1.26.5, 1.27.0-rc.2
+velero	HIGH	CVE-2026-39822	stdlib	v1.25.7	1.25.12, 1.26.5, 1.27.0-rc.2
+velero-ui	HIGH	CVE-2026-39822	stdlib	v1.22.5	1.25.12, 1.26.5, 1.27.0-rc.2
+velero-ui	HIGH	CVE-2026-39822	stdlib	v1.23.7	1.25.12, 1.26.5, 1.27.0-rc.2
+argocd	HIGH	CVE-2026-39828	golang.org/x/crypto	v0.36.0	0.52.0
+falco	HIGH	CVE-2026-39828	golang.org/x/crypto	v0.12.0	0.52.0
+falco	HIGH	CVE-2026-39828	golang.org/x/crypto	v0.41.0	0.52.0
+falco	HIGH	CVE-2026-39828	golang.org/x/crypto	v0.46.0	0.52.0
+komoplane	HIGH	CVE-2026-39828	golang.org/x/crypto	v0.45.0	0.52.0
+kubecost	HIGH	CVE-2026-39828	golang.org/x/crypto	v0.40.0	0.52.0
+kubecost	HIGH	CVE-2026-39828	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-39828	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-39828	golang.org/x/crypto	v0.47.0	0.52.0
+argocd	HIGH	CVE-2026-39829	golang.org/x/crypto	v0.36.0	0.52.0
+falco	HIGH	CVE-2026-39829	golang.org/x/crypto	v0.12.0	0.52.0
+falco	HIGH	CVE-2026-39829	golang.org/x/crypto	v0.41.0	0.52.0
+falco	HIGH	CVE-2026-39829	golang.org/x/crypto	v0.46.0	0.52.0
+komoplane	HIGH	CVE-2026-39829	golang.org/x/crypto	v0.45.0	0.52.0
+kubecost	HIGH	CVE-2026-39829	golang.org/x/crypto	v0.40.0	0.52.0
+kubecost	HIGH	CVE-2026-39829	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-39829	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-39829	golang.org/x/crypto	v0.47.0	0.52.0
+argocd	HIGH	CVE-2026-39830	golang.org/x/crypto	v0.36.0	0.52.0
+falco	HIGH	CVE-2026-39830	golang.org/x/crypto	v0.12.0	0.52.0
+falco	HIGH	CVE-2026-39830	golang.org/x/crypto	v0.41.0	0.52.0
+falco	HIGH	CVE-2026-39830	golang.org/x/crypto	v0.46.0	0.52.0
+komoplane	HIGH	CVE-2026-39830	golang.org/x/crypto	v0.45.0	0.52.0
+kubecost	HIGH	CVE-2026-39830	golang.org/x/crypto	v0.40.0	0.52.0
+kubecost	HIGH	CVE-2026-39830	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-39830	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-39830	golang.org/x/crypto	v0.47.0	0.52.0
+argocd	HIGH	CVE-2026-39831	golang.org/x/crypto	v0.36.0	0.52.0
+falco	HIGH	CVE-2026-39831	golang.org/x/crypto	v0.12.0	0.52.0
+falco	HIGH	CVE-2026-39831	golang.org/x/crypto	v0.41.0	0.52.0
+falco	HIGH	CVE-2026-39831	golang.org/x/crypto	v0.46.0	0.52.0
+komoplane	HIGH	CVE-2026-39831	golang.org/x/crypto	v0.45.0	0.52.0
+kubecost	HIGH	CVE-2026-39831	golang.org/x/crypto	v0.40.0	0.52.0
+kubecost	HIGH	CVE-2026-39831	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-39831	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-39831	golang.org/x/crypto	v0.47.0	0.52.0
+argocd	HIGH	CVE-2026-39832	golang.org/x/crypto	v0.36.0	0.52.0
+falco	HIGH	CVE-2026-39832	golang.org/x/crypto	v0.12.0	0.52.0
+falco	HIGH	CVE-2026-39832	golang.org/x/crypto	v0.41.0	0.52.0
+falco	HIGH	CVE-2026-39832	golang.org/x/crypto	v0.46.0	0.52.0
+komoplane	HIGH	CVE-2026-39832	golang.org/x/crypto	v0.45.0	0.52.0
+kubecost	HIGH	CVE-2026-39832	golang.org/x/crypto	v0.40.0	0.52.0
+kubecost	HIGH	CVE-2026-39832	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-39832	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-39832	golang.org/x/crypto	v0.47.0	0.52.0
+argocd	HIGH	CVE-2026-39835	golang.org/x/crypto	v0.36.0	0.52.0
+falco	HIGH	CVE-2026-39835	golang.org/x/crypto	v0.12.0	0.52.0
+falco	HIGH	CVE-2026-39835	golang.org/x/crypto	v0.41.0	0.52.0
+falco	HIGH	CVE-2026-39835	golang.org/x/crypto	v0.46.0	0.52.0
+komoplane	HIGH	CVE-2026-39835	golang.org/x/crypto	v0.45.0	0.52.0
+kubecost	HIGH	CVE-2026-39835	golang.org/x/crypto	v0.40.0	0.52.0
+kubecost	HIGH	CVE-2026-39835	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-39835	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-39835	golang.org/x/crypto	v0.47.0	0.52.0
+argocd	HIGH	CVE-2026-39836	stdlib	v1.24.0	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-39836	stdlib	v1.25.3	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-39836	stdlib	v1.26.2	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-39836	stdlib	v1.17.13	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-39836	stdlib	v1.20.8	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-39836	stdlib	v1.25.1	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-39836	stdlib	v1.25.6	1.25.10, 1.26.3
+k8s-monitoring	HIGH	CVE-2026-39836	stdlib	v1.23.10	1.25.10, 1.26.3
+k8s-monitoring	HIGH	CVE-2026-39836	stdlib	v1.23.6	1.25.10, 1.26.3
+k8s-monitoring	HIGH	CVE-2026-39836	stdlib	v1.24.9	1.25.10, 1.26.3
+komoplane	HIGH	CVE-2026-39836	stdlib	v1.26.2	1.25.10, 1.26.3
+kubecost	HIGH	CVE-2026-39836	stdlib	v1.24.11	1.25.10, 1.26.3
+kubecost	HIGH	CVE-2026-39836	stdlib	v1.25.5	1.25.10, 1.26.3
+kubevirt	HIGH	CVE-2026-39836	stdlib	v1.23.4	1.25.10, 1.26.3
+kubevirt	HIGH	CVE-2026-39836	stdlib	v1.23.6	1.25.10, 1.26.3
+kubevirt-manager	HIGH	CVE-2026-39836	stdlib	v1.23.3	1.25.10, 1.26.3
+metallb	HIGH	CVE-2026-39836	stdlib	v1.25.8	1.25.10, 1.26.3
+metallb	HIGH	CVE-2026-39836	stdlib	v1.25.9	1.25.10, 1.26.3
+testkube	HIGH	CVE-2026-39836	stdlib	v1.25.0	1.25.10, 1.26.3
+testkube	HIGH	CVE-2026-39836	stdlib	v1.26.0	1.25.10, 1.26.3
+velero	HIGH	CVE-2026-39836	stdlib	v1.23.6	1.25.10, 1.26.3
+velero	HIGH	CVE-2026-39836	stdlib	v1.25.7	1.25.10, 1.26.3
+velero-ui	HIGH	CVE-2026-39836	stdlib	v1.22.5	1.25.10, 1.26.3
+velero-ui	HIGH	CVE-2026-39836	stdlib	v1.23.7	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-39883	go.opentelemetry.io/otel/sdk	v1.38.0	1.43.0
+falco	HIGH	CVE-2026-39883	go.opentelemetry.io/otel/sdk	v1.39.0	1.43.0
+kubecost	HIGH	CVE-2026-39883	go.opentelemetry.io/otel/sdk	v1.36.0	1.43.0
+kubecost	HIGH	CVE-2026-39883	go.opentelemetry.io/otel/sdk	v1.39.0	1.43.0
+metallb	HIGH	CVE-2026-39883	go.opentelemetry.io/otel/sdk	v1.40.0	1.43.0
+testkube	HIGH	CVE-2026-39883	go.opentelemetry.io/otel/sdk	v1.39.0	1.43.0
+backstage	HIGH	CVE-2026-39983	basic-ftp	5.2.0	5.2.1
+k8s-monitoring	HIGH	CVE-2026-40164	jq	1.8.0-r0	1.8.2-r0
+kubecost	HIGH	CVE-2026-40164	jq	1.8.1-r0	1.8.2-r0
+falco	HIGH	CVE-2026-40200	musl	1.2.5-r10	1.2.5-r12
+falco	HIGH	CVE-2026-40200	musl-utils	1.2.5-r10	1.2.5-r12
+k8s-monitoring	HIGH	CVE-2026-40200	musl	1.2.5-r10	1.2.5-r12
+k8s-monitoring	HIGH	CVE-2026-40200	musl-utils	1.2.5-r10	1.2.5-r12
+komoplane	HIGH	CVE-2026-40200	musl	1.2.5-r21	1.2.5-r23
+komoplane	HIGH	CVE-2026-40200	musl-utils	1.2.5-r21	1.2.5-r23
+kubevirt-manager	HIGH	CVE-2026-40200	musl	1.2.5-r0	1.2.5-r3
+kubevirt-manager	HIGH	CVE-2026-40200	musl-utils	1.2.5-r0	1.2.5-r3
+metallb	HIGH	CVE-2026-40200	musl	1.2.5-r10	1.2.5-r12
+metallb	HIGH	CVE-2026-40200	musl-utils	1.2.5-r10	1.2.5-r12
+velero-ui	HIGH	CVE-2026-40200	musl	1.2.4_git20230717-r4	1.2.4_git20230717-r6
+velero-ui	HIGH	CVE-2026-40200	musl-utils	1.2.4_git20230717-r4	1.2.4_git20230717-r6
+testkube	HIGH	CVE-2026-40344	github.com/minio/minio	v0.0.0-20251015172955-9e49d5e7a648+dirty	none
+velero-ui	HIGH	CVE-2026-40355	libgssapi-krb5-2	1.20.1-2+deb12u2	1.20.1-2+deb12u5
+velero-ui	HIGH	CVE-2026-40355	libgssapi-krb5-2	1.20.1-2+deb12u3	1.20.1-2+deb12u5
+velero-ui	HIGH	CVE-2026-40355	libk5crypto3	1.20.1-2+deb12u2	1.20.1-2+deb12u5
+velero-ui	HIGH	CVE-2026-40355	libk5crypto3	1.20.1-2+deb12u3	1.20.1-2+deb12u5
+velero-ui	HIGH	CVE-2026-40355	libkrb5-3	1.20.1-2+deb12u2	1.20.1-2+deb12u5
+velero-ui	HIGH	CVE-2026-40355	libkrb5-3	1.20.1-2+deb12u3	1.20.1-2+deb12u5
+velero-ui	HIGH	CVE-2026-40355	libkrb5support0	1.20.1-2+deb12u2	1.20.1-2+deb12u5
+velero-ui	HIGH	CVE-2026-40355	libkrb5support0	1.20.1-2+deb12u3	1.20.1-2+deb12u5
+velero-ui	HIGH	CVE-2026-40356	libgssapi-krb5-2	1.20.1-2+deb12u2	1.20.1-2+deb12u5
+velero-ui	HIGH	CVE-2026-40356	libgssapi-krb5-2	1.20.1-2+deb12u3	1.20.1-2+deb12u5
+velero-ui	HIGH	CVE-2026-40356	libk5crypto3	1.20.1-2+deb12u2	1.20.1-2+deb12u5
+velero-ui	HIGH	CVE-2026-40356	libk5crypto3	1.20.1-2+deb12u3	1.20.1-2+deb12u5
+velero-ui	HIGH	CVE-2026-40356	libkrb5-3	1.20.1-2+deb12u2	1.20.1-2+deb12u5
+velero-ui	HIGH	CVE-2026-40356	libkrb5-3	1.20.1-2+deb12u3	1.20.1-2+deb12u5
+velero-ui	HIGH	CVE-2026-40356	libkrb5support0	1.20.1-2+deb12u2	1.20.1-2+deb12u5
+velero-ui	HIGH	CVE-2026-40356	libkrb5support0	1.20.1-2+deb12u3	1.20.1-2+deb12u5
+kyverno	HIGH	CVE-2026-40868	github.com/kyverno/kyverno	v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty	1.17.0
+kyverno	HIGH	CVE-2026-41068	github.com/kyverno/kyverno	v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty	none
+kubecost	HIGH	CVE-2026-4111	libarchive	3.5.3-6.el9_6	3.5.3-7.el9_7
+testkube	HIGH	CVE-2026-41145	github.com/minio/minio	v0.0.0-20251015172955-9e49d5e7a648+dirty	none
+kyverno	HIGH	CVE-2026-41323	github.com/kyverno/kyverno	v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty	1.17.0
+backstage	HIGH	CVE-2026-41324	basic-ftp	5.2.0	5.3.0
+falco	HIGH	CVE-2026-41567	github.com/docker/docker	v28.5.2+incompatible	none
+kubecost	HIGH	CVE-2026-41567	github.com/docker/docker	v28.5.2+incompatible	none
+falco	HIGH	CVE-2026-41602	github.com/apache/thrift	v0.21.0	0.23.0
+testkube	HIGH	CVE-2026-41602	github.com/apache/thrift	v0.21.0	0.23.0
+testkube	HIGH	CVE-2026-41992	gzip	1.12-1	none
+velero-ui	HIGH	CVE-2026-41992	gzip	1.12-1	none
+kubecost	HIGH	CVE-2026-42009	gnutls	3.8.3-9.el9	3.8.10-4.el9_8
+velero-ui	HIGH	CVE-2026-42009	libgnutls30	3.7.9-2+deb12u4	3.7.9-2+deb12u7
+velero-ui	HIGH	CVE-2026-42009	libgnutls30	3.7.9-2+deb12u5	3.7.9-2+deb12u7
+kubecost	HIGH	CVE-2026-42010	gnutls	3.8.3-9.el9	3.8.10-4.el9_8
+backstage	HIGH	CVE-2026-42033	axios	1.14.0	1.15.1, 0.31.1
+backstage	HIGH	CVE-2026-42035	axios	1.14.0	1.15.1, 0.31.1
+backstage	HIGH	CVE-2026-42043	axios	1.14.0	1.15.1, 0.31.1
+kubecost	HIGH	CVE-2026-42055	nginx	2:1.20.1-28.el9_8.2	2:1.20.1-28.el9_8.4
+kubecost	HIGH	CVE-2026-42055	nginx-core	2:1.20.1-28.el9_8.2	2:1.20.1-28.el9_8.4
+kubecost	HIGH	CVE-2026-42055	nginx-filesystem	2:1.20.1-28.el9_8.2	2:1.20.1-28.el9_8.4
+testkube	HIGH	CVE-2026-42151	github.com/prometheus/prometheus	v0.303.0	0.311.3
+testkube	HIGH	CVE-2026-42154	github.com/prometheus/prometheus	v0.303.0	0.311.3, 0.305.2
+metallb	HIGH	CVE-2026-4224	pyc	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-4224	python3	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-4224	python3-pyc	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-4224	python3-pycache-pyc0	3.12.12-r0	3.12.14-r0
+velero-ui	HIGH	CVE-2026-4224	libpython3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u8
+velero-ui	HIGH	CVE-2026-4224	libpython3.11-stdlib	3.11.2-6+deb12u6	3.11.2-6+deb12u8
+velero-ui	HIGH	CVE-2026-4224	python3.11	3.11.2-6+deb12u6	3.11.2-6+deb12u8
+velero-ui	HIGH	CVE-2026-4224	python3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u8
+backstage	HIGH	CVE-2026-42264	axios	1.14.0	1.15.2
+falco	HIGH	CVE-2026-42306	github.com/docker/docker	v28.5.2+incompatible	none
+kubecost	HIGH	CVE-2026-42306	github.com/docker/docker	v28.5.2+incompatible	none
+testkube	HIGH	CVE-2026-42497	perl-base	5.36.0-7+deb12u3	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-42497	libperl5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-42497	perl	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-42497	perl-base	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-42497	perl-modules-5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+argocd	HIGH	CVE-2026-42499	stdlib	v1.24.0	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-42499	stdlib	v1.25.3	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-42499	stdlib	v1.26.2	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-42499	stdlib	v1.17.13	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-42499	stdlib	v1.20.8	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-42499	stdlib	v1.25.1	1.25.10, 1.26.3
+falco	HIGH	CVE-2026-42499	stdlib	v1.25.6	1.25.10, 1.26.3
+k8s-monitoring	HIGH	CVE-2026-42499	stdlib	v1.23.10	1.25.10, 1.26.3
+k8s-monitoring	HIGH	CVE-2026-42499	stdlib	v1.23.6	1.25.10, 1.26.3
+k8s-monitoring	HIGH	CVE-2026-42499	stdlib	v1.24.9	1.25.10, 1.26.3
+komoplane	HIGH	CVE-2026-42499	stdlib	v1.26.2	1.25.10, 1.26.3
+kubecost	HIGH	CVE-2026-42499	stdlib	v1.24.11	1.25.10, 1.26.3
+kubecost	HIGH	CVE-2026-42499	stdlib	v1.25.5	1.25.10, 1.26.3
+kubevirt	HIGH	CVE-2026-42499	stdlib	v1.23.4	1.25.10, 1.26.3
+kubevirt	HIGH	CVE-2026-42499	stdlib	v1.23.6	1.25.10, 1.26.3
+kubevirt-manager	HIGH	CVE-2026-42499	stdlib	v1.23.3	1.25.10, 1.26.3
+metallb	HIGH	CVE-2026-42499	stdlib	v1.25.8	1.25.10, 1.26.3
+metallb	HIGH	CVE-2026-42499	stdlib	v1.25.9	1.25.10, 1.26.3
+testkube	HIGH	CVE-2026-42499	stdlib	v1.25.0	1.25.10, 1.26.3
+testkube	HIGH	CVE-2026-42499	stdlib	v1.26.0	1.25.10, 1.26.3
+velero	HIGH	CVE-2026-42499	stdlib	v1.23.6	1.25.10, 1.26.3
+velero	HIGH	CVE-2026-42499	stdlib	v1.25.7	1.25.10, 1.26.3
+velero-ui	HIGH	CVE-2026-42499	stdlib	v1.22.5	1.25.10, 1.26.3
+velero-ui	HIGH	CVE-2026-42499	stdlib	v1.23.7	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-42504	stdlib	v1.24.0	1.25.11, 1.26.4
+argocd	HIGH	CVE-2026-42504	stdlib	v1.25.3	1.25.11, 1.26.4
+argocd	HIGH	CVE-2026-42504	stdlib	v1.26.2	1.25.11, 1.26.4
+falco	HIGH	CVE-2026-42504	stdlib	v1.17.13	1.25.11, 1.26.4
+falco	HIGH	CVE-2026-42504	stdlib	v1.20.8	1.25.11, 1.26.4
+falco	HIGH	CVE-2026-42504	stdlib	v1.25.1	1.25.11, 1.26.4
+falco	HIGH	CVE-2026-42504	stdlib	v1.25.6	1.25.11, 1.26.4
+k8s-monitoring	HIGH	CVE-2026-42504	stdlib	v1.23.10	1.25.11, 1.26.4
+k8s-monitoring	HIGH	CVE-2026-42504	stdlib	v1.23.6	1.25.11, 1.26.4
+k8s-monitoring	HIGH	CVE-2026-42504	stdlib	v1.24.9	1.25.11, 1.26.4
+komoplane	HIGH	CVE-2026-42504	stdlib	v1.26.2	1.25.11, 1.26.4
+kubecost	HIGH	CVE-2026-42504	stdlib	v1.24.11	1.25.11, 1.26.4
+kubecost	HIGH	CVE-2026-42504	stdlib	v1.25.5	1.25.11, 1.26.4
+kubevirt	HIGH	CVE-2026-42504	stdlib	v1.23.4	1.25.11, 1.26.4
+kubevirt	HIGH	CVE-2026-42504	stdlib	v1.23.6	1.25.11, 1.26.4
+kubevirt-manager	HIGH	CVE-2026-42504	stdlib	v1.23.3	1.25.11, 1.26.4
+metallb	HIGH	CVE-2026-42504	stdlib	v1.25.8	1.25.11, 1.26.4
+metallb	HIGH	CVE-2026-42504	stdlib	v1.25.9	1.25.11, 1.26.4
+testkube	HIGH	CVE-2026-42504	stdlib	v1.25.0	1.25.11, 1.26.4
+testkube	HIGH	CVE-2026-42504	stdlib	v1.26.0	1.25.11, 1.26.4
+velero	HIGH	CVE-2026-42504	stdlib	v1.23.6	1.25.11, 1.26.4
+velero	HIGH	CVE-2026-42504	stdlib	v1.25.7	1.25.11, 1.26.4
+velero-ui	HIGH	CVE-2026-42504	stdlib	v1.22.5	1.25.11, 1.26.4
+velero-ui	HIGH	CVE-2026-42504	stdlib	v1.23.7	1.25.11, 1.26.4
+argocd	HIGH	CVE-2026-42508	golang.org/x/crypto	v0.36.0	0.52.0
+falco	HIGH	CVE-2026-42508	golang.org/x/crypto	v0.12.0	0.52.0
+falco	HIGH	CVE-2026-42508	golang.org/x/crypto	v0.41.0	0.52.0
+falco	HIGH	CVE-2026-42508	golang.org/x/crypto	v0.46.0	0.52.0
+komoplane	HIGH	CVE-2026-42508	golang.org/x/crypto	v0.45.0	0.52.0
+kubecost	HIGH	CVE-2026-42508	golang.org/x/crypto	v0.40.0	0.52.0
+kubecost	HIGH	CVE-2026-42508	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-42508	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-42508	golang.org/x/crypto	v0.47.0	0.52.0
+velero-ui	HIGH	CVE-2026-42561	python-multipart	0.0.19	0.0.27
+falco	HIGH	CVE-2026-43871	github.com/apache/thrift	v0.21.0	0.24.0
+testkube	HIGH	CVE-2026-43871	github.com/apache/thrift	v0.21.0	0.24.0
+kubecost	HIGH	CVE-2026-4424	libarchive	3.5.3-6.el9_6	3.5.3-9.el9_7
+backstage	HIGH	CVE-2026-44240	basic-ftp	5.2.0	5.3.1
+kubecost	HIGH	CVE-2026-44431	urllib3	2.6.3	2.7.0
+velero-ui	HIGH	CVE-2026-44431	urllib3	2.3.0	2.7.0
+kubecost	HIGH	CVE-2026-44432	urllib3	2.6.3	2.7.0
+backstage	HIGH	CVE-2026-44486	axios	1.14.0	1.16.0, 0.32.0
+backstage	HIGH	CVE-2026-44487	axios	1.14.0	1.16.0, 0.32.0
+backstage	HIGH	CVE-2026-44488	axios	1.14.0	1.16.0
+backstage	HIGH	CVE-2026-44494	axios	1.14.0	1.16.0
+backstage	HIGH	CVE-2026-44495	axios	1.14.0	1.15.2, 0.31.1
+backstage	HIGH	CVE-2026-44496	axios	1.14.0	1.16.0, 0.32.0
+velero-ui	HIGH	CVE-2026-44573	next	15.2.3	15.5.16, 16.2.5
+velero-ui	HIGH	CVE-2026-44575	next	15.2.3	15.5.16, 16.2.5
+velero-ui	HIGH	CVE-2026-44578	next	15.2.3	15.5.16, 16.2.5
+velero-ui	HIGH	CVE-2026-44579	next	15.2.3	15.5.16, 16.2.5
+backstage	HIGH	CVE-2026-44665	fast-xml-builder	1.1.4	1.1.7
+backstage	HIGH	CVE-2026-44705	tmp	0.2.5	0.2.6
+backstage	HIGH	CVE-2026-44724	systeminformation	5.31.5	5.31.6
+velero-ui	HIGH	CVE-2026-45109	next	15.2.3	15.5.18, 16.2.6
+kubecost	HIGH	CVE-2026-45186	expat	2.5.0-5.el9_7.1	2.5.0-6.el9_8.1
+kubevirt-manager	HIGH	CVE-2026-45186	libexpat	2.6.4-r0	2.8.1-r0
+metallb	HIGH	CVE-2026-45186	libexpat	2.7.4-r0	2.8.1-r0
+mimir	HIGH	CVE-2026-45186	libexpat	2.7.5-r0	2.8.1-r0
+velero-ui	HIGH	CVE-2026-45186	libexpat1	2.5.0-1+deb12u1	2.5.0-1+deb12u4
+kubecost	HIGH	CVE-2026-4519	python3.12	3.12.12-1.el9_7	3.12.13-2.el9_8
+kubecost	HIGH	CVE-2026-4519	python3.12-libs	3.12.12-1.el9_7	3.12.13-2.el9_8
+falco	HIGH	CVE-2026-45447	libcrypto3	3.5.1-r0	3.5.7-r0
+falco	HIGH	CVE-2026-45447	libcrypto3	3.6.1-r4	3.6.3-r0
+falco	HIGH	CVE-2026-45447	libssl-dev	3.0.2-0ubuntu1.16	3.0.2-0ubuntu1.25
+falco	HIGH	CVE-2026-45447	libssl3	3.0.2-0ubuntu1.16	3.0.2-0ubuntu1.25
+falco	HIGH	CVE-2026-45447	libssl3	3.5.1-r0	3.5.7-r0
+falco	HIGH	CVE-2026-45447	libssl3	3.6.1-r4	3.6.3-r0
+k8s-monitoring	HIGH	CVE-2026-45447	libcrypto3	3.5.4-r0	3.5.7-r0
+k8s-monitoring	HIGH	CVE-2026-45447	libssl3	3.5.4-r0	3.5.7-r0
+komoplane	HIGH	CVE-2026-45447	libcrypto3	3.5.5-r0	3.5.7-r0
+komoplane	HIGH	CVE-2026-45447	libssl3	3.5.5-r0	3.5.7-r0
+kubecost	HIGH	CVE-2026-45447	openssl-libs	1:3.5.1-4.el9_7	1:3.5.5-4.el9_8
+kubevirt	HIGH	CVE-2026-45447	libssl3	3.0.13-1~deb12u1	3.0.20-1~deb12u2
+metallb	HIGH	CVE-2026-45447	libcrypto3	3.5.5-r0	3.5.7-r0
+metallb	HIGH	CVE-2026-45447	libcrypto3	3.5.6-r0	3.5.7-r0
+metallb	HIGH	CVE-2026-45447	libssl3	3.5.5-r0	3.5.7-r0
+metallb	HIGH	CVE-2026-45447	libssl3	3.5.6-r0	3.5.7-r0
+mimir	HIGH	CVE-2026-45447	libcrypto3	3.5.6-r0	3.5.7-r0
+mimir	HIGH	CVE-2026-45447	libssl3	3.5.6-r0	3.5.7-r0
+velero-ui	HIGH	CVE-2026-45447	libssl3	3.0.15-1~deb12u1	3.0.20-1~deb12u2
+velero-ui	HIGH	CVE-2026-45447	libssl3	3.0.16-1~deb12u1	3.0.20-1~deb12u2
+velero-ui	HIGH	CVE-2026-45447	openssl	3.0.15-1~deb12u1	3.0.20-1~deb12u2
+velero-ui	HIGH	CVE-2026-45447	openssl	3.0.16-1~deb12u1	3.0.20-1~deb12u2
+velero-ui	HIGH	CVE-2026-45623	postcss	8.4.31	8.5.12
+argocd	HIGH	CVE-2026-46595	golang.org/x/crypto	v0.36.0	0.52.0
+falco	HIGH	CVE-2026-46595	golang.org/x/crypto	v0.12.0	0.52.0
+falco	HIGH	CVE-2026-46595	golang.org/x/crypto	v0.41.0	0.52.0
+falco	HIGH	CVE-2026-46595	golang.org/x/crypto	v0.46.0	0.52.0
+komoplane	HIGH	CVE-2026-46595	golang.org/x/crypto	v0.45.0	0.52.0
+kubecost	HIGH	CVE-2026-46595	golang.org/x/crypto	v0.40.0	0.52.0
+kubecost	HIGH	CVE-2026-46595	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-46595	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-46595	golang.org/x/crypto	v0.47.0	0.52.0
+argocd	HIGH	CVE-2026-46597	golang.org/x/crypto	v0.36.0	0.52.0
+falco	HIGH	CVE-2026-46597	golang.org/x/crypto	v0.12.0	0.52.0
+falco	HIGH	CVE-2026-46597	golang.org/x/crypto	v0.41.0	0.52.0
+falco	HIGH	CVE-2026-46597	golang.org/x/crypto	v0.46.0	0.52.0
+komoplane	HIGH	CVE-2026-46597	golang.org/x/crypto	v0.45.0	0.52.0
+kubecost	HIGH	CVE-2026-46597	golang.org/x/crypto	v0.40.0	0.52.0
+kubecost	HIGH	CVE-2026-46597	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-46597	golang.org/x/crypto	v0.46.0	0.52.0
+testkube	HIGH	CVE-2026-46597	golang.org/x/crypto	v0.47.0	0.52.0
+argocd	HIGH	CVE-2026-46600	golang.org/x/net	v0.38.0	0.56.0
+argocd	HIGH	CVE-2026-46600	golang.org/x/net	v0.40.0	0.56.0
+argocd	HIGH	CVE-2026-46600	golang.org/x/net	v0.55.0	0.56.0
+argocd	HIGH	CVE-2026-46600	stdlib	v1.26.2	1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-46600	stdlib	v1.26.4	1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-46600	stdlib	v1.26.5	1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-46600	golang.org/x/net	v0.14.0	0.56.0
+falco	HIGH	CVE-2026-46600	golang.org/x/net	v0.43.0	0.56.0
+falco	HIGH	CVE-2026-46600	golang.org/x/net	v0.48.0	0.56.0
+falco	HIGH	CVE-2026-46600	golang.org/x/net	v0.7.0	0.56.0
+k8s-monitoring	HIGH	CVE-2026-46600	golang.org/x/net	v0.23.0	0.56.0
+k8s-monitoring	HIGH	CVE-2026-46600	golang.org/x/net	v0.26.0	0.56.0
+k8s-monitoring	HIGH	CVE-2026-46600	golang.org/x/net	v0.30.0	0.56.0
+k8s-monitoring	HIGH	CVE-2026-46600	golang.org/x/net	v0.38.0	0.56.0
+k8s-monitoring	HIGH	CVE-2026-46600	stdlib	v1.26.4	1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-46600	stdlib	v1.26.5	1.26.6, 1.27.0-rc.3
+komoplane	HIGH	CVE-2026-46600	golang.org/x/net	v0.47.0	0.56.0
+komoplane	HIGH	CVE-2026-46600	stdlib	v1.26.2	1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-46600	golang.org/x/net	v0.42.0	0.56.0
+kubecost	HIGH	CVE-2026-46600	golang.org/x/net	v0.48.0	0.56.0
+kubecost	HIGH	CVE-2026-46600	golang.org/x/net	v0.55.0	0.56.0
+kubecost	HIGH	CVE-2026-46600	stdlib	v1.26.4	1.26.6, 1.27.0-rc.3
+kubevirt-manager	HIGH	CVE-2026-46600	golang.org/x/net	v0.30.0	0.56.0
+loki	HIGH	CVE-2026-46600	stdlib	v1.26.5	1.26.6, 1.27.0-rc.3
+metallb	HIGH	CVE-2026-46600	golang.org/x/net	v0.39.0	0.56.0
+metallb	HIGH	CVE-2026-46600	golang.org/x/net	v0.53.0	0.56.0
+mimir	HIGH	CVE-2026-46600	stdlib	v1.26.5	1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-46600	golang.org/x/net	v0.48.0	0.56.0
+testkube	HIGH	CVE-2026-46600	stdlib	v1.26.0	1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-46600	stdlib	v1.26.5	1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-46600	golang.org/x/net	v0.37.0	0.56.0
+velero	HIGH	CVE-2026-46600	golang.org/x/net	v0.47.0	0.56.0
+velero	HIGH	CVE-2026-46600	golang.org/x/net	v0.55.0	0.56.0
+velero-ui	HIGH	CVE-2026-46600	golang.org/x/net	v0.26.0	0.56.0
+backstage	HIGH	CVE-2026-46625	js-cookie	2.2.1	3.0.7
+mimir	HIGH	CVE-2026-4775	tiff	4.7.1-r0	4.7.2-r0
+kubecost	HIGH	CVE-2026-4786	python3.12	3.12.12-1.el9_7	3.12.13-2.el9_8
+kubecost	HIGH	CVE-2026-4786	python3.12-libs	3.12.12-1.el9_7	3.12.13-2.el9_8
+metallb	HIGH	CVE-2026-4786	pyc	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-4786	python3	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-4786	python3-pyc	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-4786	python3-pycache-pyc0	3.12.12-r0	3.12.14-r0
+backstage	HIGH	CVE-2026-48068	@grpc/grpc-js	1.14.3	1.9.16, 1.10.12, 1.11.4, 1.12.7, 1.13.5, 1.14.4
+backstage	HIGH	CVE-2026-48069	@grpc/grpc-js	1.14.3	1.9.16, 1.10.12, 1.11.4, 1.12.7, 1.13.5, 1.14.4
+falco	HIGH	CVE-2026-48702	github.com/sigstore/rekor	v1.5.0	1.5.2
+backstage	HIGH	CVE-2026-48712	protobufjs	7.5.9	7.6.1, 8.4.1
+backstage	HIGH	CVE-2026-48779	ws	8.20.0	5.2.5, 6.2.4, 7.5.11, 8.21.0
+kubecost	HIGH	CVE-2026-4878	libcap	2.48-10.el9	2.48-10.el9_8.1
+metallb	HIGH	CVE-2026-4878	libcap2	2.76-r0	2.78-r0
+velero-ui	HIGH	CVE-2026-4878	libcap2	1:2.66-4	1:2.66-4+deb12u3
+velero-ui	HIGH	CVE-2026-4878	libcap2	1:2.66-4+deb12u1	1:2.66-4+deb12u3
+backstage	HIGH	CVE-2026-48801	linkify-it	5.0.0	5.0.1
+velero-ui	HIGH	CVE-2026-48815	sigstore	2.1.0	4.1.1
+velero-ui	HIGH	CVE-2026-48818	starlette	0.45.3	1.1.0
+testkube	HIGH	CVE-2026-48962	perl-base	5.36.0-7+deb12u3	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-48962	libperl5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-48962	perl	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-48962	perl-base	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-48962	perl-modules-5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+falco	HIGH	CVE-2026-49478	github.com/sigstore/fulcio	v1.8.5	1.8.6
+falco	HIGH	CVE-2026-50151	oras.land/oras-go/v2	v2.5.0	2.6.1
+k8s-monitoring	HIGH	CVE-2026-50151	oras.land/oras-go/v2	v2.6.0	2.6.1
+argocd	HIGH	CVE-2026-50163	oras.land/oras-go/v2	v2.6.1	2.6.2
+falco	HIGH	CVE-2026-50163	oras.land/oras-go/v2	v2.5.0	2.6.2
+k8s-monitoring	HIGH	CVE-2026-50163	oras.land/oras-go/v2	v2.6.0	2.6.2
+backstage	HIGH	CVE-2026-50289	systeminformation	5.31.5	5.31.7
+backstage	HIGH	CVE-2026-5079	multer	2.1.1	2.2.0, 3.0.0-alpha.2
+backstage	HIGH	CVE-2026-52746	jsonata	2.1.0	2.2.0, 1.8.9
+velero-ui	HIGH	CVE-2026-53539	python-multipart	0.0.19	0.0.30
+argocd	HIGH	CVE-2026-53612	setpriv	2.41.4-r0	2.41.6-r0
+mimir	HIGH	CVE-2026-53612	libuuid	2.41.4-r0	2.41.6-r0
+argocd	HIGH	CVE-2026-53613	setpriv	2.41.4-r0	2.41.6-r0
+k8s-monitoring	HIGH	CVE-2026-53613	libblkid	2.37.4-25.el9	none
+k8s-monitoring	HIGH	CVE-2026-53613	libmount	2.37.4-25.el9	none
+k8s-monitoring	HIGH	CVE-2026-53613	libsmartcols	2.37.4-25.el9	none
+k8s-monitoring	HIGH	CVE-2026-53613	libuuid	2.37.4-25.el9	none
+kubecost	HIGH	CVE-2026-53613	libblkid	2.37.4-21.el9	none
+kubecost	HIGH	CVE-2026-53613	libblkid	2.37.4-25.el9	none
+kubecost	HIGH	CVE-2026-53613	libfdisk	2.37.4-25.el9	none
+kubecost	HIGH	CVE-2026-53613	libmount	2.37.4-21.el9	none
+kubecost	HIGH	CVE-2026-53613	libmount	2.37.4-25.el9	none
+kubecost	HIGH	CVE-2026-53613	libsmartcols	2.37.4-21.el9	none
+kubecost	HIGH	CVE-2026-53613	libsmartcols	2.37.4-25.el9	none
+kubecost	HIGH	CVE-2026-53613	libuuid	2.37.4-21.el9	none
+kubecost	HIGH	CVE-2026-53613	libuuid	2.37.4-25.el9	none
+kubecost	HIGH	CVE-2026-53613	util-linux	2.37.4-25.el9	none
+kubecost	HIGH	CVE-2026-53613	util-linux-core	2.37.4-25.el9	none
+mimir	HIGH	CVE-2026-53613	libuuid	2.41.4-r0	2.41.6-r0
+testkube	HIGH	CVE-2026-53613	bsdutils	1:2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-53613	libblkid1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-53613	libmount1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-53613	libsmartcols1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-53613	libuuid1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-53613	mount	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-53613	util-linux	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-53613	util-linux-extra	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-53613	bsdutils	1:2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-53613	libblkid1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-53613	libmount1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-53613	libsmartcols1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-53613	libuuid1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-53613	mount	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-53613	util-linux	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-53613	util-linux-extra	2.38.1-5+deb12u3	none
+argocd	HIGH	CVE-2026-53614	setpriv	2.41.4-r0	2.41.6-r0
+mimir	HIGH	CVE-2026-53614	libuuid	2.41.4-r0	2.41.6-r0
+velero-ui	HIGH	CVE-2026-54283	starlette	0.45.3	1.3.1
+backstage	HIGH	CVE-2026-54290	hono	4.12.12	4.12.25
+k8s-monitoring	HIGH	CVE-2026-54369	libacl	2.3.1-4.el9	2.4.0-1.el9_8
+kubecost	HIGH	CVE-2026-54369	acl	2.3.1-4.el9	2.4.0-1.el9_8
+kubecost	HIGH	CVE-2026-54369	libacl	2.3.1-4.el9	2.4.0-1.el9_8
+testkube	HIGH	CVE-2026-54369	libacl1	2.3.1-3	none
+velero-ui	HIGH	CVE-2026-54369	libacl1	2.3.1-3	none
+falco	HIGH	CVE-2026-54876	libcrypto3	3.6.1-r4	3.6.3-r4
+falco	HIGH	CVE-2026-54876	libssl3	3.6.1-r4	3.6.3-r4
+backstage	HIGH	CVE-2026-55553	urllib	3.27.3	4.9.1, 2.44.1
+backstage	HIGH	CVE-2026-55603	http-proxy-middleware	3.0.5	3.0.7, 4.1.1
+falco	HIGH	CVE-2026-55677	github.com/labstack/echo/v4	v4.11.1	4.15.3
+komoplane	HIGH	CVE-2026-55677	github.com/labstack/echo/v4	v4.10.2	4.15.3
+argo-rollouts	HIGH	CVE-2026-56852	golang.org/x/text	v0.38.0	0.39.0
+argocd	HIGH	CVE-2026-56852	golang.org/x/text	v0.23.0	0.39.0
+argocd	HIGH	CVE-2026-56852	golang.org/x/text	v0.28.0	0.39.0
+argocd	HIGH	CVE-2026-56852	golang.org/x/text	v0.38.0	0.39.0
+falco	HIGH	CVE-2026-56852	golang.org/x/text	v0.12.0	0.39.0
+falco	HIGH	CVE-2026-56852	golang.org/x/text	v0.28.0	0.39.0
+falco	HIGH	CVE-2026-56852	golang.org/x/text	v0.32.0	0.39.0
+falco	HIGH	CVE-2026-56852	golang.org/x/text	v0.7.0	0.39.0
+k8s-monitoring	HIGH	CVE-2026-56852	golang.org/x/text	v0.14.0	0.39.0
+k8s-monitoring	HIGH	CVE-2026-56852	golang.org/x/text	v0.16.0	0.39.0
+k8s-monitoring	HIGH	CVE-2026-56852	golang.org/x/text	v0.19.0	0.39.0
+k8s-monitoring	HIGH	CVE-2026-56852	golang.org/x/text	v0.23.0	0.39.0
+k8s-monitoring	HIGH	CVE-2026-56852	golang.org/x/text	v0.38.0	0.39.0
+komoplane	HIGH	CVE-2026-56852	golang.org/x/text	v0.31.0	0.39.0
+kubecost	HIGH	CVE-2026-56852	golang.org/x/text	v0.27.0	0.39.0
+kubecost	HIGH	CVE-2026-56852	golang.org/x/text	v0.32.0	0.39.0
+kubecost	HIGH	CVE-2026-56852	golang.org/x/text	v0.37.0	0.39.0
+kubevirt-manager	HIGH	CVE-2026-56852	golang.org/x/text	v0.19.0	0.39.0
+metallb	HIGH	CVE-2026-56852	golang.org/x/text	v0.24.0	0.39.0
+metallb	HIGH	CVE-2026-56852	golang.org/x/text	v0.36.0	0.39.0
+mimir	HIGH	CVE-2026-56852	golang.org/x/text	v0.38.0	0.39.0
+testkube	HIGH	CVE-2026-56852	golang.org/x/text	v0.32.0	0.39.0
+testkube	HIGH	CVE-2026-56852	golang.org/x/text	v0.33.0	0.39.0
+velero	HIGH	CVE-2026-56852	golang.org/x/text	v0.23.0	0.39.0
+velero	HIGH	CVE-2026-56852	golang.org/x/text	v0.31.0	0.39.0
+velero	HIGH	CVE-2026-56852	golang.org/x/text	v0.37.0	0.39.0
+velero	HIGH	CVE-2026-56852	golang.org/x/text	v0.38.0	0.39.0
+velero-ui	HIGH	CVE-2026-56852	golang.org/x/text	v0.16.0	0.39.0
+argocd	HIGH	CVE-2026-56853	stdlib	v1.24.0	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56853	stdlib	v1.25.3	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56853	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56853	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56853	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56853	stdlib	v1.17.13	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56853	stdlib	v1.20.8	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56853	stdlib	v1.25.1	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56853	stdlib	v1.25.6	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56853	stdlib	v1.23.10	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56853	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56853	stdlib	v1.24.9	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56853	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56853	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+komoplane	HIGH	CVE-2026-56853	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-56853	stdlib	v1.24.11	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-56853	stdlib	v1.25.5	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-56853	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt	HIGH	CVE-2026-56853	stdlib	v1.23.4	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt	HIGH	CVE-2026-56853	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt-manager	HIGH	CVE-2026-56853	stdlib	v1.23.3	1.25.13, 1.26.6, 1.27.0-rc.3
+loki	HIGH	CVE-2026-56853	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+metallb	HIGH	CVE-2026-56853	stdlib	v1.25.8	1.25.13, 1.26.6, 1.27.0-rc.3
+metallb	HIGH	CVE-2026-56853	stdlib	v1.25.9	1.25.13, 1.26.6, 1.27.0-rc.3
+mimir	HIGH	CVE-2026-56853	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-56853	stdlib	v1.25.0	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-56853	stdlib	v1.26.0	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-56853	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-56853	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-56853	stdlib	v1.25.11	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-56853	stdlib	v1.25.7	1.25.13, 1.26.6, 1.27.0-rc.3
+velero-ui	HIGH	CVE-2026-56853	stdlib	v1.22.5	1.25.13, 1.26.6, 1.27.0-rc.3
+velero-ui	HIGH	CVE-2026-56853	stdlib	v1.23.7	1.25.13, 1.26.6, 1.27.0-rc.3
+argo-rollouts	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.53.0	0.55.0
+argocd	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.36.0	0.55.0
+argocd	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.53.0	0.55.0
+argocd	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.54.0	0.55.0
+falco	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.12.0	0.55.0
+falco	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.41.0	0.55.0
+falco	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.46.0	0.55.0
+k8s-monitoring	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.53.0	0.55.0
+k8s-monitoring	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.54.0	0.55.0
+komoplane	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.45.0	0.55.0
+kubecost	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.40.0	0.55.0
+kubecost	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.46.0	0.55.0
+kubecost	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.52.0	0.55.0
+loki	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.54.0	0.55.0
+testkube	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.46.0	0.55.0
+testkube	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.47.0	0.55.0
+velero	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.52.0	0.55.0
+velero	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.53.0	0.55.0
+argocd	HIGH	CVE-2026-56858	stdlib	v1.24.0	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56858	stdlib	v1.25.3	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56858	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56858	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56858	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56858	stdlib	v1.17.13	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56858	stdlib	v1.20.8	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56858	stdlib	v1.25.1	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56858	stdlib	v1.25.6	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56858	stdlib	v1.23.10	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56858	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56858	stdlib	v1.24.9	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56858	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56858	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+komoplane	HIGH	CVE-2026-56858	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-56858	stdlib	v1.24.11	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-56858	stdlib	v1.25.5	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-56858	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt	HIGH	CVE-2026-56858	stdlib	v1.23.4	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt	HIGH	CVE-2026-56858	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt-manager	HIGH	CVE-2026-56858	stdlib	v1.23.3	1.25.13, 1.26.6, 1.27.0-rc.3
+loki	HIGH	CVE-2026-56858	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+metallb	HIGH	CVE-2026-56858	stdlib	v1.25.8	1.25.13, 1.26.6, 1.27.0-rc.3
+metallb	HIGH	CVE-2026-56858	stdlib	v1.25.9	1.25.13, 1.26.6, 1.27.0-rc.3
+mimir	HIGH	CVE-2026-56858	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-56858	stdlib	v1.25.0	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-56858	stdlib	v1.26.0	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-56858	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-56858	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-56858	stdlib	v1.25.11	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-56858	stdlib	v1.25.7	1.25.13, 1.26.6, 1.27.0-rc.3
+velero-ui	HIGH	CVE-2026-56858	stdlib	v1.22.5	1.25.13, 1.26.6, 1.27.0-rc.3
+velero-ui	HIGH	CVE-2026-56858	stdlib	v1.23.7	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56859	stdlib	v1.24.0	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56859	stdlib	v1.25.3	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56859	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56859	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56859	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56859	stdlib	v1.17.13	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56859	stdlib	v1.20.8	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56859	stdlib	v1.25.1	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56859	stdlib	v1.25.6	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56859	stdlib	v1.23.10	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56859	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56859	stdlib	v1.24.9	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56859	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56859	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+komoplane	HIGH	CVE-2026-56859	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-56859	stdlib	v1.24.11	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-56859	stdlib	v1.25.5	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-56859	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt	HIGH	CVE-2026-56859	stdlib	v1.23.4	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt	HIGH	CVE-2026-56859	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt-manager	HIGH	CVE-2026-56859	stdlib	v1.23.3	1.25.13, 1.26.6, 1.27.0-rc.3
+loki	HIGH	CVE-2026-56859	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+metallb	HIGH	CVE-2026-56859	stdlib	v1.25.8	1.25.13, 1.26.6, 1.27.0-rc.3
+metallb	HIGH	CVE-2026-56859	stdlib	v1.25.9	1.25.13, 1.26.6, 1.27.0-rc.3
+mimir	HIGH	CVE-2026-56859	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-56859	stdlib	v1.25.0	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-56859	stdlib	v1.26.0	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-56859	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-56859	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-56859	stdlib	v1.25.11	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-56859	stdlib	v1.25.7	1.25.13, 1.26.6, 1.27.0-rc.3
+velero-ui	HIGH	CVE-2026-56859	stdlib	v1.22.5	1.25.13, 1.26.6, 1.27.0-rc.3
+velero-ui	HIGH	CVE-2026-56859	stdlib	v1.23.7	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56860	stdlib	v1.24.0	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56860	stdlib	v1.25.3	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56860	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56860	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56860	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56860	stdlib	v1.17.13	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56860	stdlib	v1.20.8	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56860	stdlib	v1.25.1	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56860	stdlib	v1.25.6	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56860	stdlib	v1.23.10	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56860	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56860	stdlib	v1.24.9	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56860	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56860	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+komoplane	HIGH	CVE-2026-56860	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-56860	stdlib	v1.24.11	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-56860	stdlib	v1.25.5	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-56860	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt	HIGH	CVE-2026-56860	stdlib	v1.23.4	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt	HIGH	CVE-2026-56860	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt-manager	HIGH	CVE-2026-56860	stdlib	v1.23.3	1.25.13, 1.26.6, 1.27.0-rc.3
+loki	HIGH	CVE-2026-56860	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+metallb	HIGH	CVE-2026-56860	stdlib	v1.25.8	1.25.13, 1.26.6, 1.27.0-rc.3
+metallb	HIGH	CVE-2026-56860	stdlib	v1.25.9	1.25.13, 1.26.6, 1.27.0-rc.3
+mimir	HIGH	CVE-2026-56860	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-56860	stdlib	v1.25.0	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-56860	stdlib	v1.26.0	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-56860	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-56860	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-56860	stdlib	v1.25.11	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-56860	stdlib	v1.25.7	1.25.13, 1.26.6, 1.27.0-rc.3
+velero-ui	HIGH	CVE-2026-56860	stdlib	v1.22.5	1.25.13, 1.26.6, 1.27.0-rc.3
+velero-ui	HIGH	CVE-2026-56860	stdlib	v1.23.7	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56862	stdlib	v1.24.0	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56862	stdlib	v1.25.3	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56862	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56862	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56862	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56862	stdlib	v1.17.13	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56862	stdlib	v1.20.8	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56862	stdlib	v1.25.1	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56862	stdlib	v1.25.6	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56862	stdlib	v1.23.10	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56862	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56862	stdlib	v1.24.9	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56862	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+k8s-monitoring	HIGH	CVE-2026-56862	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+komoplane	HIGH	CVE-2026-56862	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-56862	stdlib	v1.24.11	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-56862	stdlib	v1.25.5	1.25.13, 1.26.6, 1.27.0-rc.3
+kubecost	HIGH	CVE-2026-56862	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt	HIGH	CVE-2026-56862	stdlib	v1.23.4	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt	HIGH	CVE-2026-56862	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+kubevirt-manager	HIGH	CVE-2026-56862	stdlib	v1.23.3	1.25.13, 1.26.6, 1.27.0-rc.3
+loki	HIGH	CVE-2026-56862	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+metallb	HIGH	CVE-2026-56862	stdlib	v1.25.8	1.25.13, 1.26.6, 1.27.0-rc.3
+metallb	HIGH	CVE-2026-56862	stdlib	v1.25.9	1.25.13, 1.26.6, 1.27.0-rc.3
+mimir	HIGH	CVE-2026-56862	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-56862	stdlib	v1.25.0	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-56862	stdlib	v1.26.0	1.25.13, 1.26.6, 1.27.0-rc.3
+testkube	HIGH	CVE-2026-56862	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-56862	stdlib	v1.23.6	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-56862	stdlib	v1.25.11	1.25.13, 1.26.6, 1.27.0-rc.3
+velero	HIGH	CVE-2026-56862	stdlib	v1.25.7	1.25.13, 1.26.6, 1.27.0-rc.3
+velero-ui	HIGH	CVE-2026-56862	stdlib	v1.22.5	1.25.13, 1.26.6, 1.27.0-rc.3
+velero-ui	HIGH	CVE-2026-56862	stdlib	v1.23.7	1.25.13, 1.26.6, 1.27.0-rc.3
+falco	HIGH	CVE-2026-56864	golang.org/x/mod	v0.31.0	0.40.0
+velero	HIGH	CVE-2026-56864	golang.org/x/mod	v0.36.0	0.40.0
+falco	HIGH	CVE-2026-56865	golang.org/x/mod	v0.31.0	0.40.0
+velero	HIGH	CVE-2026-56865	golang.org/x/mod	v0.36.0	0.40.0
+testkube	HIGH	CVE-2026-57432	perl-base	5.36.0-7+deb12u3	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-57432	libperl5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-57432	perl	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-57432	perl-base	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-57432	perl-modules-5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+testkube	HIGH	CVE-2026-57433	perl-base	5.36.0-7+deb12u3	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-57433	libperl5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-57433	perl	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-57433	perl-base	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	HIGH	CVE-2026-57433	perl-modules-5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+kubecost	HIGH	CVE-2026-57585	python3.12-pip-wheel	23.2.1-5.el9	none
+mimir	HIGH	CVE-2026-5773	curl	8.17.0-r1	8.20.0-r0
+mimir	HIGH	CVE-2026-5773	libcurl	8.17.0-r1	8.20.0-r0
+testkube	HIGH	CVE-2026-5773	curl	7.88.1-10+deb12u14	7.88.1-10+deb12u15
+testkube	HIGH	CVE-2026-5773	libcurl4	7.88.1-10+deb12u14	7.88.1-10+deb12u15
+velero-ui	HIGH	CVE-2026-5773	curl	7.88.1-10+deb12u12	7.88.1-10+deb12u15
+velero-ui	HIGH	CVE-2026-5773	libcurl3-gnutls	7.88.1-10+deb12u12	7.88.1-10+deb12u15
+velero-ui	HIGH	CVE-2026-5773	libcurl4	7.88.1-10+deb12u12	7.88.1-10+deb12u15
+k8s-monitoring	HIGH	CVE-2026-58016	glib2	2.68.4-19.el9_8.1	2.68.4-19.el9_8.2
+kubecost	HIGH	CVE-2026-58016	glib2	2.68.4-18.el9_7	2.68.4-19.el9_8.2
+kubecost	HIGH	CVE-2026-58016	glib2	2.68.4-19.el9_8.1	2.68.4-19.el9_8.2
+backstage	HIGH	CVE-2026-58043	nodejs-22	22.22.3-r1	22.23.2-r0
+testkube	HIGH	CVE-2026-58050	libssh2-1	1.10.0-3+b1	1.10.0-3+deb12u1
+velero-ui	HIGH	CVE-2026-58050	libssh2-1	1.10.0-3+b1	1.10.0-3+deb12u1
+velero-ui	HIGH	CVE-2026-58471	wget	1.21.3-1+deb12u1	none
+velero-ui	HIGH	CVE-2026-58472	wget	1.21.3-1+deb12u1	none
+backstage	HIGH	CVE-2026-59869	js-yaml	3.14.2	3.15.0, 4.3.0
+backstage	HIGH	CVE-2026-59869	js-yaml	4.1.1	3.15.0, 4.3.0
+testkube	HIGH	CVE-2026-59869	js-yaml	3.13.1	3.15.0, 4.3.0
+backstage	HIGH	CVE-2026-59874	tar	6.2.1	7.5.18
+backstage	HIGH	CVE-2026-59874	tar	7.5.13	7.5.18
+backstage	HIGH	CVE-2026-59874	tar	7.5.15	7.5.18
+velero-ui	HIGH	CVE-2026-59874	tar	6.2.0	7.5.18
+velero-ui	HIGH	CVE-2026-59884	pyasn1	0.4.6	0.6.4
+velero-ui	HIGH	CVE-2026-59884	pyasn1	0.6.1	0.6.4
+velero-ui	HIGH	CVE-2026-59885	pyasn1	0.4.6	0.6.4
+velero-ui	HIGH	CVE-2026-59885	pyasn1	0.6.1	0.6.4
+velero-ui	HIGH	CVE-2026-59886	pyasn1	0.4.6	0.6.4
+velero-ui	HIGH	CVE-2026-59886	pyasn1	0.6.1	0.6.4
+backstage	HIGH	CVE-2026-59887	linkify-it	5.0.0	5.0.2
+backstage	HIGH	CVE-2026-59892	@opentelemetry/propagator-jaeger	2.7.1	2.9.0
+kubecost	HIGH	CVE-2026-60005	nginx	2:1.20.1-28.el9_8.2	2:1.20.1-28.el9_8.5
+kubecost	HIGH	CVE-2026-60005	nginx-core	2:1.20.1-28.el9_8.2	2:1.20.1-28.el9_8.5
+kubecost	HIGH	CVE-2026-60005	nginx-filesystem	2:1.20.1-28.el9_8.2	2:1.20.1-28.el9_8.5
+kubecost	HIGH	CVE-2026-6100	python3.12	3.12.12-1.el9_7	3.12.13-2.el9_8
+kubecost	HIGH	CVE-2026-6100	python3.12-libs	3.12.12-1.el9_7	3.12.13-2.el9_8
+metallb	HIGH	CVE-2026-6100	pyc	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-6100	python3	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-6100	python3-pyc	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-6100	python3-pycache-pyc0	3.12.12-r0	3.12.14-r0
+velero-ui	HIGH	CVE-2026-6100	libpython3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u8
+velero-ui	HIGH	CVE-2026-6100	libpython3.11-stdlib	3.11.2-6+deb12u6	3.11.2-6+deb12u8
+velero-ui	HIGH	CVE-2026-6100	python3.11	3.11.2-6+deb12u6	3.11.2-6+deb12u8
+velero-ui	HIGH	CVE-2026-6100	python3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u8
+mimir	HIGH	CVE-2026-6276	curl	8.17.0-r1	8.20.0-r0
+mimir	HIGH	CVE-2026-6276	libcurl	8.17.0-r1	8.20.0-r0
+testkube	HIGH	CVE-2026-6276	curl	7.88.1-10+deb12u14	none
+testkube	HIGH	CVE-2026-6276	libcurl4	7.88.1-10+deb12u14	none
+velero-ui	HIGH	CVE-2026-6276	curl	7.88.1-10+deb12u12	none
+velero-ui	HIGH	CVE-2026-6276	libcurl3-gnutls	7.88.1-10+deb12u12	none
+velero-ui	HIGH	CVE-2026-6276	libcurl4	7.88.1-10+deb12u12	none
+backstage	HIGH	CVE-2026-6321	fast-uri	3.1.0	3.1.1, 2.4.1
+velero-ui	HIGH	CVE-2026-6321	fast-uri	3.0.6	3.1.1, 2.4.1
+backstage	HIGH	CVE-2026-6322	fast-uri	3.1.0	3.1.2, 2.4.1
+velero-ui	HIGH	CVE-2026-6322	fast-uri	3.0.6	3.1.2, 2.4.1
+k8s-monitoring	HIGH	CVE-2026-63382	libevent	2.1.12-8.el9_4	2.1.13-1.el9_8
+kubecost	HIGH	CVE-2026-63382	libevent	2.1.12-8.el9_4	2.1.13-1.el9_8
+k8s-monitoring	HIGH	CVE-2026-63383	libevent	2.1.12-8.el9_4	2.1.13-1.el9_8
+kubecost	HIGH	CVE-2026-63383	libevent	2.1.12-8.el9_4	2.1.13-1.el9_8
+k8s-monitoring	HIGH	CVE-2026-63384	libevent	2.1.12-8.el9_4	2.1.13-1.el9_8
+kubecost	HIGH	CVE-2026-63384	libevent	2.1.12-8.el9_4	2.1.13-1.el9_8
+k8s-monitoring	HIGH	CVE-2026-63385	libevent	2.1.12-8.el9_4	2.1.13-1.el9_8
+kubecost	HIGH	CVE-2026-63385	libevent	2.1.12-8.el9_4	2.1.13-1.el9_8
+k8s-monitoring	HIGH	CVE-2026-63387	libevent	2.1.12-8.el9_4	2.1.13-1.el9_8
+kubecost	HIGH	CVE-2026-63387	libevent	2.1.12-8.el9_4	2.1.13-1.el9_8
+k8s-monitoring	HIGH	CVE-2026-63388	libevent	2.1.12-8.el9_4	2.1.13-1.el9_8
+kubecost	HIGH	CVE-2026-63388	libevent	2.1.12-8.el9_4	2.1.13-1.el9_8
+velero-ui	HIGH	CVE-2026-64641	next	15.2.3	15.5.21, 16.2.11
+velero-ui	HIGH	CVE-2026-64645	next	15.2.3	15.5.21, 16.2.11
+velero-ui	HIGH	CVE-2026-64649	next	15.2.3	15.5.21, 16.2.11
+kubecost	HIGH	CVE-2026-66046	expat	2.5.0-5.el9_7.1	2.5.0-6.el9_8.5
+kubecost	HIGH	CVE-2026-66046	expat	2.5.0-6.el9_8.1	2.5.0-6.el9_8.5
+metallb	HIGH	CVE-2026-66046	libexpat	2.7.4-r0	2.8.4-r0
+mimir	HIGH	CVE-2026-66046	libexpat	2.7.5-r0	2.8.4-r0
+velero-ui	HIGH	CVE-2026-66046	libexpat1	2.5.0-1+deb12u1	2.5.0-1+deb12u4
+velero-ui	HIGH	CVE-2026-67213	nanoid	3.3.11	3.3.18, 5.1.6
+velero-ui	HIGH	CVE-2026-67214	nanoid	3.3.11	3.3.16, 5.1.16
+k8s-monitoring	HIGH	CVE-2026-6732	libxml2	2.13.9-r0	2.13.9-r1
+mimir	HIGH	CVE-2026-6732	libxml2	2.13.9-r0	2.13.9-r1
+backstage	HIGH	CVE-2026-6734	undici	7.24.7	7.28.0, 8.2.0
+backstage	HIGH	CVE-2026-6734	undici	7.25.0	7.28.0, 8.2.0
+keycloak	HIGH	CVE-2026-68497	com.fasterxml.jackson.core:jackson-databind	2.21.5	2.18.10, 2.21.6, 2.22.2
+backstage	HIGH	CVE-2026-69152	brace-expansion	1.1.13	1.1.18, 2.1.4, 3.0.6, 5.0.9
+backstage	HIGH	CVE-2026-69152	brace-expansion	2.0.3	1.1.18, 2.1.4, 3.0.6, 5.0.9
+backstage	HIGH	CVE-2026-69152	brace-expansion	5.0.5	1.1.18, 2.1.4, 3.0.6, 5.0.9
+velero-ui	HIGH	CVE-2026-69152	brace-expansion	2.0.1	1.1.18, 2.1.4, 3.0.6, 5.0.9
+backstage	HIGH	CVE-2026-69192	ip-address	10.1.0	10.3.1
+velero-ui	HIGH	CVE-2026-69244	aiohttp	3.12.12	3.14.3
+argocd	HIGH	CVE-2026-71556	github.com/go-git/go-git/v5	v5.19.1	5.19.2
+metallb	HIGH	CVE-2026-7210	pyc	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-7210	python3	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-7210	python3-pyc	3.12.12-r0	3.12.14-r0
+metallb	HIGH	CVE-2026-7210	python3-pycache-pyc0	3.12.12-r0	3.12.14-r0
+velero-ui	HIGH	CVE-2026-7210	libpython3.11-minimal	3.11.2-6+deb12u6	none
+velero-ui	HIGH	CVE-2026-7210	libpython3.11-stdlib	3.11.2-6+deb12u6	none
+velero-ui	HIGH	CVE-2026-7210	python3.11	3.11.2-6+deb12u6	none
+velero-ui	HIGH	CVE-2026-7210	python3.11-minimal	3.11.2-6+deb12u6	none
+velero-ui	HIGH	CVE-2026-73086	nanoid	3.3.11	3.3.12, 5.1.11
+velero-ui	HIGH	CVE-2026-73088	browserslist	4.24.4	4.28.7
+velero-ui	HIGH	CVE-2026-73089	browserslist	4.24.4	4.28.7
+backstage	HIGH	CVE-2026-73566	tar	6.2.1	7.5.21
+backstage	HIGH	CVE-2026-73566	tar	7.5.13	7.5.21
+backstage	HIGH	CVE-2026-73566	tar	7.5.15	7.5.21
+velero-ui	HIGH	CVE-2026-73566	tar	6.2.0	7.5.21
+velero-ui	HIGH	CVE-2026-73646	postcss	8.4.31	8.5.18
+k8s-monitoring	HIGH	CVE-2026-74860	libxml2	2.9.13-14.el9_8.1	2.9.13-14.el9_8.5
+kubecost	HIGH	CVE-2026-74860	libxml2	2.9.13-14.el9_7	2.9.13-14.el9_8.5
+backstage	HIGH	CVE-2026-75975	fast-uri	3.1.0	2.4.5, 3.1.6, 4.1.3
+velero-ui	HIGH	CVE-2026-75975	fast-uri	3.0.6	2.4.5, 3.1.6, 4.1.3
+testkube	HIGH	CVE-2026-7598	libssh2-1	1.10.0-3+b1	1.10.0-3+deb12u1
+velero-ui	HIGH	CVE-2026-7598	libssh2-1	1.10.0-3+b1	1.10.0-3+deb12u1
+backstage	HIGH	CVE-2026-76172	fast-uri	3.1.0	2.4.5, 3.1.6, 4.1.3
+velero-ui	HIGH	CVE-2026-76172	fast-uri	3.0.6	2.4.5, 3.1.6, 4.1.3
+kubecost	HIGH	CVE-2026-76641	expat	2.5.0-5.el9_7.1	none
+kubecost	HIGH	CVE-2026-76641	expat	2.5.0-6.el9_8.1	none
+metallb	HIGH	CVE-2026-76641	libexpat	2.7.4-r0	2.8.4-r0
+mimir	HIGH	CVE-2026-76641	libexpat	2.7.5-r0	2.8.4-r0
+argocd	HIGH	CVE-2026-76642	setpriv	2.41.4-r0	2.41.6-r0
+mimir	HIGH	CVE-2026-76642	libuuid	2.41.4-r0	2.41.6-r0
+testkube	HIGH	CVE-2026-76642	bsdutils	1:2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-76642	libblkid1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-76642	libmount1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-76642	libsmartcols1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-76642	libuuid1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-76642	mount	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-76642	util-linux	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-76642	util-linux-extra	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-76642	bsdutils	1:2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-76642	libblkid1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-76642	libmount1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-76642	libsmartcols1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-76642	libuuid1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-76642	mount	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-76642	util-linux	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-76642	util-linux-extra	2.38.1-5+deb12u3	none
+metallb	HIGH	CVE-2026-76956	libexpat	2.7.4-r0	2.8.4-r0
+mimir	HIGH	CVE-2026-76956	libexpat	2.7.5-r0	2.8.4-r0
+metallb	HIGH	CVE-2026-76957	libexpat	2.7.4-r0	2.8.4-r0
+mimir	HIGH	CVE-2026-76957	libexpat	2.7.5-r0	2.8.4-r0
+velero-ui	HIGH	CVE-2026-76957	libexpat1	2.5.0-1+deb12u1	2.5.0-1+deb12u3
+backstage	HIGH	CVE-2026-77078	multer	2.1.1	2.3.0
+kubecost	HIGH	CVE-2026-77214	expat	2.5.0-5.el9_7.1	none
+kubecost	HIGH	CVE-2026-77214	expat	2.5.0-6.el9_8.1	none
+velero-ui	HIGH	CVE-2026-77214	libexpat1	2.5.0-1+deb12u1	none
+backstage	HIGH	CVE-2026-77301	adm-zip	0.5.17	0.6.1
+falco	HIGH	CVE-2026-77403	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+loki,mimir,minio	HIGH	CVE-2026-77403	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+testkube	HIGH	CVE-2026-77403	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+falco	HIGH	CVE-2026-77404	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+loki,mimir,minio	HIGH	CVE-2026-77404	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+testkube	HIGH	CVE-2026-77404	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+falco	HIGH	CVE-2026-77406	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+loki,mimir,minio	HIGH	CVE-2026-77406	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+testkube	HIGH	CVE-2026-77406	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+falco	HIGH	CVE-2026-77407	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+loki,mimir,minio	HIGH	CVE-2026-77407	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+testkube	HIGH	CVE-2026-77407	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+falco	HIGH	CVE-2026-77410	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+loki,mimir,minio	HIGH	CVE-2026-77410	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+testkube	HIGH	CVE-2026-77410	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+falco	HIGH	CVE-2026-77412	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+loki,mimir,minio	HIGH	CVE-2026-77412	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+testkube	HIGH	CVE-2026-77412	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+argocd	HIGH	CVE-2026-78408	setpriv	2.41.4-r0	2.41.6-r1
+mimir	HIGH	CVE-2026-78408	libuuid	2.41.4-r0	2.41.6-r1
+testkube	HIGH	CVE-2026-78408	bsdutils	1:2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78408	libblkid1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78408	libmount1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78408	libsmartcols1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78408	libuuid1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78408	mount	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78408	util-linux	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78408	util-linux-extra	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78408	bsdutils	1:2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78408	libblkid1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78408	libmount1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78408	libsmartcols1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78408	libuuid1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78408	mount	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78408	util-linux	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78408	util-linux-extra	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78409	bsdutils	1:2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78409	libblkid1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78409	libmount1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78409	libsmartcols1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78409	libuuid1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78409	mount	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78409	util-linux	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78409	util-linux-extra	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78409	bsdutils	1:2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78409	libblkid1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78409	libmount1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78409	libsmartcols1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78409	libuuid1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78409	mount	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78409	util-linux	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78409	util-linux-extra	2.38.1-5+deb12u3	none
+argocd	HIGH	CVE-2026-78410	setpriv	2.41.4-r0	2.41.6-r0
+mimir	HIGH	CVE-2026-78410	libuuid	2.41.4-r0	2.41.6-r0
+testkube	HIGH	CVE-2026-78410	bsdutils	1:2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78410	libblkid1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78410	libmount1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78410	libsmartcols1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78410	libuuid1	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78410	mount	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78410	util-linux	2.38.1-5+deb12u3	none
+testkube	HIGH	CVE-2026-78410	util-linux-extra	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78410	bsdutils	1:2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78410	libblkid1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78410	libmount1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78410	libsmartcols1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78410	libuuid1	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78410	mount	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78410	util-linux	2.38.1-5+deb12u3	none
+velero-ui	HIGH	CVE-2026-78410	util-linux-extra	2.38.1-5+deb12u3	none
+argo-rollouts	HIGH	CVE-2026-78667	stdlib	v1.26.7	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78667	stdlib	v1.24.0	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78667	stdlib	v1.25.3	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78667	stdlib	v1.26.2	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78667	stdlib	v1.26.4	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78667	stdlib	v1.26.5	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78667	stdlib	v1.27.1	1.26.9, 1.27.2
+cert-manager	HIGH	CVE-2026-78667	stdlib	v1.26.8	1.26.9, 1.27.2
+cnpg	HIGH	CVE-2026-78667	stdlib	v1.27.1	1.26.9, 1.27.2
+crossplane	HIGH	CVE-2026-78667	stdlib	v1.26.7	1.26.9, 1.27.2
+external-dns	HIGH	CVE-2026-78667	stdlib	v1.27.0	1.26.9, 1.27.2
+external-secrets	HIGH	CVE-2026-78667	stdlib	v1.26.6	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-78667	stdlib	v1.17.13	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-78667	stdlib	v1.20.8	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-78667	stdlib	v1.25.1	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-78667	stdlib	v1.25.6	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-78667	stdlib	v1.26.8	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-78667	stdlib	v1.26.6	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-78667	stdlib	v1.26.7	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-78667	stdlib	v1.23.10	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-78667	stdlib	v1.23.6	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-78667	stdlib	v1.24.9	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-78667	stdlib	v1.26.4	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-78667	stdlib	v1.26.5	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-78667	stdlib	v1.26.6	1.26.9, 1.27.2
+kargo	HIGH	CVE-2026-78667	stdlib	v1.27.1	1.26.9, 1.27.2
+komoplane	HIGH	CVE-2026-78667	stdlib	v1.26.2	1.26.9, 1.27.2
+kubecost	HIGH	CVE-2026-78667	stdlib	v1.24.11	1.26.9, 1.27.2
+kubecost	HIGH	CVE-2026-78667	stdlib	v1.25.5	1.26.9, 1.27.2
+kubecost	HIGH	CVE-2026-78667	stdlib	v1.26.4	1.26.9, 1.27.2
+kubevirt	HIGH	CVE-2026-78667	stdlib	v1.23.4	1.26.9, 1.27.2
+kubevirt	HIGH	CVE-2026-78667	stdlib	v1.23.6	1.26.9, 1.27.2
+kubevirt-manager	HIGH	CVE-2026-78667	stdlib	v1.23.3	1.26.9, 1.27.2
+kyverno	HIGH	CVE-2026-78667	stdlib	v1.26.6	1.26.9, 1.27.2
+loki	HIGH	CVE-2026-78667	stdlib	v1.26.5	1.26.9, 1.27.2
+loki	HIGH	CVE-2026-78667	stdlib	v1.26.6	1.26.9, 1.27.2
+loki	HIGH	CVE-2026-78667	stdlib	v1.26.8	1.26.9, 1.27.2
+loki	HIGH	CVE-2026-78667	stdlib	v1.27.1	1.26.9, 1.27.2
+loki,mimir,minio	HIGH	CVE-2026-78667	stdlib	v1.27.1	1.26.9, 1.27.2
+metallb	HIGH	CVE-2026-78667	stdlib	v1.25.8	1.26.9, 1.27.2
+metallb	HIGH	CVE-2026-78667	stdlib	v1.25.9	1.26.9, 1.27.2
+mimir	HIGH	CVE-2026-78667	stdlib	v1.26.5	1.26.9, 1.27.2
+mimir	HIGH	CVE-2026-78667	stdlib	v1.26.7	1.26.9, 1.27.2
+openbao	HIGH	CVE-2026-78667	stdlib	v1.27.1	1.26.9, 1.27.2
+prometheus-blackbox-exporter	HIGH	CVE-2026-78667	stdlib	v1.27.1	1.26.9, 1.27.2
+tempo	HIGH	CVE-2026-78667	stdlib	v1.27.1	1.26.9, 1.27.2
+testkube	HIGH	CVE-2026-78667	stdlib	v1.25.0	1.26.9, 1.27.2
+testkube	HIGH	CVE-2026-78667	stdlib	v1.26.0	1.26.9, 1.27.2
+testkube	HIGH	CVE-2026-78667	stdlib	v1.26.5	1.26.9, 1.27.2
+testkube	HIGH	CVE-2026-78667	stdlib	v1.26.8	1.26.9, 1.27.2
+testkube	HIGH	CVE-2026-78667	stdlib	v1.27.1	1.26.9, 1.27.2
+traefik	HIGH	CVE-2026-78667	stdlib	v1.26.8	1.26.9, 1.27.2
+trivy	HIGH	CVE-2026-78667	stdlib	v1.27.0	1.26.9, 1.27.2
+velero	HIGH	CVE-2026-78667	stdlib	v1.23.6	1.26.9, 1.27.2
+velero	HIGH	CVE-2026-78667	stdlib	v1.25.11	1.26.9, 1.27.2
+velero	HIGH	CVE-2026-78667	stdlib	v1.25.7	1.26.9, 1.27.2
+velero-ui	HIGH	CVE-2026-78667	stdlib	v1.22.5	1.26.9, 1.27.2
+velero-ui	HIGH	CVE-2026-78667	stdlib	v1.23.7	1.26.9, 1.27.2
+argo-rollouts	HIGH	CVE-2026-78669	golang.org/x/net	v0.56.0	0.60.0
+argo-rollouts	HIGH	CVE-2026-78669	stdlib	v1.26.7	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78669	golang.org/x/net	v0.38.0	0.60.0
+argocd	HIGH	CVE-2026-78669	golang.org/x/net	v0.40.0	0.60.0
+argocd	HIGH	CVE-2026-78669	golang.org/x/net	v0.55.0	0.60.0
+argocd	HIGH	CVE-2026-78669	golang.org/x/net	v0.56.0	0.60.0
+argocd	HIGH	CVE-2026-78669	golang.org/x/net	v0.59.0	0.60.0
+argocd	HIGH	CVE-2026-78669	stdlib	v1.24.0	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78669	stdlib	v1.25.3	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78669	stdlib	v1.26.2	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78669	stdlib	v1.26.4	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78669	stdlib	v1.26.5	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78669	stdlib	v1.27.1	1.26.9, 1.27.2
+cert-manager	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+cert-manager	HIGH	CVE-2026-78669	stdlib	v1.26.8	1.26.9, 1.27.2
+cnpg	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+cnpg	HIGH	CVE-2026-78669	stdlib	v1.27.1	1.26.9, 1.27.2
+crossplane	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+crossplane	HIGH	CVE-2026-78669	stdlib	v1.26.7	1.26.9, 1.27.2
+external-dns	HIGH	CVE-2026-78669	golang.org/x/net	v0.59.0	0.60.0
+external-dns	HIGH	CVE-2026-78669	stdlib	v1.27.0	1.26.9, 1.27.2
+external-secrets	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+external-secrets	HIGH	CVE-2026-78669	stdlib	v1.26.6	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-78669	golang.org/x/net	v0.14.0	0.60.0
+falco	HIGH	CVE-2026-78669	golang.org/x/net	v0.43.0	0.60.0
+falco	HIGH	CVE-2026-78669	golang.org/x/net	v0.48.0	0.60.0
+falco	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+falco	HIGH	CVE-2026-78669	golang.org/x/net	v0.7.0	0.60.0
+falco	HIGH	CVE-2026-78669	stdlib	v1.17.13	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-78669	stdlib	v1.20.8	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-78669	stdlib	v1.25.1	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-78669	stdlib	v1.25.6	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-78669	stdlib	v1.26.8	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+grafana	HIGH	CVE-2026-78669	stdlib	v1.26.6	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-78669	stdlib	v1.26.7	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-78669	golang.org/x/net	v0.23.0	0.60.0
+k8s-monitoring	HIGH	CVE-2026-78669	golang.org/x/net	v0.26.0	0.60.0
+k8s-monitoring	HIGH	CVE-2026-78669	golang.org/x/net	v0.30.0	0.60.0
+k8s-monitoring	HIGH	CVE-2026-78669	golang.org/x/net	v0.38.0	0.60.0
+k8s-monitoring	HIGH	CVE-2026-78669	golang.org/x/net	v0.56.0	0.60.0
+k8s-monitoring	HIGH	CVE-2026-78669	golang.org/x/net	v0.57.0	0.60.0
+k8s-monitoring	HIGH	CVE-2026-78669	stdlib	v1.23.10	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-78669	stdlib	v1.23.6	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-78669	stdlib	v1.24.9	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-78669	stdlib	v1.26.4	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-78669	stdlib	v1.26.5	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-78669	stdlib	v1.26.6	1.26.9, 1.27.2
+kargo	HIGH	CVE-2026-78669	golang.org/x/net	v0.57.0	0.60.0
+kargo	HIGH	CVE-2026-78669	golang.org/x/net	v0.59.0	0.60.0
+kargo	HIGH	CVE-2026-78669	stdlib	v1.27.1	1.26.9, 1.27.2
+komoplane	HIGH	CVE-2026-78669	golang.org/x/net	v0.47.0	0.60.0
+komoplane	HIGH	CVE-2026-78669	stdlib	v1.26.2	1.26.9, 1.27.2
+kubecost	HIGH	CVE-2026-78669	golang.org/x/net	v0.42.0	0.60.0
+kubecost	HIGH	CVE-2026-78669	golang.org/x/net	v0.48.0	0.60.0
+kubecost	HIGH	CVE-2026-78669	golang.org/x/net	v0.55.0	0.60.0
+kubecost	HIGH	CVE-2026-78669	stdlib	v1.24.11	1.26.9, 1.27.2
+kubecost	HIGH	CVE-2026-78669	stdlib	v1.25.5	1.26.9, 1.27.2
+kubecost	HIGH	CVE-2026-78669	stdlib	v1.26.4	1.26.9, 1.27.2
+kubevirt	HIGH	CVE-2026-78669	stdlib	v1.23.4	1.26.9, 1.27.2
+kubevirt	HIGH	CVE-2026-78669	stdlib	v1.23.6	1.26.9, 1.27.2
+kubevirt-manager	HIGH	CVE-2026-78669	golang.org/x/net	v0.30.0	0.60.0
+kubevirt-manager	HIGH	CVE-2026-78669	stdlib	v1.23.3	1.26.9, 1.27.2
+kyverno	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+kyverno	HIGH	CVE-2026-78669	stdlib	v1.26.6	1.26.9, 1.27.2
+loki	HIGH	CVE-2026-78669	golang.org/x/net	v0.57.0	0.60.0
+loki	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+loki	HIGH	CVE-2026-78669	stdlib	v1.26.5	1.26.9, 1.27.2
+loki	HIGH	CVE-2026-78669	stdlib	v1.26.6	1.26.9, 1.27.2
+loki	HIGH	CVE-2026-78669	stdlib	v1.26.8	1.26.9, 1.27.2
+loki	HIGH	CVE-2026-78669	stdlib	v1.27.1	1.26.9, 1.27.2
+loki,mimir,minio	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+loki,mimir,minio	HIGH	CVE-2026-78669	golang.org/x/net	v0.59.0	0.60.0
+loki,mimir,minio	HIGH	CVE-2026-78669	stdlib	v1.27.1	1.26.9, 1.27.2
+metallb	HIGH	CVE-2026-78669	golang.org/x/net	v0.39.0	0.60.0
+metallb	HIGH	CVE-2026-78669	golang.org/x/net	v0.53.0	0.60.0
+metallb	HIGH	CVE-2026-78669	stdlib	v1.25.8	1.26.9, 1.27.2
+metallb	HIGH	CVE-2026-78669	stdlib	v1.25.9	1.26.9, 1.27.2
+mimir	HIGH	CVE-2026-78669	golang.org/x/net	v0.56.0	0.60.0
+mimir	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+mimir	HIGH	CVE-2026-78669	stdlib	v1.26.5	1.26.9, 1.27.2
+mimir	HIGH	CVE-2026-78669	stdlib	v1.26.7	1.26.9, 1.27.2
+openbao	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+openbao	HIGH	CVE-2026-78669	stdlib	v1.27.1	1.26.9, 1.27.2
+prometheus-blackbox-exporter	HIGH	CVE-2026-78669	golang.org/x/net	v0.59.0	0.60.0
+prometheus-blackbox-exporter	HIGH	CVE-2026-78669	stdlib	v1.27.1	1.26.9, 1.27.2
+tempo	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+tempo	HIGH	CVE-2026-78669	stdlib	v1.27.1	1.26.9, 1.27.2
+testkube	HIGH	CVE-2026-78669	golang.org/x/net	v0.48.0	0.60.0
+testkube	HIGH	CVE-2026-78669	golang.org/x/net	v0.57.0	0.60.0
+testkube	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+testkube	HIGH	CVE-2026-78669	stdlib	v1.25.0	1.26.9, 1.27.2
+testkube	HIGH	CVE-2026-78669	stdlib	v1.26.0	1.26.9, 1.27.2
+testkube	HIGH	CVE-2026-78669	stdlib	v1.26.5	1.26.9, 1.27.2
+testkube	HIGH	CVE-2026-78669	stdlib	v1.26.8	1.26.9, 1.27.2
+testkube	HIGH	CVE-2026-78669	stdlib	v1.27.1	1.26.9, 1.27.2
+traefik	HIGH	CVE-2026-78669	golang.org/x/net	v0.59.0	0.60.0
+traefik	HIGH	CVE-2026-78669	stdlib	v1.26.8	1.26.9, 1.27.2
+trivy	HIGH	CVE-2026-78669	golang.org/x/net	v0.59.0	0.60.0
+trivy	HIGH	CVE-2026-78669	stdlib	v1.27.0	1.26.9, 1.27.2
+velero	HIGH	CVE-2026-78669	golang.org/x/net	v0.37.0	0.60.0
+velero	HIGH	CVE-2026-78669	golang.org/x/net	v0.47.0	0.60.0
+velero	HIGH	CVE-2026-78669	golang.org/x/net	v0.55.0	0.60.0
+velero	HIGH	CVE-2026-78669	stdlib	v1.23.6	1.26.9, 1.27.2
+velero	HIGH	CVE-2026-78669	stdlib	v1.25.11	1.26.9, 1.27.2
+velero	HIGH	CVE-2026-78669	stdlib	v1.25.7	1.26.9, 1.27.2
+velero-ui	HIGH	CVE-2026-78669	golang.org/x/net	v0.26.0	0.60.0
+velero-ui	HIGH	CVE-2026-78669	stdlib	v1.22.5	1.26.9, 1.27.2
+velero-ui	HIGH	CVE-2026-78669	stdlib	v1.23.7	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-79921	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+loki,mimir,minio	HIGH	CVE-2026-79921	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+testkube	HIGH	CVE-2026-79921	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+backstage	HIGH	CVE-2026-82049	python-3.13-base	3.13.15-r1	3.13.15_git20260912-r0
+metallb	HIGH	CVE-2026-82049	pyc	3.12.12-r0	3.12.15-r0
+metallb	HIGH	CVE-2026-82049	python3	3.12.12-r0	3.12.15-r0
+metallb	HIGH	CVE-2026-82049	python3-pyc	3.12.12-r0	3.12.15-r0
+metallb	HIGH	CVE-2026-82049	python3-pycache-pyc0	3.12.12-r0	3.12.15-r0
+backstage	HIGH	CVE-2026-82333	multer	2.1.1	2.3.0
+k8s-monitoring	HIGH	CVE-2026-8286	curl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.5
+k8s-monitoring	HIGH	CVE-2026-8286	libcurl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.5
+kubecost	HIGH	CVE-2026-8286	curl-minimal	7.76.1-34.el9	7.76.1-40.el9_8.5
+kubecost	HIGH	CVE-2026-8286	curl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.5
+kubecost	HIGH	CVE-2026-8286	libcurl-minimal	7.76.1-34.el9	7.76.1-40.el9_8.5
+kubecost	HIGH	CVE-2026-8286	libcurl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.5
+mimir	HIGH	CVE-2026-8286	curl	8.17.0-r1	8.22.0-r0
+mimir	HIGH	CVE-2026-8286	libcurl	8.17.0-r1	8.22.0-r0
+testkube	HIGH	CVE-2026-8286	curl	7.88.1-10+deb12u14	none
+testkube	HIGH	CVE-2026-8286	libcurl4	7.88.1-10+deb12u14	none
+velero-ui	HIGH	CVE-2026-8286	curl	7.88.1-10+deb12u12	none
+velero-ui	HIGH	CVE-2026-8286	libcurl3-gnutls	7.88.1-10+deb12u12	none
+velero-ui	HIGH	CVE-2026-8286	libcurl4	7.88.1-10+deb12u12	none
+velero-ui	HIGH	CVE-2026-8328	libpython3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2026-8328	libpython3.11-stdlib	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2026-8328	python3.11	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+velero-ui	HIGH	CVE-2026-8328	python3.11-minimal	3.11.2-6+deb12u6	3.11.2-6+deb12u9
+backstage	HIGH	CVE-2026-84292	fast-uri	3.1.0	2.4.6, 3.1.7, 4.1.4
+velero-ui	HIGH	CVE-2026-84292	fast-uri	3.0.6	2.4.6, 3.1.7, 4.1.4
+argo-rollouts	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.80.0	1.83.1
+argocd	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.81.1	1.83.1
+falco	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.46.2	1.83.1
+falco	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.75.0	1.83.1
+falco	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.78.0	1.83.1
+grafana	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.83.0	1.83.1
+k8s-monitoring	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.79.3	1.83.1
+k8s-monitoring	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.80.0	1.83.1
+kubecost	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.74.2	1.83.1
+kubecost	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.77.0	1.83.1
+kubecost	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.79.3	1.83.1
+metallb	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.68.1	1.83.1
+metallb	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.72.1	1.83.1
+mimir	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.82.0	1.83.1
+testkube	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.79.3	1.83.1
+velero	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.69.4	1.83.1
+velero	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.77.0	1.83.1
+velero	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.81.1	1.83.1
+backstage	HIGH	CVE-2026-84375	js-yaml	3.14.2	4.3.2, 3.15.2
+backstage	HIGH	CVE-2026-84375	js-yaml	4.1.1	4.3.2, 3.15.2
+testkube	HIGH	CVE-2026-84375	js-yaml	3.13.1	4.3.2, 3.15.2
+argo-rollouts	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.80.0	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+argocd	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.81.1	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+falco	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.46.2	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+falco	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.75.0	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+falco	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.78.0	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+grafana	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.83.0	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+grafana	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.83.1	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+k8s-monitoring	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.79.3	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+k8s-monitoring	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.80.0	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+kubecost	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.74.2	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+kubecost	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.77.0	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+kubecost	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.79.3	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+metallb	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.68.1	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+metallb	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.72.1	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+mimir	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.82.0	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+testkube	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.79.3	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+velero	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.69.4	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+velero	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.77.0	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+velero	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.81.1	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+k8s-monitoring	HIGH	CVE-2026-8458	curl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.7
+k8s-monitoring	HIGH	CVE-2026-8458	libcurl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.7
+kubecost	HIGH	CVE-2026-8458	curl-minimal	7.76.1-34.el9	7.76.1-40.el9_8.7
+kubecost	HIGH	CVE-2026-8458	curl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.7
+kubecost	HIGH	CVE-2026-8458	libcurl-minimal	7.76.1-34.el9	7.76.1-40.el9_8.7
+kubecost	HIGH	CVE-2026-8458	libcurl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.7
+mimir	HIGH	CVE-2026-8458	curl	8.17.0-r1	8.22.0-r0
+mimir	HIGH	CVE-2026-8458	libcurl	8.17.0-r1	8.22.0-r0
+testkube	HIGH	CVE-2026-8458	curl	7.88.1-10+deb12u14	none
+testkube	HIGH	CVE-2026-8458	libcurl4	7.88.1-10+deb12u14	none
+velero-ui	HIGH	CVE-2026-8458	curl	7.88.1-10+deb12u12	none
+velero-ui	HIGH	CVE-2026-8458	libcurl3-gnutls	7.88.1-10+deb12u12	none
+velero-ui	HIGH	CVE-2026-8458	libcurl4	7.88.1-10+deb12u12	none
+falco	HIGH	CVE-2026-84782	libssl-dev	3.0.2-0ubuntu1.16	3.0.2-0ubuntu1.30
+falco	HIGH	CVE-2026-84782	libssl3	3.0.2-0ubuntu1.16	3.0.2-0ubuntu1.30
+k8s-monitoring	HIGH	CVE-2026-84782	openssl-libs	1:3.5.5-4.el9_8	1:3.5.8-2.el9_8
+kubecost	HIGH	CVE-2026-84782	openssl	1:3.5.5-4.el9_8	1:3.5.8-2.el9_8
+kubecost	HIGH	CVE-2026-84782	openssl-libs	1:3.5.1-4.el9_7	1:3.5.8-2.el9_8
+kubecost	HIGH	CVE-2026-84782	openssl-libs	1:3.5.5-4.el9_8	1:3.5.8-2.el9_8
+kubevirt	HIGH	CVE-2026-84782	libssl3	3.0.13-1~deb12u1	none
+testkube	HIGH	CVE-2026-84782	libssl3	3.0.20-1~deb12u2	none
+testkube	HIGH	CVE-2026-84782	openssl	3.0.20-1~deb12u2	none
+velero	HIGH	CVE-2026-84782	libssl3	3.0.2-0ubuntu1.25	3.0.2-0ubuntu1.30
+velero	HIGH	CVE-2026-84782	openssl	3.0.2-0ubuntu1.25	3.0.2-0ubuntu1.30
+velero-ui	HIGH	CVE-2026-84782	libssl3	3.0.15-1~deb12u1	none
+velero-ui	HIGH	CVE-2026-84782	libssl3	3.0.16-1~deb12u1	none
+velero-ui	HIGH	CVE-2026-84782	openssl	3.0.15-1~deb12u1	none
+velero-ui	HIGH	CVE-2026-84782	openssl	3.0.16-1~deb12u1	none
+backstage	HIGH	CVE-2026-84933	node-gyp	13.0.1-r1	13.0.2-r1
+backstage	HIGH	CVE-2026-84961	undici	7.24.7	7.29.1, 8.10.2
+backstage	HIGH	CVE-2026-84961	undici	7.25.0	7.29.1, 8.10.2
+backstage	HIGH	CVE-2026-84961	undici	7.28.0	7.29.1, 8.10.2
+backstage	HIGH	CVE-2026-85014	node-gyp	13.0.1-r1	13.0.2-r1
+backstage	HIGH	CVE-2026-85393	node-forge	1.4.0	none
+argocd	HIGH	CVE-2026-85731	oras.land/oras-go/v2	v2.6.1	2.6.2
+falco	HIGH	CVE-2026-85731	oras.land/oras-go/v2	v2.5.0	2.6.2
+k8s-monitoring	HIGH	CVE-2026-85731	oras.land/oras-go/v2	v2.6.0	2.6.2
+k8s-monitoring	HIGH	CVE-2026-86140	libxml2	2.9.13-14.el9_8.1	2.9.13-14.el9_8.5
+kubecost	HIGH	CVE-2026-86140	libxml2	2.9.13-14.el9_7	2.9.13-14.el9_8.5
+k8s-monitoring	HIGH	CVE-2026-86145	pcre2	10.40-6.el9	10.40-7.el9_8
+k8s-monitoring	HIGH	CVE-2026-86145	pcre2-syntax	10.40-6.el9	10.40-7.el9_8
+keycloak	HIGH	CVE-2026-86145	pcre2	10.40-6.el9	10.40-7.el9_8
+keycloak	HIGH	CVE-2026-86145	pcre2-syntax	10.40-6.el9	10.40-7.el9_8
+kubecost	HIGH	CVE-2026-86145	pcre2	10.40-6.el9	10.40-7.el9_8
+kubecost	HIGH	CVE-2026-86145	pcre2-syntax	10.40-6.el9	10.40-7.el9_8
+loki,mimir,minio	HIGH	CVE-2026-86145	pcre2	10.40-6.el9	10.40-7.el9_8
+loki,mimir,minio	HIGH	CVE-2026-86145	pcre2-syntax	10.40-6.el9	10.40-7.el9_8
+mimir	HIGH	CVE-2026-86145	pcre2	10.47-r0	10.48-r0
+testkube	HIGH	CVE-2026-86145	libpcre2-8-0	10.42-1	10.42-1+deb12u1
+velero-ui	HIGH	CVE-2026-86145	libpcre2-8-0	10.42-1	10.42-1+deb12u1
+backstage	HIGH	CVE-2026-87776	compression	1.8.1	1.8.2
+k8s-monitoring	HIGH	CVE-2026-88647	gnutls	3.8.10-4.el9_8	none
+kubecost	HIGH	CVE-2026-88647	gnutls	3.8.10-4.el9_8	none
+kubecost	HIGH	CVE-2026-88647	gnutls	3.8.3-9.el9	none
+k8s-monitoring	HIGH	CVE-2026-88648	gnutls	3.8.10-4.el9_8	none
+kubecost	HIGH	CVE-2026-88648	gnutls	3.8.10-4.el9_8	none
+kubecost	HIGH	CVE-2026-88648	gnutls	3.8.3-9.el9	none
+mimir	HIGH	CVE-2026-89157	pcre2	10.47-r0	10.48-r0
+testkube	HIGH	CVE-2026-89157	libpcre2-8-0	10.42-1	10.42-1+deb12u1
+velero-ui	HIGH	CVE-2026-89157	libpcre2-8-0	10.42-1	10.42-1+deb12u1
+k8s-monitoring	HIGH	CVE-2026-89161	pcre2	10.40-6.el9	10.40-7.el9_8
+k8s-monitoring	HIGH	CVE-2026-89161	pcre2-syntax	10.40-6.el9	10.40-7.el9_8
+keycloak	HIGH	CVE-2026-89161	pcre2	10.40-6.el9	10.40-7.el9_8
+keycloak	HIGH	CVE-2026-89161	pcre2-syntax	10.40-6.el9	10.40-7.el9_8
+kubecost	HIGH	CVE-2026-89161	pcre2	10.40-6.el9	10.40-7.el9_8
+kubecost	HIGH	CVE-2026-89161	pcre2-syntax	10.40-6.el9	10.40-7.el9_8
+loki,mimir,minio	HIGH	CVE-2026-89161	pcre2	10.40-6.el9	10.40-7.el9_8
+loki,mimir,minio	HIGH	CVE-2026-89161	pcre2-syntax	10.40-6.el9	10.40-7.el9_8
+mimir	HIGH	CVE-2026-89161	pcre2	10.47-r0	10.48-r0
+testkube	HIGH	CVE-2026-89161	libpcre2-8-0	10.42-1	10.42-1+deb12u1
+velero-ui	HIGH	CVE-2026-89161	libpcre2-8-0	10.42-1	10.42-1+deb12u1
+mimir	HIGH	CVE-2026-8925	curl	8.17.0-r1	8.22.0-r0
+mimir	HIGH	CVE-2026-8925	libcurl	8.17.0-r1	8.22.0-r0
+k8s-monitoring	HIGH	CVE-2026-8927	curl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.7
+k8s-monitoring	HIGH	CVE-2026-8927	libcurl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.7
+kubecost	HIGH	CVE-2026-8927	curl-minimal	7.76.1-34.el9	7.76.1-40.el9_8.7
+kubecost	HIGH	CVE-2026-8927	curl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.7
+kubecost	HIGH	CVE-2026-8927	libcurl-minimal	7.76.1-34.el9	7.76.1-40.el9_8.7
+kubecost	HIGH	CVE-2026-8927	libcurl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.7
+mimir	HIGH	CVE-2026-8927	curl	8.17.0-r1	8.22.0-r0
+mimir	HIGH	CVE-2026-8927	libcurl	8.17.0-r1	8.22.0-r0
+testkube	HIGH	CVE-2026-8927	curl	7.88.1-10+deb12u14	none
+testkube	HIGH	CVE-2026-8927	libcurl4	7.88.1-10+deb12u14	none
+velero-ui	HIGH	CVE-2026-8927	curl	7.88.1-10+deb12u12	none
+velero-ui	HIGH	CVE-2026-8927	libcurl3-gnutls	7.88.1-10+deb12u12	none
+velero-ui	HIGH	CVE-2026-8927	libcurl4	7.88.1-10+deb12u12	none
+keycloak	HIGH	CVE-2026-89407	com.fasterxml.jackson.core:jackson-core	2.21.5	2.18.11, 2.21.7, 2.22.3
+keycloak	HIGH	CVE-2026-89425	com.fasterxml.jackson.core:jackson-core	2.21.5	2.21.7, 2.22.3, 2.18.11
+keycloak	HIGH	CVE-2026-91776	com.fasterxml.jackson.core:jackson-databind	2.21.5	2.18.11, 2.21.7, 2.22.3
+keycloak	HIGH	CVE-2026-91777	com.fasterxml.jackson.core:jackson-databind	2.21.5	2.21.7, 2.18.11, 2.22.3
+kubecost	HIGH	CVE-2026-9256	nginx	2:1.20.1-28.el9_8.2	2:1.20.1-28.el9_8.3
+kubecost	HIGH	CVE-2026-9256	nginx-core	2:1.20.1-28.el9_8.2	2:1.20.1-28.el9_8.3
+kubecost	HIGH	CVE-2026-9256	nginx-filesystem	2:1.20.1-28.el9_8.2	2:1.20.1-28.el9_8.3
+backstage	HIGH	CVE-2026-92942	vm2	3.11.6	3.11.7
+backstage	HIGH	CVE-2026-92950	vm2	3.11.6	3.11.7
+backstage	HIGH	CVE-2026-92958	vm2	3.11.6	3.11.7
+backstage	HIGH	CVE-2026-92959	vm2	3.11.6	3.11.8
+backstage	HIGH	CVE-2026-93687	braces	3.0.3	none
+backstage	HIGH	CVE-2026-93748	http-cache-semantics	4.2.0	none
+velero-ui	HIGH	CVE-2026-93748	http-cache-semantics	4.1.1	none
+velero-ui	HIGH	CVE-2026-93749	source-map-js	1.2.1	1.2.2
+kubecost	HIGH	CVE-2026-93990	expat	2.5.0-5.el9_7.1	2.5.0-6.el9_8.5
+kubecost	HIGH	CVE-2026-93990	expat	2.5.0-6.el9_8.1	2.5.0-6.el9_8.5
+metallb	HIGH	CVE-2026-93990	libexpat	2.7.4-r0	2.8.5-r0
+mimir	HIGH	CVE-2026-93990	libexpat	2.7.5-r0	2.8.5-r0
+velero-ui	HIGH	CVE-2026-93990	libexpat1	2.5.0-1+deb12u1	2.5.0-1+deb12u4
+velero-ui	HIGH	CVE-2026-9496	pacote	17.0.4	21.5.1
+testkube	HIGH	CVE-2026-9538	perl-base	5.36.0-7+deb12u3	none
+velero-ui	HIGH	CVE-2026-9538	libperl5.36	5.36.0-7+deb12u2	none
+velero-ui	HIGH	CVE-2026-9538	perl	5.36.0-7+deb12u2	none
+velero-ui	HIGH	CVE-2026-9538	perl-base	5.36.0-7+deb12u2	none
+velero-ui	HIGH	CVE-2026-9538	perl-modules-5.36	5.36.0-7+deb12u2	none
+k8s-monitoring	HIGH	CVE-2026-9547	curl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.5
+k8s-monitoring	HIGH	CVE-2026-9547	libcurl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.5
+kubecost	HIGH	CVE-2026-9547	curl-minimal	7.76.1-34.el9	7.76.1-40.el9_8.5
+kubecost	HIGH	CVE-2026-9547	curl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.5
+kubecost	HIGH	CVE-2026-9547	libcurl-minimal	7.76.1-34.el9	7.76.1-40.el9_8.5
+kubecost	HIGH	CVE-2026-9547	libcurl-minimal	7.76.1-40.el9	7.76.1-40.el9_8.5
+mimir	HIGH	CVE-2026-9547	curl	8.17.0-r1	8.22.0-r0
+mimir	HIGH	CVE-2026-9547	libcurl	8.17.0-r1	8.22.0-r0
+backstage	HIGH	CVE-2026-9697	undici	7.24.7	7.28.0, 8.5.0
+backstage	HIGH	CVE-2026-9697	undici	7.25.0	7.28.0, 8.5.0
+argo-rollouts	HIGH	CVE-2026-97031	stdlib	v1.26.7	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-97031	stdlib	v1.24.0	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-97031	stdlib	v1.25.3	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-97031	stdlib	v1.26.2	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-97031	stdlib	v1.26.4	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-97031	stdlib	v1.26.5	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-97031	stdlib	v1.27.1	1.26.9, 1.27.2
+cert-manager	HIGH	CVE-2026-97031	stdlib	v1.26.8	1.26.9, 1.27.2
+cnpg	HIGH	CVE-2026-97031	stdlib	v1.27.1	1.26.9, 1.27.2
+crossplane	HIGH	CVE-2026-97031	stdlib	v1.26.7	1.26.9, 1.27.2
+external-dns	HIGH	CVE-2026-97031	stdlib	v1.27.0	1.26.9, 1.27.2
+external-secrets	HIGH	CVE-2026-97031	stdlib	v1.26.6	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-97031	stdlib	v1.17.13	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-97031	stdlib	v1.20.8	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-97031	stdlib	v1.25.1	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-97031	stdlib	v1.25.6	1.26.9, 1.27.2
+falco	HIGH	CVE-2026-97031	stdlib	v1.26.8	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-97031	stdlib	v1.26.6	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-97031	stdlib	v1.26.7	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-97031	stdlib	v1.23.10	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-97031	stdlib	v1.23.6	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-97031	stdlib	v1.24.9	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-97031	stdlib	v1.26.4	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-97031	stdlib	v1.26.5	1.26.9, 1.27.2
+k8s-monitoring	HIGH	CVE-2026-97031	stdlib	v1.26.6	1.26.9, 1.27.2
+kargo	HIGH	CVE-2026-97031	stdlib	v1.27.1	1.26.9, 1.27.2
+komoplane	HIGH	CVE-2026-97031	stdlib	v1.26.2	1.26.9, 1.27.2
+kubecost	HIGH	CVE-2026-97031	stdlib	v1.24.11	1.26.9, 1.27.2
+kubecost	HIGH	CVE-2026-97031	stdlib	v1.25.5	1.26.9, 1.27.2
+kubecost	HIGH	CVE-2026-97031	stdlib	v1.26.4	1.26.9, 1.27.2
+kubevirt	HIGH	CVE-2026-97031	stdlib	v1.23.4	1.26.9, 1.27.2
+kubevirt	HIGH	CVE-2026-97031	stdlib	v1.23.6	1.26.9, 1.27.2
+kubevirt-manager	HIGH	CVE-2026-97031	stdlib	v1.23.3	1.26.9, 1.27.2
+kyverno	HIGH	CVE-2026-97031	stdlib	v1.26.6	1.26.9, 1.27.2
+loki	HIGH	CVE-2026-97031	stdlib	v1.26.5	1.26.9, 1.27.2
+loki	HIGH	CVE-2026-97031	stdlib	v1.26.6	1.26.9, 1.27.2
+loki	HIGH	CVE-2026-97031	stdlib	v1.26.8	1.26.9, 1.27.2
+loki	HIGH	CVE-2026-97031	stdlib	v1.27.1	1.26.9, 1.27.2
+loki,mimir,minio	HIGH	CVE-2026-97031	stdlib	v1.27.1	1.26.9, 1.27.2
+metallb	HIGH	CVE-2026-97031	stdlib	v1.25.8	1.26.9, 1.27.2
+metallb	HIGH	CVE-2026-97031	stdlib	v1.25.9	1.26.9, 1.27.2
+mimir	HIGH	CVE-2026-97031	stdlib	v1.26.5	1.26.9, 1.27.2
+mimir	HIGH	CVE-2026-97031	stdlib	v1.26.7	1.26.9, 1.27.2
+openbao	HIGH	CVE-2026-97031	stdlib	v1.27.1	1.26.9, 1.27.2
+prometheus-blackbox-exporter	HIGH	CVE-2026-97031	stdlib	v1.27.1	1.26.9, 1.27.2
+tempo	HIGH	CVE-2026-97031	stdlib	v1.27.1	1.26.9, 1.27.2
+testkube	HIGH	CVE-2026-97031	stdlib	v1.25.0	1.26.9, 1.27.2
+testkube	HIGH	CVE-2026-97031	stdlib	v1.26.0	1.26.9, 1.27.2
+testkube	HIGH	CVE-2026-97031	stdlib	v1.26.5	1.26.9, 1.27.2
+testkube	HIGH	CVE-2026-97031	stdlib	v1.26.8	1.26.9, 1.27.2
+testkube	HIGH	CVE-2026-97031	stdlib	v1.27.1	1.26.9, 1.27.2
+traefik	HIGH	CVE-2026-97031	stdlib	v1.26.8	1.26.9, 1.27.2
+trivy	HIGH	CVE-2026-97031	stdlib	v1.27.0	1.26.9, 1.27.2
+velero	HIGH	CVE-2026-97031	stdlib	v1.23.6	1.26.9, 1.27.2
+velero	HIGH	CVE-2026-97031	stdlib	v1.25.11	1.26.9, 1.27.2
+velero	HIGH	CVE-2026-97031	stdlib	v1.25.7	1.26.9, 1.27.2
+velero-ui	HIGH	CVE-2026-97031	stdlib	v1.22.5	1.26.9, 1.27.2
+velero-ui	HIGH	CVE-2026-97031	stdlib	v1.23.7	1.26.9, 1.27.2
+backstage	HIGH	CVE-2026-97687	py3-pip-wheel	26.2.1-r0	26.2.1-r2
+backstage	HIGH	CVE-2026-97687	py3.13-pip	26.2.1-r0	26.2.1-r2
+backstage	HIGH	CVE-2026-97687	py3.13-pip-base	26.2.1-r0	26.2.1-r2
+backstage	HIGH	CVE-2026-97687	urllib3	2.7.0	2.8.0
+grafana	HIGH	CVE-2026-97687	urllib3	2.7.0	2.8.0
+kubecost	HIGH	CVE-2026-97687	urllib3	2.6.3	2.8.0
+loki	HIGH	CVE-2026-97687	urllib3	2.7.0	2.8.0
+velero-ui	HIGH	CVE-2026-97687	urllib3	2.3.0	2.8.0
+backstage	HIGH	CVE-2026-97689	py3-pip-wheel	26.2.1-r0	26.2.1-r2
+backstage	HIGH	CVE-2026-97689	py3.13-pip	26.2.1-r0	26.2.1-r2
+backstage	HIGH	CVE-2026-97689	py3.13-pip-base	26.2.1-r0	26.2.1-r2
+backstage	HIGH	CVE-2026-97689	urllib3	2.7.0	2.8.0
+grafana	HIGH	CVE-2026-97689	urllib3	2.7.0	2.8.0
+kubecost	HIGH	CVE-2026-97689	urllib3	2.6.3	2.8.0
+loki	HIGH	CVE-2026-97689	urllib3	2.7.0	2.8.0
+velero-ui	HIGH	CVE-2026-97689	urllib3	2.3.0	2.8.0
+backstage	HIGH	GHSA-3f6p-5ww8-9rcr	mysql2	3.20.0	3.22.0
+kyverno	HIGH	GHSA-459x-q9hg-4gpq	github.com/kyverno/kyverno	v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty	none
+velero-ui	HIGH	GHSA-5c6j-r48x-rmvq	serialize-javascript	6.0.2	7.0.3
+backstage	HIGH	GHSA-5p4m-2wfm-xmqj	js-yaml	3.14.2	4.3.1, 3.15.1
+backstage	HIGH	GHSA-5p4m-2wfm-xmqj	js-yaml	4.1.1	4.3.1, 3.15.1
+testkube	HIGH	GHSA-5p4m-2wfm-xmqj	js-yaml	3.13.1	4.3.1, 3.15.1
+backstage	HIGH	GHSA-6v7p-g79w-8964	msgpack	1.1.2	1.2.1
+grafana	HIGH	GHSA-6v7p-g79w-8964	msgpack	1.1.2	1.2.1
+loki	HIGH	GHSA-6v7p-g79w-8964	msgpack	1.1.2	1.2.1
+backstage	HIGH	GHSA-6v7q-wjvx-w8wg	basic-ftp	5.2.0	5.2.2
+backstage	HIGH	GHSA-8238-w5pm-2374	adm-zip	0.5.17	0.6.1
+velero-ui	HIGH	GHSA-8h8q-6873-q5fj	next	15.2.3	15.5.16, 16.2.5
+kyverno	HIGH	GHSA-8wfp-579w-6r25	github.com/kyverno/kyverno	v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty	1.17.0
+velero-ui	HIGH	GHSA-f88m-g3jw-g9cj	sharp	0.33.5	0.35.0
+kyverno	HIGH	GHSA-fmqp-4wfc-w3v7	github.com/kyverno/kyverno	v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty	1.16.2
+velero-ui	HIGH	GHSA-h25m-26qc-wcjf	next	15.2.3	15.0.8, 15.1.12, 15.2.9, 15.3.9, 15.4.11, 15.5.10, 15.6.0-canary.61, 16.0.11, 16.1.5
+argo-rollouts	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.80.0	1.82.1
+argocd	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.81.1	1.82.1
+falco	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.46.2	1.82.1
+falco	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.75.0	1.82.1
+falco	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.78.0	1.82.1
+k8s-monitoring	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.79.3	1.82.1
+k8s-monitoring	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.80.0	1.82.1
+kubecost	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.74.2	1.82.1
+kubecost	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.77.0	1.82.1
+kubecost	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.79.3	1.82.1
+metallb	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.68.1	1.82.1
+metallb	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.72.1	1.82.1
+mimir	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.82.0	1.82.1
+testkube	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.79.3	1.82.1
+velero	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.69.4	1.82.1
+velero	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.77.0	1.82.1
+velero	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.81.1	1.82.1
+kubecost	HIGH	GHSA-hwqm-qvj9-4jr2	github.com/russellhaering/gosaml2	v0.10.0	0.11.0
+falco	HIGH	GHSA-m425-mq94-257g	google.golang.org/grpc	v1.46.2	1.56.3, 1.57.1, 1.58.3
+velero-ui	HIGH	GHSA-mwv6-3258-q52c	next	15.2.3	14.2.34, 15.0.6, 15.1.10, 15.2.7, 15.3.7, 15.4.9, 15.5.8, 15.6.0-canary.59, 16.0.9, 16.1.0-canary.17
+kubecost	HIGH	GHSA-pcgw-qcv5-h8ch	github.com/russellhaering/gosaml2	v0.10.0	0.11.0
+velero-ui	HIGH	GHSA-q4gf-8mx6-v5v3	next	15.2.3	15.5.15, 16.2.3
+kyverno	HIGH	GHSA-qr4g-8hrp-c4rw	github.com/kyverno/kyverno	v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty	none
+backstage	HIGH	GHSA-rcw4-f5rp-g42v	adm-zip	0.5.17	0.6.1
+velero-ui	HIGH	GHSA-rgj7-g3m4-5g8c	sharp	0.33.5	0.35.4
+velero-ui	HIGH	GHSA-wq5f-xc86-pv6w	sharp	0.33.5	0.35.5
+falco	CRITICAL	CVE-2018-0500	curl	7.59.0-r0	7.61.0-r0
+falco	CRITICAL	CVE-2018-0500	libcurl	7.59.0-r0	7.61.0-r0
+falco	CRITICAL	CVE-2018-1000300	curl	7.59.0-r0	7.60.0-r0
+falco	CRITICAL	CVE-2018-1000300	libcurl	7.59.0-r0	7.60.0-r0
+falco	CRITICAL	CVE-2018-1000301	curl	7.59.0-r0	7.60.0-r0
+falco	CRITICAL	CVE-2018-1000301	libcurl	7.59.0-r0	7.60.0-r0
+falco	CRITICAL	CVE-2018-14618	curl	7.59.0-r0	7.61.1-r0
+falco	CRITICAL	CVE-2018-14618	libcurl	7.59.0-r0	7.61.1-r0
+falco	CRITICAL	CVE-2018-16839	curl	7.59.0-r0	7.61.1-r1
+falco	CRITICAL	CVE-2018-16839	libcurl	7.59.0-r0	7.61.1-r1
+falco	CRITICAL	CVE-2018-16840	curl	7.59.0-r0	7.61.1-r1
+falco	CRITICAL	CVE-2018-16840	libcurl	7.59.0-r0	7.61.1-r1
+falco	CRITICAL	CVE-2018-16842	curl	7.59.0-r0	7.61.1-r1
+falco	CRITICAL	CVE-2018-16842	libcurl	7.59.0-r0	7.61.1-r1
+falco	CRITICAL	CVE-2019-14697	musl	1.1.18-r2	1.1.18-r4
+falco	CRITICAL	CVE-2019-14697	musl-utils	1.1.18-r2	1.1.18-r4
+falco	CRITICAL	CVE-2019-3822	curl	7.59.0-r0	7.61.1-r2
+falco	CRITICAL	CVE-2019-3822	libcurl	7.59.0-r0	7.61.1-r2
+falco	CRITICAL	CVE-2019-5481	curl	7.59.0-r0	7.61.1-r3
+falco	CRITICAL	CVE-2019-5481	libcurl	7.59.0-r0	7.61.1-r3
+falco	CRITICAL	CVE-2019-5482	curl	7.59.0-r0	7.61.1-r3
+falco	CRITICAL	CVE-2019-5482	libcurl	7.59.0-r0	7.61.1-r3
+falco	CRITICAL	CVE-2023-24538	stdlib	v1.17.13	1.19.8, 1.20.3
+falco	CRITICAL	CVE-2023-24540	stdlib	v1.17.13	1.19.9, 1.20.4
+testkube	CRITICAL	CVE-2023-45853	zlib1g	1:1.2.13.dfsg-1	none
+velero-ui	CRITICAL	CVE-2023-45853	zlib1g	1:1.2.13.dfsg-1	none
+falco	CRITICAL	CVE-2024-24790	stdlib	v1.17.13	1.21.11, 1.22.4
+falco	CRITICAL	CVE-2024-24790	stdlib	v1.20.8	1.21.11, 1.22.4
+kubevirt-manager	CRITICAL	CVE-2024-56171	libxml2	2.12.7-r0	2.12.7-r1
+velero-ui	CRITICAL	CVE-2025-43859	h11	0.14.0	0.16.0
+velero-ui	CRITICAL	CVE-2025-55182	next	15.2.3	15.0.5, 15.1.9, 15.2.6, 15.3.6, 15.4.8, 15.5.7, 16.0.7
+argocd	CRITICAL	CVE-2025-68121	stdlib	v1.24.0	1.24.13, 1.25.7, 1.26.0-rc.3
+argocd	CRITICAL	CVE-2025-68121	stdlib	v1.25.3	1.24.13, 1.25.7, 1.26.0-rc.3
+falco	CRITICAL	CVE-2025-68121	stdlib	v1.17.13	1.24.13, 1.25.7, 1.26.0-rc.3
+falco	CRITICAL	CVE-2025-68121	stdlib	v1.20.8	1.24.13, 1.25.7, 1.26.0-rc.3
+falco	CRITICAL	CVE-2025-68121	stdlib	v1.25.1	1.24.13, 1.25.7, 1.26.0-rc.3
+falco	CRITICAL	CVE-2025-68121	stdlib	v1.25.6	1.24.13, 1.25.7, 1.26.0-rc.3
+k8s-monitoring	CRITICAL	CVE-2025-68121	stdlib	v1.23.10	1.24.13, 1.25.7, 1.26.0-rc.3
+k8s-monitoring	CRITICAL	CVE-2025-68121	stdlib	v1.23.6	1.24.13, 1.25.7, 1.26.0-rc.3
+k8s-monitoring	CRITICAL	CVE-2025-68121	stdlib	v1.24.9	1.24.13, 1.25.7, 1.26.0-rc.3
+kubecost	CRITICAL	CVE-2025-68121	stdlib	v1.24.11	1.24.13, 1.25.7, 1.26.0-rc.3
+kubecost	CRITICAL	CVE-2025-68121	stdlib	v1.25.5	1.24.13, 1.25.7, 1.26.0-rc.3
+kubevirt	CRITICAL	CVE-2025-68121	stdlib	v1.23.4	1.24.13, 1.25.7, 1.26.0-rc.3
+kubevirt	CRITICAL	CVE-2025-68121	stdlib	v1.23.6	1.24.13, 1.25.7, 1.26.0-rc.3
+kubevirt-manager	CRITICAL	CVE-2025-68121	stdlib	v1.23.3	1.24.13, 1.25.7, 1.26.0-rc.3
+testkube	CRITICAL	CVE-2025-68121	stdlib	v1.25.0	1.24.13, 1.25.7, 1.26.0-rc.3
+velero	CRITICAL	CVE-2025-68121	stdlib	v1.23.6	1.24.13, 1.25.7, 1.26.0-rc.3
+velero-ui	CRITICAL	CVE-2025-68121	stdlib	v1.22.5	1.24.13, 1.25.7, 1.26.0-rc.3
+velero-ui	CRITICAL	CVE-2025-68121	stdlib	v1.23.7	1.24.13, 1.25.7, 1.26.0-rc.3
+velero-ui	CRITICAL	CVE-2025-7458	libsqlite3-0	3.40.1-2+deb12u1	none
+backstage	CRITICAL	CVE-2026-100721	vm2	3.11.6	3.12.2
+backstage	CRITICAL	CVE-2026-106501	@backstage/plugin-scaffolder-backend	4.0.0	3.3.1, 3.4.1, 4.0.3, 4.1.0
+grafana	CRITICAL	CVE-2026-13221	perl	5.42.2-r0	5.42.2-r1
+testkube	CRITICAL	CVE-2026-13221	perl-base	5.36.0-7+deb12u3	5.36.0-7+deb12u4
+velero-ui	CRITICAL	CVE-2026-13221	libperl5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	CRITICAL	CVE-2026-13221	perl	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	CRITICAL	CVE-2026-13221	perl-base	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	CRITICAL	CVE-2026-13221	perl-modules-5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+kyverno	CRITICAL	CVE-2026-22039	github.com/kyverno/kyverno	v1.5.0-rc1.0.20261014034003-104ab6f30a43+dirty	1.15.3, 1.16.3
+falco	CRITICAL	CVE-2026-31789	libcrypto3	3.5.1-r0	3.5.6-r0
+falco	CRITICAL	CVE-2026-31789	libcrypto3	3.6.1-r4	3.6.2-r0
+falco	CRITICAL	CVE-2026-31789	libssl3	3.5.1-r0	3.5.6-r0
+falco	CRITICAL	CVE-2026-31789	libssl3	3.6.1-r4	3.6.2-r0
+k8s-monitoring	CRITICAL	CVE-2026-31789	libcrypto3	3.5.4-r0	3.5.6-r0
+k8s-monitoring	CRITICAL	CVE-2026-31789	libssl3	3.5.4-r0	3.5.6-r0
+komoplane	CRITICAL	CVE-2026-31789	libcrypto3	3.5.5-r0	3.5.6-r0
+komoplane	CRITICAL	CVE-2026-31789	libssl3	3.5.5-r0	3.5.6-r0
+kubevirt	CRITICAL	CVE-2026-31789	libssl3	3.0.13-1~deb12u1	3.0.19-1~deb12u2
+kubevirt-manager	CRITICAL	CVE-2026-31789	libcrypto3	3.3.2-r1	3.3.7-r0
+kubevirt-manager	CRITICAL	CVE-2026-31789	libssl3	3.3.2-r1	3.3.7-r0
+metallb	CRITICAL	CVE-2026-31789	libcrypto3	3.5.5-r0	3.5.6-r0
+metallb	CRITICAL	CVE-2026-31789	libssl3	3.5.5-r0	3.5.6-r0
+velero-ui	CRITICAL	CVE-2026-31789	libssl3	3.0.15-1~deb12u1	3.0.19-1~deb12u2
+velero-ui	CRITICAL	CVE-2026-31789	libssl3	3.0.16-1~deb12u1	3.0.19-1~deb12u2
+velero-ui	CRITICAL	CVE-2026-31789	openssl	3.0.15-1~deb12u1	3.0.19-1~deb12u2
+velero-ui	CRITICAL	CVE-2026-31789	openssl	3.0.16-1~deb12u1	3.0.19-1~deb12u2
+falco	CRITICAL	CVE-2026-33186	google.golang.org/grpc	v1.46.2	1.79.3
+falco	CRITICAL	CVE-2026-33186	google.golang.org/grpc	v1.75.0	1.79.3
+falco	CRITICAL	CVE-2026-33186	google.golang.org/grpc	v1.78.0	1.79.3
+kubecost	CRITICAL	CVE-2026-33186	google.golang.org/grpc	v1.74.2	1.79.3
+kubecost	CRITICAL	CVE-2026-33186	google.golang.org/grpc	v1.77.0	1.79.3
+metallb	CRITICAL	CVE-2026-33186	google.golang.org/grpc	v1.68.1	1.79.3
+metallb	CRITICAL	CVE-2026-33186	google.golang.org/grpc	v1.72.1	1.79.3
+velero	CRITICAL	CVE-2026-33186	google.golang.org/grpc	v1.69.4	1.79.3
+velero	CRITICAL	CVE-2026-33186	google.golang.org/grpc	v1.77.0	1.79.3
+testkube	CRITICAL	CVE-2026-33322	github.com/minio/minio	v0.0.0-20251015172955-9e49d5e7a648+dirty	none
+testkube	CRITICAL	CVE-2026-33419	github.com/minio/minio	v0.0.0-20251015172955-9e49d5e7a648+dirty	none
+falco	CRITICAL	CVE-2026-33815	github.com/jackc/pgx/v5	v5.7.6	5.9.0
+falco	CRITICAL	CVE-2026-33816	github.com/jackc/pgx/v5	v5.7.6	5.9.0
+velero-ui	CRITICAL	CVE-2026-33845	libgnutls30	3.7.9-2+deb12u4	3.7.9-2+deb12u7
+velero-ui	CRITICAL	CVE-2026-33845	libgnutls30	3.7.9-2+deb12u5	3.7.9-2+deb12u7
+velero-ui	CRITICAL	CVE-2026-42010	libgnutls30	3.7.9-2+deb12u4	3.7.9-2+deb12u7
+velero-ui	CRITICAL	CVE-2026-42010	libgnutls30	3.7.9-2+deb12u5	3.7.9-2+deb12u7
+testkube	CRITICAL	CVE-2026-42496	perl-base	5.36.0-7+deb12u3	5.36.0-7+deb12u4
+velero-ui	CRITICAL	CVE-2026-42496	libperl5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	CRITICAL	CVE-2026-42496	perl	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	CRITICAL	CVE-2026-42496	perl-base	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	CRITICAL	CVE-2026-42496	perl-modules-5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+backstage	CRITICAL	CVE-2026-59873	tar	6.2.1	7.5.19
+backstage	CRITICAL	CVE-2026-59873	tar	7.5.13	7.5.19
+backstage	CRITICAL	CVE-2026-59873	tar	7.5.15	7.5.19
+velero-ui	CRITICAL	CVE-2026-59873	tar	6.2.0	7.5.19
+kubecost	CRITICAL	CVE-2026-63374	anyio	4.11.0	4.14.2
+velero-ui	CRITICAL	CVE-2026-63374	anyio	4.8.0	4.14.2
+keycloak	CRITICAL	CVE-2026-75595	io.netty:netty-handler	4.1.136.Final	4.2.17.Final, 4.1.137.Final
+velero-ui	CRITICAL	CVE-2026-75604	next	15.2.3	15.5.24, 16.3.3
+falco	CRITICAL	CVE-2026-77405	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+loki,mimir,minio	CRITICAL	CVE-2026-77405	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+testkube	CRITICAL	CVE-2026-77405	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+falco	CRITICAL	CVE-2026-77408	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+loki,mimir,minio	CRITICAL	CVE-2026-77408	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+testkube	CRITICAL	CVE-2026-77408	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+falco	CRITICAL	CVE-2026-77411	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+loki,mimir,minio	CRITICAL	CVE-2026-77411	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+testkube	CRITICAL	CVE-2026-77411	github.com/rabbitmq/amqp091-go	v1.10.0	1.13.0
+backstage	CRITICAL	CVE-2026-77413	jsonata	2.1.0	1.8.8, 2.2.0
+backstage	CRITICAL	CVE-2026-77414	jsonata	2.1.0	2.2.1, 1.8.8
+backstage	CRITICAL	CVE-2026-77415	jsonata	2.1.0	2.2.1, 1.8.8
+testkube	CRITICAL	CVE-2026-8376	perl-base	5.36.0-7+deb12u3	5.36.0-7+deb12u4
+velero-ui	CRITICAL	CVE-2026-8376	libperl5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	CRITICAL	CVE-2026-8376	perl	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	CRITICAL	CVE-2026-8376	perl-base	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+velero-ui	CRITICAL	CVE-2026-8376	perl-modules-5.36	5.36.0-7+deb12u2	5.36.0-7+deb12u4
+backstage	CRITICAL	CVE-2026-84961	node-gyp	13.0.1-r1	13.0.2-r1
+velero-ui	CRITICAL	CVE-2026-85394	python-jose	3.4.0	none
+backstage	CRITICAL	CVE-2026-90711	proxy-addr	2.0.7	2.0.8
+backstage	CRITICAL	CVE-2026-92934	vm2	3.11.6	3.11.8
+backstage	CRITICAL	CVE-2026-92935	vm2	3.11.6	3.11.7
+backstage	CRITICAL	CVE-2026-92937	vm2	3.11.6	3.11.7
+backstage	CRITICAL	CVE-2026-92938	vm2	3.11.6	3.11.7
+backstage	CRITICAL	CVE-2026-92939	vm2	3.11.6	3.11.7
+backstage	CRITICAL	CVE-2026-92940	vm2	3.11.6	3.11.7
+backstage	CRITICAL	CVE-2026-92941	vm2	3.11.6	3.11.7
+backstage	CRITICAL	CVE-2026-92944	vm2	3.11.6	3.11.7
+backstage	CRITICAL	CVE-2026-92946	vm2	3.11.6	3.11.7
+backstage	CRITICAL	CVE-2026-92947	vm2	3.11.6	3.11.7
+backstage	CRITICAL	CVE-2026-92948	vm2	3.11.6	3.11.7
+backstage	CRITICAL	CVE-2026-92951	vm2	3.11.6	3.11.7
+backstage	CRITICAL	CVE-2026-92953	vm2	3.11.6	3.11.8
+backstage	CRITICAL	CVE-2026-92954	vm2	3.11.6	3.11.8
+backstage	CRITICAL	CVE-2026-92955	vm2	3.11.6	3.11.8
+backstage	CRITICAL	CVE-2026-92956	vm2	3.11.6	3.11.7
+backstage	CRITICAL	CVE-2026-92957	vm2	3.11.6	3.11.7
+backstage	CRITICAL	CVE-2026-93605	vm2	3.11.6	3.12.1
+velero-ui	CRITICAL	GHSA-2xp9-vwfh-vxw4	next	15.2.3	15.5.24, 16.3.3
+komoplane	CRITICAL	GHSA-wfqx-gjrf-g28r	github.com/crossplane/crossplane	v1.13.0	none
