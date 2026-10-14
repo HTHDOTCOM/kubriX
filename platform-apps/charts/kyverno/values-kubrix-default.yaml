@@ -1,6 +1,12 @@
 grafanaFolder: "kubriX"
 
 kyverno:
+  test:
+    image:
+      tag: v1.19.1
+  webhooksCleanup:
+    image:
+      tag: v1.19.1
   backgroundController:
     resources:
       limits:

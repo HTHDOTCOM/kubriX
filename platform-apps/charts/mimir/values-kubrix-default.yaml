@@ -1,6 +1,9 @@
 mimir:
   gateway:
     enabledNonEnterprise: true
+    nginx:
+      image:
+        tag: 1.31-alpine
     ingress:
       enabled: true
       ingressClassName: nginx
@@ -41,7 +44,7 @@ mimir:
       size: 10Gi
     image:
       repository: docker.io/pgsty/silo
-      tag: RELEASE.2026-09-03T13-18-01Z
+      tag: RELEASE.2026-09-16T00-00-00Z
     mcImage:
       repository: docker.io/pgsty/mc
       tag: RELEASE.2026-09-13T00-00-00Z

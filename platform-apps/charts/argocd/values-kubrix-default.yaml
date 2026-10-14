@@ -145,6 +145,8 @@ argo-cd:
         enabled: true
 
   redis:
+    image:
+      tag: 8.6.7-alpine
     metrics:
       enabled: true
       serviceMonitor:
