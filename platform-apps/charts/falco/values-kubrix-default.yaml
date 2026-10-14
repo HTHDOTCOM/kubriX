@@ -2,6 +2,9 @@ falco:
   scc:
     create: false
   tty: true
+  falcoctl:
+    image:
+      tag: "0.14.2"
 
   driver:
     enabled: true
@@ -21,8 +24,12 @@ falco:
 
   falcosidekick:
     enabled: true
+    image:
+      tag: 2.35.0
     webui:
       enabled: true
+      image:
+        tag: 2.3.1
       replicaCount: 1
       user: ""
       existingSecret: "falco-ui-creds"
@@ -48,6 +55,8 @@ falco:
             folderAnnotation: grafana_folder
 
 falco-exporter:
+  image:
+    tag: "0.8.7"
   falco:
     grpcUnixSocketPath: "unix:///run/falco/falco.sock"
     grpcTimeout: 3m

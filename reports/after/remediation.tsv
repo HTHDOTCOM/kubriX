@@ -1,0 +1,198 @@
+keycloak	HIGH	CVE-2025-15467	libcrypto3	3.0.15-r0	3.0.19-r0
+keycloak	HIGH	CVE-2025-15467	libssl3	3.0.15-r0	3.0.19-r0
+argocd	HIGH	CVE-2025-22874	stdlib	v1.24.0	1.24.4
+keycloak	HIGH	CVE-2025-26519	musl	1.2.3-r5	1.2.3-r6
+keycloak	HIGH	CVE-2025-26519	musl-utils	1.2.3-r5	1.2.3-r6
+grafana	HIGH	CVE-2025-47273	setuptools	70.3.0	78.1.1
+argocd	HIGH	CVE-2025-47913	golang.org/x/crypto	v0.36.0	0.43.0
+argocd	HIGH	CVE-2025-61726	stdlib	v1.24.0	1.24.12, 1.25.6
+argocd	HIGH	CVE-2025-61726	stdlib	v1.25.3	1.24.12, 1.25.6
+argocd	HIGH	CVE-2025-61729	stdlib	v1.24.0	1.24.11, 1.25.5
+argocd	HIGH	CVE-2025-61729	stdlib	v1.25.3	1.24.11, 1.25.5
+keycloak	HIGH	CVE-2025-69421	libcrypto3	3.0.15-r0	3.0.19-r0
+keycloak	HIGH	CVE-2025-69421	libssl3	3.0.15-r0	3.0.19-r0
+keycloak	HIGH	CVE-2026-103111	pcre2	10.40-6.el9	10.40-7.el9_8
+keycloak	HIGH	CVE-2026-103111	pcre2-syntax	10.40-6.el9	10.40-7.el9_8
+argocd	HIGH	CVE-2026-14456	libcrypto3	3.5.7-r0	3.5.8-r0
+argocd	HIGH	CVE-2026-14456	libssl3	3.5.7-r0	3.5.8-r0
+grafana	HIGH	CVE-2026-14456	libcrypto3	3.5.7-r0	3.5.8-r0
+grafana	HIGH	CVE-2026-14456	libssl3	3.5.7-r0	3.5.8-r0
+grafana	HIGH	CVE-2026-21728	github.com/grafana/tempo	v1.5.1-0.20260910130453-bcfe9f230c1d	2.8.4, 2.9.2, 2.10.2
+argocd	HIGH	CVE-2026-25679	stdlib	v1.24.0	1.25.8, 1.26.1
+argocd	HIGH	CVE-2026-25679	stdlib	v1.25.3	1.25.8, 1.26.1
+argocd	HIGH	CVE-2026-25681	golang.org/x/net	v0.38.0	0.55.0
+argocd	HIGH	CVE-2026-25681	golang.org/x/net	v0.40.0	0.55.0
+argocd	HIGH	CVE-2026-27136	golang.org/x/net	v0.38.0	0.55.0
+argocd	HIGH	CVE-2026-27136	golang.org/x/net	v0.40.0	0.55.0
+argocd	HIGH	CVE-2026-27145	stdlib	v1.24.0	1.25.11, 1.26.4
+argocd	HIGH	CVE-2026-27145	stdlib	v1.25.3	1.25.11, 1.26.4
+argocd	HIGH	CVE-2026-27145	stdlib	v1.26.2	1.25.11, 1.26.4
+grafana	HIGH	CVE-2026-28377	github.com/grafana/tempo	v1.5.1-0.20260910130453-bcfe9f230c1d	2.10.3
+argo-rollouts	HIGH	CVE-2026-29181	go.opentelemetry.io/otel	v1.39.0	1.41.0
+argocd	HIGH	CVE-2026-32280	stdlib	v1.24.0	1.25.9, 1.26.2
+argocd	HIGH	CVE-2026-32280	stdlib	v1.25.3	1.25.9, 1.26.2
+argocd	HIGH	CVE-2026-32281	stdlib	v1.24.0	1.25.9, 1.26.2
+argocd	HIGH	CVE-2026-32281	stdlib	v1.25.3	1.25.9, 1.26.2
+argocd	HIGH	CVE-2026-32283	stdlib	v1.24.0	1.25.9, 1.26.2
+argocd	HIGH	CVE-2026-32283	stdlib	v1.25.3	1.25.9, 1.26.2
+argocd	HIGH	CVE-2026-33811	stdlib	v1.24.0	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-33811	stdlib	v1.25.3	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-33811	stdlib	v1.26.2	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-33814	golang.org/x/net	v0.38.0	0.53.0
+argocd	HIGH	CVE-2026-33814	golang.org/x/net	v0.40.0	0.53.0
+argocd	HIGH	CVE-2026-33814	stdlib	v1.24.0	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-33814	stdlib	v1.25.3	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-33814	stdlib	v1.26.2	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-33818	stdlib	v1.24.0	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-33818	stdlib	v1.25.3	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-33818	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-33818	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-33818	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-39820	stdlib	v1.24.0	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-39820	stdlib	v1.25.3	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-39820	stdlib	v1.26.2	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-39821	golang.org/x/net	v0.38.0	0.55.0
+argocd	HIGH	CVE-2026-39821	golang.org/x/net	v0.40.0	0.55.0
+argocd	HIGH	CVE-2026-39821	stdlib	v1.24.0	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-39821	stdlib	v1.25.3	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-39821	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-39821	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-39821	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-39822	stdlib	v1.24.0	1.25.12, 1.26.5, 1.27.0-rc.2
+argocd	HIGH	CVE-2026-39822	stdlib	v1.25.3	1.25.12, 1.26.5, 1.27.0-rc.2
+argocd	HIGH	CVE-2026-39822	stdlib	v1.26.2	1.25.12, 1.26.5, 1.27.0-rc.2
+argocd	HIGH	CVE-2026-39822	stdlib	v1.26.4	1.25.12, 1.26.5, 1.27.0-rc.2
+argocd	HIGH	CVE-2026-39828	golang.org/x/crypto	v0.36.0	0.52.0
+argocd	HIGH	CVE-2026-39829	golang.org/x/crypto	v0.36.0	0.52.0
+argocd	HIGH	CVE-2026-39830	golang.org/x/crypto	v0.36.0	0.52.0
+argocd	HIGH	CVE-2026-39831	golang.org/x/crypto	v0.36.0	0.52.0
+argocd	HIGH	CVE-2026-39832	golang.org/x/crypto	v0.36.0	0.52.0
+argocd	HIGH	CVE-2026-39835	golang.org/x/crypto	v0.36.0	0.52.0
+argocd	HIGH	CVE-2026-39836	stdlib	v1.24.0	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-39836	stdlib	v1.25.3	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-39836	stdlib	v1.26.2	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-42499	stdlib	v1.24.0	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-42499	stdlib	v1.25.3	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-42499	stdlib	v1.26.2	1.25.10, 1.26.3
+argocd	HIGH	CVE-2026-42504	stdlib	v1.24.0	1.25.11, 1.26.4
+argocd	HIGH	CVE-2026-42504	stdlib	v1.25.3	1.25.11, 1.26.4
+argocd	HIGH	CVE-2026-42504	stdlib	v1.26.2	1.25.11, 1.26.4
+argocd	HIGH	CVE-2026-42508	golang.org/x/crypto	v0.36.0	0.52.0
+argocd	HIGH	CVE-2026-46595	golang.org/x/crypto	v0.36.0	0.52.0
+argocd	HIGH	CVE-2026-46597	golang.org/x/crypto	v0.36.0	0.52.0
+argocd	HIGH	CVE-2026-46600	golang.org/x/net	v0.38.0	0.56.0
+argocd	HIGH	CVE-2026-46600	golang.org/x/net	v0.40.0	0.56.0
+argocd	HIGH	CVE-2026-46600	golang.org/x/net	v0.55.0	0.56.0
+argocd	HIGH	CVE-2026-46600	stdlib	v1.26.2	1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-46600	stdlib	v1.26.4	1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-46600	stdlib	v1.26.5	1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-50163	oras.land/oras-go/v2	v2.6.1	2.6.2
+argocd	HIGH	CVE-2026-53612	setpriv	2.41.4-r0	2.41.6-r0
+argocd	HIGH	CVE-2026-53613	setpriv	2.41.4-r0	2.41.6-r0
+argocd	HIGH	CVE-2026-53614	setpriv	2.41.4-r0	2.41.6-r0
+argo-rollouts	HIGH	CVE-2026-56852	golang.org/x/text	v0.38.0	0.39.0
+argocd	HIGH	CVE-2026-56852	golang.org/x/text	v0.23.0	0.39.0
+argocd	HIGH	CVE-2026-56852	golang.org/x/text	v0.28.0	0.39.0
+argocd	HIGH	CVE-2026-56852	golang.org/x/text	v0.38.0	0.39.0
+argocd	HIGH	CVE-2026-56853	stdlib	v1.24.0	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56853	stdlib	v1.25.3	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56853	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56853	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56853	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+argo-rollouts	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.53.0	0.55.0
+argocd	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.36.0	0.55.0
+argocd	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.53.0	0.55.0
+argocd	HIGH	CVE-2026-56854	golang.org/x/crypto	v0.54.0	0.55.0
+argocd	HIGH	CVE-2026-56858	stdlib	v1.24.0	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56858	stdlib	v1.25.3	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56858	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56858	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56858	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56859	stdlib	v1.24.0	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56859	stdlib	v1.25.3	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56859	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56859	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56859	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56860	stdlib	v1.24.0	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56860	stdlib	v1.25.3	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56860	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56860	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56860	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56862	stdlib	v1.24.0	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56862	stdlib	v1.25.3	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56862	stdlib	v1.26.2	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56862	stdlib	v1.26.4	1.25.13, 1.26.6, 1.27.0-rc.3
+argocd	HIGH	CVE-2026-56862	stdlib	v1.26.5	1.25.13, 1.26.6, 1.27.0-rc.3
+keycloak	HIGH	CVE-2026-68497	com.fasterxml.jackson.core:jackson-databind	2.21.5	2.18.10, 2.21.6, 2.22.2
+argocd	HIGH	CVE-2026-71556	github.com/go-git/go-git/v5	v5.19.1	5.19.2
+argocd	HIGH	CVE-2026-76642	setpriv	2.41.4-r0	2.41.6-r0
+argocd	HIGH	CVE-2026-78408	setpriv	2.41.4-r0	2.41.6-r1
+argocd	HIGH	CVE-2026-78410	setpriv	2.41.4-r0	2.41.6-r0
+argocd	HIGH	CVE-2026-78667	stdlib	v1.24.0	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78667	stdlib	v1.25.3	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78667	stdlib	v1.26.2	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78667	stdlib	v1.26.4	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78667	stdlib	v1.26.5	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78667	stdlib	v1.27.1	1.26.9, 1.27.2
+external-secrets	HIGH	CVE-2026-78667	stdlib	v1.26.6	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-78667	stdlib	v1.26.6	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-78667	stdlib	v1.26.7	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-78667	stdlib	v1.27.1	1.26.9, 1.27.2
+tempo	HIGH	CVE-2026-78667	stdlib	v1.27.1	1.26.9, 1.27.2
+argo-rollouts	HIGH	CVE-2026-78669	golang.org/x/net	v0.56.0	0.60.0
+argocd	HIGH	CVE-2026-78669	golang.org/x/net	v0.38.0	0.60.0
+argocd	HIGH	CVE-2026-78669	golang.org/x/net	v0.40.0	0.60.0
+argocd	HIGH	CVE-2026-78669	golang.org/x/net	v0.55.0	0.60.0
+argocd	HIGH	CVE-2026-78669	golang.org/x/net	v0.56.0	0.60.0
+argocd	HIGH	CVE-2026-78669	golang.org/x/net	v0.59.0	0.60.0
+argocd	HIGH	CVE-2026-78669	stdlib	v1.24.0	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78669	stdlib	v1.25.3	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78669	stdlib	v1.26.2	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78669	stdlib	v1.26.4	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78669	stdlib	v1.26.5	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-78669	stdlib	v1.27.1	1.26.9, 1.27.2
+external-secrets	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+external-secrets	HIGH	CVE-2026-78669	stdlib	v1.26.6	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+grafana	HIGH	CVE-2026-78669	golang.org/x/net	v0.59.0	0.60.0
+grafana	HIGH	CVE-2026-78669	stdlib	v1.26.6	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-78669	stdlib	v1.26.7	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-78669	stdlib	v1.27.1	1.26.9, 1.27.2
+kargo	HIGH	CVE-2026-78669	golang.org/x/net	v0.57.0	0.60.0
+tempo	HIGH	CVE-2026-78669	golang.org/x/net	v0.58.0	0.60.0
+tempo	HIGH	CVE-2026-78669	stdlib	v1.27.1	1.26.9, 1.27.2
+argo-rollouts	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.80.0	1.83.1
+argocd	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.81.1	1.83.1
+grafana	HIGH	CVE-2026-84304	google.golang.org/grpc	v1.83.0	1.83.1
+argo-rollouts	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.80.0	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+argocd	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.81.1	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+grafana	HIGH	CVE-2026-84445	google.golang.org/grpc	v1.83.0	1.82.2, 1.83.2, 1.84.0-dev.0.20260825144003-d5a41119e0e3, 1.85.0-dev.0.20260825072537-93e31b48545e
+argocd	HIGH	CVE-2026-85731	oras.land/oras-go/v2	v2.6.1	2.6.2
+keycloak	HIGH	CVE-2026-86145	pcre2	10.40-6.el9	10.40-7.el9_8
+keycloak	HIGH	CVE-2026-86145	pcre2-syntax	10.40-6.el9	10.40-7.el9_8
+keycloak	HIGH	CVE-2026-89161	pcre2	10.40-6.el9	10.40-7.el9_8
+keycloak	HIGH	CVE-2026-89161	pcre2-syntax	10.40-6.el9	10.40-7.el9_8
+keycloak	HIGH	CVE-2026-89407	com.fasterxml.jackson.core:jackson-core	2.21.5	2.18.11, 2.21.7, 2.22.3
+keycloak	HIGH	CVE-2026-89425	com.fasterxml.jackson.core:jackson-core	2.21.5	2.21.7, 2.22.3, 2.18.11
+keycloak	HIGH	CVE-2026-91776	com.fasterxml.jackson.core:jackson-databind	2.21.5	2.18.11, 2.21.7, 2.22.3
+keycloak	HIGH	CVE-2026-91777	com.fasterxml.jackson.core:jackson-databind	2.21.5	2.21.7, 2.18.11, 2.22.3
+argocd	HIGH	CVE-2026-97031	stdlib	v1.24.0	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-97031	stdlib	v1.25.3	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-97031	stdlib	v1.26.2	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-97031	stdlib	v1.26.4	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-97031	stdlib	v1.26.5	1.26.9, 1.27.2
+argocd	HIGH	CVE-2026-97031	stdlib	v1.27.1	1.26.9, 1.27.2
+external-secrets	HIGH	CVE-2026-97031	stdlib	v1.26.6	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-97031	stdlib	v1.26.6	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-97031	stdlib	v1.26.7	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-97031	stdlib	v1.27.1	1.26.9, 1.27.2
+tempo	HIGH	CVE-2026-97031	stdlib	v1.27.1	1.26.9, 1.27.2
+grafana	HIGH	CVE-2026-97687	urllib3	2.7.0	2.8.0
+grafana	HIGH	CVE-2026-97689	urllib3	2.7.0	2.8.0
+grafana	HIGH	GHSA-6v7p-g79w-8964	msgpack	1.1.2	1.2.1
+argo-rollouts	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.80.0	1.82.1
+argocd	HIGH	GHSA-hrxh-6v49-42gf	google.golang.org/grpc	v1.81.1	1.82.1
+argocd	CRITICAL	CVE-2025-68121	stdlib	v1.24.0	1.24.13, 1.25.7, 1.26.0-rc.3
+argocd	CRITICAL	CVE-2025-68121	stdlib	v1.25.3	1.24.13, 1.25.7, 1.26.0-rc.3
+grafana	CRITICAL	CVE-2026-13221	perl	5.42.2-r0	5.42.2-r1
+keycloak	CRITICAL	CVE-2026-75595	io.netty:netty-handler	4.1.136.Final	4.2.17.Final, 4.1.137.Final
