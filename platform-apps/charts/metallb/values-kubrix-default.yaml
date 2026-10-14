@@ -1,0 +1,6 @@
+metallb:
+  frr-k8s:
+    frrk8s:
+      frr:
+        image:
+          tag: 10.4.5
