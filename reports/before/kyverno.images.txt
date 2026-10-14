@@ -1,0 +1,8 @@
+ghcr.io/kyverno/readiness-checker:latest
+ghcr.io/kyverno/readiness-checker:v1.19.1
+reg.kyverno.io/kyverno/background-controller:v1.19.1
+reg.kyverno.io/kyverno/cleanup-controller:v1.19.1
+reg.kyverno.io/kyverno/kyverno-cli:v1.19.1
+reg.kyverno.io/kyverno/kyverno:v1.19.1
+reg.kyverno.io/kyverno/kyvernopre:v1.19.1
+reg.kyverno.io/kyverno/reports-controller:v1.19.1

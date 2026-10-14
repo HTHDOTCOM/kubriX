@@ -1,0 +1,6 @@
+docker.io/kubeshop/bitnami-mongodb:8.3.11
+docker.io/kubeshop/testkube-api-server:2.14.1
+docker.io/kubeshop/testkube-kubectl:1.37.1
+docker.io/kubeshop/testkube-minio:2025.10
+nats:2.15.0-alpine
+natsio/nats-server-config-reloader:0.24.0

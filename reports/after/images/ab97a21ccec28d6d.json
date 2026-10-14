@@ -1,0 +1,694 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.0"
+  },
+  "ReportID": "01a13a86-44fc-770d-af56-d1ba065e220c",
+  "CreatedAt": "2026-10-14T15:07:20.444463144+02:00",
+  "ArtifactID": "sha256:a254a0d1a2f0721d4f42cd04f75a1fcfe264b47f3624622e32c39d130ea7c2fc",
+  "ArtifactName": "alpine:3.17",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 7368704,
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.17.10",
+      "EOSL": true
+    },
+    "ImageID": "sha256:775f483016a7d128be2a6c6978785619990f9ac24abb5ff1868222020118b279",
+    "DiffIDs": [
+      "sha256:8d78b2117a5b8bff0a001610c8e3eecb6dcfd5e82a25d23048df7a09e77d6307"
+    ],
+    "RepoTags": [
+      "alpine:3.17"
+    ],
+    "RepoDigests": [
+      "alpine@sha256:8fc3dacfb6d69da8d44e42390de777e48577085db99aa4e4af35f483eb08b989"
+    ],
+    "Reference": "alpine:3.17",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2024-09-06T12:02:06Z",
+      "history": [
+        {
+          "created": "2024-09-06T12:02:06Z",
+          "created_by": "ADD alpine-minirootfs-3.17.10-x86_64.tar.gz / # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-09-06T12:02:06Z",
+          "created_by": "CMD [\"/bin/sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:8d78b2117a5b8bff0a001610c8e3eecb6dcfd5e82a25d23048df7a09e77d6307"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "/bin/sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "WorkingDir": "/",
+        "ArgsEscaped": true
+      }
+    },
+    "Layers": [
+      {
+        "Size": 7368704,
+        "Digest": "sha256:fbcfea79c1c4819e0689385057cfd4cbd2ee9ba20e6d420b360644788a22862c",
+        "DiffID": "sha256:8d78b2117a5b8bff0a001610c8e3eecb6dcfd5e82a25d23048df7a09e77d6307"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "alpine:3.17 (alpine 3.17.10)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2025-15467",
+          "PkgID": "libcrypto3@3.0.15-r0",
+          "PkgName": "libcrypto3",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/libcrypto3@3.0.15-r0?arch=x86_64&distro=3.17.10",
+            "UID": "380c04fb4e173b53"
+          },
+          "InstalledVersion": "3.0.15-r0",
+          "FixedVersion": "3.0.19-r0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:fbcfea79c1c4819e0689385057cfd4cbd2ee9ba20e6d420b360644788a22862c",
+            "DiffID": "sha256:8d78b2117a5b8bff0a001610c8e3eecb6dcfd5e82a25d23048df7a09e77d6307"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-15467",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:44d689c845efbe22a6ebad7cdd6feed032832f1fb8ca21a4cdc9b0078ace1556",
+          "Title": "openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing",
+          "Description": "Issue summary: Parsing CMS AuthEnvelopedData or EnvelopedData message with\nmaliciously crafted AEAD parameters can trigger a stack buffer overflow.\n\nImpact summary: A stack buffer overflow may lead to a crash, causing Denial\nof Service, or potentially remote code execution.\n\nWhen parsing CMS (Auth)EnvelopedData structures that use AEAD ciphers such as\nAES-GCM, the IV (Initialization Vector) encoded in the ASN.1 parameters is\ncopied into a fixed-size stack buffer without verifying that its length fits\nthe destination. An attacker can supply a crafted CMS message with an\noversized IV, causing a stack-based out-of-bounds write before any\nauthentication or tag verification occurs.\n\nApplications and services that parse untrusted CMS or PKCS#7 content using\nAEAD ciphers (e.g., S/MIME (Auth)EnvelopedData with AES-GCM) are vulnerable.\nBecause the overflow occurs prior to authentication, no valid key material\nis required to trigger it. While exploitability to remote code execution\ndepends on platform and toolchain mitigations, the stack-based write\nprimitive represents a severe risk.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the CMS implementation is outside the OpenSSL FIPS module\nboundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3 and 3.0 are vulnerable to this issue.\n\nOpenSSL 1.1.1 and 1.0.2 are not affected by this issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-120"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "azure": 4,
+            "julia": 3,
+            "oracle-oval": 3,
+            "photon": 4,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "julia": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/01/27/10",
+            "http://www.openwall.com/lists/oss-security/2026/02/25/6",
+            "https://access.redhat.com/errata/RHSA-2026:1472",
+            "https://access.redhat.com/errata/RHSA-2026:1473",
+            "https://access.redhat.com/errata/RHSA-2026:1496",
+            "https://access.redhat.com/errata/RHSA-2026:1503",
+            "https://access.redhat.com/errata/RHSA-2026:1519",
+            "https://access.redhat.com/errata/RHSA-2026:1594",
+            "https://access.redhat.com/errata/RHSA-2026:1733",
+            "https://access.redhat.com/errata/RHSA-2026:1736",
+            "https://access.redhat.com/errata/RHSA-2026:2072",
+            "https://access.redhat.com/errata/RHSA-2026:2077",
+            "https://access.redhat.com/errata/RHSA-2026:2485",
+            "https://access.redhat.com/errata/RHSA-2026:2563",
+            "https://access.redhat.com/errata/RHSA-2026:2633",
+            "https://access.redhat.com/errata/RHSA-2026:2659",
+            "https://access.redhat.com/errata/RHSA-2026:2671",
+            "https://access.redhat.com/errata/RHSA-2026:2844",
+            "https://access.redhat.com/errata/RHSA-2026:2974",
+            "https://access.redhat.com/errata/RHSA-2026:2995",
+            "https://access.redhat.com/errata/RHSA-2026:3228",
+            "https://access.redhat.com/errata/RHSA-2026:3415",
+            "https://access.redhat.com/errata/RHSA-2026:3461",
+            "https://access.redhat.com/errata/RHSA-2026:3462",
+            "https://access.redhat.com/errata/RHSA-2026:4419",
+            "https://access.redhat.com/errata/RHSA-2026:4943",
+            "https://access.redhat.com/errata/RHSA-2026:6481",
+            "https://access.redhat.com/errata/RHSA-2026:7261",
+            "https://access.redhat.com/security/cve/CVE-2025-15467",
+            "https://bugzilla.redhat.com/2430375",
+            "https://bugzilla.redhat.com/2430376",
+            "https://bugzilla.redhat.com/2430377",
+            "https://bugzilla.redhat.com/2430378",
+            "https://bugzilla.redhat.com/2430379",
+            "https://bugzilla.redhat.com/2430380",
+            "https://bugzilla.redhat.com/2430381",
+            "https://bugzilla.redhat.com/2430386",
+            "https://bugzilla.redhat.com/2430387",
+            "https://bugzilla.redhat.com/2430388",
+            "https://bugzilla.redhat.com/2430389",
+            "https://bugzilla.redhat.com/2430390",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430375",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430376",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430377",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430378",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430379",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430380",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430381",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430386",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430387",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430388",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430389",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430390",
+            "https://cert-portal.siemens.com/productcert/html/ssa-434797.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-734552.html",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-11187",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15467",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15468",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15469",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-66199",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68160",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69418",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69419",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69420",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69421",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
+            "https://errata.almalinux.org/9/ALSA-2026-1473.html",
+            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://github.com/advisories/GHSA-wvhq-3h88-rf6g",
+            "https://github.com/guiimoraes/CVE-2025-15467",
+            "https://github.com/openssl/openssl/commit/2c8f0e5fa9b6ee5508a0349e4572ddb74db5a703",
+            "https://github.com/openssl/openssl/commit/5f26d4202f5b89664c5c3f3c62086276026ba9a9",
+            "https://github.com/openssl/openssl/commit/6ced0fe6b10faa560e410e3ee8d6c82f06c65ea3",
+            "https://github.com/openssl/openssl/commit/ce39170276daec87f55c39dad1f629b56344429e",
+            "https://github.com/openssl/openssl/commit/d0071a0799f20cc8101730145349ed4487c268dc",
+            "https://linux.oracle.com/cve/CVE-2025-15467.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50081.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-15467",
+            "https://openssl-library.org/news/secadv/20260127.txt",
+            "https://security.access.redhat.com/data/csaf/v2/vex/2025/cve-2025-15467.json",
+            "https://ubuntu.com/security/notices/USN-7980-1",
+            "https://www.cve.org/CVERecord?id=CVE-2025-15467"
+          ],
+          "PublishedDate": "2026-01-27T16:16:14.257Z",
+          "LastModifiedDate": "2026-09-07T13:17:27.74Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-69421",
+          "PkgID": "libcrypto3@3.0.15-r0",
+          "PkgName": "libcrypto3",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/libcrypto3@3.0.15-r0?arch=x86_64&distro=3.17.10",
+            "UID": "380c04fb4e173b53"
+          },
+          "InstalledVersion": "3.0.15-r0",
+          "FixedVersion": "3.0.19-r0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:fbcfea79c1c4819e0689385057cfd4cbd2ee9ba20e6d420b360644788a22862c",
+            "DiffID": "sha256:8d78b2117a5b8bff0a001610c8e3eecb6dcfd5e82a25d23048df7a09e77d6307"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-69421",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:a4e5ee1d7391174a300ad347a436b94e4eca27bde49d882a2917f34f591f7379",
+          "Title": "openssl: OpenSSL: Denial of Service via malformed PKCS#12 file processing",
+          "Description": "Issue summary: Processing a malformed PKCS#12 file can trigger a NULL pointer\ndereference in the PKCS12_item_decrypt_d2i_ex() function.\n\nImpact summary: A NULL pointer dereference can trigger a crash which leads to\nDenial of Service for an application processing PKCS#12 files.\n\nThe PKCS12_item_decrypt_d2i_ex() function does not check whether the oct\nparameter is NULL before dereferencing it. When called from\nPKCS12_unpack_p7encdata() with a malformed PKCS#12 file, this parameter can\nbe NULL, causing a crash. The vulnerability is limited to Denial of Service\nand cannot be escalated to achieve code execution or memory disclosure.\n\nExploiting this issue requires an attacker to provide a malformed PKCS#12 file\nto an application that processes it. For that reason the issue was assessed as\nLow severity according to our Security Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the PKCS#12 implementation is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "azure": 2,
+            "cbl-mariner": 2,
+            "julia": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 1,
+            "rocky": 3,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "julia": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:1473",
+            "https://access.redhat.com/security/cve/CVE-2025-69421",
+            "https://bugzilla.redhat.com/2430375",
+            "https://bugzilla.redhat.com/2430376",
+            "https://bugzilla.redhat.com/2430377",
+            "https://bugzilla.redhat.com/2430378",
+            "https://bugzilla.redhat.com/2430379",
+            "https://bugzilla.redhat.com/2430380",
+            "https://bugzilla.redhat.com/2430381",
+            "https://bugzilla.redhat.com/2430386",
+            "https://bugzilla.redhat.com/2430387",
+            "https://bugzilla.redhat.com/2430388",
+            "https://bugzilla.redhat.com/2430389",
+            "https://bugzilla.redhat.com/2430390",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430375",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430376",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430377",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430378",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430379",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430380",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430381",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430386",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430387",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430388",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430389",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430390",
+            "https://cert-portal.siemens.com/productcert/html/ssa-265688.html",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-11187",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15467",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15468",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15469",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-66199",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68160",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69418",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69419",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69420",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69421",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
+            "https://errata.almalinux.org/9/ALSA-2026-1473.html",
+            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://github.com/advisories/GHSA-w9rv-xc8m-cmqp",
+            "https://github.com/openssl/openssl/commit/3524a29271f8191b8fd8a5257eb05173982a097b",
+            "https://github.com/openssl/openssl/commit/36ecb4960872a4ce04bf6f1e1f4e78d75ec0c0c7",
+            "https://github.com/openssl/openssl/commit/4bbc8d41a72c842ce4077a8a3eccd1109aaf74bd",
+            "https://github.com/openssl/openssl/commit/643986985cd1c21221f941129d76fe0c2785aeb3",
+            "https://github.com/openssl/openssl/commit/a2dbc539f0f9cc63832709fa5aa33ad9495eb19c",
+            "https://linux.oracle.com/cve/CVE-2025-69421.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50081.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-69421",
+            "https://openssl-library.org/news/secadv/20260127.txt",
+            "https://ubuntu.com/security/notices/USN-7980-1",
+            "https://ubuntu.com/security/notices/USN-7980-2",
+            "https://www.cve.org/CVERecord?id=CVE-2025-69421"
+          ],
+          "PublishedDate": "2026-01-27T16:16:34.437Z",
+          "LastModifiedDate": "2026-06-17T10:00:40.683Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-15467",
+          "PkgID": "libssl3@3.0.15-r0",
+          "PkgName": "libssl3",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/libssl3@3.0.15-r0?arch=x86_64&distro=3.17.10",
+            "UID": "a513b6773b7f6a70"
+          },
+          "InstalledVersion": "3.0.15-r0",
+          "FixedVersion": "3.0.19-r0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:fbcfea79c1c4819e0689385057cfd4cbd2ee9ba20e6d420b360644788a22862c",
+            "DiffID": "sha256:8d78b2117a5b8bff0a001610c8e3eecb6dcfd5e82a25d23048df7a09e77d6307"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-15467",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:1cf9453e86c4756aee44288a1d672ead33f0b2e8fbc60f420268f672b5fcc380",
+          "Title": "openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing",
+          "Description": "Issue summary: Parsing CMS AuthEnvelopedData or EnvelopedData message with\nmaliciously crafted AEAD parameters can trigger a stack buffer overflow.\n\nImpact summary: A stack buffer overflow may lead to a crash, causing Denial\nof Service, or potentially remote code execution.\n\nWhen parsing CMS (Auth)EnvelopedData structures that use AEAD ciphers such as\nAES-GCM, the IV (Initialization Vector) encoded in the ASN.1 parameters is\ncopied into a fixed-size stack buffer without verifying that its length fits\nthe destination. An attacker can supply a crafted CMS message with an\noversized IV, causing a stack-based out-of-bounds write before any\nauthentication or tag verification occurs.\n\nApplications and services that parse untrusted CMS or PKCS#7 content using\nAEAD ciphers (e.g., S/MIME (Auth)EnvelopedData with AES-GCM) are vulnerable.\nBecause the overflow occurs prior to authentication, no valid key material\nis required to trigger it. While exploitability to remote code execution\ndepends on platform and toolchain mitigations, the stack-based write\nprimitive represents a severe risk.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the CMS implementation is outside the OpenSSL FIPS module\nboundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3 and 3.0 are vulnerable to this issue.\n\nOpenSSL 1.1.1 and 1.0.2 are not affected by this issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787",
+            "CWE-120"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "azure": 4,
+            "julia": 3,
+            "oracle-oval": 3,
+            "photon": 4,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "julia": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/01/27/10",
+            "http://www.openwall.com/lists/oss-security/2026/02/25/6",
+            "https://access.redhat.com/errata/RHSA-2026:1472",
+            "https://access.redhat.com/errata/RHSA-2026:1473",
+            "https://access.redhat.com/errata/RHSA-2026:1496",
+            "https://access.redhat.com/errata/RHSA-2026:1503",
+            "https://access.redhat.com/errata/RHSA-2026:1519",
+            "https://access.redhat.com/errata/RHSA-2026:1594",
+            "https://access.redhat.com/errata/RHSA-2026:1733",
+            "https://access.redhat.com/errata/RHSA-2026:1736",
+            "https://access.redhat.com/errata/RHSA-2026:2072",
+            "https://access.redhat.com/errata/RHSA-2026:2077",
+            "https://access.redhat.com/errata/RHSA-2026:2485",
+            "https://access.redhat.com/errata/RHSA-2026:2563",
+            "https://access.redhat.com/errata/RHSA-2026:2633",
+            "https://access.redhat.com/errata/RHSA-2026:2659",
+            "https://access.redhat.com/errata/RHSA-2026:2671",
+            "https://access.redhat.com/errata/RHSA-2026:2844",
+            "https://access.redhat.com/errata/RHSA-2026:2974",
+            "https://access.redhat.com/errata/RHSA-2026:2995",
+            "https://access.redhat.com/errata/RHSA-2026:3228",
+            "https://access.redhat.com/errata/RHSA-2026:3415",
+            "https://access.redhat.com/errata/RHSA-2026:3461",
+            "https://access.redhat.com/errata/RHSA-2026:3462",
+            "https://access.redhat.com/errata/RHSA-2026:4419",
+            "https://access.redhat.com/errata/RHSA-2026:4943",
+            "https://access.redhat.com/errata/RHSA-2026:6481",
+            "https://access.redhat.com/errata/RHSA-2026:7261",
+            "https://access.redhat.com/security/cve/CVE-2025-15467",
+            "https://bugzilla.redhat.com/2430375",
+            "https://bugzilla.redhat.com/2430376",
+            "https://bugzilla.redhat.com/2430377",
+            "https://bugzilla.redhat.com/2430378",
+            "https://bugzilla.redhat.com/2430379",
+            "https://bugzilla.redhat.com/2430380",
+            "https://bugzilla.redhat.com/2430381",
+            "https://bugzilla.redhat.com/2430386",
+            "https://bugzilla.redhat.com/2430387",
+            "https://bugzilla.redhat.com/2430388",
+            "https://bugzilla.redhat.com/2430389",
+            "https://bugzilla.redhat.com/2430390",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430375",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430376",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430377",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430378",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430379",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430380",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430381",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430386",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430387",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430388",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430389",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430390",
+            "https://cert-portal.siemens.com/productcert/html/ssa-434797.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-734552.html",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-11187",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15467",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15468",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15469",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-66199",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68160",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69418",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69419",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69420",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69421",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
+            "https://errata.almalinux.org/9/ALSA-2026-1473.html",
+            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://github.com/advisories/GHSA-wvhq-3h88-rf6g",
+            "https://github.com/guiimoraes/CVE-2025-15467",
+            "https://github.com/openssl/openssl/commit/2c8f0e5fa9b6ee5508a0349e4572ddb74db5a703",
+            "https://github.com/openssl/openssl/commit/5f26d4202f5b89664c5c3f3c62086276026ba9a9",
+            "https://github.com/openssl/openssl/commit/6ced0fe6b10faa560e410e3ee8d6c82f06c65ea3",
+            "https://github.com/openssl/openssl/commit/ce39170276daec87f55c39dad1f629b56344429e",
+            "https://github.com/openssl/openssl/commit/d0071a0799f20cc8101730145349ed4487c268dc",
+            "https://linux.oracle.com/cve/CVE-2025-15467.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50081.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-15467",
+            "https://openssl-library.org/news/secadv/20260127.txt",
+            "https://security.access.redhat.com/data/csaf/v2/vex/2025/cve-2025-15467.json",
+            "https://ubuntu.com/security/notices/USN-7980-1",
+            "https://www.cve.org/CVERecord?id=CVE-2025-15467"
+          ],
+          "PublishedDate": "2026-01-27T16:16:14.257Z",
+          "LastModifiedDate": "2026-09-07T13:17:27.74Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-69421",
+          "PkgID": "libssl3@3.0.15-r0",
+          "PkgName": "libssl3",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/libssl3@3.0.15-r0?arch=x86_64&distro=3.17.10",
+            "UID": "a513b6773b7f6a70"
+          },
+          "InstalledVersion": "3.0.15-r0",
+          "FixedVersion": "3.0.19-r0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:fbcfea79c1c4819e0689385057cfd4cbd2ee9ba20e6d420b360644788a22862c",
+            "DiffID": "sha256:8d78b2117a5b8bff0a001610c8e3eecb6dcfd5e82a25d23048df7a09e77d6307"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-69421",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:cf4e944d56325f8c11b70f990ea36929afc77e86e754f8f6cc48cd31faa671f3",
+          "Title": "openssl: OpenSSL: Denial of Service via malformed PKCS#12 file processing",
+          "Description": "Issue summary: Processing a malformed PKCS#12 file can trigger a NULL pointer\ndereference in the PKCS12_item_decrypt_d2i_ex() function.\n\nImpact summary: A NULL pointer dereference can trigger a crash which leads to\nDenial of Service for an application processing PKCS#12 files.\n\nThe PKCS12_item_decrypt_d2i_ex() function does not check whether the oct\nparameter is NULL before dereferencing it. When called from\nPKCS12_unpack_p7encdata() with a malformed PKCS#12 file, this parameter can\nbe NULL, causing a crash. The vulnerability is limited to Denial of Service\nand cannot be escalated to achieve code execution or memory disclosure.\n\nExploiting this issue requires an attacker to provide a malformed PKCS#12 file\nto an application that processes it. For that reason the issue was assessed as\nLow severity according to our Security Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the PKCS#12 implementation is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "azure": 2,
+            "cbl-mariner": 2,
+            "julia": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 1,
+            "rocky": 3,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "julia": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:1473",
+            "https://access.redhat.com/security/cve/CVE-2025-69421",
+            "https://bugzilla.redhat.com/2430375",
+            "https://bugzilla.redhat.com/2430376",
+            "https://bugzilla.redhat.com/2430377",
+            "https://bugzilla.redhat.com/2430378",
+            "https://bugzilla.redhat.com/2430379",
+            "https://bugzilla.redhat.com/2430380",
+            "https://bugzilla.redhat.com/2430381",
+            "https://bugzilla.redhat.com/2430386",
+            "https://bugzilla.redhat.com/2430387",
+            "https://bugzilla.redhat.com/2430388",
+            "https://bugzilla.redhat.com/2430389",
+            "https://bugzilla.redhat.com/2430390",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430375",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430376",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430377",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430378",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430379",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430380",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430381",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430386",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430387",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430388",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430389",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2430390",
+            "https://cert-portal.siemens.com/productcert/html/ssa-265688.html",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-11187",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15467",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15468",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15469",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-66199",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-68160",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69418",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69419",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69420",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69421",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
+            "https://errata.almalinux.org/9/ALSA-2026-1473.html",
+            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://github.com/advisories/GHSA-w9rv-xc8m-cmqp",
+            "https://github.com/openssl/openssl/commit/3524a29271f8191b8fd8a5257eb05173982a097b",
+            "https://github.com/openssl/openssl/commit/36ecb4960872a4ce04bf6f1e1f4e78d75ec0c0c7",
+            "https://github.com/openssl/openssl/commit/4bbc8d41a72c842ce4077a8a3eccd1109aaf74bd",
+            "https://github.com/openssl/openssl/commit/643986985cd1c21221f941129d76fe0c2785aeb3",
+            "https://github.com/openssl/openssl/commit/a2dbc539f0f9cc63832709fa5aa33ad9495eb19c",
+            "https://linux.oracle.com/cve/CVE-2025-69421.html",
+            "https://linux.oracle.com/errata/ELSA-2026-50081.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-69421",
+            "https://openssl-library.org/news/secadv/20260127.txt",
+            "https://ubuntu.com/security/notices/USN-7980-1",
+            "https://ubuntu.com/security/notices/USN-7980-2",
+            "https://www.cve.org/CVERecord?id=CVE-2025-69421"
+          ],
+          "PublishedDate": "2026-01-27T16:16:34.437Z",
+          "LastModifiedDate": "2026-06-17T10:00:40.683Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-26519",
+          "PkgID": "musl@1.2.3-r5",
+          "PkgName": "musl",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/musl@1.2.3-r5?arch=x86_64&distro=3.17.10",
+            "UID": "34e03dcefde0f171"
+          },
+          "InstalledVersion": "1.2.3-r5",
+          "FixedVersion": "1.2.3-r6",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:fbcfea79c1c4819e0689385057cfd4cbd2ee9ba20e6d420b360644788a22862c",
+            "DiffID": "sha256:8d78b2117a5b8bff0a001610c8e3eecb6dcfd5e82a25d23048df7a09e77d6307"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-26519",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:4b29fbf51e6ec8bdf80093bf878e42a4982960b40fc46a6a2740912d8198a140",
+          "Title": "musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write ...",
+          "Description": "musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write vulnerability when an attacker can trigger iconv conversion of untrusted EUC-KR text to UTF-8.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "VendorSeverity": {
+            "nvd": 3
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2025/02/13/2",
+            "http://www.openwall.com/lists/oss-security/2025/02/13/3",
+            "http://www.openwall.com/lists/oss-security/2025/02/13/4",
+            "http://www.openwall.com/lists/oss-security/2025/02/13/5",
+            "http://www.openwall.com/lists/oss-security/2025/02/14/5",
+            "http://www.openwall.com/lists/oss-security/2025/02/14/6",
+            "https://git.musl-libc.org/cgit/musl/commit/?id=c47ad25ea3b484e10326f933e927c0bc8cded3da",
+            "https://git.musl-libc.org/cgit/musl/commit/?id=e5adcd97b5196e29991b524237381a0202a60659",
+            "https://www.openwall.com/lists/oss-security/2025/02/13/2"
+          ],
+          "PublishedDate": "2025-02-14T04:15:09.05Z",
+          "LastModifiedDate": "2026-06-17T09:01:57.26Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-26519",
+          "PkgID": "musl-utils@1.2.3-r5",
+          "PkgName": "musl-utils",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/musl-utils@1.2.3-r5?arch=x86_64&distro=3.17.10",
+            "UID": "dbd7acd6a4609c0b"
+          },
+          "InstalledVersion": "1.2.3-r5",
+          "FixedVersion": "1.2.3-r6",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:fbcfea79c1c4819e0689385057cfd4cbd2ee9ba20e6d420b360644788a22862c",
+            "DiffID": "sha256:8d78b2117a5b8bff0a001610c8e3eecb6dcfd5e82a25d23048df7a09e77d6307"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-26519",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:835dfa81cb956a8cce50ec86b82a33146b7d2c40375cbdb0d81104b05652a655",
+          "Title": "musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write ...",
+          "Description": "musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write vulnerability when an attacker can trigger iconv conversion of untrusted EUC-KR text to UTF-8.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "VendorSeverity": {
+            "nvd": 3
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2025/02/13/2",
+            "http://www.openwall.com/lists/oss-security/2025/02/13/3",
+            "http://www.openwall.com/lists/oss-security/2025/02/13/4",
+            "http://www.openwall.com/lists/oss-security/2025/02/13/5",
+            "http://www.openwall.com/lists/oss-security/2025/02/14/5",
+            "http://www.openwall.com/lists/oss-security/2025/02/14/6",
+            "https://git.musl-libc.org/cgit/musl/commit/?id=c47ad25ea3b484e10326f933e927c0bc8cded3da",
+            "https://git.musl-libc.org/cgit/musl/commit/?id=e5adcd97b5196e29991b524237381a0202a60659",
+            "https://www.openwall.com/lists/oss-security/2025/02/13/2"
+          ],
+          "PublishedDate": "2025-02-14T04:15:09.05Z",
+          "LastModifiedDate": "2026-06-17T09:01:57.26Z"
+        }
+      ]
+    }
+  ]
+}

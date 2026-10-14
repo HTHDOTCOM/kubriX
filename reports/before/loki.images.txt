@@ -1,0 +1,10 @@
+docker.io/grafana/loki-canary:3.7.8
+docker.io/grafana/loki-helm-test:latest
+docker.io/grafana/loki:3.7.8
+docker.io/kiwigrid/k8s-sidecar:2.14.1
+docker.io/library/memcached:1.6.45-alpine
+docker.io/nginxinc/nginx-unprivileged:1.31-alpine
+docker.io/pgsty/mc:RELEASE.2026-09-13T00-00-00Z
+docker.io/pgsty/silo:RELEASE.2026-09-03T13-18-01Z
+docker.io/prom/memcached-exporter:v0.17.0
+ghcr.io/jkroepke/access-log-exporter:0.4.22

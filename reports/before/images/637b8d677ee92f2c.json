@@ -1,0 +1,658 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.0"
+  },
+  "ReportID": "01a13a7d-e81a-7314-acdc-2ec7d094a8b7",
+  "CreatedAt": "2026-10-14T14:58:12.378202508+02:00",
+  "ArtifactID": "sha256:6311f7fd9dd519f62b1442bbd2efa2a690a3b6aa0a8f69173215dbaaa6bdb536",
+  "ArtifactName": "ecr-public.aws.com/docker/library/redis:8.6.4-alpine",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 98204160,
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.23.5"
+    },
+    "ImageID": "sha256:28a8a19f9dd9e63eb5b00e62e385739e9727aacdf1275a037ab52e517c419ded",
+    "DiffIDs": [
+      "sha256:31ad4a471c6852bfec14d757cc75a566c82a9769f12c3918cf6bf52cc0eeb3d0",
+      "sha256:f3fa0188eb3dc6b55d3502a6b332a855f90726023fab2400e98ea3270551f2e5",
+      "sha256:e404d4cce0a3a1cd5550a717eec441ef8a433bb6ebbceebd586e998c6657d5a7",
+      "sha256:2ee1a2f78a3c2daf5a73fbe3e80a1e0aa6ae3da88d9b1423c75dda0d50c9f344",
+      "sha256:8a9db4fea55ccf4c2c259d59a70906c6d56f1c552e3ae7e887dc9e67e054242e",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:3fb2fda4a3240d350d002684b9c14cd755ad15fb855b7869ec7fad4279bf682b"
+    ],
+    "RepoTags": [
+      "ecr-public.aws.com/docker/library/redis:8.6.4-alpine"
+    ],
+    "RepoDigests": [
+      "ecr-public.aws.com/docker/library/redis@sha256:2cc044fc5a07c9b701f8f1255a309ae9ad7856e694ac03513bf3648c01e40763"
+    ],
+    "Reference": "ecr-public.aws.com/docker/library/redis:8.6.4-alpine",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2026-06-22T19:58:41.418214302Z",
+      "history": [
+        {
+          "created": "2026-06-22T19:20:09.106506185Z",
+          "created_by": "ADD alpine-minirootfs-3.23.5-x86_64.tar.gz / # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-06-22T19:20:09.106506185Z",
+          "created_by": "CMD [\"/bin/sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-06-22T19:50:45.22538504Z",
+          "created_by": "RUN /bin/sh -c set -eux; \taddgroup -S -g 1000 redis; \tadduser -S -G redis -u 999 redis # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-06-22T19:50:45.761797924Z",
+          "created_by": "RUN /bin/sh -c set -eux; \tapk add --no-cache \t\ttzdata \t\tsetpriv \t; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-06-22T19:58:41.247395259Z",
+          "created_by": "ENV REDIS_VERSION=8.6.4",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-06-22T19:58:41.247395259Z",
+          "created_by": "ARG REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.4.tar.gz",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-06-22T19:58:41.247395259Z",
+          "created_by": "ARG REDIS_DOWNLOAD_SHA=a2029c96311ab1ec2ae489076ae900b6497b3beaa7dc379de26b5df48f696f6c",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-06-22T19:58:41.247395259Z",
+          "created_by": "RUN |2 REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.4.tar.gz REDIS_DOWNLOAD_SHA=a2029c96311ab1ec2ae489076ae900b6497b3beaa7dc379de26b5df48f696f6c /bin/sh -c set -eux; \t\tapk add --no-cache --virtual .build-deps \t\tcoreutils \t\tdpkg-dev dpkg \t\tgcc \t\tlinux-headers \t\tmake \t\tmusl-dev \t\topenssl-dev \t\tg++; \t\tarch=\"$(dpkg --print-architecture | awk -F- '{ print $NF }')\"; \tcase \"$arch\" in \t\t'amd64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; \t\t'arm64') export BUILD_WITH_MODULES=yes; export INSTALL_RUST_TOOLCHAIN=yes; export DISABLE_WERRORS=yes ;; \t\t*) echo >&2 \"Modules are NOT supported! unsupported architecture: '$arch'\"; export BUILD_WITH_MODULES=no ;; \tesac; \tif [ \"$BUILD_WITH_MODULES\" = \"yes\" ]; then \tapk add --no-cache --virtual .module-build-deps \t\tautoconf \t\tautomake \t\tbash \t\tbsd-compat-headers \t\tbuild-base \t\tcargo \t\tclang21 \t\tclang21-static \t\tclang21-libclang \t\tcmake \t\tcurl \t\tg++ \t\tgit \t\tlibffi-dev \t\tlibgcc \t\tlibtool \t\tllvm21-dev \t\tncurses-dev \t\topenssh \t\topenssl  \t\tpy-virtualenv \t\tpy3-cryptography \t\tpy3-pip \t\tpy3-virtualenv \t\tpython3 \t\tpython3-dev \t\trsync \t\ttar \t\tunzip \t\twhich \t\txsimd \t\txz; \tfi; \t\tpip install -q --upgrade setuptools &&  pip install -q --upgrade pip && PIP_BREAK_SYSTEM_PACKAGES=1 pip install -q addict toml jinja2 ramp-packer ;\twget -O redis.tar.gz \"$REDIS_DOWNLOAD_URL\"; \techo \"$REDIS_DOWNLOAD_SHA *redis.tar.gz\" | sha256sum -c -; \tmkdir -p /usr/src/redis; \ttar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; \trm redis.tar.gz; \t\tgrep -E '^ *createBoolConfig[(]\"protected-mode\",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; \tsed -ri 's!^( *createBoolConfig[(]\"protected-mode\",.*, *)1( *,.*[)],)$!\\10\\2!' /usr/src/redis/src/config.c; \tgrep -E '^ *createBoolConfig[(]\"protected-mode\",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; \t\tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \textraJemallocConfigureFlags=\"--build=$gnuArch\"; \tdpkgArch=\"$(dpkg --print-architecture)\"; \tcase \"${dpkgArch##*-}\" in \t\tamd64 | i386 | x32) extraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-page=12\" ;; \t\t*) extraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-page=16\" ;; \tesac; \textraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-hugepage=21\"; \tgrep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; \tsed -ri 's!cd jemalloc && ./configure !&'\"$extraJemallocConfigureFlags\"' !' /usr/src/redis/deps/Makefile; \tgrep -F \"cd jemalloc && ./configure $extraJemallocConfigureFlags \" /usr/src/redis/deps/Makefile; \t\texport RUST_DYN_CRT=1; \texport PATH=\"/usr/lib/llvm21/bin:$PATH\"; \texport BUILD_TLS=yes; \tif [ \"$BUILD_WITH_MODULES\" = \"yes\" ]; then \t\tmake -C /usr/src/redis/modules/redisjson get_source; \t\tsed -i 's/^RUST_FLAGS=$/RUST_FLAGS += -C target-feature=-crt-static/' /usr/src/redis/modules/redisjson/src/Makefile ; \t\tgrep -E 'RUST_FLAGS' /usr/src/redis/modules/redisjson/src/Makefile; \tfi; \tmake -C /usr/src/redis -j \"$(nproc)\" all; \tmake -C /usr/src/redis install; \tmake -C /usr/src/redis distclean; \trm -r /usr/src/redis; \t\trunDeps=\"$( \t\tscanelf --needed --nobanner --format '%n#p' --recursive /usr/local \t\t\t| tr ',' '\\n' \t\t\t| sort -u \t\t\t| awk 'system(\"[ -e /usr/local/lib/\" $1 \" ]\") == 0 { next } { print \"so:\" $1 }' \t)\"; \tapk add --no-network --virtual .redis-rundeps $runDeps; \tif [ \"$BUILD_WITH_MODULES\" = \"yes\" ]; then \t\tapk del --no-network .module-build-deps; \tfi; \tapk del --no-network .build-deps; \trm -rf ~/.cache ~/.gitconfig; \t\tredis-cli --version; \tredis-server --version; # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-06-22T19:58:41.340943423Z",
+          "created_by": "RUN |2 REDIS_DOWNLOAD_URL=https://github.com/redis/redis/archive/refs/tags/8.6.4.tar.gz REDIS_DOWNLOAD_SHA=a2029c96311ab1ec2ae489076ae900b6497b3beaa7dc379de26b5df48f696f6c /bin/sh -c mkdir /data && chown redis:redis /data # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-06-22T19:58:41.363040653Z",
+          "created_by": "WORKDIR /data",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-06-22T19:58:41.418214302Z",
+          "created_by": "COPY docker-entrypoint.sh /usr/local/bin/ # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-06-22T19:58:41.418214302Z",
+          "created_by": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-06-22T19:58:41.418214302Z",
+          "created_by": "EXPOSE map[6379/tcp:{}]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-06-22T19:58:41.418214302Z",
+          "created_by": "CMD [\"redis-server\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:31ad4a471c6852bfec14d757cc75a566c82a9769f12c3918cf6bf52cc0eeb3d0",
+          "sha256:f3fa0188eb3dc6b55d3502a6b332a855f90726023fab2400e98ea3270551f2e5",
+          "sha256:e404d4cce0a3a1cd5550a717eec441ef8a433bb6ebbceebd586e998c6657d5a7",
+          "sha256:2ee1a2f78a3c2daf5a73fbe3e80a1e0aa6ae3da88d9b1423c75dda0d50c9f344",
+          "sha256:8a9db4fea55ccf4c2c259d59a70906c6d56f1c552e3ae7e887dc9e67e054242e",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+          "sha256:3fb2fda4a3240d350d002684b9c14cd755ad15fb855b7869ec7fad4279bf682b"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "redis-server"
+        ],
+        "Entrypoint": [
+          "docker-entrypoint.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "REDIS_VERSION=8.6.4"
+        ],
+        "WorkingDir": "/data",
+        "ExposedPorts": {
+          "6379/tcp": {}
+        }
+      }
+    },
+    "Layers": [
+      {
+        "Size": 8693760,
+        "Digest": "sha256:e6f31ffc071e5560b82a8685fba8214954e5721e3e49269d00958316edbe89fe",
+        "DiffID": "sha256:31ad4a471c6852bfec14d757cc75a566c82a9769f12c3918cf6bf52cc0eeb3d0"
+      },
+      {
+        "Size": 10752,
+        "Digest": "sha256:27462c3a96156652d549f25341c1d5c5218c08dbf760f2704f077fd512999d12",
+        "DiffID": "sha256:f3fa0188eb3dc6b55d3502a6b332a855f90726023fab2400e98ea3270551f2e5"
+      },
+      {
+        "Size": 998400,
+        "Digest": "sha256:064995e374e6ff614e28823b74468610c2126f55af09b64a60a0a45bf6454771",
+        "DiffID": "sha256:e404d4cce0a3a1cd5550a717eec441ef8a433bb6ebbceebd586e998c6657d5a7"
+      },
+      {
+        "Size": 88490496,
+        "Digest": "sha256:7fd2b918ae04c318967ad81a39e797fc164a883f45bd3d6a599d8a717aebdd6f",
+        "DiffID": "sha256:2ee1a2f78a3c2daf5a73fbe3e80a1e0aa6ae3da88d9b1423c75dda0d50c9f344"
+      },
+      {
+        "Size": 1536,
+        "Digest": "sha256:74788a58512c341554cb00cf3a156950c64e832b6f96738a5cfaf0e0aae8b862",
+        "DiffID": "sha256:8a9db4fea55ccf4c2c259d59a70906c6d56f1c552e3ae7e887dc9e67e054242e"
+      },
+      {
+        "Size": 1024,
+        "Digest": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1",
+        "DiffID": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      },
+      {
+        "Size": 8192,
+        "Digest": "sha256:c0241ea5b18afd4153f26fc00e2ff85df2cb7d3284ce66a56f1418e49825c6dc",
+        "DiffID": "sha256:3fb2fda4a3240d350d002684b9c14cd755ad15fb855b7869ec7fad4279bf682b"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "ecr-public.aws.com/docker/library/redis:8.6.4-alpine (alpine 3.23.5)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-14456",
+          "PkgID": "libcrypto3@3.5.7-r0",
+          "PkgName": "libcrypto3",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/libcrypto3@3.5.7-r0?arch=x86_64&distro=3.23.5",
+            "UID": "6154ae3cc122c0b8"
+          },
+          "InstalledVersion": "3.5.7-r0",
+          "FixedVersion": "3.5.8-r0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:e6f31ffc071e5560b82a8685fba8214954e5721e3e49269d00958316edbe89fe",
+            "DiffID": "sha256:31ad4a471c6852bfec14d757cc75a566c82a9769f12c3918cf6bf52cc0eeb3d0"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-14456",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:777b54ebc1c983ce3731ca1e7071cfce68a64c3acdf09cdd170303c0ba10b545",
+          "Title": "openssl: OpenSSL: Denial of Service via unbounded memory growth in QUIC server",
+          "Description": "Issue summary: When an OpenSSL QUIC server (Listener SSL object) processes\nvalid QUIC Initial packets for unknown destination connection IDs, it\ncan allocate and queue new incoming channels without enforcing any limit.\n\nImpact summary: A remote peer that can make many Initial packets reach the\nserver listener faster than the application accepts connections, can cause the\nmemory allocated to store the per-channel state to grow without any limits,\npotentially making the QUIC listener unavailable and causing Denial of Service.\n\nCWE: CWE-770: Allocation of Resources Without Limits or Throttling\n\nDescription: The function that handles inbound QUIC packets uses\nConnection-Id from the packet header to find an existing connection\n(QUIC channel). If no existing connection is found and the packet\ntype is INITIAL, the function treats the packet as a new connection. It\nallocates a new channel object and inserts it into a queue where it\nwaits to be accepted by the local application with SSL_accept(3ossl).\nThe memory occupied by these initial channel objects may grow\nwithout bounds if the application is not able to call SSL_accept()\nfrequently enough to serve these inbound connection requests.\n\nThe issue is present since OpenSSL 3.5 when the QUIC server implementation\nwas added.\n\nThe fix introduces a limit for pending connections. The default limit is set\nto 256 pending connections (waiting to be accepted by the local application).\nApplications may change the default by calling SSL_set_value_uint(3ossl).\n\nFIPS impact: no\nThe FIPS module is not affected as the QUIC implementation is outside of\nthe OpenSSL FIPS module boundary.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/08/13/4",
+            "https://access.redhat.com/errata/RHSA-2026:67154",
+            "https://access.redhat.com/errata/RHSA-2026:67165",
+            "https://access.redhat.com/security/cve/CVE-2026-14456",
+            "https://bugzilla.redhat.com/2515348",
+            "https://bugzilla.redhat.com/2517559",
+            "https://bugzilla.redhat.com/2517560",
+            "https://bugzilla.redhat.com/2517561",
+            "https://bugzilla.redhat.com/2517562",
+            "https://bugzilla.redhat.com/2517564",
+            "https://bugzilla.redhat.com/2517565",
+            "https://bugzilla.redhat.com/2517566",
+            "https://bugzilla.redhat.com/2517570",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2515348",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517559",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517560",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517561",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517562",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517564",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517565",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517566",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517570",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-14456",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-14457",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-18798",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54874",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63072",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63073",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63074",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63075",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63076",
+            "https://errata.almalinux.org/10/ALSA-2026-67154.html",
+            "https://errata.rockylinux.org/RLSA-2026:67165",
+            "https://github.com/openssl/openssl/commit/08e7756c3900bcfd77a720e7b74e27d6e4ed01a9",
+            "https://github.com/openssl/openssl/commit/4084152e040329ca0194c4c1750b9b46d00a5b6b",
+            "https://github.com/openssl/openssl/commit/f2f1465f2d2e5c61dfeac4d20fd093797d821139",
+            "https://linux.oracle.com/cve/CVE-2026-14456.html",
+            "https://linux.oracle.com/errata/ELSA-2026-67165-0.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-14456",
+            "https://openssl-library.org/news/secadv/20260813.txt",
+            "https://ubuntu.com/security/notices/USN-8678-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-14456"
+          ],
+          "PublishedDate": "2026-08-13T15:19:31.82Z",
+          "LastModifiedDate": "2026-08-28T19:46:29.323Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-14456",
+          "PkgID": "libssl3@3.5.7-r0",
+          "PkgName": "libssl3",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/libssl3@3.5.7-r0?arch=x86_64&distro=3.23.5",
+            "UID": "f1aee6071ea99047"
+          },
+          "InstalledVersion": "3.5.7-r0",
+          "FixedVersion": "3.5.8-r0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:e6f31ffc071e5560b82a8685fba8214954e5721e3e49269d00958316edbe89fe",
+            "DiffID": "sha256:31ad4a471c6852bfec14d757cc75a566c82a9769f12c3918cf6bf52cc0eeb3d0"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-14456",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:88bfd11e37b5408f4d42a8eab924dc513ed4fb5b0baa2c670cc20319a923dfdf",
+          "Title": "openssl: OpenSSL: Denial of Service via unbounded memory growth in QUIC server",
+          "Description": "Issue summary: When an OpenSSL QUIC server (Listener SSL object) processes\nvalid QUIC Initial packets for unknown destination connection IDs, it\ncan allocate and queue new incoming channels without enforcing any limit.\n\nImpact summary: A remote peer that can make many Initial packets reach the\nserver listener faster than the application accepts connections, can cause the\nmemory allocated to store the per-channel state to grow without any limits,\npotentially making the QUIC listener unavailable and causing Denial of Service.\n\nCWE: CWE-770: Allocation of Resources Without Limits or Throttling\n\nDescription: The function that handles inbound QUIC packets uses\nConnection-Id from the packet header to find an existing connection\n(QUIC channel). If no existing connection is found and the packet\ntype is INITIAL, the function treats the packet as a new connection. It\nallocates a new channel object and inserts it into a queue where it\nwaits to be accepted by the local application with SSL_accept(3ossl).\nThe memory occupied by these initial channel objects may grow\nwithout bounds if the application is not able to call SSL_accept()\nfrequently enough to serve these inbound connection requests.\n\nThe issue is present since OpenSSL 3.5 when the QUIC server implementation\nwas added.\n\nThe fix introduces a limit for pending connections. The default limit is set\nto 256 pending connections (waiting to be accepted by the local application).\nApplications may change the default by calling SSL_set_value_uint(3ossl).\n\nFIPS impact: no\nThe FIPS module is not affected as the QUIC implementation is outside of\nthe OpenSSL FIPS module boundary.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/08/13/4",
+            "https://access.redhat.com/errata/RHSA-2026:67154",
+            "https://access.redhat.com/errata/RHSA-2026:67165",
+            "https://access.redhat.com/security/cve/CVE-2026-14456",
+            "https://bugzilla.redhat.com/2515348",
+            "https://bugzilla.redhat.com/2517559",
+            "https://bugzilla.redhat.com/2517560",
+            "https://bugzilla.redhat.com/2517561",
+            "https://bugzilla.redhat.com/2517562",
+            "https://bugzilla.redhat.com/2517564",
+            "https://bugzilla.redhat.com/2517565",
+            "https://bugzilla.redhat.com/2517566",
+            "https://bugzilla.redhat.com/2517570",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2515348",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517559",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517560",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517561",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517562",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517564",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517565",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517566",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2517570",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-14456",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-14457",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-18798",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54874",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63072",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63073",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63074",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63075",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-63076",
+            "https://errata.almalinux.org/10/ALSA-2026-67154.html",
+            "https://errata.rockylinux.org/RLSA-2026:67165",
+            "https://github.com/openssl/openssl/commit/08e7756c3900bcfd77a720e7b74e27d6e4ed01a9",
+            "https://github.com/openssl/openssl/commit/4084152e040329ca0194c4c1750b9b46d00a5b6b",
+            "https://github.com/openssl/openssl/commit/f2f1465f2d2e5c61dfeac4d20fd093797d821139",
+            "https://linux.oracle.com/cve/CVE-2026-14456.html",
+            "https://linux.oracle.com/errata/ELSA-2026-67165-0.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-14456",
+            "https://openssl-library.org/news/secadv/20260813.txt",
+            "https://ubuntu.com/security/notices/USN-8678-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-14456"
+          ],
+          "PublishedDate": "2026-08-13T15:19:31.82Z",
+          "LastModifiedDate": "2026-08-28T19:46:29.323Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-53612",
+          "PkgID": "setpriv@2.41.4-r0",
+          "PkgName": "setpriv",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/setpriv@2.41.4-r0?arch=x86_64&distro=3.23.5",
+            "UID": "97f0730dc6588846"
+          },
+          "InstalledVersion": "2.41.4-r0",
+          "FixedVersion": "2.41.6-r0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:064995e374e6ff614e28823b74468610c2126f55af09b64a60a0a45bf6454771",
+            "DiffID": "sha256:e404d4cce0a3a1cd5550a717eec441ef8a433bb6ebbceebd586e998c6657d5a7"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53612",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:0b4285fd119ba396e1fb5fa12dca8e5d8aebd0fe724120826030438edf4454a8",
+          "Title": "util-linux: util-linux: TOCTOU in the mount program when applying post-mount ownership/mode changes",
+          "Description": "A flaw was found in util-linux. When an /etc/fstab entry uses the user option together with X-mount.owner, X-mount.group, or X-mount.mode, mount(8) changes ownership or permissions on the mount target after mounting without re-verifying the path. A local unprivileged user can exploit this Time-of-Check-Time-of-Use (TOCTOU) window by swapping the target directory, redirecting the ownership/permission change to an arbitrary file and potentially escalating privileges to root.",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-53612",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-g8wm-75wr-g2vh",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-53612",
+            "https://ubuntu.com/security/notices/USN-8702-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-53612"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-53613",
+          "PkgID": "setpriv@2.41.4-r0",
+          "PkgName": "setpriv",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/setpriv@2.41.4-r0?arch=x86_64&distro=3.23.5",
+            "UID": "97f0730dc6588846"
+          },
+          "InstalledVersion": "2.41.4-r0",
+          "FixedVersion": "2.41.6-r0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:064995e374e6ff614e28823b74468610c2126f55af09b64a60a0a45bf6454771",
+            "DiffID": "sha256:e404d4cce0a3a1cd5550a717eec441ef8a433bb6ebbceebd586e998c6657d5a7"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53613",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:58d3cf6c6112d939e57c49ac3e298700ef7994d1a3b43a6c907e564a44dc2535",
+          "Title": "util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path",
+          "Description": "When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-53613",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-8gj5-72r3-428g",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-53613",
+            "https://ubuntu.com/security/notices/USN-8702-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-53613"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-53614",
+          "PkgID": "setpriv@2.41.4-r0",
+          "PkgName": "setpriv",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/setpriv@2.41.4-r0?arch=x86_64&distro=3.23.5",
+            "UID": "97f0730dc6588846"
+          },
+          "InstalledVersion": "2.41.4-r0",
+          "FixedVersion": "2.41.6-r0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:064995e374e6ff614e28823b74468610c2126f55af09b64a60a0a45bf6454771",
+            "DiffID": "sha256:e404d4cce0a3a1cd5550a717eec441ef8a433bb6ebbceebd586e998c6657d5a7"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53614",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:9f4e962d22816cac811c09f5293e6913db2ce8896badcc36ef43e6b8b7cee78a",
+          "Title": "util-linux: util-linux: SUID mount(8) allows nosuid/noexec bypass via LIBMOUNT_FORCE_MOUNT2",
+          "Description": "A flaw was found in util-linux. The mount(8) SUID binary does not sanitize the LIBMOUNT_FORCE_MOUNT2 environment variable before use. A local unprivileged user can set this variable to force mount(8) to use the legacy two-step mount(2) code path, which applies security restrictions such as nosuid and noexec after the mount is already active. During this window, an attacker can execute a SUID binary from the mounted filesystem, allowing local privilege escalation to root.",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-53614",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-67r7-8m5w-22wx",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-53614",
+            "https://ubuntu.com/security/notices/USN-8702-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-53614"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-76642",
+          "PkgID": "setpriv@2.41.4-r0",
+          "PkgName": "setpriv",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/setpriv@2.41.4-r0?arch=x86_64&distro=3.23.5",
+            "UID": "97f0730dc6588846"
+          },
+          "InstalledVersion": "2.41.4-r0",
+          "FixedVersion": "2.41.6-r0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:064995e374e6ff614e28823b74468610c2126f55af09b64a60a0a45bf6454771",
+            "DiffID": "sha256:e404d4cce0a3a1cd5550a717eec441ef8a433bb6ebbceebd586e998c6657d5a7"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-76642",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:0bdb05fe5d89a96be5a7af5edc3f447f23a28f67fc0b1ec94ead0aba014bd7a3",
+          "Title": "util-linux: util-linux: failed external mount helper still runs privileged X-mount post-hooks",
+          "Description": "util-linux versions through 2.41.5 and 2.42.2 fail to check mount helper exit status before running post-mount hooks, allowing unprivileged users to execute privileged operations on pre-existing filesystems. Attackers can exploit X-mount.idmap or X-mount.owner hooks to clone filesystems with inherited suid bits or modify target inode permissions after a helper fails, achieving privilege escalation.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-390"
+          ],
+          "VendorSeverity": {
+            "azure": 2,
+            "photon": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-76642",
+            "https://github.com/util-linux/util-linux",
+            "https://github.com/util-linux/util-linux/blob/v2.42.2/libmount/src/context_mount.c#L476",
+            "https://github.com/util-linux/util-linux/blob/v2.42.2/libmount/src/context_mount.c#L892",
+            "https://github.com/util-linux/util-linux/commit/1d14676ea70003e9f5b2a6a76af0cadb1190411a",
+            "https://github.com/util-linux/util-linux/commit/a15c00a9e545aa8b9cf6ec0f888ff6c7b3eaeedc",
+            "https://github.com/util-linux/util-linux/commit/f57cea130839c0af8dc0525274267ae4cfd66bbf",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-m25x-3hj9-m26f",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-76642",
+            "https://www.cve.org/CVERecord?id=CVE-2026-76642",
+            "https://www.vulncheck.com/advisories/util-linux-libmount-privilege-escalation-via-failed-mount-helper"
+          ],
+          "PublishedDate": "2026-09-03T13:06:08.44Z",
+          "LastModifiedDate": "2026-09-24T20:28:01.78Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78408",
+          "PkgID": "setpriv@2.41.4-r0",
+          "PkgName": "setpriv",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/setpriv@2.41.4-r0?arch=x86_64&distro=3.23.5",
+            "UID": "97f0730dc6588846"
+          },
+          "InstalledVersion": "2.41.4-r0",
+          "FixedVersion": "2.41.6-r1",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:064995e374e6ff614e28823b74468610c2126f55af09b64a60a0a45bf6454771",
+            "DiffID": "sha256:e404d4cce0a3a1cd5550a717eec441ef8a433bb6ebbceebd586e998c6657d5a7"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78408",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:fc824888ef5c25165facc9d1198940dbacf2f8fd34a33069d5e9a5da38efbade",
+          "Title": "util-linux: util-linux: nsenter --join-cgroup leaks root cgroup migration authority",
+          "Description": "The nsenter --join-cgroup option opens the target cgroup.procs file as root and leaves that file descriptor open across later namespace and credential changes and across execve(). Because the kernel checks later cgroup migrations using the credentials from the original open, a program run in an attacker-controlled target can inherit root's ability to move host processes between cgroups. After a privileged operator uses --join-cgroup against that target, an unprivileged user can migrate and terminate unrelated root processes.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-775"
+          ],
+          "VendorSeverity": {
+            "azure": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:N/I:H/A:H",
+              "V3Score": 7.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/09/05/2",
+            "https://access.redhat.com/errata/RHSA-2026:63162",
+            "https://access.redhat.com/security/cve/CVE-2026-78408",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2522497",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-55fx-f4gg-cfhj",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78408",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78408"
+          ],
+          "PublishedDate": "2026-09-02T16:17:23.687Z",
+          "LastModifiedDate": "2026-09-05T14:17:23.727Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78410",
+          "PkgID": "setpriv@2.41.4-r0",
+          "PkgName": "setpriv",
+          "PkgIdentifier": {
+            "PURL": "pkg:apk/alpine/setpriv@2.41.4-r0?arch=x86_64&distro=3.23.5",
+            "UID": "97f0730dc6588846"
+          },
+          "InstalledVersion": "2.41.4-r0",
+          "FixedVersion": "2.41.6-r0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:064995e374e6ff614e28823b74468610c2126f55af09b64a60a0a45bf6454771",
+            "DiffID": "sha256:e404d4cce0a3a1cd5550a717eec441ef8a433bb6ebbceebd586e998c6657d5a7"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78410",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Fingerprint": "sha256:c4d421bcd458cd1217ea6bf610ffc1cea114f802dca7074609bb9a4c2ef4a18c",
+          "Title": "util-linux: util-linux: restricted bind mounts do not pin the source, allowing X-mount.owner/group/mode redirection",
+          "Description": "A flaw was found in util-linux. Restricted bind mounts take the source path from fstab but do not pin that source before the privileged mount. A local unprivileged user who can replace the authorized source or a writable ancestor can redirect SUID mount(8) to bind another host directory. If the fstab entry also sets X-mount.owner, X-mount.group, or X-mount.mode, root then changes ownership or mode on that redirected inode.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-367"
+          ],
+          "VendorSeverity": {
+            "azure": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:63162",
+            "https://access.redhat.com/security/cve/CVE-2026-78410",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2522684",
+            "https://github.com/util-linux/util-linux/security/advisories/GHSA-rh77-686x-2f2m",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78410",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78410"
+          ],
+          "PublishedDate": "2026-09-02T16:17:23.983Z",
+          "LastModifiedDate": "2026-09-04T19:17:27.567Z"
+        }
+      ]
+    }
+  ]
+}

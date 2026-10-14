@@ -1,0 +1,2 @@
+quay.io/kubevirt/cdi-operator:v1.62.0
+quay.io/kubevirt/virt-operator:v1.5.0

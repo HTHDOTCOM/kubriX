@@ -1,0 +1,1830 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.0"
+  },
+  "ReportID": "01a13a7d-0edf-7358-9761-dbe72013b1f2",
+  "CreatedAt": "2026-10-14T14:57:16.767220002+02:00",
+  "ArtifactID": "sha256:e21cdc21d3b528e2fb931fba38dd5be9b51b02040ced0a4daffa8ade5123e47a",
+  "ArtifactName": "docker.io/pgsty/silo:RELEASE.2026-09-03T13-18-01Z",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 159910400,
+    "OS": {
+      "Family": "redhat",
+      "Name": "9.8"
+    },
+    "ImageID": "sha256:3ac2e44e50be550e041796465b344f6ea87db8e6a93626a693f610dcec112934",
+    "DiffIDs": [
+      "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d",
+      "sha256:f7de332d073d4305bdbb203da9981c3b3326df66034e62bf629ad3ce4ae1a93f",
+      "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a",
+      "sha256:cc9a21409713c6a496586d683fb737265e4e33214afc8b853846841db5e52ff3",
+      "sha256:72e1135b6d8da2ebf7164ac357735c51ba00e6e326e49efcbd91edaef6650cc4",
+      "sha256:5d806a08b6c3f5b1ab9a0fb06cf79022bc2b963cc9b80295c1adb9758fc68e5d",
+      "sha256:826a1c004844cd8d9b44ffd1b9a1523296827fce8d46e5241453b56acf4fd4dc",
+      "sha256:12b41939c086614c1a6f1179c42aae3536d9dc0021e8e255ea33cb8e3ba77c60",
+      "sha256:14ac97f8f34d1a3422b9a5bbd849cdecb48e4839fd06be511ec4c6e0e98ef8ef",
+      "sha256:d7245eb91a0dfe57774286541b6fd5d0efd1d6f2f0d123725c6c8c82d7319821"
+    ],
+    "RepoTags": [
+      "pgsty/silo:RELEASE.2026-09-03T13-18-01Z"
+    ],
+    "RepoDigests": [
+      "pgsty/silo@sha256:b616a0cf8cb281e7e6bb3c9b1fb53875b4016a2878223925541c18f82d6c5ca3"
+    ],
+    "Reference": "pgsty/silo:RELEASE.2026-09-03T13-18-01Z",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2026-09-04T07:12:05.294029391Z",
+      "history": [
+        {
+          "created": "2026-08-26T21:14:04.433020365Z",
+          "created_by": "/bin/sh -c #(nop) LABEL maintainer=\"Red Hat, Inc.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.446032147Z",
+          "created_by": "/bin/sh -c #(nop) LABEL vendor=\"Red Hat, Inc.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.458120889Z",
+          "created_by": "/bin/sh -c #(nop) LABEL url=\"https://catalog.redhat.com/en/search?searchType=containers\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.470332451Z",
+          "created_by": "/bin/sh -c #(nop) LABEL com.redhat.component=\"ubi9-micro-container\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.483139098Z",
+          "created_by": "/bin/sh -c #(nop) LABEL name=\"ubi9/ubi-micro\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.49734233Z",
+          "created_by": "/bin/sh -c #(nop) LABEL version=\"9.8\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.510182949Z",
+          "created_by": "/bin/sh -c #(nop) LABEL cpe=\"cpe:/a:redhat:enterprise_linux:9::appstream\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.522552553Z",
+          "created_by": "/bin/sh -c #(nop) LABEL distribution-scope=\"public\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.537095501Z",
+          "created_by": "/bin/sh -c #(nop) LABEL com.redhat.license_terms=\"https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.550474961Z",
+          "created_by": "/bin/sh -c #(nop) LABEL summary=\"ubi9 micro image\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.561521865Z",
+          "created_by": "/bin/sh -c #(nop) LABEL description=\"Very small image which doesn't install the package manager.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.573776799Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.k8s.description=\"Very small image which doesn't install the package manager.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.585775825Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.k8s.display-name=\"Red Hat Universal Base Image 9 Micro\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.598405429Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.openshift.expose-services=\"\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.795267689Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:21269f5d73218e2f10a7410aa1f89db2161fc62a674e4fde009bbc3fb15d7c29 in /      ",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.866094595Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/      ",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.878764861Z",
+          "created_by": "/bin/sh -c #(nop) CMD /bin/sh",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:04.942324579Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:95f81fb2260e27b51aeb0930bd86656d53465579d437a44d768c52d7e1e05d25 in /usr/share/buildinfo/      ",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:05.00750514Z",
+          "created_by": "/bin/sh -c #(nop) COPY dir:95f81fb2260e27b51aeb0930bd86656d53465579d437a44d768c52d7e1e05d25 in /root/buildinfo/      ",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-08-26T21:14:05.100091419Z",
+          "created_by": "/bin/sh -c #(nop) LABEL \"org.opencontainers.image.created\"=\"2026-08-26T21:13:51Z\" \"org.opencontainers.image.revision\"=\"f4a035c7f61947bd47d6abfc6b65c983adc04b2a\" \"build-date\"=\"2026-08-26T21:13:51Z\" \"architecture\"=\"x86_64\" \"vcs-ref\"=\"f4a035c7f61947bd47d6abfc6b65c983adc04b2a\" \"vcs-type\"=\"git\" \"release\"=\"1787778798\"org.opencontainers.image.created=2026-08-26T21:13:51Z,org.opencontainers.image.revision=f4a035c7f61947bd47d6abfc6b65c983adc04b2a"
+        },
+        {
+          "created": "2026-09-04T07:12:04.28627439Z",
+          "created_by": "LABEL org.opencontainers.image.title=Silo org.opencontainers.image.description=S3-Interface Libre Object Storage org.opencontainers.image.url=https://silo.pgsty.com org.opencontainers.image.source=https://github.com/pgsty/silo org.opencontainers.image.licenses=AGPL-3.0-or-later maintainer=PGSTY <https://silo.pgsty.com>",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-04T07:12:04.28627439Z",
+          "created_by": "ENV MINIO_ACCESS_KEY_FILE=access_key MINIO_SECRET_KEY_FILE=secret_key MINIO_ROOT_USER_FILE=access_key MINIO_ROOT_PASSWORD_FILE=secret_key MINIO_KMS_SECRET_KEY_FILE=kms_master_key MINIO_CONFIG_ENV_FILE=config.env HOME=/tmp MC_CONFIG_DIR=/tmp/.mc",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-04T07:12:04.28627439Z",
+          "created_by": "COPY /tmp/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-04T07:12:04.529394476Z",
+          "created_by": "COPY silo /usr/bin/silo # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-04T07:12:04.846339941Z",
+          "created_by": "COPY /go/bin/mcli /usr/bin/mcli # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-04T07:12:05.133194721Z",
+          "created_by": "COPY /go/bin/curl* /usr/bin/ # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-04T07:12:05.142597639Z",
+          "created_by": "COPY dockerscripts/docker-entrypoint.sh /usr/bin/docker-entrypoint.sh # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-04T07:12:05.150859378Z",
+          "created_by": "COPY LICENSE /licenses/LICENSE # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-04T07:12:05.159680841Z",
+          "created_by": "COPY NOTICE /licenses/NOTICE # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-04T07:12:05.169416981Z",
+          "created_by": "COPY CREDITS /licenses/CREDITS # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-04T07:12:05.294029391Z",
+          "created_by": "RUN /bin/sh -c chmod +x /usr/bin/silo /usr/bin/mcli /usr/bin/docker-entrypoint.sh &&     ln -sf mcli /usr/bin/mc # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-04T07:12:05.294029391Z",
+          "created_by": "EXPOSE [9000/tcp]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-04T07:12:05.294029391Z",
+          "created_by": "VOLUME [/data]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-04T07:12:05.294029391Z",
+          "created_by": "ENTRYPOINT [\"/usr/bin/docker-entrypoint.sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-09-04T07:12:05.294029391Z",
+          "created_by": "CMD [\"silo\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d",
+          "sha256:f7de332d073d4305bdbb203da9981c3b3326df66034e62bf629ad3ce4ae1a93f",
+          "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a",
+          "sha256:cc9a21409713c6a496586d683fb737265e4e33214afc8b853846841db5e52ff3",
+          "sha256:72e1135b6d8da2ebf7164ac357735c51ba00e6e326e49efcbd91edaef6650cc4",
+          "sha256:5d806a08b6c3f5b1ab9a0fb06cf79022bc2b963cc9b80295c1adb9758fc68e5d",
+          "sha256:826a1c004844cd8d9b44ffd1b9a1523296827fce8d46e5241453b56acf4fd4dc",
+          "sha256:12b41939c086614c1a6f1179c42aae3536d9dc0021e8e255ea33cb8e3ba77c60",
+          "sha256:14ac97f8f34d1a3422b9a5bbd849cdecb48e4839fd06be511ec4c6e0e98ef8ef",
+          "sha256:d7245eb91a0dfe57774286541b6fd5d0efd1d6f2f0d123725c6c8c82d7319821"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "silo"
+        ],
+        "Entrypoint": [
+          "/usr/bin/docker-entrypoint.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "MINIO_ACCESS_KEY_FILE=access_key",
+          "MINIO_SECRET_KEY_FILE=secret_key",
+          "MINIO_ROOT_USER_FILE=access_key",
+          "MINIO_ROOT_PASSWORD_FILE=secret_key",
+          "MINIO_KMS_SECRET_KEY_FILE=kms_master_key",
+          "MINIO_CONFIG_ENV_FILE=config.env",
+          "HOME=/tmp",
+          "MC_CONFIG_DIR=/tmp/.mc"
+        ],
+        "Labels": {
+          "architecture": "x86_64",
+          "build-date": "2026-08-26T21:13:51Z",
+          "com.redhat.component": "ubi9-micro-container",
+          "com.redhat.license_terms": "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI",
+          "cpe": "cpe:/a:redhat:enterprise_linux:9::appstream",
+          "description": "Very small image which doesn't install the package manager.",
+          "distribution-scope": "public",
+          "io.buildah.version": "1.44.0",
+          "io.k8s.description": "Very small image which doesn't install the package manager.",
+          "io.k8s.display-name": "Red Hat Universal Base Image 9 Micro",
+          "io.openshift.expose-services": "",
+          "maintainer": "PGSTY <https://silo.pgsty.com>",
+          "name": "ubi9/ubi-micro",
+          "org.opencontainers.image.created": "2026-09-04T06:33:55Z",
+          "org.opencontainers.image.description": "S3-Interface Libre Object Storage",
+          "org.opencontainers.image.licenses": "AGPL-3.0-or-later",
+          "org.opencontainers.image.revision": "9b11dc9469e650815b775cb47b039610644f5da4",
+          "org.opencontainers.image.source": "https://github.com/pgsty/silo",
+          "org.opencontainers.image.title": "Silo",
+          "org.opencontainers.image.url": "https://silo.pgsty.com",
+          "org.opencontainers.image.version": "RELEASE.2026-09-03T13-18-01Z",
+          "release": "1787778798",
+          "summary": "ubi9 micro image",
+          "url": "https://catalog.redhat.com/en/search?searchType=containers",
+          "vcs-ref": "f4a035c7f61947bd47d6abfc6b65c983adc04b2a",
+          "vcs-type": "git",
+          "vendor": "Red Hat, Inc.",
+          "version": "9.8"
+        },
+        "Volumes": {
+          "/data": {}
+        },
+        "WorkingDir": "/",
+        "ExposedPorts": {
+          "9000/tcp": {}
+        },
+        "ArgsEscaped": true
+      }
+    },
+    "Layers": [
+      {
+        "Size": 23591424,
+        "Digest": "sha256:44bb90d0dc2d3c7487076e80e560778499b9e86c5c8709287bce0be56c5fb385",
+        "DiffID": "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d"
+      },
+      {
+        "Size": 227328,
+        "Digest": "sha256:329d537ed72c3a86e0b9a069f0a75c3ea10071b2f1eaaf934d1223bb52243c83",
+        "DiffID": "sha256:f7de332d073d4305bdbb203da9981c3b3326df66034e62bf629ad3ce4ae1a93f"
+      },
+      {
+        "Size": 97700864,
+        "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+        "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+      },
+      {
+        "Size": 31013888,
+        "Digest": "sha256:2b62a1c960636cb1399d2ae234b2cd4fb20b79f69873f418b0ac1d3754a8a415",
+        "DiffID": "sha256:cc9a21409713c6a496586d683fb737265e4e33214afc8b853846841db5e52ff3"
+      },
+      {
+        "Size": 5506048,
+        "Digest": "sha256:a46c277d38c8b5a509512e9b938cd24f1054f667966772d809441ef91d94364a",
+        "DiffID": "sha256:72e1135b6d8da2ebf7164ac357735c51ba00e6e326e49efcbd91edaef6650cc4"
+      },
+      {
+        "Size": 4096,
+        "Digest": "sha256:36ebf18d55f8ca555ff5396961e21a2379f361ac6c0f74db0e28349c029b145b",
+        "DiffID": "sha256:5d806a08b6c3f5b1ab9a0fb06cf79022bc2b963cc9b80295c1adb9758fc68e5d"
+      },
+      {
+        "Size": 36864,
+        "Digest": "sha256:cfaa07ce77abeba0dcd0c6495c5277cef210cfc8c3635504cdde10de3fdae0a3",
+        "DiffID": "sha256:826a1c004844cd8d9b44ffd1b9a1523296827fce8d46e5241453b56acf4fd4dc"
+      },
+      {
+        "Size": 3072,
+        "Digest": "sha256:cc98cc5b4d413e99cba73019dd5fc0086c7860c3cda6fe00262f0310737bbe9a",
+        "DiffID": "sha256:12b41939c086614c1a6f1179c42aae3536d9dc0021e8e255ea33cb8e3ba77c60"
+      },
+      {
+        "Size": 1824256,
+        "Digest": "sha256:5d2d9bcd4fa64359c232636bc0f7da06009eece8de8ff9c7d58688bad8af79bb",
+        "DiffID": "sha256:14ac97f8f34d1a3422b9a5bbd849cdecb48e4839fd06be511ec4c6e0e98ef8ef"
+      },
+      {
+        "Size": 2560,
+        "Digest": "sha256:69583fb1c142fb77d454f65fc530e6d21005c769377ee360eebcebf91446582e",
+        "DiffID": "sha256:d7245eb91a0dfe57774286541b6fd5d0efd1d6f2f0d123725c6c8c82d7319821"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "docker.io/pgsty/silo:RELEASE.2026-09-03T13-18-01Z (redhat 9.8)",
+      "Class": "os-pkgs",
+      "Type": "redhat",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-103111",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2@10.40-6.el9.x86_64",
+          "PkgName": "pcre2",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2@10.40-6.el9?arch=x86_64&distro=redhat-9.8",
+            "UID": "1d1b871572f9d872"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44bb90d0dc2d3c7487076e80e560778499b9e86c5c8709287bce0be56c5fb385",
+            "DiffID": "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-103111",
+          "Fingerprint": "sha256:7d49fd6a2ab8177482c7f27a21ff9e693ae975c1036a6bf6ceb074ebaba11b31",
+          "Title": "pcre2: pcre2: Out-of-bounds write via crafted regular expression",
+          "Description": "PCRE2 before 10.49, when there is an attacker-controlled regular expression and certain JIT API usage, allows an out-of-bounds write with arbitrary data.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L",
+              "V3Score": 7.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-103111",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-r9hj-j2rw-4q3m",
+            "https://linux.oracle.com/cve/CVE-2026-103111.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81613.html",
+            "https://lists.debian.org/debian-lts-announce/2026/10/msg00008.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-103111",
+            "https://www.cve.org/CVERecord?id=CVE-2026-103111"
+          ],
+          "PublishedDate": "2026-09-30T05:16:45.863Z",
+          "LastModifiedDate": "2026-10-04T00:16:35.563Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-86145",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2@10.40-6.el9.x86_64",
+          "PkgName": "pcre2",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2@10.40-6.el9?arch=x86_64&distro=redhat-9.8",
+            "UID": "1d1b871572f9d872"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44bb90d0dc2d3c7487076e80e560778499b9e86c5c8709287bce0be56c5fb385",
+            "DiffID": "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-86145",
+          "Fingerprint": "sha256:9d5fec2f2a62e06d6a34e3584f7d0c0ffc5ffd01f1d87ac8ffb2ca85317764ef",
+          "Title": "pcre2: PCRE2: Out-of-bounds write allows arbitrary code execution via crafted regular expressions",
+          "Description": "PCRE2 before 10.48 allows a pcre2_dfa_match out-of-bounds write because reuse of a cached workspace block, in a recursive DFA matching workspace, lacks a size check (even though a newly allocated block, for the same purpose, does have a size check). This outcome requires an attacker-controlled regular expression, or a recursive pattern in conjunction with a small heap limit (this can be set through the API).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-424"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "azure": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L",
+              "V3Score": 8.2
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/09/05/3",
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-86145",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48",
+            "https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-3r4p-g7gg-ppmf",
+            "https://linux.oracle.com/cve/CVE-2026-86145.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81613.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-86145",
+            "https://www.cve.org/CVERecord?id=CVE-2026-86145"
+          ],
+          "PublishedDate": "2026-09-05T06:17:10.37Z",
+          "LastModifiedDate": "2026-09-09T16:04:24.933Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-89161",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2@10.40-6.el9.x86_64",
+          "PkgName": "pcre2",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2@10.40-6.el9?arch=x86_64&distro=redhat-9.8",
+            "UID": "1d1b871572f9d872"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44bb90d0dc2d3c7487076e80e560778499b9e86c5c8709287bce0be56c5fb385",
+            "DiffID": "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-89161",
+          "Fingerprint": "sha256:e427cfdf825333a27a06be0fda5cb4a87ae917618bdff913c5625b82bbd1174a",
+          "Title": "pcre2: PCRE2: Memory corruption vulnerability in pcre2_jit_match",
+          "Description": "In PCRE2 before 10.48, pcre2_jit_match mishandles a previously copied subject being passed in as a context. An incorrect free operation can occur.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-590"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-89161",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/commit/1dcd0cf42a6a7cb62cc9a7c024196733abcfda95%20%28pcre2-10.48-RC1%29",
+            "https://github.com/PCRE2Project/pcre2/pull/937",
+            "https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48",
+            "https://linux.oracle.com/cve/CVE-2026-89161.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81522.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-89161",
+            "https://www.cve.org/CVERecord?id=CVE-2026-89161"
+          ],
+          "PublishedDate": "2026-09-11T04:18:04.47Z",
+          "LastModifiedDate": "2026-09-16T19:10:47.78Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-103111",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2-syntax@10.40-6.el9.noarch",
+          "PkgName": "pcre2-syntax",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2-syntax@10.40-6.el9?arch=noarch&distro=redhat-9.8",
+            "UID": "459af584b3a3a6aa"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44bb90d0dc2d3c7487076e80e560778499b9e86c5c8709287bce0be56c5fb385",
+            "DiffID": "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-103111",
+          "Fingerprint": "sha256:b641f473ef27df753304d2cfc2aac2e536355232ee20551699526294c429aef3",
+          "Title": "pcre2: pcre2: Out-of-bounds write via crafted regular expression",
+          "Description": "PCRE2 before 10.49, when there is an attacker-controlled regular expression and certain JIT API usage, allows an out-of-bounds write with arbitrary data.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L",
+              "V3Score": 7.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-103111",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-r9hj-j2rw-4q3m",
+            "https://linux.oracle.com/cve/CVE-2026-103111.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81613.html",
+            "https://lists.debian.org/debian-lts-announce/2026/10/msg00008.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-103111",
+            "https://www.cve.org/CVERecord?id=CVE-2026-103111"
+          ],
+          "PublishedDate": "2026-09-30T05:16:45.863Z",
+          "LastModifiedDate": "2026-10-04T00:16:35.563Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-86145",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2-syntax@10.40-6.el9.noarch",
+          "PkgName": "pcre2-syntax",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2-syntax@10.40-6.el9?arch=noarch&distro=redhat-9.8",
+            "UID": "459af584b3a3a6aa"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44bb90d0dc2d3c7487076e80e560778499b9e86c5c8709287bce0be56c5fb385",
+            "DiffID": "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-86145",
+          "Fingerprint": "sha256:95182b0700f3d881607214d9920e0b120451ed13bc43a3ec87b3c4c7118162f0",
+          "Title": "pcre2: PCRE2: Out-of-bounds write allows arbitrary code execution via crafted regular expressions",
+          "Description": "PCRE2 before 10.48 allows a pcre2_dfa_match out-of-bounds write because reuse of a cached workspace block, in a recursive DFA matching workspace, lacks a size check (even though a newly allocated block, for the same purpose, does have a size check). This outcome requires an attacker-controlled regular expression, or a recursive pattern in conjunction with a small heap limit (this can be set through the API).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-424"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "azure": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L",
+              "V3Score": 8.2
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/09/05/3",
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-86145",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48",
+            "https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-3r4p-g7gg-ppmf",
+            "https://linux.oracle.com/cve/CVE-2026-86145.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81613.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-86145",
+            "https://www.cve.org/CVERecord?id=CVE-2026-86145"
+          ],
+          "PublishedDate": "2026-09-05T06:17:10.37Z",
+          "LastModifiedDate": "2026-09-09T16:04:24.933Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-89161",
+          "VendorIDs": [
+            "RHSA-2026:81532"
+          ],
+          "PkgID": "pcre2-syntax@10.40-6.el9.noarch",
+          "PkgName": "pcre2-syntax",
+          "PkgIdentifier": {
+            "PURL": "pkg:rpm/redhat/pcre2-syntax@10.40-6.el9?arch=noarch&distro=redhat-9.8",
+            "UID": "459af584b3a3a6aa"
+          },
+          "InstalledVersion": "10.40-6.el9",
+          "FixedVersion": "10.40-7.el9_8",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:44bb90d0dc2d3c7487076e80e560778499b9e86c5c8709287bce0be56c5fb385",
+            "DiffID": "sha256:49d88c5f8e857b7f1f820fe9d675e242502575a82be998cf9e18f6ef83f00e0d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-89161",
+          "Fingerprint": "sha256:cb9466dc4e7b4f174328c0295e2c938bad187608cf9263de18c71f97b30e2b3d",
+          "Title": "pcre2: PCRE2: Memory corruption vulnerability in pcre2_jit_match",
+          "Description": "In PCRE2 before 10.48, pcre2_jit_match mishandles a previously copied subject being passed in as a context. An incorrect free operation can occur.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-590"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:81522",
+            "https://access.redhat.com/security/cve/CVE-2026-89161",
+            "https://bugzilla.redhat.com/2528993",
+            "https://bugzilla.redhat.com/2531743",
+            "https://bugzilla.redhat.com/2531744",
+            "https://bugzilla.redhat.com/2531745",
+            "https://bugzilla.redhat.com/2531746",
+            "https://bugzilla.redhat.com/2531747",
+            "https://bugzilla.redhat.com/2543797",
+            "https://errata.almalinux.org/10/ALSA-2026-81522.html",
+            "https://github.com/PCRE2Project/pcre2/commit/1dcd0cf42a6a7cb62cc9a7c024196733abcfda95%20%28pcre2-10.48-RC1%29",
+            "https://github.com/PCRE2Project/pcre2/pull/937",
+            "https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48",
+            "https://linux.oracle.com/cve/CVE-2026-89161.html",
+            "https://linux.oracle.com/errata/ELSA-2026-81522.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-89161",
+            "https://www.cve.org/CVERecord?id=CVE-2026-89161"
+          ],
+          "PublishedDate": "2026-09-11T04:18:04.47Z",
+          "LastModifiedDate": "2026-09-16T19:10:47.78Z"
+        }
+      ]
+    },
+    {
+      "Target": "usr/bin/mcli",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "golang.org/x/net@v0.58.0",
+          "PkgName": "golang.org/x/net",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/golang.org/x/net@v0.58.0",
+            "UID": "e98a69001dc4f301"
+          },
+          "InstalledVersion": "v0.58.0",
+          "FixedVersion": "0.60.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:2b62a1c960636cb1399d2ae234b2cd4fb20b79f69873f418b0ac1d3754a8a415",
+            "DiffID": "sha256:cc9a21409713c6a496586d683fb737265e4e33214afc8b853846841db5e52ff3"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:4c024b11a21a7b9036fb534f1f9f44651da5acfc76da35f6af19cb74f7e1ddef",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78667",
+          "VendorIDs": [
+            "GO-2026-6609"
+          ],
+          "PkgID": "stdlib@v1.27.1",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.27.1",
+            "UID": "9a0aef39de7af7a4"
+          },
+          "InstalledVersion": "v1.27.1",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:2b62a1c960636cb1399d2ae234b2cd4fb20b79f69873f418b0ac1d3754a8a415",
+            "DiffID": "sha256:cc9a21409713c6a496586d683fb737265e4e33214afc8b853846841db5e52ff3"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78667",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:5ba736b576e26b7abf8b2ec59523486c5f4e780acb2b079329729c1fa945042f",
+          "Title": "net/http: golang: golang: Denial of Service via crafted HTTP Range headers",
+          "Description": "When parsing a Range header containing a large number of small ranges, FileServer(FS), ServeContent, and ServeFile(FS) can consume an excessive amount of CPU.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78667",
+            "https://go.dev/cl/847309",
+            "https://go.dev/issue/81858",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78667",
+            "https://pkg.go.dev/vuln/GO-2026-6609",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78667"
+          ],
+          "PublishedDate": "2026-10-08T23:17:03.88Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.69Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "stdlib@v1.27.1",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.27.1",
+            "UID": "9a0aef39de7af7a4"
+          },
+          "InstalledVersion": "v1.27.1",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:2b62a1c960636cb1399d2ae234b2cd4fb20b79f69873f418b0ac1d3754a8a415",
+            "DiffID": "sha256:cc9a21409713c6a496586d683fb737265e4e33214afc8b853846841db5e52ff3"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:33e06d9f02877ef1507d8aaefa3af817494a3c3fc9e0653b3fa9eb43aaf6d821",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-97031",
+          "VendorIDs": [
+            "GO-2026-6607"
+          ],
+          "PkgID": "stdlib@v1.27.1",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.27.1",
+            "UID": "9a0aef39de7af7a4"
+          },
+          "InstalledVersion": "v1.27.1",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:2b62a1c960636cb1399d2ae234b2cd4fb20b79f69873f418b0ac1d3754a8a415",
+            "DiffID": "sha256:cc9a21409713c6a496586d683fb737265e4e33214afc8b853846841db5e52ff3"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-97031",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:76a2386529532a1f65c5491c1f4a0a2ce91e45c920d6d36b693972f315df5360",
+          "Title": "crypto/tls: golang: crypto/tls: Denial of Service via multiple ECH outer extension references",
+          "Description": "Multiple ECH outer extension references are not permitted under RFC 9849; previously, a client could send a well-crafted packet that could trigger memory exhaustion in the server process by specifying multiple references. We now reject these as malformed and curb the memory amplification vector as a result.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-97031",
+            "https://go.dev/cl/847312",
+            "https://go.dev/issue/81855",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-97031",
+            "https://pkg.go.dev/vuln/GO-2026-6607",
+            "https://www.cve.org/CVERecord?id=CVE-2026-97031"
+          ],
+          "PublishedDate": "2026-10-08T23:17:06.037Z",
+          "LastModifiedDate": "2026-10-09T16:35:35.9Z"
+        }
+      ]
+    },
+    {
+      "Target": "usr/bin/silo",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-39414",
+          "VendorIDs": [
+            "GHSA-h749-fxx7-pwpg"
+          ],
+          "PkgID": "github.com/minio/minio@v0.0.0-20260903125440-9b11dc9469e6",
+          "PkgName": "github.com/minio/minio",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/minio/minio@v0.0.0-20260903125440-9b11dc9469e6",
+            "UID": "c67b3b9fc77cb673"
+          },
+          "InstalledVersion": "v0.0.0-20260903125440-9b11dc9469e6",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+            "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-39414",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:5878a8c9ef3e5cf873388db4cd636f443f17bee834528a0096b645ba8f03ec25",
+          "Title": "MinIO affected a DoS via Unbounded Memory Allocation in S3 Select CSV Parsing",
+          "Description": "MinIO is a high-performance object storage system. From RELEASE.2018-08-18T03-49-57Z to before RELEASE.2025-12-20T04-58-37Z, MinIO's S3 Select feature is vulnerable to memory exhaustion when processing CSV files containing lines longer than available memory. The CSV reader's nextSplit() function calls bufio.Reader.ReadBytes('\\n') with no size limit, buffering the entire input in memory until a newline is found. A CSV file with no newline characters causes the entire contents to be read into a single allocation, leading to an OOM crash of the MinIO server process. This is exploitable by any authenticated user with s3:PutObject and s3:GetObject permissions. The attack is especially practical when combined with compression: a ~2 MB gzip-compressed CSV can decompress to gigabytes of data without newlines, allowing a small upload to cause large memory consumption on the server. However, compression is not required — a sufficiently large uncompressed CSV with no newlines triggers the same issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+              "V40Score": 7.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://docs.min.io/enterprise/aistor-object-store/upgrade-aistor-server/community-edition",
+            "https://github.com/minio/minio",
+            "https://github.com/minio/minio/commit/7c14cdb60e53dbfdad2be644dfb180cab19fffa7",
+            "https://github.com/minio/minio/pull/8200",
+            "https://github.com/minio/minio/security/advisories/GHSA-h749-fxx7-pwpg",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-39414",
+            "https://pkg.go.dev/vuln/GO-2026-5415?q"
+          ],
+          "PublishedDate": "2026-04-08T21:16:58.877Z",
+          "LastModifiedDate": "2026-07-24T21:10:00.143Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-77405",
+          "VendorIDs": [
+            "GHSA-33mj-cw25-m34h"
+          ],
+          "PkgID": "github.com/rabbitmq/amqp091-go@v1.10.0",
+          "PkgName": "github.com/rabbitmq/amqp091-go",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/rabbitmq/amqp091-go@v1.10.0",
+            "UID": "fe11045957aa866"
+          },
+          "InstalledVersion": "v1.10.0",
+          "FixedVersion": "1.13.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+            "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-77405",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:bfd28d79077f8571ea461d75ed7f16e3c37a9c7d2461a3b97b72eeede286f196",
+          "Title": "github.com/rabbitmq/amqp091-go: RabbitMQ amqp091-go: Missing Explicit TLS Minimum Version Configuration In URI Parser",
+          "Description": "RabbitMQ amqp091-go is a Go AMQP 0.9.1 client. Prior to 1.13.0, tlsConfigFromURI in uri.go creates tls.Config values without setting MinVersion to tls.VersionTLS12. Builds using a Go runtime whose default permits TLS 1.0 or TLS 1.1 can therefore negotiate an obsolete protocol version when connecting through an amqps URI. A network attacker able to influence TLS negotiation with such a legacy build may weaken transport protection for AMQP messages and credentials. This issue is fixed in version 1.13.0.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-326"
+          ],
+          "VendorSeverity": {
+            "azure": 4,
+            "ghsa": 4,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:H/SI:L/SA:N",
+              "V40Score": 9.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-77405",
+            "https://github.com/rabbitmq/amqp091-go",
+            "https://github.com/rabbitmq/amqp091-go/commit/c9fd433ecac2e557919e51acc9d809390c402c6e",
+            "https://github.com/rabbitmq/amqp091-go/pull/355",
+            "https://github.com/rabbitmq/amqp091-go/releases/tag/v1.13.0",
+            "https://github.com/rabbitmq/amqp091-go/security/advisories/GHSA-33mj-cw25-m34h",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-77405",
+            "https://www.cve.org/CVERecord?id=CVE-2026-77405"
+          ],
+          "PublishedDate": "2026-09-16T15:17:47.98Z",
+          "LastModifiedDate": "2026-09-24T21:16:28.12Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-77408",
+          "VendorIDs": [
+            "GHSA-j497-x9hr-x34x"
+          ],
+          "PkgID": "github.com/rabbitmq/amqp091-go@v1.10.0",
+          "PkgName": "github.com/rabbitmq/amqp091-go",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/rabbitmq/amqp091-go@v1.10.0",
+            "UID": "fe11045957aa866"
+          },
+          "InstalledVersion": "v1.10.0",
+          "FixedVersion": "1.13.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+            "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-77408",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:aac163e547c55f7fe74646de0b811bff57b7a77b4b703ef86a24998ac022e418",
+          "Title": "github.com/rabbitmq/amqp091-go: RabbitMQ amqp091-go: Silent Data Truncation and State Corruption via Shortstr Integer Overflow",
+          "Description": "RabbitMQ amqp091-go is a Go AMQP 0.9.1 client. Prior to 1.13.0, the writeShortstr function in write.go casts the byte length of AMQP shortstr property values to uint8 without first rejecting values longer than 255 bytes. An application that accepts an oversized CorrelationId, ReplyTo, MessageId, Expiration, UserId, AppId, ContentType, ContentEncoding, or Type value can therefore serialize a wrapped length and only a truncated prefix, while reporting no error. The resulting silent metadata corruption can break request and reply correlation, routing, tracing, and downstream message processing. This issue is fixed in version 1.13.0.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "VendorSeverity": {
+            "azure": 2,
+            "ghsa": 4,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:H/VA:H/SC:L/SI:H/SA:L",
+              "V40Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-77408",
+            "https://github.com/rabbitmq/amqp091-go",
+            "https://github.com/rabbitmq/amqp091-go/commit/6959423aa2784a1971e399175dfb2065dea0f3b0",
+            "https://github.com/rabbitmq/amqp091-go/pull/354",
+            "https://github.com/rabbitmq/amqp091-go/releases/tag/v1.13.0",
+            "https://github.com/rabbitmq/amqp091-go/security/advisories/GHSA-j497-x9hr-x34x",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-77408",
+            "https://www.cve.org/CVERecord?id=CVE-2026-77408"
+          ],
+          "PublishedDate": "2026-09-16T15:17:49.747Z",
+          "LastModifiedDate": "2026-09-23T18:19:19.803Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-77411",
+          "VendorIDs": [
+            "GHSA-c5pq-fr2g-9jpf"
+          ],
+          "PkgID": "github.com/rabbitmq/amqp091-go@v1.10.0",
+          "PkgName": "github.com/rabbitmq/amqp091-go",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/rabbitmq/amqp091-go@v1.10.0",
+            "UID": "fe11045957aa866"
+          },
+          "InstalledVersion": "v1.10.0",
+          "FixedVersion": "1.13.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+            "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-77411",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:fe57c4e904ea681d69126fab746f171146f994303aa751898b49cad7a0c67baf",
+          "Title": "github.com/rabbitmq/amqp091-go: RabbitMQ amqp091-go: Protocol Desynchronization and Frame Injection via Integer Overflow in readLongstr",
+          "Description": "RabbitMQ amqp091-go is a Go AMQP 0.9.1 client. Prior to 1.13.0, readLongstr in read.go returns an empty string and a nil error when a declared AMQP longstr length exceeds 0x7FFFFFFF instead of returning ErrSyntax. The function leaves the declared field bytes unread, while readTable treats the operation as successful and continues parsing from the wrong offset. A malicious or compromised broker can provide an oversized longstr in a table field and desynchronize subsequent AMQP parsing, causing attacker-controlled trailing bytes to be interpreted as later fields or frames and disrupting connection integrity and availability. This issue is fixed in version 1.13.0.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-754"
+          ],
+          "VendorSeverity": {
+            "azure": 3,
+            "ghsa": 4,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+              "V40Score": 9.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-77411",
+            "https://github.com/rabbitmq/amqp091-go",
+            "https://github.com/rabbitmq/amqp091-go/commit/143c1ace5fa7344cee135e5c7d22970f0de68282",
+            "https://github.com/rabbitmq/amqp091-go/pull/347",
+            "https://github.com/rabbitmq/amqp091-go/releases/tag/v1.13.0",
+            "https://github.com/rabbitmq/amqp091-go/security/advisories/GHSA-c5pq-fr2g-9jpf",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-77411",
+            "https://www.cve.org/CVERecord?id=CVE-2026-77411"
+          ],
+          "PublishedDate": "2026-09-16T15:17:50.563Z",
+          "LastModifiedDate": "2026-09-23T18:19:19.803Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-77403",
+          "VendorIDs": [
+            "GHSA-xwwf-m8fg-p9q2"
+          ],
+          "PkgID": "github.com/rabbitmq/amqp091-go@v1.10.0",
+          "PkgName": "github.com/rabbitmq/amqp091-go",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/rabbitmq/amqp091-go@v1.10.0",
+            "UID": "fe11045957aa866"
+          },
+          "InstalledVersion": "v1.10.0",
+          "FixedVersion": "1.13.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+            "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-77403",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:38c93f02ea26d002adbc77264789e016e66de183bba3df84a4764de3fcfd184f",
+          "Title": "github.com/rabbitmq/amqp091-go: RabbitMQ amqp091-go: Denial of Service via AMQP frame size negotiation",
+          "Description": "RabbitMQ amqp091-go is a Go AMQP 0.9.1 client. Prior to 1.13.0, Connection.openTune in connection.go accepts a server-advertised FrameMax below the AMQP frameMinSize value of 4096 bytes because the connection negotiation loop does not enforce the protocol minimum. A malicious or compromised AMQP broker can therefore advertise an extremely small FrameMax, causing later client publications to be fragmented into excessive numbers of frames and write operations. This can consume CPU and stall the client or its host. This issue is fixed in version 1.13.0.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "azure": 3,
+            "ghsa": 3,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H",
+              "V40Score": 8.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-77403",
+            "https://github.com/rabbitmq/amqp091-go",
+            "https://github.com/rabbitmq/amqp091-go/commit/2e0a919b89f337dbf58db2bb34ab206dac354a06",
+            "https://github.com/rabbitmq/amqp091-go/pull/353",
+            "https://github.com/rabbitmq/amqp091-go/releases/tag/v1.13.0",
+            "https://github.com/rabbitmq/amqp091-go/security/advisories/GHSA-xwwf-m8fg-p9q2",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-77403",
+            "https://www.cve.org/CVERecord?id=CVE-2026-77403"
+          ],
+          "PublishedDate": "2026-09-16T15:17:46.847Z",
+          "LastModifiedDate": "2026-09-23T18:19:19.803Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-77404",
+          "VendorIDs": [
+            "GHSA-465g-fh3v-9jw4"
+          ],
+          "PkgID": "github.com/rabbitmq/amqp091-go@v1.10.0",
+          "PkgName": "github.com/rabbitmq/amqp091-go",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/rabbitmq/amqp091-go@v1.10.0",
+            "UID": "fe11045957aa866"
+          },
+          "InstalledVersion": "v1.10.0",
+          "FixedVersion": "1.13.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+            "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-77404",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:dcdb468f15583c2984afc13c740bc82259352b1d3ed0a129d02d444773ca28f3",
+          "Title": "github.com/rabbitmq/amqp091-go: RabbitMQ amqp091-go: Connection configuration overwrite via unsanitized TLS path parameter injection",
+          "Description": "RabbitMQ amqp091-go is a Go AMQP 0.9.1 client. Prior to 1.13.0, URI.String in uri.go concatenates CertFile, KeyFile, CACertFile, and ServerName values directly into an AMQPS query string instead of encoding them as URL query parameters with url.Values. If an application accepts a TLS asset path containing ampersand or equals delimiters and later reparses the serialized URI with ParseURI, the embedded delimiters can create or overwrite connection options, including paths to TLS certificate, key, or CA files. This can corrupt connection configuration or select unintended local cryptographic assets. This issue is fixed in version 1.13.0.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-116"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:L",
+              "V40Score": 8.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-77404",
+            "https://github.com/rabbitmq/amqp091-go",
+            "https://github.com/rabbitmq/amqp091-go/commit/743d488e46955fe7ffc55506fe2c401d01216783",
+            "https://github.com/rabbitmq/amqp091-go/pull/352",
+            "https://github.com/rabbitmq/amqp091-go/releases/tag/v1.13.0",
+            "https://github.com/rabbitmq/amqp091-go/security/advisories/GHSA-465g-fh3v-9jw4",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-77404",
+            "https://www.cve.org/CVERecord?id=CVE-2026-77404"
+          ],
+          "PublishedDate": "2026-09-16T15:17:47.067Z",
+          "LastModifiedDate": "2026-09-23T18:19:19.803Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-77406",
+          "VendorIDs": [
+            "GHSA-rm6m-hrcw-jw33"
+          ],
+          "PkgID": "github.com/rabbitmq/amqp091-go@v1.10.0",
+          "PkgName": "github.com/rabbitmq/amqp091-go",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/rabbitmq/amqp091-go@v1.10.0",
+            "UID": "fe11045957aa866"
+          },
+          "InstalledVersion": "v1.10.0",
+          "FixedVersion": "1.13.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+            "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-77406",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:edc78615198f4408c9f1ba1e35cab5407380df71355be1b0739961e667fe6815",
+          "Title": "github.com/rabbitmq/amqp091-go: RabbitMQ amqp091-go: Denial of Service via signed-to-unsigned integer casting",
+          "Description": "RabbitMQ amqp091-go is a Go AMQP 0.9.1 client. Prior to 1.13.0, Channel.Qos in channel.go accepts negative prefetchCount and prefetchSize integers and casts them directly to uint16 and uint32 fields in the basic.qos method because validateQos is absent. Values such as -1 therefore wrap to 65535 or 4294967295 instead of being rejected. An application that permits untrusted configuration of these Qos values can unintentionally request extremely large prefetch limits, allowing a broker to deliver enough queued messages to exhaust client memory and disrupt processing. This issue is fixed in version 1.13.0.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-195"
+          ],
+          "VendorSeverity": {
+            "azure": 3,
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:L",
+              "V40Score": 8.2
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-77406",
+            "https://github.com/rabbitmq/amqp091-go",
+            "https://github.com/rabbitmq/amqp091-go/commit/3b879e1d1d25b544e26b3bc3d7db3213203c0f3b",
+            "https://github.com/rabbitmq/amqp091-go/pull/351",
+            "https://github.com/rabbitmq/amqp091-go/releases/tag/v1.13.0",
+            "https://github.com/rabbitmq/amqp091-go/security/advisories/GHSA-rm6m-hrcw-jw33",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-77406",
+            "https://www.cve.org/CVERecord?id=CVE-2026-77406"
+          ],
+          "PublishedDate": "2026-09-16T15:17:49.07Z",
+          "LastModifiedDate": "2026-09-23T18:19:19.803Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-77407",
+          "VendorIDs": [
+            "GHSA-27gv-rfvv-22mv"
+          ],
+          "PkgID": "github.com/rabbitmq/amqp091-go@v1.10.0",
+          "PkgName": "github.com/rabbitmq/amqp091-go",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/rabbitmq/amqp091-go@v1.10.0",
+            "UID": "fe11045957aa866"
+          },
+          "InstalledVersion": "v1.10.0",
+          "FixedVersion": "1.13.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+            "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-77407",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:281a35f8a34dda57a8bf2d509a89512c3f977b941dceee502e19c647db00fdbd",
+          "Title": "github.com/rabbitmq/amqp091-go: RabbitMQ amqp091-go: Plaintext Credential Exposure via Exported PLAIN Authentication Fields",
+          "Description": "RabbitMQ amqp091-go is a Go AMQP 0.9.1 client. Prior to 1.13.0, PlainAuth values defined in auth.go retain passwords as exported plaintext fields in Connection.Config.SASL after a successful PLAIN authentication handshake. The Connection.openComplete method in connection.go does not clear those values. Code with access to the Connection object, including reflective loggers, application performance monitoring agents, debugging utilities, and panic handlers, can traverse the configuration and expose the credentials to logs or state captures. The credential remains available for the lifetime of the connection instead of being cleared after authentication. This issue is fixed in version 1.13.0.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-316"
+          ],
+          "VendorSeverity": {
+            "azure": 3,
+            "ghsa": 3,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:H/SI:L/SA:L",
+              "V40Score": 7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-77407",
+            "https://github.com/rabbitmq/amqp091-go",
+            "https://github.com/rabbitmq/amqp091-go/commit/fa013b8447eb60988db3c9281ff6b981e4d2fb4f",
+            "https://github.com/rabbitmq/amqp091-go/pull/350",
+            "https://github.com/rabbitmq/amqp091-go/releases/tag/v1.13.0",
+            "https://github.com/rabbitmq/amqp091-go/security/advisories/GHSA-27gv-rfvv-22mv",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-77407",
+            "https://www.cve.org/CVERecord?id=CVE-2026-77407"
+          ],
+          "PublishedDate": "2026-09-16T15:17:49.21Z",
+          "LastModifiedDate": "2026-09-23T18:19:19.803Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-77410",
+          "VendorIDs": [
+            "GHSA-r9c8-gcjp-xfwh"
+          ],
+          "PkgID": "github.com/rabbitmq/amqp091-go@v1.10.0",
+          "PkgName": "github.com/rabbitmq/amqp091-go",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/rabbitmq/amqp091-go@v1.10.0",
+            "UID": "fe11045957aa866"
+          },
+          "InstalledVersion": "v1.10.0",
+          "FixedVersion": "1.13.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+            "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-77410",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:ea0fd9d8c48bf7d0aa043bc2e43bbe3a95e7ba1c00bf04a3278f915365d673ce",
+          "Title": "github.com/rabbitmq/amqp091-go: RabbitMQ amqp091-go: Denial of Service via unbounded body buffer allocation",
+          "Description": "RabbitMQ amqp091-go is a Go AMQP 0.9.1 client. Prior to 1.13.0, Channel.recvContent in channel.go preallocates the message body slice with the uint64 ch.header.Size value supplied by an AMQP content header without capping the allocation to the negotiated Connection.Config.FrameSize value. A malicious or compromised broker can send an extreme declared body size and cause the Go runtime to attempt a correspondingly large allocation before body data is received. The allocation can exhaust memory and terminate the client process. This issue is fixed in version 1.13.0.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-789"
+          ],
+          "VendorSeverity": {
+            "azure": 3,
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H",
+              "V40Score": 8.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-77410",
+            "https://github.com/rabbitmq/amqp091-go",
+            "https://github.com/rabbitmq/amqp091-go/commit/91b65fa0096a99a580cf51a31b24028ff1c60382",
+            "https://github.com/rabbitmq/amqp091-go/pull/346",
+            "https://github.com/rabbitmq/amqp091-go/releases/tag/v1.13.0",
+            "https://github.com/rabbitmq/amqp091-go/security/advisories/GHSA-r9c8-gcjp-xfwh",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-77410",
+            "https://www.cve.org/CVERecord?id=CVE-2026-77410"
+          ],
+          "PublishedDate": "2026-09-16T15:17:50.43Z",
+          "LastModifiedDate": "2026-09-23T18:19:19.803Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-77412",
+          "VendorIDs": [
+            "GHSA-4v58-74mf-rjx3"
+          ],
+          "PkgID": "github.com/rabbitmq/amqp091-go@v1.10.0",
+          "PkgName": "github.com/rabbitmq/amqp091-go",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/rabbitmq/amqp091-go@v1.10.0",
+            "UID": "fe11045957aa866"
+          },
+          "InstalledVersion": "v1.10.0",
+          "FixedVersion": "1.13.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+            "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-77412",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:395f84d2c910d13449ccf8ea1cd9d621dd8bafa0437901ecd5385ab6ee59d643",
+          "Title": "github.com/rabbitmq/amqp091-go: RabbitMQ amqp091-go: Denial of Service via Malicious AMQP Field Length",
+          "Description": "RabbitMQ amqp091-go is a Go AMQP 0.9.1 client. Prior to 1.13.0, readField in read.go reads the length of an AMQP byte-array field with type tag x into a signed int32 and passes the value directly to make when allocating the field buffer. A malicious or compromised broker can encode a value such as 0xFFFFFFFF, which becomes -1 and causes a len out of range runtime panic. The panic escapes the network reader goroutine and terminates the client process, including during connection.start server properties or message header table parsing. This issue is fixed in version 1.13.0.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-681"
+          ],
+          "VendorSeverity": {
+            "azure": 3,
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H",
+              "V40Score": 8.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-77412",
+            "https://github.com/rabbitmq/amqp091-go",
+            "https://github.com/rabbitmq/amqp091-go/commit/669b42bf7b1db76bc6d4973e3634247f680accbf",
+            "https://github.com/rabbitmq/amqp091-go/pull/344",
+            "https://github.com/rabbitmq/amqp091-go/releases/tag/v1.13.0",
+            "https://github.com/rabbitmq/amqp091-go/security/advisories/GHSA-4v58-74mf-rjx3",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-77412",
+            "https://www.cve.org/CVERecord?id=CVE-2026-77412"
+          ],
+          "PublishedDate": "2026-09-16T15:17:50.707Z",
+          "LastModifiedDate": "2026-09-23T18:19:19.803Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-79921",
+          "VendorIDs": [
+            "GHSA-6c5v-hqjr-5xxp"
+          ],
+          "PkgID": "github.com/rabbitmq/amqp091-go@v1.10.0",
+          "PkgName": "github.com/rabbitmq/amqp091-go",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/github.com/rabbitmq/amqp091-go@v1.10.0",
+            "UID": "fe11045957aa866"
+          },
+          "InstalledVersion": "v1.10.0",
+          "FixedVersion": "1.13.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+            "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-79921",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Fingerprint": "sha256:3addfe1e64e18e498f394bc9680756c6d80f742a78d040d1d0bab574578f3ccf",
+          "Title": "github.com/rabbitmq/amqp091-go: amqp091-go: Denial of Service via oversized AMQP payloads",
+          "Description": "amqp091-go is a Go AMQP 0.9.1 client. Before version 1.13.0, a compromised or malicious AMQP broker can force the client to allocate resources for and process content body frames that exceed the negotiated frame_max limit. This can lead to unexpected memory consumption or application-layer denial of service (DoS), bypassing the protocol's built-in framing constraints. Version 1.13.0 contains a fix. No known workarounds are available.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "azure": 3,
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H",
+              "V40Score": 8.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-79921",
+            "https://github.com/rabbitmq/amqp091-go",
+            "https://github.com/rabbitmq/amqp091-go/commit/6beb7b51f59e46ddcf8066ad498dad32491d3be0",
+            "https://github.com/rabbitmq/amqp091-go/pull/353",
+            "https://github.com/rabbitmq/amqp091-go/releases/tag/v1.13.0",
+            "https://github.com/rabbitmq/amqp091-go/security/advisories/GHSA-6c5v-hqjr-5xxp",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-79921",
+            "https://www.cve.org/CVERecord?id=CVE-2026-79921"
+          ],
+          "PublishedDate": "2026-08-26T21:16:41.873Z",
+          "LastModifiedDate": "2026-09-09T21:09:13.08Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "golang.org/x/net@v0.58.0",
+          "PkgName": "golang.org/x/net",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/golang.org/x/net@v0.58.0",
+            "UID": "a7fa99f2dec64a3e"
+          },
+          "InstalledVersion": "v0.58.0",
+          "FixedVersion": "0.60.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+            "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:71db79789756f379b29746f329dee89e9d63ed37aab261bd8d7ceafb1314255c",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78667",
+          "VendorIDs": [
+            "GO-2026-6609"
+          ],
+          "PkgID": "stdlib@v1.27.1",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.27.1",
+            "UID": "ef54f7b605fd5cb7"
+          },
+          "InstalledVersion": "v1.27.1",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+            "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78667",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:6d6629ac424fd7dfd23554cf30e82667c05f4773682ae1c6da2102809b313a04",
+          "Title": "net/http: golang: golang: Denial of Service via crafted HTTP Range headers",
+          "Description": "When parsing a Range header containing a large number of small ranges, FileServer(FS), ServeContent, and ServeFile(FS) can consume an excessive amount of CPU.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78667",
+            "https://go.dev/cl/847309",
+            "https://go.dev/issue/81858",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78667",
+            "https://pkg.go.dev/vuln/GO-2026-6609",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78667"
+          ],
+          "PublishedDate": "2026-10-08T23:17:03.88Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.69Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "stdlib@v1.27.1",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.27.1",
+            "UID": "ef54f7b605fd5cb7"
+          },
+          "InstalledVersion": "v1.27.1",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+            "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:3f87c4fdf63591a6265e6c8d68462ad70662ea09f97bf04b22b20ba37356adbd",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-97031",
+          "VendorIDs": [
+            "GO-2026-6607"
+          ],
+          "PkgID": "stdlib@v1.27.1",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.27.1",
+            "UID": "ef54f7b605fd5cb7"
+          },
+          "InstalledVersion": "v1.27.1",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:324f6c99a1549aef6eead74361970ad715d2d5bc0fda3cdc1e691ad74e755361",
+            "DiffID": "sha256:1c22b17ae2526fb8d2295079f6e591f765c370dcf25a11a453917869c4a4a71a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-97031",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:de017dd42668002553a87118f6f3b8ff423fc567a93c182830a16e7d951800c2",
+          "Title": "crypto/tls: golang: crypto/tls: Denial of Service via multiple ECH outer extension references",
+          "Description": "Multiple ECH outer extension references are not permitted under RFC 9849; previously, a client could send a well-crafted packet that could trigger memory exhaustion in the server process by specifying multiple references. We now reject these as malformed and curb the memory amplification vector as a result.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-97031",
+            "https://go.dev/cl/847312",
+            "https://go.dev/issue/81855",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-97031",
+            "https://pkg.go.dev/vuln/GO-2026-6607",
+            "https://www.cve.org/CVERecord?id=CVE-2026-97031"
+          ],
+          "PublishedDate": "2026-10-08T23:17:06.037Z",
+          "LastModifiedDate": "2026-10-09T16:35:35.9Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+chart	go_module	version	osv_count	advisory_ids	status
+sx-argo-rollouts	github.com/argoproj/argo-rollouts	v1.10.1	0		unknown
+argocd	github.com/argoproj/argo-cd/v3	v3.5.5	0		unknown
+sx-cert-manager	github.com/cert-manager/cert-manager	v1.21.2	0		unknown
+sx-cnpg	github.com/cloudnative-pg/cloudnative-pg	v1.30.1	0		unknown
+sx-crossplane	github.com/crossplane/crossplane/v2	v2.4.2	1	GO-2026-5709	affected
+sx-external-dns	sigs.k8s.io/external-dns	v0.23.0	0		unknown
+sx-external-secrets	github.com/external-secrets/external-secrets	v2.12.0	1	GO-2026-5723	affected
+sx-grafana	github.com/grafana/grafana	v13.2.4	48	GHSA-3q27-7qjq-p9c5,GHSA-3w66-95m3-8jxg,GHSA-9493-h4f5-633x,GHSA-9g84-39mm-q4p3,GHSA-f74p-cwhp-x2wx,GO-2024-2513,GO-2024-2515,GO-2024-2516,GO-2024-2517,GO-2024-2519,GO-2024-2520,GO-2024-2523,GO-2024-2629,GO-2024-2661,GO-2024-2697,GO-2024-2843,GO-2024-2844,GO-2024-2847,GO-2024-2848,GO-2024-2851,GO-2024-2852,GO-2024-2854,GO-2024-2855,GO-2024-2856,GO-2024-2857,GO-2024-2858,GO-2024-2867,GO-2024-3079,GO-2024-3215,GO-2024-3240,GO-2025-3438,GO-2025-3704,GO-2025-3740,GO-2025-3742,GO-2025-3766,GO-2025-3814,GO-2025-3817,GO-2025-4153,GO-2026-5095,GO-2026-5219,GO-2026-5332,GO-2026-5409,GO-2026-5708,GO-2026-6541,GO-2026-6542,GO-2026-6544,GO-2026-6545,GO-2026-6664	affected
+sx-kargo	github.com/akuity/kargo	v1.12.4	0		unknown
+sx-kyverno	github.com/kyverno/kyverno	v1.19.1	3	GO-2025-3615,GO-2026-5337,GO-2026-5594	affected
+sx-loki	github.com/grafana/loki/v3	v3.7.8	0		unknown
+sx-metallb	go.universe.tf/metallb	v0.16.1	0		unknown
+sx-mimir	github.com/grafana/mimir	v3.2.1	0		unknown
+sx-openbao	github.com/openbao/openbao/v2	v2.7.1	0		unknown
+sx-blackbox-exporter	github.com/prometheus/blackbox_exporter	v0.29.0	0		unknown
+sx-tempo	github.com/grafana/tempo	v3.1.0	2	GO-2026-5359,GO-2026-5528	affected
+sx-traefik	github.com/traefik/traefik/v3	v3.7.14	0		unknown
+sx-velero	github.com/vmware-tanzu/velero	v1.18.2	0		unknown
+sx-trivy	github.com/aquasecurity/trivy-operator	v0.35.0	0		unknown
+sx-kubevirt	kubevirt.io/kubevirt	v1.5.0	23	GHSA-25mh-hp8x-cgrv,GHSA-2r4r-5x78-mvqf,GHSA-38jw-g2qx-4286,GHSA-46xp-26xh-hpqh,GHSA-7jcp-v9w4-wjmg,GHSA-7xgm-5prm-v5gc,GHSA-9m94-w2vq-hcf9,GHSA-ggp9-c99x-54gp,GHSA-j6cv-3w8p-vrg8,GHSA-mpmf-3w4r-qfpf,GHSA-qw6q-3pgr-5cwq,GO-2024-2688,GO-2024-2816,GO-2025-4102,GO-2025-4103,GO-2025-4105,GO-2025-4107,GO-2025-4109,GO-2025-4110,GO-2026-4384,GO-2026-5450,GO-2026-5848,GO-2026-5883	affected

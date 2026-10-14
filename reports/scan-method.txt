@@ -1,0 +1,5 @@
+Charts were rendered with Helm 3.18.6 using values-kubrix-default.yaml and values-cluster-kind.yaml when present. The target chart was rendered with values-kind.yaml. Image references were extracted from rendered workload container and init-container specs, then deduplicated for scanning.
+
+Trivy 0.76.0 ran with --image-src remote --scanners vuln --severity HIGH,CRITICAL. Each per-image JSON report retains all HIGH and CRITICAL vulnerability findings; the redundant package inventory was removed after confirming that it did not change the findings.
+
+Summary counts are the sum of distinct vulnerability IDs per image within each chart. After scans cover the seven bumped charts only; other after values are intentionally absent, not zero.

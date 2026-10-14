@@ -1,0 +1,14 @@
+image_id	image	status	high	critical	report
+ab97a21ccec28d6d	alpine:3.17	OK	3	0	reports/after/images/ab97a21ccec28d6d.json
+1e4795b92365c15e	curlimages/curl:latest	OK	0	0	reports/after/images/1e4795b92365c15e.json
+b0af22f2e5293aac	docker.io/bats/bats:1.14.0	OK	1	1	reports/after/images/b0af22f2e5293aac.json
+05c8e1a471145f12	docker.io/grafana/grafana:13.2.4-distroless	OK	7	0	reports/after/images/05c8e1a471145f12.json
+9d3b5384e794322c	docker.io/grafana/tempo:3.1.0	OK	3	0	reports/after/images/9d3b5384e794322c.json
+637b8d677ee92f2c	ecr-public.aws.com/docker/library/redis:8.6.4-alpine	OK	7	0	reports/after/images/637b8d677ee92f2c.json
+2f2940de1704fdcd	ghcr.io/akuity/kargo:v1.12.4	OK	1	0	reports/after/images/2f2940de1704fdcd.json
+d8ef3fe967f6c3bd	ghcr.io/dexidp/dex:v2.46.0	OK	16	0	reports/after/images/d8ef3fe967f6c3bd.json
+890c5975e53809b3	ghcr.io/external-secrets/external-secrets:v2.12.0	OK	3	0	reports/after/images/890c5975e53809b3.json
+c51607c61286624a	quay.io/argoproj/argo-rollouts:v1.10.1	OK	7	0	reports/after/images/c51607c61286624a.json
+b1b7a2d870e72433	quay.io/argoproj/argocd:v3.5.5	OK	42	1	reports/after/images/b1b7a2d870e72433.json
+2637e806043f0940	quay.io/keycloak/keycloak-operator:26.7.4	OK	8	1	reports/after/images/2637e806043f0940.json
+e72b6e96411cfb27	quay.io/kiwigrid/k8s-sidecar:2.14.1	OK	4	0	reports/after/images/e72b6e96411cfb27.json

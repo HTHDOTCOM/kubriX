@@ -1,0 +1,436 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.0"
+  },
+  "ReportID": "01a13a84-3f19-7152-86bd-59a7c94a02e8",
+  "CreatedAt": "2026-10-14T15:05:07.865087482+02:00",
+  "ArtifactID": "sha256:81090aa2a040ac12b01d130ad43b73dfe5e8cba65471c3eb8494877b2731265d",
+  "ArtifactName": "quay.io/openbao/openbao:2.7.1",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "Size": 192442368,
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.24.2"
+    },
+    "ImageID": "sha256:8b664b4dd46db74a327e373f7b9581e39a1447b7d788b9b69f664896683c14d5",
+    "DiffIDs": [
+      "sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc30323ce36760701b0b7f711",
+      "sha256:cf0d068645c39425d5f9e66b0e3e0640f7085f0730c414c2e78d57bf22355c7f",
+      "sha256:add325b009df5375c7d5984baa38f28b11f9c05ac942a1b52f2f0015d0bcda05",
+      "sha256:d5114730e7434dda55ff7fbc6ac3f738b62d056befe79577da0f4f8639db87da",
+      "sha256:90ac85229a4324b8c9d989c7bcc0bcfd24a86d3ea95937be09f2d065d07a22a7",
+      "sha256:3f1876f90ad814bae962b88cf03430cebc0026df151c79c081a13adc1a79daa7",
+      "sha256:ddea01cd9e31df87365a6e2c69fc7f0315da5e85ad83cd7802a047f0e2d69071",
+      "sha256:97bff44ddbc2d7f816b36d6cbd4fee204983eff634185b629ac9eb7f43ec3714"
+    ],
+    "RepoTags": [
+      "quay.io/openbao/openbao:2.7.1"
+    ],
+    "RepoDigests": [
+      "quay.io/openbao/openbao@sha256:6d2b93856e3fcf7b18ad855a0b51eaba474dc8b79cf554379ea32034797d2acf"
+    ],
+    "Reference": "quay.io/openbao/openbao:2.7.1",
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2026-10-01T13:32:54Z",
+      "history": [
+        {
+          "created": "2026-09-17T20:37:20.889221879Z",
+          "created_by": "ADD alpine-minirootfs-3.24.2-x86_64.tar.gz / # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-09-17T20:37:20.889221879Z",
+          "created_by": "CMD [\"/bin/sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-10-01T13:32:54Z",
+          "created_by": "COPY LICENSE /licenses/mozilla.txt # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-10-01T13:32:54Z",
+          "created_by": "RUN /bin/sh -c addgroup openbao && adduser -S -G openbao openbao # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-10-01T13:32:54Z",
+          "created_by": "RUN /bin/sh -c apk add --no-cache ca-certificates libcap su-exec dumb-init tzdata gcompat # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-10-01T13:32:54Z",
+          "created_by": "COPY . / # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-10-01T13:32:54Z",
+          "created_by": "RUN /bin/sh -c ln -s /usr/bin/bao /usr/bin/vault # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-10-01T13:32:54Z",
+          "created_by": "RUN /bin/sh -c mkdir -p /openbao/logs &&     mkdir -p /openbao/file &&     mkdir -p /openbao/config &&     chown -R openbao:openbao /openbao # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-10-01T13:32:54Z",
+          "created_by": "EXPOSE [8200/tcp]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-10-01T13:32:54Z",
+          "created_by": "USER openbao",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-10-01T13:32:54Z",
+          "created_by": "COPY .release/docker/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-10-01T13:32:54Z",
+          "created_by": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2026-10-01T13:32:54Z",
+          "created_by": "CMD [\"server\" \"-dev\" \"-dev-no-store-token\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc30323ce36760701b0b7f711",
+          "sha256:cf0d068645c39425d5f9e66b0e3e0640f7085f0730c414c2e78d57bf22355c7f",
+          "sha256:add325b009df5375c7d5984baa38f28b11f9c05ac942a1b52f2f0015d0bcda05",
+          "sha256:d5114730e7434dda55ff7fbc6ac3f738b62d056befe79577da0f4f8639db87da",
+          "sha256:90ac85229a4324b8c9d989c7bcc0bcfd24a86d3ea95937be09f2d065d07a22a7",
+          "sha256:3f1876f90ad814bae962b88cf03430cebc0026df151c79c081a13adc1a79daa7",
+          "sha256:ddea01cd9e31df87365a6e2c69fc7f0315da5e85ad83cd7802a047f0e2d69071",
+          "sha256:97bff44ddbc2d7f816b36d6cbd4fee204983eff634185b629ac9eb7f43ec3714"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "server",
+          "-dev",
+          "-dev-no-store-token"
+        ],
+        "Entrypoint": [
+          "docker-entrypoint.sh"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Labels": {
+          "build-date": "2026-10-01T13:32:54Z",
+          "description": "OpenBao is a tool for securely accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, and more. OpenBao provides a unified interface to any secret, while providing tight access control and recording a detailed audit log",
+          "maintainer": "OpenBao <openbao@lists.openssf.org>",
+          "name": "OpenBao",
+          "org.opencontainers.image.authors": "OpenBao <openbao@lists.openssf.org>",
+          "org.opencontainers.image.description": "OpenBao is a tool for securely accessing secrets",
+          "org.opencontainers.image.documentation": "https://github.com/openbao/openbao/blob/main/README.md",
+          "org.opencontainers.image.licenses": "MPL-2.0",
+          "org.opencontainers.image.revision": "a5db72cef75c24b920ade02065b18dd8eb666bac",
+          "org.opencontainers.image.source": "https://github.com/openbao/openbao",
+          "org.opencontainers.image.title": "OpenBao",
+          "org.opencontainers.image.url": "https://openbao.org",
+          "org.opencontainers.image.vendor": "OpenBao",
+          "org.opencontainers.image.version": "v2.7.1",
+          "release": "1790861574",
+          "summary": "OpenBao is a tool for securely accessing secrets",
+          "url": "https://openbao.org",
+          "vcs-ref": "a5db72cef75c24b920ade02065b18dd8eb666bac",
+          "vcs-type": "git",
+          "vendor": "OpenBao",
+          "version": "v2.7.1"
+        },
+        "User": "openbao",
+        "WorkingDir": "/",
+        "ExposedPorts": {
+          "8200/tcp": {}
+        },
+        "ArgsEscaped": true
+      }
+    },
+    "Layers": [
+      {
+        "Size": 8704000,
+        "Digest": "sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e4c4b714dcfde2a102b5",
+        "DiffID": "sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc30323ce36760701b0b7f711"
+      },
+      {
+        "Size": 18432,
+        "Digest": "sha256:087ad16c32a3faf2617564385cf8ceaf9a490de936166b49a5539c5f1ff89e66",
+        "DiffID": "sha256:cf0d068645c39425d5f9e66b0e3e0640f7085f0730c414c2e78d57bf22355c7f"
+      },
+      {
+        "Size": 10752,
+        "Digest": "sha256:3e9910f6a2dfabff58b96ed6e7514acb3c0d02e75c9561629caaf6e7c44716d6",
+        "DiffID": "sha256:add325b009df5375c7d5984baa38f28b11f9c05ac942a1b52f2f0015d0bcda05"
+      },
+      {
+        "Size": 1933312,
+        "Digest": "sha256:c6b12ce1e0b6b0cf12a422b32efe1243cf73082ab5077036f1a8e3ad51031a2a",
+        "DiffID": "sha256:d5114730e7434dda55ff7fbc6ac3f738b62d056befe79577da0f4f8639db87da"
+      },
+      {
+        "Size": 181763072,
+        "Digest": "sha256:0e9fa07592f841ab139f5f25e92580a8b9303c56b88f03688095815c2e04f08f",
+        "DiffID": "sha256:90ac85229a4324b8c9d989c7bcc0bcfd24a86d3ea95937be09f2d065d07a22a7"
+      },
+      {
+        "Size": 2560,
+        "Digest": "sha256:79e1023ff1ffc54897c79911de7c4124fa68b8244468ec4d50f235209cf12998",
+        "DiffID": "sha256:3f1876f90ad814bae962b88cf03430cebc0026df151c79c081a13adc1a79daa7"
+      },
+      {
+        "Size": 3072,
+        "Digest": "sha256:9b8f4f0bc0a4fc9105de7edea8b187d3fe4099d5207e6ae807b9ead5eafde5fb",
+        "DiffID": "sha256:ddea01cd9e31df87365a6e2c69fc7f0315da5e85ad83cd7802a047f0e2d69071"
+      },
+      {
+        "Size": 7168,
+        "Digest": "sha256:60a34231e88492b0c6e3397bf206171878df1f9cebd2669aff398aaa47c48e8e",
+        "DiffID": "sha256:97bff44ddbc2d7f816b36d6cbd4fee204983eff634185b629ac9eb7f43ec3714"
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Target": "quay.io/openbao/openbao:2.7.1 (alpine 3.24.2)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    },
+    {
+      "Target": "usr/bin/bao",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "golang.org/x/net@v0.58.0",
+          "PkgName": "golang.org/x/net",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/golang.org/x/net@v0.58.0",
+            "UID": "8746d8c0be3707b"
+          },
+          "InstalledVersion": "v0.58.0",
+          "FixedVersion": "0.60.0",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:0e9fa07592f841ab139f5f25e92580a8b9303c56b88f03688095815c2e04f08f",
+            "DiffID": "sha256:90ac85229a4324b8c9d989c7bcc0bcfd24a86d3ea95937be09f2d065d07a22a7"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:056156395aa5f0ca0d5a22697e7fb1d584023a0a70b934ffbe10240199248958",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78667",
+          "VendorIDs": [
+            "GO-2026-6609"
+          ],
+          "PkgID": "stdlib@v1.27.1",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.27.1",
+            "UID": "b6c0cb339aef9b56"
+          },
+          "InstalledVersion": "v1.27.1",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:0e9fa07592f841ab139f5f25e92580a8b9303c56b88f03688095815c2e04f08f",
+            "DiffID": "sha256:90ac85229a4324b8c9d989c7bcc0bcfd24a86d3ea95937be09f2d065d07a22a7"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78667",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:60bd12db6fbe3ba72208412b9bf20e50c2106cd09efbbf069241c3247e708e9f",
+          "Title": "net/http: golang: golang: Denial of Service via crafted HTTP Range headers",
+          "Description": "When parsing a Range header containing a large number of small ranges, FileServer(FS), ServeContent, and ServeFile(FS) can consume an excessive amount of CPU.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78667",
+            "https://go.dev/cl/847309",
+            "https://go.dev/issue/81858",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78667",
+            "https://pkg.go.dev/vuln/GO-2026-6609",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78667"
+          ],
+          "PublishedDate": "2026-10-08T23:17:03.88Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.69Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-78669",
+          "VendorIDs": [
+            "GO-2026-6611"
+          ],
+          "PkgID": "stdlib@v1.27.1",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.27.1",
+            "UID": "b6c0cb339aef9b56"
+          },
+          "InstalledVersion": "v1.27.1",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:0e9fa07592f841ab139f5f25e92580a8b9303c56b88f03688095815c2e04f08f",
+            "DiffID": "sha256:90ac85229a4324b8c9d989c7bcc0bcfd24a86d3ea95937be09f2d065d07a22a7"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-78669",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:d3c2fa0241825bd79b05c33c4e537111c6234f5ddc0ba8dca906ab63d6a2ab27",
+          "Title": "net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames",
+          "Description": "A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-78669",
+            "https://go.dev/cl/847186",
+            "https://go.dev/cl/847308",
+            "https://go.dev/issue/81742",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://groups.google.com/g/golang-announce/c/ZPwCyRUuGBs",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+            "https://pkg.go.dev/vuln/GO-2026-6611",
+            "https://www.cve.org/CVERecord?id=CVE-2026-78669"
+          ],
+          "PublishedDate": "2026-10-08T23:17:04.01Z",
+          "LastModifiedDate": "2026-10-09T17:16:49.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-97031",
+          "VendorIDs": [
+            "GO-2026-6607"
+          ],
+          "PkgID": "stdlib@v1.27.1",
+          "PkgName": "stdlib",
+          "PkgIdentifier": {
+            "PURL": "pkg:golang/stdlib@v1.27.1",
+            "UID": "b6c0cb339aef9b56"
+          },
+          "InstalledVersion": "v1.27.1",
+          "FixedVersion": "1.26.9, 1.27.2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:0e9fa07592f841ab139f5f25e92580a8b9303c56b88f03688095815c2e04f08f",
+            "DiffID": "sha256:90ac85229a4324b8c9d989c7bcc0bcfd24a86d3ea95937be09f2d065d07a22a7"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-97031",
+          "DataSource": {
+            "ID": "govulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://pkg.go.dev/vuln/"
+          },
+          "Fingerprint": "sha256:5e09627c4ea810f58e554ceb70df528def22a320071819be87c59a1a3ceea4b2",
+          "Title": "crypto/tls: golang: crypto/tls: Denial of Service via multiple ECH outer extension references",
+          "Description": "Multiple ECH outer extension references are not permitted under RFC 9849; previously, a client could send a well-crafted packet that could trigger memory exhaustion in the server process by specifying multiple references. We now reject these as malformed and curb the memory amplification vector as a result.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-405"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-97031",
+            "https://go.dev/cl/847312",
+            "https://go.dev/issue/81855",
+            "https://groups.google.com/g/golang-announce/c/U2fTuyDJznI",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-97031",
+            "https://pkg.go.dev/vuln/GO-2026-6607",
+            "https://www.cve.org/CVERecord?id=CVE-2026-97031"
+          ],
+          "PublishedDate": "2026-10-08T23:17:06.037Z",
+          "LastModifiedDate": "2026-10-09T16:35:35.9Z"
+        }
+      ]
+    }
+  ]
+}

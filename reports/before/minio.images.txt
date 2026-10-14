@@ -1,0 +1,2 @@
+docker.io/pgsty/mc:RELEASE.2026-09-13T00-00-00Z
+docker.io/pgsty/silo:RELEASE.2026-09-03T13-18-01Z
