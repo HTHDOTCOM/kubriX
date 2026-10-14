@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/nginx/docker-nginx-unprivileged/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/nginx/docker-nginx-unprivileged/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/nginx/docker-nginx-unprivileged/releases.atom"/>
+  <title>Release notes from docker-nginx-unprivileged</title>
+  <updated>2026-04-13T12:48:57Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/136453947/1.29.8</id>
+    <updated>2026-04-13T12:48:57Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nginx/docker-nginx-unprivileged/releases/tag/1.29.8"/>
+    <title>1.29.8: Updated repository for recent releases. (#410)</title>
+    <content type="html">&lt;p&gt;Bump NGINX versions: mainline 1.29.5 → 1.29.8, stable 1.28.2 → 1.28.3&lt;br&gt;
+Bump njs versions: 0.9.5 → 0.9.6 (mainline and stable)&lt;/p&gt;</content>
+    <author>
+      <name>oxpa</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/1932978?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/136453947/1.28.3</id>
+    <updated>2026-04-13T12:48:57Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nginx/docker-nginx-unprivileged/releases/tag/1.28.3"/>
+    <title>1.28.3: Updated repository for recent releases. (#410)</title>
+    <content type="html">&lt;p&gt;Bump NGINX versions: mainline 1.29.5 → 1.29.8, stable 1.28.2 → 1.28.3&lt;br&gt;
+Bump njs versions: 0.9.5 → 0.9.6 (mainline and stable)&lt;/p&gt;</content>
+    <author>
+      <name>oxpa</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/1932978?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/136453947/1.29.4</id>
+    <updated>2026-02-06T13:32:49Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nginx/docker-nginx-unprivileged/releases/tag/1.29.4"/>
+    <title>1.29.4</title>
+    <content type="html">&lt;p&gt;NGINX 1.29.4 (mainline)&lt;/p&gt;</content>
+    <author>
+      <name>alessfg</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/15654525?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/136453947/1.28.1</id>
+    <updated>2026-02-06T13:32:17Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nginx/docker-nginx-unprivileged/releases/tag/1.28.1"/>
+    <title>1.28.1</title>
+    <content type="html">&lt;p&gt;NGINX 1.28.1 (stable)&lt;/p&gt;</content>
+    <author>
+      <name>alessfg</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/15654525?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/136453947/1.29.3</id>
+    <updated>2026-02-05T21:56:24Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nginx/docker-nginx-unprivileged/releases/tag/1.29.3"/>
+    <title>1.29.3</title>
+    <content type="html">&lt;p&gt;NGINX 1.29.3 (mainline)&lt;/p&gt;</content>
+    <author>
+      <name>alessfg</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/15654525?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/136453947/1.29.2</id>
+    <updated>2025-12-03T21:32:37Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nginx/docker-nginx-unprivileged/releases/tag/1.29.2"/>
+    <title>1.29.2</title>
+    <content type="html">&lt;p&gt;NGINX 1.29.2 (mainline)&lt;/p&gt;</content>
+    <author>
+      <name>alessfg</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/15654525?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/136453947/1.29.1</id>
+    <updated>2025-10-10T13:26:58Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nginx/docker-nginx-unprivileged/releases/tag/1.29.1"/>
+    <title>1.29.1</title>
+    <content type="html">&lt;p&gt;NGINX 1.29.1 (mainline)&lt;/p&gt;</content>
+    <author>
+      <name>alessfg</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/15654525?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/136453947/1.29.0</id>
+    <updated>2025-08-17T15:30:35Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nginx/docker-nginx-unprivileged/releases/tag/1.29.0"/>
+    <title>1.29.0</title>
+    <content type="html">&lt;p&gt;NGINX 1.29.0 (mainline)&lt;/p&gt;</content>
+    <author>
+      <name>alessfg</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/15654525?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/136453947/1.28.0</id>
+    <updated>2025-06-19T12:25:31Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nginx/docker-nginx-unprivileged/releases/tag/1.28.0"/>
+    <title>1.28.0</title>
+    <content type="html">&lt;p&gt;NGINX 1.28.0 (stable)&lt;/p&gt;</content>
+    <author>
+      <name>alessfg</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/15654525?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/136453947/1.27.5</id>
+    <updated>2025-06-19T12:25:09Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nginx/docker-nginx-unprivileged/releases/tag/1.27.5"/>
+    <title>1.27.5</title>
+    <content type="html">&lt;p&gt;NGINX 1.27.5 (mainline)&lt;/p&gt;</content>
+    <author>
+      <name>alessfg</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/15654525?s=60&amp;v=4"/>
+  </entry>
+</feed>

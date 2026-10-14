@@ -1,0 +1,39 @@
+{
+  "title": "CISA Catalog of Known Exploited Vulnerabilities",
+  "catalogVersion": "2026.10.13",
+  "dateReleased": "2026-10-13T19:10:43.6568Z",
+  "count": 1741,
+  "vulnerabilities": [
+    {
+      "cveID": "CVE-2025-55182",
+      "vendorProject": "Meta",
+      "product": "React Server Components",
+      "vulnerabilityName": "Meta React Server Components Remote Code Execution Vulnerability",
+      "dateAdded": "2025-12-05",
+      "shortDescription": "Meta React Server Components contains a remote code execution vulnerability that could allow unauthenticated remote code execution by exploiting a flaw in how React decodes payloads sent to React Server Function endpoints. Please note CVE-2025-66478 has been rejected, but it is associated with CVE-2025- 55182.",
+      "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "dueDate": "2025-12-12",
+      "knownRansomwareCampaignUse": "Known",
+      "forensicTriage": "No",
+      "notes": "Check for signs of potential compromise on all internet accessible REACT instances after applying mitigations. For more information, please see: https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components ; https://github.com/vercel-labs/fix-react2shell-next?tab=readme-ov-file ; https://nvd.nist.gov/vuln/detail/CVE-2025-55182",
+      "cwes": []
+    },
+    {
+      "cveID": "CVE-2025-48384",
+      "vendorProject": "Git",
+      "product": "Git",
+      "vulnerabilityName": "Git Link Following Vulnerability",
+      "dateAdded": "2025-08-25",
+      "shortDescription": "Git contains a link following vulnerability that stems from Git\u2019s inconsistent handling of carriage return characters in configuration files.",
+      "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "dueDate": "2025-09-15",
+      "knownRansomwareCampaignUse": "Unknown",
+      "forensicTriage": "No",
+      "notes": "This vulnerability affects a common open-source component, third-party library, or a protocol used by different products. For more information, please see: https://github.com/git/git/security/advisories/GHSA-vwqx-4fm8-6qc9 ; https://access.redhat.com/errata/RHSA-2025:13933 ; https://alas.aws.amazon.com/AL2/ALAS2-2025-2941.html ; https://linux.oracle.com/errata/ELSA-2025-11534.html ; https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-48384 ; https://nvd.nist.gov/vuln/detail/CVE-2025-48384",
+      "cwes": [
+        "CWE-59",
+        "CWE-436"
+      ]
+    }
+  ]
+}

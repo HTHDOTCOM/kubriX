@@ -1,0 +1,21 @@
+{
+  "status": "UNVERIFIED",
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "host",
+    "--entrypoint",
+    "curl",
+    "registry-1.docker.io/curlimages/curl@sha256:a134550be58ab783810e613ae96fd253c38f7bdd16d9bf9be350700c7a29ac06",
+    "-sS",
+    "-X",
+    "POST",
+    "http://127.0.0.1:45295/ping"
+  ],
+  "exit_code": 125,
+  "stdout": "",
+  "stderr": "Unable to find image 'registry-1.docker.io/curlimages/curl@sha256:a134550be58ab783810e613ae96fd253c38f7bdd16d9bf9be350700c7a29ac06' locally\ndocker: Error response from daemon: received unexpected HTTP status: 503 Service Unavailable\n\nRun 'docker run --help' for more information\n",
+  "received_paths": []
+}

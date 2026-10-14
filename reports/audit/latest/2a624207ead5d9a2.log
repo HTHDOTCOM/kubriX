@@ -1,0 +1,3 @@
+2026-10-14T16:51:13Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-14T16:51:18Z	FATAL	Fatal error	run error: image scan error: scan error: unable to initialize a scan service: unable to initialize artifact: unable to initialize container image: unable to find the specified image "quay.io/argoproj/argo-rollouts:v1.10.1" in ["remote"]: 1 error occurred:
+	* remote error: GET https://quay.io/v2/: unexpected status code 503 Service Unavailable: upstream connect error or disconnect/reset before headers. reset reason: remote connection failure, transport failure reason: immediate connect error: Invalid argument|remote address:envoy://cloudflare_https_tunnel/

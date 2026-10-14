@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/kubevirt-manager/kubevirt-manager/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/kubevirt-manager/kubevirt-manager/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/kubevirt-manager/kubevirt-manager/releases.atom"/>
+  <title>Release notes from kubevirt-manager</title>
+  <updated>2026-02-07T21:15:12Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/568963053/v1.5.4</id>
+    <updated>2026-02-11T18:41:50Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt-manager/kubevirt-manager/releases/tag/v1.5.4"/>
+    <title>v1.5.4</title>
+    <content type="html">&lt;p&gt;Release v1.5.4&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix UI assets issue&lt;/li&gt;
+&lt;li&gt;Fix noVNC issue&lt;/li&gt;
+&lt;li&gt;Fix release yamls&lt;/li&gt;
+&lt;li&gt;Fix issue on deployment selector&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>feitnomore</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/41125128?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/568963053/v1.5.3</id>
+    <updated>2025-10-09T17:56:52Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt-manager/kubevirt-manager/releases/tag/v1.5.3"/>
+    <title>Release v1.5.3</title>
+    <content type="html">&lt;p&gt;Release v1.5.3&lt;/p&gt;
+&lt;p&gt;Minor fixes, introduction to git tagging and CI/CD integration.&lt;/p&gt;</content>
+    <author>
+      <name>feitnomore</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/41125128?s=60&amp;v=4"/>
+  </entry>
+</feed>

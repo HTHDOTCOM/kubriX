@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/metallb/metallb/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/metallb/metallb/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/metallb/metallb/releases.atom"/>
+  <title>Release notes from metallb</title>
+  <updated>2026-05-27T20:49:41Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/110027931/v0.16.1</id>
+    <updated>2026-05-27T20:49:41Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/metallb/releases/tag/v0.16.1"/>
+    <title>v0.16.1: See the release notes for details:</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://metallb.universe.tf/release-notes/#version-0-16-1&quot; rel=&quot;nofollow&quot;&gt;https://metallb.universe.tf/release-notes/#version-0-16-1&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>fedepaol</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/200560?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/110027931/metallb-chart-0.16.1</id>
+    <updated>2026-05-27T21:12:46Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/metallb/releases/tag/metallb-chart-0.16.1"/>
+    <title>metallb-chart-0.16.1</title>
+    <content type="html">&lt;p&gt;A network load-balancer implementation for Kubernetes using standard routing protocols&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/110027931/v0.16.0</id>
+    <updated>2026-05-20T16:32:24Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/metallb/releases/tag/v0.16.0"/>
+    <title>Release v0.16.0</title>
+    <content type="html">&lt;p&gt;See the release notes for the details:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://metallb.universe.tf/release-notes/#version-0-16-0&quot; rel=&quot;nofollow&quot;&gt;https://metallb.universe.tf/release-notes/#version-0-16-0&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>oribon</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/68010241?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/110027931/metallb-chart-0.16.0</id>
+    <updated>2026-05-20T15:12:14Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/metallb/releases/tag/metallb-chart-0.16.0"/>
+    <title>metallb-chart-0.16.0</title>
+    <content type="html">&lt;p&gt;A network load-balancer implementation for Kubernetes using standard routing protocols&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/110027931/v0.15.3</id>
+    <updated>2025-12-04T15:48:02Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/metallb/releases/tag/v0.15.3"/>
+    <title>Release v0.15.3</title>
+    <content type="html">&lt;p&gt;See the release notes for the details:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://metallb.universe.tf/release-notes/#version-0-15-3&quot; rel=&quot;nofollow&quot;&gt;https://metallb.universe.tf/release-notes/#version-0-15-3&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>fedepaol</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/200560?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/110027931/metallb-chart-0.15.3</id>
+    <updated>2025-12-04T15:20:56Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/metallb/releases/tag/metallb-chart-0.15.3"/>
+    <title>metallb-chart-0.15.3</title>
+    <content type="html">&lt;p&gt;A network load-balancer implementation for Kubernetes using standard routing protocols&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/110027931/v0.15.2</id>
+    <updated>2025-06-04T11:19:42Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/metallb/releases/tag/v0.15.2"/>
+    <title>Release v0.15.2</title>
+    <content type="html">&lt;p&gt;See the release notes for the details:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://metallb.universe.tf/release-notes/#version-0-15-2&quot; rel=&quot;nofollow&quot;&gt;https://metallb.universe.tf/release-notes/#version-0-15-2&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>fedepaol</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/200560?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/110027931/v0.15.1</id>
+    <updated>2025-06-04T08:33:17Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/metallb/releases/tag/v0.15.1"/>
+    <title>v0.15.1: See the release notes for details:</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://metallb.universe.tf/release-notes/#version-0-15-1&quot; rel=&quot;nofollow&quot;&gt;https://metallb.universe.tf/release-notes/#version-0-15-1&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>fedepaol</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/200560?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/110027931/metallb-chart-0.15.2</id>
+    <updated>2025-06-04T10:50:26Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/metallb/releases/tag/metallb-chart-0.15.2"/>
+    <title>metallb-chart-0.15.2</title>
+    <content type="html">&lt;p&gt;A network load-balancer implementation for Kubernetes using standard routing protocols&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/110027931/metallb-chart-0.15.1</id>
+    <updated>2025-06-04T10:11:08Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/metallb/releases/tag/metallb-chart-0.15.1"/>
+    <title>metallb-chart-0.15.1-old</title>
+    <content type="html">&lt;p&gt;A network load-balancer implementation for Kubernetes using standard routing protocols&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+</feed>

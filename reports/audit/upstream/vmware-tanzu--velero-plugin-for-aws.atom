@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/velero-io/velero-plugin-for-aws/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/velero-io/velero-plugin-for-aws/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/velero-io/velero-plugin-for-aws/releases.atom"/>
+  <title>Release notes from velero-plugin-for-aws</title>
+  <updated>2026-09-23T06:51:11Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/213946861/v1.14.4</id>
+    <updated>2026-09-28T07:33:30Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/velero-io/velero-plugin-for-aws/releases/tag/v1.14.4"/>
+    <title>v1.14.4</title>
+    <content type="html">&lt;h2&gt;All changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix CVEs for 1.14.4. (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5549653572&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/336&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/336/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/336&quot;&gt;#336&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>blackpiglet</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/59276555?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213946861/v1.14.4-rc.1</id>
+    <updated>2026-09-24T09:08:12Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/velero-io/velero-plugin-for-aws/releases/tag/v1.14.4-rc.1"/>
+    <title>v1.14.4-rc.1</title>
+    <content type="html">&lt;h2&gt;All changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix CVEs for 1.14.4. (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5549653572&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/336&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/336/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/336&quot;&gt;#336&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>blackpiglet</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/59276555?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213946861/v1.14.3</id>
+    <updated>2026-09-21T09:52:02Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/velero-io/velero-plugin-for-aws/releases/tag/v1.14.3"/>
+    <title>v1.14.3</title>
+    <content type="html">&lt;h2&gt;All changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bump golang version and google.golang.org/grpc version. (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5369507501&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/333&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/333/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/333&quot;&gt;#333&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bump dependencies and Go version to fix CVEs (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5264984427&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/329&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/329/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/329&quot;&gt;#329&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix prevent amz-checksum encapsulation when checksumAlgorithm=&quot;&quot; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4903601607&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/313&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/313/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/313&quot;&gt;#313&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/kaovilai/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/kaovilai&quot;&gt;@kaovilai&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix SSE-C signed URLs (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4771590975&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/310&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/310/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/310&quot;&gt;#310&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/Minding000/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/Minding000&quot;&gt;@Minding000&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Only set PutObject Tagging when tags are configured (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4752175511&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/309&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/309/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/309&quot;&gt;#309&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/cleverer/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/cleverer&quot;&gt;@cleverer&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>blackpiglet</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/59276555?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213946861/v1.14.3-rc.2</id>
+    <updated>2026-09-08T15:49:05Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/velero-io/velero-plugin-for-aws/releases/tag/v1.14.3-rc.2"/>
+    <title>v1.14.3-rc.2</title>
+    <content type="html">&lt;h2&gt;All changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bump golang version and google.golang.org/grpc version. (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5369507501&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/333&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/333/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/333&quot;&gt;#333&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bump dependencies and Go version to fix CVEs (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5264984427&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/329&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/329/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/329&quot;&gt;#329&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix prevent amz-checksum encapsulation when checksumAlgorithm=&quot;&quot; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4903601607&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/313&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/313/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/313&quot;&gt;#313&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/kaovilai/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/kaovilai&quot;&gt;@kaovilai&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix SSE-C signed URLs (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4771590975&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/310&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/310/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/310&quot;&gt;#310&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/Minding000/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/Minding000&quot;&gt;@Minding000&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Only set PutObject Tagging when tags are configured (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4752175511&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/309&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/309/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/309&quot;&gt;#309&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/cleverer/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/cleverer&quot;&gt;@cleverer&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>blackpiglet</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/59276555?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213946861/v1.14.3-rc.1</id>
+    <updated>2026-08-31T14:19:18Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/velero-io/velero-plugin-for-aws/releases/tag/v1.14.3-rc.1"/>
+    <title>v1.14.3-rc.1</title>
+    <content type="html">&lt;h2&gt;All changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bump dependencies and Go version to fix CVEs (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5264984427&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/329&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/329/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/329&quot;&gt;#329&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix prevent amz-checksum encapsulation when checksumAlgorithm=&quot;&quot; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4903601607&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/313&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/313/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/313&quot;&gt;#313&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/kaovilai/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/kaovilai&quot;&gt;@kaovilai&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix SSE-C signed URLs (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4771590975&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/310&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/310/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/310&quot;&gt;#310&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/Minding000/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/Minding000&quot;&gt;@Minding000&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Only set PutObject Tagging when tags are configured (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4752175511&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/309&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/309/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/309&quot;&gt;#309&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/cleverer/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/cleverer&quot;&gt;@cleverer&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>blackpiglet</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/59276555?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213946861/v1.14.2</id>
+    <updated>2026-06-26T07:39:30Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/velero-io/velero-plugin-for-aws/releases/tag/v1.14.2"/>
+    <title>v1.14.2</title>
+    <content type="html">&lt;h2&gt;All changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Backport PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3751266568&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/276&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/276/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/276&quot;&gt;#276&lt;/a&gt; support for specifying KMS key for EBS volume restoration (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4674451188&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/306&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/306/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/306&quot;&gt;#306&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/TheKingMarco/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/TheKingMarco&quot;&gt;@TheKingMarco&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bump dependencies to fix CVEs for v1.14.2 (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4663907655&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/305&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/305/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/305&quot;&gt;#305&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[1.14] Bump dependancies version (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4593867000&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/302&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/302/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/302&quot;&gt;#302&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>blackpiglet</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/59276555?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213946861/v1.14.2-rc.1</id>
+    <updated>2026-06-18T08:56:17Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/velero-io/velero-plugin-for-aws/releases/tag/v1.14.2-rc.1"/>
+    <title>v1.14.2-rc.1</title>
+    <content type="html">&lt;h2&gt;All changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Backport PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3751266568&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/276&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/276/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/276&quot;&gt;#276&lt;/a&gt; support for specifying KMS key for EBS volume restoration (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4674451188&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/306&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/306/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/306&quot;&gt;#306&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/TheKingMarco/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/TheKingMarco&quot;&gt;@TheKingMarco&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bump dependencies to fix CVEs for v1.14.2 (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4663907655&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/305&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/305/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/305&quot;&gt;#305&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[1.14] Bump dependancies version (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4593867000&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/302&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/302/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/302&quot;&gt;#302&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>blackpiglet</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/59276555?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213946861/v1.14.1</id>
+    <updated>2026-05-19T08:47:47Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/velero-io/velero-plugin-for-aws/releases/tag/v1.14.1"/>
+    <title>v1.14.1</title>
+    <content type="html">&lt;h2&gt;All changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bump Velero to v1.18.1-rc.1 (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4336828558&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/292&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/292/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/292&quot;&gt;#292&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bump Golang to 1.25.9 and go.mod to fix CVEs. (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4321881314&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/291&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/291/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/291&quot;&gt;#291&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>blackpiglet</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/59276555?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213946861/v1.14.1-rc.2</id>
+    <updated>2026-05-15T09:51:43Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/velero-io/velero-plugin-for-aws/releases/tag/v1.14.1-rc.2"/>
+    <title>v1.14.1-rc.2</title>
+    <content type="html">&lt;h2&gt;All changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bump Velero to v1.18.1-rc.1 (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4336828558&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/292&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/292/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/292&quot;&gt;#292&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bump Golang to 1.25.9 and go.mod to fix CVEs. (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4321881314&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/291&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/291/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/291&quot;&gt;#291&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>blackpiglet</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/59276555?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213946861/v1.14.1-rc.1</id>
+    <updated>2026-04-27T15:52:20Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/velero-io/velero-plugin-for-aws/releases/tag/v1.14.1-rc.1"/>
+    <title>v1.14.1-rc.1</title>
+    <content type="html">&lt;h2&gt;All changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bump Velero to v1.18.1-rc.1 (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4336828558&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/292&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/292/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/292&quot;&gt;#292&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bump Golang to 1.25.9 and go.mod to fix CVEs. (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4321881314&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/velero-io/velero-plugin-for-aws/issues/291&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/velero-io/velero-plugin-for-aws/pull/291/hovercard&quot; href=&quot;https://github.com/velero-io/velero-plugin-for-aws/pull/291&quot;&gt;#291&lt;/a&gt;, &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blackpiglet/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blackpiglet&quot;&gt;@blackpiglet&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>blackpiglet</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/59276555?s=60&amp;v=4"/>
+  </entry>
+</feed>

@@ -1,0 +1,3 @@
+2026-10-14T16:48:29Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-14T16:48:33Z	FATAL	Fatal error	run error: image scan error: scan error: unable to initialize a scan service: unable to initialize artifact: unable to initialize container image: unable to find the specified image "quay.io/prometheus/prometheus@sha256:1f0f50f06acaceb0f5670d2c8a658a599affe7b0d8e78b898c1035653849a702" in ["remote"]: 1 error occurred:
+	* remote error: GET https://quay.io/v2/: unexpected status code 503 Service Unavailable: upstream connect error or disconnect/reset before headers. reset reason: remote connection failure, transport failure reason: immediate connect error: Invalid argument|remote address:envoy://cloudflare_https_tunnel/

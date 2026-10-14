@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/curl/curl-container/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/curl/curl-container/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/curl/curl-container/releases.atom"/>
+  <title>Release notes from curl-container</title>
+  <updated>2026-10-14T09:11:19Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/619162659/8.23.0</id>
+    <updated>2026-10-14T09:12:27Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/curl/curl-container/releases/tag/8.23.0"/>
+    <title>8.23.0</title>
+    <content type="html">&lt;h2&gt;[8.23.0] - 2026-10-14&lt;/h2&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;bump to curl 8.23.0&lt;/li&gt;
+&lt;li&gt;bump to alpine 3.24.2&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>xquery</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/685000?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/619162659/8.22.0</id>
+    <updated>2026-09-02T08:58:13Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/curl/curl-container/releases/tag/8.22.0"/>
+    <title>8.22.0</title>
+    <content type="html">&lt;h2&gt;[8.22.0] - 2026-09-02&lt;/h2&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;bump to curl 8.22.0&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>rh-jfuller</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/294127260?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/619162659/8.21.0</id>
+    <updated>2026-06-24T07:46:34Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/curl/curl-container/releases/tag/8.21.0"/>
+    <title>8.21.0</title>
+    <content type="html">&lt;h2&gt;[8.21.0] - 2026-06-24&lt;/h2&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;bump to curl 8.21.0&lt;/li&gt;
+&lt;li&gt;bump to alpine 3.24.1&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>rh-jfuller</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/294127260?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/619162659/8.20.0</id>
+    <updated>2026-04-29T08:45:09Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/curl/curl-container/releases/tag/8.20.0"/>
+    <title>8.20.0</title>
+    <content type="html">&lt;p&gt;[8.20.0] - 2026-04-29&lt;br&gt;
+Changed&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bump to curl 8.20.0&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>xquery</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/685000?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/619162659/8.19.0_2</id>
+    <updated>2026-04-22T18:26:29Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/curl/curl-container/releases/tag/8.19.0_2"/>
+    <title>8.19.0_2</title>
+    <content type="html">&lt;h2&gt;[8.19.0_2] - 2026-04-2&lt;/h2&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;bump to alpine 3.23.4&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>xquery</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/685000?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/619162659/8.19.0_1</id>
+    <updated>2026-04-11T17:24:45Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/curl/curl-container/releases/tag/8.19.0_1"/>
+    <title>8.19.0_1</title>
+    <content type="html">&lt;h2&gt;[8.19.0_1] - 2026-04-11&lt;/h2&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;squash images&lt;/li&gt;
+&lt;li&gt;minor fixes&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>xquery</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/685000?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/619162659/8.19.0</id>
+    <updated>2026-04-08T08:31:17Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/curl/curl-container/releases/tag/8.19.0"/>
+    <title>8.19.0</title>
+    <content type="html">&lt;h2&gt;[8.19.0] - 2026-04-08&lt;/h2&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;bump to curl 8.19.0&lt;/li&gt;
+&lt;li&gt;bump to alpine 3.23.3&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>xquery</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/685000?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/619162659/8.18.0</id>
+    <updated>2026-01-08T19:09:30Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/curl/curl-container/releases/tag/8.18.0"/>
+    <title>8.18.0</title>
+    <content type="html">&lt;h2&gt;[8.18.0] - 2026-01-08&lt;/h2&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;bump to curl 8.18.0&lt;/li&gt;
+&lt;li&gt;bump to alpine 3.23.0&lt;/li&gt;
+&lt;li&gt;adjust github ci&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>xquery</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/685000?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/619162659/8.17.0</id>
+    <updated>2025-11-05T10:23:10Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/curl/curl-container/releases/tag/8.17.0"/>
+    <title>8.17.0</title>
+    <content type="html">&lt;h2&gt;[8.17.0] - 2025-11-05&lt;/h2&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;bump to curl 8.17.0&lt;/li&gt;
+&lt;li&gt;bump to alpine 3.22.2&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>xquery</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/685000?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/619162659/8.16</id>
+    <updated>2025-09-30T20:28:35Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/curl/curl-container/releases/tag/8.16"/>
+    <title>8.16.0</title>
+    <content type="html">&lt;h2&gt;[8.16.0] - 2025-09-12&lt;/h2&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;bump to curl 8.16.0&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>xquery</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/685000?s=60&amp;v=4"/>
+  </entry>
+</feed>

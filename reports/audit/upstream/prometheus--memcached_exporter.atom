@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/prometheus/memcached_exporter/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/prometheus/memcached_exporter/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/prometheus/memcached_exporter/releases.atom"/>
+  <title>Release notes from memcached_exporter</title>
+  <updated>2026-08-14T16:03:16Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/57182606/v0.17.0</id>
+    <updated>2026-08-14T16:47:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/memcached_exporter/releases/tag/v0.17.0"/>
+    <title>0.17.0 / 2026-08-14</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[FEATURE] Add distroless image variant &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4540059951&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/memcached_exporter/issues/308&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/memcached_exporter/pull/308/hovercard&quot; href=&quot;https://github.com/prometheus/memcached_exporter/pull/308&quot;&gt;#308&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Add &lt;code&gt;--collector.slab&lt;/code&gt; flag to toggle high-cardinality &lt;code&gt;memcached_slab_*&lt;/code&gt; metrics &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1855719956&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/memcached_exporter/issues/178&quot; data-hovercard-type=&quot;issue&quot; data-hovercard-url=&quot;/prometheus/memcached_exporter/issues/178/hovercard&quot; href=&quot;https://github.com/prometheus/memcached_exporter/issues/178&quot;&gt;#178&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[CHANGE] Publish releases to GHCR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4549615336&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/memcached_exporter/issues/309&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/memcached_exporter/pull/309/hovercard&quot; href=&quot;https://github.com/prometheus/memcached_exporter/pull/309&quot;&gt;#309&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[CHANGE] Update dependencies&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/57182606/v0.16.0</id>
+    <updated>2026-04-08T12:16:59Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/memcached_exporter/releases/tag/v0.16.0"/>
+    <title>0.16.0 / 2026-04-08</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[FEATURE] Export proxy mode metrics &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3027716437&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/memcached_exporter/issues/267&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/memcached_exporter/pull/267/hovercard&quot; href=&quot;https://github.com/prometheus/memcached_exporter/pull/267&quot;&gt;#267&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/57182606/v0.15.5</id>
+    <updated>2026-01-17T09:57:08Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/memcached_exporter/releases/tag/v0.15.5"/>
+    <title>0.15.5 / 2026-01-05</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[CHANGE] Update dependencies&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/57182606/v0.15.4</id>
+    <updated>2025-11-11T21:10:32Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/memcached_exporter/releases/tag/v0.15.4"/>
+    <title>0.15.4 / 2025-10-14</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[CHANGE] Update dependencies&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/57182606/v0.15.3</id>
+    <updated>2025-05-28T19:38:22Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/memcached_exporter/releases/tag/v0.15.3"/>
+    <title>0.15.3 / 2025-05-28</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[CHANGE] Update dependencies&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/57182606/v0.15.2</id>
+    <updated>2025-03-25T18:38:41Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/memcached_exporter/releases/tag/v0.15.2"/>
+    <title>0.15.2 / 2025-03-21</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[CHANGE] Update dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This addresses &lt;a title=&quot;CVE-2025-22870&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-qxp5-gwg8-xv66/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-qxp5-gwg8-xv66&quot;&gt;CVE-2025-22870&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/57182606/v0.15.1</id>
+    <updated>2025-03-25T16:29:14Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/memcached_exporter/releases/tag/v0.15.1"/>
+    <title>0.15.1 / 2025-02-24</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[CHANGE] Update dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This addresses &lt;a title=&quot;CVE-2024-45337&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-v778-237x-gjrc/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-v778-237x-gjrc&quot;&gt;CVE-2024-45337&lt;/a&gt; and &lt;a title=&quot;CVE-2024-45338&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-w32m-9786-jp63/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-w32m-9786-jp63&quot;&gt;CVE-2024-45338&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/57182606/v0.15.0</id>
+    <updated>2024-11-08T14:58:40Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/memcached_exporter/releases/tag/v0.15.0"/>
+    <title>0.15.0 / 2024-11-08</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[CHANGE] Update dependencies&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Add metric for &lt;code&gt;direct_reclaims&lt;/code&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2499381572&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/memcached_exporter/issues/227&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/memcached_exporter/pull/227/hovercard&quot; href=&quot;https://github.com/prometheus/memcached_exporter/pull/227&quot;&gt;#227&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/57182606/v0.14.4</id>
+    <updated>2024-06-25T15:53:02Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/memcached_exporter/releases/tag/v0.14.4"/>
+    <title>0.14.4 / 2024-06-24</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[CHANGE] Update dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This addresses &lt;a title=&quot;CVE-2023-45288&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-4v7x-pqxf-cx7m/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-4v7x-pqxf-cx7m&quot;&gt;CVE-2023-45288&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/57182606/v0.14.3</id>
+    <updated>2024-03-22T16:08:54Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/memcached_exporter/releases/tag/v0.14.3"/>
+    <title>0.14.3 / 2024-03-22</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[CHANGE] Update dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This addresses &lt;a title=&quot;CVE-2024-24786&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-8r3f-844c-mc37/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-8r3f-844c-mc37&quot;&gt;CVE-2024-24786&lt;/a&gt; which is not exploitable in the exporter, but set off security scanners.&lt;/p&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+</feed>

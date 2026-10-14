@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/nats-io/nats-docker/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/nats-io/nats-docker/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/nats-io/nats-docker/releases.atom"/>
+  <title>Release notes from nats-docker</title>
+  <updated>2026-10-09T08:46:09Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/40382071/v2.15.1</id>
+    <updated>2026-10-09T08:46:09Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nats-io/nats-docker/releases/tag/v2.15.1"/>
+    <title>Release v2.15.1</title>
+    <content type="html">&lt;p&gt;Signed-off-by: Neil Twigg &lt;a href=&quot;mailto:neil@nats.io&quot;&gt;neil@nats.io&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>neilalexander</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/310854?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/40382071/v2.14.8</id>
+    <updated>2026-10-09T08:46:22Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nats-io/nats-docker/releases/tag/v2.14.8"/>
+    <title>Release v2.14.8</title>
+    <content type="html">&lt;p&gt;Signed-off-by: Neil Twigg &lt;a href=&quot;mailto:neil@nats.io&quot;&gt;neil@nats.io&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>neilalexander</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/310854?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/40382071/v2.15.1-RC.2</id>
+    <updated>2026-10-06T11:09:02Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nats-io/nats-docker/releases/tag/v2.15.1-RC.2"/>
+    <title>Release v2.15.1-RC.2</title>
+    <content type="html">&lt;p&gt;Signed-off-by: Neil Twigg &lt;a href=&quot;mailto:neil@nats.io&quot;&gt;neil@nats.io&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>neilalexander</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/310854?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/40382071/v2.14.8-RC.2</id>
+    <updated>2026-10-06T11:09:23Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nats-io/nats-docker/releases/tag/v2.14.8-RC.2"/>
+    <title>Release v2.14.8-RC.2</title>
+    <content type="html">&lt;p&gt;Signed-off-by: Neil Twigg &lt;a href=&quot;mailto:neil@nats.io&quot;&gt;neil@nats.io&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>neilalexander</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/310854?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/40382071/v2.15.1-RC.1</id>
+    <updated>2026-09-28T17:27:12Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nats-io/nats-docker/releases/tag/v2.15.1-RC.1"/>
+    <title>Release v2.15.1-RC.1</title>
+    <content type="html">&lt;p&gt;Signed-off-by: Neil Twigg &lt;a href=&quot;mailto:neil@nats.io&quot;&gt;neil@nats.io&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>neilalexander</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/310854?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/40382071/v2.14.8-RC.1</id>
+    <updated>2026-09-28T17:27:27Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nats-io/nats-docker/releases/tag/v2.14.8-RC.1"/>
+    <title>Release v2.14.8-RC.1</title>
+    <content type="html">&lt;p&gt;Signed-off-by: Neil Twigg &lt;a href=&quot;mailto:neil@nats.io&quot;&gt;neil@nats.io&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>neilalexander</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/310854?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/40382071/v2.15.0</id>
+    <updated>2026-09-17T13:35:33Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nats-io/nats-docker/releases/tag/v2.15.0"/>
+    <title>Release v2.15.0</title>
+    <content type="html">&lt;p&gt;Signed-off-by: Neil Twigg &lt;a href=&quot;mailto:neil@nats.io&quot;&gt;neil@nats.io&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>neilalexander</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/310854?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/40382071/v2.15.0-RC.2</id>
+    <updated>2026-09-15T16:34:15Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nats-io/nats-docker/releases/tag/v2.15.0-RC.2"/>
+    <title>Release v2.15.0-RC.2</title>
+    <content type="html">&lt;p&gt;Signed-off-by: Neil Twigg &lt;a href=&quot;mailto:neil@nats.io&quot;&gt;neil@nats.io&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>neilalexander</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/310854?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/40382071/v2.14.7</id>
+    <updated>2026-09-15T15:28:55Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nats-io/nats-docker/releases/tag/v2.14.7"/>
+    <title>Release v2.14.7</title>
+    <content type="html">&lt;p&gt;Signed-off-by: Neil Twigg &lt;a href=&quot;mailto:neil@nats.io&quot;&gt;neil@nats.io&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>neilalexander</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/310854?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/40382071/v2.14.7-RC.2</id>
+    <updated>2026-09-14T15:58:36Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/nats-io/nats-docker/releases/tag/v2.14.7-RC.2"/>
+    <title>Release v2.14.7-RC.2</title>
+    <content type="html">&lt;p&gt;Signed-off-by: Neil Twigg &lt;a href=&quot;mailto:neil@nats.io&quot;&gt;neil@nats.io&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>neilalexander</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/310854?s=60&amp;v=4"/>
+  </entry>
+</feed>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/bats-core/bats-core/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/bats-core/bats-core/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/bats-core/bats-core/releases.atom"/>
+  <title>Release notes from bats-core</title>
+  <updated>2026-07-21T19:53:50Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/104130720/v1.14.0</id>
+    <updated>2026-07-21T19:55:47Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/bats-core/bats-core/releases/tag/v1.14.0"/>
+    <title>v1.14.0</title>
+    <content type="html">&lt;h3&gt;Added:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;--errexit&lt;/code&gt; flag to enable errexit (set -e) behavior for commands run in &lt;code&gt;run&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3266718503&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1118&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1118/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1118&quot;&gt;#1118&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;pretty formatter: add non-interactive, color-only mode for CI environments (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3937986154&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1191&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1191/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1191&quot;&gt;#1191&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixed:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;junit formatter:
+&lt;ul&gt;
+&lt;li&gt;avoid interference between env and internals (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3660729458&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1175&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1175/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1175&quot;&gt;#1175&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;remove control characters (\x00-\x08\x0B\x0C\x0E-\x1F) (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3660876923&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1176&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1176/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1176&quot;&gt;#1176&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;don&#39;t report (skipped) last test as failed when &lt;code&gt;teardown_suite&lt;/code&gt; generates FD3 output (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3720217998&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1181&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1181/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1181&quot;&gt;#1181&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix(junit-formatter): skipped tests outputs reported as  (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3668288521&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1177&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1177/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1177&quot;&gt;#1177&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;fix failures with &lt;code&gt;--gather-test-outputs-in&lt;/code&gt; when tests change directory (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3773549921&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1183&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1183/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1183&quot;&gt;#1183&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;run&lt;/code&gt; now honors &lt;code&gt;set -e&lt;/code&gt; in your functions (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3266718503&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1118&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1118/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1118&quot;&gt;#1118&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ATTENTION&lt;/strong&gt;: In previous versions this was suppressed unintentionally.&lt;br&gt;
+While it might constitute a breaking change for some, we decided the new behavior should be the default because it might uncover hidden errors.&lt;br&gt;
+If you need the old behavior, you can use this wrapper function &lt;code&gt;suppress_errexit() { &quot;$@&quot; || return $?; }&lt;/code&gt; like &lt;code&gt;run suppress_errexit &amp;lt;your command...&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;avoid overwriting &lt;code&gt;$_&lt;/code&gt; by the DEBUG and ERR traps set by Bats (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4556723956&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1208&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1208/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1208&quot;&gt;#1208&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fail with error when receiving empty string as testfile path (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4919971993&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1212&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1212/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1212&quot;&gt;#1212&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Changed:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;update the default version of the &lt;code&gt;bash&lt;/code&gt; Docker image to 5.3 in &lt;code&gt;devcontainer&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3795262738&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1184&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1184/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1184&quot;&gt;#1184&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;exit with error when no tests are found. Use &lt;code&gt;--allow-empty-suite&lt;/code&gt; to revert to old behavior. (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4881691663&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1211&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1211/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1211&quot;&gt;#1211&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;added section about dynamic test registration (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3857359026&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1187&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1187/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1187&quot;&gt;#1187&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>martin-schulze-vireso</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/37703201?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/104130720/v1.13.0</id>
+    <updated>2025-11-07T16:12:34Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/bats-core/bats-core/releases/tag/v1.13.0"/>
+    <title>v1.13.0</title>
+    <content type="html">&lt;h1&gt;Added&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;use the &lt;a href=&quot;https://docs.docker.com/reference/dockerfile/#syntax&quot; rel=&quot;nofollow&quot;&gt;&lt;code&gt;syntax&lt;/code&gt;&lt;/a&gt; parser directive to declare the Dockerfile syntax version (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3318940573&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1127&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1127/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1127&quot;&gt;#1127&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Negative test filtering via &lt;code&gt;--negative-filter&lt;/code&gt; - tests matching the filter are &lt;em&gt;excluded&lt;/em&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3236784163&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1114&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1114/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1114&quot;&gt;#1114&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fail-fast flag &lt;code&gt;--abort&lt;/code&gt; to stop test suite execution on first failure (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3507087234&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1155&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1155/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1155&quot;&gt;#1155&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Fixed:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;unset &lt;code&gt;output&lt;/code&gt;, &lt;code&gt;stderr&lt;/code&gt;, &lt;code&gt;lines&lt;/code&gt;, &lt;code&gt;stderr_lines&lt;/code&gt; at the start of &lt;code&gt;run&lt;/code&gt; to avoid crosstalk&lt;br&gt;
+between successive invocations (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3140543787&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1105&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1105/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1105&quot;&gt;#1105&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;junit:
+&lt;ul&gt;
+&lt;li&gt;XML escape fully removes ANSI sequences, e.g. color codes, cursor movements (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3133621389&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1103&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1103/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1103&quot;&gt;#1103&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix retried tests being listed multiple times (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3473051273&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1150&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1150/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1150&quot;&gt;#1150&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix crash when &lt;code&gt;setup_suite&lt;/code&gt; fails (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3309918784&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1125&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1125/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1125&quot;&gt;#1125&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;remove deprecated windows runner (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3266959839&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1119&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1119/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1119&quot;&gt;#1119&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;renamed &lt;code&gt;docker-compose.yml&lt;/code&gt; to &lt;code&gt;compose.yaml&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3319001361&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1128&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1128/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1128&quot;&gt;#1128&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bats_test_function&lt;/code&gt;: don&#39;t require &lt;code&gt;--tags&lt;/code&gt; to be sorted (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3513010207&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1158&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1158/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1158&quot;&gt;#1158&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix &lt;code&gt;BATS_TEST_TIMEOUT&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3518933399&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1160&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1160/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1160&quot;&gt;#1160&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;not stopping processes under &lt;code&gt;run&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;prolonging skipped tests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Documentation:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;moved 3rd-party libraries list into wiki (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2961711576&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1078&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1078/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1078&quot;&gt;#1078&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>martin-schulze-vireso</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/37703201?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/104130720/v1.12.0</id>
+    <updated>2025-05-18T21:07:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/bats-core/bats-core/releases/tag/v1.12.0"/>
+    <title>v1.12.0</title>
+    <content type="html">&lt;h2&gt;Added :&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bats::on_failure&lt;/code&gt; hook that gets called when a test or &lt;code&gt;setup*&lt;/code&gt; function fails (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2706421671&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1031&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1031/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1031&quot;&gt;#1031&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Fixed:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;increase compatibility with Solaris (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2748939549&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1043&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1043/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1043&quot;&gt;#1043&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix &lt;code&gt;noclobber&lt;/code&gt; breaking &lt;code&gt;bats-gather-tests&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2748916771&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1042&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1042/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1042&quot;&gt;#1042&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix exiting with &lt;code&gt;0&lt;/code&gt; despite &lt;code&gt;bats:focus&lt;/code&gt; when all tests have been filtered out (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2802974540&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1058&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1058/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1058&quot;&gt;#1058&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;remove deprecated ubuntu 20.04 from CI config (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3020363901&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1083&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1083/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1083&quot;&gt;#1083&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix hyperlink to external Bash resource (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2707378249&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1033&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1033/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1033&quot;&gt;#1033&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove mentions to no longer existing &lt;code&gt;find_library_load_path&lt;/code&gt; in&lt;br&gt;
+&lt;code&gt;lib/bats-core&lt;/code&gt; docstrings (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2707357765&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1032&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1032/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1032&quot;&gt;#1032&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add missing &quot;status&quot; word in &lt;code&gt;--returned-status&lt;/code&gt; documentation (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2922596832&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1077&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1077/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1077&quot;&gt;#1077&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>martin-schulze-vireso</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/37703201?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/104130720/v1.11.1</id>
+    <updated>2024-11-29T22:33:30Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/bats-core/bats-core/releases/tag/v1.11.1"/>
+    <title>v1.11.1</title>
+    <content type="html">&lt;h1&gt;Added:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;make Dockerfile compatible with &lt;code&gt;#!/bin/bash&lt;/code&gt; files (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2444958187&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/967&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/967/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/967&quot;&gt;#967&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;document &lt;code&gt;bats_pipe&lt;/code&gt; function (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2249202865&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/901&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/901/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/901&quot;&gt;#901&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Fixed:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;unbreak test suites with multiple files loading common constants (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2253692742&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/904&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/904/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/904&quot;&gt;#904&lt;/a&gt;), introduced in v1.11.0&lt;/li&gt;
+&lt;li&gt;docker image won&#39;t crash if a file or directory named &#39;bats&#39; exists (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2289886292&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/920&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/920/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/920&quot;&gt;#920&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;use $BATS_LIBDIR instead of hardcoded lib in &#39;bats-gather-tests&#39; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2505973848&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/985&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/985/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/985&quot;&gt;#985&lt;/a&gt;, &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2525176131&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/990&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/990/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/990&quot;&gt;#990&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Changed:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;update Docker image with the latest &lt;code&gt;bats-detik&lt;/code&gt; version 1.3.2 (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2672334928&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1017&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1017/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1017&quot;&gt;#1017&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;cleanup: remove unused &lt;code&gt;$BATS_FILTER&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2262276638&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/907&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/907/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/907&quot;&gt;#907&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix hard-coded link to readthedocs (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2249202865&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/901&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/901/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/901&quot;&gt;#901&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix tutorial code for multiline test suite (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2599136096&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/1011&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/1011/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/1011&quot;&gt;#1011&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>martin-schulze-vireso</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/37703201?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/104130720/v1.11.0</id>
+    <updated>2024-03-24T15:05:20Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/bats-core/bats-core/releases/tag/v1.11.0"/>
+    <title>v1.11.0</title>
+    <content type="html">&lt;h2&gt;Added:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;hardened CI scripts by using hashes instead of versions for actions and restricting permissions (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1819097754&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/754&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/754/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/754&quot;&gt;#754&lt;/a&gt;, &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1828105403&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/770&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/770/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/770&quot;&gt;#770&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;add security.md (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1819241417&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/762&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/762/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/762&quot;&gt;#762&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;add codespell CI checks (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1657531631&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/720&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/720/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/720&quot;&gt;#720&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;dynamic test registration via &lt;code&gt;bats_test_function&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;698672397&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/349&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/349/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/349&quot;&gt;#349&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;add check that Bats is executed with Bash &amp;gt;= 3.2 (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2146710589&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/873&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/873/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/873&quot;&gt;#873&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Fixed:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;install.sh&lt;/code&gt; now works for deviating &lt;code&gt;lib/&lt;/code&gt; dirs (like &lt;code&gt;lib32&lt;/code&gt;,&lt;code&gt;lib64&lt;/code&gt;) (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;975198691&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/487&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/487/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/487&quot;&gt;#487&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;catch unset &lt;code&gt;BATS_TEST_SOURCE&lt;/code&gt; in &lt;code&gt;lib/bats-core/tracing.bash&lt;/code&gt; so&lt;br&gt;
+&lt;code&gt;set -u&lt;/code&gt;/&lt;code&gt;set -o nounset&lt;/code&gt; works as expected (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2041981966&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/827&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/827/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/827&quot;&gt;#827&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix &lt;code&gt;--gather-test-outputs-in&lt;/code&gt; fails on tests with multiple &lt;code&gt;/&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1895824713&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/789&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/789/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/789&quot;&gt;#789&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;install does not create unused &lt;code&gt;/usr/share/bats&lt;/code&gt; anymore (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2115035562&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/857&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/857/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/857&quot;&gt;#857&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;ensure IFS is unchanged in &lt;code&gt;{setup,teardown}{_suite,_file,}&lt;/code&gt;, &lt;code&gt;@test&lt;/code&gt; and free code (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2164358475&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/879&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/879/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/879&quot;&gt;#879&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;junit formatter: remove ANSI Codes to avoid invalid XML character (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2190636667&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/886&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/886/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/886&quot;&gt;#886&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Changed:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;update Docker image with the latest &lt;code&gt;bats-file&lt;/code&gt; version 0.4.0 (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1869574757&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/780&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/780/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/780&quot;&gt;#780&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;update Docker image with the latest &lt;code&gt;bats-detik&lt;/code&gt; version 1.3.0 (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2155304953&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/876&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/876/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/876&quot;&gt;#876&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;clarify docker usage (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1769442769&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/741&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/741/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/741&quot;&gt;#741&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;update Arch Linux package URL in installation.rst (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2003734571&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/821&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/821/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/821&quot;&gt;#821&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;rename bash-bats to bats for Arch Linux in installation.rst (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2050413793&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/836&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/836/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/836&quot;&gt;#836&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix FAQ entry about setup-/teardown_suite, as they are available now (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2136302320&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/861&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/861/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/861&quot;&gt;#861&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;added logo (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2170272559&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/881&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/881/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/881&quot;&gt;#881&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>martin-schulze-vireso</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/37703201?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/104130720/v1.11.0-RC2</id>
+    <updated>2024-02-21T12:50:28Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/bats-core/bats-core/releases/tag/v1.11.0-RC2"/>
+    <title>v1.11.0-RC2</title>
+    <content type="html">&lt;p&gt;Fixes compared to RC1:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;static tests are now interleaved with dynamic tests in the order they were declared in the file (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2131049636&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/860&quot; data-hovercard-type=&quot;issue&quot; data-hovercard-url=&quot;/bats-core/bats-core/issues/860/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/issues/860&quot;&gt;#860&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;setting PATH in free code does not break &lt;code&gt;bats-gather-tests&lt;/code&gt; anymore (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2116956041&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/858&quot; data-hovercard-type=&quot;issue&quot; data-hovercard-url=&quot;/bats-core/bats-core/issues/858/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/issues/858&quot;&gt;#858&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please report problems in the associated discussion page.&lt;/p&gt;</content>
+    <author>
+      <name>martin-schulze-vireso</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/37703201?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/104130720/v1.11.0-RC1</id>
+    <updated>2024-01-27T19:01:38Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/bats-core/bats-core/releases/tag/v1.11.0-RC1"/>
+    <title>v1.11.0-RC1</title>
+    <content type="html">&lt;p&gt;Due to the extensive changes necessary for the dynamic test registration, this is first released as a candidate for users to check if it works as intended.&lt;/p&gt;
+&lt;h3&gt;Added&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;hardened CI scripts by using hashes instead of versions for actions and restricting permissions (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1819097754&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/754&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/754/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/754&quot;&gt;#754&lt;/a&gt;, &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1828105403&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/770&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/770/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/770&quot;&gt;#770&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;add security.md (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1819241417&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/762&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/762/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/762&quot;&gt;#762&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;add codespell CI checks (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1657531631&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/720&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/720/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/720&quot;&gt;#720&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;dynamic test registration via &lt;code&gt;bats_test_function&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;698672397&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/349&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/349/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/349&quot;&gt;#349&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;install.sh&lt;/code&gt; now works for deviating &lt;code&gt;lib/&lt;/code&gt; dirs (like &lt;code&gt;lib32&lt;/code&gt;,&lt;code&gt;lib64&lt;/code&gt;) (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;975198691&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/487&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/487/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/487&quot;&gt;#487&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;catch unset &lt;code&gt;BATS_TEST_SOURCE&lt;/code&gt; in &lt;code&gt;lib/bats-core/tracing.bash&lt;/code&gt; so&lt;br&gt;
+&lt;code&gt;set -u&lt;/code&gt;/&lt;code&gt;set -o nounset&lt;/code&gt; works as expected (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2041981966&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/827&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/827/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/827&quot;&gt;#827&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix &lt;code&gt;--gather-test-outputs-in&lt;/code&gt; fails on tests with multiple &lt;code&gt;/&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1895824713&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/789&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/789/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/789&quot;&gt;#789&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;update Docker image with the latest &lt;code&gt;bats-file&lt;/code&gt; version 0.4.0 (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1869574757&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/780&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/780/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/780&quot;&gt;#780&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;update Docker image with the latest &lt;code&gt;bats-detik&lt;/code&gt; version 1.2.1 (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1977557229&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/810&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/810/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/810&quot;&gt;#810&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Documentation&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;clarify docker usage (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1769442769&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/741&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/741/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/741&quot;&gt;#741&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;update Arch Linux package URL in installation.rst (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2003734571&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/821&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/821/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/821&quot;&gt;#821&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;rename bash-bats to bats for Arch Linux in installation.rst (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2050413793&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/836&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/836/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/836&quot;&gt;#836&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>martin-schulze-vireso</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/37703201?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/104130720/v1.10.0</id>
+    <updated>2023-07-15T22:03:05Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/bats-core/bats-core/releases/tag/v1.10.0"/>
+    <title>v1.10.0</title>
+    <content type="html">&lt;h2&gt;Added:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;add &lt;code&gt;${BATS_TEST_TAGS[@]}&lt;/code&gt; for querying the tags during a test (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1600045845&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/705&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/705/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/705&quot;&gt;#705&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;print tags on failing tests (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1600045845&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/705&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/705/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/705&quot;&gt;#705&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;test for negative arguments to &lt;code&gt;--jobs&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1555600929&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/693&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/693/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/693&quot;&gt;#693&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;add tests for &lt;code&gt;--formatter cat&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1609905573&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/710&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/710/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/710&quot;&gt;#710&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;test coverage in CI (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1650917068&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/718&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/718/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/718&quot;&gt;#718&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Support for &lt;a href=&quot;https://github.com/shenwei356/rush&quot;&gt;rush&lt;/a&gt; as alternative to GNU parallel (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1729290021&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/729&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/729/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/729&quot;&gt;#729&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;add &lt;code&gt;bats_pipe&lt;/code&gt; helper function for &lt;code&gt;run&lt;/code&gt; that executes &lt;code&gt;\|&lt;/code&gt; as pipes (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1401765941&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/663&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/663/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/663&quot;&gt;#663&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;publish docker images to ghcr.io (additionally to Dockerhub) (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1753746628&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/740&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/740/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/740&quot;&gt;#740&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;clarify use cases of &lt;code&gt;--formatter cat&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1609905573&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/710&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/710/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/710&quot;&gt;#710&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Fixed:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix &lt;code&gt;run&lt;/code&gt; with options overwriting the value of &lt;code&gt;i&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1725010066&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/726&quot; data-hovercard-type=&quot;issue&quot; data-hovercard-url=&quot;/bats-core/bats-core/issues/726/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/issues/726&quot;&gt;#726&lt;/a&gt;, &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1725017181&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/727&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/727/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/727&quot;&gt;#727&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix &lt;code&gt;${BATS_TEST_NAMES[@]}&lt;/code&gt; containing only &lt;code&gt;--tags&lt;/code&gt; instead of test name since Bats v1.8.0 (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1600045845&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/705&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/705/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/705&quot;&gt;#705&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix &lt;code&gt;run --keep-empty-lines&lt;/code&gt; counting trailing &lt;code&gt;\n&lt;/code&gt; as (empty) new line (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1609960496&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/711&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/711/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/711&quot;&gt;#711&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix short flag unpacker creating bogus command lines with valued flags (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1737078930&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/732&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/732/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/732&quot;&gt;#732&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix formatter becoming confused with retries (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1739222615&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/734&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/734/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/734&quot;&gt;#734&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix &lt;code&gt;--gather-test-outputs-in&lt;/code&gt; fails on tests with &lt;code&gt;/&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1740579234&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/735&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/735/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/735&quot;&gt;#735&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fix overriding &lt;code&gt;date&lt;/code&gt; breaks &lt;code&gt;--timing&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1740616108&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/736&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/736/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/736&quot;&gt;#736&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Documentation&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;typos, minor edits (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1600035801&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/704&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/704/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/704&quot;&gt;#704&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;simplified contributing.md (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1650917068&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/718&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/718/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/718&quot;&gt;#718&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>martin-schulze-vireso</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/37703201?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/104130720/v1.9.0</id>
+    <updated>2023-02-12T12:36:35Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/bats-core/bats-core/releases/tag/v1.9.0"/>
+    <title>v1.9.0</title>
+    <content type="html">&lt;h2&gt;Added:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;add installation instructions for Debian, Fedora, Gentoo, and OpenSUSE (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1386590663&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/659&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/659/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/659&quot;&gt;#659&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;add &lt;code&gt;--line-reference-format&lt;/code&gt; to switch file/line references in stack traces (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1405121298&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/665&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/665/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/665&quot;&gt;#665&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;comma_line&lt;/code&gt; (default): &lt;code&gt;file.bats, line 1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;colon&lt;/code&gt;: &lt;code&gt;file.bats:1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;uri&lt;/code&gt;: &lt;code&gt;file:///path/to/file.bats:1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;custom&lt;/code&gt;: define your own formatter in &lt;code&gt;bats_format_file_line_reference_custom&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;add &lt;code&gt;bats:focus&lt;/code&gt; tag to run only focused tests (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1460720858&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/679&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/679/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/679&quot;&gt;#679&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;add bats-support, bats-assert, bats-file and bats-detik to Dockerfile (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1433927782&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/674&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/674/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/674&quot;&gt;#674&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;add &lt;code&gt;--help&lt;/code&gt; text and &lt;code&gt;man&lt;/code&gt; page content for &lt;code&gt;--filter-tags&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1460720858&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/679&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/679/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/679&quot;&gt;#679&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Fixed:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;explicitly check for GNU parallel (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1528169623&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/691&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/691/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/691&quot;&gt;#691&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;wait for report-formatter to finish before ending &lt;code&gt;bats&lt;/code&gt;&#39; execution,&lt;br&gt;
+to fix empty files with &lt;code&gt;--report-fomatter junit&lt;/code&gt; under Docker (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1548255595&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/692&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/692/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/692&quot;&gt;#692&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;improved clarity of section about output in free code (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1418926899&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/671&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/671/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/671&quot;&gt;#671&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;fixed typos (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1430164479&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/673&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/673/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/673&quot;&gt;#673&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;clarify use cases of &lt;code&gt;run&lt;/code&gt; (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;718342398&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/366&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/366/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/366&quot;&gt;#366&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>martin-schulze-vireso</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/37703201?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/104130720/v1.8.2</id>
+    <updated>2022-10-19T21:38:44Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/bats-core/bats-core/releases/tag/v1.8.2"/>
+    <title>v1.8.2</title>
+    <content type="html">&lt;p&gt;Bats 1.8.2&lt;/p&gt;
+&lt;p&gt;Released: 2022-10-19&lt;/p&gt;
+&lt;p&gt;Fixed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fix non zero return code on successful retried tests (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1415595547&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/bats-core/bats-core/issues/670&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/bats-core/bats-core/pull/670/hovercard&quot; href=&quot;https://github.com/bats-core/bats-core/pull/670&quot;&gt;#670&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>martin-schulze-vireso</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/37703201?s=60&amp;v=4"/>
+  </entry>
+</feed>

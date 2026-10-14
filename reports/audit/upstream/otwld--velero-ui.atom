@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/otwld/velero-ui/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/otwld/velero-ui/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/otwld/velero-ui/releases.atom"/>
+  <title>Release notes from velero-ui</title>
+  <updated>2026-10-12T01:23:06Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/747121726/v0.11.0</id>
+    <updated>2026-10-12T01:36:23Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/otwld/velero-ui/releases/tag/v0.11.0"/>
+    <title>v0.11.0</title>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Velero UI v0.11.0 : Security hardening, dedicated health probes and Simplified Chinese support&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This release strengthens authentication and authorization, secures log rendering, improves Kubernetes health checks, and adds Simplified Chinese translations. It also includes &lt;strong&gt;Helm chart v1.0.0&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;g-emoji class=&quot;g-emoji&quot; alias=&quot;warning&quot;&gt;⚠️&lt;/g-emoji&gt; Upgrade requirements&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This release introduces configuration and API changes. Review the following before upgrading:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Configure &lt;code&gt;AUTH_SECRET_PASSPHRASE&lt;/code&gt; with a random value of at least &lt;strong&gt;32 bytes&lt;/strong&gt;. Default signing keys have been removed. Generate a key with &lt;code&gt;openssl rand -hex 32&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If local authentication is enabled, explicitly configure &lt;code&gt;BASIC_AUTH_USERNAME&lt;/code&gt; and &lt;code&gt;BASIC_AUTH_PASSWORD&lt;/code&gt;. Default credentials are removed, and the password &lt;code&gt;admin&lt;/code&gt; is rejected. For SSO-only installations, set &lt;code&gt;BASIC_AUTH_ENABLED=false&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Configure explicit RBAC permissions for SSO/LDAP users. Missing or empty policies grant no permissions; an unreadable configured file or an invalid rule prevents startup.&lt;/li&gt;
+&lt;li&gt;Replace custom &lt;code&gt;/health&lt;/code&gt; checks with &lt;code&gt;/health/live&lt;/code&gt;, &lt;code&gt;/health/startup&lt;/code&gt; or &lt;code&gt;/health/ready&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Update API clients that submit undeclared fields or use the old &lt;code&gt;sciSnapshotTimeout&lt;/code&gt; and &lt;code&gt;dataMover&lt;/code&gt; spellings. Use &lt;code&gt;csiSnapshotTimeout&lt;/code&gt; and &lt;code&gt;datamover&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Upgrade the frontend and API together to include the corrected bulk-download request format.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Existing Velero backups, restores and schedules require no resource migration. Rotating the JWT signing key requires restarting the application and signing in again.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Security&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed built-in JWT signing keys from the API configuration and Docker image.&lt;/li&gt;
+&lt;li&gt;Removed implicit local administrator credentials and added startup validation.&lt;/li&gt;
+&lt;li&gt;Removed automatic administrator permissions when federated RBAC policies are missing or invalid.&lt;/li&gt;
+&lt;li&gt;Fixed a cross-site scripting vulnerability in raw log rendering. Log content is now rendered as text while preserving search highlighting.&lt;/li&gt;
+&lt;li&gt;Required the &lt;code&gt;download&lt;/code&gt; permission for bulk backup downloads, matching individual downloads.&lt;/li&gt;
+&lt;li&gt;Enabled strict validation for DTO-bound API requests. Unknown fields, including execution hooks submitted through backup, schedule and restore requests, are rejected.&lt;/li&gt;
+&lt;li&gt;Excluded local environment files and deployment values from Git tracking rules, and environment files from Docker build contexts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;API and interface fixes&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed bulk backup downloads to send an array of backup names directly, with server-side array validation.&lt;/li&gt;
+&lt;li&gt;Corrected backup option names to &lt;code&gt;csiSnapshotTimeout&lt;/code&gt; and &lt;code&gt;datamover&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Changed log search highlighting to treat special characters literally.&lt;/li&gt;
+&lt;li&gt;Added Simplified Chinese (&lt;code&gt;zh&lt;/code&gt;) to the language selector.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Health checks and Kubernetes&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added dedicated process-health endpoints at &lt;code&gt;/health/live&lt;/code&gt; and &lt;code&gt;/health/startup&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;/health/ready&lt;/code&gt; to check Kubernetes and Velero dependencies.&lt;/li&gt;
+&lt;li&gt;Separated liveness from dependency checks to avoid unnecessary restarts during dependency outages.&lt;/li&gt;
+&lt;li&gt;Added a configurable startup probe to the Helm chart.&lt;/li&gt;
+&lt;li&gt;Updated default liveness and readiness probe paths in Helm and standalone Kubernetes manifests.&lt;/li&gt;
+&lt;li&gt;Fixed Helm injection of &lt;code&gt;AUTH_SECRET_PASSPHRASE&lt;/code&gt; from the configured Secret or explicit value.&lt;/li&gt;
+&lt;li&gt;Removed the chart’s default signing key. Helm installations must provide a value or an existing Secret.&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;POLICY_FILE_PATH&lt;/code&gt; only when chart-managed policies are enabled.&lt;/li&gt;
+&lt;li&gt;Updated standalone manifests to obtain signing keys and local credentials from a Kubernetes Secret.&lt;/li&gt;
+&lt;li&gt;Updated Artifact Hub changelog annotations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Dependencies, CI and testing&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated NestJS, Nx, UUID, Vite, Vitest and PostCSS, together with transitive dependencies.&lt;/li&gt;
+&lt;li&gt;Added targeted dependency overrides for security fixes.&lt;/li&gt;
+&lt;li&gt;Fixed missing lockfile entries that prevented clean installation with npm 10.&lt;/li&gt;
+&lt;li&gt;Updated CI path filters so changes to &lt;code&gt;package-lock.json&lt;/code&gt; trigger validation.&lt;/li&gt;
+&lt;li&gt;Added regression coverage for authentication, RBAC, request validation, download authorization, safe log rendering, health endpoints and Helm secret configuration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Documentation&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added a security configuration and migration guide.&lt;/li&gt;
+&lt;li&gt;Updated Docker, Helm, Kubernetes, environment-variable and RBAC instructions.&lt;/li&gt;
+&lt;li&gt;Added an LLDAP configuration example and clarified supported LDAP variable names.&lt;/li&gt;
+&lt;li&gt;Updated the README’s documented tested Velero versions to include &lt;strong&gt;1.17.x&lt;/strong&gt; and &lt;strong&gt;1.18.x&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;PRs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix(api): split health probe checks by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5481248618&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/142&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/142/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/142&quot;&gt;#142&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;feat(i18n): add Simplified Chinese (zh) locale by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/TelDragon/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/TelDragon&quot;&gt;@TelDragon&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5787771937&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/144&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/144/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/144&quot;&gt;#144&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore: security by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5806811320&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/145&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/145/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/145&quot;&gt;#145&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/TelDragon/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/TelDragon&quot;&gt;@TelDragon&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5787771937&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/144&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/144/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/144&quot;&gt;#144&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/otwld/velero-ui/compare/v0.10.3...v0.11.0&quot;&gt;&lt;tt&gt;v0.10.3...v0.11.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>jdetroyes</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/24377095?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/747121726/v0.10.3</id>
+    <updated>2026-09-16T13:12:43Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/otwld/velero-ui/releases/tag/v0.10.3"/>
+    <title>v0.10.3</title>
+    <content type="html">&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;feat(i18n): add Russian language support by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/etosheartem/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/etosheartem&quot;&gt;@etosheartem&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5418945404&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/139&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/139/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/139&quot;&gt;#139&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(api): apply LDAP user policies by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5474779713&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/141&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/141/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/141&quot;&gt;#141&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(ui): preserve disabled snapshot volumes by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5474682088&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/140&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/140/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/140&quot;&gt;#140&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/etosheartem/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/etosheartem&quot;&gt;@etosheartem&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5418945404&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/139&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/139/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/139&quot;&gt;#139&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/otwld/velero-ui/compare/v0.10.2...v0.10.3&quot;&gt;&lt;tt&gt;v0.10.2...v0.10.3&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>jdetroyes</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/24377095?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/747121726/v0.10.2</id>
+    <updated>2026-07-24T10:29:44Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/otwld/velero-ui/releases/tag/v0.10.2"/>
+    <title>v0.10.2</title>
+    <content type="html">&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix Scheduled Backups on Dashboard when CRON_TZ is used in cron schedule by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/ItsThatDude/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/ItsThatDude&quot;&gt;@ItsThatDude&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3554695881&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/101&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/101/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/101&quot;&gt;#101&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: update volumeSnapshotLocations options to use dataSnapshotLocations by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/Abhilash-b-s/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/Abhilash-b-s&quot;&gt;@Abhilash-b-s&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3801944192&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/108&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/108/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/108&quot;&gt;#108&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Improve GitLab api &lt;code&gt;/group&lt;/code&gt; functionality for bigger scenarios by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/s1monb/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/s1monb&quot;&gt;@s1monb&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3990484730&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/116&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/116/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/116&quot;&gt;#116&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fixed &quot;false&quot; value, checking value with  != null by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/gpillon/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/gpillon&quot;&gt;@gpillon&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4105202161&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/123&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/123/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/123&quot;&gt;#123&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(api): enforce authorization on routes missing @CheckPolicies by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/s-reynier/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/s-reynier&quot;&gt;@s-reynier&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4777485582&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/137&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/137/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/137&quot;&gt;#137&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/ItsThatDude/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/ItsThatDude&quot;&gt;@ItsThatDude&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3554695881&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/101&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/101/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/101&quot;&gt;#101&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/Abhilash-b-s/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/Abhilash-b-s&quot;&gt;@Abhilash-b-s&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3801944192&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/108&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/108/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/108&quot;&gt;#108&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/s1monb/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/s1monb&quot;&gt;@s1monb&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3990484730&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/116&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/116/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/116&quot;&gt;#116&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/gpillon/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/gpillon&quot;&gt;@gpillon&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4105202161&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/123&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/123/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/123&quot;&gt;#123&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/s-reynier/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/s-reynier&quot;&gt;@s-reynier&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4777485582&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/137&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/137/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/137&quot;&gt;#137&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/otwld/velero-ui/compare/v0.10.1...v0.10.2&quot;&gt;&lt;tt&gt;v0.10.1...v0.10.2&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>jdetroyes</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/24377095?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/747121726/v0.10.1</id>
+    <updated>2025-10-04T11:43:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/otwld/velero-ui/releases/tag/v0.10.1"/>
+    <title>v0.10.1</title>
+    <content type="html">&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;chore: remove default value on snapshotVolumes by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3472591918&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/96&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/96/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/96&quot;&gt;#96&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore: ldap user uid by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3472631044&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/97&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/97/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/97&quot;&gt;#97&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;feat: update velero api by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3472856654&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/98&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/98/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/98&quot;&gt;#98&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/otwld/velero-ui/compare/v0.10.0...v0.10.1&quot;&gt;&lt;tt&gt;v0.10.0...v0.10.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>jdetroyes</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/24377095?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/747121726/v0.10.0</id>
+    <updated>2025-08-30T07:53:58Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/otwld/velero-ui/releases/tag/v0.10.0"/>
+    <title>v0.10.0</title>
+    <content type="html">&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;add namesace to configmap.yml by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/psarossy/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/psarossy&quot;&gt;@psarossy&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3225594975&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/78&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/78/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/78&quot;&gt;#78&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ci: add latest docker image tag by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3231953004&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/79&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/79/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/79&quot;&gt;#79&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;feat: add header timezone selection by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3368756806&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/91&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/91/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/91&quot;&gt;#91&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;feat: schedule cron timezone by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3368862883&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/92&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/92/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/92&quot;&gt;#92&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/psarossy/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/psarossy&quot;&gt;@psarossy&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3225594975&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/78&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/78/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/78&quot;&gt;#78&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/otwld/velero-ui/compare/v0.9.3...v0.10.0&quot;&gt;&lt;tt&gt;v0.9.3...v0.10.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>jdetroyes</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/24377095?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/747121726/v0.9.3</id>
+    <updated>2025-06-27T07:38:32Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/otwld/velero-ui/releases/tag/v0.9.3"/>
+    <title>v0.9.3</title>
+    <content type="html">&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: policy mount path by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3181202297&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/74&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/74/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/74&quot;&gt;#74&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;link broken on README by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/mickkael/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/mickkael&quot;&gt;@mickkael&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3149504138&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/71&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/71/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/71&quot;&gt;#71&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: rejectUnauthorized in https agent by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3181221948&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/75&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/75/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/75&quot;&gt;#75&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/mickkael/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/mickkael&quot;&gt;@mickkael&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3149504138&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/71&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/71/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/71&quot;&gt;#71&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/otwld/velero-ui/compare/v0.9.2...v0.9.3&quot;&gt;&lt;tt&gt;v0.9.2...v0.9.3&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>jdetroyes</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/24377095?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/747121726/v0.9.2</id>
+    <updated>2025-06-14T10:05:05Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/otwld/velero-ui/releases/tag/v0.9.2"/>
+    <title>v0.9.2</title>
+    <content type="html">&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: Microsoft OAuth URLs to support tenant-specific logic by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3145355885&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/66&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/66/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/66&quot;&gt;#66&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: auth flows redirection by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3145374544&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/68&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/68/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/68&quot;&gt;#68&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: WebSocket authorization with policy checks by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3145402503&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/69&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/69/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/69&quot;&gt;#69&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore: blob middleware for download content by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3124729288&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/61&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/61/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/61&quot;&gt;#61&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/otwld/velero-ui/compare/v0.9.1...v0.9.2&quot;&gt;&lt;tt&gt;v0.9.1...v0.9.2&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>jdetroyes</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/24377095?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/747121726/v0.9.1</id>
+    <updated>2025-06-03T13:19:58Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/otwld/velero-ui/releases/tag/v0.9.1"/>
+    <title>v0.9.1</title>
+    <content type="html">&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;chore: microsoft authorization url &amp;amp; token url by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3110620189&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/58&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/58/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/58&quot;&gt;#58&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/otwld/velero-ui/compare/v0.9.0...v0.9.1&quot;&gt;&lt;tt&gt;v0.9.0...v0.9.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>jdetroyes</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/24377095?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/747121726/v0.9.0</id>
+    <updated>2025-06-02T13:22:47Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/otwld/velero-ui/releases/tag/v0.9.0"/>
+    <title>v0.9.0</title>
+    <content type="html">&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: unscheduled namespaces filters and date filters by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3096268148&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/55&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/55/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/55&quot;&gt;#55&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore: get velero server and velero agents by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3096462354&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/56&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/56/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/56&quot;&gt;#56&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;feat: enhance logging functionality by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3094175106&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/52&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/52/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/52&quot;&gt;#52&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Misc&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;UI &amp;amp; UX improvements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/otwld/velero-ui/compare/v0.8.0...v0.9.0&quot;&gt;&lt;tt&gt;v0.8.0...v0.9.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>jdetroyes</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/24377095?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/747121726/v0.8.0</id>
+    <updated>2025-05-26T12:21:53Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/otwld/velero-ui/releases/tag/v0.8.0"/>
+    <title>v0.8.0</title>
+    <content type="html">&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: list header sorts by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3070169168&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/42&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/42/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/42&quot;&gt;#42&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: missing interval delay in setInterval functions by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3070173749&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/43&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/43/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/43&quot;&gt;#43&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;feat: add dashboard stats and schedule stats by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3073159172&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/45&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/45/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/45&quot;&gt;#45&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;feat: add cache manager by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3074116580&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/46&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/46/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/46&quot;&gt;#46&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;feat: Refactor sorting and add filtering by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3085827252&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/49&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/49/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/49&quot;&gt;#49&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore: fix velero server retrieving by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jdetroyes/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jdetroyes&quot;&gt;@jdetroyes&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3088337612&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/50&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/50/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/50&quot;&gt;#50&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Change names role and role binding for namespace by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/sveno1990/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/sveno1990&quot;&gt;@sveno1990&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3069259909&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/41&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/41/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/41&quot;&gt;#41&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/sveno1990/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/sveno1990&quot;&gt;@sveno1990&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3069259909&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/otwld/velero-ui/issues/41&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/otwld/velero-ui/pull/41/hovercard&quot; href=&quot;https://github.com/otwld/velero-ui/pull/41&quot;&gt;#41&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/otwld/velero-ui/compare/v0.7.0...v0.8.0&quot;&gt;&lt;tt&gt;v0.7.0...v0.8.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>jdetroyes</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/24377095?s=60&amp;v=4"/>
+  </entry>
+</feed>

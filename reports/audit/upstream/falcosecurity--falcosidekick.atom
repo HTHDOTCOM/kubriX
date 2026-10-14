@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/falcosecurity/falcosidekick/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/falcosecurity/falcosidekick/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/falcosecurity/falcosidekick/releases.atom"/>
+  <title>Release notes from falcosidekick</title>
+  <updated>2026-08-31T08:44:54Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/148756498/2.35.0</id>
+    <updated>2026-09-02T09:43:23Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick/releases/tag/2.35.0"/>
+    <title>2.35.0</title>
+    <content type="html">&lt;h2&gt;2.35.0 - 2026-08-31&lt;/h2&gt;
+&lt;h4&gt;Enhancement&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Add a &lt;code&gt;TLS&lt;/code&gt; field and allow to set the CA cert for the &lt;code&gt;OTLP Traces&lt;/code&gt;/&lt;code&gt;OTLP Metrics&lt;/code&gt;/&lt;code&gt;OTLP Logs&lt;/code&gt; outputs (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1389&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1389/hovercard&quot;&gt;PR#1389&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/AleksandarSavchev&quot;&gt;@AleksandarSavchev&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add the &lt;code&gt;MessageThreadID&lt;/code&gt; and &lt;code&gt;Host&lt;/code&gt; settings for the &lt;code&gt;Telegram&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1393&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1393/hovercard&quot;&gt;PR#1393&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/1323ED5&quot;&gt;@1323ED5&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Upgrade the &lt;code&gt;Azure Event Hubs&lt;/code&gt; SDK to v2 (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1399&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1399/hovercard&quot;&gt;PR#1399&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/chimanjain&quot;&gt;@chimanjain&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add the documentation for the &lt;code&gt;OTLP&lt;/code&gt; outputs (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1414&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1414/hovercard&quot;&gt;PR#1414&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/S3DFX-CYBER&quot;&gt;@S3DFX-CYBER&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Fix&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix a race condition when multiple outputs are configured (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1390&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1390/hovercard&quot;&gt;PR#1390&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/marwinski&quot;&gt;@marwinski&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Handle the &lt;code&gt;CheckCert&lt;/code&gt; setting correctly for the &lt;code&gt;OTLP&lt;/code&gt; outputs (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1389&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1389/hovercard&quot;&gt;PR#1389&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/AleksandarSavchev&quot;&gt;@AleksandarSavchev&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Emit an RFC 5322-compliant &lt;code&gt;Date&lt;/code&gt; header for the &lt;code&gt;SMTP&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1382&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1382/hovercard&quot;&gt;PR#1382&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/billzter&quot;&gt;@billzter&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Prevent a panic with non-string &lt;code&gt;output_fields&lt;/code&gt; in the &lt;code&gt;Dynatrace&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1387&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1387/hovercard&quot;&gt;PR#1387&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/arpitjain099&quot;&gt;@arpitjain099&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Handle numeric &lt;code&gt;output_fields&lt;/code&gt; without a string assertion (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1413&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1413/hovercard&quot;&gt;PR#1413&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/arpitjain099&quot;&gt;@arpitjain099&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Send a checksum with the &lt;code&gt;PutObject&lt;/code&gt; calls for the &lt;code&gt;AWS S3&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1415&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1415/hovercard&quot;&gt;PR#1415&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/manduinca&quot;&gt;@manduinca&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Use Unix epoch seconds for the timestamps of the &lt;code&gt;PolicyReports&lt;/code&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1425&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1425/hovercard&quot;&gt;PR#1425&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/christianhuth&quot;&gt;@christianhuth&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/148756498/2.34.1</id>
+    <updated>2026-09-02T09:43:22Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick/releases/tag/2.34.1"/>
+    <title>2.34.1</title>
+    <content type="html">&lt;h2&gt;2.34.1 - 2026-06-03&lt;/h2&gt;
+&lt;h4&gt;Fix&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Prevent DoS panics from malformed &lt;code&gt;output_fields&lt;/code&gt; in the &lt;code&gt;OTLP Traces&lt;/code&gt; and &lt;code&gt;OTLP Metrics&lt;/code&gt; outputs (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1379&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1379/hovercard&quot;&gt;PR#1379&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/c2ndev&quot;&gt;@c2ndev&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/148756498/2.34.0</id>
+    <updated>2026-09-02T09:43:21Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick/releases/tag/2.34.0"/>
+    <title>2.34.0</title>
+    <content type="html">&lt;h2&gt;2.34.0 - 2026-05-22&lt;/h2&gt;
+&lt;h4&gt;New&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;New output: &lt;strong&gt;Google SecOps&lt;/strong&gt; (Chronicle) (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1288&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1288/hovercard&quot;&gt;PR#1288&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/brennoo&quot;&gt;@brennoo&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Enhancement&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Add &lt;code&gt;TLS&lt;/code&gt; and mutual &lt;code&gt;TLS&lt;/code&gt; support for the &lt;code&gt;Redis&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/issues/1211&quot; data-hovercard-type=&quot;issue&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/issues/1211/hovercard&quot;&gt;issue#1211&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;/area automation&lt;/code&gt; to the PR template (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1359&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1359/hovercard&quot;&gt;PR#1359&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update the vulnerable Go modules (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1366&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1366/hovercard&quot;&gt;PR#1366&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/c2ndev&quot;&gt;@c2ndev&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Fix&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Replace the dots by underscores in the labels of the metrics for the custom fields (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1337&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1337/hovercard&quot;&gt;PR#1337&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/raajheshkannaa&quot;&gt;@raajheshkannaa&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Bind the &lt;code&gt;MessageThreadID&lt;/code&gt; env var to fix the ignored topic routing for &lt;code&gt;Telegram&lt;/code&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1357&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1357/hovercard&quot;&gt;PR#1357&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/raajheshkannaa&quot;&gt;@raajheshkannaa&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;AWS&lt;/code&gt; config for the S3 client in &lt;code&gt;UploadS3&lt;/code&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1363&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1363/hovercard&quot;&gt;PR#1363&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/alexmircea98&quot;&gt;@alexmircea98&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix the config examples for the &lt;code&gt;AWS Security Lake&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1356&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1356/hovercard&quot;&gt;PR#1356&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/immanuwell&quot;&gt;@immanuwell&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/148756498/2.33.0</id>
+    <updated>2026-09-02T09:43:20Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick/releases/tag/2.33.0"/>
+    <title>2.33.0</title>
+    <content type="html">&lt;h2&gt;2.33.0 - 2026-03-09&lt;/h2&gt;
+&lt;h4&gt;Enhancement&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Add the &lt;code&gt;alertname&lt;/code&gt; label for the &lt;code&gt;AlertManager&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1278&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1278/hovercard&quot;&gt;PR#1278&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/edkennard&quot;&gt;@edkennard&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Use the recommended chain of configuration providers for the &lt;code&gt;AWS&lt;/code&gt; outputs (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1219&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1219/hovercard&quot;&gt;PR#1219&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/gnadaban&quot;&gt;@gnadaban&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Upgrade to Go 1.26 (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1314&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1314/hovercard&quot;&gt;PR#1314&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update the deprecated &lt;code&gt;goreleaser&lt;/code&gt; docker build (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1252&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1252/hovercard&quot;&gt;PR#1252&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add the &lt;code&gt;--bundle&lt;/code&gt; flag to &lt;code&gt;cosign sign-blob&lt;/code&gt; for the &lt;code&gt;cosign&lt;/code&gt; v3 compatibility (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1322&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1322/hovercard&quot;&gt;PR#1322&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/c2ndev&quot;&gt;@c2ndev&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Migrate the &lt;code&gt;goreleaser&lt;/code&gt; signs config to the &lt;code&gt;cosign&lt;/code&gt; v3 bundle format (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1323&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1323/hovercard&quot;&gt;PR#1323&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/c2ndev&quot;&gt;@c2ndev&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Fix&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix the default endpoint of the &lt;code&gt;AlertManager&lt;/code&gt; output which returned an unexpected response (410) (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1281&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1281/hovercard&quot;&gt;PR#1281&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/kupschp&quot;&gt;@kupschp&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update &lt;code&gt;aws-sdk-go-v2&lt;/code&gt; to fix the retrieval of the metadata with &lt;code&gt;EKS Pod Identity&lt;/code&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1291&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1291/hovercard&quot;&gt;PR#1291&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/dicksontung&quot;&gt;@dicksontung&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update &lt;code&gt;service/sqs&lt;/code&gt; to v1.42.22 to fix the &lt;code&gt;ResolveEndpointV2&lt;/code&gt; error (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1302&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1302/hovercard&quot;&gt;PR#1302&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/ansilh&quot;&gt;@ansilh&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix several unaddressed bugs: wrong &lt;code&gt;MinimumPriority&lt;/code&gt; config for &lt;code&gt;RabbitMQ&lt;/code&gt;, wrong config field cleared when the &lt;code&gt;OTLP Metrics&lt;/code&gt; and &lt;code&gt;DogStatsD&lt;/code&gt; inits fail, trailing comma in the &lt;code&gt;Dynatrace&lt;/code&gt; output type (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1320&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1320/hovercard&quot;&gt;PR#1320&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix a typo in the &lt;code&gt;README&lt;/code&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1303&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1303/hovercard&quot;&gt;PR#1303&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/fr4nsyz&quot;&gt;@fr4nsyz&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/148756498/2.32.0</id>
+    <updated>2026-09-02T09:43:19Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick/releases/tag/2.32.0"/>
+    <title>2.32.0</title>
+    <content type="html">&lt;h2&gt;2.32.0 - 2025-09-09&lt;/h2&gt;
+&lt;h4&gt;New&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;New output: &lt;strong&gt;Logstash&lt;/strong&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1146&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1146/hovercard&quot;&gt;PR#1146&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/thabiger&quot;&gt;@thabiger&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;New output: &lt;strong&gt;Splunk&lt;/strong&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1233&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1233/hovercard&quot;&gt;PR#1233&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/fjvela&quot;&gt;@fjvela&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Enhancement&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Migrate the &lt;code&gt;AWS&lt;/code&gt; outputs from &lt;code&gt;aws-sdk-go&lt;/code&gt; v1 to v2 (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1170&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1170/hovercard&quot;&gt;PR#1170&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/chenliu1993&quot;&gt;@chenliu1993&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Allow to specify a username for the &lt;code&gt;Redis&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1212&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1212/hovercard&quot;&gt;PR#1212&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/pgporada&quot;&gt;@pgporada&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update Go and Alpine versions, clean up and update the CI (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1246&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1246/hovercard&quot;&gt;PR#1246&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Fix&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix the URL used by the &lt;code&gt;Mattermost&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1192&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1192/hovercard&quot;&gt;PR#1192&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/zdeneksvarc&quot;&gt;@zdeneksvarc&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/148756498/2.31.1</id>
+    <updated>2025-02-04T11:27:49Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick/releases/tag/2.31.1"/>
+    <title>2.31.1</title>
+    <content type="html">&lt;h1&gt;2.31.1 - 2025-02-04&lt;/h1&gt;
+&lt;h4&gt;Fix&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix error while closing the writer for &lt;code&gt;GCPStorage&lt;/code&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1116&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1116/hovercard&quot;&gt;PR#1116&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/chanukya-yekollu-exa&quot;&gt;@chanukya-yekollu-exa&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/148756498/2.31.0</id>
+    <updated>2025-02-03T14:50:18Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick/releases/tag/2.31.0"/>
+    <title>2.31.0</title>
+    <content type="html">&lt;h2&gt;2.31.0 - 2025-02-03&lt;/h2&gt;
+&lt;h4&gt;New&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;New output: &lt;strong&gt;OTLP Logs&lt;/strong&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1109&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1109/hovercard&quot;&gt;PR#1109&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Enhancement&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Add the namespace and the pod name as labels by default in &lt;code&gt;Loki&lt;/code&gt; payload (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1087&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1087/hovercard&quot;&gt;PR#1087&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/afreyermuth98&quot;&gt;@afreyermuth98&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Allow to set the format for the &lt;code&gt;Loki&lt;/code&gt; payload to JSON (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1091&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1091/hovercard&quot;&gt;PR#1091&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Allow to set a template for the subjets for &lt;code&gt;NATS&lt;/code&gt;/&lt;code&gt;STAN&lt;/code&gt; outputs (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1099&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1099/hovercard&quot;&gt;PR#1099&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Improve the logger with a generic and extensible method (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1102&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1102/hovercard&quot;&gt;PR#1102&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Fix&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove forgotten debug line (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1088&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1088/hovercard&quot;&gt;PR#1088&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix missing templated fields as labls in &lt;code&gt;Loki&lt;/code&gt; payload (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1091&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1091/hovercard&quot;&gt;PR#1091&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix creation error of &lt;code&gt;ClusterPolicyReports&lt;/code&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/100&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/100/hovercard&quot;&gt;PR#1100&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix missing custom headers for HTTP requests for &lt;code&gt;Loki&lt;/code&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1107&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1107/hovercard&quot;&gt;PR#1107&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/lsroe&quot;&gt;@lsroe&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix wrong key format for &lt;code&gt;Prometheus&lt;/code&gt; format (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1110&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1110/hovercard&quot;&gt;PR#1110&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/rubensf&quot;&gt;@rubensf&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/148756498/2.30.0</id>
+    <updated>2024-11-28T13:26:37Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick/releases/tag/2.30.0"/>
+    <title>2.30.0</title>
+    <content type="html">&lt;h2&gt;2.30.0 - 2024-11-27&lt;/h2&gt;
+&lt;h4&gt;New&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;New output: &lt;strong&gt;Webex&lt;/strong&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/979&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/979/hovercard&quot;&gt;PR#979&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/k0rventen&quot;&gt;@k0rventen&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;New output: &lt;strong&gt;OTLP Metrics&lt;/strong&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1012&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1012/hovercard&quot;&gt;PR#1012&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;New output: &lt;strong&gt;Datadog Logs&lt;/strong&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1052&quot; data-hovercard-type=&quot;issue&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/issues/1052/hovercard&quot;&gt;PR#1052&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/yohboy&quot;&gt;@yohboy&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Enhancement&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Reuse of the http client for 3-4x increase of the throughput (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/962&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/962/hovercard&quot;&gt;PR#962&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/aleksmaus&quot;&gt;@alekmaus&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Improve outputs throughput handling (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/966&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/966/hovercard&quot;&gt;PR#966&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/aleksmaus&quot;&gt;@alekmaus&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Batching and gzip compression for the &lt;code&gt;Elastticsearch&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/967&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/967/hovercard&quot;&gt;PR#967&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/aleksmaus&quot;&gt;@alekmaus&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Use the same convention for the Prometheus metrics than Falco (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/995&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/995/hovercard&quot;&gt;PR#995&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;APIKey&lt;/code&gt; for &lt;code&gt;Elasticsearch&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/980&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/980/hovercard&quot;&gt;PR#980&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/aleksmaus&quot;&gt;@alekmaus&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;Pipeline&lt;/code&gt; configuration for &lt;code&gt;Elasticsearch&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/981&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/981/hovercard&quot;&gt;PR#981&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/aleksmaus&quot;&gt;@alekmaus&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;MessageThreadID&lt;/code&gt; configuration in &lt;code&gt;Telegram&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1008&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1008/hovercard&quot;&gt;PR#1008&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/vashian&quot;&gt;@vashian&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Support multi-architecture in build (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1024&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1024/hovercard&quot;&gt;PR#1024&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/nickytd&quot;&gt;@nickytd&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;falco&lt;/code&gt; as source for the &lt;code&gt;Datadog Events&lt;/code&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1043&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1043/hovercard&quot;&gt;PR#1043&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/maxd-wttj&quot;&gt;@maxd-wttj&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Support &lt;code&gt;AlertManager&lt;/code&gt; output in HA mode (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1051&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1051/hovercard&quot;&gt;PR#1051&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Fix&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix &lt;code&gt;PolicyReports&lt;/code&gt; created in the same namespace than previous event (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/978&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/978/hovercard&quot;&gt;PR#978&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix missing &lt;code&gt;customFields/extraFields&lt;/code&gt; in the &lt;code&gt;Elasticsearch&lt;/code&gt; payload (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1033&quot; data-hovercard-type=&quot;issue&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/issues/1033/hovercard&quot;&gt;PR#1033&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix incorrect key name for &lt;code&gt;CloudEvent&lt;/code&gt; spec attribute (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/1051&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/1051/hovercard&quot;&gt;PR#1051&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;markdown-alert markdown-alert-warning&quot;&gt;&lt;p class=&quot;markdown-alert-title&quot;&gt;&lt;svg data-component=&quot;Octicon&quot; class=&quot;octicon octicon-alert mr-2&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Warning&lt;/p&gt;&lt;p&gt;Breaking change: The Prometheus metrics have different names from this release, it might break the queries for the dashboards and alerts.&lt;/p&gt;
+&lt;/div&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/148756498/2.29.0</id>
+    <updated>2024-07-02T10:52:12Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick/releases/tag/2.29.0"/>
+    <title>2.29.0</title>
+    <content type="html">&lt;h2&gt;2.29.0 - 2024-07-01&lt;/h2&gt;
+&lt;h4&gt;New&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;New output: &lt;strong&gt;Dynatrace&lt;/strong&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/575&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/575/hovercard&quot;&gt;PR#575&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/blu3r4y&quot;&gt;@blu3r4y&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;New output: &lt;strong&gt;OTLP Traces&lt;/strong&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/613&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/613/hovercard&quot;&gt;PR#613&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/jjo&quot;&gt;@jjo&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;New output: &lt;strong&gt;Sumologic&lt;/strong&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/656&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/656/hovercard&quot;&gt;PR#656&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/mencarellic&quot;&gt;@mencarellic&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;New output: &lt;strong&gt;Quickwit&lt;/strong&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/736&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/736/hovercard&quot;&gt;PR#736&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/idrissneumann&quot;&gt;@idrissneumann&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;New output: &lt;strong&gt;Falco Talon&lt;/strong&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/929&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/929/hovercard&quot;&gt;PR#929&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Enhancement&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Add global TLS config (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/588&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/588/hovercard&quot;&gt;PR#588&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/ibice&quot;&gt;@ibice&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;source&lt;/code&gt; as label for &lt;code&gt;Prometheus&lt;/code&gt; metrics (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/665&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/665/hovercard&quot;&gt;PR#665&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Better logs when TLS is enabled (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/668&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/668/hovercard&quot;&gt;PR#668&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add test for utils sorting function (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/694&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/694/hovercard&quot;&gt;PR#694&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/stevemcquaid&quot;&gt;@stevemcquaid&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Refactor of the &lt;code&gt;InitClient&lt;/code&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/765&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/765/hovercard&quot;&gt;PR#765&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/idrissneumann&quot;&gt;@idrissneumann&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Allow to use alternative endpoints for the &lt;code&gt;AWS S3&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/791&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/791/hovercard&quot;&gt;PR#791&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/gysel&quot;&gt;@gysel&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Consistent order for the &lt;code&gt;output_fields&lt;/code&gt; and &lt;code&gt;tags&lt;/code&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/802&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/802/hovercard&quot;&gt;PR#802&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Allow to add custom headers for &lt;code&gt;AlertManager&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/827&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/827/hovercard&quot;&gt;PR#827&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/Umaaz&quot;&gt;@Umaaz&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add more checks for the &lt;code&gt;GCP Storage&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/858&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/858/hovercard&quot;&gt;PR#858&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Possibility to create an index template for the &lt;code&gt;Elasticsearch&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/868&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/868/hovercard&quot;&gt;PR#868&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Possibility to &quot;flatten&quot; the &lt;code&gt;output_fields&lt;/code&gt; (replace &lt;code&gt;.&lt;/code&gt; by &lt;code&gt;_&lt;/code&gt;) for the &lt;code&gt;Elasticsearch&lt;/code&gt; output to avoid mapping conflicts (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/868&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/868/hovercard&quot;&gt;PR#868&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Truncate the fields with a length &amp;gt; 512 chars to avoid rejection from some outputs (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/871&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/871/hovercard&quot;&gt;PR#871&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Change the license to Apache 2.0 (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/882&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/882/hovercard&quot;&gt;PR#882&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Revamp the &lt;code&gt;PolicyReport&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/899&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/899/hovercard&quot;&gt;PR#899&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;New parameter &lt;code&gt;outputFieldFormat&lt;/code&gt; to modify on the fly the format of the &lt;code&gt;output&lt;/code&gt; field (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/901&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/901/hovercard&quot;&gt;PR#901&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Fix&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix missing root CA for the &lt;code&gt;Kafka&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/581&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/581/hovercard&quot;&gt;PR#581&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/claviola&quot;&gt;@claviola&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix bug with the extension &lt;code&gt;source&lt;/code&gt; in the &lt;code&gt;CloudEvent&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/587&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/587/hovercard&quot;&gt;PR#587&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix panics in the &lt;code&gt;Prometheus&lt;/code&gt; output when &lt;code&gt;hostname&lt;/code&gt; field is missing (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/628&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/628/hovercard&quot;&gt;PR#628&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove refs to deprecated &lt;code&gt;ioutil&lt;/code&gt; modules (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/639&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/639/hovercard&quot;&gt;PR#639&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/testwill&quot;&gt;@testwill&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix locks in the &lt;code&gt;Loki&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/647&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/647/hovercard&quot;&gt;PR#647&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/bsod90&quot;&gt;@bsod90&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Split the docs for the outputs into multiple files (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/648&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/648/hovercard&quot;&gt;PR#648&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix mTLS client verification failures due to missing ClientCAs (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/666&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/666/hovercard&quot;&gt;PR#666&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/jgmartinez&quot;&gt;@jgmartinez&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix wrong env var for pagerduty output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/682&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/682/hovercard&quot;&gt;PR#682&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove hard settings for usernames in &lt;code&gt;Mattermost&lt;/code&gt; and &lt;code&gt;Rocketchat&lt;/code&gt; (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/731&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/731/hovercard&quot;&gt;PR#731&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix multi lines json in the error lines (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/764&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/764/hovercard&quot;&gt;PR#764&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/idrissneumann&quot;&gt;@idrissneumann&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix duplicated custom headers in clients (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/801&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/801/hovercard&quot;&gt;PR#801&lt;/a&gt;, &lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/857&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/857/hovercard&quot;&gt;PR#857&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix the labels for the &lt;code&gt;AlertManager&lt;/code&gt; output (&lt;a href=&quot;https://github.com/falcosecurity/falcosidekick/pull/870&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/870/hovercard&quot;&gt;PR#870&lt;/a&gt; thanks to &lt;a href=&quot;https://github.com/Umaaz&quot;&gt;@Umaaz&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/blu3r4y/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/blu3r4y&quot;&gt;@blu3r4y&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1828887406&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick/issues/575&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/575/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/pull/575&quot;&gt;#575&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/claviola/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/claviola&quot;&gt;@claviola&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1839392794&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick/issues/581&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/581/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/pull/581&quot;&gt;#581&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/testwill/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/testwill&quot;&gt;@testwill&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1902292301&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick/issues/639&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/639/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/pull/639&quot;&gt;#639&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/bsod90/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/bsod90&quot;&gt;@bsod90&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1912211698&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick/issues/647&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/647/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/pull/647&quot;&gt;#647&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/mencarellic/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/mencarellic&quot;&gt;@mencarellic&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1927382594&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick/issues/656&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/656/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/pull/656&quot;&gt;#656&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jgmartinez/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jgmartinez&quot;&gt;@jgmartinez&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1940049914&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick/issues/666&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/666/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/pull/666&quot;&gt;#666&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/stevemcquaid/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/stevemcquaid&quot;&gt;@stevemcquaid&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1984563569&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick/issues/694&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/694/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/pull/694&quot;&gt;#694&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/idrissneumann/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/idrissneumann&quot;&gt;@idrissneumann&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2062531994&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick/issues/740&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/740/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/pull/740&quot;&gt;#740&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/cccsss01/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/cccsss01&quot;&gt;@cccsss01&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2080485660&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick/issues/748&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/748/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/pull/748&quot;&gt;#748&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jjo/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jjo&quot;&gt;@jjo&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1875771106&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick/issues/613&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/613/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/pull/613&quot;&gt;#613&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/chaitushiva/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/chaitushiva&quot;&gt;@chaitushiva&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2135411871&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick/issues/788&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/788/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/pull/788&quot;&gt;#788&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/gysel/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/gysel&quot;&gt;@gysel&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2144572889&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick/issues/791&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/791/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/pull/791&quot;&gt;#791&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/Umaaz/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/Umaaz&quot;&gt;@Umaaz&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2211261329&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick/issues/826&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/826/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/pull/826&quot;&gt;#826&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/marcomandola/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/marcomandola&quot;&gt;@marcomandola&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2227352902&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick/issues/835&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/835/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/pull/835&quot;&gt;#835&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/oussemos/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/oussemos&quot;&gt;@oussemos&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2333038463&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick/issues/908&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick/pull/908/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/pull/908&quot;&gt;#908&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/compare/2.28.0...2.29.0&quot;&gt;&lt;tt&gt;2.28.0...2.29.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/148756498/2.29.0-rc.5</id>
+    <updated>2024-07-02T08:57:42Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick/releases/tag/2.29.0-rc.5"/>
+    <title>2.29.0-rc.5</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick/commit/795594066d60f39e4188f23a10d5620557d99979/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick/commit/795594066d60f39e4188f23a10d5620557d99979&quot;&gt;&lt;tt&gt;7955940&lt;/tt&gt;&lt;/a&gt; specify goreleaser version&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+</feed>

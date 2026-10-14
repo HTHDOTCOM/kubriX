@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/falcosecurity/falcosidekick-ui/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/falcosecurity/falcosidekick-ui/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/falcosecurity/falcosidekick-ui/releases.atom"/>
+  <title>Release notes from falcosidekick-ui</title>
+  <updated>2026-06-16T10:08:25Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/336373988/v2.3.1</id>
+    <updated>2026-06-16T10:14:56Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick-ui/releases/tag/v2.3.1"/>
+    <title>v2.3.1</title>
+    <content type="html">&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bump github.com/gomodule/redigo from 1.9.2 to 1.9.3 in the gomod group across 1 directory by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3508377063&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/198&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/198/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/198&quot;&gt;#198&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump lodash from 4.17.21 to 4.18.1 in /frontend by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4197649488&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/211&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/211/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/211&quot;&gt;#211&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump the actions group across 1 directory with 3 updates by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4209658698&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/213&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/213/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/213&quot;&gt;#213&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump ws from 8.8.1 to 8.20.1 in /frontend by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4478698491&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/218&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/218/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/218&quot;&gt;#218&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump @babel/plugin-transform-modules-systemjs from 7.17.8 to 7.29.4 in /frontend by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4412484333&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/217&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/217/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/217&quot;&gt;#217&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump follow-redirects from 1.15.9 to 1.16.0 in /frontend by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4268472149&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/215&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/215/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/215&quot;&gt;#215&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump brace-expansion from 1.1.12 to 1.1.15 in /frontend by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4563505857&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/220&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/220/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/220&quot;&gt;#220&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump launch-editor from 2.3.0 to 2.14.1 in /frontend by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4585020325&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/221&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/221/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/221&quot;&gt;#221&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump docker/login-action from 3.5.0 to 4.2.0 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4610123436&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/229&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/229/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/229&quot;&gt;#229&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump golangci/golangci-lint-action from 8.0.0 to 9.2.1 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4610123255&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/228&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/228/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/228&quot;&gt;#228&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump aws-actions/configure-aws-credentials from 5.0.0 to 6.2.0 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4610122863&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/226&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/226/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/226&quot;&gt;#226&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump goreleaser/goreleaser-action from 6.4.0 to 7.2.2 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4610123081&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/227&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/227/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/227&quot;&gt;#227&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump github.com/go-playground/validator/v10 from 10.28.0 to 10.30.3 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4610117132&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/222&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/222/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/222&quot;&gt;#222&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump aws-actions/amazon-ecr-login from 2.1.2 to 2.1.5 in the actions group by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4610122681&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/225&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/225/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/225&quot;&gt;#225&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump github.com/labstack/echo/v4 from 4.13.4 to 4.15.2 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4610117457&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/223&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/223/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/223&quot;&gt;#223&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump github.com/swaggo/echo-swagger from 1.4.1 to 1.5.2 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4610117847&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/224&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/224/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/224&quot;&gt;#224&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;general housekeeping  by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/cpanato/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/cpanato&quot;&gt;@cpanato&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4647678563&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/issues/230&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falcosidekick-ui/pull/230/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/pull/230&quot;&gt;#230&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/compare/v2.3.0...v2.3.1&quot;&gt;&lt;tt&gt;v2.3.0...v2.3.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/336373988/v2.3.0</id>
+    <updated>2026-04-08T09:05:44Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick-ui/releases/tag/v2.3.0"/>
+    <title>v2.3.0</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/2fc51f2e3f158ba89bae13e1f35a4c0243f92164/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/2fc51f2e3f158ba89bae13e1f35a4c0243f92164&quot;&gt;&lt;tt&gt;2fc51f2&lt;/tt&gt;&lt;/a&gt; fix(utils): return 0 instead of crashing on invalid time unit in ConvertToSeconds&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/336373988/v2.3.0-rc3</id>
+    <updated>2024-03-04T13:56:29Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick-ui/releases/tag/v2.3.0-rc3"/>
+    <title>v2.3.0-rc3</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/4ad5919d7f3aed15ae5ca1f7bac59c1f3e749f06/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/4ad5919d7f3aed15ae5ca1f7bac59c1f3e749f06&quot;&gt;&lt;tt&gt;4ad5919&lt;/tt&gt;&lt;/a&gt; escape also values with dots&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/336373988/v2.3.0-rc2</id>
+    <updated>2024-02-23T12:41:06Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick-ui/releases/tag/v2.3.0-rc2"/>
+    <title>v2.3.0-rc2</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/e3b38d39d40e0ba5a40f34ad526b54d676ad6c88/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/e3b38d39d40e0ba5a40f34ad526b54d676ad6c88&quot;&gt;&lt;tt&gt;e3b38d3&lt;/tt&gt;&lt;/a&gt; fix the empty result when the value of an output field contains a dash/slash + trim prefix with the timestamp and priority for the output&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/336373988/v2.3.0-rc1</id>
+    <updated>2023-09-24T15:00:34Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick-ui/releases/tag/v2.3.0-rc1"/>
+    <title>v2.3.0-rc1</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/694078894e40855d5b5d9ac33091c75b663ab297/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/694078894e40855d5b5d9ac33091c75b663ab297&quot;&gt;&lt;tt&gt;6940788&lt;/tt&gt;&lt;/a&gt; remove subpath config from the backend&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/336373988/v2.2.0</id>
+    <updated>2023-09-14T11:32:22Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick-ui/releases/tag/v2.2.0"/>
+    <title>v2.2.0</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;Replace CircleCI by Github Actions&lt;/li&gt;
+&lt;li&gt;Add new dialog box to show the details of an alert&lt;/li&gt;
+&lt;li&gt;Add an export feature&lt;/li&gt;
+&lt;li&gt;Allow to specify the TTL for the keys with an unit (second, minute, day, week)&lt;/li&gt;
+&lt;li&gt;Allow to set a password for Redis&lt;/li&gt;
+&lt;li&gt;Allow to disable the basic auth&lt;/li&gt;
+&lt;li&gt;Add a button to clear the search input&lt;/li&gt;
+&lt;li&gt;Fix missing filter/search in query parameters&lt;/li&gt;
+&lt;li&gt;Fix search for hostnames and tags with dashes&lt;/li&gt;
+&lt;li&gt;Fix error with empty result from &lt;code&gt;count_by&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/336373988/v2.2.0-rc2</id>
+    <updated>2023-06-21T12:43:03Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick-ui/releases/tag/v2.2.0-rc2"/>
+    <title>v2.2.0-rc2</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/9d18d709579a70a33312a7853c62a4b74c8e5e99/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/9d18d709579a70a33312a7853c62a4b74c8e5e99&quot;&gt;&lt;tt&gt;9d18d70&lt;/tt&gt;&lt;/a&gt; docs(README.md): add scope and status badges&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/ee03de7493063fb4a7df3f947a0868959d95614d/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/ee03de7493063fb4a7df3f947a0868959d95614d&quot;&gt;&lt;tt&gt;ee03de7&lt;/tt&gt;&lt;/a&gt; allow dashes in hostnames and tag values&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/634a28b2c7df7e702ba2b3f541f7759e72498a73/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/634a28b2c7df7e702ba2b3f541f7759e72498a73&quot;&gt;&lt;tt&gt;634a28b&lt;/tt&gt;&lt;/a&gt; rename function + show icon only if search/filter is not empty&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/397c2be18d083d76386b4ddc2112b4314b16c0c2/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/397c2be18d083d76386b4ddc2112b4314b16c0c2&quot;&gt;&lt;tt&gt;397c2be&lt;/tt&gt;&lt;/a&gt; add search/filter in query parameters + add clear search input button&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>poiana</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/51138685?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/336373988/v2.2.0-rc1</id>
+    <updated>2023-03-29T13:38:22Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick-ui/releases/tag/v2.2.0-rc1"/>
+    <title>v2.2.0-rc1</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/695b502829e52d325184f3a395723afa2bf25066/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/695b502829e52d325184f3a395723afa2bf25066&quot;&gt;&lt;tt&gt;695b502&lt;/tt&gt;&lt;/a&gt; allow to disable the authentication&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/f9ebe01c4a52c54df40d6850edd4f5cb21ecbfe2/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/f9ebe01c4a52c54df40d6850edd4f5cb21ecbfe2&quot;&gt;&lt;tt&gt;f9ebe01&lt;/tt&gt;&lt;/a&gt; Bump golang.org/x/net from 0.0.0-20220722155237-a158d28d115b to 0.7.0&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/01f27522e6b224e56f06c745ccffc963643244ef/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/01f27522e6b224e56f06c745ccffc963643244ef&quot;&gt;&lt;tt&gt;01f2752&lt;/tt&gt;&lt;/a&gt; Bump golang.org/x/crypto from 0.0.0-20220131195533-30dcbda58838 to 0.1.0&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/2adaaa84df8c882589b707b0eaf9cc74817fa67b/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/2adaaa84df8c882589b707b0eaf9cc74817fa67b&quot;&gt;&lt;tt&gt;2adaaa8&lt;/tt&gt;&lt;/a&gt; Bump golang.org/x/text from 0.3.7 to 0.3.8&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/c26d2e802ac165ae2c7dabc6d75885f1d93a28c3/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/c26d2e802ac165ae2c7dabc6d75885f1d93a28c3&quot;&gt;&lt;tt&gt;c26d2e8&lt;/tt&gt;&lt;/a&gt; add condition to empty result from FT.AGGREGATE&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>Issif</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/4520100?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/336373988/v2.1.0</id>
+    <updated>2023-01-10T19:11:41Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick-ui/releases/tag/v2.1.0"/>
+    <title>v2.1.0</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;Add Basic Auth&lt;/li&gt;
+&lt;li&gt;Update log format + remove the bootstrap banner&lt;/li&gt;
+&lt;li&gt;Allow to set Log Level&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;Hostname&lt;/code&gt; field as filter&lt;/li&gt;
+&lt;li&gt;Refactor &lt;code&gt;Info&lt;/code&gt; view&lt;/li&gt;
+&lt;li&gt;Fix the results of &lt;code&gt;count_by&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add autorefresh&lt;/li&gt;
+&lt;li&gt;Allow to set a &lt;code&gt;TTL&lt;/code&gt; for keys in Redis&lt;/li&gt;
+&lt;li&gt;Allow to set the settings with env vars&lt;/li&gt;
+&lt;li&gt;Use Host URL as API baseURL&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>poiana</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/51138685?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/336373988/v2.0.2</id>
+    <updated>2022-06-05T09:13:13Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falcosidekick-ui/releases/tag/v2.0.2"/>
+    <title>v2.0.2</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/e3ef80a3e5cca8ee0fb3b73f2b65bd61a6e22595/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/e3ef80a3e5cca8ee0fb3b73f2b65bd61a6e22595&quot;&gt;&lt;tt&gt;e3ef80a&lt;/tt&gt;&lt;/a&gt; fix force redirect to localhost&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/28c18d100193a80a2dc6a662245266c744a497c1/hovercard&quot; href=&quot;https://github.com/falcosecurity/falcosidekick-ui/commit/28c18d100193a80a2dc6a662245266c744a497c1&quot;&gt;&lt;tt&gt;28c18d1&lt;/tt&gt;&lt;/a&gt; Use Host URL as API baseURL&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>Issif</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/4520100?s=60&amp;v=4"/>
+  </entry>
+</feed>

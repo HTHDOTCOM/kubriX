@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/redis/redis/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/redis/redis/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/redis/redis/releases.atom"/>
+  <title>Release notes from redis</title>
+  <updated>2026-09-28T07:34:42Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/156018/8.12-m02-int</id>
+    <updated>2026-09-28T07:34:42Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis/redis/releases/tag/8.12-m02-int"/>
+    <title>8.12-m02-int: Explain a test [TIMEOUT] instead of killing it silently (#15879)</title>
+    <content type="html">&lt;p&gt;A hung test run tells us almost nothing today. When no client has made&lt;br&gt;
+progress for --timeout seconds, test_server_cron prints the clients&#39;&lt;br&gt;
+last reported state, SIGKILLs every server via force_kill_all_servers&lt;br&gt;
+and exits; --dump-logs only fires for a failed or excepted test, never&lt;br&gt;
+for a timeout. So a 20-minute hang costs a whole CI run and produces a&lt;br&gt;
+few lines.&lt;/p&gt;
+&lt;p&gt;Collect the evidence before tearing the run down:&lt;/p&gt;
+&lt;p&gt;Crash-report the surviving servers. SIGSEGV makes redis log a stack&lt;br&gt;
+trace of every one of its threads plus INFO, the client list and the&lt;br&gt;
+config (printCrashReport) and then die. The handler runs on whichever&lt;br&gt;
+thread takes the signal, so it works on a server whose event loop is&lt;br&gt;
+wedged -- exactly the case we cannot diagnose from outside. kill_server&lt;br&gt;
+already resorts to SIGSEGV for the same reason when a server won&#39;t exit,&lt;br&gt;
+but the timeout path never reaches it. Then print each server&#39;s crash&lt;br&gt;
+report, starting 10 lines above &quot;REDIS BUG REPORT START&quot; for context (or&lt;br&gt;
+the log&#39;s tail if there is no report, since that is then the only&lt;br&gt;
+evidence). Servers are children of the stuck client, which isn&#39;t reaping&lt;br&gt;
+them, so a dead one is a zombie that kill -0 still reports alive; wait&lt;br&gt;
+on is_running (via ps) instead.&lt;/p&gt;
+&lt;p&gt;Report where in the test each client stopped, not just its last state.&lt;br&gt;
+Crash-reporting the servers usually unblocks a client by itself -- its&lt;br&gt;
+connection dies, the error unwinds, and the client&#39;s existing top-level&lt;br&gt;
+handler reports $::errorInfo, a Tcl stack trace naming the exact line --&lt;br&gt;
+so collect that first. A client stuck on something else is poked with&lt;br&gt;
+SIGUSR1, which it turns into a Tcl error with Tclx&#39;s &quot;signal error&quot;:&lt;br&gt;
+that interrupts a blocking read, a long &quot;after&quot; and a polling loop&lt;br&gt;
+alike. Tclx is optional; without it a timeout simply reports no client&lt;br&gt;
+stack trace.&lt;/p&gt;
+&lt;p&gt;Order matters here: the servers must be collected first, because&lt;br&gt;
+unblocking a client makes start_server kill the very servers we wanted a&lt;br&gt;
+report from.&lt;/p&gt;
+&lt;p&gt;Also: read_from_test_client threw &quot;expected non-negative integer&quot; once a&lt;br&gt;
+reporting client exited, because we now pump the event loop while it&lt;br&gt;
+does.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;div class=&quot;markdown-alert markdown-alert-note&quot;&gt;&lt;p class=&quot;markdown-alert-title&quot;&gt;&lt;svg data-component=&quot;Octicon&quot; class=&quot;octicon octicon-info mr-2&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Note&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Low Risk&lt;/strong&gt;&lt;br&gt;
+Changes are limited to the Tcl test harness timeout path; no&lt;br&gt;
+production server or runtime behavior is affected.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;br&gt;
+When the suite hits &lt;strong&gt;&lt;code&gt;--timeout&lt;/code&gt;&lt;/strong&gt; (no client progress), it no longer&lt;br&gt;
+tears down immediately after printing each client’s last task. The test&lt;br&gt;
+server &lt;strong&gt;collects diagnostics first&lt;/strong&gt;, then kills clients and servers as&lt;br&gt;
+before.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Server evidence:&lt;/strong&gt; Still-running Redis instances from&lt;br&gt;
+&lt;code&gt;::active_servers&lt;/code&gt; get &lt;strong&gt;SIGCONT&lt;/strong&gt; (if stopped) and &lt;strong&gt;SIGSEGV&lt;/strong&gt; so they&lt;br&gt;
+write a full crash report even when the event loop is wedged. Logs are&lt;br&gt;
+located under &lt;code&gt;tests/tmp&lt;/code&gt; by pid, then &lt;strong&gt;&lt;code&gt;dump_crash_report&lt;/code&gt;&lt;/strong&gt; prints&lt;br&gt;
+the tail around &lt;code&gt;REDIS BUG REPORT START&lt;/code&gt; (or the last 256KB if there is&lt;br&gt;
+no report). &lt;strong&gt;&lt;code&gt;is_running&lt;/code&gt;&lt;/strong&gt; treats zombies as dead so waits don’t hang&lt;br&gt;
+on unreaped children.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Client evidence:&lt;/strong&gt; Clients send their OS pid on &lt;code&gt;ready&lt;/code&gt; and&lt;br&gt;
+optionally advertise &lt;strong&gt;&lt;code&gt;sigusr1-trace&lt;/code&gt;&lt;/strong&gt; when Tclx is available. After&lt;br&gt;
+server dumps, the server waits briefly for natural &lt;strong&gt;&lt;code&gt;exception&lt;/code&gt;&lt;/strong&gt;/&lt;code&gt;err&lt;/code&gt;&lt;br&gt;
+unwinds, then sends &lt;strong&gt;SIGUSR1&lt;/strong&gt; to remaining clients so Tclx turns it&lt;br&gt;
+into a stack trace. &lt;strong&gt;&lt;code&gt;::in_timeout_report&lt;/code&gt;&lt;/strong&gt; suppresses re-entrant&lt;br&gt;
+timeout cron, avoids fatal handling of those packets, and fixes&lt;br&gt;
+&lt;strong&gt;&lt;code&gt;read_from_test_client&lt;/code&gt;&lt;/strong&gt; when a client disconnects mid-report&lt;br&gt;
+(invalid length no longer spins or crashes the handler).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Order:&lt;/strong&gt; Server crash collection runs &lt;strong&gt;before&lt;/strong&gt; client stack traces&lt;br&gt;
+so unblocking a client doesn’t tear down servers before their reports&lt;br&gt;
+are captured.&lt;/p&gt;
+&lt;p&gt;&lt;sup&gt;Reviewed by &lt;a href=&quot;https://cursor.com/bugbot&quot; rel=&quot;nofollow&quot;&gt;Cursor Bugbot&lt;/a&gt; for commit&lt;br&gt;
+&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/redis/redis/commit/5927e7e9149ac45b2adea623ca4c4f0f4d570df6/hovercard&quot; href=&quot;https://github.com/redis/redis/commit/5927e7e9149ac45b2adea623ca4c4f0f4d570df6&quot;&gt;&lt;tt&gt;5927e7e&lt;/tt&gt;&lt;/a&gt;. Bugbot is set up for automated&lt;br&gt;
+code reviews on this repo. Configure&lt;br&gt;
+&lt;a href=&quot;https://www.cursor.com/dashboard/bugbot&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;.&lt;/sup&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Co-authored-by: Claude Opus 5.5 (1M context) &lt;a href=&quot;mailto:noreply@anthropic.com&quot;&gt;noreply@anthropic.com&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>oranagra</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7045099?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/156018/8.10.2</id>
+    <updated>2026-09-17T15:08:27Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis/redis/releases/tag/8.10.2"/>
+    <title>8.10.2</title>
+    <content type="html">&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: There are security fixes in the release.&lt;/p&gt;
+&lt;h3&gt;Security fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5180522741&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/redis/redis/issues/15673&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/15673/hovercard&quot; href=&quot;https://github.com/redis/redis/pull/15673&quot;&gt;#15673&lt;/a&gt; Commands queued in a transaction could still access keys whose ACL permissions were revoked before the transaction was executed&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5280467408&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/redis/redis/issues/15722&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/15722/hovercard&quot; href=&quot;https://github.com/redis/redis/pull/15722&quot;&gt;#15722&lt;/a&gt; The cluster bus protocol has no authentication of its own unless &lt;code&gt;tls-cluster&lt;/code&gt; is enabled, so any host able to reach a node&#39;s bus port could join the cluster and threaten it. A cluster node now warns at startup when its bus port is left unauthenticated, and the new &lt;code&gt;cluster-bus-port-protected-mode&lt;/code&gt; option (default &lt;code&gt;no&lt;/code&gt;) makes refusing to run in that state an explicit choice: set it to &lt;code&gt;yes&lt;/code&gt; and the node starts only when &lt;code&gt;tls-cluster&lt;/code&gt; authenticates the bus&lt;/li&gt;
+&lt;li&gt;TimeSeries: Prevented Redis from crashing when adding samples to a compressed Time Series key restored from a malformed RDB payload&lt;/li&gt;
+&lt;li&gt;RedisSearch: KNN queries on indexes with very long vector field names could cause the server to crash&lt;/li&gt;
+&lt;li&gt;Vector Sets: Deeply nested JSON used in Vector Set queries could cause the server to crash&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>sundb</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/965798?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/156018/8.8.3</id>
+    <updated>2026-09-17T15:04:35Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis/redis/releases/tag/8.8.3"/>
+    <title>8.8.3</title>
+    <content type="html">&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: There are security fixes in the release.&lt;/p&gt;
+&lt;h3&gt;Security fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5180522741&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/redis/redis/issues/15673&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/15673/hovercard&quot; href=&quot;https://github.com/redis/redis/pull/15673&quot;&gt;#15673&lt;/a&gt; Commands queued in a transaction could still access keys whose ACL permissions were revoked before the transaction was executed&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5280467408&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/redis/redis/issues/15722&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/15722/hovercard&quot; href=&quot;https://github.com/redis/redis/pull/15722&quot;&gt;#15722&lt;/a&gt; The cluster bus protocol has no authentication of its own unless &lt;code&gt;tls-cluster&lt;/code&gt; is enabled, so any host able to reach a node&#39;s bus port could join the cluster and threaten it. A cluster node now warns at startup when its bus port is left unauthenticated, and the new &lt;code&gt;cluster-bus-port-protected-mode&lt;/code&gt; option (default &lt;code&gt;no&lt;/code&gt;) makes refusing to run in that state an explicit choice: set it to &lt;code&gt;yes&lt;/code&gt; and the node starts only when &lt;code&gt;tls-cluster&lt;/code&gt; authenticates the bus&lt;/li&gt;
+&lt;li&gt;TimeSeries: Prevented Redis from crashing when adding samples to a compressed Time Series key restored from a malformed RDB payload&lt;/li&gt;
+&lt;li&gt;Vector Sets: Deeply nested JSON used in Vector Set queries could cause the server to crash&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>sundb</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/965798?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/156018/8.6.7</id>
+    <updated>2026-09-17T15:01:42Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis/redis/releases/tag/8.6.7"/>
+    <title>8.6.7</title>
+    <content type="html">&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: There are security fixes in the release.&lt;/p&gt;
+&lt;h3&gt;Security fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5180522741&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/redis/redis/issues/15673&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/15673/hovercard&quot; href=&quot;https://github.com/redis/redis/pull/15673&quot;&gt;#15673&lt;/a&gt; Commands queued in a transaction could still access keys whose ACL permissions were revoked before the transaction was executed&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5280467408&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/redis/redis/issues/15722&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/15722/hovercard&quot; href=&quot;https://github.com/redis/redis/pull/15722&quot;&gt;#15722&lt;/a&gt; The cluster bus protocol has no authentication of its own unless &lt;code&gt;tls-cluster&lt;/code&gt; is enabled, so any host able to reach a node&#39;s bus port could join the cluster and threaten it. A cluster node now warns at startup when its bus port is left unauthenticated, and the new &lt;code&gt;cluster-bus-port-protected-mode&lt;/code&gt; option (default &lt;code&gt;no&lt;/code&gt;) makes refusing to run in that state an explicit choice: set it to &lt;code&gt;yes&lt;/code&gt; and the node starts only when &lt;code&gt;tls-cluster&lt;/code&gt; authenticates the bus&lt;/li&gt;
+&lt;li&gt;TimeSeries: Prevented Redis from crashing when adding samples to a compressed Time Series key restored from a malformed RDB payload&lt;/li&gt;
+&lt;li&gt;Vector Sets: Deeply nested JSON used in Vector Set queries could cause the server to crash&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>sundb</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/965798?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/156018/8.4.7</id>
+    <updated>2026-09-17T14:58:05Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis/redis/releases/tag/8.4.7"/>
+    <title>8.4.7</title>
+    <content type="html">&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: There are security fixes in the release.&lt;/p&gt;
+&lt;h3&gt;Security fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5180522741&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/redis/redis/issues/15673&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/15673/hovercard&quot; href=&quot;https://github.com/redis/redis/pull/15673&quot;&gt;#15673&lt;/a&gt; Commands queued in a transaction could still access keys whose ACL permissions were revoked before the transaction was executed&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5280467408&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/redis/redis/issues/15722&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/15722/hovercard&quot; href=&quot;https://github.com/redis/redis/pull/15722&quot;&gt;#15722&lt;/a&gt; The cluster bus protocol has no authentication of its own unless &lt;code&gt;tls-cluster&lt;/code&gt; is enabled, so any host able to reach a node&#39;s bus port could join the cluster and threaten it. A cluster node now warns at startup when its bus port is left unauthenticated, and the new &lt;code&gt;cluster-bus-port-protected-mode&lt;/code&gt; option (default &lt;code&gt;no&lt;/code&gt;) makes refusing to run in that state an explicit choice: set it to &lt;code&gt;yes&lt;/code&gt; and the node starts only when &lt;code&gt;tls-cluster&lt;/code&gt; authenticates the bus&lt;/li&gt;
+&lt;li&gt;TimeSeries: Prevented Redis from crashing when adding samples to a compressed Time Series key restored from a malformed RDB payload&lt;/li&gt;
+&lt;li&gt;Vector Sets: Deeply nested JSON used in Vector Set queries could cause the server to crash&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>sundb</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/965798?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/156018/8.2.10</id>
+    <updated>2026-09-17T14:53:52Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis/redis/releases/tag/8.2.10"/>
+    <title>8.2.10</title>
+    <content type="html">&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: There are security fixes in the release.&lt;/p&gt;
+&lt;h3&gt;Security fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5280467408&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/redis/redis/issues/15722&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/15722/hovercard&quot; href=&quot;https://github.com/redis/redis/pull/15722&quot;&gt;#15722&lt;/a&gt; The cluster bus protocol has no authentication of its own unless &lt;code&gt;tls-cluster&lt;/code&gt; is enabled, so any host able to reach a node&#39;s bus port could join the cluster and threaten it. A cluster node now warns at startup when its bus port is left unauthenticated, and the new &lt;code&gt;cluster-bus-port-protected-mode&lt;/code&gt; option (default &lt;code&gt;no&lt;/code&gt;) makes refusing to run in that state an explicit choice: set it to &lt;code&gt;yes&lt;/code&gt; and the node starts only when &lt;code&gt;tls-cluster&lt;/code&gt; authenticates the bus&lt;/li&gt;
+&lt;li&gt;TimeSeries: Prevented Redis from crashing when adding samples to a compressed Time Series key restored from a malformed RDB payload&lt;/li&gt;
+&lt;li&gt;Vector Sets: Deeply nested JSON used in Vector Set queries could cause the server to crash&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>sundb</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/965798?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/156018/8.12-m01-int</id>
+    <updated>2026-09-15T07:51:32Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis/redis/releases/tag/8.12-m01-int"/>
+    <title>8.12-m01-int: Add aof_cmd_duration estimate for AOF reload RTO visibility</title>
+    <content type="html">&lt;p&gt;Expose a best-effort AOF replay-time estimate in INFO persistence so&lt;br&gt;
+operators can gauge reload RTO. Count time only for writes that enter&lt;br&gt;
+the AOF, credit leftover call() time to synthetic rewrites, and skip&lt;br&gt;
+the bookkeeping when AOF is off.&lt;/p&gt;</content>
+    <author>
+      <name>yinon-bit</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/302785827?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/156018/8.10.1</id>
+    <updated>2026-08-17T16:46:02Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis/redis/releases/tag/8.10.1"/>
+    <title>8.10.1</title>
+    <content type="html">&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: There are security fixes in the release.&lt;/p&gt;
+&lt;h3&gt;Security fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;(CVE-2026-62356) Miscalculated buffer size in &lt;code&gt;CMSketch&lt;/code&gt; RDB loading may lead to heap OOB write&lt;/li&gt;
+&lt;li&gt;Out-of-bounds access in TopK heap cleanup path (MOD-15410)&lt;/li&gt;
+&lt;li&gt;Use-after-free in the TLS pending-data list when a command closes another pending connection&lt;/li&gt;
+&lt;li&gt;A malicious RDB payload with an out-of-range &lt;code&gt;SLOT_INFO&lt;/code&gt; slot id causes memory corruption during RDB loading, which may lead to Remote Code Execution&lt;/li&gt;
+&lt;li&gt;Vector Sets: missing node level validation when loading a vector set from RDB may lead to out-of-bounds access&lt;/li&gt;
+&lt;li&gt;Vector Sets: use-after-free when &lt;code&gt;VREM&lt;/code&gt; mutates the HNSW graph while background &lt;code&gt;VSIM&lt;/code&gt; threads are still running&lt;/li&gt;
+&lt;li&gt;Vector Sets: a negative &lt;code&gt;hnsw_search()&lt;/code&gt; return was treated as a huge unsigned count, reading past the end of the result arrays&lt;/li&gt;
+&lt;li&gt;TLS client certificate authentication bypass: a Common Name containing an embedded NUL byte was truncated, allowing a client to authenticate as another (possibly privileged) ACL user&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5070817913&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/redis/redis/issues/15594&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/15594/hovercard&quot; href=&quot;https://github.com/redis/redis/pull/15594&quot;&gt;#15594&lt;/a&gt; Use-after-free in the blocked-client list when reprocessing a command evicts another client blocked on the same key&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>YaacovHazan</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/31382944?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/156018/8.8.2</id>
+    <updated>2026-08-17T16:41:01Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis/redis/releases/tag/8.8.2"/>
+    <title>8.8.2</title>
+    <content type="html">&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: There are security fixes in the release.&lt;/p&gt;
+&lt;h3&gt;Security fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;(CVE-2026-62356) Miscalculated buffer size in &lt;code&gt;CMSketch&lt;/code&gt; RDB loading may lead to heap OOB write&lt;/li&gt;
+&lt;li&gt;Out-of-bounds access in TopK heap cleanup path (MOD-15410)&lt;/li&gt;
+&lt;li&gt;Use-after-free in the TLS pending-data list when a command closes another pending connection&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4910514260&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/redis/redis/issues/15478&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/15478/hovercard&quot; href=&quot;https://github.com/redis/redis/pull/15478&quot;&gt;#15478&lt;/a&gt; ACL key permission bypass in &lt;code&gt;SORT&lt;/code&gt;, &lt;code&gt;GEORADIUS&lt;/code&gt;/&lt;code&gt;GEORADIUSBYMEMBER&lt;/code&gt; and &lt;code&gt;XREAD&lt;/code&gt;/&lt;code&gt;XREADGROUP&lt;/code&gt;: the keys validated by ACL could differ from the keys the command actually accesses&lt;/li&gt;
+&lt;li&gt;A malicious RDB payload with an out-of-range &lt;code&gt;SLOT_INFO&lt;/code&gt; slot id causes memory corruption during RDB loading, which may lead to Remote Code Execution&lt;/li&gt;
+&lt;li&gt;Vector Sets: missing node level validation when loading a vector set from RDB may lead to out-of-bounds access&lt;/li&gt;
+&lt;li&gt;Vector Sets: use-after-free when &lt;code&gt;VREM&lt;/code&gt; mutates the HNSW graph while background &lt;code&gt;VSIM&lt;/code&gt; threads are still running&lt;/li&gt;
+&lt;li&gt;Vector Sets: a negative &lt;code&gt;hnsw_search()&lt;/code&gt; return was treated as a huge unsigned count, reading past the end of the result arrays&lt;/li&gt;
+&lt;li&gt;TLS client certificate authentication bypass: a Common Name containing an embedded NUL byte was truncated, allowing a client to authenticate as another (possibly privileged) ACL user&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5070817913&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/redis/redis/issues/15594&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/15594/hovercard&quot; href=&quot;https://github.com/redis/redis/pull/15594&quot;&gt;#15594&lt;/a&gt; Use-after-free in the blocked-client list when reprocessing a command evicts another client blocked on the same key&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>YaacovHazan</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/31382944?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/156018/8.6.6</id>
+    <updated>2026-08-17T16:39:37Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis/redis/releases/tag/8.6.6"/>
+    <title>8.6.6</title>
+    <content type="html">&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: There are security fixes in the release.&lt;/p&gt;
+&lt;h3&gt;Security fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;(CVE-2026-62356) Miscalculated buffer size in &lt;code&gt;CMSketch&lt;/code&gt; RDB loading may lead to heap OOB write&lt;/li&gt;
+&lt;li&gt;Out-of-bounds access in TopK heap cleanup path (MOD-15410)&lt;/li&gt;
+&lt;li&gt;Use-after-free in the TLS pending-data list when a command closes another pending connection&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4910514260&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/redis/redis/issues/15478&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/15478/hovercard&quot; href=&quot;https://github.com/redis/redis/pull/15478&quot;&gt;#15478&lt;/a&gt; ACL key permission bypass in &lt;code&gt;SORT&lt;/code&gt;, &lt;code&gt;GEORADIUS&lt;/code&gt;/&lt;code&gt;GEORADIUSBYMEMBER&lt;/code&gt; and &lt;code&gt;XREAD&lt;/code&gt;/&lt;code&gt;XREADGROUP&lt;/code&gt;: the keys validated by ACL could differ from the keys the command actually accesses&lt;/li&gt;
+&lt;li&gt;A malicious RDB payload with an out-of-range &lt;code&gt;SLOT_INFO&lt;/code&gt; slot id causes memory corruption during RDB loading, which may lead to Remote Code Execution&lt;/li&gt;
+&lt;li&gt;Vector Sets: missing node level validation when loading a vector set from RDB may lead to out-of-bounds access&lt;/li&gt;
+&lt;li&gt;Vector Sets: use-after-free when &lt;code&gt;VREM&lt;/code&gt; mutates the HNSW graph while background &lt;code&gt;VSIM&lt;/code&gt; threads are still running&lt;/li&gt;
+&lt;li&gt;Vector Sets: a negative &lt;code&gt;hnsw_search()&lt;/code&gt; return was treated as a huge unsigned count, reading past the end of the result arrays&lt;/li&gt;
+&lt;li&gt;TLS client certificate authentication bypass: a Common Name containing an embedded NUL byte was truncated, allowing a client to authenticate as another (possibly privileged) ACL user&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5070817913&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/redis/redis/issues/15594&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/15594/hovercard&quot; href=&quot;https://github.com/redis/redis/pull/15594&quot;&gt;#15594&lt;/a&gt; Use-after-free in the blocked-client list when reprocessing a command evicts another client blocked on the same key&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>YaacovHazan</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/31382944?s=60&amp;v=4"/>
+  </entry>
+</feed>

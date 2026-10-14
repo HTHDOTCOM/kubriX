@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/komodorio/komoplane/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/komodorio/komoplane/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/komodorio/komoplane/releases.atom"/>
+  <title>Release notes from komoplane</title>
+  <updated>2026-06-30T10:19:35Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/644108767/kb-refresh-last</id>
+    <updated>2026-06-30T10:19:35Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/komodorio/komoplane/releases/tag/kb-refresh-last"/>
+    <title>kb-refresh-last</title>
+    <content type="html">&lt;p&gt;cu-86cagaw39 add scheduled kb-refresh.yml (twice-daily KB sync) (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4775483883&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/116&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/116/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/116&quot;&gt;#116&lt;/a&gt;)&lt;/p&gt;</content>
+    <author>
+      <name>komodor-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/95276919?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644108767/0.2.1</id>
+    <updated>2026-04-10T14:18:09Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/komodorio/komoplane/releases/tag/0.2.1"/>
+    <title>0.2.1</title>
+    <content type="html">&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: support namespaced composite resources in Crossplane v2 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/undera/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/undera&quot;&gt;@undera&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4237897130&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/110&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/110/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/110&quot;&gt;#110&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/komodorio/komoplane/compare/0.2.0...0.2.1&quot;&gt;&lt;tt&gt;0.2.0...0.2.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>undera</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/2026469?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644108767/0.2.0</id>
+    <updated>2026-03-31T20:27:28Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/komodorio/komoplane/releases/tag/0.2.0"/>
+    <title>0.2.0</title>
+    <content type="html">&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;chart: set allowPrivilegeEscalation false by default by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/eric-carlsson/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/eric-carlsson&quot;&gt;@eric-carlsson&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2824309095&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/74&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/74/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/74&quot;&gt;#74&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix list filtering for multiple types with same name by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/HenrikDK/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/HenrikDK&quot;&gt;@HenrikDK&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3156568055&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/79&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/79/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/79&quot;&gt;#79&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chart: allow setting priorityClassName by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/eric-carlsson/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/eric-carlsson&quot;&gt;@eric-carlsson&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2824322092&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/76&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/76/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/76&quot;&gt;#76&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add Crossplane v2 API version-aware XRD client by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/undera/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/undera&quot;&gt;@undera&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4102478818&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/96&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/96/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/96&quot;&gt;#96&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add namespaced API routes and controller improvements by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/undera/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/undera&quot;&gt;@undera&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4102737289&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/97&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/97/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/97&quot;&gt;#97&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add frontend support for namespaced resources by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/undera/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/undera&quot;&gt;@undera&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4102948183&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/98&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/98/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/98&quot;&gt;#98&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix graph edge direction and layout (LR) by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/undera/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/undera&quot;&gt;@undera&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4103100486&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/99&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/99/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/99&quot;&gt;#99&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix event list column alignment by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/undera/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/undera&quot;&gt;@undera&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4103255630&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/100&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/100/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/100&quot;&gt;#100&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add React error boundary with GitHub reporting by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/undera/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/undera&quot;&gt;@undera&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4103356679&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/101&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/101/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/101&quot;&gt;#101&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Show apiVersion in graph node headers by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/undera/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/undera&quot;&gt;@undera&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4103435867&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/102&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/102/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/102&quot;&gt;#102&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add help text and docs links to page headers by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/undera/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/undera&quot;&gt;@undera&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4103548384&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/103&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/103/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/103&quot;&gt;#103&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: enable chart-testing maintainer validation by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/undera/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/undera&quot;&gt;@undera&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4106847876&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/105&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/105/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/105&quot;&gt;#105&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/eric-carlsson/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/eric-carlsson&quot;&gt;@eric-carlsson&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2824309095&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/74&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/74/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/74&quot;&gt;#74&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/HenrikDK/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/HenrikDK&quot;&gt;@HenrikDK&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3156568055&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/79&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/79/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/79&quot;&gt;#79&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/komodorio/komoplane/compare/0.1.6...0.2.0&quot;&gt;&lt;tt&gt;0.1.6...0.2.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>undera</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/2026469?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644108767/0.1.6</id>
+    <updated>2025-01-21T09:29:55Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/komodorio/komoplane/releases/tag/0.1.6"/>
+    <title>0.1.6</title>
+    <content type="html">&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix kube auth oidc by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/olegsa/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/olegsa&quot;&gt;@olegsa&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2176482125&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/57&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/57/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/57&quot;&gt;#57&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump vite from 4.3.9 to 4.5.2 in /pkg/frontend by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2091778598&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/53&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/53/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/53&quot;&gt;#53&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2265756137&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/62&quot; data-hovercard-type=&quot;issue&quot; data-hovercard-url=&quot;/komodorio/komoplane/issues/62/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/issues/62&quot;&gt;#62&lt;/a&gt; Validate version of Composite Resource Definition by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/puhre/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/puhre&quot;&gt;@puhre&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2265891586&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/63&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/63/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/63&quot;&gt;#63&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Better pluralizer by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/undera/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/undera&quot;&gt;@undera&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2465362834&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/66&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/66/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/66&quot;&gt;#66&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Proposed changes related to &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1865978684&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/36&quot; data-hovercard-type=&quot;issue&quot; data-hovercard-url=&quot;/komodorio/komoplane/issues/36/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/issues/36&quot;&gt;#36&lt;/a&gt;: Accordion style layout of composite resources by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/etesami/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/etesami&quot;&gt;@etesami&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2483704309&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/67&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/67/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/67&quot;&gt;#67&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Create missing hpa resource by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jonasz-lasut/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jonasz-lasut&quot;&gt;@jonasz-lasut&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2489086714&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/70&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/70/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/70&quot;&gt;#70&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump google.golang.org/protobuf from 1.31.0 to 1.33.0 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2185040202&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/59&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/59/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/59&quot;&gt;#59&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump vite from 4.5.2 to 4.5.3 in /pkg/frontend by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2224249063&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/60&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/60/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/60&quot;&gt;#60&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump golang.org/x/net from 0.17.0 to 0.23.0 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2252828368&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/61&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/61/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/61&quot;&gt;#61&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/olegsa/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/olegsa&quot;&gt;@olegsa&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2176482125&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/57&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/57/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/57&quot;&gt;#57&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/puhre/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/puhre&quot;&gt;@puhre&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2265891586&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/63&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/63/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/63&quot;&gt;#63&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/etesami/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/etesami&quot;&gt;@etesami&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2483704309&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/67&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/67/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/67&quot;&gt;#67&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jonasz-lasut/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jonasz-lasut&quot;&gt;@jonasz-lasut&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2489086714&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/70&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/70/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/70&quot;&gt;#70&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/komodorio/komoplane/compare/0.1.5...0.1.6&quot;&gt;&lt;tt&gt;0.1.5...0.1.6&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>undera</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/2026469?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644108767/0.1.5</id>
+    <updated>2024-01-14T18:49:48Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/komodorio/komoplane/releases/tag/0.1.5"/>
+    <title>0.1.5</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/komodorio/komoplane/commit/9d75e0d9c32729746fcbec3837c7cbb855a3ad0b/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/commit/9d75e0d9c32729746fcbec3837c7cbb855a3ad0b&quot;&gt;&lt;tt&gt;9d75e0d&lt;/tt&gt;&lt;/a&gt; feat(helm-chart): add annotations and labels to resources (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2080831972&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/51&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/51/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/51&quot;&gt;#51&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>undera</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/2026469?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644108767/0.1.4</id>
+    <updated>2023-09-19T15:57:10Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/komodorio/komoplane/releases/tag/0.1.4"/>
+    <title>0.1.4</title>
+    <content type="html">&lt;p&gt;Backend fixes to complete 0.1.3 fixes of missing composition references&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/komodorio/komoplane/compare/0.1.3...0.1.4&quot;&gt;&lt;tt&gt;0.1.3...0.1.4&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>undera</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/2026469?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644108767/0.1.3</id>
+    <updated>2023-09-19T13:33:45Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/komodorio/komoplane/releases/tag/0.1.3"/>
+    <title>0.1.3</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;Add more tiles to starting screen&lt;/li&gt;
+&lt;li&gt;Fix crash on missing composition reference in claims&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/komodorio/komoplane/compare/0.1.2...0.1.3&quot;&gt;&lt;tt&gt;0.1.2...0.1.3&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>undera</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/2026469?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644108767/0.1.2</id>
+    <updated>2023-09-08T21:00:42Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/komodorio/komoplane/releases/tag/0.1.2"/>
+    <title>0.1.2</title>
+    <content type="html">&lt;p&gt;Empty release to fix versions for Helm chart release automation&lt;/p&gt;</content>
+    <author>
+      <name>undera</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/2026469?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644108767/0.1.0</id>
+    <updated>2023-09-08T16:45:37Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/komodorio/komoplane/releases/tag/0.1.0"/>
+    <title>0.1.0</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/komodorio/komoplane/commit/7e06918ca9cc6ca652c46f602d54ebf9b77393e7/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/commit/7e06918ca9cc6ca652c46f602d54ebf9b77393e7&quot;&gt;&lt;tt&gt;7e06918&lt;/tt&gt;&lt;/a&gt; Release 0.1.0&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644108767/0.0.10</id>
+    <updated>2023-08-31T09:48:48Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/komodorio/komoplane/releases/tag/0.0.10"/>
+    <title>0.0.10</title>
+    <content type="html">&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Added Indication for Current Menu Items (issue &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1863081059&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/33&quot; data-hovercard-type=&quot;issue&quot; data-hovercard-url=&quot;/komodorio/komoplane/issues/33/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/issues/33&quot;&gt;#33&lt;/a&gt;) by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/kumaryogesh17/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/kumaryogesh17&quot;&gt;@kumaryogesh17&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1863961410&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/35&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/35/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/35&quot;&gt;#35&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix wrong pluralization for claims by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/undera/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/undera&quot;&gt;@undera&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1875134025&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/37&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/37/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/37&quot;&gt;#37&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;New Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/kumaryogesh17/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/kumaryogesh17&quot;&gt;@kumaryogesh17&lt;/a&gt; made their first contribution in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1863961410&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/komodorio/komoplane/issues/35&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/komodorio/komoplane/pull/35/hovercard&quot; href=&quot;https://github.com/komodorio/komoplane/pull/35&quot;&gt;#35&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/komodorio/komoplane/compare/0.0.9...0.0.10&quot;&gt;&lt;tt&gt;0.0.9...0.0.10&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>undera</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/2026469?s=60&amp;v=4"/>
+  </entry>
+</feed>

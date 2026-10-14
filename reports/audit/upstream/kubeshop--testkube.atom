@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/kubeshop/testkube/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/kubeshop/testkube/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/kubeshop/testkube/releases.atom"/>
+  <title>Release notes from testkube</title>
+  <updated>2026-10-14T13:02:19Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/381952060/2.14.2</id>
+    <updated>2026-10-14T13:02:19Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubeshop/testkube/releases/tag/2.14.2"/>
+    <title>2.14.2</title>
+    <content type="html">&lt;p&gt;chore: release 2.14.2&lt;/p&gt;</content>
+    <author>
+      <name>testkube-gitops[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/253113?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/381952060/2.15.0-rc.0</id>
+    <updated>2026-10-07T11:22:57Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubeshop/testkube/releases/tag/2.15.0-rc.0"/>
+    <title>2.15.0-rc.0</title>
+    <content type="html">&lt;p&gt;chore: release 2.15.0-rc.0&lt;/p&gt;</content>
+    <author>
+      <name>testkube-gitops[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/253113?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/381952060/2.14.1</id>
+    <updated>2026-10-05T16:05:33Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubeshop/testkube/releases/tag/2.14.1"/>
+    <title>2.14.1</title>
+    <content type="html">&lt;p&gt;chore: release 2.14.1&lt;/p&gt;</content>
+    <author>
+      <name>testkube-gitops[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/253113?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/381952060/2.14.0</id>
+    <updated>2026-10-01T11:34:12Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubeshop/testkube/releases/tag/2.14.0"/>
+    <title>2.14.0</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/kubeshop/testkube/commit/a0861d71b09ebc47c697fc3e94732e9407e97d66/hovercard&quot; href=&quot;https://github.com/kubeshop/testkube/commit/a0861d71b09ebc47c697fc3e94732e9407e97d66&quot;&gt;&lt;tt&gt;a0861d7&lt;/tt&gt;&lt;/a&gt;: fix: inspect an image from the registry that the pod pulls from (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5647476019&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubeshop/testkube/issues/8428&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubeshop/testkube/pull/8428/hovercard&quot; href=&quot;https://github.com/kubeshop/testkube/pull/8428&quot;&gt;#8428&lt;/a&gt;) (&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/dejanzele/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dejanzele&quot;&gt;@dejanzele&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/kubeshop/testkube/commit/ab7537ff8eebba1e4772df7ac8fcd86a51bcf24f/hovercard&quot; href=&quot;https://github.com/kubeshop/testkube/commit/ab7537ff8eebba1e4772df7ac8fcd86a51bcf24f&quot;&gt;&lt;tt&gt;ab7537f&lt;/tt&gt;&lt;/a&gt;: fix: name each fact once in failure messages (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5626351763&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubeshop/testkube/issues/8423&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubeshop/testkube/pull/8423/hovercard&quot; href=&quot;https://github.com/kubeshop/testkube/pull/8423&quot;&gt;#8423&lt;/a&gt;) (&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/dejanzele/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dejanzele&quot;&gt;@dejanzele&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>testkube-gitops[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/253113?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/381952060/2.14.0-rc.3</id>
+    <updated>2026-09-28T09:02:20Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubeshop/testkube/releases/tag/2.14.0-rc.3"/>
+    <title>2.14.0-rc.3</title>
+    <content type="html">&lt;p&gt;chore: release 2.14.0-rc.3&lt;/p&gt;</content>
+    <author>
+      <name>testkube-gitops[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/253113?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/381952060/2.14.0-rc.2</id>
+    <updated>2026-09-28T07:49:46Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubeshop/testkube/releases/tag/2.14.0-rc.2"/>
+    <title>2.14.0-rc.2</title>
+    <content type="html">&lt;p&gt;chore: release 2.14.0-rc.2&lt;/p&gt;</content>
+    <author>
+      <name>testkube-gitops[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/253113?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/381952060/2.13.3</id>
+    <updated>2026-09-21T13:41:45Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubeshop/testkube/releases/tag/2.13.3"/>
+    <title>2.13.3</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;h3&gt;Other work&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/kubeshop/testkube/commit/158d2180a835d04d44d29159e06defb357846a83/hovercard&quot; href=&quot;https://github.com/kubeshop/testkube/commit/158d2180a835d04d44d29159e06defb357846a83&quot;&gt;&lt;tt&gt;158d218&lt;/tt&gt;&lt;/a&gt;: feat(&lt;a class=&quot;issue-link js-issue-link notranslate&quot; rel=&quot;noopener noreferrer nofollow&quot; href=&quot;https://linear.app/kubeshop/issue/TKC-6726&quot;&gt;TKC-6726&lt;/a&gt;): Use license identity for cli init demo telemetry (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5301056595&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubeshop/testkube/issues/8193&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubeshop/testkube/pull/8193/hovercard&quot; href=&quot;https://github.com/kubeshop/testkube/pull/8193&quot;&gt;#8193&lt;/a&gt;) (&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/Valentin-Marko/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/Valentin-Marko&quot;&gt;@Valentin-Marko&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/kubeshop/testkube/commit/edd871fe39d35d3414c50f3c917bbbbcd3c3ee46/hovercard&quot; href=&quot;https://github.com/kubeshop/testkube/commit/edd871fe39d35d3414c50f3c917bbbbcd3c3ee46&quot;&gt;&lt;tt&gt;edd871f&lt;/tt&gt;&lt;/a&gt;: feat(&lt;a class=&quot;issue-link js-issue-link notranslate&quot; rel=&quot;noopener noreferrer nofollow&quot; href=&quot;https://linear.app/kubeshop/issue/TKC-6809&quot;&gt;TKC-6809&lt;/a&gt;): Track on prem license installation and validation act… (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5484177806&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubeshop/testkube/issues/8309&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubeshop/testkube/pull/8309/hovercard&quot; href=&quot;https://github.com/kubeshop/testkube/pull/8309&quot;&gt;#8309&lt;/a&gt;) (&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/Valentin-Marko/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/Valentin-Marko&quot;&gt;@Valentin-Marko&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>testkube-gitops[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/253113?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/381952060/2.13.2</id>
+    <updated>2026-09-15T01:26:02Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubeshop/testkube/releases/tag/2.13.2"/>
+    <title>2.13.2</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/kubeshop/testkube/commit/6c41bce121ddb73079a88b38dddab750ca19d598/hovercard&quot; href=&quot;https://github.com/kubeshop/testkube/commit/6c41bce121ddb73079a88b38dddab750ca19d598&quot;&gt;&lt;tt&gt;6c41bce&lt;/tt&gt;&lt;/a&gt;: fix: minio image and startup command (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5456062841&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubeshop/testkube/issues/8267&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubeshop/testkube/pull/8267/hovercard&quot; href=&quot;https://github.com/kubeshop/testkube/pull/8267&quot;&gt;#8267&lt;/a&gt;) (&lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/caiomede-tk/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/caiomede-tk&quot;&gt;@caiomede-tk&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>testkube-gitops[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/253113?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/381952060/2.14.0-rc.1</id>
+    <updated>2026-09-11T11:05:31Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubeshop/testkube/releases/tag/2.14.0-rc.1"/>
+    <title>2.14.0-rc.1</title>
+    <content type="html">&lt;p&gt;chore: release 2.14.0-rc.1&lt;/p&gt;</content>
+    <author>
+      <name>testkube-gitops[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/253113?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/381952060/2.14.0-rc.0</id>
+    <updated>2026-09-01T14:33:39Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubeshop/testkube/releases/tag/2.14.0-rc.0"/>
+    <title>2.14.0-rc.0</title>
+    <content type="html">&lt;p&gt;chore: release 2.14.0-rc.0&lt;/p&gt;</content>
+    <author>
+      <name>testkube-gitops[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/253113?s=60&amp;v=4"/>
+  </entry>
+</feed>

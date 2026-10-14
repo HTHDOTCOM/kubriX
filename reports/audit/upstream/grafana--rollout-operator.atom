@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/grafana/rollout-operator/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/grafana/rollout-operator/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/grafana/rollout-operator/releases.atom"/>
+  <title>Release notes from rollout-operator</title>
+  <updated>2026-10-01T14:40:30Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/385183546/v0.28.10</id>
+    <updated>2026-10-01T15:05:52Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/rollout-operator/releases/tag/v0.28.10"/>
+    <title>v0.28.10</title>
+    <content type="html">&lt;p&gt;Docker images: &lt;code&gt;grafana/rollout-operator:v0.28.10&lt;/code&gt; and &lt;code&gt;grafana/rollout-operator-boringcrypto:v0.28.10&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ENHANCEMENT] Update Go to &lt;code&gt;1.27&lt;/code&gt;. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5235644935&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/495&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/495/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/495&quot;&gt;#495&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Updated dependencies to resolve CVEs. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5663745224&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/518&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/518/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/518&quot;&gt;#518&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385183546/v0.40.0</id>
+    <updated>2026-09-11T08:33:25Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/rollout-operator/releases/tag/v0.40.0"/>
+    <title>v0.40.0</title>
+    <content type="html">&lt;p&gt;Docker images: &lt;code&gt;grafana/rollout-operator:v0.40.0&lt;/code&gt; and &lt;code&gt;grafana/rollout-operator-boringcrypto:v0.40.0&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[CHANGE] ZPDB cross-zone eviction delays use the Pod Ready condition&#39;s &lt;code&gt;lastTransitionTime&lt;/code&gt; instead of the &lt;code&gt;grafana.com/ready-time&lt;/code&gt; annotation, eliminating annotation PATCH requests and measuring the delay from Kubernetes readiness transitions. The &lt;code&gt;-zpdb.pod-ready-annotation-patch-timeout&lt;/code&gt; flag is deprecated, has no effect, and logs a warning when supplied. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5293544115&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/498&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/498/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/498&quot;&gt;#498&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Update Go to &lt;code&gt;1.27&lt;/code&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5235388698&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/494&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/494/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/494&quot;&gt;#494&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Updated dependencies, including: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5230352990&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/491&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/491/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/491&quot;&gt;#491&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;github.com/stretchr/testify&lt;/code&gt; from &lt;code&gt;v1.12.0&lt;/code&gt; to &lt;code&gt;v1.12.1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/api&lt;/code&gt; from &lt;code&gt;v0.36.3&lt;/code&gt; to &lt;code&gt;v0.36.4&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/apiextensions-apiserver&lt;/code&gt; from &lt;code&gt;v0.36.3&lt;/code&gt; to &lt;code&gt;v0.36.4&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/apimachinery&lt;/code&gt; from &lt;code&gt;v0.36.3&lt;/code&gt; to &lt;code&gt;v0.36.4&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/client-go&lt;/code&gt; from &lt;code&gt;v0.36.3&lt;/code&gt; to &lt;code&gt;v0.36.4&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Updated dependencies to address CVEs, including: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5318854382&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/501&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/501/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/501&quot;&gt;#501&lt;/a&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5394012110&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/502&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/502/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/502&quot;&gt;#502&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;google.golang.org/grpc&lt;/code&gt; from &lt;code&gt;v1.83.0&lt;/code&gt; to &lt;code&gt;v1.83.2&lt;/code&gt; for &lt;a title=&quot;CVE-2026-84304&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-vp52-pcj8-j9qc/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-vp52-pcj8-j9qc&quot;&gt;CVE-2026-84304&lt;/a&gt;, &lt;a title=&quot;CVE-2026-84303&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-qc2q-p7wx-3px3/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-qc2q-p7wx-3px3&quot;&gt;CVE-2026-84303&lt;/a&gt; and &lt;a title=&quot;CVE-2026-84445&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-2v4p-qf9q-27wj/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-2v4p-qf9q-27wj&quot;&gt;CVE-2026-84445&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385183546/v0.39.0</id>
+    <updated>2026-08-18T19:21:23Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/rollout-operator/releases/tag/v0.39.0"/>
+    <title>v0.39.0</title>
+    <content type="html">&lt;p&gt;Docker images: &lt;code&gt;grafana/rollout-operator:v0.39.0&lt;/code&gt; and &lt;code&gt;grafana/rollout-operator-boringcrypto:v0.39.0&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[CHANGE] Prefer &lt;code&gt;grafana.com/min-time-between-zones-downscale&lt;/code&gt; as a StatefulSet annotation instead of a label. The label remains supported as a fallback and logs a deprecation warning when used. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4934957592&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/463&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/463/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/463&quot;&gt;#463&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Use informer pod cache for eviction request ZPDB scope determination. Removes Kubernetes API call for pods not within the ZPDB. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5106761674&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/479&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/479/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/479&quot;&gt;#479&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Added the &lt;code&gt;KubernetesAPIClientRateLimited&lt;/code&gt; alert, firing when the rollout-operator has been unable to send Kubernetes API requests because its client-side rate limiter is exhausted, and the &lt;code&gt;KubernetesAPIClientApproachingRateLimit&lt;/code&gt; alert, an earlier warning firing when a component sustains over 80% of its own configured limit for an API group. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5106761674&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/479&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/479/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/479&quot;&gt;#479&lt;/a&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5147295437&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/481&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/481/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/481&quot;&gt;#481&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Added &lt;code&gt;rollout_operator_kubernetes_api_client_rate_limit_qps&lt;/code&gt;, the configured &lt;code&gt;-kubernetes.client-qps&lt;/code&gt; value, published per component only while client-side rate limiting is enabled for it. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5106761674&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/479&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/479/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/479&quot;&gt;#479&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Added &lt;code&gt;rollout_operator_admission_webhook_handler_timeout_seconds&lt;/code&gt;, the deadline imposed on each admission webhook handler&#39;s context (90% of &lt;code&gt;-server-tls.request-timeout&lt;/code&gt;), and &lt;code&gt;api_group&lt;/code&gt; and &lt;code&gt;component&lt;/code&gt; labels to &lt;code&gt;rollout_operator_kubernetes_api_client_request_duration_seconds&lt;/code&gt; and &lt;code&gt;component&lt;/code&gt; to &lt;code&gt;rollout_operator_kubernetes_api_client_rate_limited_requests_total&lt;/code&gt;, identifying which of the core controller, pod-eviction, no-downscale or prepare-downscale webhook clients a request belongs to. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5106761674&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/479&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/479/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/479&quot;&gt;#479&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Updated the rollout-operator dashboard mixin with a &quot;Kubernetes API client rate limiting&quot; row (rate limited requests, percent of requests rejected, and throughput vs. recent observed peak, all by API group and component) and a deadline threshold line on the p99 webhook latency panel. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5106761674&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/479&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/479/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/479&quot;&gt;#479&lt;/a&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5147295437&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/481&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/481/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/481&quot;&gt;#481&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] The rollout controller and the ZPDB eviction controller now share a single pod informer for the namespace, replacing two independent watches and two in-memory copies of every pod. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5107422490&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/480&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/480/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/480&quot;&gt;#480&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Updated dependencies, including: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4983682707&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/470&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/470/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/470&quot;&gt;#470&lt;/a&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5167533307&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/484&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/484/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/484&quot;&gt;#484&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;github.com/grafana/dskit&lt;/code&gt; from &lt;code&gt;v0.0.0-20260703122047-de1ec7541c44&lt;/code&gt; to &lt;code&gt;v0.0.0-20260814134254-4a836a70f745&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;github.com/prometheus/client_golang&lt;/code&gt; from &lt;code&gt;v1.23.2&lt;/code&gt; to &lt;code&gt;v1.24.1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;github.com/prometheus/common&lt;/code&gt; from &lt;code&gt;v0.70.0&lt;/code&gt; to &lt;code&gt;v0.70.1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;github.com/stretchr/testify&lt;/code&gt; from &lt;code&gt;v1.11.1&lt;/code&gt; to &lt;code&gt;v1.12.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace&lt;/code&gt; from &lt;code&gt;v0.69.0&lt;/code&gt; to &lt;code&gt;v0.70.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp&lt;/code&gt; from &lt;code&gt;v0.69.0&lt;/code&gt; to &lt;code&gt;v0.70.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go.opentelemetry.io/otel/trace&lt;/code&gt; from &lt;code&gt;v1.44.0&lt;/code&gt; to &lt;code&gt;v1.45.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go.opentelemetry.io/otel&lt;/code&gt; from &lt;code&gt;v1.44.0&lt;/code&gt; to &lt;code&gt;v1.45.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;golang.org/x/mod&lt;/code&gt; from &lt;code&gt;v0.38.0&lt;/code&gt; to &lt;code&gt;v0.40.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/api&lt;/code&gt; from &lt;code&gt;v0.36.2&lt;/code&gt; to &lt;code&gt;v0.36.3&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/apiextensions-apiserver&lt;/code&gt; from &lt;code&gt;v0.36.2&lt;/code&gt; to &lt;code&gt;v0.36.3&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/apimachinery&lt;/code&gt; from &lt;code&gt;v0.36.2&lt;/code&gt; to &lt;code&gt;v0.36.3&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/client-go&lt;/code&gt; from &lt;code&gt;v0.36.2&lt;/code&gt; to &lt;code&gt;v0.36.3&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[BUGFIX] Avoid doubling a leading &lt;code&gt;/&lt;/code&gt; when building prepare-downscale pod URLs from &lt;code&gt;grafana.com/prepare-downscale-http-path&lt;/code&gt;. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4944848903&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/468&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/468/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/468&quot;&gt;#468&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[BUGFIX] Allow a StatefulSet rollout to recover when pods from a previous failed update are stuck in an unrecoverable state (e.g. &lt;code&gt;CrashLoopBackOff&lt;/code&gt; or &lt;code&gt;ImagePullBackOff&lt;/code&gt;): outdated stuck pods are deleted even when the &lt;code&gt;rollout-max-unavailable&lt;/code&gt; budget is exhausted, since deleting an already-unavailable pod doesn&#39;t reduce availability. A subsequent Spec update can then replace them without a manual delete. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4944323306&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/466&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/466/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/466&quot;&gt;#466&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385183546/v0.28.9</id>
+    <updated>2026-08-17T20:48:39Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/rollout-operator/releases/tag/v0.28.9"/>
+    <title>v0.28.9</title>
+    <content type="html">&lt;p&gt;Docker images: &lt;code&gt;grafana/rollout-operator:v0.28.9&lt;/code&gt; and &lt;code&gt;grafana/rollout-operator-boringcrypto:v0.28.9&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ENHANCEMENT] Updated dependencies to resolve CVEs. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5173651259&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/486&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/486/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/486&quot;&gt;#486&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385183546/v0.38.1</id>
+    <updated>2026-07-15T18:41:52Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/rollout-operator/releases/tag/v0.38.1"/>
+    <title>v0.38.1</title>
+    <content type="html">&lt;p&gt;Docker images: &lt;code&gt;grafana/rollout-operator:v0.38.1&lt;/code&gt; and &lt;code&gt;grafana/rollout-operator-boringcrypto:v0.38.1&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ENHANCEMENT] Updated dependencies, including: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4609520376&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/443&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/443/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/443&quot;&gt;#443&lt;/a&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4661143899&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/447&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/447/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/447&quot;&gt;#447&lt;/a&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4819823972&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/455&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/455/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/455&quot;&gt;#455&lt;/a&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4869782066&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/457&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/457/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/457&quot;&gt;#457&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;github.com/grafana/dskit&lt;/code&gt; from &lt;code&gt;v0.0.0-20260601123808-0d4540e255b4&lt;/code&gt; to &lt;code&gt;v0.0.0-20260703122047-de1ec7541c44&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;github.com/prometheus/common&lt;/code&gt; from &lt;code&gt;v0.68.0&lt;/code&gt; to &lt;code&gt;v0.70.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;golang.org/x/mod&lt;/code&gt; from &lt;code&gt;v0.36.0&lt;/code&gt; to &lt;code&gt;v0.38.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;golang.org/x/sync&lt;/code&gt; from &lt;code&gt;v0.20.0&lt;/code&gt; to &lt;code&gt;v0.22.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/api&lt;/code&gt; from &lt;code&gt;v0.36.1&lt;/code&gt; to &lt;code&gt;v0.36.2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/apiextensions-apiserver&lt;/code&gt; from &lt;code&gt;v0.36.1&lt;/code&gt; to &lt;code&gt;v0.36.2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/apimachinery&lt;/code&gt; from &lt;code&gt;v0.36.1&lt;/code&gt; to &lt;code&gt;v0.36.2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/client-go&lt;/code&gt; from &lt;code&gt;v0.36.1&lt;/code&gt; to &lt;code&gt;v0.36.2&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385183546/v0.28.8</id>
+    <updated>2026-07-15T17:52:40Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/rollout-operator/releases/tag/v0.28.8"/>
+    <title>v0.28.8</title>
+    <content type="html">&lt;p&gt;Docker images: &lt;code&gt;grafana/rollout-operator:v0.28.8&lt;/code&gt; and &lt;code&gt;grafana/rollout-operator-boringcrypto:v0.28.8&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ENHANCEMENT] No code changes, building a new image with Go &lt;code&gt;1.26.5&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>andyasp</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/90626759?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385183546/v0.28.7</id>
+    <updated>2026-06-15T15:13:29Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/rollout-operator/releases/tag/v0.28.7"/>
+    <title>v0.28.7</title>
+    <content type="html">&lt;p&gt;Docker images: &lt;code&gt;grafana/rollout-operator:v0.28.7&lt;/code&gt; and &lt;code&gt;grafana/rollout-operator-boringcrypto:v0.28.7&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ENHANCEMENT] Updated dependencies to resolve CVEs. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4666183336&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/450&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/450/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/450&quot;&gt;#450&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>andyasp</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/90626759?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385183546/v0.38.0</id>
+    <updated>2026-06-09T10:30:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/rollout-operator/releases/tag/v0.38.0"/>
+    <title>v0.38.0</title>
+    <content type="html">&lt;p&gt;Docker images: &lt;code&gt;grafana/rollout-operator:v0.38.0&lt;/code&gt; and &lt;code&gt;grafana/rollout-operator-boringcrypto:v0.38.0&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[CHANGE] Client-side rate limiting to the Kubernetes API is now enforced with an independent token bucket per API group (e.g. &lt;code&gt;core/v1&lt;/code&gt;, &lt;code&gt;apps/v1&lt;/code&gt;, &lt;code&gt;policy/v1&lt;/code&gt;), and each admission webhook gets its own dedicated client so an overloaded webhook cannot throttle the others or the core controller. As a result, the meaning of &lt;code&gt;-kubernetes.client-qps=0&lt;/code&gt; changed: it previously fell back to the client-go default (~5 QPS / 10 burst per API group), but now disables client-side rate limiting entirely. The defaults of &lt;code&gt;-kubernetes.client-qps&lt;/code&gt; (now &lt;code&gt;5&lt;/code&gt;) and &lt;code&gt;-kubernetes.client-burst&lt;/code&gt; (now &lt;code&gt;10&lt;/code&gt;) preserve the previous effective throttling. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4588597063&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/441&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/441/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/441&quot;&gt;#441&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Added &lt;code&gt;-server-tls.request-timeout&lt;/code&gt; to configure the request timeout of the TLS server that serves the admission webhooks (used as the read and write timeouts). Defaults to &lt;code&gt;10s&lt;/code&gt;, matching the previous hardcoded value. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4588597063&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/441&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/441/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/441&quot;&gt;#441&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Added &lt;code&gt;-pods.client-timeout&lt;/code&gt; to configure the timeout of HTTP requests issued directly to pod endpoints (e.g. prepare-downscale). Defaults to &lt;code&gt;5s&lt;/code&gt;, matching the previous hardcoded value. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4588597063&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/441&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/441/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/441&quot;&gt;#441&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[BUGFIX] Admission webhook handlers now run under a context deadline (90% of &lt;code&gt;-server-tls.request-timeout&lt;/code&gt;). Without it, a burst of concurrent webhook requests (e.g. pod evictions during node draining) on the deadline-less webhook request contexts drove the client-side rate limiter&#39;s token-bucket reservation timeline to run away and stall, so the rollout-operator&#39;s Kubernetes API requests collapsed to near-zero throughput and webhooks failed with &lt;code&gt;context canceled&lt;/code&gt;. The deadline also cancels in-flight Kubernetes API calls when it elapses. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4588597063&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/441&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/441/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/441&quot;&gt;#441&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Updated dependencies, including: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4559811202&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/439&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/439/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/439&quot;&gt;#439&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;github.com/grafana/dskit&lt;/code&gt; from &lt;code&gt;v0.0.0-20260505171221-7f6e6a43e255&lt;/code&gt; to &lt;code&gt;v0.0.0-20260601123808-0d4540e255b4&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;github.com/prometheus/common&lt;/code&gt; from &lt;code&gt;v0.67.5&lt;/code&gt; to &lt;code&gt;v0.68.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace&lt;/code&gt; from &lt;code&gt;v0.68.0&lt;/code&gt; to &lt;code&gt;v0.69.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp&lt;/code&gt; from &lt;code&gt;v0.68.0&lt;/code&gt; to &lt;code&gt;v0.69.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go.opentelemetry.io/otel/trace&lt;/code&gt; from &lt;code&gt;v1.43.0&lt;/code&gt; to &lt;code&gt;v1.44.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go.opentelemetry.io/otel&lt;/code&gt; from &lt;code&gt;v1.43.0&lt;/code&gt; to &lt;code&gt;v1.44.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;golang.org/x/mod&lt;/code&gt; from &lt;code&gt;v0.35.0&lt;/code&gt; to &lt;code&gt;v0.36.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/api&lt;/code&gt; from &lt;code&gt;v0.36.0&lt;/code&gt; to &lt;code&gt;v0.36.1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/apiextensions-apiserver&lt;/code&gt; from &lt;code&gt;v0.36.0&lt;/code&gt; to &lt;code&gt;v0.36.1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/apimachinery&lt;/code&gt; from &lt;code&gt;v0.36.0&lt;/code&gt; to &lt;code&gt;v0.36.1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/client-go&lt;/code&gt; from &lt;code&gt;v0.36.0&lt;/code&gt; to &lt;code&gt;v0.36.1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sigs.k8s.io/controller-runtime&lt;/code&gt; from &lt;code&gt;v0.24.0&lt;/code&gt; to &lt;code&gt;v0.24.1&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385183546/v0.37.0</id>
+    <updated>2026-05-14T03:08:13Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/rollout-operator/releases/tag/v0.37.0"/>
+    <title>v0.37.0</title>
+    <content type="html">&lt;p&gt;Docker images: &lt;code&gt;grafana/rollout-operator:v0.37.0&lt;/code&gt; and &lt;code&gt;grafana/rollout-operator-boringcrypto:v0.37.0&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ENHANCEMENT] Add support for zone-aware PDB to enforce a fixed delay between evictions within the same partition. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4294155973&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/422&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/422/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/422&quot;&gt;#422&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385183546/v0.36.2</id>
+    <updated>2026-05-12T18:28:50Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/rollout-operator/releases/tag/v0.36.2"/>
+    <title>v0.36.2</title>
+    <content type="html">&lt;p&gt;Docker images: &lt;code&gt;grafana/rollout-operator:v0.36.2&lt;/code&gt; and &lt;code&gt;grafana/rollout-operator-boringcrypto:v0.36.2&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[ENHANCEMENT] Updated dependencies, including: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4209103482&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/411&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/411/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/411&quot;&gt;#411&lt;/a&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4250778133&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/417&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/417/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/417&quot;&gt;#417&lt;/a&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4292680527&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/420&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/420/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/420&quot;&gt;#420&lt;/a&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4332668754&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/423&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/423/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/423&quot;&gt;#423&lt;/a&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4373632974&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/rollout-operator/issues/426&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/rollout-operator/pull/426/hovercard&quot; href=&quot;https://github.com/grafana/rollout-operator/pull/426&quot;&gt;#426&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;github.com/grafana/dskit&lt;/code&gt; from &lt;code&gt;v0.0.0-20260331143437-59c9c0f93cdd&lt;/code&gt; to &lt;code&gt;v0.0.0-20260505171221-7f6e6a43e255&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace&lt;/code&gt; from &lt;code&gt;v0.67.0&lt;/code&gt; to &lt;code&gt;v0.68.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp&lt;/code&gt; from &lt;code&gt;v0.67.0&lt;/code&gt; to &lt;code&gt;v0.68.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go.opentelemetry.io/otel/trace&lt;/code&gt; from &lt;code&gt;v1.42.0&lt;/code&gt; to &lt;code&gt;v1.43.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go.opentelemetry.io/otel&lt;/code&gt; from &lt;code&gt;v1.42.0&lt;/code&gt; to &lt;code&gt;v1.43.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;golang.org/x/mod&lt;/code&gt; from &lt;code&gt;v0.34.0&lt;/code&gt; to &lt;code&gt;v0.35.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/api&lt;/code&gt; from &lt;code&gt;v0.35.3&lt;/code&gt; to &lt;code&gt;v0.36.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/apiextensions-apiserver&lt;/code&gt; from &lt;code&gt;v0.35.3&lt;/code&gt; to &lt;code&gt;v0.36.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/apimachinery&lt;/code&gt; from &lt;code&gt;v0.35.3&lt;/code&gt; to &lt;code&gt;v0.36.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;k8s.io/client-go&lt;/code&gt; from &lt;code&gt;v0.35.3&lt;/code&gt; to &lt;code&gt;v0.36.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sigs.k8s.io/controller-runtime&lt;/code&gt; from &lt;code&gt;v0.23.3&lt;/code&gt; to &lt;code&gt;v0.24.0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+</feed>

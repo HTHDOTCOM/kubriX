@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/grafana/loki/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/grafana/loki/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/grafana/loki/releases.atom"/>
+  <title>Release notes from loki</title>
+  <updated>2026-10-07T14:20:22Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/129717717/operator/v0.12.0</id>
+    <updated>2026-10-07T17:51:23Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/loki/releases/tag/operator%2Fv0.12.0"/>
+    <title>operator: v0.12.0</title>
+    <content type="html">&lt;h2&gt;&lt;a href=&quot;https://github.com/grafana/loki/compare/operator/v0.11.0...operator/v0.12.0&quot;&gt;0.12.0&lt;/a&gt; (2026-10-07)&lt;/h2&gt;
+&lt;h3&gt;⚠ BREAKING CHANGES&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Make schemas field required in storage spec (&lt;a href=&quot;https://github.com/grafana/loki/issues/24716&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24716/hovercard&quot;&gt;#24716&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Add CPU and memory utilization ratio telemetry recording rules (&lt;a href=&quot;https://github.com/grafana/loki/issues/23379&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23379/hovercard&quot;&gt;#23379&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/4cc1c43ebcce6ddb9daa9c2790def321aa292118&quot;&gt;4cc1c43&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Add support for full TLS compliance for OCP 5.0 (&lt;a href=&quot;https://github.com/grafana/loki/issues/24216&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24216/hovercard&quot;&gt;#24216&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/8ce415aed5014313ea1b735ac38ec8410c522664&quot;&gt;8ce415a&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Allow removal of expired schemas based on retention period (&lt;a href=&quot;https://github.com/grafana/loki/issues/24456&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24456/hovercard&quot;&gt;#24456&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/16446f87a3210d8db1836017b42e4a539e51403a&quot;&gt;16446f8&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Enable flush_on_shutdown and increase ingester terminationGracePeriodSeconds (&lt;a href=&quot;https://github.com/grafana/loki/issues/24325&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24325/hovercard&quot;&gt;#24325&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/90c3797d8dfa463d0d6d7520e4f8d0d677a2467a&quot;&gt;90c3797&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Make schemas field required in storage spec (&lt;a href=&quot;https://github.com/grafana/loki/issues/24716&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24716/hovercard&quot;&gt;#24716&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/071148c19bc6051c6b2a7ec0027b54f893ea3275&quot;&gt;071148c&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Update Loki operand to 3.7.7 (&lt;a href=&quot;https://github.com/grafana/loki/issues/24448&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24448/hovercard&quot;&gt;#24448&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/04417f4851c5bf0bf826130242f2e083be516de9&quot;&gt;04417f4&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Update Loki operand to 3.7.8 (&lt;a href=&quot;https://github.com/grafana/loki/issues/24743&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24743/hovercard&quot;&gt;#24743&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/f1f1b23ee27717f2f753abab323086a4eb524bd4&quot;&gt;f1f1b23&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Align built-in certificate rotation defaults with OpenShift cert alert threshold (&lt;a href=&quot;https://github.com/grafana/loki/issues/24106&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24106/hovercard&quot;&gt;#24106&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/32d3196e508634630ab41a156de530231cce3480&quot;&gt;32d3196&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Downgrade golangci-lint to Go 1.26 (&lt;a href=&quot;https://github.com/grafana/loki/issues/24840&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24840/hovercard&quot;&gt;#24840&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/7ba6f556340ded0e1d1f44af9816b3e494b1e6fa&quot;&gt;7ba6f55&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Fix Go module and golangci-lint configuration (&lt;a href=&quot;https://github.com/grafana/loki/issues/24346&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24346/hovercard&quot;&gt;#24346&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/101e8c4fece33f496e086f6369d738980aeba014&quot;&gt;101e8c4&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Migrate golangci-lint to use go tool instead of bingo (&lt;a href=&quot;https://github.com/grafana/loki/issues/24823&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24823/hovercard&quot;&gt;#24823&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/aa902b4bd044c8a1b395ab0f9aa1590a3b668621&quot;&gt;aa902b4&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Set ingester terminationGracePeriodSeconds to 300s (&lt;a href=&quot;https://github.com/grafana/loki/issues/24324&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24324/hovercard&quot;&gt;#24324&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/c0e79ac4191f6171d16abdf779a5456d2b49e6dd&quot;&gt;c0e79ac&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Update golangci-lint and add note for formatting conflict (&lt;a href=&quot;https://github.com/grafana/loki/issues/24537&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24537/hovercard&quot;&gt;#24537&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/97d4cc7f3f0c05639f1823004cc5a6e351149f72&quot;&gt;97d4cc7&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Use explicit command for passthrough-gateway (&lt;a href=&quot;https://github.com/grafana/loki/issues/24854&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24854/hovercard&quot;&gt;#24854&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/c376aea05c6556c0a8c8eae08f6fd0fec72b3b1f&quot;&gt;c376aea&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Validate passthrough gateway CA exists (&lt;a href=&quot;https://github.com/grafana/loki/issues/23800&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23800/hovercard&quot;&gt;#23800&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/4e3fb3853420f9b4794e8697f70e40ebc775959d&quot;&gt;4e3fb38&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/HIGH/operator:&lt;/strong&gt; Update module google.golang.org/grpc to v1.83.1 [SECURITY] (main) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24326&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24326/hovercard&quot;&gt;#24326&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/e9831eedac3f76a4eaee7c2929c07db520e7baee&quot;&gt;e9831ee&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/HIGH/operator:&lt;/strong&gt; Update module google.golang.org/grpc to v1.83.2 [SECURITY] (main) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24427&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24427/hovercard&quot;&gt;#24427&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/89c21becce99c9c4ca3da18beefe57599b4fb8bd&quot;&gt;89c21be&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/MEDIUM/operator/api/loki:&lt;/strong&gt; Update module golang.org/x/net to v0.55.0 [SECURITY] (main) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24597&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24597/hovercard&quot;&gt;#24597&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/c19e9bba94e537e443683ef88dc19df4ca7f386f&quot;&gt;c19e9bb&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/operator/api/loki:&lt;/strong&gt; Update module golang.org/x/net to v0.56.0 [SECURITY] (main) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24862&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24862/hovercard&quot;&gt;#24862&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/f63d38a712f2dbb5086a2702f107f138aaf2af73&quot;&gt;f63d38a&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/operator/api/loki:&lt;/strong&gt; Update module golang.org/x/text to v0.39.0 [SECURITY] (main) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24863&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24863/hovercard&quot;&gt;#24863&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/db962a4f2baf6e3f619a068cc51f642e906c4c0e&quot;&gt;db962a4&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/operator:&lt;/strong&gt; Update module go.etcd.io/etcd/client/pkg/v3 to v3.6.14 [SECURITY] (main) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24059&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24059/hovercard&quot;&gt;#24059&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/a912e03797de6827ed83c249e84f3d41c46cbcec&quot;&gt;a912e03&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/operator:&lt;/strong&gt; Update module go.etcd.io/etcd/client/pkg/v3 to v3.7.1 [SECURITY] (main) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24640&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24640/hovercard&quot;&gt;#24640&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/9211272117a8f69b2c3c5edf68f7bab5d76fa509&quot;&gt;9211272&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/operator:&lt;/strong&gt; Update module golang.org/x/crypto to v0.56.0 [SECURITY] (main) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24334&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24334/hovercard&quot;&gt;#24334&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/185e3aea0ece2810dba04591b01575dd1263b005&quot;&gt;185e3ae&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>loki-gh-app[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7195757?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/129717717/v3.7.8</id>
+    <updated>2026-09-17T15:51:10Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/loki/releases/tag/v3.7.8"/>
+    <title>v3.7.8</title>
+    <content type="html">&lt;h2&gt;&lt;a href=&quot;https://github.com/grafana/loki/compare/v3.7.7...v3.7.8&quot;&gt;3.7.8&lt;/a&gt; (2026-09-17)&lt;/h2&gt;
+&lt;h3&gt;Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;security/HIGH/pkg/push:&lt;/strong&gt; Update module google.golang.org/grpc to v1.83.2 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24433&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24433/hovercard&quot;&gt;#24433&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/4d5dc2b69863c155d29c2125f66f31f09166035a&quot;&gt;4d5dc2b&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/HIGH/:&lt;/strong&gt; Update module google.golang.org/grpc to v1.83.1 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24328&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24328/hovercard&quot;&gt;#24328&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/0a01797da781f4d715d48028ff45a63fc273cd6b&quot;&gt;0a01797&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/HIGH/:&lt;/strong&gt; Update module google.golang.org/grpc to v1.83.2 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24429&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24429/hovercard&quot;&gt;#24429&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/14b5da8339b001e765cb60c0cc15eaf44fb69fbd&quot;&gt;14b5da8&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/MEDIUM/:&lt;/strong&gt; Update module github.com/containerd/containerd/v2 to v2.2.8 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24460&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24460/hovercard&quot;&gt;#24460&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/3e917f2086d97438017c3acae392a58799aa4198&quot;&gt;3e917f2&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/pkg/push:&lt;/strong&gt; Update module golang.org/x/net to v0.56.0 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/23422&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23422/hovercard&quot;&gt;#23422&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/41064da6e4c696b548d7a1dbb4e279d241c744f5&quot;&gt;41064da&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/pkg/push:&lt;/strong&gt; Update module google.golang.org/grpc to v1.83.1 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/23416&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23416/hovercard&quot;&gt;#23416&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/cd8e76da123e93756448a2f8d56f94a9a86d7346&quot;&gt;cd8e76d&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/:&lt;/strong&gt; Update module golang.org/x/crypto to v0.56.0 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24335&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24335/hovercard&quot;&gt;#24335&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/47149cbb5c76384ee1599e2df82ad3e0cba5a824&quot;&gt;47149cb&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>loki-gh-app[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7195757?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/129717717/v3.6.17</id>
+    <updated>2026-09-17T11:41:38Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/loki/releases/tag/v3.6.17"/>
+    <title>v3.6.17</title>
+    <content type="html">&lt;h2&gt;&lt;a href=&quot;https://github.com/grafana/loki/compare/v3.6.16...v3.6.17&quot;&gt;3.6.17&lt;/a&gt; (2026-09-09)&lt;/h2&gt;
+&lt;h3&gt;Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;security/HIGH/pkg/push:&lt;/strong&gt; Update module google.golang.org/grpc to v1.83.1 [SECURITY] (release-3.6.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24330&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24330/hovercard&quot;&gt;#24330&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/d8d78f6e86d80942b3b9438777c4bf324cae1184&quot;&gt;d8d78f6&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/HIGH/pkg/push:&lt;/strong&gt; Update module google.golang.org/grpc to v1.83.2 [SECURITY] (release-3.6.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24444&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24444/hovercard&quot;&gt;#24444&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/6d21d6b0a32cef7cd7e6599219d56745d065bbba&quot;&gt;6d21d6b&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/HIGH/:&lt;/strong&gt; Update module google.golang.org/grpc to v1.83.1 [SECURITY] (release-3.6.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24329&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24329/hovercard&quot;&gt;#24329&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/ed9df58cc7ca6c76178f0f707c7dd53d5a20a6d0&quot;&gt;ed9df58&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/HIGH/:&lt;/strong&gt; Update module google.golang.org/grpc to v1.83.2 [SECURITY] (release-3.6.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24430&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24430/hovercard&quot;&gt;#24430&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/ee0ef56505bfd4a95da450a36235a53ca1c94aad&quot;&gt;ee0ef56&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/MEDIUM/:&lt;/strong&gt; Update module github.com/containerd/containerd/v2 to v2.0.12 [SECURITY] (release-3.6.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24461&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24461/hovercard&quot;&gt;#24461&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/7fa1224d9f01d83656dc4754456a727b7fb572a0&quot;&gt;7fa1224&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/:&lt;/strong&gt; Update module golang.org/x/crypto to v0.55.0 [SECURITY] (release-3.6.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24256&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24256/hovercard&quot;&gt;#24256&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/85b2d4fb134fe97e51ea6ef25e8da999d732bb8d&quot;&gt;85b2d4f&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/:&lt;/strong&gt; Update module golang.org/x/crypto to v0.56.0 [SECURITY] (release-3.6.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24336&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24336/hovercard&quot;&gt;#24336&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/57bc92283c01e1eba7744e111c881459a4c11e49&quot;&gt;57bc922&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/:&lt;/strong&gt; Update module golang.org/x/mod to v0.40.0 [SECURITY] (release-3.6.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/23963&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23963/hovercard&quot;&gt;#23963&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/c08bf30195ba8e59a4b79729ad79fd634fdc5b70&quot;&gt;c08bf30&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>loki-gh-app[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7195757?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/129717717/v3.7.7</id>
+    <updated>2026-08-27T20:20:03Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/loki/releases/tag/v3.7.7"/>
+    <title>v3.7.7</title>
+    <content type="html">&lt;h2&gt;&lt;a href=&quot;https://github.com/grafana/loki/compare/v3.7.6...v3.7.7&quot;&gt;3.7.7&lt;/a&gt; (2026-08-27)&lt;/h2&gt;
+&lt;h3&gt;Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add flag to ignore missing chunks during deletion of logs with line filter [release-3.7.x] (&lt;a href=&quot;https://github.com/grafana/loki/issues/24233&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24233/hovercard&quot;&gt;#24233&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/7a40404f32b3e6464c9cfc6cc7dd75a40f3931da&quot;&gt;7a40404&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/:&lt;/strong&gt; Update module github.com/containerd/containerd/v2 to v2.2.5 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24097&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24097/hovercard&quot;&gt;#24097&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/07cd1f0a43d5f742525249aa21f0e47b9d51c4ff&quot;&gt;07cd1f0&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/:&lt;/strong&gt; Update module go.etcd.io/etcd/client/pkg/v3 to v3.6.14 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24061&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24061/hovercard&quot;&gt;#24061&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/9d1c9ee0164c020f8125046a7a9d67986c59320b&quot;&gt;9d1c9ee&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/:&lt;/strong&gt; Update module golang.org/x/mod to v0.40.0 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/23962&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23962/hovercard&quot;&gt;#23962&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/1d5e027b64370c19abf1495928fd0b89363680d7&quot;&gt;1d5e027&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;storage:&lt;/strong&gt; Pre-compute SHA-256 to avoid aws-chunked on PutObject [release-3.7.x] (&lt;a href=&quot;https://github.com/grafana/loki/issues/24215&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24215/hovercard&quot;&gt;#24215&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/3d6f245b74c52841e8e2ccc6e7883962bfdec7c0&quot;&gt;3d6f245&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>loki-gh-app[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7195757?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/129717717/v3.6.16</id>
+    <updated>2026-08-27T21:54:42Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/loki/releases/tag/v3.6.16"/>
+    <title>v3.6.16</title>
+    <content type="html">&lt;h2&gt;&lt;a href=&quot;https://github.com/grafana/loki/compare/v3.6.15...v3.6.16&quot;&gt;3.6.16&lt;/a&gt; (2026-08-27)&lt;/h2&gt;
+&lt;h3&gt;Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add flag to ignore missing chunks during deletion of logs with line filter [release-3.6.x] (&lt;a href=&quot;https://github.com/grafana/loki/issues/24232&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24232/hovercard&quot;&gt;#24232&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/b87159fa8cd7f93e2445e48e0c0409b403e56db7&quot;&gt;b87159f&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/:&lt;/strong&gt; Update module go.etcd.io/etcd/client/pkg/v3 to v3.5.33 [SECURITY] (release-3.6.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/24062&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24062/hovercard&quot;&gt;#24062&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/bf4b3670ff3e2eb9f29183d6dfb4d729b83f62ec&quot;&gt;bf4b367&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;storage:&lt;/strong&gt; Pre-compute SHA-256 to avoid aws-chunked on PutObject [release-3.6.x] (&lt;a href=&quot;https://github.com/grafana/loki/issues/24214&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24214/hovercard&quot;&gt;#24214&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/0a29895fe461acbf848376a451896d9f8a542b3d&quot;&gt;0a29895&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>loki-gh-app[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7195757?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/129717717/operator/v0.11.0</id>
+    <updated>2026-08-18T15:48:41Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/loki/releases/tag/operator%2Fv0.11.0"/>
+    <title>operator: v0.11.0</title>
+    <content type="html">&lt;h2&gt;&lt;a href=&quot;https://github.com/grafana/loki/compare/operator/v0.10.2...operator/v0.11.0&quot;&gt;0.11.0&lt;/a&gt; (2026-08-18)&lt;/h2&gt;
+&lt;h3&gt;⚠ BREAKING CHANGES&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove support for experimental LogQL variants() queries (&lt;a href=&quot;https://github.com/grafana/loki/issues/23823&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23823/hovercard&quot;&gt;#23823&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Enable multi-variant queries (&lt;a href=&quot;https://github.com/grafana/loki/issues/21009&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/21009/hovercard&quot;&gt;#21009&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/709e3184fc7966bc6b8eb8ca661b6b080c1c6e17&quot;&gt;709e318&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Support private VPC S3 endpoints in endpoint validation (&lt;a href=&quot;https://github.com/grafana/loki/issues/22395&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/22395/hovercard&quot;&gt;#22395&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/394caeff2f6c8e55dca4be01bc960ac287fbfcb9&quot;&gt;394caef&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Watch object storage Services for NetworkPolicy updates and surface ports in status (&lt;a href=&quot;https://github.com/grafana/loki/issues/22436&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/22436/hovercard&quot;&gt;#22436&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/12822d51087550f56feca44a0f9f1ae4807c2c7e&quot;&gt;12822d5&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove support for experimental LogQL variants() queries (&lt;a href=&quot;https://github.com/grafana/loki/issues/23823&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23823/hovercard&quot;&gt;#23823&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/132e5f9cce287101a4b813564f1d6b79484b9f02&quot;&gt;132e5f9&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Move telemetry recording rules to OpenShift bundle (&lt;a href=&quot;https://github.com/grafana/loki/issues/22814&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/22814/hovercard&quot;&gt;#22814&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/4632368c7e4677191d70543cf41a8571d6eb67e3&quot;&gt;4632368&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Release leader lease on shutdown so upgrades are faster (&lt;a href=&quot;https://github.com/grafana/loki/issues/24042&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/24042/hovercard&quot;&gt;#24042&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/ee0d59d92d92a1939593e41ddd6aa704b49b592c&quot;&gt;ee0d59d&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;operator:&lt;/strong&gt; Use ruler remote_write clients key instead of deprecated client (&lt;a href=&quot;https://github.com/grafana/loki/issues/23455&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23455/hovercard&quot;&gt;#23455&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/f5ddb02f41478900198178fdb25e67a095a726b9&quot;&gt;f5ddb02&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/operator:&lt;/strong&gt; Update module github.com/klauspost/compress to v1.18.7 [SECURITY] (main) (&lt;a href=&quot;https://github.com/grafana/loki/issues/23608&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23608/hovercard&quot;&gt;#23608&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/e1e4e0e4cad5c3e8a0fa40246a1fdfd6988d3fd6&quot;&gt;e1e4e0e&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/operator:&lt;/strong&gt; Update module golang.org/x/net to v0.56.0 [SECURITY] (main) (&lt;a href=&quot;https://github.com/grafana/loki/issues/23388&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23388/hovercard&quot;&gt;#23388&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/9362a5ebdc5cbbc6dc74ef45bda15ca1fa226556&quot;&gt;9362a5e&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/operator:&lt;/strong&gt; Update module golang.org/x/text to v0.39.0 [SECURITY] (main) (&lt;a href=&quot;https://github.com/grafana/loki/issues/23389&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23389/hovercard&quot;&gt;#23389&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/50589e15a35f01b5ca1da99080d2b0fa054cab9b&quot;&gt;50589e1&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>loki-gh-app[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7195757?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/129717717/helm-loki-7.3.0</id>
+    <updated>2026-08-10T16:21:29Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/loki/releases/tag/helm-loki-7.3.0"/>
+    <title>helm-loki-7.3.0</title>
+    <content type="html">&lt;p&gt;chore: Remove dead code RequestParserWrapper from distributors (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5103920611&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/loki/issues/23867&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23867/hovercard&quot; href=&quot;https://github.com/grafana/loki/pull/23867&quot;&gt;#23867&lt;/a&gt;)&lt;/p&gt;</content>
+    <author>
+      <name>grobinson-grafana</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/85952834?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/129717717/v3.7.6</id>
+    <updated>2026-08-06T09:42:29Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/loki/releases/tag/v3.7.6"/>
+    <title>v3.7.6</title>
+    <content type="html">&lt;h2&gt;&lt;a href=&quot;https://github.com/grafana/loki/compare/v3.7.5...v3.7.6&quot;&gt;3.7.6&lt;/a&gt; (2026-08-05)&lt;/h2&gt;
+&lt;h3&gt;Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;queryrange:&lt;/strong&gt; Preserve sketch in MergeLabels [release-3.7.x] (&lt;a href=&quot;https://github.com/grafana/loki/issues/23770&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23770/hovercard&quot;&gt;#23770&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/d48329d090320f668cd8bd7ecd636d3dc0e664d2&quot;&gt;d48329d&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>loki-gh-app[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7195757?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/129717717/v3.7.5</id>
+    <updated>2026-08-05T03:41:08Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/loki/releases/tag/v3.7.5"/>
+    <title>v3.7.5</title>
+    <content type="html">&lt;h2&gt;&lt;a href=&quot;https://github.com/grafana/loki/compare/v3.7.4...v3.7.5&quot;&gt;3.7.5&lt;/a&gt; (2026-08-05)&lt;/h2&gt;
+&lt;h3&gt;Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Build deb/rpm packages again in the release workflow (&lt;a href=&quot;https://github.com/grafana/loki/issues/23598&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23598/hovercard&quot;&gt;#23598&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/6f4927210024a9e5496fbc760837bf2fd7dbf5f1&quot;&gt;6f49272&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ci:&lt;/strong&gt; Disable docker plugin publishing on release-3.7.x (&lt;a href=&quot;https://github.com/grafana/loki/issues/23440&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23440/hovercard&quot;&gt;#23440&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/6095f71eeba604627fbc08a4e87ed315c38d7b07&quot;&gt;6095f71&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ingester:&lt;/strong&gt; Fix flush race in ingester [release-3.7.x] (&lt;a href=&quot;https://github.com/grafana/loki/issues/23682&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23682/hovercard&quot;&gt;#23682&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/ff152dc114a5adad5fbc797e3c8af43b97c0b920&quot;&gt;ff152dc&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/cmd/chunks-inspect:&lt;/strong&gt; Update module github.com/klauspost/compress to v1.18.7 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/23611&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23611/hovercard&quot;&gt;#23611&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/11c4b29fef7483c40649f65bccf01e1cca2b42bd&quot;&gt;11c4b29&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/cmd/dataobj-inspect:&lt;/strong&gt; Update module github.com/klauspost/compress to v1.18.7 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/23612&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23612/hovercard&quot;&gt;#23612&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/1e3108ecf15de374fb292f81a775b6812ffc46c3&quot;&gt;1e3108e&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/cmd/dataobj-inspect:&lt;/strong&gt; Update module go.opentelemetry.io/otel to v1.42.0 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/23518&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23518/hovercard&quot;&gt;#23518&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/28917d3828aae7f3150c5c1a8965467521c6a70f&quot;&gt;28917d3&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/cmd/dataobj-inspect:&lt;/strong&gt; Update module golang.org/x/text to v0.39.0 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/23419&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23419/hovercard&quot;&gt;#23419&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/5d2b9d4faa9b291101ee446156829932eae685c0&quot;&gt;5d2b9d4&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/operator:&lt;/strong&gt; Update module github.com/klauspost/compress to v1.18.7 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/23613&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23613/hovercard&quot;&gt;#23613&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/8d71c59de908c1868cbffa2ceb5d26b7a8cb7f51&quot;&gt;8d71c59&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/:&lt;/strong&gt; Update module github.com/klauspost/compress to v1.18.7 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/23610&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23610/hovercard&quot;&gt;#23610&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/941b5575c1b0e26626db924258ea3bbd8ccd47f6&quot;&gt;941b557&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/:&lt;/strong&gt; Update module golang.org/x/text to v0.39.0 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/23418&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23418/hovercard&quot;&gt;#23418&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/2347a9a50f8272f849af07f88d6269f9e8af9988&quot;&gt;2347a9a&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;security/UNKNOWN/:&lt;/strong&gt; Update module google.golang.org/grpc to v1.82.1 [SECURITY] (release-3.7.x) (&lt;a href=&quot;https://github.com/grafana/loki/issues/23405&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23405/hovercard&quot;&gt;#23405&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/f290af0357a9162ab9bb8209ac4dd2426e17a36a&quot;&gt;f290af0&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>loki-gh-app[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7195757?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/129717717/v3.6.15</id>
+    <updated>2026-08-06T09:59:23Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/loki/releases/tag/v3.6.15"/>
+    <title>v3.6.15</title>
+    <content type="html">&lt;h2&gt;&lt;a href=&quot;https://github.com/grafana/loki/compare/v3.6.14...v3.6.15&quot;&gt;3.6.15&lt;/a&gt; (2026-08-05)&lt;/h2&gt;
+&lt;h3&gt;Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;queryrange:&lt;/strong&gt; Preserve sketch in MergeLabels [release-3.6.x] (&lt;a href=&quot;https://github.com/grafana/loki/issues/23771&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/loki/pull/23771/hovercard&quot;&gt;#23771&lt;/a&gt;) (&lt;a href=&quot;https://github.com/grafana/loki/commit/20087cd091329dc7184b51cfedf5ab330a21795e&quot;&gt;20087cd&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>loki-gh-app[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7195757?s=60&amp;v=4"/>
+  </entry>
+</feed>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/jkroepke/access-log-exporter/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/jkroepke/access-log-exporter/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/jkroepke/access-log-exporter/releases.atom"/>
+  <title>Release notes from access-log-exporter</title>
+  <updated>2026-10-08T23:30:58Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/1036171483/v0.4.22</id>
+    <updated>2026-10-08T23:40:14Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/jkroepke/access-log-exporter/releases/tag/v0.4.22"/>
+    <title>v0.4.22</title>
+    <content type="html">
+&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;h3&gt;🛠️ Dependencies&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fix(deps): update all go dependencies by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/renovate/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/renovate&quot;&gt;@renovate&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5770361956&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/312&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/312/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/312&quot;&gt;#312&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(deps): update go test dependencies by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/renovate/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/renovate&quot;&gt;@renovate&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5770360524&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/311&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/311/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/311&quot;&gt;#311&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/compare/v0.4.21...v0.4.22&quot;&gt;&lt;tt&gt;v0.4.21...v0.4.22&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1036171483/v0.4.21</id>
+    <updated>2026-09-27T09:44:23Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/jkroepke/access-log-exporter/releases/tag/v0.4.21"/>
+    <title>v0.4.21</title>
+    <content type="html">
+&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;h3&gt;🐞 Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: parse syslog headers structurally by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5601388950&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/306&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/306/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/306&quot;&gt;#306&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: reject non-finite metric values by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5601395229&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/307&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/307/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/307&quot;&gt;#307&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/compare/v0.4.20...v0.4.21&quot;&gt;&lt;tt&gt;v0.4.20...v0.4.21&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1036171483/v0.4.20</id>
+    <updated>2026-09-27T09:38:15Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/jkroepke/access-log-exporter/releases/tag/v0.4.20"/>
+    <title>v0.4.20</title>
+    <content type="html">
+&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;h3&gt;🐞 Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: coalesce concurrent nginx scrapes by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5601409876&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/308&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/308/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/308&quot;&gt;#308&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/compare/v0.4.19...v0.4.20&quot;&gt;&lt;tt&gt;v0.4.19...v0.4.20&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1036171483/v0.4.19</id>
+    <updated>2026-09-27T09:34:32Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/jkroepke/access-log-exporter/releases/tag/v0.4.19"/>
+    <title>v0.4.19</title>
+    <content type="html">
+&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;h3&gt;🐞 Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: drain syslog buffer on shutdown by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5601347616&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/299&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/299/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/299&quot;&gt;#299&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: use SIGHUP for systemd reload by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5601349916&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/300&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/300/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/300&quot;&gt;#300&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: correct package license metadata by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5601354930&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/302&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/302/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/302&quot;&gt;#302&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: make string replacements exact by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5601363351&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/303&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/303/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/303&quot;&gt;#303&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: record syslog receive timestamp by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5601377123&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/305&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/305/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/305&quot;&gt;#305&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;📖 Documentation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;docs: correct syslog transport support by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5601353251&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/301&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/301/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/301&quot;&gt;#301&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs: document custom gauge metrics by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5601367265&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/304&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/304/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/304&quot;&gt;#304&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/compare/v0.4.18...v0.4.19&quot;&gt;&lt;tt&gt;v0.4.18...v0.4.19&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1036171483/v0.4.18</id>
+    <updated>2026-09-27T08:15:53Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/jkroepke/access-log-exporter/releases/tag/v0.4.18"/>
+    <title>v0.4.18</title>
+    <content type="html">
+&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;h3&gt;🐞 Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: preserve container working directory by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5600851983&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/298&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/298/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/298&quot;&gt;#298&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;🛠️ Dependencies&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;chore(deps): update module github.com/klauspost/compress to v1.20.1 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/renovate/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/renovate&quot;&gt;@renovate&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5584459856&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/297&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/297/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/297&quot;&gt;#297&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/compare/v0.4.17...v0.4.18&quot;&gt;&lt;tt&gt;v0.4.17...v0.4.18&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1036171483/v0.4.17</id>
+    <updated>2026-09-19T19:04:54Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/jkroepke/access-log-exporter/releases/tag/v0.4.17"/>
+    <title>v0.4.17</title>
+    <content type="html">
+&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;h3&gt;🐞 Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: validate configuration semantics by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5511763949&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/294&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/294/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/294&quot;&gt;#294&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/compare/v0.4.16...v0.4.17&quot;&gt;&lt;tt&gt;v0.4.16...v0.4.17&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1036171483/v0.4.16</id>
+    <updated>2026-09-19T17:56:19Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/jkroepke/access-log-exporter/releases/tag/v0.4.16"/>
+    <title>v0.4.16</title>
+    <content type="html">
+&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;h3&gt;🐞 Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: validate CONFIG environment values by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5511701398&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/293&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/293/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/293&quot;&gt;#293&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/compare/v0.4.15...v0.4.16&quot;&gt;&lt;tt&gt;v0.4.15...v0.4.16&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1036171483/v0.4.15</id>
+    <updated>2026-09-19T16:02:05Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/jkroepke/access-log-exporter/releases/tag/v0.4.15"/>
+    <title>v0.4.15</title>
+    <content type="html">
+&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;h3&gt;💥 Breaking Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fix!: bound nginx host label cardinality by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5511159889&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/290&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/290/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/290&quot;&gt;#290&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;🐞 Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: parse nginx upstream group separators by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5511174242&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/291&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/291/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/291&quot;&gt;#291&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: support full-size syslog datagrams by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5511187603&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/292&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/292/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/292&quot;&gt;#292&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/compare/v0.4.14...v0.4.15&quot;&gt;&lt;tt&gt;v0.4.14...v0.4.15&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1036171483/v0.4.14</id>
+    <updated>2026-09-19T15:13:41Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/jkroepke/access-log-exporter/releases/tag/v0.4.14"/>
+    <title>v0.4.14</title>
+    <content type="html">
+&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;h3&gt;🐞 Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: correct nginx duration metric units by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5510758236&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/288&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/288/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/288&quot;&gt;#288&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: use distroless static nonroot image by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/jkroepke/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/jkroepke&quot;&gt;@jkroepke&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5511083404&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/289&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/289/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/289&quot;&gt;#289&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;🛠️ Dependencies&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;chore(deps): update go test dependencies by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/renovate/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/renovate&quot;&gt;@renovate&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5344387262&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/282&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/282/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/282&quot;&gt;#282&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(deps): update module golang.org/x/net to v0.59.0 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/renovate/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/renovate&quot;&gt;@renovate&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5420077426&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/285&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/285/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/285&quot;&gt;#285&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(deps): update all go dependencies by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/renovate/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/renovate&quot;&gt;@renovate&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5495180088&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/286&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/286/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/286&quot;&gt;#286&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/compare/v0.4.13...v0.4.14&quot;&gt;&lt;tt&gt;v0.4.13...v0.4.14&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1036171483/v0.4.13</id>
+    <updated>2026-09-04T01:15:20Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/jkroepke/access-log-exporter/releases/tag/v0.4.13"/>
+    <title>v0.4.13</title>
+    <content type="html">
+&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;h3&gt;🛠️ Dependencies&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;chore(deps): update module github.com/prometheus/procfs to v0.22.0 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/renovate/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/renovate&quot;&gt;@renovate&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5279597909&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/278&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/278/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/278&quot;&gt;#278&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(deps): update go module directive to v1.27.1 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/renovate/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/renovate&quot;&gt;@renovate&lt;/a&gt;[bot] in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5342999220&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/jkroepke/access-log-exporter/issues/280&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/jkroepke/access-log-exporter/pull/280/hovercard&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/pull/280&quot;&gt;#280&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/jkroepke/access-log-exporter/compare/v0.4.12...v0.4.13&quot;&gt;&lt;tt&gt;v0.4.12...v0.4.13&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+</feed>

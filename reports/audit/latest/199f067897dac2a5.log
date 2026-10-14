@@ -1,0 +1,6 @@
+2026-10-14T16:47:26Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-14T16:47:29Z	INFO	Detected OS	family="alpine" version="3.25.0_alpha20260805"
+2026-10-14T16:47:29Z	WARN	This OS version is not on the EOL list	family="alpine" version="3.25"
+2026-10-14T16:47:29Z	INFO	[alpine] Detecting vulnerabilities...	os_version="3.25" repository="edge" pkg_num=5
+2026-10-14T16:47:29Z	INFO	Number of language-specific files	num=1
+2026-10-14T16:47:29Z	INFO	[gobinary] Detecting vulnerabilities...

@@ -1,0 +1,2 @@
+2026-10-14T16:47:55Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-14T16:48:05Z	FATAL	Fatal error	run error: image scan error: scan error: scan failed: failed analysis: analyze error: pipeline error: failed to analyze layer (sha256:0c3db79307ab91dad11fad2b136a2b56df6efeeb567c4c99e6e316b63885c9f6): walk error: failed to process the file: failed to analyze file: failed to analyze usr/bin/dpkg-deb: unable to open usr/bin/dpkg-deb: failed to open: unable to read the file: unexpected EOF

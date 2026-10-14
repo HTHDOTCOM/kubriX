@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/kubevirt/containerized-data-importer/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/kubevirt/containerized-data-importer/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/kubevirt/containerized-data-importer/releases.atom"/>
+  <title>Release notes from containerized-data-importer</title>
+  <updated>2026-09-06T17:01:17Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/117756215/v1.66.1</id>
+    <updated>2026-09-06T19:46:10Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.66.1"/>
+    <title>v1.66.1</title>
+    <content type="html">&lt;p&gt;This release follows v1.66.0 and consists of 4 changes, contributed by&lt;br&gt;
+2 people, leading to 7 files changed.&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.66.1&quot;&gt;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.66.1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built CDI containers are published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-controller/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-controller/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-importer/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-importer/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-cloner/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-cloner/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadproxy/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadproxy/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-apiserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-apiserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-operator/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-operator/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5364774801&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4274&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4274/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4274&quot;&gt;#4274&lt;/a&gt;] BugFix: pull upstream fix for qemu issue resulting in not being able import DV into a 4k block device&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5311728933&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4268&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4268/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4268&quot;&gt;#4268&lt;/a&gt;] Add nbdkit-nfc support for vsphere disk imports.&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5125756723&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4242&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4242/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4242&quot;&gt;#4242&lt;/a&gt;] added minimum size for HPE XP and Hitachi HSPC provisioners&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;2 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;2	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;
+2	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;2	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;
+2	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/117756215/v1.66.0</id>
+    <updated>2026-08-05T20:16:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.66.0"/>
+    <title>v1.66.0</title>
+    <content type="html">&lt;p&gt;This release follows v1.65.0 and consists of 52 changes, contributed by&lt;br&gt;
+21 people, leading to 1638 files changed.&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.66.0&quot;&gt;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.66.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built CDI containers are published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-controller/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-controller/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-importer/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-importer/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-cloner/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-cloner/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadproxy/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadproxy/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-apiserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-apiserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-operator/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-operator/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3605577011&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/3947&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/3947/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/3947&quot;&gt;#3947&lt;/a&gt;] VDDK datasource connection now supports TLS with the certConfigMap option.&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5011439958&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4218&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4218/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4218&quot;&gt;#4218&lt;/a&gt;] Fixed StorageProfile controller advising the wrong clone strategy for Portworx StorageClasses with backend=pure_block or backend=pure_fa_file parameters; they now correctly advise csi-clone.&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4081007322&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4056&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4056/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4056&quot;&gt;#4056&lt;/a&gt;] CDI importer and uploader pods can now use a custom ServiceAccount by setting the annotation cdi.kubevirt.io/storage.pod.serviceAccountName on the DataVolume or PVC. Clone flows are not affected.&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4891341679&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4200&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4200/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4200&quot;&gt;#4200&lt;/a&gt;] Removed prlimit(RLIMIT_AS) enforcement from qemu-img operations.&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4455636203&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4138&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4138/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4138&quot;&gt;#4138&lt;/a&gt;] Add support for IBM VPC File Storage driver (vpc.file.csi.ibm.io)&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4623575299&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4167&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4167/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4167&quot;&gt;#4167&lt;/a&gt;] Added insecureSkipVerify to http source type to support connecting to https endpoints with invalid certificates. By default this option is set to false, and must be explicitly set to &quot;true&quot; to use. This will not break any existing datavolume definitions.&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4771221403&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4190&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4190/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4190&quot;&gt;#4190&lt;/a&gt;] Suppress ClaimMisbound Warning from prime PVCs&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4361044873&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4109&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4109/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4109&quot;&gt;#4109&lt;/a&gt;] fix cluster wide certConfigMap for http datasources&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4673510706&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4174&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4174/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4174&quot;&gt;#4174&lt;/a&gt;] BugFix: instancetype labels from containerdisk doesn&#39;t get propogated to VolumeSnapshot/DataSource on multiarch clusters&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4716300530&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4179&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4179/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4179&quot;&gt;#4179&lt;/a&gt;] BugFix: qemu issue results in not being able import DV into a 4k block device&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4118068723&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4069&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4069/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4069&quot;&gt;#4069&lt;/a&gt;] VDDK: add re-login and retry on session timeout&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4533252020&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4161&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4161/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4161&quot;&gt;#4161&lt;/a&gt;] Expose secure pprof endpoints on controller and operator for live runtime diagnostics&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4415381863&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4121&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4121/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4121&quot;&gt;#4121&lt;/a&gt;] The /metrics endpoints on cdi-deployment and cdi-operator now requires authentication. Clients must present a bearer token with get permission on the /metrics nonResourceURL. A cdi-metrics-reader ServiceAccount and ClusterRole are created automatically for Prometheus scraping.&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4431284605&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4127&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4127/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4127&quot;&gt;#4127&lt;/a&gt;] VDDK: look up VMs with instance UUIDs instead of BIOS UUIDs&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4407247454&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4119&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4119/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4119&quot;&gt;#4119&lt;/a&gt;] Added support for DirectPV CSI driver&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4426523022&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4124&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4124/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4124&quot;&gt;#4124&lt;/a&gt;] Add OVN-Kubernetes open-default-ports annotation to upload server pod to fix uploads in namespaces with network segmentation&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4046663256&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4052&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4052/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4052&quot;&gt;#4052&lt;/a&gt;] Enhancement: use headless service for upload server&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4379346035&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4110&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4110/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4110&quot;&gt;#4110&lt;/a&gt;] Bump google.golang.org/grpc to 1.79.3 to remediate CVE &lt;a title=&quot;CVE-2026-33186&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-p77j-4mvh-x3m3/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-p77j-4mvh-x3m3&quot;&gt;CVE-2026-33186&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4350997042&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4107&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4107/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4107&quot;&gt;#4107&lt;/a&gt;] BugFix: Host assisted clone should adjust requested storage when cloning from block to filesystem volume mode&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4059128892&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4055&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4055/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4055&quot;&gt;#4055&lt;/a&gt;] VDDK: search root snapshot backing file chain for target disk&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4290146401&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4096&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4096/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4096&quot;&gt;#4096&lt;/a&gt;] Add per-PVC node selector override via annotation&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4218909365&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4087&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4087/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4087&quot;&gt;#4087&lt;/a&gt;] bump rules_oci to 2.3.0&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4257584803&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4091&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4091/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4091&quot;&gt;#4091&lt;/a&gt;] Copy Labels from PVC to Importer Pod&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Other changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5022545757&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4220&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4220/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4220&quot;&gt;#4220&lt;/a&gt;] Delete ConfigMaps while also Providing them with Specific Labels for Downstream Testing&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5020987982&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4219&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4219/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4219&quot;&gt;#4219&lt;/a&gt;] Extract datavolumes/source from view role into standalone ClusterRole&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5006502879&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4216&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4216/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4216&quot;&gt;#4216&lt;/a&gt;] Run go run ./robots/uploader -workspace /home/prow/go/src/github.com/kubevirt/project-infra/../containerized-data-importer/WORKSPACE -dry-run=false&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4959864983&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4211&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4211/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4211&quot;&gt;#4211&lt;/a&gt;] doc: document serviceAccountName field on DataVolume&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4927766962&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4208&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4208/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4208&quot;&gt;#4208&lt;/a&gt;] fix: tests, util: append DockerTag to container images&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4939238421&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4209&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4209/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4209&quot;&gt;#4209&lt;/a&gt;] importer, format-readers: use pgzip&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4872314468&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4199&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4199/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4199&quot;&gt;#4199&lt;/a&gt;] fix(bazel-docker): avoid container cleanup affecting build exit code&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4812914315&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4197&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4197/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4197&quot;&gt;#4197&lt;/a&gt;] poller: Use JSON Patch instead of Update to avoid conflicts&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4778734024&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4191&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4191/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4191&quot;&gt;#4191&lt;/a&gt;] fix(bazel-docker): mount bazel cache GCS credentials into builder container&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4691942219&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4176&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4176/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4176&quot;&gt;#4176&lt;/a&gt;] Update kubevirtci, 1.36 lanes&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4728443537&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4183&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4183/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4183&quot;&gt;#4183&lt;/a&gt;] Fix in-docker to not error out with VCS status&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4723534241&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4181&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4181/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4181&quot;&gt;#4181&lt;/a&gt;] Run go run ./robots/uploader -workspace /home/prow/go/src/github.com/kubevirt/project-infra/../containerized-data-importer/WORKSPACE -dry-run=false&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4672845964&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4172&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4172/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4172&quot;&gt;#4172&lt;/a&gt;] Enable the WebhookPvcRendering feature gate by default&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4645269220&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4171&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4171/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4171&quot;&gt;#4171&lt;/a&gt;] docs: add k3s/RKE2 guidance for device_ownership_from_security_context&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4540808199&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4163&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4163/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4163&quot;&gt;#4163&lt;/a&gt;] tests: replace racy cdi_cr_ready e2e test with unit test&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4530397001&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4160&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4160/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4160&quot;&gt;#4160&lt;/a&gt;] Run go run ./robots/uploader -workspace /home/prow/go/src/github.com/kubevirt/project-infra/../containerized-data-importer/WORKSPACE -dry-run=false&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4427979527&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4126&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4126/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4126&quot;&gt;#4126&lt;/a&gt;] image, nbdkit: replace writePasswordFile with createPasswordPipe&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4475283309&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4150&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4150/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4150&quot;&gt;#4150&lt;/a&gt;] Run go run ./robots/uploader -workspace /home/prow/go/src/github.com/kubevirt/project-infra/../containerized-data-importer/WORKSPACE -dry-run=false&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4462768949&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4141&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4141/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4141&quot;&gt;#4141&lt;/a&gt;] Makefile, hack: Allow compiling ginkgo + tests without Bazel&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4408685767&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4120&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4120/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4120&quot;&gt;#4120&lt;/a&gt;] Fix AfterEach in ingress manifest tests to restore override first&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4400192530&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4118&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4118/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4118&quot;&gt;#4118&lt;/a&gt;] Test commit for latest manifest publish&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4352024839&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4108&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4108/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4108&quot;&gt;#4108&lt;/a&gt;] Add uploadproxyURL environmental variable&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4331449815&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4103&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4103/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4103&quot;&gt;#4103&lt;/a&gt;] imageio, vcenter: add node affinity and skip tests for missing arch&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4349612322&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4105&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4105/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4105&quot;&gt;#4105&lt;/a&gt;] Add common error symptoms to block CRI ownership doc&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4315933344&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4100&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4100/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4100&quot;&gt;#4100&lt;/a&gt;] Allow CDI_NAMESPACE to be set externally in test.sh&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4321857267&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4102&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4102/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4102&quot;&gt;#4102&lt;/a&gt;] Bump libnbd version from 1.11.5 to 1.25.4&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4298845516&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4099&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4099/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4099&quot;&gt;#4099&lt;/a&gt;] Fix typo &quot;RatainAll&quot; -&amp;gt; &quot;RetainAll&quot; in DataImportCron docs&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4275751647&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4092&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4092/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4092&quot;&gt;#4092&lt;/a&gt;] Fix wrong error variable checked in cleanupTransfer closures&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4042341860&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4050&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4050/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4050&quot;&gt;#4050&lt;/a&gt;] Respect pod retain annotation in cross ns host assisted clone&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4221716015&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4088&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4088/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4088&quot;&gt;#4088&lt;/a&gt;] Fix CDI node-placement test for cross-architecture clusters&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4207442196&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4083&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4083/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4083&quot;&gt;#4083&lt;/a&gt;] multi arch script: exit in case of errors in push&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;21 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;8	Adi Aloni &amp;lt;105346241+Acedus@users.noreply.github.com&amp;gt;
+13	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;
+1	Alexander Wels &amp;lt;awels@redhat.com&amp;gt;
+2	Carter Pewterschmidt &amp;lt;118891669+carterpewpew@users.noreply.github.com&amp;gt;
+1	Celis &amp;lt;celis.hernandez.cesar@gmail.com&amp;gt;
+2	Danny Sanatar &amp;lt;dsanatar@redhat.com&amp;gt;
+2	Davide Marro &amp;lt;dmarro@redhat.com&amp;gt;
+1	Dylan White &amp;lt;148541126+Whitedyl@users.noreply.github.com&amp;gt;
+1	Geetika Kapoor &amp;lt;13978799+geetikakay@users.noreply.github.com&amp;gt;
+1	Gera Fuentes &amp;lt;gera.fd14@outlook.com&amp;gt;
+1	Mark D &amp;lt;3779715+xphyr@users.noreply.github.com&amp;gt;
+2	Matthew Arnold &amp;lt;5075485+mrnold@users.noreply.github.com&amp;gt;
+1	Muhammad Arif &amp;lt;101164030+wakbijok@users.noreply.github.com&amp;gt;
+1	Pujitha Paladugu &amp;lt;pujitha.rathna@gmail.com&amp;gt;
+1	RamLavi &amp;lt;ralavi@redhat.com&amp;gt;
+2	Roshan Karthik Rajesh &amp;lt;rorajesh@redhat.com&amp;gt;
+1	Shiwani Biradar &amp;lt;sbiradar@redhat.com&amp;gt;
+4	Thomas-David Griedel &amp;lt;griedel911@gmail.com&amp;gt;
+1	Yaacov Zamir &amp;lt;kobi.zamir@gmail.com&amp;gt;
+2	gwencasey96 &amp;lt;74568397+gwencasey96@users.noreply.github.com&amp;gt;
+4	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;8	Adi Aloni &amp;lt;105346241+Acedus@users.noreply.github.com&amp;gt;
+13	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;
+1	Alexander Wels &amp;lt;awels@redhat.com&amp;gt;
+2	Carter Pewterschmidt &amp;lt;118891669+carterpewpew@users.noreply.github.com&amp;gt;
+1	Celis &amp;lt;celis.hernandez.cesar@gmail.com&amp;gt;
+2	Danny Sanatar &amp;lt;dsanatar@redhat.com&amp;gt;
+2	Davide Marro &amp;lt;dmarro@redhat.com&amp;gt;
+1	Dylan White &amp;lt;148541126+Whitedyl@users.noreply.github.com&amp;gt;
+1	Geetika Kapoor &amp;lt;13978799+geetikakay@users.noreply.github.com&amp;gt;
+1	Gera Fuentes &amp;lt;gera.fd14@outlook.com&amp;gt;
+1	Mark D &amp;lt;3779715+xphyr@users.noreply.github.com&amp;gt;
+2	Matthew Arnold &amp;lt;5075485+mrnold@users.noreply.github.com&amp;gt;
+1	Muhammad Arif &amp;lt;101164030+wakbijok@users.noreply.github.com&amp;gt;
+1	Pujitha Paladugu &amp;lt;pujitha.rathna@gmail.com&amp;gt;
+1	RamLavi &amp;lt;ralavi@redhat.com&amp;gt;
+2	Roshan Karthik Rajesh &amp;lt;rorajesh@redhat.com&amp;gt;
+1	Shiwani Biradar &amp;lt;sbiradar@redhat.com&amp;gt;
+4	Thomas-David Griedel &amp;lt;griedel911@gmail.com&amp;gt;
+1	Yaacov Zamir &amp;lt;kobi.zamir@gmail.com&amp;gt;
+2	gwencasey96 &amp;lt;74568397+gwencasey96@users.noreply.github.com&amp;gt;
+4	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/117756215/v1.65.0</id>
+    <updated>2026-03-31T20:26:28Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.65.0"/>
+    <title>v1.65.0</title>
+    <content type="html">&lt;p&gt;This release follows v1.64.0 and consists of 45 changes, contributed by&lt;br&gt;
+17 people, leading to 1421 files changed.&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.65.0&quot;&gt;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.65.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built CDI containers are published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-controller/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-controller/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-importer/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-importer/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-cloner/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-cloner/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadproxy/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadproxy/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-apiserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-apiserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-operator/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-operator/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3807508214&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4010&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4010/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4010&quot;&gt;#4010&lt;/a&gt;] Add hash validation for DataVolume HTTP/HTTPS import sources.&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4053347499&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4054&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4054/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4054&quot;&gt;#4054&lt;/a&gt;] Inherit Storage Class for Scratch Space PVCs instead of using default sc&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4101829441&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4061&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4061/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4061&quot;&gt;#4061&lt;/a&gt;] Snapshot clone no longer gets permanently stuck in CloneFromSnapshotSourceInProgress when the snapshot is not immediately ReadyToUse&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3908475228&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4032&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4032/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4032&quot;&gt;#4032&lt;/a&gt;] RWX Capability for HPP Overlay&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4105199975&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4067&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4067/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4067&quot;&gt;#4067&lt;/a&gt;] Set EnableServiceLinks=false on CDI worker pods to prevent &quot;argument list too long&quot; failures in namespaces with many Services.&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4081007322&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4056&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4056/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4056&quot;&gt;#4056&lt;/a&gt;] CDI importer and uploader pods can now use a custom ServiceAccount by setting the annotation cdi.kubevirt.io/storage.pod.serviceAccountName on the DataVolume or PVC. Clone flows are not affected.&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4087460213&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4058&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4058/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4058&quot;&gt;#4058&lt;/a&gt;] GCE persistent disk StorageProfile now supports RWO Filesystem.&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4046663256&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4052&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4052/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4052&quot;&gt;#4052&lt;/a&gt;] Enhancement: use headless service for upload server&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3983652854&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4044&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4044/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4044&quot;&gt;#4044&lt;/a&gt;] Add StorageProfile &quot;Recognized&quot; status condition, explaining if the provisioner or the storage class parameters are not recognized by CDI&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3917291284&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4033&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4033/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4033&quot;&gt;#4033&lt;/a&gt;] fix: cdi-operator and cdi-deployment metrics-server now correctly inherit TLS options from the CDI TLSSecrutiyProfile.&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3954944572&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4039&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4039/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4039&quot;&gt;#4039&lt;/a&gt;] Fix cert collection to include pem certs&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3984869167&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4046&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4046/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4046&quot;&gt;#4046&lt;/a&gt;] BugFix: Use an uncached client for webhooks, cache only PVs with transform&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3964716276&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4040&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4040/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4040&quot;&gt;#4040&lt;/a&gt;] Reduce DataVolume status update conflicts when multiple controllers act on the same resource by using patch instead of update&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3944156603&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4038&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4038/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4038&quot;&gt;#4038&lt;/a&gt;] kubevirt_cdi_clone_pods_high_restart, kubevirt_cdi_import_pods_high_restart, kubevirt_cdi_upload_pods_high_restart and kubevirt_cdi_operator_up are deprecated in favor of cluster:kubevirt_cdi_clone_pods_high_restart:count, cluster:kubevirt_cdi_import_pods_high_restart:count, cluster:kubevirt_cdi_upload_pods_high_restart:count and cluster:kubevirt_cdi_operator_up:sum, in order to comply with the recording rules naming conventions.&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3757380926&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/3991&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/3991/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/3991&quot;&gt;#3991&lt;/a&gt;] Add provisioner-aware VolumeSnapshotClass selection and RWO access mode for DataImportCron&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3801809013&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4008&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4008/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4008&quot;&gt;#4008&lt;/a&gt;] Enhancement: Expose advised restore size for cron snapshot sources cdi.kubevirt.io/storage.import.advisedRestoreSize&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3790651993&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4004&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4004/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4004&quot;&gt;#4004&lt;/a&gt;] Maintenance: release-note tool refactored bash-&amp;gt;go with added functionality&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3794650665&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4005&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4005/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4005&quot;&gt;#4005&lt;/a&gt;] Refactor metrics docs&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3806241915&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4009&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4009/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4009&quot;&gt;#4009&lt;/a&gt;] VDDK: Correctly check snapshot parent backing info for VirtualDiskFlatVer2BackingInfo and VirtualDiskRawDiskMappingVer1BackingInfo types.&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3232417881&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/3841&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/3841/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/3841&quot;&gt;#3841&lt;/a&gt;] BugFix: unset namespace selector on webhooks to allow cloud provider mutation&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3759599664&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/3993&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/3993/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/3993&quot;&gt;#3993&lt;/a&gt;] Build CDI with Bazel 6.5.0 and Go 1.24.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Other changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3990343483&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4047&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4047/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4047&quot;&gt;#4047&lt;/a&gt;] Update kubevirtci, 1.35 lanes&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4052632502&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4053&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4053/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4053&quot;&gt;#4053&lt;/a&gt;] report failure earlier for node pull imports&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4142406764&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4075&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4075/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4075&quot;&gt;#4075&lt;/a&gt;] tests/cloner_test: use patch instead of update to override minimumSupportedPvcSize annotation&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4125767986&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4071&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4071/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4071&quot;&gt;#4071&lt;/a&gt;] Run go run ./robots/uploader -workspace /home/prow/go/src/github.com/kubevirt/project-infra/../containerized-data-importer/WORKSPACE -dry-run=false&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3923697612&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4035&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4035/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4035&quot;&gt;#4035&lt;/a&gt;] Enable go multi-module workspace&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3991391144&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4048&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4048/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4048&quot;&gt;#4048&lt;/a&gt;] Bump github.com/cloudflare/circl from 1.6.1 to 1.6.3 in /tools/release-notes&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3810473856&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4012&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4012/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4012&quot;&gt;#4012&lt;/a&gt;] tests: stop using /dev/pvc hack&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4045620526&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4051&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4051/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4051&quot;&gt;#4051&lt;/a&gt;] Update controller-gen to 0.17.2 in cdi builder container&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4037723336&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4049&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4049/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4049&quot;&gt;#4049&lt;/a&gt;] Run go run ./robots/uploader -workspace /home/prow/go/src/github.com/kubevirt/project-infra/../containerized-data-importer/WORKSPACE -dry-run=false&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3968658392&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4042&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4042/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4042&quot;&gt;#4042&lt;/a&gt;] Update HPP-wffc manifest URL&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3356286670&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/3883&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/3883/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/3883&quot;&gt;#3883&lt;/a&gt;] Adjust test helper-images push according to arch compatibility&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3932649737&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4036&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4036/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4036&quot;&gt;#4036&lt;/a&gt;] VDDK: wrap errors from TransferFile instead of just logging them&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3896633980&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4026&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4026/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4026&quot;&gt;#4026&lt;/a&gt;] Set nosniff header on API calls to CDI API server&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3863929047&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4020&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4020/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4020&quot;&gt;#4020&lt;/a&gt;] Run go run ./robots/uploader -workspace /home/prow/go/src/github.com/kubevirt/project-infra/../containerized-data-importer/WORKSPACE -dry-run=false&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3838393639&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4016&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4016/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4016&quot;&gt;#4016&lt;/a&gt;] Use random storageclass names in datavolume_test.go (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3838372166&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4015&quot; data-hovercard-type=&quot;issue&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/issues/4015/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4015&quot;&gt;#4015&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3816522768&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/4013&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/4013/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/4013&quot;&gt;#4013&lt;/a&gt;] ci: fix cluster-sync don&#39;t fresh local image cache for kind provider&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3762112922&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/3999&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/3999/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/3999&quot;&gt;#3999&lt;/a&gt;] build: use gzip compression on pkg_tar&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3761948448&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/3998&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/3998/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/3998&quot;&gt;#3998&lt;/a&gt;] build: update to use PUSH_TARGETS to generate list of images for hack/push-container-manifest.sh&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3761941495&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/3997&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/3997/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/3997&quot;&gt;#3997&lt;/a&gt;] bazel-builder: add skopeo&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3759863799&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/3994&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/3994/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/3994&quot;&gt;#3994&lt;/a&gt;] keystore_test: fix flaky RSA key comparison by replacing DeepEqual&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3759445498&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/3992&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/3992/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/3992&quot;&gt;#3992&lt;/a&gt;] Run go run ./robots/cmd/uploader -workspace /home/prow/go/src/github.com/kubevirt/project-infra/../containerized-data-importer/WORKSPACE -dry-run=false&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3757190241&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/3990&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/3990/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/3990&quot;&gt;#3990&lt;/a&gt;] Build: bump builder Bazel version to 6.5.0 and go version to 1.24.9&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3521856043&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/3937&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/3937/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/3937&quot;&gt;#3937&lt;/a&gt;] Bazel: move from rules_docker to rules_oci&lt;/li&gt;
+&lt;li&gt;[PR &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3719258712&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/containerized-data-importer/issues/3980&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/containerized-data-importer/pull/3980/hovercard&quot; href=&quot;https://github.com/kubevirt/containerized-data-importer/pull/3980&quot;&gt;#3980&lt;/a&gt;] Fix metric names linter to handle recording rules separately&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;17 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;1	Adam Litke &amp;lt;alitke@redhat.com&amp;gt;
+10	Adi Aloni &amp;lt;105346241+Acedus@users.noreply.github.com&amp;gt;
+8	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;
+3	Alexander Wels &amp;lt;awels@redhat.com&amp;gt;
+1	Arnon Gilboa &amp;lt;agilboa@redhat.com&amp;gt;
+2	Aviv Litman &amp;lt;64130977+avlitman@users.noreply.github.com&amp;gt;
+3	Danny Sanatar &amp;lt;dsanatar@redhat.com&amp;gt;
+1	Elad Hazan &amp;lt;33450275+Hazanel@users.noreply.github.com&amp;gt;
+1	Howard Gao &amp;lt;hgao@redhat.com&amp;gt;
+1	Jeffrey Holm &amp;lt;jholm117@gmail.com&amp;gt;
+2	Matthew Arnold &amp;lt;5075485+mrnold@users.noreply.github.com&amp;gt;
+2	Noam Assouline &amp;lt;nassouli@redhat.com&amp;gt;
+1	Roni Rabinovitz &amp;lt;rrabinov@redhat.com&amp;gt;
+2	Thomas-David Griedel &amp;lt;griedel911@gmail.com&amp;gt;
+1	dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;
+2	halfcrazy &amp;lt;hackzhuyan@gmail.com&amp;gt;
+4	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;1	Adam Litke &amp;lt;alitke@redhat.com&amp;gt;
+10	Adi Aloni &amp;lt;105346241+Acedus@users.noreply.github.com&amp;gt;
+8	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;
+3	Alexander Wels &amp;lt;awels@redhat.com&amp;gt;
+1	Arnon Gilboa &amp;lt;agilboa@redhat.com&amp;gt;
+2	Aviv Litman &amp;lt;64130977+avlitman@users.noreply.github.com&amp;gt;
+3	Danny Sanatar &amp;lt;dsanatar@redhat.com&amp;gt;
+1	Elad Hazan &amp;lt;33450275+Hazanel@users.noreply.github.com&amp;gt;
+1	Howard Gao &amp;lt;hgao@redhat.com&amp;gt;
+1	Jeffrey Holm &amp;lt;jholm117@gmail.com&amp;gt;
+2	Matthew Arnold &amp;lt;5075485+mrnold@users.noreply.github.com&amp;gt;
+2	Noam Assouline &amp;lt;nassouli@redhat.com&amp;gt;
+1	Roni Rabinovitz &amp;lt;rrabinov@redhat.com&amp;gt;
+2	Thomas-David Griedel &amp;lt;griedel911@gmail.com&amp;gt;
+1	dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;
+2	halfcrazy &amp;lt;hackzhuyan@gmail.com&amp;gt;
+4	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/117756215/v1.999.0-test.0</id>
+    <updated>2026-01-04T14:27:01Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.999.0-test.0"/>
+    <title>v1.999.0-test.0</title>
+    <content type="html">&lt;p&gt;v1.999.0-test.0&lt;/p&gt;</content>
+    <author>
+      <name>akalenyu</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/51477153?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/117756215/v1.64.0</id>
+    <updated>2025-12-11T20:31:53Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.64.0"/>
+    <title>v1.64.0</title>
+    <content type="html">&lt;p&gt;This release follows v1.63.1 and consists of 47 changes, contributed by&lt;br&gt;
+14 people, leading to 207 files changed, 3531 insertions(+), 841 deletions(-).&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.64.0&quot;&gt;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.64.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built CDI containers are published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-controller/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-controller/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-importer/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-importer/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-cloner/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-cloner/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadproxy/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadproxy/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-apiserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-apiserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-operator/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-operator/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;p&gt;BugFix: DataSource reference status updates are now correctly propagated to DataSources that have them as sources.&lt;br&gt;
+Enhancement: Add IBM VPC Block CSI storage capabilities&lt;br&gt;
+Enhancement: PX-CSI Portworx capabilities adjustment&lt;br&gt;
+BugFix: DataImportCrons now respects the platform.architecture setting in all modes.&lt;br&gt;
+BugFix: Fix wrong Items API type in VolumeUploadSourceList&lt;br&gt;
+Enhancement: Readiness/Liveness Probes for Operator&lt;br&gt;
+Enhancement: CDI&#39;s volume populators are now compatible with volume-data-source-validator&lt;br&gt;
+BugFix: Check for PVC DeletionTimeStamp before updating DV status&lt;br&gt;
+BugFix: Removal of CriticalAddonsOnly toleration from CDI pods.&lt;br&gt;
+Enhancement: Allow insecureSkipVerify on imageio importer&lt;br&gt;
+Enhancement: Added example network policies as part of the manifest-generator and csv-generator tools&lt;br&gt;
+Enhancement: Expose scheme&#39;s GroupName and Version as new global variable &lt;code&gt;GroupVersion&lt;/code&gt; making it easier to integrate the scheme.&lt;br&gt;
+Enhancement: Support storageProfile minimumSupportedPVCSize in clone&lt;br&gt;
+Enhancement: Copy Events from tmp PVCs&lt;br&gt;
+BugFix: Improve PVC webhook rendering error reporting&lt;br&gt;
+BugFix: Fix PVC size inflation during VolumeSnapshot restore that caused strict CSI drivers (e.g., NetApp Trident) to reject the operation.&lt;br&gt;
+    Note: CDI PVC mutating webhook will no longer wrongly inflate direct restores from volumesnapshot src&lt;/p&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;14 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;    12	Adi Aloni &amp;lt;105346241+Acedus@users.noreply.github.com&amp;gt;
+     6	Arnon Gilboa &amp;lt;agilboa@redhat.com&amp;gt;
+     6	Danny Sanatar &amp;lt;dsanatar@redhat.com&amp;gt;
+     5	alromeros &amp;lt;alromero@redhat.com&amp;gt;
+     4	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;
+     4	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+     3	Shirly Radco &amp;lt;sradco@redhat.com&amp;gt;
+     1	Denis Ollier &amp;lt;dollierp@redhat.com&amp;gt;
+     1	Elad Hazan &amp;lt;33450275+Hazanel@users.noreply.github.com&amp;gt;
+     1	Howard Gao &amp;lt;hgao@redhat.com&amp;gt;
+     1	Jack Yu &amp;lt;jack.yu@suse.com&amp;gt;
+     1	Manuel Grandeit &amp;lt;m.grandeit@gmail.com&amp;gt;
+     1	Noam Assouline &amp;lt;nassouli@redhat.com&amp;gt;
+     1	Paul Thuriot &amp;lt;pth@corti.ai&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;    12	Adi Aloni &amp;lt;105346241+Acedus@users.noreply.github.com&amp;gt;
+     6	Arnon Gilboa &amp;lt;agilboa@redhat.com&amp;gt;
+     6	Danny Sanatar &amp;lt;dsanatar@redhat.com&amp;gt;
+     5	alromeros &amp;lt;alromero@redhat.com&amp;gt;
+     4	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;
+     4	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+     3	Shirly Radco &amp;lt;sradco@redhat.com&amp;gt;
+     1	Denis Ollier &amp;lt;dollierp@redhat.com&amp;gt;
+     1	Elad Hazan &amp;lt;33450275+Hazanel@users.noreply.github.com&amp;gt;
+     1	Howard Gao &amp;lt;hgao@redhat.com&amp;gt;
+     1	Jack Yu &amp;lt;jack.yu@suse.com&amp;gt;
+     1	Manuel Grandeit &amp;lt;m.grandeit@gmail.com&amp;gt;
+     1	Noam Assouline &amp;lt;nassouli@redhat.com&amp;gt;
+     1	Paul Thuriot &amp;lt;pth@corti.ai&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/117756215/v1.63.1</id>
+    <updated>2025-09-25T11:29:34Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.63.1"/>
+    <title>v1.63.1</title>
+    <content type="html">&lt;p&gt;This release follows v1.63.0 and consists of 11 changes, contributed by&lt;br&gt;
+2 people, leading to 16 files changed, 214 insertions(+), 153 deletions(-).&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.63.1&quot;&gt;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.63.1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built CDI containers are published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-controller/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-controller/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-importer/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-importer/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-cloner/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-cloner/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadproxy/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadproxy/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-apiserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-apiserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-operator/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-operator/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;p&gt;BugFix: DataSource reference status updates are now correctly propagated to DataSources that have them as sources&lt;br&gt;
+BugFix: Portworx enterprise and PX-CSI driver using the same provisioner string key pxd.portworx.com&lt;br&gt;
+BugFix: DataImportCrons now respects the platform.architecture setting in all modes&lt;br&gt;
+BugFix: Fix wrong Items type in VolumeUploadSourceList&lt;/p&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;2 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;     9	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+     2	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;     9	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+     2	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/117756215/v1.63.0</id>
+    <updated>2025-08-18T11:57:59Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.63.0"/>
+    <title>v1.63.0</title>
+    <content type="html">&lt;p&gt;This release follows v1.62.0 and consists of 56 changes, contributed by&lt;br&gt;
+13 people, leading to 141 files changed, 5071 insertions(+), 3395 deletions(-).&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.63.0&quot;&gt;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.63.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built CDI containers are published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-controller/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-controller/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-importer/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-importer/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-cloner/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-cloner/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadproxy/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadproxy/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-apiserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-apiserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-operator/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-operator/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;p&gt;Enhancement: Reduce memory usage for multi-stage VDDK imports when the source snapshot has many changes&lt;br&gt;
+Enhancement: VDDK: add CRD field for extra configuration arguments&lt;br&gt;
+BugFix: Add clone source watches in clone populator&lt;br&gt;
+BugFix: decrease timeout trying to derive progress from a completed pod to avoid delaying progress updates&lt;br&gt;
+BugFix: selected-node annotation prevents non topology constrained temp restores from binding&lt;br&gt;
+BugFix: Fix Longhorn Filesystem capabilities&lt;br&gt;
+BugFix: cdi-deployment Deployment selector changed to &quot;cdi.kubevirt.io&quot;:&quot;cdi-deployment&quot;&lt;br&gt;
+Enhancement: Allow increasing PVC size to the minimum supported by its storage class&lt;br&gt;
+BugFix: CDI pods rejected when mutated with CSI inline volume due to it&#39;s SCC not allowing consensus volume plugins&lt;br&gt;
+BugFix: Fix StorageProfile PVC rendering when there is no AccessMode or VolumeMode match&lt;br&gt;
+BugFix: Remove RWX for filesystem PVC capability from default profile of IBM Block Storage CSI driver&lt;br&gt;
+Enhancement: Termination message now gets reported correctly for CDI infra Pods.&lt;br&gt;
+Enhancement: Labels on DataVolumes are now copied to the importer pod&lt;br&gt;
+Enhancement: Enable WebhookPvcRendering feature gate by default&lt;br&gt;
+Enhancement: Conditionally add ReadWriteMany Block to Portworx capabilities&lt;br&gt;
+Enhancement: Annotate StorageProfiles with provisioner minimum supported PVC size&lt;br&gt;
+BugFix: Event hotloop over SCC volume order changes&lt;br&gt;
+BugFix: IBM Block Storage CSI driver storageprofile will use &#39;csi-clone&#39; as the default cloneStrategy&lt;br&gt;
+BugFix: Exclude scratch pvcs from velero backup&lt;br&gt;
+Enhancement: Introduce support for architecture specific image import with registry datasource&lt;br&gt;
+Enhancement: Allow DataSources to reference the source of another DataSource using new Source.DataSource option&lt;br&gt;
+BugFix: Wrong clone strategy for upstream cephfs&lt;br&gt;
+Bugfix: Fix math in overhead size calculations:&lt;br&gt;
+    When using the storage API, PVC disk size is now correctly inflated to account for filesystem overhead.&lt;br&gt;
+    When using the PVC API, usable disk space is now calculated more accurately with &quot;allocatedSize / (1 + overhead)&quot;.&lt;br&gt;
+    This may result in changes in usable size compared to the previous behavior.&lt;br&gt;
+Enhancement: Increase default filesystem overhead to 6%&lt;br&gt;
+Enhancement: Defined storagecapabilities for the synology-csi driver, fully populating the storageprofile for related synology storage classes&lt;br&gt;
+Enhancement: Add Google Cloud NetApp Volumes Flex storage capabilities&lt;br&gt;
+BugFix: Add missing RBAC for ovirt and openstack volume populator CRDs&lt;br&gt;
+Enhancement: Support DataImportCron update polling for DataVolume node pullMethod&lt;br&gt;
+Enhancement: Metrics port for cdi-prometheus-metrics service changed from 8080 to 8443.&lt;br&gt;
+Enhancement: DataImportCrons now propagate kubevirt-specific labels to their managed DataSource&lt;/p&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;13 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;    13	Adi Aloni &amp;lt;105346241+Acedus@users.noreply.github.com&amp;gt;
+    10	Arnon Gilboa &amp;lt;agilboa@redhat.com&amp;gt;
+     9	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+     8	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;
+     3	Matthew Arnold &amp;lt;5075485+mrnold@users.noreply.github.com&amp;gt;
+     3	SKALA NETWORKS &amp;lt;127797154+SkalaNetworks@users.noreply.github.com&amp;gt;
+     3	alromeros &amp;lt;alromero@redhat.com&amp;gt;
+     2	Ariel Kass &amp;lt;arielk@il.ibm.com&amp;gt;
+     1	Danny Sanatar &amp;lt;danny.sanatar@gmail.com&amp;gt;
+     1	Komh &amp;lt;mail@guojing.io&amp;gt;
+     1	Mark D &amp;lt;3779715+xphyr@users.noreply.github.com&amp;gt;
+     1	Shelly Kagan &amp;lt;skagan@redhat.com&amp;gt;
+     1	Thomas-David Griedel &amp;lt;griedel911@gmail.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;    13	Adi Aloni &amp;lt;105346241+Acedus@users.noreply.github.com&amp;gt;
+    10	Arnon Gilboa &amp;lt;agilboa@redhat.com&amp;gt;
+     9	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+     8	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;
+     3	Matthew Arnold &amp;lt;5075485+mrnold@users.noreply.github.com&amp;gt;
+     3	SKALA NETWORKS &amp;lt;127797154+SkalaNetworks@users.noreply.github.com&amp;gt;
+     3	alromeros &amp;lt;alromero@redhat.com&amp;gt;
+     2	Ariel Kass &amp;lt;arielk@il.ibm.com&amp;gt;
+     1	Danny Sanatar &amp;lt;danny.sanatar@gmail.com&amp;gt;
+     1	Komh &amp;lt;mail@guojing.io&amp;gt;
+     1	Mark D &amp;lt;3779715+xphyr@users.noreply.github.com&amp;gt;
+     1	Shelly Kagan &amp;lt;skagan@redhat.com&amp;gt;
+     1	Thomas-David Griedel &amp;lt;griedel911@gmail.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/117756215/v1.63.0-alpha.0</id>
+    <updated>2025-07-13T13:24:05Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.63.0-alpha.0"/>
+    <title>v1.63.0-alpha.0</title>
+    <content>No content.</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/117756215/v1.62.0</id>
+    <updated>2025-04-02T08:01:20Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.62.0"/>
+    <title>v1.62.0</title>
+    <content type="html">&lt;p&gt;This release follows v1.61.0 and consists of 54 changes, contributed by&lt;br&gt;
+17 people, leading to 3174 files changed, 129486 insertions(+), 67596 deletions(-).&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.62.0&quot;&gt;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.62.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built CDI containers are published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-controller/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-controller/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-importer/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-importer/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-cloner/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-cloner/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadproxy/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadproxy/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-apiserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-apiserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-operator/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-operator/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;p&gt;Enhancement: IBM Block Storage CSI driver now supports RWX access mode&lt;br&gt;
+Cleanup: Deprecate DataVolume garbage collection&lt;br&gt;
+BugFix: Watch for StorageProfile updates to reconcile DataVolumes&lt;br&gt;
+BugFix: Fix PVC webhook rendering segfault when there is no default default storage class and no virtualization default storage class&lt;br&gt;
+BugFix: size-detection pod is not always cleaned after it completes&lt;br&gt;
+Cleanup: Bump CI to test 1.31&lt;br&gt;
+BugFix: Set DataVolume Bound condition to False instead of Unknown&lt;br&gt;
+Enhancement: Allow extra VDDK configuration parameters to be passed to VDDK importer pods.&lt;br&gt;
+Enhancement: Add PVC source support for DataImportCron&lt;br&gt;
+BugFix: Dell PowerStore uses &lt;code&gt;cloneStrategy: copy&lt;/code&gt; over &lt;code&gt;csi-clone&lt;/code&gt; to avoid array snapshot limits&lt;br&gt;
+Enhancement: Add volume capabilities for Oracle Cloud&lt;br&gt;
+Enhancement: Added support for Infinibox nvme protocol&lt;br&gt;
+Cleanup: k8s 1.31 dependencies&lt;br&gt;
+Cleanup: Using golang 1.23.6 in builder&lt;br&gt;
+Enhancement: Add RWX block to Portworx capabilities&lt;br&gt;
+BugFix: Add openshift.io/required-scc to required workloads&lt;br&gt;
+Enhancement: Create prow multi arch release script&lt;br&gt;
+BugFix: Fix ImagePullFailed handling in DataImportCron controller&lt;br&gt;
+Cleanup: DataImportCron tests - add waitForConditions to ensure all images got imported&lt;br&gt;
+Enhancement: Add GCP hyperdisk capabilities&lt;br&gt;
+BugFix: Fallback to host assisted cloning when source snapshot volume mode differs from target volume mode&lt;/p&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;17 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;    14	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;
+     9	Arnon Gilboa &amp;lt;agilboa@redhat.com&amp;gt;
+     8	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+     6	Thomas-David Griedel &amp;lt;griedel911@gmail.com&amp;gt;
+     3	Alexander Wels &amp;lt;awels@redhat.com&amp;gt;
+     2	alromeros &amp;lt;alromero@redhat.com&amp;gt;
+     2	zhlhahaha &amp;lt;howard.zhang@arm.com&amp;gt;
+     1	Ariel Kass &amp;lt;arielk@il.ibm.com&amp;gt;
+     1	CA Fillekes, PhD. &amp;lt;cfilleke@redhat.com&amp;gt;
+     1	Jeff McCormick &amp;lt;djm76262@gmail.com&amp;gt;
+     1	Jenia Peimer &amp;lt;86722603+jpeimer@users.noreply.github.com&amp;gt;
+     1	Matthew Arnold &amp;lt;5075485+mrnold@users.noreply.github.com&amp;gt;
+     1	Noam Assouline &amp;lt;nassouli@redhat.com&amp;gt;
+     1	Shirly Radco &amp;lt;sradco@redhat.com&amp;gt;
+     1	coulof &amp;lt;49235405+coulof@users.noreply.github.com&amp;gt;
+     1	dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;
+     1	omerpresler &amp;lt;41909419+omerpresler@users.noreply.github.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;    14	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;
+     9	Arnon Gilboa &amp;lt;agilboa@redhat.com&amp;gt;
+     8	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+     6	Thomas-David Griedel &amp;lt;griedel911@gmail.com&amp;gt;
+     3	Alexander Wels &amp;lt;awels@redhat.com&amp;gt;
+     2	alromeros &amp;lt;alromero@redhat.com&amp;gt;
+     2	zhlhahaha &amp;lt;howard.zhang@arm.com&amp;gt;
+     1	Ariel Kass &amp;lt;arielk@il.ibm.com&amp;gt;
+     1	CA Fillekes, PhD. &amp;lt;cfilleke@redhat.com&amp;gt;
+     1	Jeff McCormick &amp;lt;djm76262@gmail.com&amp;gt;
+     1	Jenia Peimer &amp;lt;86722603+jpeimer@users.noreply.github.com&amp;gt;
+     1	Matthew Arnold &amp;lt;5075485+mrnold@users.noreply.github.com&amp;gt;
+     1	Noam Assouline &amp;lt;nassouli@redhat.com&amp;gt;
+     1	Shirly Radco &amp;lt;sradco@redhat.com&amp;gt;
+     1	coulof &amp;lt;49235405+coulof@users.noreply.github.com&amp;gt;
+     1	dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;
+     1	omerpresler &amp;lt;41909419+omerpresler@users.noreply.github.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/117756215/v1.61.5</id>
+    <updated>2025-03-30T13:23:07Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.61.5"/>
+    <title>v1.61.5</title>
+    <content type="html">&lt;p&gt;This release follows v1.61.2 and consists of 3 changes, contributed by&lt;br&gt;
+2 people, leading to 13 files changed, 66 insertions(+), 3 deletions(-).&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.61.5&quot;&gt;https://github.com/kubevirt/containerized-data-importer/releases/tag/v1.61.5&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built CDI containers are published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-controller/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-controller/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-importer/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-importer/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-cloner/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-cloner/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadproxy/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadproxy/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-apiserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-apiserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-uploadserver/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-uploadserver/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/cdi-operator/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/cdi-operator/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/pulls?q=is%3Apr+merged%3A2025-03-13..2025-03-28+base%3Arelease-v1.61+sort%3Aupdated-desc+is%3Aclosed+&quot;&gt;https://github.com/kubevirt/containerized-data-importer/pulls?q=is%3Apr+merged%3A2025-03-13..2025-03-28+base%3Arelease-v1.61+sort%3Aupdated-desc+is%3Aclosed+&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;2 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;     2	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+     1	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;     2	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+     1	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/containerized-data-importer/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+</feed>
