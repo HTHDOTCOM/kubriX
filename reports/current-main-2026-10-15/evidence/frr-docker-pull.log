@@ -1,0 +1,36 @@
+10.4.5: Pulling from frrouting/frr
+f7ee36c9aa34: Pulling fs layer
+02ef011194f6: Pulling fs layer
+3a078c22b663: Pulling fs layer
+4c056d789d54: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+41c4a54288db: Pulling fs layer
+8e94a4d8aeab: Pulling fs layer
+4f4fb700ef54: Waiting
+41c4a54288db: Waiting
+8e94a4d8aeab: Waiting
+4c056d789d54: Waiting
+02ef011194f6: Verifying Checksum
+02ef011194f6: Download complete
+f7ee36c9aa34: Verifying Checksum
+f7ee36c9aa34: Download complete
+f7ee36c9aa34: Pull complete
+02ef011194f6: Pull complete
+4f4fb700ef54: Verifying Checksum
+4f4fb700ef54: Download complete
+41c4a54288db: Verifying Checksum
+41c4a54288db: Download complete
+3a078c22b663: Verifying Checksum
+3a078c22b663: Download complete
+3a078c22b663: Pull complete
+8e94a4d8aeab: Verifying Checksum
+8e94a4d8aeab: Download complete
+4c056d789d54: Verifying Checksum
+4c056d789d54: Download complete
+4c056d789d54: Pull complete
+4f4fb700ef54: Pull complete
+41c4a54288db: Pull complete
+8e94a4d8aeab: Pull complete
+Digest: sha256:b0faf7c8f3d8b09aea1e38f77603c745a66dbf5e26ef9718527c2fbb53cc3aed
+Status: Downloaded newer image for quay.io/frrouting/frr:10.4.5
+quay.io/frrouting/frr:10.4.5

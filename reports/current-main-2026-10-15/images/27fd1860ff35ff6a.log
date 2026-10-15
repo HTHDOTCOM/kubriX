@@ -1,0 +1,2 @@
+2026-10-15T08:40:19Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-15T08:40:28Z	FATAL	Fatal error	run error: image scan error: scan error: scan failed: failed analysis: analyze error: pipeline error: failed to analyze layer (sha256:374512de6b930cc0f4a92fd7a019e0326be3d0a0469fdb423b0968554a3fd2c9): walk error: failed to process the file: failed to analyze file: failed to analyze bin/prometheus: unable to open bin/prometheus: failed to open: failed to copy: unexpected EOF

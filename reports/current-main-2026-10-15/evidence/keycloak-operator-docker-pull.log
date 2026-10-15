@@ -1,0 +1,26 @@
+26.7.5: Pulling from keycloak/keycloak-operator
+227bdb4b4505: Pulling fs layer
+8e265ce2912e: Pulling fs layer
+bdd35076328b: Pulling fs layer
+9b4b16e36cb4: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+9b4b16e36cb4: Waiting
+4f4fb700ef54: Waiting
+227bdb4b4505: Verifying Checksum
+227bdb4b4505: Download complete
+227bdb4b4505: Pull complete
+bdd35076328b: Verifying Checksum
+bdd35076328b: Download complete
+9b4b16e36cb4: Verifying Checksum
+9b4b16e36cb4: Download complete
+8e265ce2912e: Verifying Checksum
+8e265ce2912e: Download complete
+4f4fb700ef54: Verifying Checksum
+4f4fb700ef54: Download complete
+8e265ce2912e: Pull complete
+bdd35076328b: Pull complete
+9b4b16e36cb4: Pull complete
+4f4fb700ef54: Pull complete
+Digest: sha256:d5138f895d659ee9c0fe207e203c3655876956f956a7cbaa910d1bee4c1f615f
+Status: Downloaded newer image for quay.io/keycloak/keycloak-operator:26.7.5
+quay.io/keycloak/keycloak-operator:26.7.5

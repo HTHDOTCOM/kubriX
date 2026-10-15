@@ -1,0 +1,4 @@
+PASS: 18 distinct configured image references scanned successfully.
+PASS: All scanner exits zero, all digests present, and per-image counts match JSON.
+PASS: 1280 complete package findings exported, all empty FixedVersion findings retained.
+PASS: SHA256 of every retained JSON matches the integrity manifest.

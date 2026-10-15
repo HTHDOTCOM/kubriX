@@ -1,0 +1,47 @@
+v3.13.4: Pulling from prometheus/prometheus
+487858d29734: Pulling fs layer
+6bddf0169a34: Pulling fs layer
+004ff066ae29: Pulling fs layer
+6d155a5d3aee: Pulling fs layer
+869f5bf9d4f8: Pulling fs layer
+dc50b98393d8: Pulling fs layer
+dbdc1554a63a: Pulling fs layer
+438819c96613: Pulling fs layer
+5d64b492c925: Pulling fs layer
+487858d29734: Waiting
+6bddf0169a34: Waiting
+004ff066ae29: Waiting
+6d155a5d3aee: Waiting
+869f5bf9d4f8: Waiting
+dc50b98393d8: Waiting
+5d64b492c925: Waiting
+dbdc1554a63a: Waiting
+438819c96613: Waiting
+487858d29734: Verifying Checksum
+487858d29734: Download complete
+487858d29734: Pull complete
+6bddf0169a34: Download complete
+6bddf0169a34: Pull complete
+869f5bf9d4f8: Verifying Checksum
+869f5bf9d4f8: Download complete
+004ff066ae29: Verifying Checksum
+004ff066ae29: Download complete
+dc50b98393d8: Download complete
+dbdc1554a63a: Verifying Checksum
+dbdc1554a63a: Download complete
+6d155a5d3aee: Verifying Checksum
+6d155a5d3aee: Download complete
+5d64b492c925: Verifying Checksum
+5d64b492c925: Download complete
+438819c96613: Verifying Checksum
+438819c96613: Download complete
+004ff066ae29: Pull complete
+6d155a5d3aee: Pull complete
+869f5bf9d4f8: Pull complete
+dc50b98393d8: Pull complete
+dbdc1554a63a: Pull complete
+438819c96613: Pull complete
+5d64b492c925: Pull complete
+Digest: sha256:87861b8cf91579109319ebc300f3f1060e6da9c05d6ae8ad15a20c879e84e32e
+Status: Downloaded newer image for quay.io/prometheus/prometheus:v3.13.4
+quay.io/prometheus/prometheus:v3.13.4

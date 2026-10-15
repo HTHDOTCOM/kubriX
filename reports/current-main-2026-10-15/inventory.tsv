@@ -1,0 +1,19 @@
+product	image	source	source_kind
+keycloak-operator	quay.io/keycloak/keycloak-operator:26.7.5	platform-apps/charts/keycloak/values-kubrix-default.yaml	explicit main override
+keycloak	quay.io/keycloak/keycloak:26.7.5	platform-apps/charts/keycloak/values-kubrix-default.yaml (operator related image)	explicit main override
+metallb-frr	quay.io/frrouting/frr:10.4.5	platform-apps/charts/metallb/values-kubrix-default.yaml	explicit main override
+kubecost-prometheus	quay.io/prometheus/prometheus:v3.13.4	platform-apps/charts/kubecost/values-kubrix-default.yaml	explicit main override
+testkube-nats	nats:2.15.1-alpine	platform-apps/charts/testkube/values-kubrix-default.yaml	explicit main override
+velero	docker.io/velero/velero:v1.18.4	platform-apps/charts/velero/values-kubrix-default.yaml	explicit main override
+velero-aws-plugin	velero/velero-plugin-for-aws:v1.14.4	platform-apps/charts/velero/values-kubrix-default.yaml	explicit main override
+silo-minio-loki-mimir	docker.io/pgsty/silo:RELEASE.2026-09-16T00-00-00Z	platform-apps/charts/{minio,loki,mimir}/values-kubrix-default.yaml	explicit main override
+falcoctl	docker.io/falcosecurity/falcoctl:0.14.2	platform-apps/charts/falco/values-kubrix-default.yaml	explicit main override
+falcosidekick	docker.io/falcosecurity/falcosidekick:2.35.0	platform-apps/charts/falco/values-kubrix-default.yaml	explicit main override
+falcosidekick-ui	docker.io/falcosecurity/falcosidekick-ui:2.3.1	platform-apps/charts/falco/values-kubrix-default.yaml	explicit main override
+falco-exporter	docker.io/falcosecurity/falco-exporter:0.8.7	platform-apps/charts/falco/values-kubrix-default.yaml	explicit main override
+falco	docker.io/falcosecurity/falco:0.43.1	Falco 8.0.5 upstream Chart.yaml appVersion	locked chart default; cached upstream chart
+backstage	ghcr.io/suxess-it/sx-backstage:v1.51.2	platform-apps/charts/backstage/values-kubrix-default.yaml	explicit main override
+velero-api	docker.io/dserio83/velero-api:0.3.1	vui 1.0.6 upstream values.yaml	cached upstream default; full render not revalidated
+velero-ui	docker.io/dserio83/velero-ui:0.3.1	vui 1.0.6 upstream values.yaml	cached upstream default; full render not revalidated
+velero-watchdog	docker.io/dserio83/velero-watchdog:0.1.8	vui 1.0.6 upstream values.yaml	cached upstream default; full render not revalidated
+testkube-minio	docker.io/kubeshop/testkube-minio:2025.10	Testkube thirdparty MinIO values.yaml; matches recovered Testkube 2.14.1 inventory	cached upstream default; full render not revalidated

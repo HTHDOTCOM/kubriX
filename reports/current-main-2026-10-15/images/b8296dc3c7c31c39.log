@@ -1,0 +1,2 @@
+2026-10-15T08:40:14Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-15T08:40:19Z	FATAL	Fatal error	run error: image scan error: scan error: scan failed: failed analysis: analyze error: pipeline error: failed to analyze layer (sha256:19312c1919dc778ba25e737d988bc188f8591fe702cc2214f9ad988bee1b5b1c): walk error: failed to extract the archive: unexpected EOF
