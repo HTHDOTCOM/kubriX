@@ -1,0 +1,6 @@
+2026-10-15T08:15:02+02:00	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-15T08:15:04+02:00	INFO	Detected OS	family="alpine" version="3.22.6"
+2026-10-15T08:15:04+02:00	INFO	[alpine] Detecting vulnerabilities...	os_version="3.22" repository="3.22" pkg_num=18
+2026-10-15T08:15:04+02:00	INFO	Number of language-specific files	num=1
+2026-10-15T08:15:04+02:00	INFO	[gobinary] Detecting vulnerabilities...
+2026-10-15T08:15:04+02:00	WARN	Using severities from other vendors for some vulnerabilities. Read https://trivy.dev/docs/v0.76/guide/scanner/vulnerability#severity-selection for details.

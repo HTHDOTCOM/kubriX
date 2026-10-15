@@ -1,0 +1,9 @@
+2026-10-15T08:11:26+02:00	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-15T08:11:36+02:00	WARN	Third-party SBOM may lead to inaccurate vulnerability detection
+2026-10-15T08:11:36+02:00	WARN	Recommend using Trivy to generate SBOMs
+2026-10-15T08:11:37+02:00	INFO	[python] Licenses acquired from one or more METADATA files may be subject to additional terms. Use `--debug` flag to see all affected packages.
+2026-10-15T08:11:37+02:00	INFO	Detected OS	family="alpine" version="3.24.2"
+2026-10-15T08:11:37+02:00	INFO	[alpine] Detecting vulnerabilities...	os_version="3.24" repository="3.24" pkg_num=30
+2026-10-15T08:11:37+02:00	INFO	Number of language-specific files	num=1
+2026-10-15T08:11:37+02:00	INFO	[python-pkg] Detecting vulnerabilities...
+2026-10-15T08:11:37+02:00	WARN	Using severities from other vendors for some vulnerabilities. Read https://trivy.dev/docs/v0.76/guide/scanner/vulnerability#severity-selection for details.

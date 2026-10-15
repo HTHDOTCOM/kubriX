@@ -1,0 +1,6 @@
+2026-10-15T08:13:55+02:00	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-15T08:14:30+02:00	INFO	Detected OS	family="wolfi" version="20230201"
+2026-10-15T08:14:30+02:00	INFO	[wolfi] Detecting vulnerabilities...	pkg_num=54
+2026-10-15T08:14:30+02:00	INFO	Number of language-specific files	num=3
+2026-10-15T08:14:30+02:00	INFO	[gobinary] Detecting vulnerabilities...
+2026-10-15T08:14:30+02:00	WARN	Using severities from other vendors for some vulnerabilities. Read https://trivy.dev/docs/v0.76/guide/scanner/vulnerability#severity-selection for details.

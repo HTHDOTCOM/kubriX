@@ -1,0 +1,4 @@
+2026-10-15T08:03:40+02:00	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-15T08:03:40+02:00	INFO	Received signal, attempting graceful shutdown...
+2026-10-15T08:03:40+02:00	INFO	Press Ctrl+C again to force exit
+2026-10-15T08:03:41+02:00	FATAL	Fatal error	run error: image scan error: scan error: scan failed: failed analysis: analyze error: pipeline error: context canceled
