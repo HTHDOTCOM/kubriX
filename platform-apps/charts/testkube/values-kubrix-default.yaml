@@ -9,3 +9,7 @@ testkube:
       # 'false' until https://github.com/kubeshop/helm-charts/issues/1052 fixed
       enabled: false
       hosts: []
+  nats:
+    container:
+      image:
+        tag: 2.15.1-alpine

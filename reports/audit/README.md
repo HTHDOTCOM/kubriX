@@ -1,5 +1,21 @@
 # CVE remediation audit — 2026-10-14
 
+## Merge update — 2026-10-15
+
+Merged `main` commit `ef47c55a85c82a78ecf15132d0b545e91c7294bf` into the audit
+branch. Main now supplies the original `reports/cve-per-product.tsv`, its other
+inventory reports, and the Keycloak/FRR/Prometheus/NATS configuration changes.
+The audit tables below describe the October 14 audit snapshot; their
+`current_image` fields are historical and do not supersede those merged settings.
+
+The three report formats differ between branches. The detailed audit versions
+remain at `reports/cve-remediation-plan.tsv`, `reports/cve-before-after.tsv` and
+`reports/cve-unfixed.tsv`. Main's versions are preserved byte-for-byte under
+`main-merged-reports/`. Their counts and APPLIED/PROPOSED claims have not been
+revalidated by this merge and must not be combined with the audit's counts as
+though they shared scan settings or counting rules. See that folder's README.
+No additional image upgrade was introduced to resolve these conflicts.
+
 Branch: `audit-cve-remediation-2026-10-14`, based on fetched `main` commit
 `58811e60fafa9573d432be14e62868beb5ce68c2`.
 
