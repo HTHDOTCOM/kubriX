@@ -1,0 +1,5 @@
+2026-10-15T08:18:09+02:00	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-15T08:18:10+02:00	FATAL	Fatal error	run error: image scan error: scan error: unable to initialize a scan service: unable to initialize artifact: unable to initialize container image: unable to find the specified image "registry-1.docker.io/traefik@sha256:575fa15b135078fe5e50aa847987d96dbddd7b093c172429618404df73f3fa7c" in ["remote"]: 1 error occurred:
+	* remote error: GET https://registry-1.docker.io/v2/traefik/manifests/sha256:575fa15b135078fe5e50aa847987d96dbddd7b093c172429618404df73f3fa7c: UNAUTHORIZED: authentication required; [map[Action:pull Class: Name:traefik Type:repository]]
+
+

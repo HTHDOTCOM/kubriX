@@ -10,17 +10,33 @@ falco:
     enabled: true
     #kind: ebpf
     kind: modern-bpf
-    kubernetes:
-      enabled: true
 
   falco:
-    grpc:
-      enabled: true
-      bind_address: "unix:///run/falco/falco.sock"
     # when threadiness is 0, Falco automatically guesses it depending on the number of online cores
-      threadiness: 0
-    grpc_output:
+    threadiness: 0
+
+  # Native Prometheus metrics (replaces the retired falco-exporter gRPC sidecar).
+  # Falco 0.44+ removed gRPC; metrics are now exposed on the falco-metrics service.
+  metrics:
+    enabled: true
+  serviceMonitor:
+    create: true
+    # Propagate the falco-metrics Service's `type` label to targets so the
+    # FalcoAbsent alert can distinguish falco from the k8s-metacollector
+    # ServiceMonitor, which shares the same job label (the release name).
+    targetLabels:
+      - type
+
+  # Bundled dashboard for the native metrics (replaces the falco-exporter dashboard).
+  grafana:
+    dashboards:
       enabled: true
+      configMaps:
+        falco:
+          name: falco-grafana-dashboard
+          namespace: falco
+          folder: "kubriX"
+          folderAnnotation: grafana_folder
 
   falcosidekick:
     enabled: true
@@ -53,24 +69,6 @@ falco:
           configMap:
             folder: "kubriX"
             folderAnnotation: grafana_folder
-
-falco-exporter:
-  image:
-    tag: "0.8.7"
-  falco:
-    grpcUnixSocketPath: "unix:///run/falco/falco.sock"
-    grpcTimeout: 3m
-
-  serviceMonitor:
-    enabled: true
-  grafanaDashboard:
-    enabled: true
-    namespace: falco
-    folder: "kubriX"
-    folderAnnotation: grafana_folder
-
-  prometheusRules:
-    enabled: true
 
 k8s-metacollector:
   serviceMonitor:

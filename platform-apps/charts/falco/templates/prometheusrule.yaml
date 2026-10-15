@@ -1,0 +1,32 @@
+{{- if .Values.falco.metrics.enabled }}
+# Replacement for the retired falco-exporter "absent" alert.
+# Falco 0.44+ removed gRPC, so the falco-exporter sidecar (and its
+# FalcoExporterAbsent alert) is gone. This detects when the falco native
+# metrics endpoint disappears from Prometheus service discovery.
+#
+# The event-rate alerts (FalcoWarningEventsRateHigh, ...) are intentionally
+# NOT duplicated here: the bundled falcosidekick chart already ships them
+# (based on falcosecurity_falcosidekick_falco_events_total). Defining the
+# same alert names twice in one namespace would fail Prometheus rule loading.
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: {{ .Release.Name }}-falco
+  labels:
+    app.kubernetes.io/name: falco
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: Helm
+    helm.sh/chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+spec:
+  groups:
+  - name: falco
+    rules:
+    - alert: FalcoAbsent
+      expr: absent(up{job="{{ .Release.Name }}",type="falco-metrics"})
+      for: 10m
+      annotations:
+        summary: Falco has disappeared from Prometheus service discovery.
+        description: No metrics are being scraped from falco. No events will trigger any alerts.
+      labels:
+        severity: critical
+{{- end }}

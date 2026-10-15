@@ -1,0 +1,15 @@
+=== Scanner ===
+Version: 0.76.0
+=== Vulnerability DB (frozen, --skip-db-update) ===
+{"Version":2,"NextUpdate":"2026-10-15T07:11:52.271767002Z","UpdatedAt":"2026-10-14T07:11:52.271767627Z","DownloadedAt":"2026-10-14T12:50:43.266411941Z"}
+
+sha256:
+88daf0f4f0789698811bec5ebf95ef9610cd0f4d0571394f754a5cdb8cf081c9  /home/c1023447/.cache/trivy/db/trivy.db
+=== Java DB ===
+{"Version":1,"NextUpdate":"2026-10-17T01:07:18.515664021Z","UpdatedAt":"2026-10-14T01:07:18.515664291Z","DownloadedAt":"2026-10-14T13:04:01.149834476Z"}
+
+sha256:
+f30b41953f15675caf7fd8e9ffc3676593e9bb03fbe81d0e7bcc968cbeb1ef58  /home/c1023447/.cache/trivy/java-db/trivy-java.db
+=== Scan flags (match audit baseline) ===
+trivy image --cache-backend memory --skip-db-update --skip-java-db-update --image-src remote --scanners vuln --severity HIGH,CRITICAL --format json
+NOTE: No --ignore-unfixed. DB is a DIFFERENT snapshot than the 2026-10-14 audit (UpdatedAt 2026-10-14T07:11:52Z vs audit 13:10:32Z); all before/after comparisons in this remediation use THIS single frozen snapshot.

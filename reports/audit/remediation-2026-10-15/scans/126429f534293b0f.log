@@ -1,0 +1,6 @@
+2026-10-15T08:12:50+02:00	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-15T08:13:12+02:00	INFO	Detected OS	family="redhat" version="9.8"
+2026-10-15T08:13:12+02:00	INFO	[redhat] Detecting RHEL/CentOS vulnerabilities...	os_version="9" pkg_num=20
+2026-10-15T08:13:12+02:00	INFO	Number of language-specific files	num=2
+2026-10-15T08:13:12+02:00	INFO	[gobinary] Detecting vulnerabilities...
+2026-10-15T08:13:12+02:00	WARN	Using severities from other vendors for some vulnerabilities. Read https://trivy.dev/docs/v0.76/guide/scanner/vulnerability#severity-selection for details.
