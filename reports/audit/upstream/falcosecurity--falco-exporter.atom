@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/falcosecurity/falco-exporter/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/falcosecurity/falco-exporter/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/falcosecurity/falco-exporter/releases.atom"/>
+  <title>Release notes from falco-exporter</title>
+  <updated>2024-03-14T10:23:25Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/213064135/v0.8.7</id>
+    <updated>2024-03-14T10:28:37Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco-exporter/releases/tag/v0.8.7"/>
+    <title>v0.8.7</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/573cccb096fab90874747607522e30f7b09cb4b1/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/573cccb096fab90874747607522e30f7b09cb4b1&quot;&gt;&lt;tt&gt;573cccb&lt;/tt&gt;&lt;/a&gt; build(deps): bump google.golang.org/protobuf from 1.30.0 to 1.33.0&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213064135/v0.8.6</id>
+    <updated>2023-11-08T16:11:18Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco-exporter/releases/tag/v0.8.6"/>
+    <title>v0.8.6</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/a893486361918d094090de2471938c578207388a/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/a893486361918d094090de2471938c578207388a&quot;&gt;&lt;tt&gt;a893486&lt;/tt&gt;&lt;/a&gt; build(deps): bump google.golang.org/grpc from 1.53.0 to 1.56.3&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213064135/v0.8.5</id>
+    <updated>2023-10-13T10:02:43Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco-exporter/releases/tag/v0.8.5"/>
+    <title>v0.8.5</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/9abf23fbe1c05406754fda3bcf0f820eca24a186/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/9abf23fbe1c05406754fda3bcf0f820eca24a186&quot;&gt;&lt;tt&gt;9abf23f&lt;/tt&gt;&lt;/a&gt; build(deps): bump golang.org/x/net from 0.7.0 to 0.17.0&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/d3b1a9e254b977e34b9d68b81ae6ec23395a85cc/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/d3b1a9e254b977e34b9d68b81ae6ec23395a85cc&quot;&gt;&lt;tt&gt;d3b1a9e&lt;/tt&gt;&lt;/a&gt; docs: add license headers and spdx id&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213064135/v0.8.4</id>
+    <updated>2023-08-28T08:13:07Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco-exporter/releases/tag/v0.8.4"/>
+    <title>v0.8.4</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/711041046554b4c35f5cde98b2afa245b9093ff4/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/711041046554b4c35f5cde98b2afa245b9093ff4&quot;&gt;&lt;tt&gt;7110410&lt;/tt&gt;&lt;/a&gt; Allow use of custom build args&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/f7b9edc636cf7dfb40d0c1d6492cc03f70a141cb/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/f7b9edc636cf7dfb40d0c1d6492cc03f70a141cb&quot;&gt;&lt;tt&gt;f7b9edc&lt;/tt&gt;&lt;/a&gt; build(deps): bump google.golang.org/grpc from 1.46.2 to 1.53.0&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/6d1bd5a0392a96c0ef07689bed062c0765b36eab/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/6d1bd5a0392a96c0ef07689bed062c0765b36eab&quot;&gt;&lt;tt&gt;6d1bd5a&lt;/tt&gt;&lt;/a&gt; docs(README.md): add scope and status badges&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213064135/v0.8.3</id>
+    <updated>2023-04-11T16:07:14Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco-exporter/releases/tag/v0.8.3"/>
+    <title>v0.8.3</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/7a8f0cdef3ac14ca8af7148e7a1a98d7ef0d4027/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/7a8f0cdef3ac14ca8af7148e7a1a98d7ef0d4027&quot;&gt;&lt;tt&gt;7a8f0cd&lt;/tt&gt;&lt;/a&gt; build(deps): bump golang.org/x/net&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/b73032678d19cfca7972b55489a8517de9412b41/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/b73032678d19cfca7972b55489a8517de9412b41&quot;&gt;&lt;tt&gt;b730326&lt;/tt&gt;&lt;/a&gt; build(deps): bump golang.org/x/text from 0.3.7 to 0.3.8&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213064135/v0.8.2</id>
+    <updated>2023-01-20T10:56:12Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco-exporter/releases/tag/v0.8.2"/>
+    <title>v0.8.2</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/55bafd43ecd2e9adc566fdd0fa3c30ee9bd57060/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/55bafd43ecd2e9adc566fdd0fa3c30ee9bd57060&quot;&gt;&lt;tt&gt;55bafd4&lt;/tt&gt;&lt;/a&gt; new: support arm64 artifacts and docker images.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213064135/v0.8.1</id>
+    <updated>2023-01-19T14:36:25Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco-exporter/releases/tag/v0.8.1"/>
+    <title>v0.8.1</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/8fcae1d313843eeeea7214b8ba44cb61f7999cc3/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/8fcae1d313843eeeea7214b8ba44cb61f7999cc3&quot;&gt;&lt;tt&gt;8fcae1d&lt;/tt&gt;&lt;/a&gt; cleanup(ci): dropped circleci.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/5c631f4dafb5a332a300e322b674309b4b0d94c3/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/5c631f4dafb5a332a300e322b674309b4b0d94c3&quot;&gt;&lt;tt&gt;5c631f4&lt;/tt&gt;&lt;/a&gt; new(ci): added gha.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213064135/v0.8.0</id>
+    <updated>2022-10-21T14:37:12Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco-exporter/releases/tag/v0.8.0"/>
+    <title>v0.8.0</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/7c4fe82afe3f9c836d0099941945693946b749b6/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/7c4fe82afe3f9c836d0099941945693946b749b6&quot;&gt;&lt;tt&gt;7c4fe82&lt;/tt&gt;&lt;/a&gt; fix(docker): fixed dockerfile golang version.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/f3f610061c36eac66ad46d6d55c90038e70204ca/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/f3f610061c36eac66ad46d6d55c90038e70204ca&quot;&gt;&lt;tt&gt;f3f6100&lt;/tt&gt;&lt;/a&gt; fix(ci): drop i386 build + add timeout to goreleaser.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/e69c0b374c9e18abae3a2e2df9ab65b0826b54d8/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/e69c0b374c9e18abae3a2e2df9ab65b0826b54d8&quot;&gt;&lt;tt&gt;e69c0b3&lt;/tt&gt;&lt;/a&gt; update(ci): switch to cimg circle ci go image instead of old unsupported circleci/golang.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/f30cada5fe7e30679a9952a8e195c64d546abae5/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/f30cada5fe7e30679a9952a8e195c64d546abae5&quot;&gt;&lt;tt&gt;f30cada&lt;/tt&gt;&lt;/a&gt; docs: update docs example&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/f279c7b9a70c4b1f28caeceb0493c51e47594f1a/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/f279c7b9a70c4b1f28caeceb0493c51e47594f1a&quot;&gt;&lt;tt&gt;f279c7b&lt;/tt&gt;&lt;/a&gt; docs(README.md): add notice for Falco 0.33 changes in prerequisites&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/0c82c4be1eff38a824b4200a4489ff2cece43c19/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/0c82c4be1eff38a824b4200a4489ff2cece43c19&quot;&gt;&lt;tt&gt;0c82c4b&lt;/tt&gt;&lt;/a&gt; update(deploy/k8s): update default socket path&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/b934a326ccdc9bf0abeb8e001badac5f2c1e0c30/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/b934a326ccdc9bf0abeb8e001badac5f2c1e0c30&quot;&gt;&lt;tt&gt;b934a32&lt;/tt&gt;&lt;/a&gt; docs(README.md): update command line usage&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/7aa0a13fcbcf69c4e6ee3bae21c281673e4dee9e/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/7aa0a13fcbcf69c4e6ee3bae21c281673e4dee9e&quot;&gt;&lt;tt&gt;7aa0a13&lt;/tt&gt;&lt;/a&gt; update(cmd): default unix socket path for Falco 0.33&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/f0e4edd070398367c97db5cdd9615f88d3500cd0/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/f0e4edd070398367c97db5cdd9615f88d3500cd0&quot;&gt;&lt;tt&gt;f0e4edd&lt;/tt&gt;&lt;/a&gt; Update Alpine to 3.16&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/286df4146573e275109fbd300f2664bf01300676/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/286df4146573e275109fbd300f2664bf01300676&quot;&gt;&lt;tt&gt;286df41&lt;/tt&gt;&lt;/a&gt; chore(OWNERS): remove duplicates in reviewers&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/48478d333fbdfdd7780a11392a9738fa0b85ce57/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/48478d333fbdfdd7780a11392a9738fa0b85ce57&quot;&gt;&lt;tt&gt;48478d3&lt;/tt&gt;&lt;/a&gt; cleanup(OWNERS): remove inactive approvers&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/78bcd38daf4b939a1db98544c6af54dbe1dbd889/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/78bcd38daf4b939a1db98544c6af54dbe1dbd889&quot;&gt;&lt;tt&gt;78bcd38&lt;/tt&gt;&lt;/a&gt; update(OWNERS): add jasondellaluce&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/b842642209303e2a4a7b49fb5ff5f884eb9d3a72/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/b842642209303e2a4a7b49fb5ff5f884eb9d3a72&quot;&gt;&lt;tt&gt;b842642&lt;/tt&gt;&lt;/a&gt; test(circleci): bump golang image to 1.17.5&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/dd894ca88a21b3c0bd9c9cb89f4ae91665449865/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/dd894ca88a21b3c0bd9c9cb89f4ae91665449865&quot;&gt;&lt;tt&gt;dd894ca&lt;/tt&gt;&lt;/a&gt; build(go.mod): bump go version to 1.17&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/a079011502b3adc38e59004b888c7dd5b4d3c900/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/a079011502b3adc38e59004b888c7dd5b4d3c900&quot;&gt;&lt;tt&gt;a079011&lt;/tt&gt;&lt;/a&gt; update(go.mod): bump dependencies versions&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/c0a091e174a9a9af651f34fd4a4996420834cbb5/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/c0a091e174a9a9af651f34fd4a4996420834cbb5&quot;&gt;&lt;tt&gt;c0a091e&lt;/tt&gt;&lt;/a&gt; link fix for getting started&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213064135/v0.7.0</id>
+    <updated>2022-02-02T09:14:45Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco-exporter/releases/tag/v0.7.0"/>
+    <title>v0.7.0</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/46002b37996e3f9055dce1975a4231bd108198c0/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/46002b37996e3f9055dce1975a4231bd108198c0&quot;&gt;&lt;tt&gt;46002b3&lt;/tt&gt;&lt;/a&gt; docs(README.md): add priority mapping table&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/f31368fde46257c14c6dca15c8f360a1fbe4e805/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/f31368fde46257c14c6dca15c8f360a1fbe4e805&quot;&gt;&lt;tt&gt;f31368f&lt;/tt&gt;&lt;/a&gt; update(go.mod): bump client-go version to 0.5.0&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/f7a257349903b0af3328d421859be064bb4d659a/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/f7a257349903b0af3328d421859be064bb4d659a&quot;&gt;&lt;tt&gt;f7a2573&lt;/tt&gt;&lt;/a&gt; update: bump protobufs version to new definitions of falco 0.31.0&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/213064135/v0.6.0</id>
+    <updated>2021-10-04T12:24:41Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco-exporter/releases/tag/v0.6.0"/>
+    <title>v0.6.0</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/cd431fa0628c84433cc363abba50163c8902d362/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/cd431fa0628c84433cc363abba50163c8902d362&quot;&gt;&lt;tt&gt;cd431fa&lt;/tt&gt;&lt;/a&gt; update: new dependencies versions&lt;br&gt;
+&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/751ed80b6edd0f284d120c7510182fd16c8c00f2/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/751ed80b6edd0f284d120c7510182fd16c8c00f2&quot;&gt;&lt;tt&gt;751ed80&lt;/tt&gt;&lt;/a&gt; update: add rule tags to metrics&lt;br&gt;
+&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/25985e8589e2c53419a6e87a27e79dab20bd976d/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/25985e8589e2c53419a6e87a27e79dab20bd976d&quot;&gt;&lt;tt&gt;25985e8&lt;/tt&gt;&lt;/a&gt; docs(RELEASE.md): correct slack channel URL&lt;br&gt;
+&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/falcosecurity/falco-exporter/commit/95e15d82b382d182c415c48c088ec4ac85c02e08/hovercard&quot; href=&quot;https://github.com/falcosecurity/falco-exporter/commit/95e15d82b382d182c415c48c088ec4ac85c02e08&quot;&gt;&lt;tt&gt;95e15d8&lt;/tt&gt;&lt;/a&gt; fix(falco): Only show non-zero rates in Grafana&lt;/p&gt;
+&lt;h2&gt;Docker images&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;docker pull falcosecurity/falco-exporter:0.6.0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+</feed>

@@ -1,0 +1,3 @@
+2026-10-14T16:47:29Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-14T16:47:29Z	FATAL	Fatal error	run error: image scan error: scan error: unable to initialize a scan service: unable to initialize artifact: unable to initialize container image: unable to find the specified image "icr.io/kubecost/cost-model@sha256:d99a2ef75e3b3ec72747cf362b52dffffe7b68f94aac273e1d92e067588ade71" in ["remote"]: 1 error occurred:
+	* remote error: Get "https://icr.io/v2/": Forbidden

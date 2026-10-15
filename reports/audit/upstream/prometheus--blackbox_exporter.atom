@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/prometheus/blackbox_exporter/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/prometheus/blackbox_exporter/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/prometheus/blackbox_exporter/releases.atom"/>
+  <title>Release notes from blackbox_exporter</title>
+  <updated>2026-10-07T07:52:48Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/41964498/v0.29.0</id>
+    <updated>2026-10-13T06:16:58Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/blackbox_exporter/releases/tag/v0.29.0"/>
+    <title>0.29.0 / 2026-10-07</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[CHANGE] Reduce log noise &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3774375942&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1517&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1517/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1517&quot;&gt;#1517&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[CHANGE] Fail if &lt;code&gt;prober&lt;/code&gt; config contains invalid value &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3808738178&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1521&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1521/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1521&quot;&gt;#1521&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Add websocket connection prober &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2459678744&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1278&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1278/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1278&quot;&gt;#1278&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Add probe timeout metric &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4256526517&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1571&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1571/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1571&quot;&gt;#1571&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Add tcp and unix prober metric for &lt;code&gt;tls_cipher_info&lt;/code&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4396420991&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1579&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1579/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1579&quot;&gt;#1579&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Add CRL certificate revocation checking &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4477290625&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1583&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1583/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1583&quot;&gt;#1583&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] prober: Handle single and double encoded target parameter &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3845134928&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1525&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1525/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1525&quot;&gt;#1525&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] prober: Randomize ICMP echo identifier to avoid SNAT session collision &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3905202729&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1537&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1537/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1537&quot;&gt;#1537&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[BUGFIX] Make HTTP scheme parsing case-insensitive &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1943246486&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1137&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1137/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1137&quot;&gt;#1137&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[BUGFIX] Return on grpc.NewClient error and propagate probe context- &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4117382613&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1557&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1557/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1557&quot;&gt;#1557&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[BUGFIX] prober/unix: Return the TLS-config error instead of a nil error &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4930383487&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1629&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1629/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1629&quot;&gt;#1629&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/41964498/v0.28.0</id>
+    <updated>2025-12-06T13:32:18Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/blackbox_exporter/releases/tag/v0.28.0"/>
+    <title>0.28.0 / 2025-12-04</title>
+    <content type="html">&lt;p&gt;BREAKING CHANGES:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;--log.prober&lt;/code&gt; flag behavior has changed. The scrape probe logger is now an independent logger. Please review the README.md and adjust configurations as needed. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3384435190&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1461&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1461/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1461&quot;&gt;#1461&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Log leveling has been improved for several prober modules. Changes include logging errors at &lt;code&gt;ERROR&lt;/code&gt; level instead of &lt;code&gt;INFO&lt;/code&gt;, and adjusting many prober logs from &lt;code&gt;INFO&lt;/code&gt; to &lt;code&gt;DEBUG&lt;/code&gt; level. To see more detailed probe logs, set &lt;code&gt;--log.prober=debug&lt;/code&gt;. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3384435190&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1461&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1461/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1461&quot;&gt;#1461&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[CHANGE] Make default HTTP User-Agent compliant with RFC9110 (now &lt;code&gt;Blackbox-Exporter/&amp;lt;version&amp;gt;&lt;/code&gt;) &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3280578890&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1446&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1446/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1446&quot;&gt;#1446&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[CHANGE] Config is not reloaded if the file content didn&#39;t change when using all reload methods &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3410527965&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1464&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1464/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1464&quot;&gt;#1464&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Support HTTP/3 (QUIC) prober &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3134160025&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1425&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1425/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1425&quot;&gt;#1425&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Add support for configuring gRPC metadata in gRPC prober &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1331124628&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/956&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/956/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/956&quot;&gt;#956&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Implement byte matching in TCP query responses &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3235462663&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1441&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1441/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1441&quot;&gt;#1441&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Add a new type of probe using unix domain sockets &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3544242164&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1480&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1480/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1480&quot;&gt;#1480&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Support config reload automatically - feature flag &lt;code&gt;config.enable-auto-reload&lt;/code&gt;, &lt;code&gt;config.auto-reload-interval&lt;/code&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3410527965&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1464&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1464/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1464&quot;&gt;#1464&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[BUGFIX] Fix retrieving probe logs by target name when probed by multiple modules &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2356984435&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1257&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1257/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1257&quot;&gt;#1257&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[BUGFIX] Fix error handling in auto-reload config case &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3510058555&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1478&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1478/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1478&quot;&gt;#1478&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[BUGFIX] Fix &lt;code&gt;debug&lt;/code&gt; param log output work regardless of log level &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3210923165&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1438&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1438/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1438&quot;&gt;#1438&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/41964498/v0.27.0</id>
+    <updated>2025-06-30T13:45:33Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/blackbox_exporter/releases/tag/v0.27.0"/>
+    <title>0.27.0 / 2025-06-26</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[FEATURE] Support matching JSON body with CEL expressions &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2335715929&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1255&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1255/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1255&quot;&gt;#1255&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[BUGFIX] Fix condition when local dns lookup should happen &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2431705857&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1272&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1272/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1272&quot;&gt;#1272&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[BUGFIX] Stop scrape logger spam &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2927053186&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1381&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1381/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1381&quot;&gt;#1381&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/41964498/v0.26.0</id>
+    <updated>2025-02-26T13:51:24Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/blackbox_exporter/releases/tag/v0.26.0"/>
+    <title>0.26.0 / 2025-02-26</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[CHANGE] adopt log/slog, drop go-kit/log &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2613013298&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1311&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1311/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1311&quot;&gt;#1311&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Add metric to record tls ciphersuite negotiated during handshake &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2172741927&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1203&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1203/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1203&quot;&gt;#1203&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Add a way to export labels with content matched by the probe &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2478245231&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1284&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1284/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1284&quot;&gt;#1284&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Reports Certificate Serial number &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2724501085&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1333&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1333/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1333&quot;&gt;#1333&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Enable misspell linter &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2319809970&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1248&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1248/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1248&quot;&gt;#1248&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Fix incorrect parameters name in documentation &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1916761532&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1126&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1126/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1126&quot;&gt;#1126&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Add stale workflow to start sync with stale.yaml in prometheus &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2035372012&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1170&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1170/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1170&quot;&gt;#1170&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Update CONFIGURATION.md to clarify that valid_status_codes expects a list &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2743555248&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1335&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1335/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1335&quot;&gt;#1335&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Skip failing IPv6 tests in test CI Pipeline &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2758232998&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1342&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1342/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1342&quot;&gt;#1342&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Add RabbitMQ probe example &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2764666955&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1349&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1349/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1349&quot;&gt;#1349&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[BUGFIX] Only register grpc TLS metrics on successful handshake &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2756401602&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1338&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1338/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1338&quot;&gt;#1338&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/41964498/v0.25.0</id>
+    <updated>2024-04-09T13:30:07Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/blackbox_exporter/releases/tag/v0.25.0"/>
+    <title>0.25.0 / 2024-04-09</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[FEATURE] Allow to get Probe logs by target &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1696104615&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1063&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1063/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1063&quot;&gt;#1063&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Log errors from probe &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1784225332&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1091&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1091/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1091&quot;&gt;#1091&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[BUGFIX] Prevent logging confusing error message &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1668316016&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1059&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1059/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1059&quot;&gt;#1059&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[BUGFIX] Explicit registration of internal exporter metrics 1060&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/41964498/v0.24.0</id>
+    <updated>2023-05-16T11:23:32Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/blackbox_exporter/releases/tag/v0.24.0"/>
+    <title>0.24.0 / 2023-05-16</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[CHANGE] Make Proxy Connect Headers consistent with Prometheus &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1500135664&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/1008&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/1008/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/1008&quot;&gt;#1008&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Add hostname parameter for TCP probe &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1422659327&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/981&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/981/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/981&quot;&gt;#981&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Add support for HTTP request body as file &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1448905942&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/987&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/987/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/987&quot;&gt;#987&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/41964498/v0.23.0</id>
+    <updated>2022-12-02T20:59:12Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/blackbox_exporter/releases/tag/v0.23.0"/>
+    <title>0.23.0 / 2022-12-02</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[SECURITY] Update Exporter Toolkit (&lt;a title=&quot;CVE-2022-46146&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-7rg2-cxvp-9p7p/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-7rg2-cxvp-9p7p&quot;&gt;CVE-2022-46146&lt;/a&gt;) &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1417771345&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/979&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/979/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/979&quot;&gt;#979&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Support multiple Listen Addresses and systemd socket activation &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1417771345&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/979&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/979/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/979&quot;&gt;#979&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] Add leaf certificate details in a new &lt;code&gt;probe_ssl_last_chain_info&lt;/code&gt; metric. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1295085989&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/943&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/943/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/943&quot;&gt;#943&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[FEATURE] DNS: Add &lt;code&gt;Add probe_dns_query_succeeded&lt;/code&gt; metric. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1464974833&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/990&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/990/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/990&quot;&gt;#990&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/41964498/v0.22.0</id>
+    <updated>2022-08-02T14:26:18Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/blackbox_exporter/releases/tag/v0.22.0"/>
+    <title>0.22.0 / 2022-08-02</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[FEATURE] HTTP: Add &lt;code&gt;skip_resolve_phase_with_proxy&lt;/code&gt; option. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1300879223&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/944&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/944/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/944&quot;&gt;#944&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] OAuth: Use Blackbox Exporter user agent when doing OAuth2&lt;br&gt;
+authenticated requests. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1305020189&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/948&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/948/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/948&quot;&gt;#948&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ENHANCEMENT] Print usage and help to stdout instead of stderr. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1270091276&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/928&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/928/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/928&quot;&gt;#928&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/41964498/v0.21.1</id>
+    <updated>2022-06-23T16:09:59Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/blackbox_exporter/releases/tag/v0.21.1"/>
+    <title>0.21.1 / 2022-06-17</title>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;[BUGFIX] Fix a data race in HTTP probes. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1274957204&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/929&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/929/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/929&quot;&gt;#929&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/41964498/v0.21.0</id>
+    <updated>2022-05-30T15:06:39Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/prometheus/blackbox_exporter/releases/tag/v0.21.0"/>
+    <title>0.21.0 / 2022-05-30</title>
+    <content type="html">&lt;p&gt;This Prometheus release is built with go1.18, which contains two noticeable&lt;br&gt;
+changes related to TLS and HTTP:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://go.dev/doc/go1.18#tls10&quot; rel=&quot;nofollow&quot;&gt;TLS 1.0 and 1.1 disabled by default client-side&lt;/a&gt;.&lt;br&gt;
+Blackbox Exporter users can override this with the &lt;code&gt;min_version&lt;/code&gt; parameter of&lt;br&gt;
+&lt;a href=&quot;https://prometheus.io/docs/prometheus/latest/configuration/configuration/#tls_config&quot; rel=&quot;nofollow&quot;&gt;tls_config&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://go.dev/doc/go1.18#sha1&quot; rel=&quot;nofollow&quot;&gt;Certificates signed with the SHA-1 hash function are rejected&lt;/a&gt;.&lt;br&gt;
+This doesn&#39;t apply to self-signed root certificates.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;[BUGFIX] Prevent setting negative timeouts when using a small scrape interval. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1114014647&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/prometheus/blackbox_exporter/issues/869&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/prometheus/blackbox_exporter/pull/869/hovercard&quot; href=&quot;https://github.com/prometheus/blackbox_exporter/pull/869&quot;&gt;#869&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>prombot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/18470668?s=60&amp;v=4"/>
+  </entry>
+</feed>

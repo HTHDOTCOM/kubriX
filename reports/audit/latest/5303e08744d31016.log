@@ -1,0 +1,3 @@
+2026-10-14T16:48:32Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-14T16:48:32Z	FATAL	Fatal error	run error: image scan error: scan error: unable to initialize a scan service: unable to initialize artifact: unable to initialize container image: unable to find the specified image "reg.kyverno.io/kyverno/kyvernopre@sha256:c25c47461f06f2845a48c319ae86fbbc1730a7b9ed5b701889c9dc1f9ee94b09" in ["remote"]: 1 error occurred:
+	* remote error: Get "https://reg.kyverno.io/v2/": Forbidden

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/docker-library/busybox/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/docker-library/busybox/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/docker-library/busybox/releases.atom"/>
+  <title>Release notes from busybox</title>
+  <updated>2026-10-14T16:46:09Z</updated>
+</feed>

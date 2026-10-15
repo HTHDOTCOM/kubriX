@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/metallb/frr-k8s/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/metallb/frr-k8s/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/metallb/frr-k8s/releases.atom"/>
+  <title>Release notes from frr-k8s</title>
+  <updated>2026-10-14T09:47:07Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/644829918/v0.0.27</id>
+    <updated>2026-10-14T11:31:58Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/frr-k8s/releases/tag/v0.0.27"/>
+    <title>Release v0.0.27</title>
+    <content type="html">&lt;p&gt;See &lt;a href=&quot;https://github.com/metallb/frr-k8s/blob/main/RELEASE_NOTES.md&quot;&gt;https://github.com/metallb/frr-k8s/blob/main/RELEASE_NOTES.md&lt;/a&gt; for the details.&lt;/p&gt;</content>
+    <author>
+      <name>oribon</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/68010241?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644829918/frr-k8s-chart-0.0.27</id>
+    <updated>2026-10-14T10:08:29Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/frr-k8s/releases/tag/frr-k8s-chart-0.0.27"/>
+    <title>frr-k8s-chart-0.0.27</title>
+    <content type="html">&lt;p&gt;A cloud native wrapper of FRR&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644829918/v0.0.26</id>
+    <updated>2026-08-07T11:15:56Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/frr-k8s/releases/tag/v0.0.26"/>
+    <title>v0.0.26</title>
+    <content type="html">&lt;p&gt;See the release notes for details:\n\nhttps://raw.githubusercontent.c…&lt;/p&gt;</content>
+    <author>
+      <name>fedepaol</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/200560?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644829918/frr-k8s-chart-0.0.26</id>
+    <updated>2026-08-07T11:33:43Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/frr-k8s/releases/tag/frr-k8s-chart-0.0.26"/>
+    <title>frr-k8s-chart-0.0.26</title>
+    <content type="html">&lt;p&gt;A cloud native wrapper of FRR&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644829918/v0.0.25</id>
+    <updated>2026-05-07T17:06:56Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/frr-k8s/releases/tag/v0.0.25"/>
+    <title>v0.0.25</title>
+    <content type="html">&lt;p&gt;See the release notes for details:\n\nhttps://raw.githubusercontent.c…&lt;/p&gt;</content>
+    <author>
+      <name>fedepaol</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/200560?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644829918/frr-k8s-chart-0.0.25</id>
+    <updated>2026-05-08T07:41:03Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/frr-k8s/releases/tag/frr-k8s-chart-0.0.25"/>
+    <title>frr-k8s-chart-0.0.25</title>
+    <content type="html">&lt;p&gt;A cloud native wrapper of FRR&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644829918/v0.0.24</id>
+    <updated>2026-05-06T09:49:05Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/frr-k8s/releases/tag/v0.0.24"/>
+    <title>v0.0.24</title>
+    <content type="html">&lt;p&gt;See the release notes for details:\n\nhttps://raw.githubusercontent.c…&lt;/p&gt;</content>
+    <author>
+      <name>fedepaol</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/200560?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644829918/frr-k8s-chart-0.0.24</id>
+    <updated>2026-05-06T10:05:37Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/frr-k8s/releases/tag/frr-k8s-chart-0.0.24"/>
+    <title>frr-k8s-chart-0.0.24</title>
+    <content type="html">&lt;p&gt;A cloud native wrapper of FRR&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644829918/v0.0.23</id>
+    <updated>2026-03-30T10:55:57Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/frr-k8s/releases/tag/v0.0.23"/>
+    <title>Release v0.0.23</title>
+    <content type="html">&lt;p&gt;See &lt;a href=&quot;https://github.com/metallb/frr-k8s/blob/main/RELEASE_NOTES.md&quot;&gt;https://github.com/metallb/frr-k8s/blob/main/RELEASE_NOTES.md&lt;/a&gt; for the details.&lt;/p&gt;</content>
+    <author>
+      <name>oribon</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/68010241?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/644829918/frr-k8s-chart-0.0.23</id>
+    <updated>2026-03-30T10:21:14Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/metallb/frr-k8s/releases/tag/frr-k8s-chart-0.0.23"/>
+    <title>frr-k8s-chart-0.0.23</title>
+    <content type="html">&lt;p&gt;A cloud native wrapper of FRR&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+</feed>

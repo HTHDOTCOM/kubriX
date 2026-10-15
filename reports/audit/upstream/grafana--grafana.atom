@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/grafana/grafana/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/grafana/grafana/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/grafana/grafana/releases.atom"/>
+  <title>Release notes from grafana</title>
+  <updated>2026-10-13T11:39:42Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/15111821/v13.2.4</id>
+    <updated>2026-10-13T11:47:26Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/grafana/releases/tag/v13.2.4"/>
+    <title>13.2.4</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://grafana.com/grafana/download/13.2.4&quot; rel=&quot;nofollow&quot;&gt;Download page&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://grafana.com/docs/grafana/latest/whatsnew/&quot; rel=&quot;nofollow&quot;&gt;What&#39;s new highlights&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Security&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-15577&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-pm7c-5ghp-r9fq/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-pm7c-5ghp-r9fq&quot;&gt;CVE-2026-15577&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-33374&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-5mj5-pfmr-wxjp/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-5mj5-pfmr-wxjp&quot;&gt;CVE-2026-33374&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-93294&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-5wf9-m99g-f6xj/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-5wf9-m99g-f6xj&quot;&gt;CVE-2026-93294&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-95502&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-w2wx-887f-65f8/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-w2wx-887f-65f8&quot;&gt;CVE-2026-95502&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Features and enhancements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Alerting:&lt;/strong&gt; Strip sensitive headers from oauth2 cross-host redirects &lt;a href=&quot;https://github.com/grafana/grafana/pull/134433&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/134433/hovercard&quot;&gt;#134433&lt;/a&gt;, &lt;a href=&quot;https://github.com/JacobsonMT&quot;&gt;@JacobsonMT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dashboard:&lt;/strong&gt; Fall back when collection deletion is unsupported &lt;a href=&quot;https://github.com/grafana/grafana/pull/134224&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/134224/hovercard&quot;&gt;#134224&lt;/a&gt;, &lt;a href=&quot;https://github.com/bestend&quot;&gt;@bestend&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Git Sync:&lt;/strong&gt; Clarify repository links for pure Git &lt;a href=&quot;https://github.com/grafana/grafana/pull/134253&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/134253/hovercard&quot;&gt;#134253&lt;/a&gt;, &lt;a href=&quot;https://github.com/ferruvich&quot;&gt;@ferruvich&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Provisioning:&lt;/strong&gt; Allow resource previews in unsynced folders &lt;a href=&quot;https://github.com/grafana/grafana/pull/134391&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/134391/hovercard&quot;&gt;#134391&lt;/a&gt;, &lt;a href=&quot;https://github.com/grafana-writer%5Bbot%5D&quot;&gt;@grafana-writer[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Provisioning:&lt;/strong&gt; Reject invalid resource names before API calls &lt;a href=&quot;https://github.com/grafana/grafana/pull/133776&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/133776/hovercard&quot;&gt;#133776&lt;/a&gt;, &lt;a href=&quot;https://github.com/grafana-writer%5Bbot%5D&quot;&gt;@grafana-writer[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Provisioning:&lt;/strong&gt; Show last checked time in Pull status &lt;a href=&quot;https://github.com/grafana/grafana/pull/134483&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/134483/hovercard&quot;&gt;#134483&lt;/a&gt;, &lt;a href=&quot;https://github.com/ferruvich&quot;&gt;@ferruvich&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Provisioning:&lt;/strong&gt; Skip previews for pull requests from forks &lt;a href=&quot;https://github.com/grafana/grafana/pull/133799&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/133799/hovercard&quot;&gt;#133799&lt;/a&gt;, &lt;a href=&quot;https://github.com/ferruvich&quot;&gt;@ferruvich&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Provisioning:&lt;/strong&gt; Stop PR previews when refs disappear &lt;a href=&quot;https://github.com/grafana/grafana/pull/133855&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/133855/hovercard&quot;&gt;#133855&lt;/a&gt;, &lt;a href=&quot;https://github.com/ferruvich&quot;&gt;@ferruvich&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Provisioning:&lt;/strong&gt; Support legacy paths and diagnose missing source annotations &lt;a href=&quot;https://github.com/grafana/grafana/pull/133779&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/133779/hovercard&quot;&gt;#133779&lt;/a&gt;, &lt;a href=&quot;https://github.com/grafana-writer%5Bbot%5D&quot;&gt;@grafana-writer[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Provisioning:&lt;/strong&gt; write terminal sync status back to repository on early sync-job failures and Respect Git Sync polling intervals after unchanged refs &lt;a href=&quot;https://github.com/grafana/grafana/pull/134478&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/134478/hovercard&quot;&gt;#134478&lt;/a&gt;, &lt;a href=&quot;https://github.com/mustafasencer&quot;&gt;@mustafasencer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CVE-2026-92539:&lt;/strong&gt; IAM: Fix: SCIM (Enterprise)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15111821/v13.1.8</id>
+    <updated>2026-10-13T13:06:26Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/grafana/releases/tag/v13.1.8"/>
+    <title>13.1.8</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://grafana.com/grafana/download/13.1.8&quot; rel=&quot;nofollow&quot;&gt;Download page&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://grafana.com/docs/grafana/latest/whatsnew/&quot; rel=&quot;nofollow&quot;&gt;What&#39;s new highlights&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Security&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-15577&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-pm7c-5ghp-r9fq/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-pm7c-5ghp-r9fq&quot;&gt;CVE-2026-15577&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-33374&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-5mj5-pfmr-wxjp/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-5mj5-pfmr-wxjp&quot;&gt;CVE-2026-33374&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-93294&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-5wf9-m99g-f6xj/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-5wf9-m99g-f6xj&quot;&gt;CVE-2026-93294&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-95502&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-w2wx-887f-65f8/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-w2wx-887f-65f8&quot;&gt;CVE-2026-95502&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Features and enhancements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Alerting:&lt;/strong&gt; Strip sensitive headers from oauth2 cross-host redirects &lt;a href=&quot;https://github.com/grafana/grafana/pull/134428&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/134428/hovercard&quot;&gt;#134428&lt;/a&gt;, &lt;a href=&quot;https://github.com/JacobsonMT&quot;&gt;@JacobsonMT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dashboard:&lt;/strong&gt; Fall back when collection deletion is unsupported &lt;a href=&quot;https://github.com/grafana/grafana/pull/134225&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/134225/hovercard&quot;&gt;#134225&lt;/a&gt;, &lt;a href=&quot;https://github.com/bestend&quot;&gt;@bestend&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CVE-2026-92539:&lt;/strong&gt; IAM: Fix: SCIM (Enterprise)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15111821/v13.0.11</id>
+    <updated>2026-10-13T11:58:47Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/grafana/releases/tag/v13.0.11"/>
+    <title>13.0.11</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://grafana.com/grafana/download/13.0.11&quot; rel=&quot;nofollow&quot;&gt;Download page&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://grafana.com/docs/grafana/latest/whatsnew/&quot; rel=&quot;nofollow&quot;&gt;What&#39;s new highlights&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Security&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-15577&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-pm7c-5ghp-r9fq/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-pm7c-5ghp-r9fq&quot;&gt;CVE-2026-15577&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-33374&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-5mj5-pfmr-wxjp/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-5mj5-pfmr-wxjp&quot;&gt;CVE-2026-33374&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-93294&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-5wf9-m99g-f6xj/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-5wf9-m99g-f6xj&quot;&gt;CVE-2026-93294&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-95502&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-w2wx-887f-65f8/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-w2wx-887f-65f8&quot;&gt;CVE-2026-95502&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Features and enhancements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Alerting:&lt;/strong&gt; Strip sensitive headers from oauth2 cross-host redirects &lt;a href=&quot;https://github.com/grafana/grafana/pull/134426&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/134426/hovercard&quot;&gt;#134426&lt;/a&gt;, &lt;a href=&quot;https://github.com/JacobsonMT&quot;&gt;@JacobsonMT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dashboard:&lt;/strong&gt; Fall back when collection deletion is unsupported &lt;a href=&quot;https://github.com/grafana/grafana/pull/134228&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/134228/hovercard&quot;&gt;#134228&lt;/a&gt;, &lt;a href=&quot;https://github.com/bestend&quot;&gt;@bestend&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CVE-2026-92539:&lt;/strong&gt; IAM: Fix: Scim endpoints (Enterprise)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15111821/v12.4.13</id>
+    <updated>2026-10-13T13:13:14Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/grafana/releases/tag/v12.4.13"/>
+    <title>12.4.13</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://grafana.com/grafana/download/12.4.13&quot; rel=&quot;nofollow&quot;&gt;Download page&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://grafana.com/docs/grafana/latest/whatsnew/&quot; rel=&quot;nofollow&quot;&gt;What&#39;s new highlights&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Security&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-15577&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-pm7c-5ghp-r9fq/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-pm7c-5ghp-r9fq&quot;&gt;CVE-2026-15577&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-33374&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-5mj5-pfmr-wxjp/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-5mj5-pfmr-wxjp&quot;&gt;CVE-2026-33374&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-93294&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-5wf9-m99g-f6xj/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-5wf9-m99g-f6xj&quot;&gt;CVE-2026-93294&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Features and enhancements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Alerting:&lt;/strong&gt; Strip sensitive headers from oauth2 cross-host redirects &lt;a href=&quot;https://github.com/grafana/grafana/pull/134424&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/134424/hovercard&quot;&gt;#134424&lt;/a&gt;, &lt;a href=&quot;https://github.com/JacobsonMT&quot;&gt;@JacobsonMT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dashboard:&lt;/strong&gt; Fall back when collection deletion is unsupported (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4867294773&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/grafana/issues/128259&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/128259/hovercard&quot; href=&quot;https://github.com/grafana/grafana/pull/128259&quot;&gt;#128259&lt;/a&gt;) &lt;a href=&quot;https://github.com/grafana/grafana/pull/134229&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/134229/hovercard&quot;&gt;#134229&lt;/a&gt;, &lt;a href=&quot;https://github.com/bestend&quot;&gt;@bestend&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CVE-2026-92539:&lt;/strong&gt; IAM: Fix CVE-2026-92539: Scim endpoints (Enterprise)&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15111821/v13.2.3</id>
+    <updated>2026-09-29T09:07:49Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/grafana/releases/tag/v13.2.3"/>
+    <title>13.2.3</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://grafana.com/grafana/download/13.2.3&quot; rel=&quot;nofollow&quot;&gt;Download page&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://grafana.com/docs/grafana/latest/whatsnew/&quot; rel=&quot;nofollow&quot;&gt;What&#39;s new highlights&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Security&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-13719&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-46f2-3vm3-9h7j/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-46f2-3vm3-9h7j&quot;&gt;CVE-2026-13719&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-13720&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-9q62-r26p-xcjv/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-9q62-r26p-xcjv&quot;&gt;CVE-2026-13720&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-81841&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-4jjr-w7m9-wx5q/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-4jjr-w7m9-wx5q&quot;&gt;CVE-2026-81841&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15111821/v13.1.7</id>
+    <updated>2026-09-29T09:00:05Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/grafana/releases/tag/v13.1.7"/>
+    <title>13.1.7</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://grafana.com/grafana/download/13.1.7&quot; rel=&quot;nofollow&quot;&gt;Download page&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://grafana.com/docs/grafana/latest/whatsnew/&quot; rel=&quot;nofollow&quot;&gt;What&#39;s new highlights&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Security&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-13719&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-46f2-3vm3-9h7j/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-46f2-3vm3-9h7j&quot;&gt;CVE-2026-13719&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-13720&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-9q62-r26p-xcjv/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-9q62-r26p-xcjv&quot;&gt;CVE-2026-13720&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-81841&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-4jjr-w7m9-wx5q/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-4jjr-w7m9-wx5q&quot;&gt;CVE-2026-81841&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15111821/v13.0.10</id>
+    <updated>2026-09-29T08:56:11Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/grafana/releases/tag/v13.0.10"/>
+    <title>13.0.10</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://grafana.com/grafana/download/13.0.10&quot; rel=&quot;nofollow&quot;&gt;Download page&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://grafana.com/docs/grafana/latest/whatsnew/&quot; rel=&quot;nofollow&quot;&gt;What&#39;s new highlights&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Security&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-13719&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-46f2-3vm3-9h7j/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-46f2-3vm3-9h7j&quot;&gt;CVE-2026-13719&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-13720&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-9q62-r26p-xcjv/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-9q62-r26p-xcjv&quot;&gt;CVE-2026-13720&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-81841&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-4jjr-w7m9-wx5q/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-4jjr-w7m9-wx5q&quot;&gt;CVE-2026-81841&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-81842&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-37j9-5rxj-3hwp/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-37j9-5rxj-3hwp&quot;&gt;CVE-2026-81842&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15111821/v12.4.12</id>
+    <updated>2026-09-29T08:47:07Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/grafana/releases/tag/v12.4.12"/>
+    <title>12.4.12</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://grafana.com/grafana/download/12.4.12&quot; rel=&quot;nofollow&quot;&gt;Download page&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://grafana.com/docs/grafana/latest/whatsnew/&quot; rel=&quot;nofollow&quot;&gt;What&#39;s new highlights&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Security&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-13719&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-46f2-3vm3-9h7j/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-46f2-3vm3-9h7j&quot;&gt;CVE-2026-13719&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-13720&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-9q62-r26p-xcjv/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-9q62-r26p-xcjv&quot;&gt;CVE-2026-13720&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-81841&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-4jjr-w7m9-wx5q/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-4jjr-w7m9-wx5q&quot;&gt;CVE-2026-81841&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-81842&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-37j9-5rxj-3hwp/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-37j9-5rxj-3hwp&quot;&gt;CVE-2026-81842&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Unified Storage:&lt;/strong&gt; Return 403 instead of 500 on namespace mismatch &lt;a href=&quot;https://github.com/grafana/grafana/pull/133595&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/133595/hovercard&quot;&gt;#133595&lt;/a&gt;, &lt;a href=&quot;https://github.com/pstibrany&quot;&gt;@pstibrany&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15111821/v13.2.2</id>
+    <updated>2026-09-15T12:42:07Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/grafana/releases/tag/v13.2.2"/>
+    <title>13.2.2</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://grafana.com/grafana/download/13.2.2&quot; rel=&quot;nofollow&quot;&gt;Download page&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://grafana.com/docs/grafana/latest/whatsnew/&quot; rel=&quot;nofollow&quot;&gt;What&#39;s new highlights&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Security&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-15815&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-xp8x-3q7w-cpqr/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-xp8x-3q7w-cpqr&quot;&gt;CVE-2026-15815&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-76154&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-35gc-393c-vjxf/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-35gc-393c-vjxf&quot;&gt;CVE-2026-76154&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix CVE-2026-79656&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Dashboards:&lt;/strong&gt; Preserve query variable refresh setting on v2 dashboard import &lt;a href=&quot;https://github.com/grafana/grafana/pull/132089&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/132089/hovercard&quot;&gt;#132089&lt;/a&gt;, &lt;a href=&quot;https://github.com/grafana-writer%5Bbot%5D&quot;&gt;@grafana-writer[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Provisioning:&lt;/strong&gt; Fix folder rename UID collision during full sync &lt;a href=&quot;https://github.com/grafana/grafana/pull/132157&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/132157/hovercard&quot;&gt;#132157&lt;/a&gt;, &lt;a href=&quot;https://github.com/grafana-writer%5Bbot%5D&quot;&gt;@grafana-writer[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15111821/v13.1.6</id>
+    <updated>2026-09-15T12:27:36Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/grafana/releases/tag/v13.1.6"/>
+    <title>13.1.6</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://grafana.com/grafana/download/13.1.6&quot; rel=&quot;nofollow&quot;&gt;Download page&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://grafana.com/docs/grafana/latest/whatsnew/&quot; rel=&quot;nofollow&quot;&gt;What&#39;s new highlights&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Security&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-15815&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-xp8x-3q7w-cpqr/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-xp8x-3q7w-cpqr&quot;&gt;CVE-2026-15815&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix &lt;a title=&quot;CVE-2026-76154&quot; data-hovercard-type=&quot;advisory&quot; data-hovercard-url=&quot;/advisories/GHSA-35gc-393c-vjxf/hovercard&quot; href=&quot;https://github.com/advisories/GHSA-35gc-393c-vjxf&quot;&gt;CVE-2026-76154&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Security: Fix CVE-2026-79656&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Dashboards:&lt;/strong&gt; Preserve query variable refresh setting on v2 dashboard import &lt;a href=&quot;https://github.com/grafana/grafana/pull/132090&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/132090/hovercard&quot;&gt;#132090&lt;/a&gt;, &lt;a href=&quot;https://github.com/grafana-writer%5Bbot%5D&quot;&gt;@grafana-writer[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Provisioning:&lt;/strong&gt; Fix folder rename UID collision during full sync &lt;a href=&quot;https://github.com/grafana/grafana/pull/132164&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/grafana/pull/132164/hovercard&quot;&gt;#132164&lt;/a&gt;, &lt;a href=&quot;https://github.com/grafana-writer%5Bbot%5D&quot;&gt;@grafana-writer[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+</feed>

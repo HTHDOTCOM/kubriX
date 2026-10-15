@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/memcached/memcached/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/memcached/memcached/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/memcached/memcached/releases.atom"/>
+  <title>Release notes from memcached</title>
+  <updated>2026-07-10T04:35:09Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/184981/1.6.45</id>
+    <updated>2026-07-10T04:35:09Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/memcached/memcached/releases/tag/1.6.45"/>
+    <title>1.6.45</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/memcached/memcached/wiki/ReleaseNotes1645&quot;&gt;https://github.com/memcached/memcached/wiki/ReleaseNotes1645&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>dormando</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/66832?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/184981/1.6.44</id>
+    <updated>2026-07-07T04:24:04Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/memcached/memcached/releases/tag/1.6.44"/>
+    <title>1.6.44</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/memcached/memcached/wiki/ReleaseNotes1644&quot;&gt;https://github.com/memcached/memcached/wiki/ReleaseNotes1644&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>dormando</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/66832?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/184981/1.6.43</id>
+    <updated>2026-07-03T00:32:29Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/memcached/memcached/releases/tag/1.6.43"/>
+    <title>1.6.43</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/memcached/memcached/wiki/ReleaseNotes1643&quot;&gt;https://github.com/memcached/memcached/wiki/ReleaseNotes1643&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>dormando</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/66832?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/184981/1.6.42</id>
+    <updated>2026-05-18T22:14:09Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/memcached/memcached/releases/tag/1.6.42"/>
+    <title>1.6.42</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/memcached/memcached/wiki/ReleaseNotes1642&quot;&gt;https://github.com/memcached/memcached/wiki/ReleaseNotes1642&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>dormando</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/66832?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/184981/1.6.41</id>
+    <updated>2026-03-06T21:03:56Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/memcached/memcached/releases/tag/1.6.41"/>
+    <title>1.6.41</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/memcached/memcached/wiki/ReleaseNotes1641&quot;&gt;https://github.com/memcached/memcached/wiki/ReleaseNotes1641&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>dormando</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/66832?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/184981/1.6.40</id>
+    <updated>2025-12-17T00:17:54Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/memcached/memcached/releases/tag/1.6.40"/>
+    <title>1.6.40</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/memcached/memcached/wiki/ReleaseNotes1640&quot;&gt;https://github.com/memcached/memcached/wiki/ReleaseNotes1640&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>dormando</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/66832?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/184981/1.6.39</id>
+    <updated>2025-07-29T01:19:19Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/memcached/memcached/releases/tag/1.6.39"/>
+    <title>1.6.39</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/memcached/memcached/wiki/ReleaseNotes1639&quot;&gt;https://github.com/memcached/memcached/wiki/ReleaseNotes1639&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>dormando</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/66832?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/184981/1.6.38</id>
+    <updated>2025-03-19T21:51:07Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/memcached/memcached/releases/tag/1.6.38"/>
+    <title>1.6.38</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/memcached/memcached/wiki/ReleaseNotes1638&quot;&gt;https://github.com/memcached/memcached/wiki/ReleaseNotes1638&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>dormando</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/66832?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/184981/1.6.37</id>
+    <updated>2025-02-20T20:51:26Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/memcached/memcached/releases/tag/1.6.37"/>
+    <title>1.6.37</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/memcached/memcached/wiki/ReleaseNotes1637&quot;&gt;https://github.com/memcached/memcached/wiki/ReleaseNotes1637&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>dormando</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/66832?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/184981/1.6.36</id>
+    <updated>2025-02-05T01:04:36Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/memcached/memcached/releases/tag/1.6.36"/>
+    <title>1.6.36</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/memcached/memcached/wiki/ReleaseNotes1636&quot;&gt;https://github.com/memcached/memcached/wiki/ReleaseNotes1636&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>dormando</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/66832?s=60&amp;v=4"/>
+  </entry>
+</feed>

@@ -1,0 +1,3 @@
+2026-10-14T16:51:31Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-14T16:51:36Z	FATAL	Fatal error	run error: image scan error: scan error: unable to initialize a scan service: unable to initialize artifact: unable to initialize container image: unable to find the specified image "quay.io/jetstack/cert-manager-controller@sha256:70f532fd9cfde0b09d55687200942399d89838bc2d5d5b45152eb799a15912b8" in ["remote"]: 1 error occurred:
+	* remote error: GET https://quay.io/v2/: unexpected status code 503 Service Unavailable: upstream connect error or disconnect/reset before headers. reset reason: remote connection failure, transport failure reason: immediate connect error: Invalid argument|remote address:envoy://cloudflare_https_tunnel/

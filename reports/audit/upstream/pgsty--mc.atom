@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/pgsty/mc/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/pgsty/mc/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/pgsty/mc/releases.atom"/>
+  <title>Release notes from mc</title>
+  <updated>2026-09-16T07:17:31Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/1176924287/RELEASE.2026-09-16T00-00-00Z</id>
+    <updated>2026-09-16T08:04:23Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/pgsty/mc/releases/tag/RELEASE.2026-09-16T00-00-00Z"/>
+    <title>RELEASE.2026-09-16T00-00-00Z</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://silo.pgsty.com/blog/release/mcli-20260916/&quot; rel=&quot;nofollow&quot;&gt;English release notes&lt;/a&gt; · &lt;a href=&quot;https://silo.pgsty.com/zh/blog/release/mcli-20260916/&quot; rel=&quot;nofollow&quot;&gt;中文发布说明&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;English&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href=&quot;https://github.com/pgsty/mc/releases/tag/RELEASE.2026-09-16T00-00-00Z&quot;&gt;RELEASE.2026-09-16T00-00-00Z&lt;/a&gt; · &lt;strong&gt;Package:&lt;/strong&gt; &lt;code&gt;20260916000000.0.0&lt;/code&gt; · &lt;strong&gt;Source:&lt;/strong&gt; &lt;a href=&quot;https://github.com/pgsty/mc/commit/e952aa78f10a2b77dd525a2b7e3143bcda0cd377&quot;&gt;&lt;code&gt;e952aa78f10a&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Changes since 20260913&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Adopt silo-pkg &lt;strong&gt;v3.14.1&lt;/strong&gt;, upstream minio-go &lt;strong&gt;v7.3.1-0.20260915093545-32e1f32cb176&lt;/strong&gt;, and &lt;strong&gt;JWX v3.3.0&lt;/strong&gt;. CopyObject retries and propagates S3 errors embedded in HTTP 200 responses, so a failed copy cannot authorize &lt;code&gt;mv&lt;/code&gt; to delete its source. JWX correctly escapes JSON field names.&lt;/li&gt;
+&lt;li&gt;Report &lt;code&gt;mirror&lt;/code&gt; permission failures, including unreadable sources, rejected writes and failed local destination removals. Later objects continue; a finite mirror with failures exits &lt;strong&gt;1&lt;/strong&gt;. These per-object permission errors do not require &lt;code&gt;--skip-errors&lt;/code&gt; and do not restart an entire watch scan.&lt;/li&gt;
+&lt;li&gt;Preserve the existing cancellation/retry path for listing and watcher failures. Persistent listing permission denial can still cause repeated scans; this release does not redesign that retry policy.&lt;/li&gt;
+&lt;li&gt;Suppress normal final success statistics after a failed mirror. Explicit &lt;code&gt;--summary&lt;/code&gt; retains statistics: JSON uses &lt;strong&gt;&lt;code&gt;status: failure&lt;/code&gt;&lt;/strong&gt;; text error diagnostics remain on stderr. Transfers completed within one clock tick no longer produce infinite JSON speeds.&lt;/li&gt;
+&lt;li&gt;Return failure for legalhold set/clear errors, partial recursive retention failures, and moves whose source deletion fails. &lt;code&gt;mv&lt;/code&gt; waits for deletion results; successful copies are not rolled back. Retention reports each failed object once instead of duplicate or misleading diagnostics.&lt;/li&gt;
+&lt;li&gt;Reject empty retention durations and invalid &lt;code&gt;find --regex&lt;/code&gt; expressions with normal CLI errors instead of panics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Automation and upgrade notes&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Affected failure paths that returned 0 now return 1.&lt;/strong&gt; Check final exit status and error records. Per-object success start messages and progress byte counters are not proof that a transfer completed. For &lt;code&gt;mv&lt;/code&gt;, a deletion failure may leave both the source and the successfully copied destination; inspect both before retrying.&lt;/p&gt;
+&lt;p&gt;Configuration format, aliases, &lt;code&gt;MC_*&lt;/code&gt; variables, commands and package naming remain unchanged. The password-policy split introduced by pkg v3.14.0 is unchanged in v3.14.1. Upgrading only mcli does not update an installed Server or Console, alter Server authorization, or replace a client bundled in an existing Server image. See the &lt;a href=&quot;https://silo.pgsty.com/compatibility/versions/&quot; rel=&quot;nofollow&quot;&gt;component matrix&lt;/a&gt; and &lt;a href=&quot;https://silo.pgsty.com/compatibility/password-permissions/&quot; rel=&quot;nofollow&quot;&gt;password-policy migration&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;SILO is the maintained administrative integration target. Compatibility with unmodified upstream MinIO and other S3 services remains best effort.&lt;/p&gt;
+&lt;h2&gt;Delivery and validation&lt;/h2&gt;
+&lt;p&gt;The release contains &lt;strong&gt;19 assets&lt;/strong&gt;: six Linux/macOS/Windows archives for amd64/arm64, six Linux RPM/DEB/APK packages, one archive checksum manifest and six package checksum sidecars. Archives, the manifest and DEB/APK packages have verified Sigstore build attestations bound to this signed tag and source commit. RPMs carry the PGSTY GPG signature (&lt;code&gt;9592A7BC7A682E7333376E09E7935D8DB9BD8B20&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;The final release commit passed Go tests on Linux, macOS and Windows with the race detector, Linux 386 tests, cross-compilation, vulnerability scanning and the release packaging pipeline. Pre-release acceptance also exercised both the published SILO 20260903 and fixed Server source &lt;code&gt;3c26a8b0b5bd&lt;/code&gt;, Object Lock and permission failures, CopyObject error injection, and both-architecture RPM/DEB/APK installation and upgrades. No reachable or imported-package vulnerability was found; an unused OpenPGP module-only advisory remains.&lt;/p&gt;
+&lt;p&gt;CI: &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/35066699434&quot;&gt;VulnCheck&lt;/a&gt; · &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/35066699163&quot;&gt;Test Release Pipeline&lt;/a&gt; · &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/35066699105&quot;&gt;Crosscompile&lt;/a&gt; · &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/35066699224&quot;&gt;Go&lt;/a&gt; · &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/35067787458&quot;&gt;Release&lt;/a&gt; · &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/35069140223&quot;&gt;Docker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;docker.io/pgsty/mc&lt;/code&gt; release and &lt;code&gt;latest&lt;/code&gt; tags resolve to the verified Linux amd64/arm64 manifest:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;sha256:cfc83108c3abb371f8fb84d99c1fdc88f8c237e022409b0081fb7c0a3be634dd&quot;&gt;&lt;pre lang=&quot;text&quot; class=&quot;notranslate&quot;&gt;&lt;code&gt;sha256:cfc83108c3abb371f8fb84d99c1fdc88f8c237e022409b0081fb7c0a3be634dd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://silo.pgsty.com/download/#client&quot; rel=&quot;nofollow&quot;&gt;Download and installation&lt;/a&gt; · &lt;a href=&quot;https://silo.pgsty.com/compatibility/mcli/&quot; rel=&quot;nofollow&quot;&gt;Client compatibility&lt;/a&gt; · &lt;a href=&quot;https://github.com/pgsty/mc/compare/RELEASE.2026-09-13T00-00-00Z...RELEASE.2026-09-16T00-00-00Z&quot;&gt;Changes since 20260913&lt;/a&gt;.&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1176924287/RELEASE.2026-09-13T00-00-00Z</id>
+    <updated>2026-09-13T02:52:07Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/pgsty/mc/releases/tag/RELEASE.2026-09-13T00-00-00Z"/>
+    <title>RELEASE.2026-09-13T00-00-00Z</title>
+    <content type="html">&lt;p&gt;SILO mcli release &lt;code&gt;20260913000000&lt;/code&gt;, packaged as &lt;code&gt;20260913000000.0.0&lt;/code&gt; for Linux, macOS and Windows.&lt;/p&gt;
+&lt;h3&gt;Fixes since the previous release&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Preserve mirror targets when historical source versions are deleted.&lt;/li&gt;
+&lt;li&gt;Never turn an administrative restart dry run into a real restart; keep restart output reliable when stdout is not a terminal.&lt;/li&gt;
+&lt;li&gt;Return transfer and SQL per-object failures as unsuccessful commands without misreporting them as usage errors.&lt;/li&gt;
+&lt;li&gt;Preserve explicit checksums for empty uploads, honor pipe JSON/quiet flags, and accept on/off and enabled/disabled values in MC boolean environment variables.&lt;/li&gt;
+&lt;li&gt;Keep CLI JSON output and cross-platform functional-test behavior consistent.&lt;/li&gt;
+&lt;li&gt;Include silo-pkg policy fixes that preserve distinct Deny/NotResource clauses and string-condition values, and bound wildcard matching. Previously lost stored policy clauses still need to be restored from the original policy source.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Coordinated dependencies&lt;/h3&gt;
+&lt;p&gt;Use released &lt;code&gt;github.com/pgsty/silo-pkg/v3 v3.14.0&lt;/code&gt; directly and upstream minio-go commit &lt;code&gt;60bd07042d49&lt;/code&gt;, including streaming Content-Type signing, RDMA TLS trust, listing checksums and restore-status fixes. Refresh the Go official x/* dependencies and the UBI certificate image, retain Go 1.27.1, and run govulncheck 1.8.0. The go-systemd 22.6.0 replacement remains the documented NetBSD build compatibility exception.&lt;/p&gt;
+&lt;p&gt;The package&#39;s password policy behavior has changed: &lt;code&gt;admin:ChangeMyPassword&lt;/code&gt; and &lt;code&gt;admin:CreateUser&lt;/code&gt; are separate capabilities. Policies that must preserve the previous combined restriction should deny both actions with the same scope and conditions. Use matching SILO Server and Console versions; see &lt;a href=&quot;https://github.com/pgsty/silo/blob/420340bc142b7dec00c26c28dd78102e3ed9d0f3/docs/iam/password-permissions.md&quot;&gt;the migration guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The maintained integration target is &lt;code&gt;pgsty/silo&lt;/code&gt;; upstream MinIO compatibility remains best effort.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/pgsty/mc/compare/RELEASE.2026-09-03T07-13-05Z...RELEASE.2026-09-13T00-00-00Z&quot;&gt;Full changes&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Component status — 2026-09-13&lt;/h2&gt;
+&lt;p&gt;pkg v3.14.0 and mcli 20260913 are published. Matching password-permission handling is merged in Server and Console, but their latest public releases remain Server 20260903 and Console v2.4.0 and do not contain that split. Installing the client alone does not change server-side authorization. Retain both CreateUser and ChangeMyPassword denies wherever the old combined restriction must survive an upgrade or rollback.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&quot;https://silo.pgsty.com/compatibility/versions/&quot; rel=&quot;nofollow&quot;&gt;current component matrix&lt;/a&gt;, &lt;a href=&quot;https://silo.pgsty.com/compatibility/password-permissions/&quot; rel=&quot;nofollow&quot;&gt;password-policy migration&lt;/a&gt; and &lt;a href=&quot;https://silo.pgsty.com/blog/release/mcli-20260913/&quot; rel=&quot;nofollow&quot;&gt;website release notes&lt;/a&gt;.&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1176924287/RELEASE.2026-09-03T07-13-05Z</id>
+    <updated>2026-09-03T07:39:20Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/pgsty/mc/releases/tag/RELEASE.2026-09-03T07-13-05Z"/>
+    <title>RELEASE.2026-09-03T07-13-05Z</title>
+    <content type="html">&lt;h2&gt;Highlights&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Raise the build and runtime toolchain floor from Go 1.27.0 to Go 1.27.1 across the module, CI, cross-builds, Docker build, and dependency-floor checks.&lt;/li&gt;
+&lt;li&gt;Consume &lt;a href=&quot;https://github.com/pgsty/silo-pkg/releases/tag/v3.13.2&quot;&gt;&lt;code&gt;github.com/pgsty/silo-pkg/v3&lt;/code&gt; v3.13.2&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Refresh the actively built dependency graph, including &lt;code&gt;golang.org/x/crypto&lt;/code&gt; v0.56.0, gRPC v1.83.2, Protobuf v1.36.12, Prometheus libraries, &lt;code&gt;go-pretty&lt;/code&gt;, &lt;code&gt;klauspost/compress&lt;/code&gt;, JWX, and terminal-width/progress libraries.&lt;/li&gt;
+&lt;li&gt;Keep &lt;code&gt;minio-go/v7&lt;/code&gt; pinned to the latest upstream &lt;code&gt;minio/minio-go&lt;/code&gt; master commit (&lt;code&gt;0e78d3f18efe&lt;/code&gt;), ahead of the latest tagged release for checksum and S3 Express fixes.&lt;/li&gt;
+&lt;li&gt;Preserve deliberate compatibility pins: &lt;code&gt;go-systemd&lt;/code&gt; v22.6.0 for NetBSD portability, upstream &lt;code&gt;minio/pkg/v3&lt;/code&gt; v3.6.1 for the legacy &lt;code&gt;colorjson&lt;/code&gt; path, and &lt;code&gt;tablewriter&lt;/code&gt; v0.0.5 for upstream MC compatibility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Verification&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Exact release source: &lt;a href=&quot;https://github.com/pgsty/mc/commit/a2ef95c035d9ae7cc01469a63926900f1786f9e2&quot;&gt;&lt;code&gt;a2ef95c035d9ae7cc01469a63926900f1786f9e2&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;CI passed for unit/lint, race, nine-platform cross-compilation, vulnerability scanning, and test-release packaging.&lt;/li&gt;
+&lt;li&gt;Source-aware &lt;code&gt;govulncheck&lt;/code&gt; reports no reachable vulnerabilities. The compiled module closure still records the upstream OpenPGP advisory, but MC does not import the affected package.&lt;/li&gt;
+&lt;li&gt;Independent adversarial review with Claude Fable 5.1 at xhigh returned &lt;strong&gt;GO&lt;/strong&gt; with no blocking findings after clean-cache proxy/sumdb builds, 172 functional checks against a temporary SILO server, 47-command compatibility comparison with the previous release, additional cross-target builds, and artifact/provenance inspection.&lt;/li&gt;
+&lt;li&gt;All release archives and package sidecars were checksum-verified; all 11 attested subjects were matched to this tag, source commit, and release workflow identity.&lt;/li&gt;
+&lt;li&gt;RPM artifacts were signed with fingerprint &lt;code&gt;9592 A7BC 7A68 2E73 3337 6E09 E793 5D8D B9BD 8B20&lt;/code&gt;; both header and payload digests verify successfully.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Compatibility notes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Go 1.27.1 or newer is required when building from source.&lt;/li&gt;
+&lt;li&gt;JWX v3.2 now enforces JWT &lt;code&gt;crit&lt;/code&gt; processing more strictly, and Unicode display-width updates can slightly change alignment for Indic or ZWJ-heavy terminal text. No regressions were found in the tested MC command surface.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/pgsty/mc/compare/RELEASE.2026-09-01T00-00-00Z...RELEASE.2026-09-03T07-13-05Z&quot;&gt;&lt;tt&gt;RELEASE.2026-09-01T00-00-00Z...RELEASE.2026-09-03T07-13-05Z&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1176924287/RELEASE.2026-09-01T00-00-00Z</id>
+    <updated>2026-08-31T16:25:40Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/pgsty/mc/releases/tag/RELEASE.2026-09-01T00-00-00Z"/>
+    <title>RELEASE.2026-09-01T00-00-00Z</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/f5c5dc9fd146196526f5e0ff3254b7202aed6836/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/f5c5dc9fd146196526f5e0ff3254b7202aed6836&quot;&gt;&lt;tt&gt;f5c5dc9&lt;/tt&gt;&lt;/a&gt; build: import the SILO package under its own module path&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/2d5abc21cc971d1b241cd22200a0cb2f70618a46/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/2d5abc21cc971d1b241cd22200a0cb2f70618a46&quot;&gt;&lt;tt&gt;2d5abc2&lt;/tt&gt;&lt;/a&gt; chore: complete the AGPL notice on fork-authored files&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/c05da7b03c9148951511ece7dedac20b30eb1c30/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/c05da7b03c9148951511ece7dedac20b30eb1c30&quot;&gt;&lt;tt&gt;c05da7b&lt;/tt&gt;&lt;/a&gt; chore: drop configuration for bots that are not installed&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/2c33a4e28bdc0793fb6445a0711aa57cf26acf4f/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/2c33a4e28bdc0793fb6445a0711aa57cf26acf4f&quot;&gt;&lt;tt&gt;2c33a4e&lt;/tt&gt;&lt;/a&gt; chore: ignore the local consumer-module review scratch directory&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/f484d0dbe709246d4b8b03a1b81aca7bc9cfebf6/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/f484d0dbe709246d4b8b03a1b81aca7bc9cfebf6&quot;&gt;&lt;tt&gt;f484d0d&lt;/tt&gt;&lt;/a&gt; ci: make a release prove its commit, and pin what it builds from&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/9a3805da7f5a53f7eef8c4ea4e7b58f140322312/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/9a3805da7f5a53f7eef8c4ea4e7b58f140322312&quot;&gt;&lt;tt&gt;9a3805d&lt;/tt&gt;&lt;/a&gt; ci: make release retries tag-idempotent&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/3674933279205b728ac38cb37a40bb74b551db4b/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/3674933279205b728ac38cb37a40bb74b551db4b&quot;&gt;&lt;tt&gt;3674933&lt;/tt&gt;&lt;/a&gt; ci: make the release gate provable and its claims true&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/1445e88e797a296ebf319f3fb5d03addc76a9c69/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/1445e88e797a296ebf319f3fb5d03addc76a9c69&quot;&gt;&lt;tt&gt;1445e88&lt;/tt&gt;&lt;/a&gt; ci: release only from a signed tag at the tip of main, verify exact provenance&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/a8e7eb4bc2458fd4c71fe56ba529f45939c703d3/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/a8e7eb4bc2458fd4c71fe56ba529f45939c703d3&quot;&gt;&lt;tt&gt;a8e7eb4&lt;/tt&gt;&lt;/a&gt; ci: test main on push and stop dispatch runs cancelling each other&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/a6c14dab528e2846e6cd02653b6e85bfd77f74b4/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/a6c14dab528e2846e6cd02653b6e85bfd77f74b4&quot;&gt;&lt;tt&gt;a6c14da&lt;/tt&gt;&lt;/a&gt; ci: verify build provenance before repackaging archives into images&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/aa07b1c50e9abb2e7b8e29caaccc1441cbb85046/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/aa07b1c50e9abb2e7b8e29caaccc1441cbb85046&quot;&gt;&lt;tt&gt;aa07b1c&lt;/tt&gt;&lt;/a&gt; feat: add read-only object checksum verification&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/4abbb3a938ab212402818e1675314b2131de9c61/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/4abbb3a938ab212402818e1675314b2131de9c61&quot;&gt;&lt;tt&gt;4abbb3a&lt;/tt&gt;&lt;/a&gt; feat: expose how much checksum verify actually verified&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/7057705bf0bdb8504b5a3919ffcf4b76a5f72b80/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/7057705bf0bdb8504b5a3919ffcf4b76a5f72b80&quot;&gt;&lt;tt&gt;7057705&lt;/tt&gt;&lt;/a&gt; fix: avoid double-closing S3 Select responses&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/d38412a3213ca2bf9784660fce2292e8e053dd63/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/d38412a3213ca2bf9784660fce2292e8e053dd63&quot;&gt;&lt;tt&gt;d38412a&lt;/tt&gt;&lt;/a&gt; fix: classify an SSE-C refusal with a key as a read error, keep policy and size messages clear&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/f1889395a947f2c99fa2cd942bc79c1686e9915c/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/f1889395a947f2c99fa2cd942bc79c1686e9915c&quot;&gt;&lt;tt&gt;f188939&lt;/tt&gt;&lt;/a&gt; fix: close final credential and release verification gaps&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/bdc742afc3bb4ce1106f6ffb8c5ad1d1631d8830/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/bdc742afc3bb4ce1106f6ffb8c5ad1d1631d8830&quot;&gt;&lt;tt&gt;bdc742a&lt;/tt&gt;&lt;/a&gt; fix: close the remaining --debug credential leaks&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/45e5144921329f2d4066f9b4a1b0d12ab1a7a431/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/45e5144921329f2d4066f9b4a1b0d12ab1a7a431&quot;&gt;&lt;tt&gt;45e5144&lt;/tt&gt;&lt;/a&gt; fix: fail --fail-on no-checksum when nothing was verified&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/c1358c428493c133345ac506a1a02ee9b5b06164/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/c1358c428493c133345ac506a1a02ee9b5b06164&quot;&gt;&lt;tt&gt;c1358c4&lt;/tt&gt;&lt;/a&gt; fix: force 0600 on rotated support artifacts too&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/76b2e891ba9dc62f3e487dda01537ed2d675d861/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/76b2e891ba9dc62f3e487dda01537ed2d675d861&quot;&gt;&lt;tt&gt;76b2e89&lt;/tt&gt;&lt;/a&gt; fix: keep an unquoted DSN password whole and match auth schemes case-insensitively&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/625713ce1849317366c3384dd2a6fe2ac83d953c/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/625713ce1849317366c3384dd2a6fe2ac83d953c&quot;&gt;&lt;tt&gt;625713c&lt;/tt&gt;&lt;/a&gt; fix: keep only the scheme of a signed header and scrub JSON structurally&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/08244df9caf222905b5550eba5888ba2721d9874/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/08244df9caf222905b5550eba5888ba2721d9874&quot;&gt;&lt;tt&gt;08244df&lt;/tt&gt;&lt;/a&gt; fix: keep secrets out of error messages and traces&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/59989f8a0ddf81d9a20329bd411ddf2bed7bbb6c/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/59989f8a0ddf81d9a20329bd411ddf2bed7bbb6c&quot;&gt;&lt;tt&gt;59989f8&lt;/tt&gt;&lt;/a&gt; fix: let svcacct set clear a policy again, report bad global flags once&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/4b36b0a52b64f100c371a5c1317468a9de5fd8b1/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/4b36b0a52b64f100c371a5c1317468a9de5fd8b1&quot;&gt;&lt;tt&gt;4b36b0a&lt;/tt&gt;&lt;/a&gt; fix: make credential redaction fail-closed and scrub final output&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/1b39423078200861913ec88243e03fb6b4e78258/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/1b39423078200861913ec88243e03fb6b4e78258&quot;&gt;&lt;tt&gt;1b39423&lt;/tt&gt;&lt;/a&gt; fix: preserve checksum output in pipelines&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/81e27673da5a7a12726a0c4d4cbfccc2e4604eff/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/81e27673da5a7a12726a0c4d4cbfccc2e4604eff&quot;&gt;&lt;tt&gt;81e2767&lt;/tt&gt;&lt;/a&gt; fix: rebuild SigV4 traces from known fields and widen secret scrubbing&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/ec12b6434ed5f4f159933b6a8cd025b7b5923aad/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/ec12b6434ed5f4f159933b6a8cd025b7b5923aad&quot;&gt;&lt;tt&gt;ec12b64&lt;/tt&gt;&lt;/a&gt; fix: redact admin trace output and register every credential ingress&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/f5b88ddd0285415852ea5f6d6280ea94a97e345b/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/f5b88ddd0285415852ea5f6d6280ea94a97e345b&quot;&gt;&lt;tt&gt;f5b88dd&lt;/tt&gt;&lt;/a&gt; fix: redact the default admin trace and stop the shape sweep mangling prose&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/b291b539b2cc21bc7dd4ea0dec431ba4642e00bf/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/b291b539b2cc21bc7dd4ea0dec431ba4642e00bf&quot;&gt;&lt;tt&gt;b291b53&lt;/tt&gt;&lt;/a&gt; fix: register a URL password as written, keep listing parameters visible in traces&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/328efee1b06480d450c8935dbf46794462f82cf8/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/328efee1b06480d450c8935dbf46794462f82cf8&quot;&gt;&lt;tt&gt;328efee&lt;/tt&gt;&lt;/a&gt; fix: register the password before the first separator of an unquoted DSN payload too&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/915cfd9b4a4e560dc75a1f90af5c6bd29ebd9bfc/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/915cfd9b4a4e560dc75a1f90af5c6bd29ebd9bfc&quot;&gt;&lt;tt&gt;915cfd9&lt;/tt&gt;&lt;/a&gt; fix: reject a malformed app-level global flag instead of ignoring it&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/a29b455e76036bf9490b47c76fe412dc746939bd/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/a29b455e76036bf9490b47c76fe412dc746939bd&quot;&gt;&lt;tt&gt;a29b455&lt;/tt&gt;&lt;/a&gt; fix: stop --debug from printing credentials&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/b75d28b597de779c1d8381f832bbd2f7b20821dc/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/b75d28b597de779c1d8381f832bbd2f7b20821dc&quot;&gt;&lt;tt&gt;b75d28b&lt;/tt&gt;&lt;/a&gt; fix: stop checksum verify help from advertising the play alias&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/30a7ea01de2f6273f6bc8daea4c8c53f6df662e3/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/30a7ea01de2f6273f6bc8daea4c8c53f6df662e3&quot;&gt;&lt;tt&gt;30a7ea0&lt;/tt&gt;&lt;/a&gt; fix: stop writing support artifacts world-readable&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/712bf3a653c4a54dc265ea3c8627ad88fc86811d/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/712bf3a653c4a54dc265ea3c8627ad88fc86811d&quot;&gt;&lt;tt&gt;712bf3a&lt;/tt&gt;&lt;/a&gt; fix: use regular PUT for empty pipe input&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/21210812e2bb618665859c99edfd64617b745d63/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/21210812e2bb618665859c99edfd64617b745d63&quot;&gt;&lt;tt&gt;2121081&lt;/tt&gt;&lt;/a&gt; fix: validate policy writes strictly&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/39983926da4b8a301eab602497d270840dcd861c/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/39983926da4b8a301eab602497d270840dcd861c&quot;&gt;&lt;tt&gt;3998392&lt;/tt&gt;&lt;/a&gt; fix: withhold SSE-C keys and credential URLs the parser rejects&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1176924287/RELEASE.2026-08-26T17-15-27Z</id>
+    <updated>2026-08-26T17:44:43Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/pgsty/mc/releases/tag/RELEASE.2026-08-26T17-15-27Z"/>
+    <title>RELEASE.2026-08-26T17-15-27Z</title>
+    <content type="html">&lt;p&gt;SILO MCLI compatibility correction built from commit &lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/70a2950478e18e38eb68162317e4b5d34c6eb6d5/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/70a2950478e18e38eb68162317e4b5d34c6eb6d5&quot;&gt;&lt;tt&gt;70a2950&lt;/tt&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Dependency routing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;github.com/minio/minio-go/v7 =&amp;gt; github.com/pgsty/silo-go/v7 v7.3.1&lt;/li&gt;
+&lt;li&gt;github.com/minio/pkg/v3 =&amp;gt; github.com/pgsty/silo-pkg/v3 v3.12.2&lt;/li&gt;
+&lt;li&gt;Compatible MinIO import paths are preserved.&lt;/li&gt;
+&lt;li&gt;The logical minio/pkg requirement is v3.6.1. This is the tested public compatibility floor for servers that embed mc or Console; standalone SILO builds still select silo-pkg v3.12.2 through the top-level replacement.&lt;/li&gt;
+&lt;li&gt;This release supersedes RELEASE.2026-08-26T00-00-00Z, whose logical v3.11.0 requirement could unnecessarily raise an embedding server module graph.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Validation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go and controlled SILO functional CI: &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/32993184715&quot;&gt;https://github.com/pgsty/mc/actions/runs/32993184715&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Cross-compile: &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/32993191001&quot;&gt;https://github.com/pgsty/mc/actions/runs/32993191001&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release pipeline: &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/32994614044&quot;&gt;https://github.com/pgsty/mc/actions/runs/32994614044&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Vulnerability scan: &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/32993205414&quot;&gt;https://github.com/pgsty/mc/actions/runs/32993205414&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Formal release build: &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/32995345344&quot;&gt;https://github.com/pgsty/mc/actions/runs/32995345344&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RPM assets are signed by key 9592A7BC7A682E7333376E09E7935D8DB9BD8B20 and their uploaded SHA256 digests were independently verified before publication.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1176924287/RELEASE.2026-08-26T00-00-00Z</id>
+    <updated>2026-08-26T17:44:45Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/pgsty/mc/releases/tag/RELEASE.2026-08-26T00-00-00Z"/>
+    <title>RELEASE.2026-08-26T00-00-00Z</title>
+    <content type="html">&lt;p&gt;Superseded by RELEASE.2026-08-26T17-15-27Z, which restores the embeddable upstream minio/pkg v3.6.1 compatibility floor. The tag and artifacts below remain immutable historical output.&lt;/p&gt;
+&lt;p&gt;SILO MCLI dependency release built from commit &lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/81586050e2b094dfa223f761bd7c9864e1150f71/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/81586050e2b094dfa223f761bd7c9864e1150f71&quot;&gt;&lt;tt&gt;8158605&lt;/tt&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Dependency routing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;github.com/minio/minio-go/v7 =&amp;gt; github.com/pgsty/silo-go/v7 v7.3.1&lt;/li&gt;
+&lt;li&gt;github.com/minio/pkg/v3 =&amp;gt; github.com/pgsty/silo-pkg/v3 v3.12.2&lt;/li&gt;
+&lt;li&gt;Compatible MinIO import paths are preserved.&lt;/li&gt;
+&lt;li&gt;Logical requirements remain on real upstream versions v7.3.0 and v3.11.0 so downstream modules can resolve the graph before applying SILO replacements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Validation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go CI: &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/32986827621&quot;&gt;https://github.com/pgsty/mc/actions/runs/32986827621&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Cross-compile: &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/32986829630&quot;&gt;https://github.com/pgsty/mc/actions/runs/32986829630&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Release pipeline test: &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/32986832107&quot;&gt;https://github.com/pgsty/mc/actions/runs/32986832107&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Vulnerability scan: &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/32986842214&quot;&gt;https://github.com/pgsty/mc/actions/runs/32986842214&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Formal release build: &lt;a href=&quot;https://github.com/pgsty/mc/actions/runs/32987825099&quot;&gt;https://github.com/pgsty/mc/actions/runs/32987825099&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RPM assets are signed by key 9592A7BC7A682E7333376E09E7935D8DB9BD8B20 and their uploaded SHA256 digests were independently verified before publication.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1176924287/RELEASE.2026-08-06T00-00-00Z</id>
+    <updated>2026-08-06T06:09:26Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/pgsty/mc/releases/tag/RELEASE.2026-08-06T00-00-00Z"/>
+    <title>RELEASE.2026-08-06T00-00-00Z</title>
+    <content type="html">&lt;p&gt;Two days after &lt;a href=&quot;https://silo.pgsty.com/blog/release/mcli-20260804/&quot; rel=&quot;nofollow&quot;&gt;mcli 20260804&lt;/a&gt;, this release completes the client&#39;s transition to the Silo identity. It is deliberately a pure rebranding and lockdown release: &lt;code&gt;--version&lt;/code&gt; and &lt;code&gt;--help&lt;/code&gt; now present the Silo client, every remaining path to MinIO&#39;s SUBNET service is disabled at build time, the embedded vendor encryption key is removed from the diagnostics tooling, and the contribution policy moves to no-CLA with a mandatory DCO sign-off. There are &lt;strong&gt;no dependency changes and no protocol changes&lt;/strong&gt; in this cycle — &lt;code&gt;go.mod&lt;/code&gt; is byte-for-byte identical to 20260804 — so the regression surface is confined to text, command gating, and CI.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://silo.pgsty.com/blog/release/mcli-20260806/&quot; rel=&quot;nofollow&quot;&gt;&lt;strong&gt;Full Release Note&lt;/strong&gt;&lt;/a&gt; · &lt;a href=&quot;https://silo.pgsty.com/zh/blog/release/mcli-20260806/&quot; rel=&quot;nofollow&quot;&gt;中文版&lt;/a&gt; · &lt;a href=&quot;https://silo.pgsty.com/compatibility/mcli/&quot; rel=&quot;nofollow&quot;&gt;Compatibility Notes&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Behavior Changes&lt;/h2&gt;
+&lt;p&gt;Every path that previously reached &lt;strong&gt;MinIO SUBNET&lt;/strong&gt; is now disabled at build time and cannot be re-enabled at runtime:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mcli license register&lt;/code&gt;, &lt;code&gt;mcli support upload&lt;/code&gt;, &lt;code&gt;mcli support proxy set&lt;/code&gt;, &lt;code&gt;mcli support callhome enable&lt;/code&gt;, and the online-renewal form of &lt;code&gt;mcli license update ALIAS&lt;/code&gt; print a stable notice — &lt;em&gt;&quot;MinIO SUBNET services (registration, licensing, uploads) are disabled in this Silo build of mc; diagnostics remain available locally.&quot;&lt;/em&gt; — and always exit &lt;code&gt;1&lt;/code&gt;. Drop these calls from scripts. The file-based &lt;code&gt;mcli license update ALIAS license.key&lt;/code&gt; still works, with the license parsed offline against the bundled public key.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mcli support diag&lt;/code&gt; / &lt;code&gt;perf&lt;/code&gt; / &lt;code&gt;profile&lt;/code&gt; / &lt;code&gt;inspect&lt;/code&gt; always operate in local (airgap) mode: reports, profiles, and inspect archives are written to local files and nothing is uploaded anywhere. The &lt;code&gt;--airgap&lt;/code&gt; flag is still accepted for compatibility and is effectively always on. SUBNET registration is no longer a prerequisite for any of them.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mcli support callhome disable|status&lt;/code&gt;, &lt;code&gt;mcli support proxy show|remove&lt;/code&gt;, &lt;code&gt;mcli license info&lt;/code&gt;, and &lt;code&gt;mcli license unregister&lt;/code&gt; keep working — they only read or clear local and server-side configuration.&lt;/li&gt;
+&lt;li&gt;Fresh configurations no longer seed the &lt;code&gt;play&lt;/code&gt; alias pointing at MinIO&#39;s public demo cluster; the defaults are now &lt;code&gt;local&lt;/code&gt;, &lt;code&gt;s3&lt;/code&gt;, and &lt;code&gt;gcs&lt;/code&gt;. Existing configuration files are never modified, and legacy-config migration still recognizes the historical entries.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mcli --version&lt;/code&gt; gains an identity line (&quot;Silo object storage client, based on MinIO technology&quot;) and a second copyright line. The first line&#39;s machine-readable format is unchanged, so scripts parsing it are unaffected.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Major Changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Silo identity across the CLI&lt;/strong&gt;: the client introduces itself as &quot;Silo client for object storage and filesystems&quot;. Roughly 220 help texts were reworked: usage lines that refer to the managed server now say &quot;Silo/MinIO server&quot;, example aliases moved from &lt;code&gt;myminio&lt;/code&gt;/&lt;code&gt;play&lt;/code&gt; to &lt;code&gt;mysilo&lt;/code&gt;, example LDAP DNs moved to &lt;code&gt;dc=example,dc=com&lt;/code&gt;, and example tier names to &lt;code&gt;SILOTIER-*&lt;/code&gt;. Factual references stay factual: the &lt;code&gt;minio&lt;/code&gt; tier &lt;em&gt;type&lt;/em&gt;, protocol headers, and third-party interop mentions are untouched.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SUBNET disabled at build time&lt;/strong&gt;: connectivity is compiled out behind a single guard, and the one HTTP choke point that every SUBNET request funnels through refuses with the stable error above. Command entry points gate early, diagnostics force local mode, and the AGPL license notice shown by &lt;code&gt;mcli license info&lt;/code&gt; no longer carries a commercial-subscription pitch. A dedicated regression suite (&lt;code&gt;cmd/subnet-disabled_test.go&lt;/code&gt;) pins all of this, so an upstream merge cannot silently reconnect anything.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Governance — no CLA, DCO required&lt;/strong&gt;: contributions are accepted inbound=outbound under AGPL-3.0-or-later; contributors keep their copyright, and the maintainers collect no rights beyond the project license. Every commit must carry a &lt;code&gt;Signed-off-by&lt;/code&gt; trailer, enforced by a new CI workflow that matches the trailer against the commit author&#39;s email and exempts only GitHub-issued bot addresses. &lt;code&gt;CONTRIBUTING.md&lt;/code&gt;, the PR template, and both READMEs document the policy, and the code-of-conduct contact now points at the fork&#39;s maintainer.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dual copyright attribution&lt;/strong&gt;: runtime output and help now credit both lineages — &lt;code&gt;Copyright (c) 2015-2025 MinIO, Inc.&lt;/code&gt; and &lt;code&gt;Copyright (c) 2025-2026 PGSTY&lt;/code&gt; — with source builds computing the end year dynamically. &lt;code&gt;NOTICE&lt;/code&gt; states the fork relationship, and the non-affiliation with MinIO, Inc., explicitly.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Release line renamed to &lt;code&gt;main&lt;/code&gt;&lt;/strong&gt;: workflow branch filters, documentation, and contributor instructions now target &lt;code&gt;main&lt;/code&gt;; the legacy &lt;code&gt;master&lt;/code&gt; references are gone.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Hardening&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Vendor encryption key removed&lt;/strong&gt;: &lt;code&gt;mcli support inspect&lt;/code&gt; used to fall back to encrypting its output with an embedded MinIO RSA public key whenever no key was supplied — producing archives only the vendor could decrypt. The embedded key is gone: inspect now relies on the server-generated per-request key that is printed to the caller (or an operator-supplied key), and any encrypted-upload path with no configured recipient fails closed instead of silently borrowing a third-party key. Diagnostic output an operator produces is now always decryptable by that operator.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Brand-policy gate&lt;/strong&gt;: &lt;code&gt;buildscripts/check-branding.sh&lt;/code&gt; runs in &lt;code&gt;make verifiers&lt;/code&gt; and in CI. It fails the build if MinIO-operated endpoints, commercial upsell URLs, the upstream product identity, or any embedded &lt;code&gt;MII…&lt;/code&gt; public key reappear in the command tree — while explicitly allowlisting the preserved compatibility identifiers (environment variables, protocol headers, module path, legacy-migration defaults, and original copyright headers).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Engineering and Delivery&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CI moved to the Node 24 Actions line&lt;/strong&gt;: &lt;code&gt;actions/checkout&lt;/code&gt; v7, &lt;code&gt;actions/setup-go&lt;/code&gt; v7, &lt;code&gt;goreleaser-action&lt;/code&gt; v7, and the Docker action family — all still pinned to commit SHAs, with dependabot keeping the pins current.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Functional tests run against controlled servers only&lt;/strong&gt;: the suite defaults to a local server (&lt;code&gt;localhost:9000&lt;/code&gt;) instead of MinIO&#39;s public demo cluster, and CI downloads the pinned SILO server release &lt;code&gt;RELEASE.2026-08-04T00-00-00Z&lt;/code&gt; from &lt;code&gt;pgsty/silo&lt;/code&gt;, verified by SHA-256, before running the suite.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zero dependency changes&lt;/strong&gt;: no module updates this cycle; the 20260804 security baseline (Go 1.26.5, zero known reachable vulnerabilities) carries over unchanged.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Audited before tagging&lt;/strong&gt;: the release was gated by an independent adversarial review — a full read of the 245-file diff, brand/compatibility grep sweeps, call-graph verification that no command or flag combination can reach &lt;code&gt;subnet.min.io&lt;/code&gt; / &lt;code&gt;play.min.io&lt;/code&gt; / &lt;code&gt;dl.min.io&lt;/code&gt;, and smoke tests confirming every disabled path returns its stable error with exit status &lt;code&gt;1&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Compatibility&lt;/h2&gt;
+&lt;p&gt;Everything scripts and integrations depend on is deliberately unchanged: the &lt;code&gt;mc&lt;/code&gt; command name and the &lt;code&gt;mcli&lt;/code&gt; package/binary name; the &lt;code&gt;~/.mc&lt;/code&gt; / &lt;code&gt;~/.mcli&lt;/code&gt; configuration directories (derived from the invoked name); the &lt;code&gt;github.com/minio/mc&lt;/code&gt; module path and all import paths; &lt;code&gt;MC_*&lt;/code&gt; environment variables; protocol headers (&lt;code&gt;x-minio-*&lt;/code&gt;) and the &lt;code&gt;minio-go&lt;/code&gt; SDK user-agent prefix; the &lt;code&gt;minio&lt;/code&gt; tier type; the &lt;code&gt;.part.minio&lt;/code&gt; transfer suffix; the &lt;code&gt;minio-job&lt;/code&gt; Prometheus scrape job name; and the package formats, asset naming, and &lt;code&gt;YYYYMMDDHHMMSS.0.0&lt;/code&gt; version scheme. The client remains fully compatible with MinIO servers and other S3-compatible endpoints. See the &lt;a href=&quot;https://silo.pgsty.com/compatibility/mcli/&quot; rel=&quot;nofollow&quot;&gt;MCLI Compatibility Notes&lt;/a&gt; for the full contract and migration guide from upstream &lt;code&gt;mc&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Known Issues&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;mcli watch&lt;/code&gt; regression flagged in the &lt;a href=&quot;https://silo.pgsty.com/blog/release/mcli-20260804/&quot; rel=&quot;nofollow&quot;&gt;20260804 notes&lt;/a&gt; is resolved on the server side: the fix shipped in &lt;a href=&quot;https://silo.pgsty.com/blog/release/silo-20260804/&quot; rel=&quot;nofollow&quot;&gt;SILO 20260804&lt;/a&gt;, and this client&#39;s CI now runs the functional suite — including watch — against exactly that release. Pair &lt;code&gt;mcli&lt;/code&gt; with SILO server 20260804 or newer to receive bucket events; older published servers remain affected.&lt;/p&gt;
+&lt;p&gt;Unfixed upstream defects continue to apply, most seriously &lt;a href=&quot;https://github.com/minio/mc/issues/5139&quot; data-hovercard-type=&quot;issue&quot; data-hovercard-url=&quot;/minio/mc/issues/5139/hovercard&quot;&gt;minio/mc#5139&lt;/a&gt;: &lt;code&gt;mirror --remove --watch&lt;/code&gt; can delete a live object from the target when a non-current &lt;strong&gt;version&lt;/strong&gt; of it is removed from the source. Exercise caution combining &lt;code&gt;--remove --watch&lt;/code&gt; on versioned buckets.&lt;/p&gt;
+&lt;h2&gt;Related Commits&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/8a883ca50e05aa8d28ad4d851f97f0487b7893a8&quot;&gt;8a883ca&lt;/a&gt;: ci: move the branch filters to main and fetch the server from pgsty/silo&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/8c304dd6f8704347a6c7c9d1c3779ffbf35d0d23&quot;&gt;8c304dd&lt;/a&gt;: ci: move the pinned actions onto the Node 24 runtime&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/02b1c115a02475589993dcfaa5fec1bd3227ebd5&quot;&gt;02b1c11&lt;/a&gt;: docs: name the release line main, not master&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/810bbd2b430c209d3f1a55cd1caaf4e5e2eb9998&quot;&gt;810bbd2&lt;/a&gt;: ci: pin the functional-test server to a release whose watch API works&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/d145647d81b0bb34febfade224b8ae0e834496eb&quot;&gt;d145647&lt;/a&gt;: fix: disable SUBNET connectivity and licensing upsell paths&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/5061c4fcc02ab09ba947e9a5b16923ad0205ad4f&quot;&gt;5061c4f&lt;/a&gt;: rebrand: adopt Silo identity in CLI help and examples&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/c7f7706b71b295c2971f58525b65689d491d6110&quot;&gt;c7f7706&lt;/a&gt;: docs: align governance files and package metadata with the fork&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/65c71b224fb784f24b9b1de84b21fb110efdd7c1&quot;&gt;65c71b2&lt;/a&gt;: test: default functional tests to a local server and add brand gate&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/c62a64da33a9379e58af4c4db58b9d47d9b312e6&quot;&gt;c62a64d&lt;/a&gt;: fix: credit both MinIO and PGSTY in copyright notices&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/d205f88cda5bc7151e7f56a7774fd5e4aac1aa45&quot;&gt;d205f88&lt;/a&gt;: docs: adopt no-CLA plus DCO contribution policy&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/95326cea856900c03ddb86d4c1f29ff0a1346db1&quot;&gt;95326ce&lt;/a&gt;: docs: add related-projects table and polish contribution wording&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/d2c0db78e8a981bf60d4482b05c6c93059b27c79&quot;&gt;d2c0db7&lt;/a&gt;: fix: remove the vendor encryption key and close the proxy-set path&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/0c6704da58bcdc030e250493f3922049ee278c2e&quot;&gt;0c6704d&lt;/a&gt;: fix: repair a link and help text damaged by the brand sweep&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/b0021fd01ccb4a7d62cc1844a184265027ef2d9d&quot;&gt;b0021fd&lt;/a&gt;: 2026-08-06 release&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1176924287/RELEASE.2026-08-04T00-00-00Z</id>
+    <updated>2026-08-06T03:40:37Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/pgsty/mc/releases/tag/RELEASE.2026-08-04T00-00-00Z"/>
+    <title>RELEASE.2026-08-04T00-00-00Z</title>
+    <content type="html">&lt;p&gt;This is the first release of the &lt;code&gt;pgsty/mc&lt;/code&gt; community fork since &lt;a href=&quot;/pgsty/mc/blob/RELEASE.2026-08-04T00-00-00Z/blog/release/20260417&quot;&gt;20260417&lt;/a&gt;. It fixes a credential leak in debug logging, severs every remaining connection between the client and upstream release channels, moves containers and packages onto artifacts this fork builds itself, and migrates packaging from MinIO&#39;s &lt;code&gt;pkger&lt;/code&gt; to standard nFPM — with GPG-signed RPMs for the first time.&lt;/p&gt;
+&lt;p&gt;Upstream &lt;code&gt;minio/mc&lt;/code&gt; was archived in July 2026. Its final commit, &lt;a href=&quot;https://github.com/minio/mc/commit/77f82e18b5401a65958f1619df6ebb994634bd88&quot;&gt;&lt;code&gt;77f82e18&lt;/code&gt;&lt;/a&gt;, is exactly this fork&#39;s base, and upstream never cut a release containing it — so this build is strictly newer than any official &lt;code&gt;mc&lt;/code&gt; binary ever published.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://silo.pgsty.com/blog/release/mcli-20260804/&quot; rel=&quot;nofollow&quot;&gt;&lt;strong&gt;Full Release Note&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Behavior change&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;mcli update&lt;/code&gt; self-update is &lt;strong&gt;disabled&lt;/strong&gt; in this fork. The command remains for script compatibility and still accepts its original arguments, but it no longer contacts the network or replaces its own binary; it prints an explicit notice and always exits with status &lt;code&gt;1&lt;/code&gt;. Upstream &lt;code&gt;mc update&lt;/code&gt; exited &lt;code&gt;0&lt;/code&gt; when already up to date, so drop the call from any script that treats a non-zero exit as failure. Upgrade through the Pigsty package repository or &lt;a href=&quot;https://github.com/pgsty/mc/releases&quot;&gt;GitHub Releases&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;automatic version check&lt;/strong&gt; that ran against upstream release feeds on every invocation has also been removed entirely. The &lt;code&gt;MC_UPDATE&lt;/code&gt; and &lt;code&gt;MINIO_UPDATE&lt;/code&gt; environment variables are no longer consulted.&lt;/p&gt;
+&lt;h2&gt;Major Changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Self-update disabled, upstream release channels severed&lt;/strong&gt;: the &lt;code&gt;minio/selfupdate&lt;/code&gt; and &lt;code&gt;aead.dev/minisign&lt;/code&gt; dependencies and all binary-replacement logic are gone, along with the update notifier and the FIPS/non-FIPS update paths. The &lt;code&gt;update&lt;/code&gt; command survives as a compatibility shell, and the runtime helpers (Docker / DCOS / Kubernetes / source-build detection) moved to a dedicated &lt;code&gt;cmd/runtime-info.go&lt;/code&gt;. The client previously reached out to upstream release feeds on every invocation to print an upgrade hint; there is now no outbound release probing at all.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Containers and artifacts fully localized&lt;/strong&gt;: the default image is built from the checked-out fork source, and hotfix binaries are copied from the local build context — no upstream prebuilt binaries are downloaded. The upstream publishing files &lt;code&gt;Dockerfile.release&lt;/code&gt;, &lt;code&gt;Dockerfile.release.old_cpu&lt;/code&gt;, and &lt;code&gt;docker-buildx.sh&lt;/code&gt; were removed, and the obsolete MinIO hotfix upload target is disabled.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Packaging migrated to nFPM&lt;/strong&gt;: replaced MinIO&#39;s &lt;code&gt;pkger&lt;/code&gt; with standard nFPM. Artifact layout and install path are unchanged (&lt;code&gt;/usr/local/bin/mcli&lt;/code&gt;, package name &lt;code&gt;mcli&lt;/code&gt;, &lt;code&gt;YYYYMMDDHHMMSS.0.0&lt;/code&gt; version scheme), but the vendor is now PGSTY, the license uses the SPDX identifier &lt;code&gt;AGPL-3.0-or-later&lt;/code&gt;, and the Debian &lt;code&gt;Section&lt;/code&gt; moved from empty to &lt;code&gt;utils&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RPMs are now GPG-signed&lt;/strong&gt;: RPMs are signed offline with the maintainer key (fingerprint &lt;code&gt;9592A7BC7A682E7333376E09E7935D8DB9BD8B20&lt;/code&gt;). All package metadata is asserted before signing, and the signature is re-verified with checksums regenerated afterwards. DEB and APK packages carry no package-level signature; their trust anchor lives at the repository layer.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build provenance hardened&lt;/strong&gt;: every previously published binary was stamped by the Go toolchain as built from a modified working tree (&lt;code&gt;vcs.modified=true&lt;/code&gt;), which broke the link between an artifact and its Git tag. This release fixes that and adds an enforcing check to both the release and test pipelines, so every binary is traceable to an exact commit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Security Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SUBNET credentials redacted in debug logs&lt;/strong&gt;: with &lt;code&gt;--debug&lt;/code&gt; enabled, SUBNET HTTP exchanges are printed in full. Previously the &lt;code&gt;api-key&lt;/code&gt; / &lt;code&gt;api_key&lt;/code&gt; query parameters, authentication headers, and response bodies all reached the log in clear text — and SUBNET&#39;s authentication and registration endpoints return API keys, licenses, and tokens in their responses. Both parameter spellings and duplicate values are now masked uniformly, sensitive response headers are redacted, and SUBNET response bodies are excluded from debug dumps entirely. The leak is inherited from upstream and present in every previous release, upstream &lt;code&gt;mc&lt;/code&gt; included: if you have ever shared &lt;code&gt;--debug&lt;/code&gt; output of SUBNET commands (&lt;code&gt;mcli license ...&lt;/code&gt; / &lt;code&gt;mcli support ...&lt;/code&gt;), treat the API keys and licenses in it as exposed and rotate them.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Redaction isolated from caller state&lt;/strong&gt;: debug tracing now dumps &lt;em&gt;copies&lt;/em&gt; of the request and response, so redaction cannot mutate objects the caller still holds. Zero-length, fixed-length, and unknown-length response bodies are all covered, and callers can still read the response normally.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Dependency Updates&lt;/h2&gt;
+&lt;p&gt;This cycle&#39;s dependency work is security maintenance, not routine hygiene: every bump below except the &lt;code&gt;term&lt;/code&gt; / &lt;code&gt;mod&lt;/code&gt; / &lt;code&gt;sync&lt;/code&gt; / &lt;code&gt;tools&lt;/code&gt; refresh closes at least one published advisory in the Go vulnerability database, and &lt;code&gt;govulncheck&lt;/code&gt; reports &lt;strong&gt;zero known vulnerabilities reachable from this release&#39;s code&lt;/strong&gt;. No security advisory has ever been published for &lt;code&gt;minio/mc&lt;/code&gt;, &lt;code&gt;minio-go&lt;/code&gt;, &lt;code&gt;madmin-go&lt;/code&gt;, or &lt;code&gt;minio/pkg&lt;/code&gt; themselves.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go build baseline upgraded from &lt;code&gt;1.26.2&lt;/code&gt; to &lt;code&gt;1.26.5&lt;/code&gt; (the newest 1.26.x at release time), picking up the 1.26.3–1.26.5 security batches — including &lt;a href=&quot;https://pkg.go.dev/vuln/GO-2026-4970&quot; rel=&quot;nofollow&quot;&gt;GO-2026-4970&lt;/a&gt; (symlink-based root escape in &lt;code&gt;os&lt;/code&gt;) and &lt;a href=&quot;https://pkg.go.dev/vuln/GO-2026-5856&quot; rel=&quot;nofollow&quot;&gt;GO-2026-5856&lt;/a&gt; (Encrypted Client Hello privacy leak in &lt;code&gt;crypto/tls&lt;/code&gt;), the two most relevant to an S3 client that writes local files and speaks TLS.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;github.com/klauspost/compress&lt;/code&gt; from &lt;code&gt;v1.18.5&lt;/code&gt; to &lt;code&gt;v1.18.7&lt;/code&gt; (closes &lt;a href=&quot;https://pkg.go.dev/vuln/GO-2026-5841&quot; rel=&quot;nofollow&quot;&gt;GO-2026-5841&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;github.com/prometheus/prometheus&lt;/code&gt; from &lt;code&gt;v0.310.0&lt;/code&gt; to &lt;code&gt;v0.311.3&lt;/code&gt; (closes GO-2026-5264, GO-2026-5381, GO-2026-5710).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;google.golang.org/grpc&lt;/code&gt; from &lt;code&gt;v1.79.3&lt;/code&gt; to &lt;code&gt;v1.82.1&lt;/code&gt; (closes &lt;a href=&quot;https://pkg.go.dev/vuln/GO-2026-6061&quot; rel=&quot;nofollow&quot;&gt;GO-2026-6061&lt;/a&gt;), with the &lt;code&gt;genproto&lt;/code&gt; family refreshed alongside.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;golang.org/x/*&lt;/code&gt; family refreshed across the board: &lt;code&gt;crypto&lt;/code&gt; &lt;code&gt;v0.49.0&lt;/code&gt; → &lt;code&gt;v0.53.0&lt;/code&gt; (the 14-advisory GO-2026-5005…5033 batch), &lt;code&gt;net&lt;/code&gt; &lt;code&gt;v0.52.0&lt;/code&gt; → &lt;code&gt;v0.56.0&lt;/code&gt; (GO-2026-5025…5030 and GO-2026-5942), &lt;code&gt;sys&lt;/code&gt; &lt;code&gt;v0.42.0&lt;/code&gt; → &lt;code&gt;v0.46.0&lt;/code&gt; (GO-2026-5024), &lt;code&gt;text&lt;/code&gt; &lt;code&gt;v0.35.0&lt;/code&gt; → &lt;code&gt;v0.39.0&lt;/code&gt; (GO-2026-5970), plus &lt;code&gt;term&lt;/code&gt;, &lt;code&gt;mod&lt;/code&gt;, &lt;code&gt;sync&lt;/code&gt;, and &lt;code&gt;tools&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;aead.dev/minisign&lt;/code&gt; and &lt;code&gt;github.com/minio/selfupdate&lt;/code&gt;, and synchronized the third-party credits file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Engineering and Delivery&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Integration test dependencies pinned&lt;/strong&gt;: CI no longer downloads the MinIO server from a mutable upstream URL. It now uses a versioned &lt;code&gt;pgsty/minio&lt;/code&gt; release archive verified by its SHA-256 digest, with Go pinned to &lt;code&gt;1.26.5&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Release pipeline verification&lt;/strong&gt;: a packaging validation workflow compares the binary inside all three package formats byte-for-byte against the build output, and checks package names, checksums, architecture fields, and every metadata field. The expected RPM metadata is sourced from the signing script itself, so configuration drift cannot strand a release part-way through signing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CI supply-chain hardening&lt;/strong&gt;: every GitHub Action is pinned to a commit SHA with dependabot keeping them current, workflow permissions are narrowed to read-only, and a stale workflow pointing at the upstream organization&#39;s project board was removed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Documentation&lt;/strong&gt;: the English and Chinese READMEs now state this fork&#39;s distribution channels and self-update policy explicitly, and installation instructions that would silently install upstream &lt;code&gt;mc&lt;/code&gt; were removed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Known issue&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;mcli watch&lt;/code&gt; (bucket event notification) receives no events against &lt;strong&gt;any published&lt;/strong&gt; &lt;code&gt;pgsty/minio&lt;/code&gt; server release. The cause is a silent streaming-flush regression on the server side, inherited from upstream — it is not a client problem, and the previous &lt;code&gt;mcli&lt;/code&gt; release is affected identically. The fix was merged to the server&#39;s &lt;code&gt;master&lt;/code&gt; on 2026-07-29 but has not shipped in a published server release. See the &lt;a href=&quot;/pgsty/mc/blob/RELEASE.2026-08-04T00-00-00Z/blog/release/20260618&quot;&gt;SILO 20260618 release notes&lt;/a&gt; and &lt;a href=&quot;https://github.com/pgsty/minio/pull/34&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/pgsty/silo/pull/34/hovercard&quot;&gt;PR #34&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Separately, this fork inherits upstream&#39;s unfixed defects, and with the upstream repository archived they can only ever be fixed here. The most serious is &lt;a href=&quot;https://github.com/minio/mc/issues/5139&quot; data-hovercard-type=&quot;issue&quot; data-hovercard-url=&quot;/minio/mc/issues/5139/hovercard&quot;&gt;minio/mc#5139&lt;/a&gt;: &lt;code&gt;mirror --remove --watch&lt;/code&gt; can delete a live object from the target when a non-current &lt;strong&gt;version&lt;/strong&gt; of it is removed from the source. Exercise caution combining &lt;code&gt;--remove --watch&lt;/code&gt; on versioned buckets.&lt;/p&gt;
+&lt;h2&gt;Related Commits&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/9603ee38868c5713d4a756517f7c47e749a3ef6b&quot;&gt;9603ee3&lt;/a&gt;: fix: redact SUBNET secrets in HTTP debug logs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/f6ae2b0606b9d12b488a2279e3f5275828258adb&quot;&gt;f6ae2b0&lt;/a&gt;: fix: disable self-update in Pigsty builds&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/c05a6e48795def83a9304705a3113ecc18c2456a&quot;&gt;c05a6e4&lt;/a&gt;: build: update Go deps and toolchain to 1.26.5&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/1f105aabca312e00e795ed3363231f62fa5c26af&quot;&gt;1f105aa&lt;/a&gt;: build: use local fork artifacts for containers&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/1182da5349a884384757a403959761e5c5be3399&quot;&gt;1182da5&lt;/a&gt;: ci: pin fork integration test dependencies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/9ee207f16f3fade741da8e87d9b55638ffed1e7d&quot;&gt;9ee207f&lt;/a&gt;: docs: clarify Pigsty fork distribution channels&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/0686cd8788c4236a43d3960db2b18fab784f9f0b&quot;&gt;0686cd8&lt;/a&gt;: fix: isolate SUBNET debug redaction&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/ad10a2a10b7690a33c65dc086fa53ed3e94f8fec&quot;&gt;ad10a2a&lt;/a&gt;: build: complete local Docker context isolation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/5f54221ac751debf747986a246f969068f3d7398&quot;&gt;5f54221&lt;/a&gt;: docs: update mc README and cn version&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/02c0305e9fb545833c41b681e9fa87129841df35&quot;&gt;02c0305&lt;/a&gt;: build: migrate release packaging to nFPM&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pgsty/mc/commit/4c4dcc4b55baf238cd0c81030d77945b3828f157&quot;&gt;4c4dcc4&lt;/a&gt;: build: harden release provenance and package metadata&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1176924287/RELEASE.2026-04-17T00-00-00Z</id>
+    <updated>2026-04-17T08:04:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/pgsty/mc/releases/tag/RELEASE.2026-04-17T00-00-00Z"/>
+    <title>RELEASE.2026-04-17T00-00-00Z</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/d8e1e8794809132a805a96bc411d33ea6b7eb406/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/d8e1e8794809132a805a96bc411d33ea6b7eb406&quot;&gt;&lt;tt&gt;d8e1e87&lt;/tt&gt;&lt;/a&gt; build: bump Go toolchain to 1.26.2&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1176924287/RELEASE.2026-03-21T00-00-00Z</id>
+    <updated>2026-03-24T01:24:37Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/pgsty/mc/releases/tag/RELEASE.2026-03-21T00-00-00Z"/>
+    <title>RELEASE.2026-03-21T00-00-00Z</title>
+    <content type="html">&lt;h2&gt;Changelog&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/011ff855d4af2cea73620dd923cbfe1d76dccf62/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/011ff855d4af2cea73620dd923cbfe1d76dccf62&quot;&gt;&lt;tt&gt;011ff85&lt;/tt&gt;&lt;/a&gt; build: update Go deps and toolchain to 1.26.1&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/51a097c9b69e9ebb1ebd4833c5c7245de11ad7c6/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/51a097c9b69e9ebb1ebd4833c5c7245de11ad7c6&quot;&gt;&lt;tt&gt;51a097c&lt;/tt&gt;&lt;/a&gt; ci: align package build naming with MinIO-style workflows&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;commit-link&quot; data-hovercard-type=&quot;commit&quot; data-hovercard-url=&quot;https://github.com/pgsty/mc/commit/e7ef01a6baeeeda4ec5bd954ad550162021e4372/hovercard&quot; href=&quot;https://github.com/pgsty/mc/commit/e7ef01a6baeeeda4ec5bd954ad550162021e4372&quot;&gt;&lt;tt&gt;e7ef01a&lt;/tt&gt;&lt;/a&gt; cmd: clean up string builder writes for lint compliance&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+</feed>

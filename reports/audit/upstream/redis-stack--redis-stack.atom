@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/redis-stack/redis-stack/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/redis-stack/redis-stack/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/redis-stack/redis-stack/releases.atom"/>
+  <title>Release notes from redis-stack</title>
+  <updated>2025-11-03T13:44:44Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/448554098/v7.4.0-v8</id>
+    <updated>2025-11-03T13:45:04Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis-stack/redis-stack/releases/tag/v7.4.0-v8"/>
+    <title>Redis Stack 7.4.0-v8</title>
+    <content type="html">&lt;p&gt;This is a maintenance release for Redis Stack Server 7.4.0.&lt;/p&gt;
+&lt;p&gt;Update urgency: &lt;code&gt;HIGH&lt;/code&gt;: There is a critical bug that may affect a subset of users.&lt;br&gt;
+&lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;Docker&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Headlines:&lt;/h3&gt;
+&lt;p&gt;This version includes a stability fix for the &lt;strong&gt;Redis&lt;/strong&gt; server addressing a critical issue in the &lt;strong&gt;HyperLogLog&lt;/strong&gt; data structure, where an overflow condition could occur when processing datasets exceeding 2GB entries, potentially resulting in a Redis crash.&lt;br&gt;
+This release also includes several fixes related to &lt;strong&gt;probabilistic&lt;/strong&gt; data structures, enhancing overall reliability and performance.&lt;br&gt;
+Additionally, this maintenance release ships with the latest version of &lt;strong&gt;Redis Insight&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Details:&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Redis&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An overflow in &lt;code&gt;HyperLogLog&lt;/code&gt; with 2GB+ entries may result in a Redis crash&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Probabilistic&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cuckoo filter - Division by zero in Cuckoo filter insertion&lt;/li&gt;
+&lt;li&gt;Cuckoo filter - Counter overflow&lt;/li&gt;
+&lt;li&gt;Bloom filter - Arbitrary memory read/write with invalid filter&lt;/li&gt;
+&lt;li&gt;Bloom filter - Out-of-bounds access with empty chain&lt;/li&gt;
+&lt;li&gt;Top-k - Out-of-bounds access&lt;/li&gt;
+&lt;li&gt;Bloom filter - Restore invalid filter&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RedisBloom/RedisBloom/pull/886&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RedisBloom/RedisBloom/pull/886/hovercard&quot;&gt;#886&lt;/a&gt; - &lt;code&gt;TDIGEST.CREATE&lt;/code&gt; crashes (OOM) on huge initialization values (MOD-10840)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Redis version&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/redis/redis/releases/tag/7.4.7&quot;&gt;Redis 7.4.7&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Module versions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/releases/tag/v2.10.20&quot;&gt;RediSearch 2.10.20&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisJSON/RedisJSON/releases/tag/v2.8.9&quot;&gt;RedisJSON 2.8.9&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisTimeSeries/RedisTimeSeries/releases/tag/v1.12.6&quot;&gt;RedisTimeSeries 1.12.6&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisBloom/RedisBloom/releases/tag/v2.8.16&quot;&gt;RedisBloom 2.8.16&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Recommended Client Libraries&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/jedis/releases/tag/v7.0.0&quot;&gt;Jedis 7.0.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-spring/releases/tag/v1.0.4&quot;&gt;redis-om-spring 1.0.4 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-py/releases/tag/v7.0.1&quot;&gt;redis-py 7.0.1 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-python/releases/tag/v0.3.5&quot;&gt;redis-om-python 0.3.5 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NodeJS
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/node-redis/releases/tag/redis%405.9.0&quot;&gt;node-redis 5.9.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-node/releases/tag/v0.2.0&quot;&gt;redis-om-node 0.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;.NET
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-dotnet/releases/tag/v1.0.1&quot;&gt;redis-om-dotnet 1.0.1 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/NRedisStack/releases/tag/v1.1.1&quot;&gt;NRedisStack 1.1.1 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Go
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/go-redis/releases/tag/v9.16.0&quot;&gt;go-redis 9.16.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/rueidis/releases/tag/v1.0.67&quot;&gt;rueidis 1.0.67 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Compatible with &lt;a href=&quot;https://redis.io/download&quot; rel=&quot;nofollow&quot;&gt;Redis Insight&lt;/a&gt;. The Docker image redis/redis-stack for this version is bundled with &lt;a href=&quot;https://github.com/RedisInsight/RedisInsight/releases/tag/2.70.1&quot;&gt;Redis Insight 2.70.1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note: version numbers follow the following pattern:&lt;br&gt;
+&lt;code&gt;x.y.z-b&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;x.y&lt;/code&gt; Redis Major version&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;z&lt;/code&gt; increases with even numbers as a module x.y version increases.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt; denotes a patch to Redis or a module (any &lt;code&gt;z&lt;/code&gt; of Redis or Modules). &lt;code&gt;b&lt;/code&gt; will consist of a &lt;code&gt;v&lt;/code&gt; + numeric value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Downloads&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v8.ventura.x86_64.zip&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v8.sonoma.arm64.zip&quot; rel=&quot;nofollow&quot;&gt;arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AppImage: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v8-x86_64.AppImage&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ubuntu: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v8.bionic.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v8.bionic.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v8.focal.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v8.focal.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v8.x86_64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v8.arm64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v8.jammy.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v8.jammy.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Debian: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v8.bullseye.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bullseye x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 8/CentOS Linux 8: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v8.rhel8.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 9/Rocky Linux 9/CentOS Linux 9: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v8.rhel9.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack server on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack-server&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>ViktarStarastsenka</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/99594890?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/448554098/v7.2.0-v20</id>
+    <updated>2025-11-03T10:02:34Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis-stack/redis-stack/releases/tag/v7.2.0-v20"/>
+    <title>Redis Stack 7.2.0-v20</title>
+    <content type="html">&lt;p&gt;This is a maintenance release for Redis Stack Server 7.2.0.&lt;/p&gt;
+&lt;p&gt;Update urgency: &lt;code&gt;HIGH&lt;/code&gt;: There is a critical bug that may affect a subset of users.&lt;br&gt;
+&lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;Docker&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Headlines:&lt;/h3&gt;
+&lt;p&gt;This version includes a stability fix for the &lt;strong&gt;Redis&lt;/strong&gt; server addressing a critical issue in the &lt;strong&gt;HyperLogLog&lt;/strong&gt; data structure, where an overflow condition could occur when processing datasets exceeding 2GB entries, potentially resulting in a Redis crash.&lt;br&gt;
+This release also includes several fixes related to &lt;strong&gt;probabilistic&lt;/strong&gt; data structures, enhancing overall reliability and performance.&lt;br&gt;
+Additionally, this maintenance release ships with the latest version of &lt;strong&gt;Redis Insight&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Details:&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Redis&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An overflow in &lt;code&gt;HyperLogLog&lt;/code&gt; with 2GB+ entries may result in a Redis crash&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Probabilistic&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cuckoo filter - Division by zero in Cuckoo filter insertion&lt;/li&gt;
+&lt;li&gt;Cuckoo filter - Counter overflow&lt;/li&gt;
+&lt;li&gt;Bloom filter - Arbitrary memory read/write with invalid filter&lt;/li&gt;
+&lt;li&gt;Bloom filter - Out-of-bounds access with empty chain&lt;/li&gt;
+&lt;li&gt;Top-k - Out-of-bounds access&lt;/li&gt;
+&lt;li&gt;Bloom filter - Restore invalid filter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Redis version&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/redis/redis/releases/tag/7.2.12&quot;&gt;Redis 7.2.12&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Module versions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/releases/tag/v2.8.28&quot;&gt;RediSearch 2.8.28&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisJSON/RedisJSON/releases/tag/v2.6.15&quot;&gt;RedisJSON 2.6.15&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisTimeSeries/RedisTimeSeries/releases/tag/v1.10.17&quot;&gt;RedisTimeSeries 1.10.17&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisBloom/RedisBloom/releases/tag/v2.6.24&quot;&gt;RedisBloom 2.6.24&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisGears/RedisGears/releases&quot;&gt;RedisGears 2.0.23&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Recommended Client Libraries&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/jedis/releases/tag/v7.0.0&quot;&gt;Jedis 7.0.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-spring/releases/tag/v1.0.4&quot;&gt;redis-om-spring 1.0.4 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-py/releases/tag/v7.0.1&quot;&gt;redis-py 7.0.1 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-python/releases/tag/v0.3.5&quot;&gt;redis-om-python 0.3.5 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NodeJS
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/node-redis/releases/tag/redis%405.9.0&quot;&gt;node-redis 5.9.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-node/releases/tag/v0.2.0&quot;&gt;redis-om-node 0.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;.NET
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-dotnet/releases/tag/v1.0.1&quot;&gt;redis-om-dotnet 1.0.1 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/NRedisStack/releases/tag/v1.1.1&quot;&gt;NRedisStack 1.1.1 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Go
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/go-redis/releases/tag/v9.16.0&quot;&gt;go-redis 9.16.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/rueidis/releases/tag/v1.0.67&quot;&gt;rueidis 1.0.67 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Compatible with &lt;a href=&quot;https://redis.io/download&quot; rel=&quot;nofollow&quot;&gt;Redis Insight&lt;/a&gt;. The Docker image redis/redis-stack for this version is bundled with &lt;a href=&quot;https://github.com/RedisInsight/RedisInsight/releases/tag/2.70.1&quot;&gt;Redis Insight 2.70.1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note: version numbers follow the following pattern:&lt;br&gt;
+&lt;code&gt;x.y.z-b&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;x.y&lt;/code&gt; Redis Major version&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;z&lt;/code&gt; increases with even numbers as a module x.y version increases.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt; denotes a patch to Redis or a module (any &lt;code&gt;z&lt;/code&gt; of Redis or Modules). &lt;code&gt;b&lt;/code&gt; will consist of a &lt;code&gt;v&lt;/code&gt; + numeric value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Downloads&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v20.ventura.x86_64.zip&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v20.sonoma.arm64.zip&quot; rel=&quot;nofollow&quot;&gt;arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AppImage: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v20-x86_64.AppImage&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ubuntu: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v20.bionic.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v20.bionic.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v20.focal.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v20.focal.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v20.x86_64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v20.arm64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v20.jammy.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v20.jammy.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Debian: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v20.bullseye.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bullseye x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 8/CentOS Linux 8: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v20.rhel8.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 9/Rocky Linux 9/CentOS Linux 9: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v20.rhel9.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack server on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack-server&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>ViktarStarastsenka</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/99594890?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/448554098/v7.4.0-v7</id>
+    <updated>2025-11-02T13:41:45Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis-stack/redis-stack/releases/tag/v7.4.0-v7"/>
+    <title>Redis Stack 7.4.0-v7</title>
+    <content type="html">&lt;p&gt;This is a maintenance release for Redis Stack Server 7.4.0.&lt;/p&gt;
+&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: there are security fixes in the release.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;Docker&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Headlines:&lt;/h3&gt;
+&lt;p&gt;This version includes security fixes for the &lt;strong&gt;Redis&lt;/strong&gt; server, addressing several issues related to Lua scripts, such as an out-of-bounds read, a potential remote code execution vulnerability, and other related vulnerabilities.&lt;br&gt;
+In addition to the security updates, the release delivers several bug fixes, including endless client blocking when using blocking commands, a potential use-after-free issue after Pub/Sub and Lua defragmentation, and other related fixes.&lt;br&gt;
+Finally, this maintenance release ships with the latest version of &lt;strong&gt;Redis Insight&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Details:&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Security and privacy&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Redis&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;(CVE-2025-49844) A Lua script may lead to remote code execution&lt;/li&gt;
+&lt;li&gt;(CVE-2025-46817) A Lua script may lead to integer overflow and potential RCE&lt;/li&gt;
+&lt;li&gt;(CVE-2025-46818) A Lua script can be executed in the context of another user&lt;/li&gt;
+&lt;li&gt;(CVE-2025-46819) LUA out-of-bound read&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Redis&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis/pull/14330&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/14330/hovercard&quot;&gt;#14330&lt;/a&gt; Potential use-after-free after pubsub and Lua defrag&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis/pull/14319&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/14319/hovercard&quot;&gt;#14319&lt;/a&gt; Potential crash on Lua script defrag&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis/pull/14164&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/14164/hovercard&quot;&gt;#14164&lt;/a&gt; Prevent &lt;code&gt;CLIENT UNBLOCK&lt;/code&gt; from unblocking &lt;code&gt;CLIENT PAUSE&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis/pull/14165&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/14165/hovercard&quot;&gt;#14165&lt;/a&gt; Endless client blocking for blocking commands&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis/pull/14163&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/14163/hovercard&quot;&gt;#14163&lt;/a&gt; &lt;code&gt;EVAL&lt;/code&gt; crash when error table is empty&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis/pull/14227&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/14227/hovercard&quot;&gt;#14227&lt;/a&gt; &lt;code&gt;HINCRBYFLOAT&lt;/code&gt; removes field expiration on replica&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Redis version&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/redis/redis/releases/tag/7.4.6&quot;&gt;Redis 7.4.6&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Module versions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/releases/tag/v2.10.20&quot;&gt;RediSearch 2.10.20&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisJSON/RedisJSON/releases/tag/v2.8.9&quot;&gt;RedisJSON 2.8.9&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisTimeSeries/RedisTimeSeries/releases/tag/v1.12.6&quot;&gt;RedisTimeSeries 1.12.6&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisBloom/RedisBloom/releases/tag/v2.8.7&quot;&gt;RedisBloom 2.8.7&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Recommended Client Libraries&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/jedis/releases/tag/v5.2.0&quot;&gt;Jedis 5.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-spring/releases/tag/v1.0.4&quot;&gt;redis-om-spring 1.0.4 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-py/releases/tag/v6.4.0&quot;&gt;redis-py 6.4.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-python/releases/tag/v0.3.5&quot;&gt;redis-om-python 0.3.5 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NodeJS
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/node-redis/releases/tag/redis%405.8.2&quot;&gt;node-redis 5.8.2 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-node/releases/tag/v0.2.0&quot;&gt;redis-om-node 0.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;.NET
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-dotnet/releases/tag/v1.0.1&quot;&gt;redis-om-dotnet 1.0.1 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/NRedisStack/releases/tag/v1.1.1&quot;&gt;NRedisStack 1.1.1 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Go
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/go-redis/releases/tag/v9.14.0&quot;&gt;go-redis 9.14.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/rueidis/releases/tag/v1.0.66&quot;&gt;rueidis 1.0.66 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Compatible with &lt;a href=&quot;https://redis.io/download&quot; rel=&quot;nofollow&quot;&gt;Redis Insight&lt;/a&gt;. The Docker image redis/redis-stack for this version is bundled with &lt;a href=&quot;https://github.com/RedisInsight/RedisInsight/releases/tag/2.70.1&quot;&gt;Redis Insight 2.70.1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note: version numbers follow the following pattern:&lt;br&gt;
+&lt;code&gt;x.y.z-b&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;x.y&lt;/code&gt; Redis Major version&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;z&lt;/code&gt; increases with even numbers as a module x.y version increases.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt; denotes a patch to Redis or a module (any &lt;code&gt;z&lt;/code&gt; of Redis or Modules). &lt;code&gt;b&lt;/code&gt; will consist of a &lt;code&gt;v&lt;/code&gt; + numeric value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Downloads&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v7.ventura.x86_64.zip&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v7.sonoma.arm64.zip&quot; rel=&quot;nofollow&quot;&gt;arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AppImage: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v7-x86_64.AppImage&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ubuntu: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v7.bionic.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v7.bionic.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v7.focal.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v7.focal.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v7.x86_64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v7.arm64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v7.jammy.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v7.jammy.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Debian: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v7.bullseye.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bullseye x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 8/CentOS Linux 8: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v7.rhel8.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 9/Rocky Linux 9/CentOS Linux 9: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v7.rhel9.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack server on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack-server&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>ViktarStarastsenka</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/99594890?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/448554098/v7.2.0-v19</id>
+    <updated>2025-10-03T13:54:48Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis-stack/redis-stack/releases/tag/v7.2.0-v19"/>
+    <title>Redis Stack 7.2.0-v19</title>
+    <content type="html">&lt;p&gt;This is a maintenance release for Redis Stack Server 7.2.0.&lt;/p&gt;
+&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: there are security fixes in the release.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;Docker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This version includes security fixes for the &lt;strong&gt;Redis&lt;/strong&gt; server, addressing several issues related to Lua scripts, such as an out-of-bounds read, a potential remote code execution vulnerability, and other related vulnerabilities.&lt;br&gt;
+Additionally, this maintenance release ships with the latest version of &lt;strong&gt;Redis Insight&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Details:&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Security and privacy&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Redis&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;(CVE-2025-49844) A Lua script may lead to remote code execution&lt;/li&gt;
+&lt;li&gt;(CVE-2025-46817) A Lua script may lead to integer overflow and potential RCE&lt;/li&gt;
+&lt;li&gt;(CVE-2025-46818) A Lua script can be executed in the context of another user&lt;/li&gt;
+&lt;li&gt;(CVE-2025-46819) LUA out-of-bound read&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Redis version&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/redis/redis/releases/tag/7.2.11&quot;&gt;Redis 7.2.11&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Module versions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/releases/tag/v2.8.28&quot;&gt;RediSearch 2.8.28&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisJSON/RedisJSON/releases/tag/v2.6.15&quot;&gt;RedisJSON 2.6.15&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisTimeSeries/RedisTimeSeries/releases/tag/v1.10.17&quot;&gt;RedisTimeSeries 1.10.17&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisBloom/RedisBloom/releases/tag/v2.6.18&quot;&gt;RedisBloom 2.6.18&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisGears/RedisGears/releases&quot;&gt;RedisGears 2.0.23&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Recommended Client Libraries&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/jedis/releases/tag/v5.2.0&quot;&gt;Jedis 5.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-spring/releases/tag/v1.0.4&quot;&gt;redis-om-spring 1.0.4 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-py/releases/tag/v6.4.0&quot;&gt;redis-py 6.4.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-python/releases/tag/v0.3.5&quot;&gt;redis-om-python 0.3.5 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NodeJS
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/node-redis/releases/tag/redis%405.8.2&quot;&gt;node-redis 5.8.2 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-node/releases/tag/v0.2.0&quot;&gt;redis-om-node 0.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;.NET
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-dotnet/releases/tag/v1.0.1&quot;&gt;redis-om-dotnet 1.0.1 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/NRedisStack/releases/tag/v1.1.1&quot;&gt;NRedisStack 1.1.1 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Go
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/go-redis/releases/tag/v9.14.0&quot;&gt;go-redis 9.14.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/rueidis/releases/tag/v1.0.66&quot;&gt;rueidis 1.0.66 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Compatible with &lt;a href=&quot;https://redis.io/download&quot; rel=&quot;nofollow&quot;&gt;Redis Insight&lt;/a&gt;. The Docker image redis/redis-stack for this version is bundled with &lt;a href=&quot;https://github.com/RedisInsight/RedisInsight/releases/tag/2.70.1&quot;&gt;Redis Insight 2.70.1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note: version numbers follow the following pattern:&lt;br&gt;
+&lt;code&gt;x.y.z-b&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;x.y&lt;/code&gt; Redis Major version&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;z&lt;/code&gt; increases with even numbers as a module x.y version increases.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt; denotes a patch to Redis or a module (any &lt;code&gt;z&lt;/code&gt; of Redis or Modules). &lt;code&gt;b&lt;/code&gt; will consist of a &lt;code&gt;v&lt;/code&gt; + numeric value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Downloads&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v19.ventura.x86_64.zip&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v19.sonoma.arm64.zip&quot; rel=&quot;nofollow&quot;&gt;arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AppImage: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v19-x86_64.AppImage&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ubuntu: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v19.bionic.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v19.bionic.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v19.focal.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v19.focal.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v19.x86_64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v19.arm64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v19.jammy.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v19.jammy.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Debian: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v19.bullseye.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bullseye x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 8/CentOS Linux 8: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v19.rhel8.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 9/Rocky Linux 9/CentOS Linux 9: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v19.rhel9.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack server on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack-server&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>ViktarStarastsenka</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/99594890?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/448554098/v7.4.0-v6</id>
+    <updated>2025-11-02T13:42:59Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis-stack/redis-stack/releases/tag/v7.4.0-v6"/>
+    <title>Redis Stack 7.4.0-v6</title>
+    <content type="html">&lt;p&gt;This is a maintenance release for Redis Stack Server 7.4.0.&lt;/p&gt;
+&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: there are security fixes in the release.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;Docker&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Headlines:&lt;/h3&gt;
+&lt;p&gt;This version includes security fixes for the &lt;strong&gt;Redis&lt;/strong&gt; server, addressing an out-of-bounds write vulnerability in &lt;code&gt;HyperLogLog&lt;/code&gt; commands and improving connection handling by retrying accepted connections even after an error.&lt;br&gt;
+It also includes improvements and bug fixes for the &lt;strong&gt;Redis Query Engine&lt;/strong&gt;, &lt;strong&gt;JSON&lt;/strong&gt;, and &lt;strong&gt;time series&lt;/strong&gt; data structures.&lt;br&gt;
+Additionally, this maintenance release ships with the latest version of &lt;strong&gt;Redis Insight&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Details:&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Security and privacy&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Redis&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;(CVE-2025-32023) Fix out-of-bounds write in &lt;code&gt;HyperLogLog&lt;/code&gt; commands&lt;/li&gt;
+&lt;li&gt;(CVE-2025-48367) Retry accepting other connections even if the accepted connection reports an error&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Improvements&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Redis Query Engine&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6279&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6279/hovercard&quot;&gt;#6279&lt;/a&gt; Lock mechanism for collecting &lt;code&gt;FT.INFO&lt;/code&gt; statistics when concurrently running index sanitiser (MOD-10007, MOD-9761)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5637&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5637/hovercard&quot;&gt;#5637&lt;/a&gt; Memory allocation when converting special &lt;code&gt;UTF-8&lt;/code&gt; symbols requires more memory (MOD-8799)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6007&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6007/hovercard&quot;&gt;#6007&lt;/a&gt; Parser for intersections on parentheses and sub-queries order won&#39;t affect full-text scores (MOD-9278)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6020&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6020/hovercard&quot;&gt;#6020&lt;/a&gt; Preventing access to the Redis key space when LOAD...@__key is used (MOD-9419)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5938&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5938/hovercard&quot;&gt;#5938&lt;/a&gt; Performance of collecing vector index statistics, reducing CPU time (MOD-9354)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5800&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5800/hovercard&quot;&gt;#5800&lt;/a&gt; Accuracy of index memory reporting by correcting a bug that caused negative memory counts (MOD-5904)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Redis Query Engine&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6211&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6211/hovercard&quot;&gt;#6211&lt;/a&gt; Some languages could have multiple lower and upper case matches, causing index misbehaviour (MOD-9835)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6349&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6349/hovercard&quot;&gt;#6349&lt;/a&gt; Search on terms larger than 128 characters could lead to missing matches (MOD-6786)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6305&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6305/hovercard&quot;&gt;#6305&lt;/a&gt; Iterating over a large index tree, due to frequent document updates, could hit the &lt;code&gt;TIMEOUT&lt;/code&gt;, causing a crash (MOD-9856)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6184&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6184/hovercard&quot;&gt;#6184&lt;/a&gt; Reindexing from RDB with multiple vector indices could lead to a crash due to cluster health check - NodeWD (MOD-9220,MOD-8809)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6028&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6028/hovercard&quot;&gt;#6028&lt;/a&gt; &lt;code&gt;FT.CURSOR...DEL&lt;/code&gt; while another thread is reading it could lead to a crash (MOD-9408,MOD-9432,MOD-9433,MOD-9434,MOD-9435)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5967&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5967/hovercard&quot;&gt;#5967&lt;/a&gt; When indexing documents using TEXT and without the text in the documents leads to an &lt;code&gt;inf&lt;/code&gt; or &lt;code&gt;nan&lt;/code&gt; score (MOD-9423)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6056&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6056/hovercard&quot;&gt;#6056&lt;/a&gt; Avoid lazy expiration in background indexing for Active-Active setup preventing keys from expiring incorrectly (MOD-9486)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6108&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6108/hovercard&quot;&gt;#6108&lt;/a&gt; Timeout fail returned when &lt;code&gt;ON_TIMEOUT RETURN&lt;/code&gt; policy stop collecting of the partial results - best effort (MOD-9612)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6207&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6207/hovercard&quot;&gt;#6207&lt;/a&gt; Continuous increasing of index error counts on &lt;code&gt;FT.INFO&lt;/code&gt;, could lead to an overflow and memory leak (MOD-9396)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5859&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5859/hovercard&quot;&gt;#5859&lt;/a&gt; Last query result using could be missing &lt;code&gt;FT.AGGREGATE&lt;/code&gt; with &lt;code&gt;ON_TIMEOUT RETURN&lt;/code&gt; and using multi-threading (MOD-9222)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5858&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5858/hovercard&quot;&gt;#5858&lt;/a&gt; Collecting empty results from shards during &lt;code&gt;FT.AGGREGATE&lt;/code&gt; with RESP3 could cause a crash (MOD-9174)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;JSON&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RedisJSON/RedisJSON/pull/1329&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RedisJSON/RedisJSON/pull/1329/hovercard&quot;&gt;#1329&lt;/a&gt; Memory usage calculation: some allocations are counted twice (MOD-9169)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Time series&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RedisTimeSeries/RedisTimeSeries/pull/1725&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RedisTimeSeries/RedisTimeSeries/pull/1725/hovercard&quot;&gt;#1725&lt;/a&gt; &lt;code&gt;TS.DEL&lt;/code&gt; crashes on keys with compactions if the deletion removes the last compaction bucket (MOD-8936)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RedisGears/LibMR/pull/58&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RedisGears/LibMR/pull/58/hovercard&quot;&gt;LibMR#58&lt;/a&gt; Crash when a cluster contains both 1.8 and newer nodes (MOD-8976, MOD-9192)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Redis version&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/redis/redis/releases/tag/7.4.5&quot;&gt;Redis 7.4.5&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Module versions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/releases/tag/v2.10.20&quot;&gt;RediSearch 2.10.20&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisJSON/RedisJSON/releases/tag/v2.8.9&quot;&gt;RedisJSON 2.8.9&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisTimeSeries/RedisTimeSeries/releases/tag/v1.12.6&quot;&gt;RedisTimeSeries 1.12.6&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisBloom/RedisBloom/releases/tag/v2.8.7&quot;&gt;RedisBloom 2.8.7&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Recommended Client Libraries&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/jedis/releases/tag/v5.2.0&quot;&gt;Jedis 5.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-spring/releases/tag/v0.9.11&quot;&gt;redis-om-spring 0.9.11 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-py/releases/tag/v5.3.0&quot;&gt;redis-py 5.3.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-python/releases/tag/v0.3.5&quot;&gt;redis-om-python 0.3.5 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NodeJS
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/node-redis/releases/tag/redis%404.7.0&quot;&gt;node-redis 4.7.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-node/releases/tag/v0.2.0&quot;&gt;redis-om-node 0.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;.NET
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-dotnet/releases/tag/v0.8.0&quot;&gt;redis-om-dotnet 0.8.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/NRedisStack/releases/tag/v0.13.3&quot;&gt;NRedisStack 0.13.3 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Go
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/go-redis/releases/tag/v9.7.3&quot;&gt;go-redis 9.7.3 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/rueidis/releases/tag/v1.0.62&quot;&gt;rueidis 1.0.62 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Compatible with &lt;a href=&quot;https://redis.io/download&quot; rel=&quot;nofollow&quot;&gt;Redis Insight&lt;/a&gt;. The Docker image redis/redis-stack for this version is bundled with &lt;a href=&quot;https://github.com/RedisInsight/RedisInsight/releases/tag/2.70.0&quot;&gt;Redis Insight 2.70&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note: version numbers follow the following pattern:&lt;br&gt;
+&lt;code&gt;x.y.z-b&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;x.y&lt;/code&gt; Redis Major version&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;z&lt;/code&gt; increases with even numbers as a module x.y version increases.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt; denotes a patch to Redis or a module (any &lt;code&gt;z&lt;/code&gt; of Redis or Modules). &lt;code&gt;b&lt;/code&gt; will consist of a &lt;code&gt;v&lt;/code&gt; + numeric value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Downloads&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v6.ventura.x86_64.zip&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v6.sonoma.arm64.zip&quot; rel=&quot;nofollow&quot;&gt;arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AppImage: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v6-x86_64.AppImage&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ubuntu: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v6.bionic.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v6.bionic.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v6.focal.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v6.focal.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v6.x86_64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v6.arm64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v6.jammy.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v6.jammy.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Debian: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v6.bullseye.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bullseye x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 8/CentOS Linux 8: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v6.rhel8.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 9/Rocky Linux 9/CentOS Linux 9: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v6.rhel9.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack server on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack-server&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>ViktarStarastsenka</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/99594890?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/448554098/v7.2.0-v18</id>
+    <updated>2025-10-03T13:55:52Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis-stack/redis-stack/releases/tag/v7.2.0-v18"/>
+    <title>Redis Stack 7.2.0-v18</title>
+    <content type="html">&lt;p&gt;This is a maintenance release for Redis Stack Server 7.2.0.&lt;/p&gt;
+&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: there are security fixes in the release.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;Docker&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Headlines:&lt;/h3&gt;
+&lt;p&gt;This version includes security fixes for the &lt;strong&gt;Redis&lt;/strong&gt; server, addressing an out-of-bounds write vulnerability in &lt;code&gt;HyperLogLog&lt;/code&gt; commands and improving connection handling by retrying accepted connections even after an error.&lt;br&gt;
+It also includes improvements and bug fixes for the &lt;strong&gt;Redis Query Engine&lt;/strong&gt;, &lt;strong&gt;JSON&lt;/strong&gt;, and &lt;strong&gt;time series&lt;/strong&gt; data structures.&lt;br&gt;
+Additionally, this maintenance release ships with the latest version of &lt;strong&gt;Redis Insight&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Details:&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Security and privacy&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Redis&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;(CVE-2025-32023) Fix out-of-bounds write in &lt;code&gt;HyperLogLog&lt;/code&gt; commands&lt;/li&gt;
+&lt;li&gt;(CVE-2025-48367) Retry accepting other connections even if the accepted connection reports an error&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Improvements&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Redis Query Engine&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6340&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6340/hovercard&quot;&gt;#6340&lt;/a&gt; Lock mechanism for collecting &lt;code&gt;FT.INFO&lt;/code&gt; statistics when concurrently running index sanitiser (MOD-10007, MOD-9761)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6340&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6340/hovercard&quot;&gt;#6340&lt;/a&gt; Lock mechanism for collecting &lt;code&gt;FT.INFO&lt;/code&gt; statistics when concurrently running index sanitiser (MOD-10007, MOD-9761)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6008&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6008/hovercard&quot;&gt;#6008&lt;/a&gt; Parser for intersections on parentheses and sub-queries order won&#39;t affect full-text scores (MOD-9278)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5939&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5939/hovercard&quot;&gt;#5939&lt;/a&gt; Performance of collecing vector index statistics, reducing CPU time (MOD-9354)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5801&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5801/hovercard&quot;&gt;#5801&lt;/a&gt; Accuracy of index memory reporting by correcting a bug that caused negative memory counts (MOD-5904)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Redis Query Engine&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6207&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6207/hovercard&quot;&gt;#6207&lt;/a&gt; Continuous increasing of index error counts on &lt;code&gt;FT.INFO&lt;/code&gt;, could lead to an overflow and memory leak (MOD-9396)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6349&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6349/hovercard&quot;&gt;#6349&lt;/a&gt; Search on terms larger than 128 characters could lead to missing matches (MOD-6786)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6305&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6305/hovercard&quot;&gt;#6305&lt;/a&gt; Iterating over a large index tree, due to frequent document updates, could hit the &lt;code&gt;TIMEOUT&lt;/code&gt;, causing a crash (MOD-9856)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6191&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6191/hovercard&quot;&gt;#6191&lt;/a&gt; Reindexing from RDB with multiple vector indices could lead to a crash due to cluster health check - NodeWD (MOD-9220,MOD-8809)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6031&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6031/hovercard&quot;&gt;#6031&lt;/a&gt; &lt;code&gt;FT.CURSOR...DEL&lt;/code&gt; while another thread is reading it could lead to a crash (MOD-9408,MOD-9432,MOD-9433,MOD-9434,MOD-9435)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5966&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5966/hovercard&quot;&gt;#5966&lt;/a&gt; When indexing documents using TEXT and without the text in the documents leads to an &lt;code&gt;inf&lt;/code&gt; or &lt;code&gt;nan&lt;/code&gt; score (MOD-9423)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6057&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6057/hovercard&quot;&gt;#6057&lt;/a&gt; Avoid lazy expiration in background indexing for Active-Active setup, preventing keys from expiring incorrectly (MOD-9486)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/6113&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/6113/hovercard&quot;&gt;#6113&lt;/a&gt; Timeout fail returned when &lt;code&gt;ON_TIMEOUT RETURN&lt;/code&gt; policy stop collecting of the partial results - best effort (MOD-9612)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5864&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5864/hovercard&quot;&gt;#5864&lt;/a&gt; Last query result using could be missing &lt;code&gt;FT.AGGREGATE&lt;/code&gt; with &lt;code&gt;ON_TIMEOUT RETURN&lt;/code&gt; and using multi-threading (MOD-9222)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5863&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5863/hovercard&quot;&gt;#5863&lt;/a&gt; Collecting empty results from shards during &lt;code&gt;FT.AGGREGATE&lt;/code&gt; with RESP3 could cause a crash (MOD-9174)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;JSON&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RedisJSON/RedisJSON/pull/1329&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RedisJSON/RedisJSON/pull/1329/hovercard&quot;&gt;#1329&lt;/a&gt; Memory usage calculation: some allocations are counted twice (MOD-9169)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Time series&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RedisTimeSeries/RedisTimeSeries/pull/1725&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RedisTimeSeries/RedisTimeSeries/pull/1725/hovercard&quot;&gt;#1725&lt;/a&gt; &lt;code&gt;TS.DEL&lt;/code&gt; crashes on keys with compactions if the deletion removes the last compaction bucket (MOD-8936)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RedisGears/LibMR/pull/58&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RedisGears/LibMR/pull/58/hovercard&quot;&gt;LibMR#58&lt;/a&gt; Crash when a cluster contains both 1.8 and newer nodes (MOD-8976, MOD-9192)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Redis version&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/redis/redis/releases/tag/7.2.10&quot;&gt;Redis 7.2.10&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Module versions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/releases/tag/v2.8.28&quot;&gt;RediSearch 2.8.28&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisJSON/RedisJSON/releases/tag/v2.6.15&quot;&gt;RedisJSON 2.6.15&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisTimeSeries/RedisTimeSeries/releases/tag/v1.10.17&quot;&gt;RedisTimeSeries 1.10.17&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisBloom/RedisBloom/releases/tag/v2.6.18&quot;&gt;RedisBloom 2.6.18&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisGears/RedisGears/releases&quot;&gt;RedisGears 2.0.23&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Recommended Client Libraries&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/jedis/releases/tag/v5.2.0&quot;&gt;Jedis 5.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-spring/releases/tag/v0.9.11&quot;&gt;redis-om-spring 0.9.11 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-py/releases/tag/v5.3.0&quot;&gt;redis-py 5.3.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-python/releases/tag/v0.3.5&quot;&gt;redis-om-python 0.3.5 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NodeJS
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/node-redis/releases/tag/redis%404.7.0&quot;&gt;node-redis 4.7.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-node/releases/tag/v0.2.0&quot;&gt;redis-om-node 0.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;.NET
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-dotnet/releases/tag/v0.8.0&quot;&gt;redis-om-dotnet 0.8.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/NRedisStack/releases/tag/v0.13.3&quot;&gt;NRedisStack 0.13.3 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Go
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/go-redis/releases/tag/v9.7.3&quot;&gt;go-redis 9.7.3 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/rueidis/releases/tag/v1.0.62&quot;&gt;rueidis 1.0.62 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Compatible with &lt;a href=&quot;https://redis.io/download&quot; rel=&quot;nofollow&quot;&gt;Redis Insight&lt;/a&gt;. The Docker image redis/redis-stack for this version is bundled with &lt;a href=&quot;https://github.com/RedisInsight/RedisInsight/releases/tag/2.70.0&quot;&gt;Redis Insight 2.70&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note: version numbers follow the following pattern:&lt;br&gt;
+&lt;code&gt;x.y.z-b&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;x.y&lt;/code&gt; Redis Major version&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;z&lt;/code&gt; increases with even numbers as a module x.y version increases.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt; denotes a patch to Redis or a module (any &lt;code&gt;z&lt;/code&gt; of Redis or Modules). &lt;code&gt;b&lt;/code&gt; will consist of a &lt;code&gt;v&lt;/code&gt; + numeric value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Downloads&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v18.ventura.x86_64.zip&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v18.sonoma.arm64.zip&quot; rel=&quot;nofollow&quot;&gt;arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AppImage: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v18-x86_64.AppImage&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ubuntu: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v18.bionic.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v18.bionic.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v18.focal.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v18.focal.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v18.x86_64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v18.arm64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v18.jammy.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v18.jammy.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Debian: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v18.bullseye.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bullseye x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 8/CentOS Linux 8: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v18.rhel8.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 9/Rocky Linux 9/CentOS Linux 9: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v18.rhel9.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack server on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack-server&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>ViktarStarastsenka</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/99594890?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/448554098/v7.4.0-v5</id>
+    <updated>2025-11-02T13:43:08Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis-stack/redis-stack/releases/tag/v7.4.0-v5"/>
+    <title>Redis Stack 7.4.0-v5</title>
+    <content type="html">&lt;p&gt;This is a maintenance release for Redis Stack Server 7.4.0.&lt;/p&gt;
+&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: there are security fixes in the release.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;Docker&lt;/a&gt; | &lt;a href=&quot;https://redis.io/downloads/#stack&quot; rel=&quot;nofollow&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Headlines:&lt;/h3&gt;
+&lt;p&gt;This version includes security fixes for the &lt;strong&gt;Redis&lt;/strong&gt; server, addressing a vulnerability in &lt;code&gt;redis-check-aof&lt;/code&gt; that could lead to a stack overflow and potential remote code execution (RCE).&lt;br&gt;
+It also contains several bug fixes for the &lt;strong&gt;Redis&lt;/strong&gt; server.&lt;br&gt;
+Additionally, this maintenance release ships with the latest version of &lt;strong&gt;Redis Insight&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Details:&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Security and privacy&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Redis&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;(CVE-2025-27151) redis-check-aof may lead to a stack overflow and potential RCE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Redis&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis/pull/13966&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/13966/hovercard&quot;&gt;#13966&lt;/a&gt;, &lt;a href=&quot;https://github.com/redis/redis/pull/13932&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/13932/hovercard&quot;&gt;#13932&lt;/a&gt; &lt;code&gt;CLUSTER SLOTS&lt;/code&gt; - TLS port update not reflected in CLUSTER SLOTS&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis/pull/13958&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/13958/hovercard&quot;&gt;#13958&lt;/a&gt; &lt;code&gt;XTRIM&lt;/code&gt;, &lt;code&gt;XADD&lt;/code&gt; - incorrect lag due to trimming stream&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Redis version&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/redis/redis/releases/tag/7.4.4&quot;&gt;Redis 7.4.4&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Module versions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/releases/tag/v2.10.15&quot;&gt;RediSearch 2.10.15&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisJSON/RedisJSON/releases/tag/v2.8.8&quot;&gt;RedisJSON 2.8.8&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisTimeSeries/RedisTimeSeries/releases/tag/v1.12.5&quot;&gt;RedisTimeSeries 1.12.5&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisBloom/RedisBloom/releases/tag/v2.8.5&quot;&gt;RedisBloom 2.8.5&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Recommended Client Libraries&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/jedis/releases/tag/v5.2.0&quot;&gt;Jedis 5.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-spring/releases/tag/v0.9.11&quot;&gt;redis-om-spring 0.9.11 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-py/releases/tag/v5.3.0&quot;&gt;redis-py 5.3.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-python/releases/tag/v0.3.5&quot;&gt;redis-om-python 0.3.5 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NodeJS
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/node-redis/releases/tag/redis%404.7.0&quot;&gt;node-redis 4.7.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-node/releases/tag/v0.2.0&quot;&gt;redis-om-node 0.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;.NET
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-dotnet/releases/tag/v0.8.0&quot;&gt;redis-om-dotnet 0.8.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/NRedisStack/releases/tag/v0.13.3&quot;&gt;NRedisStack 0.13.3 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Go
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/go-redis/releases/tag/v9.7.3&quot;&gt;go-redis 9.7.3 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/rueidis/releases/tag/v1.0.61&quot;&gt;rueidis 1.0.61 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Compatible with &lt;a href=&quot;https://redis.io/download&quot; rel=&quot;nofollow&quot;&gt;Redis Insight&lt;/a&gt;. The Docker image redis/redis-stack for this version is bundled with &lt;a href=&quot;https://github.com/RedisInsight/RedisInsight/releases/tag/2.70.0&quot;&gt;Redis Insight 2.70&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note: version numbers follow the following pattern:&lt;br&gt;
+&lt;code&gt;x.y.z-b&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;x.y&lt;/code&gt; Redis Major version&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;z&lt;/code&gt; increases with even numbers as a module x.y version increases.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt; denotes a patch to Redis or a module (any &lt;code&gt;z&lt;/code&gt; of Redis or Modules). &lt;code&gt;b&lt;/code&gt; will consist of a &lt;code&gt;v&lt;/code&gt; + numeric value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Downloads&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v5.ventura.x86_64.zip&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v5.sonoma.arm64.zip&quot; rel=&quot;nofollow&quot;&gt;arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AppImage: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v5-x86_64.AppImage&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ubuntu: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v5.bionic.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v5.bionic.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v5.focal.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v5.focal.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v5.x86_64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v5.arm64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v5.jammy.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v5.jammy.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Debian: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v5.bullseye.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bullseye x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 8/CentOS Linux 8: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v5.rhel8.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 9/Rocky Linux 9/CentOS Linux 9: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v5.rhel9.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack server on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack-server&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>ViktarStarastsenka</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/99594890?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/448554098/v7.2.0-v17</id>
+    <updated>2025-10-03T13:56:54Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis-stack/redis-stack/releases/tag/v7.2.0-v17"/>
+    <title>Redis Stack 7.2.0-v17</title>
+    <content type="html">&lt;p&gt;This is a maintenance release for Redis Stack Server 7.2.0.&lt;/p&gt;
+&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: there are security fixes in the release.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;Docker&lt;/a&gt; | &lt;a href=&quot;https://redis.io/downloads/#stack&quot; rel=&quot;nofollow&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Headlines:&lt;/h3&gt;
+&lt;p&gt;This version includes security fixes for the &lt;strong&gt;Redis&lt;/strong&gt; server, addressing a vulnerability in &lt;code&gt;redis-check-aof&lt;/code&gt; that could lead to a stack overflow and potential remote code execution (RCE).&lt;br&gt;
+It also contains several bug fixes for the &lt;strong&gt;Redis&lt;/strong&gt; server.&lt;br&gt;
+Additionally, this maintenance release ships with the latest version of &lt;strong&gt;Redis Insight&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Details:&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Security and privacy&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Redis&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;(CVE-2025-27151) redis-check-aof may lead to a stack overflow and potential RCE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Redis&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis/pull/13966&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/13966/hovercard&quot;&gt;#13966&lt;/a&gt;, &lt;a href=&quot;https://github.com/redis/redis/pull/13932&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/13932/hovercard&quot;&gt;#13932&lt;/a&gt; &lt;code&gt;CLUSTER SLOTS&lt;/code&gt; - TLS port update not reflected in CLUSTER SLOTS&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis/pull/13958&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/13958/hovercard&quot;&gt;#13958&lt;/a&gt; &lt;code&gt;XTRIM&lt;/code&gt;, &lt;code&gt;XADD&lt;/code&gt; - incorrect lag due to trimming stream&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Redis version&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/redis/redis/releases/tag/7.2.9&quot;&gt;Redis 7.2.9&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Module versions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/releases/tag/v2.8.25&quot;&gt;RediSearch 2.8.25&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisJSON/RedisJSON/releases/tag/v2.6.14&quot;&gt;RedisJSON 2.6.14&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisTimeSeries/RedisTimeSeries/releases/tag/v1.10.16&quot;&gt;RedisTimeSeries 1.10.16&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisBloom/RedisBloom/releases/tag/v2.6.17&quot;&gt;RedisBloom 2.6.17&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisGears/RedisGears/releases&quot;&gt;RedisGears 2.0.23&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Recommended Client Libraries&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/jedis/releases/tag/v5.2.0&quot;&gt;Jedis 5.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-spring/releases/tag/v0.9.11&quot;&gt;redis-om-spring 0.9.11 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-py/releases/tag/v5.3.0&quot;&gt;redis-py 5.3.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-python/releases/tag/v0.3.5&quot;&gt;redis-om-python 0.3.5 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NodeJS
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/node-redis/releases/tag/redis%404.7.0&quot;&gt;node-redis 4.7.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-node/releases/tag/v0.2.0&quot;&gt;redis-om-node 0.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;.NET
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-dotnet/releases/tag/v0.8.0&quot;&gt;redis-om-dotnet 0.8.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/NRedisStack/releases/tag/v0.13.3&quot;&gt;NRedisStack 0.13.3 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Go
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/go-redis/releases/tag/v9.7.3&quot;&gt;go-redis 9.7.3 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/rueidis/releases/tag/v1.0.61&quot;&gt;rueidis 1.0.61 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Compatible with &lt;a href=&quot;https://redis.io/download&quot; rel=&quot;nofollow&quot;&gt;Redis Insight&lt;/a&gt;. The Docker image redis/redis-stack for this version is bundled with &lt;a href=&quot;https://github.com/RedisInsight/RedisInsight/releases/tag/2.70.0&quot;&gt;Redis Insight 2.70&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note: version numbers follow the following pattern:&lt;br&gt;
+&lt;code&gt;x.y.z-b&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;x.y&lt;/code&gt; Redis Major version&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;z&lt;/code&gt; increases with even numbers as a module x.y version increases.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt; denotes a patch to Redis or a module (any &lt;code&gt;z&lt;/code&gt; of Redis or Modules). &lt;code&gt;b&lt;/code&gt; will consist of a &lt;code&gt;v&lt;/code&gt; + numeric value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Downloads&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v17.ventura.x86_64.zip&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v17.sonoma.arm64.zip&quot; rel=&quot;nofollow&quot;&gt;arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AppImage: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v17-x86_64.AppImage&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ubuntu: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v17.bionic.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v17.bionic.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v17.focal.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v17.focal.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v17.x86_64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v17.arm64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v17.jammy.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v17.jammy.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Debian: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v17.bullseye.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bullseye x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 8/CentOS Linux 8: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v17.rhel8.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 9/Rocky Linux 9/CentOS Linux 9: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v17.rhel9.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack server on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack-server&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>ViktarStarastsenka</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/99594890?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/448554098/v7.4.0-v4</id>
+    <updated>2025-04-25T11:23:01Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis-stack/redis-stack/releases/tag/v7.4.0-v4"/>
+    <title>Redis Stack 7.4.0-v4</title>
+    <content type="html">&lt;p&gt;This is a maintenance release for Redis Stack Server 7.4.0.&lt;/p&gt;
+&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: there are security fixes in the release.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;Docker&lt;/a&gt; | &lt;a href=&quot;https://redis.io/downloads/#stack&quot; rel=&quot;nofollow&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Headlines:&lt;/h3&gt;
+&lt;p&gt;This version includes security fixes for the &lt;strong&gt;Redis&lt;/strong&gt; server, addressing a vulnerability where an unauthenticated client can cause unlimited growth of output buffers.&lt;br&gt;
+It also delivers an improvement to the &lt;strong&gt;Redis Query Engine&lt;/strong&gt;, along with bug fixes for both the &lt;strong&gt;Redis&lt;/strong&gt; server and the &lt;strong&gt;Redis Query Engine&lt;/strong&gt;.&lt;br&gt;
+Additionally, this maintenance release ships with the latest version of &lt;strong&gt;Redis Insight&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Details:&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Security and privacy&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Redis&lt;/strong&gt;:&lt;br&gt;
+*(CVE-2025-21605) An unauthenticated client can cause an unlimited growth of output buffers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Improvements&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Redis Query Engine&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5734&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5734/hovercard&quot;&gt;#5734&lt;/a&gt; Coordinator race condition preventing the premature release and avoiding errors and inconsistencies during query executions (MOD-8794)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Redis&lt;/strong&gt;:&lt;br&gt;
+*&lt;a href=&quot;https://github.com/redis/redis/pull/13661&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/13661/hovercard&quot;&gt;#13661&lt;/a&gt; &lt;code&gt;FUNCTION FLUSH&lt;/code&gt; - memory leak when using jemalloc&lt;br&gt;
+*&lt;a href=&quot;https://github.com/redis/redis/pull/13793&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/13793/hovercard&quot;&gt;#13793&lt;/a&gt; &lt;code&gt;WAITAOF&lt;/code&gt; returns prematurely&lt;br&gt;
+*&lt;a href=&quot;https://github.com/redis/redis/pull/13853&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/13853/hovercard&quot;&gt;#13853&lt;/a&gt; &lt;code&gt;SLAVEOF&lt;/code&gt; - crash when clients are blocked on lazy free&lt;br&gt;
+*&lt;a href=&quot;https://github.com/redis/redis/pull/13863&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/13863/hovercard&quot;&gt;#13863&lt;/a&gt; &lt;code&gt;RANDOMKEY&lt;/code&gt; - infinite loop during client pause&lt;br&gt;
+*&lt;a href=&quot;https://github.com/redis/redis/pull/13877&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/13877/hovercard&quot;&gt;#13877&lt;/a&gt; ShardID inconsistency when both primary and replica support it&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Redis Query Engine&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5734&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5734/hovercard&quot;&gt;#5734&lt;/a&gt; Cursor with &lt;code&gt;SORTBY&lt;/code&gt; is never depleted, blocking queries if cursor limit is achieved (MOD-8483)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5734&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5734/hovercard&quot;&gt;#5734&lt;/a&gt; Empty results with RESP3 due to the &lt;code&gt;TIMEOUT&lt;/code&gt; even if setting to deliver partial results - ON_TIMEOUT policy (MOD-8482, MOD-8856)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5734&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5734/hovercard&quot;&gt;#5734&lt;/a&gt; Cursor with RESP3 on &lt;code&gt;FT.AGGREGATE&lt;/code&gt; is never depleted, blocking queries if cursor limit is achieved (MOD-8515)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5734&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5734/hovercard&quot;&gt;#5734&lt;/a&gt; Using &lt;code&gt;FT.CURSOR READ&lt;/code&gt; on queries that timed out led to fewer results than expected (MOD-8606)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5804&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5804/hovercard&quot;&gt;#5804&lt;/a&gt; &lt;code&gt;FT.AGGREGATE&lt;/code&gt;response in RESP3 the &lt;code&gt;total_results&lt;/code&gt; field is not correct (MOD-9054)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5704&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5704/hovercard&quot;&gt;#5704&lt;/a&gt; Weights in the query string are ignored if using &lt;code&gt;SCORER BM25&lt;/code&gt; (MOD-7896)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5646&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5646/hovercard&quot;&gt;#5646&lt;/a&gt; &lt;code&gt;FT.SEARCH&lt;/code&gt; using Cyrillic characters and wildcards delivering no results (MOD-7944)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5163&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5163/hovercard&quot;&gt;#5163&lt;/a&gt; &lt;code&gt;SCORER&lt;/code&gt; selection ignored on &lt;code&gt;FT.AGGREGATE&lt;/code&gt; commands in clustered database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Redis version&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/redis/redis/releases/tag/7.4.3&quot;&gt;Redis 7.4.3&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Module versions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/releases/tag/v2.10.15&quot;&gt;RediSearch 2.10.15&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisJSON/RedisJSON/releases/tag/v2.8.8&quot;&gt;RedisJSON 2.8.8&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisTimeSeries/RedisTimeSeries/releases/tag/v1.12.5&quot;&gt;RedisTimeSeries 1.12.5&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisBloom/RedisBloom/releases/tag/v2.8.5&quot;&gt;RedisBloom 2.8.5&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Recommended Client Libraries&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/jedis/releases/tag/v5.2.0&quot;&gt;Jedis 5.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-spring/releases/tag/v0.9.11&quot;&gt;redis-om-spring 0.9.11 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-py/releases/tag/v5.2.1&quot;&gt;redis-py 5.2.1 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-python/releases/tag/v0.3.5&quot;&gt;redis-om-python 0.3.5 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NodeJS
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/node-redis/releases/tag/redis%404.7.0&quot;&gt;node-redis 4.7.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-node/releases/tag/v0.2.0&quot;&gt;redis-om-node 0.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;.NET
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-dotnet/releases/tag/v0.8.0&quot;&gt;redis-om-dotnet 0.8.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/NRedisStack/releases/tag/v0.13.3&quot;&gt;NRedisStack 0.13.3 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Go
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/go-redis/releases/tag/v9.7.3&quot;&gt;go-redis 9.7.3 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/rueidis/releases/tag/v1.0.57&quot;&gt;rueidis 1.0.57 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Compatible with &lt;a href=&quot;https://redis.io/download&quot; rel=&quot;nofollow&quot;&gt;Redis Insight&lt;/a&gt;. The Docker image redis/redis-stack for this version is bundled with &lt;a href=&quot;https://github.com/RedisInsight/RedisInsight/releases/tag/2.68.0&quot;&gt;Redis Insight 2.68&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note: version numbers follow the following pattern:&lt;br&gt;
+&lt;code&gt;x.y.z-b&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;x.y&lt;/code&gt; Redis Major version&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;z&lt;/code&gt; increases with even numbers as a module x.y version increases.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt; denotes a patch to Redis or a module (any &lt;code&gt;z&lt;/code&gt; of Redis or Modules). &lt;code&gt;b&lt;/code&gt; will consist of a &lt;code&gt;v&lt;/code&gt; + numeric value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Downloads&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v4.ventura.x86_64.zip&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v4.sonoma.arm64.zip&quot; rel=&quot;nofollow&quot;&gt;arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AppImage: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v4-x86_64.AppImage&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ubuntu: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v4.bionic.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v4.bionic.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v4.focal.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v4.focal.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v4.x86_64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v4.arm64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v4.jammy.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v4.jammy.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Debian: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v4.bullseye.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bullseye x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 8/CentOS Linux 8: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v4.rhel8.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 9/Rocky Linux 9/CentOS Linux 9: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.4.0-v4.rhel9.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack server on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack-server&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>ViktarStarastsenka</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/99594890?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/448554098/v7.2.0-v16</id>
+    <updated>2025-04-25T11:23:23Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/redis-stack/redis-stack/releases/tag/v7.2.0-v16"/>
+    <title>Redis Stack 7.2.0-v16</title>
+    <content type="html">&lt;p&gt;This is a maintenance release for Redis Stack Server 7.2.0.&lt;/p&gt;
+&lt;p&gt;Update urgency: &lt;code&gt;SECURITY&lt;/code&gt;: there are security fixes in the release.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;Docker&lt;/a&gt; | &lt;a href=&quot;https://redis.io/downloads/#stack&quot; rel=&quot;nofollow&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Headlines:&lt;/h3&gt;
+&lt;p&gt;This version includes security fixes for the &lt;strong&gt;Redis&lt;/strong&gt; server, addressing a vulnerability where an unauthenticated client can cause unlimited growth of output buffers.&lt;br&gt;
+It also delivers an improvement to the &lt;strong&gt;Redis Query Engine&lt;/strong&gt;, along with bug fixes for the &lt;strong&gt;Redis&lt;/strong&gt; server,  the &lt;strong&gt;Redis Query Engine&lt;/strong&gt;, and &lt;strong&gt;probabilistic&lt;/strong&gt; data structures.&lt;br&gt;
+Additionally, this maintenance release ships with the latest version of &lt;strong&gt;Redis Insight&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Details:&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Security and privacy&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Redis&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;(CVE-2025-21605) An unauthenticated client can cause an unlimited growth of output buffers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Improvements&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Redis Query Engine&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5788&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5788/hovercard&quot;&gt;#5788&lt;/a&gt; Coordinator race condition preventing the premature release and avoiding errors and inconsistencies during query executions (MOD-8794)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bug Fixes&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Redis&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis/pull/12817&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/12817/hovercard&quot;&gt;#12817&lt;/a&gt;, &lt;a href=&quot;https://github.com/redis/redis/pull/12905&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/12905/hovercard&quot;&gt;#12905&lt;/a&gt; Fix race condition issues between the main thread and module threads&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis/pull/13863&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/13863/hovercard&quot;&gt;#13863&lt;/a&gt; &lt;code&gt;RANDOMKEY&lt;/code&gt; - infinite loop during client pause&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis/pull/13877&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/redis/redis/pull/13877/hovercard&quot;&gt;#13877&lt;/a&gt; ShardID inconsistency when both primary and replica support it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Redis Query Engine&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5709&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5709/hovercard&quot;&gt;#5709&lt;/a&gt; Weights in the query string are ignored if using &lt;code&gt;SCORER BM25&lt;/code&gt; (MOD-7896)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5788&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5788/hovercard&quot;&gt;#5788&lt;/a&gt; Cursor with &lt;code&gt;SORTBY&lt;/code&gt; is never depleted, blocking queries if cursor limit is achieved (MOD-8483)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5788&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5788/hovercard&quot;&gt;#5788&lt;/a&gt; Empty results with RESP3 due to the &lt;code&gt;TIMEOUT&lt;/code&gt; even if setting to deliver partial results - ON_TIMEOUT policy (MOD-8482)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5788&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5788/hovercard&quot;&gt;#5788&lt;/a&gt; Cursor with RESP3 on &lt;code&gt;FT.AGGREGATE&lt;/code&gt; is never depleted, blocking queries if cursor limit is achieved (MOD-8515)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5788&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5788/hovercard&quot;&gt;#5788&lt;/a&gt; Using &lt;code&gt;FT.CURSOR READ&lt;/code&gt; on queries that timed out led to fewer results than expected (MOD-8606)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5810&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5810/hovercard&quot;&gt;#5810&lt;/a&gt; &lt;code&gt;FT.AGGREGATE&lt;/code&gt;response in RESP3 the &lt;code&gt;total_results&lt;/code&gt; field is not correct (MOD-9054)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/pull/5647&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RediSearch/RediSearch/pull/5647/hovercard&quot;&gt;#5647&lt;/a&gt; &lt;code&gt;FT.SEARCH&lt;/code&gt; using Cyrillic characters and wildcards delivering no results (MOD-7944)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Probabilistic&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RedisBloom/RedisBloom/pull/828&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RedisBloom/RedisBloom/pull/828/hovercard&quot;&gt;#828&lt;/a&gt; &lt;code&gt;CMS.INCRBY&lt;/code&gt; does not notify &lt;code&gt;WATCH&lt;/code&gt;ers or client-side caching (MOD-8193)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RedisBloom/RedisBloom/pull/827&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/RedisBloom/RedisBloom/pull/827/hovercard&quot;&gt;#827&lt;/a&gt; Top-K - suboptimal results after RDB load due to missing initialization (MOD-8194)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Redis version&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/redis/redis/releases/tag/7.2.8&quot;&gt;Redis 7.2.8&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Module versions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RediSearch/RediSearch/releases/tag/v2.8.25&quot;&gt;RediSearch 2.8.25&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisJSON/RedisJSON/releases/tag/v2.6.14&quot;&gt;RedisJSON 2.6.14&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisTimeSeries/RedisTimeSeries/releases/tag/v1.10.16&quot;&gt;RedisTimeSeries 1.10.16&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisBloom/RedisBloom/releases/tag/v2.6.17&quot;&gt;RedisBloom 2.6.17&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RedisGears/RedisGears/releases&quot;&gt;RedisGears 2.0.23&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Recommended Client Libraries&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/jedis/releases/tag/v5.2.0&quot;&gt;Jedis 5.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-spring/releases/tag/v0.9.11&quot;&gt;redis-om-spring 0.9.11 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-py/releases/tag/v5.2.1&quot;&gt;redis-py 5.2.1 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-python/releases/tag/v0.3.5&quot;&gt;redis-om-python 0.3.5 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NodeJS
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/node-redis/releases/tag/redis%404.7.0&quot;&gt;node-redis 4.7.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-node/releases/tag/v0.2.0&quot;&gt;redis-om-node 0.2.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;.NET
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/redis-om-dotnet/releases/tag/v0.8.0&quot;&gt;redis-om-dotnet 0.8.0 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/NRedisStack/releases/tag/v0.13.3&quot;&gt;NRedisStack 0.13.3 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Go
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/go-redis/releases/tag/v9.7.3&quot;&gt;go-redis 9.7.3 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/redis/rueidis/releases/tag/v1.0.57&quot;&gt;rueidis 1.0.57 or greater&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Compatible with &lt;a href=&quot;https://redis.io/download&quot; rel=&quot;nofollow&quot;&gt;Redis Insight&lt;/a&gt;. The Docker image redis/redis-stack for this version is bundled with &lt;a href=&quot;https://github.com/RedisInsight/RedisInsight/releases/tag/2.68.0&quot;&gt;Redis Insight 2.68&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Downloads&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v16.ventura.x86_64.zip&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v16.sonoma.arm64.zip&quot; rel=&quot;nofollow&quot;&gt;arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AppImage: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v16-x86_64.AppImage&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ubuntu: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v16.bionic.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v16.bionic.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bionic arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v16.focal.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v16.focal.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Focal arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v16.x86_64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v16.arm64.snap&quot; rel=&quot;nofollow&quot;&gt;Snap arm64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v16.jammy.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy x86_64&lt;/a&gt;, &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v16.jammy.arm64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Jammy arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Debian: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v16.bullseye.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;Bullseye x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 8/CentOS Linux 8: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v16.rhel8.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL 9/Rocky Linux 9/CentOS Linux 9: &lt;a href=&quot;https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v16.rhel9.x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;x86_64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Stack server on &lt;a href=&quot;https://hub.docker.com/u/redis&quot; rel=&quot;nofollow&quot;&gt;Dockerhub&lt;/a&gt;: &lt;a href=&quot;https://hub.docker.com/r/redis/redis-stack-server&quot; rel=&quot;nofollow&quot;&gt;x86_64 and arm64&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>ViktarStarastsenka</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/99594890?s=60&amp;v=4"/>
+  </entry>
+</feed>

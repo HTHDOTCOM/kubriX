@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/grafana/mimir/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/grafana/mimir/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/grafana/mimir/releases.atom"/>
+  <title>Release notes from mimir</title>
+  <updated>2026-10-07T17:12:58Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/385634291/mimir-3.2.2</id>
+    <updated>2026-10-07T17:35:48Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/mimir/releases/tag/mimir-3.2.2"/>
+    <title>3.2.2</title>
+    <content type="html">&lt;p&gt;This release contains 3 PRs from 3 authors. Thank you!&lt;/p&gt;
+&lt;h1&gt;Changelog&lt;/h1&gt;
+&lt;h2&gt;3.2.2&lt;/h2&gt;
+&lt;h3&gt;Grafana Mimir&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[BUGFIX] Alertmanager: Fix an issue where configuration that referenced files could load local files. Resolves &lt;code&gt;CVE-2026-81938&lt;/code&gt;. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5716539378&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/mimir/issues/16789&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/mimir/pull/16789/hovercard&quot; href=&quot;https://github.com/grafana/mimir/pull/16789&quot;&gt;#16789&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Mixin&lt;/h3&gt;
+&lt;h3&gt;Jsonnet&lt;/h3&gt;
+&lt;h3&gt;Documentation&lt;/h3&gt;
+&lt;h3&gt;Tools&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;All changes in this release&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/grafana/mimir/compare/mimir-3.2.1...mimir-3.2.2&quot;&gt;&lt;tt&gt;mimir-3.2.1...mimir-3.2.2&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385634291/mimir-distributed-6.3.0-weekly.415</id>
+    <updated>2026-10-06T18:04:08Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.3.0-weekly.415"/>
+    <title>mimir-distributed-6.3.0-weekly.415: Release mimir-distributed Helm chart 6.3.0-weekly.415 (#16782)</title>
+    <content type="html">&lt;p&gt;Automated PR created by&lt;br&gt;
+&lt;a href=&quot;https://github.com/grafana/mimir/blob/main/.github/workflows/helm-weekly-release-pr.yaml&quot;&gt;helm-weekly-release-pr.yaml&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Co-authored-by: mimir-vendoring[bot] &amp;lt;149193068+mimir-vendoring[bot]@users.noreply.github.com&amp;gt;&lt;/p&gt;</content>
+    <author>
+      <name>mimir-vendoring[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7195757?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385634291/mimir-distributed-6.2.1</id>
+    <updated>2026-10-06T17:40:39Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.2.1"/>
+    <title>mimir-distributed-6.2.1: [mimir-distributed-release-6.2] prepare patch release (#16803)</title>
+    <content type="html">&lt;h4&gt;What this PR does&lt;/h4&gt;
+&lt;p&gt;The PR prepares a new patch release for the &lt;code&gt;mimir-distributed&lt;/code&gt; helm&lt;br&gt;
+chart.&lt;/p&gt;</content>
+    <author>
+      <name>narqo</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/88045?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385634291/mimir-3.1.7</id>
+    <updated>2026-10-06T20:59:04Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/mimir/releases/tag/mimir-3.1.7"/>
+    <title>3.1.7</title>
+    <content type="html">&lt;p&gt;This release contains 5 PRs from 2 authors. Thank you!&lt;/p&gt;
+&lt;h1&gt;Changelog&lt;/h1&gt;
+&lt;h2&gt;3.1.7&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[BUGFIX] Alertmanager: Fix an issue where configuration that referenced files could load local files. Resolves &lt;code&gt;CVE-2026-81938&lt;/code&gt;. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5717439604&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/mimir/issues/16791&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/mimir/pull/16791/hovercard&quot; href=&quot;https://github.com/grafana/mimir/pull/16791&quot;&gt;#16791&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;All changes in this release&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/grafana/mimir/compare/mimir-3.1.6...mimir-3.1.7&quot;&gt;&lt;tt&gt;mimir-3.1.6...mimir-3.1.7&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385634291/mimir-distributed-6.3.0-weekly.413</id>
+    <updated>2026-09-21T10:46:31Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.3.0-weekly.413"/>
+    <title>mimir-distributed-6.3.0-weekly.413: Release mimir-distributed Helm chart 6.3.0-weekly.413 (#16663)</title>
+    <content type="html">&lt;p&gt;Automated PR created by&lt;br&gt;
+&lt;a href=&quot;https://github.com/grafana/mimir/blob/main/.github/workflows/helm-weekly-release-pr.yaml&quot;&gt;helm-weekly-release-pr.yaml&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Co-authored-by: mimir-vendoring[bot] &amp;lt;149193068+mimir-vendoring[bot]@users.noreply.github.com&amp;gt;&lt;/p&gt;</content>
+    <author>
+      <name>mimir-vendoring[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7195757?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385634291/mimir-distributed-6.3.0-weekly.412</id>
+    <updated>2026-09-14T12:21:17Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.3.0-weekly.412"/>
+    <title>mimir-distributed-6.3.0-weekly.412: Release mimir-distributed Helm chart 6.3.0-weekly.412 (#16583)</title>
+    <content type="html">&lt;p&gt;Automated PR created by&lt;br&gt;
+&lt;a href=&quot;https://github.com/grafana/mimir/blob/main/.github/workflows/helm-weekly-release-pr.yaml&quot;&gt;helm-weekly-release-pr.yaml&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Co-authored-by: mimir-vendoring[bot] &amp;lt;149193068+mimir-vendoring[bot]@users.noreply.github.com&amp;gt;&lt;/p&gt;</content>
+    <author>
+      <name>mimir-vendoring[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7195757?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385634291/mimir-3.2.1</id>
+    <updated>2026-09-10T10:07:25Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/mimir/releases/tag/mimir-3.2.1"/>
+    <title>3.2.1</title>
+    <content type="html">&lt;p&gt;This release contains 13 PRs from 5 authors. Thank you!&lt;/p&gt;
+&lt;h1&gt;Changelog&lt;/h1&gt;
+&lt;h2&gt;3.2.1&lt;/h2&gt;
+&lt;h3&gt;Grafana Mimir&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[BUGFIX] Upgrade Go to 1.26 latest to address &lt;a href=&quot;https://pkg.go.dev/vuln/GO-2026-5972&quot; rel=&quot;nofollow&quot;&gt;CVE-2026-33818&lt;/a&gt;, &lt;a href=&quot;https://pkg.go.dev/vuln/GO-2026-5026&quot; rel=&quot;nofollow&quot;&gt;CVE-2026-39821&lt;/a&gt;, &lt;a href=&quot;https://pkg.go.dev/vuln/GO-2026-5942&quot; rel=&quot;nofollow&quot;&gt;CVE-2026-46600&lt;/a&gt;, &lt;a href=&quot;https://pkg.go.dev/vuln/GO-2026-6089&quot; rel=&quot;nofollow&quot;&gt;CVE-2026-56853&lt;/a&gt;, &lt;a href=&quot;https://pkg.go.dev/vuln/GO-2026-6091&quot; rel=&quot;nofollow&quot;&gt;CVE-2026-56858&lt;/a&gt;, &lt;a href=&quot;https://pkg.go.dev/vuln/GO-2026-6088&quot; rel=&quot;nofollow&quot;&gt;CVE-2026-56859&lt;/a&gt;, &lt;a href=&quot;https://pkg.go.dev/vuln/GO-2026-6218&quot; rel=&quot;nofollow&quot;&gt;CVE-2026-56860&lt;/a&gt;, and &lt;a href=&quot;https://pkg.go.dev/vuln/GO-2026-6090&quot; rel=&quot;nofollow&quot;&gt;CVE-2026-56862&lt;/a&gt;. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5188739532&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/mimir/issues/16408&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/mimir/pull/16408/hovercard&quot; href=&quot;https://github.com/grafana/mimir/pull/16408&quot;&gt;#16408&lt;/a&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5201587089&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/mimir/issues/16430&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/mimir/pull/16430/hovercard&quot; href=&quot;https://github.com/grafana/mimir/pull/16430&quot;&gt;#16430&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[BUGFIX] Fix HA tracker migration to memberlist guide. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5182178088&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/mimir/issues/16397&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/mimir/pull/16397/hovercard&quot; href=&quot;https://github.com/grafana/mimir/pull/16397&quot;&gt;#16397&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[CHANGE] &lt;code&gt;create-draft-release-notes.sh&lt;/code&gt; doesn&#39;t require release notes ready for release candidate. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5048781033&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/mimir/issues/16286&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/mimir/pull/16286/hovercard&quot; href=&quot;https://github.com/grafana/mimir/pull/16286&quot;&gt;#16286&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;All changes in this release&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/grafana/mimir/compare/mimir-3.2.0...mimir-3.2.1&quot;&gt;&lt;tt&gt;mimir-3.2.0...mimir-3.2.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385634291/mimir-3.1.6</id>
+    <updated>2026-09-10T05:11:43Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/mimir/releases/tag/mimir-3.1.6"/>
+    <title>3.1.6</title>
+    <content type="html">&lt;p&gt;This release contains 5 PRs from 3 authors. Thank you!&lt;/p&gt;
+&lt;h1&gt;Changelog&lt;/h1&gt;
+&lt;h2&gt;3.1.6&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[BUGFIX] Upgrade Go to 1.26.7. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5201587089&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/mimir/issues/16430&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/mimir/pull/16430/hovercard&quot; href=&quot;https://github.com/grafana/mimir/pull/16430&quot;&gt;#16430&lt;/a&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5202733808&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/mimir/issues/16433&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/mimir/pull/16433/hovercard&quot; href=&quot;https://github.com/grafana/mimir/pull/16433&quot;&gt;#16433&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[BUGFIX] Update &lt;code&gt;golang.org/x/crypto&lt;/code&gt; to v0.56.0 to address &lt;a href=&quot;https://pkg.go.dev/vuln/GO-2026-6354&quot; rel=&quot;nofollow&quot;&gt;CVE-2026-78662&lt;/a&gt; and &lt;a href=&quot;https://pkg.go.dev/vuln/GO-2026-6355&quot; rel=&quot;nofollow&quot;&gt;CVE-2026-56855&lt;/a&gt;. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5330236439&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/mimir/issues/16517&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/mimir/pull/16517/hovercard&quot; href=&quot;https://github.com/grafana/mimir/pull/16517&quot;&gt;#16517&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[BUGFIX] Update &lt;code&gt;google.golang.org/grpc&lt;/code&gt; to v1.83.2 to address &lt;a href=&quot;https://nvd.nist.gov/vuln/detail/CVE-2026-84304&quot; rel=&quot;nofollow&quot;&gt;CVE-2026-84304&lt;/a&gt; and &lt;a href=&quot;https://nvd.nist.gov/vuln/detail/CVE-2026-84445&quot; rel=&quot;nofollow&quot;&gt;CVE-2026-84445&lt;/a&gt;. &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5318913313&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/mimir/issues/16509&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/mimir/pull/16509/hovercard&quot; href=&quot;https://github.com/grafana/mimir/pull/16509&quot;&gt;#16509&lt;/a&gt; &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5394059601&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/mimir/issues/16543&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/mimir/pull/16543/hovercard&quot; href=&quot;https://github.com/grafana/mimir/pull/16543&quot;&gt;#16543&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;All changes in this release&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/grafana/mimir/compare/mimir-3.1.5...mimir-3.1.6&quot;&gt;&lt;tt&gt;mimir-3.1.5...mimir-3.1.6&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385634291/mimir-distributed-6.3.0-weekly.411</id>
+    <updated>2026-09-09T10:33:52Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.3.0-weekly.411"/>
+    <title>mimir-distributed-6.3.0-weekly.411: Release mimir-distributed Helm chart 6.3.0-weekly.411 (#16530)</title>
+    <content type="html">&lt;p&gt;Automated PR created by&lt;br&gt;
+&lt;a href=&quot;https://github.com/grafana/mimir/blob/main/.github/workflows/helm-weekly-release-pr.yaml&quot;&gt;helm-weekly-release-pr.yaml&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Co-authored-by: mimir-vendoring[bot] &amp;lt;149193068+mimir-vendoring[bot]@users.noreply.github.com&amp;gt;&lt;/p&gt;</content>
+    <author>
+      <name>mimir-vendoring[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7195757?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/385634291/mimir-distributed-6.3.0-weekly.410</id>
+    <updated>2026-09-01T11:23:04Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.3.0-weekly.410"/>
+    <title>mimir-distributed-6.3.0-weekly.410: Release mimir-distributed Helm chart 6.3.0-weekly.410 (#16501)</title>
+    <content type="html">&lt;p&gt;Automated PR created by&lt;br&gt;
+&lt;a href=&quot;https://github.com/grafana/mimir/blob/main/.github/workflows/helm-weekly-release-pr.yaml&quot;&gt;helm-weekly-release-pr.yaml&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Co-authored-by: mimir-vendoring[bot] &amp;lt;149193068+mimir-vendoring[bot]@users.noreply.github.com&amp;gt;&lt;/p&gt;</content>
+    <author>
+      <name>mimir-vendoring[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7195757?s=60&amp;v=4"/>
+  </entry>
+</feed>

@@ -1,0 +1,2 @@
+2026-10-14T16:47:50Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-14T16:47:56Z	FATAL	Fatal error	run error: image scan error: scan error: scan failed: failed analysis: analyze error: pipeline error: failed to analyze layer (sha256:5ef6a33406c0af5652c7452a58f666c0c55682131aee3fb12b59cd28551a7963): walk error: failed to process the file: failed to analyze file: failed to analyze usr/local/bin/helm: unable to open usr/local/bin/helm: failed to open: unable to read the file: unexpected EOF

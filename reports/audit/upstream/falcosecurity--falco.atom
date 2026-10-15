@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/falcosecurity/falco/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/falcosecurity/falco/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/falcosecurity/falco/releases.atom"/>
+  <title>Release notes from falco</title>
+  <updated>2026-10-05T07:10:33Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/49986046/0.45.1-rc1</id>
+    <updated>2026-10-05T07:54:26Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco/releases/tag/0.45.1-rc1"/>
+    <title>0.45.1-rc1</title>
+    <content type="html">&lt;p&gt;fix(chart): update container plugin to 0.7.5&lt;/p&gt;
+
+&lt;p&gt;Signed-off-by: Leonardo Grasso &amp;lt;me@leonardograsso.com&amp;gt;&lt;/p&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/49986046/0.45.0</id>
+    <updated>2026-09-21T13:10:41Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco/releases/tag/0.45.0"/>
+    <title>0.45.0</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/falcosecurity/libs/releases/tag/0.26.0&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/1bc41a6f5f47392790b33f071bd6846e3ca02680d63e6209cac9ff1b02311fbe/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c4942532d302e32362e302d79656c6c6f77&quot; alt=&quot;LIBS&quot; data-canonical-src=&quot;https://img.shields.io/badge/LIBS-0.26.0-yellow&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://github.com/falcosecurity/libs/releases/tag/11.0.0+driver&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/f38091657e9335aaf0cfbe7385579e276771fb61d8cfc1565ab8327a7e50bbe6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4452495645522d31312e302e302b6472697665722d79656c6c6f77&quot; alt=&quot;DRIVER&quot; data-canonical-src=&quot;https://img.shields.io/badge/DRIVER-11.0.0+driver-yellow&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Packages&lt;/th&gt;
+&lt;th&gt;Download&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;rpm-x86_64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/rpm/falco-0.45.0-x86_64.rpm&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/74435263090adbff5a1b5fa0028512c76f98a792a6fbca0153fa0a885442f3e6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34352e302d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;rpm&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.45.0-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;deb-x86_64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/deb/stable/falco-0.45.0-x86_64.deb&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/74435263090adbff5a1b5fa0028512c76f98a792a6fbca0153fa0a885442f3e6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34352e302d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;deb&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.45.0-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tgz-x86_64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/bin/x86_64/falco-0.45.0-x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/74435263090adbff5a1b5fa0028512c76f98a792a6fbca0153fa0a885442f3e6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34352e302d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;tgz&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.45.0-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tgz-static-x86_64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/bin/x86_64/falco-0.45.0-static-x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/74435263090adbff5a1b5fa0028512c76f98a792a6fbca0153fa0a885442f3e6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34352e302d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;tgz-static&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.45.0-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rpm-aarch64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/rpm/falco-0.45.0-aarch64.rpm&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/74435263090adbff5a1b5fa0028512c76f98a792a6fbca0153fa0a885442f3e6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34352e302d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;rpm&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.45.0-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;deb-aarch64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/deb/stable/falco-0.45.0-aarch64.deb&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/74435263090adbff5a1b5fa0028512c76f98a792a6fbca0153fa0a885442f3e6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34352e302d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;deb&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.45.0-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tgz-aarch64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/bin/aarch64/falco-0.45.0-aarch64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/74435263090adbff5a1b5fa0028512c76f98a792a6fbca0153fa0a885442f3e6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34352e302d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;tgz&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.45.0-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Images&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;docker pull docker.io/falcosecurity/falco:0.45.0&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;docker pull public.ecr.aws/falcosecurity/falco:0.45.0&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;docker pull docker.io/falcosecurity/falco-driver-loader:0.45.0&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;docker pull docker.io/falcosecurity/falco-driver-loader:0.45.0-buster&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;docker pull docker.io/falcosecurity/falco:0.45.0-debian&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;v0.45.0&lt;/h2&gt;
+&lt;p&gt;Released on 2026-09-21&lt;/p&gt;
+&lt;h3&gt;Breaking Changes &lt;g-emoji class=&quot;g-emoji&quot; alias=&quot;warning&quot;&gt;⚠️&lt;/g-emoji&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;feat(userspace)!: evaluate rule conditions on raw field bytes (invalid and non-printable UTF-8 sequences are now matchable with string operators, single bytes with the new &lt;code&gt;\xHH&lt;/code&gt; escape sequence), let &lt;code&gt;regex&lt;/code&gt; operate on sanitized input, and escape non-printable characters / replace invalid UTF-8 sequences at output encoding time; &lt;code&gt;FALCO_ENGINE_VERSION&lt;/code&gt; bumped from &lt;code&gt;0.62.0&lt;/code&gt; to &lt;code&gt;0.63.0&lt;/code&gt;; rules that matched the replacement character with non-regex operators must be reviewed [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3942&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3942/hovercard&quot;&gt;#3942&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Major Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;new(chart): add &lt;code&gt;serviceAccount.labels&lt;/code&gt; to set custom labels on the ServiceAccount [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3946&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3946/hovercard&quot;&gt;#3946&lt;/a&gt;] - &lt;a href=&quot;https://github.com/Goutham-Annem&quot;&gt;@Goutham-Annem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;feat(falco): Expose reload status through GET /reload and add optional reload control over a protected Unix socket on Linux. Preserve SIGHUP reception and pending requests across reloads. [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/4005&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/4005/hovercard&quot;&gt;#4005&lt;/a&gt;] - &lt;a href=&quot;https://github.com/c2ndev&quot;&gt;@c2ndev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;feat(userspace/falco): suggest &lt;code&gt;--dry-run&lt;/code&gt; when &lt;code&gt;--validate&lt;/code&gt; receives a Falco configuration file [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3947&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3947/hovercard&quot;&gt;#3947&lt;/a&gt;] - &lt;a href=&quot;https://github.com/AkashKumar7902&quot;&gt;@AkashKumar7902&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Minor Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;update(build): bump falcoctl to 0.14.2 [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3996&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3996/hovercard&quot;&gt;#3996&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;update(chart): bump the falcosidekick subchart constraint to 0.14.* and the falco-talon subchart constraint to 0.4.* [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3990&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3990/hovercard&quot;&gt;#3990&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(userspace/falco): drop the &lt;code&gt;container_engines&lt;/code&gt; leftovers from the configuration JSON schema; configurations still setting this key now log a schema validation warning at startup [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3924&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3924/hovercard&quot;&gt;#3924&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fix(falco): no unsupported syscalls warning is printed anymore when replaying a capture [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/4003&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/4003/hovercard&quot;&gt;#4003&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(falco): the unsupported syscalls warning now points to &lt;code&gt;base_syscalls.all&lt;/code&gt; instead of the removed &lt;code&gt;-A&lt;/code&gt; flag [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/4001&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/4001/hovercard&quot;&gt;#4001&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(packaging): restore Falco services and persistent kernel modules after upgrades, migrate package-default driver pins, and clean up package-created systemd state on removal [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3994&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3994/hovercard&quot;&gt;#3994&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(chart): always mount an emptyDir at /etc/falco/config.d, and bump the default falcoctl image to 0.14.1, the container plugin to 0.7.4, and the k8smeta plugin to 0.4.2 [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3984&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3984/hovercard&quot;&gt;#3984&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(chart): mount the container engine socket directories instead of the socket files, so Falco keeps working after a container runtime restart [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3978&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3978/hovercard&quot;&gt;#3978&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(chart): support DaemonSet revision history limits and honor an explicit zero for both DaemonSet and Deployment controllers. [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3931&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3931/hovercard&quot;&gt;#3931&lt;/a&gt;] - &lt;a href=&quot;https://github.com/Goutham-Annem&quot;&gt;@Goutham-Annem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(chart): do not render the falcoctl config volume when falcoctl artifact install and follow are disabled [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3894&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3894/hovercard&quot;&gt;#3894&lt;/a&gt;] - &lt;a href=&quot;https://github.com/immanuwell&quot;&gt;@immanuwell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(engine): &lt;code&gt;falco --list&lt;/code&gt; no longer incorrectly labels the &lt;code&gt;evt&lt;/code&gt; field class with a specific event source [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3936&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3936/hovercard&quot;&gt;#3936&lt;/a&gt;] - &lt;a href=&quot;https://github.com/Wahid7852&quot;&gt;@Wahid7852&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(cmake): add support for 64K kernel page to jemalloc on aarch64 [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3970&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3970/hovercard&quot;&gt;#3970&lt;/a&gt;] - &lt;a href=&quot;https://github.com/lekanjava&quot;&gt;@lekanjava&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(userspace): open the pidfile with O_NOFOLLOW to prevent a symlink TOCTOU when the pidfile path is in an attacker-writable directory. The pidfile content now ends with a trailing newline [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3871&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3871/hovercard&quot;&gt;#3871&lt;/a&gt;] - &lt;a href=&quot;https://github.com/alexmchughdev&quot;&gt;@alexmchughdev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(chart): correct the inverted priority level mappings in the Grafana dashboard, so severity labels match Falco&#39;s numeric priorities (0=emergency ... 7=debug) [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3932&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3932/hovercard&quot;&gt;#3932&lt;/a&gt;] - &lt;a href=&quot;https://github.com/Goutham-Annem&quot;&gt;@Goutham-Annem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(engine): correctly match wildcard patterns when the literal segment that follows a &lt;code&gt;*&lt;/code&gt; appears more than once in the input (e.g. &lt;code&gt;*.yaml&lt;/code&gt; against &lt;code&gt;backup.yaml.yaml&lt;/code&gt;, or wildcard &lt;code&gt;enable&lt;/code&gt;/&lt;code&gt;disable&lt;/code&gt; of rule names whose names repeat a literal segment). [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3913&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3913/hovercard&quot;&gt;#3913&lt;/a&gt;] - &lt;a href=&quot;https://github.com/tejgokani&quot;&gt;@tejgokani&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(userspace/falco): use the absolute &lt;code&gt;modprobe&lt;/code&gt; path instead of a &lt;code&gt;PATH&lt;/code&gt; lookup when falling back to loading the kernel module (untrusted search path, CWE-426) [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3943&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3943/hovercard&quot;&gt;#3943&lt;/a&gt;] - &lt;a href=&quot;https://github.com/BoxStrikesTeam&quot;&gt;@BoxStrikesTeam&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: serve SIGHUP-triggered hot restart when &lt;code&gt;watch_config_files&lt;/code&gt; is disabled [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3939&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3939/hovercard&quot;&gt;#3939&lt;/a&gt;] - &lt;a href=&quot;https://github.com/c2ndev&quot;&gt;@c2ndev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(engine): do not emit the &lt;code&gt;LOAD_NO_EVTTYPE&lt;/code&gt; warning for rules with statically unsatisfiable conditions (e.g. the &lt;code&gt;never_true&lt;/code&gt; placeholder idiom) [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3918&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3918/hovercard&quot;&gt;#3918&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Non user-facing changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;test(engine): add unit tests for multi-value transformer AST visitors [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3860&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3860/hovercard&quot;&gt;#3860&lt;/a&gt;] - &lt;a href=&quot;https://github.com/therealbobo&quot;&gt;@therealbobo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update owner from andreagit97 to andreaterzolo [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3965&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3965/hovercard&quot;&gt;#3965&lt;/a&gt;] - &lt;a href=&quot;https://github.com/andreaterzolo&quot;&gt;@andreaterzolo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;refactor: rename is_capture_mode [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/4006&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/4006/hovercard&quot;&gt;#4006&lt;/a&gt;] - &lt;a href=&quot;https://github.com/sgaist&quot;&gt;@sgaist&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ci(release): use a rn2md build that accepts the new GitHub token format [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3997&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3997/hovercard&quot;&gt;#3997&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(cmake): bump libs to &lt;code&gt;0.26.0&lt;/code&gt; and drivers to &lt;code&gt;11.0.0+driver&lt;/code&gt; [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3992&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3992/hovercard&quot;&gt;#3992&lt;/a&gt;] - &lt;a href=&quot;https://github.com/apps/github-actions&quot;&gt;@github-actions[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(cmake): bump libs to &lt;code&gt;0.26.0-rc2&lt;/code&gt;, falcoctl to &lt;code&gt;0.14.1&lt;/code&gt;, and the container plugin to &lt;code&gt;0.7.4&lt;/code&gt; [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3985&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3985/hovercard&quot;&gt;#3985&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(ci): bump setup-crane to v0.7 to retry crane download errors [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3983&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3983/hovercard&quot;&gt;#3983&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(chart): restore v9.1.0 release metadata [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3977&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3977/hovercard&quot;&gt;#3977&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs(chart): clarify mTLS scope for k8saudit [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3976&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3976/hovercard&quot;&gt;#3976&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs(OWNERS): add c2ndev as reviewer [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3980&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3980/hovercard&quot;&gt;#3980&lt;/a&gt;] - &lt;a href=&quot;https://github.com/c2ndev&quot;&gt;@c2ndev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(cmake): bump libs/drivers to &lt;code&gt;0.26.0-rc1&lt;/code&gt;/&lt;code&gt;11.0.0-rc1+driver&lt;/code&gt; [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3971&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3971/hovercard&quot;&gt;#3971&lt;/a&gt;] - &lt;a href=&quot;https://github.com/apps/github-actions&quot;&gt;@github-actions[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(ci): update the Scorecard workflow actions [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3974&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3974/hovercard&quot;&gt;#3974&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(cmake): update falco rules to version 5.2.0 [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3973&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3973/hovercard&quot;&gt;#3973&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(cmake): bump falcoctl to 0.14.0 and container plugin to 0.7.2 [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3972&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3972/hovercard&quot;&gt;#3972&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;test(engine): cover rejection of empty appended rules [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3935&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3935/hovercard&quot;&gt;#3935&lt;/a&gt;] - &lt;a href=&quot;https://github.com/Jvlegod&quot;&gt;@Jvlegod&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(engine): add empty string guards in logger [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3937&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3937/hovercard&quot;&gt;#3937&lt;/a&gt;] - &lt;a href=&quot;https://github.com/archy-rock3t-cloud&quot;&gt;@archy-rock3t-cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;update(cmake): update libs and driver to latest master [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3948&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3948/hovercard&quot;&gt;#3948&lt;/a&gt;] - &lt;a href=&quot;https://github.com/apps/github-actions&quot;&gt;@github-actions[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add Pollinate to ADOPTERS.md [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3933&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3933/hovercard&quot;&gt;#3933&lt;/a&gt;] - &lt;a href=&quot;https://github.com/rr16-chemeng&quot;&gt;@rr16-chemeng&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;update(cmake): update libs and driver to latest master [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3957&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3957/hovercard&quot;&gt;#3957&lt;/a&gt;] - &lt;a href=&quot;https://github.com/apps/github-actions&quot;&gt;@github-actions[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ci: add e2e tests leveraging the &lt;code&gt;event-generator&lt;/code&gt; [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3950&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3950/hovercard&quot;&gt;#3950&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;test: add &lt;code&gt;event-generator&lt;/code&gt; test suite for e2e-testing [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3949&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3949/hovercard&quot;&gt;#3949&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs(OWNERS): moving &lt;code&gt;andreagit97&lt;/code&gt; to emeritus [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3944&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3944/hovercard&quot;&gt;#3944&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(chart): define source chart release workflow [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3898&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3898/hovercard&quot;&gt;#3898&lt;/a&gt;] - &lt;a href=&quot;https://github.com/c2ndev&quot;&gt;@c2ndev&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Statistics&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;MERGED PRS&lt;/th&gt;
+&lt;th&gt;NUMBER&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Not user-facing&lt;/td&gt;
+&lt;td&gt;23&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Release note&lt;/td&gt;
+&lt;td&gt;28&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td&gt;51&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4&gt;Release Manager &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/leogr/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/h4&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/49986046/0.45.0-rc4</id>
+    <updated>2026-09-18T10:09:46Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco/releases/tag/0.45.0-rc4"/>
+    <title>0.45.0-rc4</title>
+    <content type="html">&lt;p&gt;feat(falco): expose reload status and Unix socket control&lt;/p&gt;
+
+&lt;p&gt;Add process identity, reload generations, and readiness observation through
+&lt;br /&gt;GET /reload for Falco Operator integration. Publish readiness after all
+&lt;br /&gt;enabled sources start and distinguish rejected validation from application.&lt;/p&gt;
+
+&lt;p&gt;Add an opt-in Linux Unix socket listener. POST /reload queues a request and
+&lt;br /&gt;returns 202 with a generation baseline; clients poll GET /reload for the
+&lt;br /&gt;outcome. Keep POST exclusive to the Unix socket and document TCP observation
+&lt;br /&gt;independently of reload_control.&lt;/p&gt;
+
+&lt;p&gt;Protect the socket with directory ownership, permissions, path checks, and
+&lt;br /&gt;exclusive listener ownership. Validate its directory during dry-run before
+&lt;br /&gt;stopping the active runtime, repeat checks at startup, and reject multipart
+&lt;br /&gt;bodies. Cover status semantics, HTTP behavior, credential isolation, cleanup,
+&lt;br /&gt;invalid directories, and real reloads with the existing C++ test suite.&lt;/p&gt;
+
+&lt;p&gt;Signed-off-by: c2ndev &amp;lt;cannarella.dev@gmail.com&amp;gt;&lt;/p&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/49986046/0.45.0-rc3</id>
+    <updated>2026-09-15T08:36:35Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco/releases/tag/0.45.0-rc3"/>
+    <title>0.45.0-rc3</title>
+    <content type="html">&lt;p&gt;update(build): bump falcoctl to 0.14.2&lt;/p&gt;
+
+&lt;p&gt;Bump the falcoctl binary bundled in the packages and the falcoctl image
+&lt;br /&gt;used by the chart to 0.14.2, which preserves DKMS installations when
+&lt;br /&gt;installing cached kernel modules.&lt;/p&gt;
+
+&lt;p&gt;Signed-off-by: Leonardo Grasso &amp;lt;me@leonardograsso.com&amp;gt;&lt;/p&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/49986046/0.45.0-rc2</id>
+    <updated>2026-09-11T08:19:21Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco/releases/tag/0.45.0-rc2"/>
+    <title>0.45.0-rc2</title>
+    <content type="html">&lt;p&gt;chore(cmake): bump libs to `0.26.0-rc2`&lt;/p&gt;
+
+&lt;p&gt;Pin `FALCOSECURITY_LIBS_VERSION` to the `0.26.0-rc2` tag, cut from the
+&lt;br /&gt;libs `release/0.26.x` branch. `DRIVER_VERSION` stays at
+&lt;br /&gt;`11.0.0-rc1+driver` (no driver changes since `0.26.0-rc1`).&lt;/p&gt;
+
+&lt;p&gt;Signed-off-by: Leonardo Grasso &amp;lt;me@leonardograsso.com&amp;gt;&lt;/p&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/49986046/0.45.0-rc1</id>
+    <updated>2026-09-09T09:42:42Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco/releases/tag/0.45.0-rc1"/>
+    <title>0.45.0-rc1</title>
+    <content type="html">&lt;p&gt;update(userspace/engine): bump engine version to 0.65.0&lt;/p&gt;
+
+&lt;p&gt;Bumping libs to `0.26.0-rc1` moves the driver `SCHEMA_VERSION` from
+&lt;br /&gt;`4.5.1` to `4.5.2`, which changes the engine checksum. The engine
+&lt;br /&gt;version must be bumped accordingly.&lt;/p&gt;
+
+&lt;p&gt;Signed-off-by: Leonardo Grasso &amp;lt;me@leonardograsso.com&amp;gt;&lt;/p&gt;</content>
+    <author>
+      <name>leogr</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/3390997?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/49986046/0.44.1</id>
+    <updated>2026-06-11T10:03:09Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco/releases/tag/0.44.1"/>
+    <title>0.44.1</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/falcosecurity/libs/releases/tag/0.25.4&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/7eadc0c6dd1d616e55f0332ace14333e3ac035d3796bd989ff6f2b6f1a6be67a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c4942532d302e32352e342d79656c6c6f77&quot; alt=&quot;LIBS&quot; data-canonical-src=&quot;https://img.shields.io/badge/LIBS-0.25.4-yellow&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://github.com/falcosecurity/libs/releases/tag/10.2.0+driver&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/a426ac067a393414b2644c4bdf7811e9375bd0485ed1430e98f9f3495def1850/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4452495645522d31302e322e302b6472697665722d79656c6c6f77&quot; alt=&quot;DRIVER&quot; data-canonical-src=&quot;https://img.shields.io/badge/DRIVER-10.2.0+driver-yellow&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Packages&lt;/th&gt;
+&lt;th&gt;Download&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;rpm-x86_64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/rpm/falco-0.44.1-x86_64.rpm&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/538e1292af8e91e88c3ed800e301152c04c7d92b41e27f9bc1c1c250e608dc0a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34342e312d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;rpm&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.44.1-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;deb-x86_64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/deb/stable/falco-0.44.1-x86_64.deb&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/538e1292af8e91e88c3ed800e301152c04c7d92b41e27f9bc1c1c250e608dc0a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34342e312d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;deb&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.44.1-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tgz-x86_64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/bin/x86_64/falco-0.44.1-x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/538e1292af8e91e88c3ed800e301152c04c7d92b41e27f9bc1c1c250e608dc0a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34342e312d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;tgz&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.44.1-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tgz-static-x86_64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/bin/x86_64/falco-0.44.1-static-x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/538e1292af8e91e88c3ed800e301152c04c7d92b41e27f9bc1c1c250e608dc0a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34342e312d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;tgz-static&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.44.1-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rpm-aarch64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/rpm/falco-0.44.1-aarch64.rpm&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/538e1292af8e91e88c3ed800e301152c04c7d92b41e27f9bc1c1c250e608dc0a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34342e312d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;rpm&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.44.1-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;deb-aarch64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/deb/stable/falco-0.44.1-aarch64.deb&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/538e1292af8e91e88c3ed800e301152c04c7d92b41e27f9bc1c1c250e608dc0a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34342e312d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;deb&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.44.1-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tgz-aarch64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/bin/aarch64/falco-0.44.1-aarch64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/538e1292af8e91e88c3ed800e301152c04c7d92b41e27f9bc1c1c250e608dc0a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34342e312d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;tgz&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.44.1-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Images&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;docker pull docker.io/falcosecurity/falco:0.44.1&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;docker pull public.ecr.aws/falcosecurity/falco:0.44.1&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;docker pull docker.io/falcosecurity/falco-driver-loader:0.44.1&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;docker pull docker.io/falcosecurity/falco-driver-loader:0.44.1-buster&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;docker pull docker.io/falcosecurity/falco:0.44.1-debian&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;v0.44.1&lt;/h2&gt;
+&lt;p&gt;Released on 2026-06-11&lt;/p&gt;
+&lt;h3&gt;Major Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;feat(userspace/falco): add support for disabling BPF iterators [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3879&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3879/hovercard&quot;&gt;#3879&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Bug Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: fix multiple issues related to BPF iterators (solved by bumping libs to &lt;code&gt;0.25.4&lt;/code&gt;) [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3879&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3879/hovercard&quot;&gt;#3879&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Statistics&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;MERGED PRS&lt;/th&gt;
+&lt;th&gt;NUMBER&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Not user-facing&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Release note&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4&gt;Release Manager &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/ekoops/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/h4&gt;</content>
+    <author>
+      <name>ekoops</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/41296180?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/49986046/0.44.1-rc1</id>
+    <updated>2026-06-10T09:02:58Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco/releases/tag/0.44.1-rc1"/>
+    <title>0.44.1-rc1</title>
+    <content type="html">&lt;p&gt;feat(userspace/falco): add support for disabling BPF iterators&lt;/p&gt;
+
+&lt;p&gt;Signed-off-by: Leonardo Di Giovanna &amp;lt;leonardodigiovanna1@gmail.com&amp;gt;&lt;/p&gt;</content>
+    <author>
+      <name>ekoops</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/41296180?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/49986046/0.44.0</id>
+    <updated>2026-05-26T15:05:44Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco/releases/tag/0.44.0"/>
+    <title>0.44.0</title>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/falcosecurity/libs/releases/tag/0.25.2&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/d35fabd09b7bbebfd85983da16d2cdb23a01d9fe6eff6d6ec949cbed2c68f9f1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c4942532d302e32352e322d79656c6c6f77&quot; alt=&quot;LIBS&quot; data-canonical-src=&quot;https://img.shields.io/badge/LIBS-0.25.2-yellow&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://github.com/falcosecurity/libs/releases/tag/10.2.0+driver&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/a426ac067a393414b2644c4bdf7811e9375bd0485ed1430e98f9f3495def1850/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4452495645522d31302e322e302b6472697665722d79656c6c6f77&quot; alt=&quot;DRIVER&quot; data-canonical-src=&quot;https://img.shields.io/badge/DRIVER-10.2.0+driver-yellow&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Packages&lt;/th&gt;
+&lt;th&gt;Download&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;rpm-x86_64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/rpm/falco-0.44.0-x86_64.rpm&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/16e3e0955acf5a4e46fcf1df91755f97976e6116f1842f422520f644f823551b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34342e302d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;rpm&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.44.0-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;deb-x86_64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/deb/stable/falco-0.44.0-x86_64.deb&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/16e3e0955acf5a4e46fcf1df91755f97976e6116f1842f422520f644f823551b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34342e302d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;deb&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.44.0-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tgz-x86_64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/bin/x86_64/falco-0.44.0-x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/16e3e0955acf5a4e46fcf1df91755f97976e6116f1842f422520f644f823551b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34342e302d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;tgz&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.44.0-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tgz-static-x86_64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/bin/x86_64/falco-0.44.0-static-x86_64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/16e3e0955acf5a4e46fcf1df91755f97976e6116f1842f422520f644f823551b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34342e302d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;tgz-static&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.44.0-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rpm-aarch64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/rpm/falco-0.44.0-aarch64.rpm&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/16e3e0955acf5a4e46fcf1df91755f97976e6116f1842f422520f644f823551b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34342e302d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;rpm&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.44.0-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;deb-aarch64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/deb/stable/falco-0.44.0-aarch64.deb&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/16e3e0955acf5a4e46fcf1df91755f97976e6116f1842f422520f644f823551b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34342e302d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;deb&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.44.0-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tgz-aarch64&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://download.falco.org/packages/bin/aarch64/falco-0.44.0-aarch64.tar.gz&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/16e3e0955acf5a4e46fcf1df91755f97976e6116f1842f422520f644f823551b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46616c636f2d302e34342e302d2532333030616563373f7374796c653d666c61742d737175617265&quot; alt=&quot;tgz&quot; data-canonical-src=&quot;https://img.shields.io/badge/Falco-0.44.0-%2300aec7?style=flat-square&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Images&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;docker pull docker.io/falcosecurity/falco:0.44.0&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;docker pull public.ecr.aws/falcosecurity/falco:0.44.0&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;docker pull docker.io/falcosecurity/falco-driver-loader:0.44.0&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;docker pull docker.io/falcosecurity/falco-driver-loader:0.44.0-buster&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;docker pull docker.io/falcosecurity/falco:0.44.0-debian&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;v0.44.0&lt;/h2&gt;
+&lt;p&gt;Released on 2026-05-26&lt;/p&gt;
+&lt;h3&gt;Breaking Changes &lt;g-emoji class=&quot;g-emoji&quot; alias=&quot;warning&quot;&gt;⚠️&lt;/g-emoji&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;new!: add backslash escaping support to &lt;code&gt;-o&lt;/code&gt; key-path parser for literal dots and brackets in YAML key names (e.g., -o &#39;my.dotted.key=val&#39;) [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3835&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3835/hovercard&quot;&gt;#3835&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore!: drop gRPC output and server support [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3798&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3798/hovercard&quot;&gt;#3798&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore!: drop gVisor engine support [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3797&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3797/hovercard&quot;&gt;#3797&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore!: drop legacy BPF probe [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3796&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3796/hovercard&quot;&gt;#3796&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Major Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;feat(engine): support string comparator modifiers (oneof/allof/anyof) [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3878&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3878/hovercard&quot;&gt;#3878&lt;/a&gt;] - &lt;a href=&quot;https://github.com/therealbobo&quot;&gt;@therealbobo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;new(config,rules): add &lt;code&gt;capture_events&lt;/code&gt; and &lt;code&gt;capture_filesize&lt;/code&gt; stop conditions for capture files [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3824&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3824/hovercard&quot;&gt;#3824&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;feat: validation for unknown-key in rules [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3805&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3805/hovercard&quot;&gt;#3805&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;feat(userspace/engine): add support for list transformer exception [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3799&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3799/hovercard&quot;&gt;#3799&lt;/a&gt;] - &lt;a href=&quot;https://github.com/irozzo-1A&quot;&gt;@irozzo-1A&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Minor Changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;chore(build): Add USE_TSAN option to enable Thread Sanitizer. [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3856&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3856/hovercard&quot;&gt;#3856&lt;/a&gt;] - &lt;a href=&quot;https://github.com/irozzo-1A&quot;&gt;@irozzo-1A&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;build: enable http_output, webserver, and metrics on macOS and Win [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3827&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3827/hovercard&quot;&gt;#3827&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bug Fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fix(docker): Restrict falco-webui service to local access only [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3838&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3838/hovercard&quot;&gt;#3838&lt;/a&gt;] - &lt;a href=&quot;https://github.com/qux-bbb&quot;&gt;@qux-bbb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: show condition text in warning snippet for folded scalar conditions [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3858&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3858/hovercard&quot;&gt;#3858&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ssam18&quot;&gt;@ssam18&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: respect buffered_outputs YAML config value [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3830&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3830/hovercard&quot;&gt;#3830&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(userspace/falco): fix race condition in watchdog [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3820&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3820/hovercard&quot;&gt;#3820&lt;/a&gt;] - &lt;a href=&quot;https://github.com/irozzo-1A&quot;&gt;@irozzo-1A&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(scripts): update RPM repository metadata before signing when re-signing all packages [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3774&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3774/hovercard&quot;&gt;#3774&lt;/a&gt;] - &lt;a href=&quot;https://github.com/c2ndev&quot;&gt;@c2ndev&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Non user-facing changes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;chore(cmake): bump libs to &lt;code&gt;0.25.2&lt;/code&gt; [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3900&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3900/hovercard&quot;&gt;#3900&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore: update falco rules to version &lt;code&gt;5.1.0&lt;/code&gt; and add &lt;code&gt;rules&lt;/code&gt; sub-command to &lt;code&gt;scripts/update-deps-version&lt;/code&gt; [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3890&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3890/hovercard&quot;&gt;#3890&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(chart): move Falco chart source to falco (1/5) [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3889&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3889/hovercard&quot;&gt;#3889&lt;/a&gt;] - &lt;a href=&quot;https://github.com/c2ndev&quot;&gt;@c2ndev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(chart): move Falco chart source to falco [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3884&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3884/hovercard&quot;&gt;#3884&lt;/a&gt;] - &lt;a href=&quot;https://github.com/c2ndev&quot;&gt;@c2ndev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(cmake): bump libs to &lt;code&gt;0.25.1&lt;/code&gt; and drivers to &lt;code&gt;10.2.0+driver&lt;/code&gt; [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3888&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3888/hovercard&quot;&gt;#3888&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;upstream multiple http_output fixes for Win/macOS (from prempti) [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3882&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3882/hovercard&quot;&gt;#3882&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore: bump container plugin version to &lt;code&gt;0.7.1&lt;/code&gt; [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3886&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3886/hovercard&quot;&gt;#3886&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(ci): reference correct input name for sanitizers flag and update systemd-rpm-macros [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3885&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3885/hovercard&quot;&gt;#3885&lt;/a&gt;] - &lt;a href=&quot;https://github.com/irozzo-1A&quot;&gt;@irozzo-1A&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(build): use Zig cross-compilation toolchain for external dependencies [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3881&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3881/hovercard&quot;&gt;#3881&lt;/a&gt;] - &lt;a href=&quot;https://github.com/irozzo-1A&quot;&gt;@irozzo-1A&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(cmake/modules): bump libs version to &lt;code&gt;0.25.0-rc2&lt;/code&gt; [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3876&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3876/hovercard&quot;&gt;#3876&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore: bump container plugin version to &lt;code&gt;0.7.0&lt;/code&gt; [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3877&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3877/hovercard&quot;&gt;#3877&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ci(.github): replace &lt;code&gt;/area CI&lt;/code&gt; with &lt;code&gt;/area automation&lt;/code&gt; in PR template [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3870&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3870/hovercard&quot;&gt;#3870&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;update(cmake): update libs and driver to latest release candidates [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3873&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3873/hovercard&quot;&gt;#3873&lt;/a&gt;] - &lt;a href=&quot;https://github.com/apps/github-actions&quot;&gt;@github-actions[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;update(cmake): update libs and driver to latest master [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3868&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3868/hovercard&quot;&gt;#3868&lt;/a&gt;] - &lt;a href=&quot;https://github.com/apps/github-actions&quot;&gt;@github-actions[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(cmake): bump falcoctl dependency version to 0.13.0 [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3869&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3869/hovercard&quot;&gt;#3869&lt;/a&gt;] - &lt;a href=&quot;https://github.com/c2ndev&quot;&gt;@c2ndev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(userspace/engine): replace invalid chars while JSON-encoding [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3866&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3866/hovercard&quot;&gt;#3866&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;update(cmake): update libs and driver to latest master [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3864&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3864/hovercard&quot;&gt;#3864&lt;/a&gt;] - &lt;a href=&quot;https://github.com/apps/github-actions&quot;&gt;@github-actions[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;build(docker): replace apt-key with keyring; use gnupg instead of gnupg2 [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3844&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3844/hovercard&quot;&gt;#3844&lt;/a&gt;] - &lt;a href=&quot;https://github.com/parisnakitakejser&quot;&gt;@parisnakitakejser&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(cmake): bump drivers to &lt;code&gt;10.0.0-rc2+driver&lt;/code&gt; [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3863&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3863/hovercard&quot;&gt;#3863&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(scripts): add script updating libs/drivers cmake module versions [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3862&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3862/hovercard&quot;&gt;#3862&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(cmake): bump libs/drivers to &lt;code&gt;0.24.0-rc1&lt;/code&gt;/&lt;code&gt;10.0.0-rc1+driver&lt;/code&gt; [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3861&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3861/hovercard&quot;&gt;#3861&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ci(reusable_test_packages): produce core dumps when falco crashes [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3859&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3859/hovercard&quot;&gt;#3859&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(config): prevent plugin library path traversal via relative paths [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3850&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3850/hovercard&quot;&gt;#3850&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: multi thread safety issues [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3852&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3852/hovercard&quot;&gt;#3852&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;update(cmake): update libs and driver to latest master [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3823&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3823/hovercard&quot;&gt;#3823&lt;/a&gt;] - &lt;a href=&quot;https://github.com/apps/github-actions&quot;&gt;@github-actions[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ci: restore minimum set of required permissions [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3841&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3841/hovercard&quot;&gt;#3841&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;sync: docs(CHANGELOG.md): 0.43.1 [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3854&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3854/hovercard&quot;&gt;#3854&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;feat(userspace/falco): add support for kernel iterator metrics [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3840&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3840/hovercard&quot;&gt;#3840&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs: multi-thread falco high-level design proposal [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3751&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3751/hovercard&quot;&gt;#3751&lt;/a&gt;] - &lt;a href=&quot;https://github.com/irozzo-1A&quot;&gt;@irozzo-1A&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(cmake): configure falco.yaml from current src dir [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3821&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3821/hovercard&quot;&gt;#3821&lt;/a&gt;] - &lt;a href=&quot;https://github.com/therealbobo&quot;&gt;@therealbobo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(metrics): Prevent race condition crash during metrics collection on shutdown [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3741&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3741/hovercard&quot;&gt;#3741&lt;/a&gt;] - &lt;a href=&quot;https://github.com/adduali1310&quot;&gt;@adduali1310&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;update(cmake): update libs and driver to latest master [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3765&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3765/hovercard&quot;&gt;#3765&lt;/a&gt;] - &lt;a href=&quot;https://github.com/apps/github-actions&quot;&gt;@github-actions[bot]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(falco): fix warning in webserver.h [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3816&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3816/hovercard&quot;&gt;#3816&lt;/a&gt;] - &lt;a href=&quot;https://github.com/irozzo-1A&quot;&gt;@irozzo-1A&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs: fix Contributing.md outdated references [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3807&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3807/hovercard&quot;&gt;#3807&lt;/a&gt;] - &lt;a href=&quot;https://github.com/cluster2600&quot;&gt;@cluster2600&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(webserver): fix inconsistent include directives trying to compile the webserver on Apple [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3802&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3802/hovercard&quot;&gt;#3802&lt;/a&gt;] - &lt;a href=&quot;https://github.com/legobrick&quot;&gt;@legobrick&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore(build): add support for gperftools CPU profiler [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3771&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3771/hovercard&quot;&gt;#3771&lt;/a&gt;] - &lt;a href=&quot;https://github.com/irozzo-1A&quot;&gt;@irozzo-1A&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;revert: &quot;chore(.github): put back temporary action for GPG key rotation&quot; [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3776&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3776/hovercard&quot;&gt;#3776&lt;/a&gt;] - &lt;a href=&quot;https://github.com/leogr&quot;&gt;@leogr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs(proposals): specify version enforcing the deprecation [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3762&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3762/hovercard&quot;&gt;#3762&lt;/a&gt;] - &lt;a href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;docs(OWNERS): add irozzo-1A(Iacopo Rozzo) as reviewer [&lt;a href=&quot;https://github.com/falcosecurity/falco/pull/3773&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/falcosecurity/falco/pull/3773/hovercard&quot;&gt;#3773&lt;/a&gt;] - &lt;a href=&quot;https://github.com/irozzo-1A&quot;&gt;@irozzo-1A&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Statistics&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;MERGED PRS&lt;/th&gt;
+&lt;th&gt;NUMBER&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Not user-facing&lt;/td&gt;
+&lt;td&gt;39&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Release note&lt;/td&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td&gt;61&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4&gt;Release Manager &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/ekoops/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/ekoops&quot;&gt;@ekoops&lt;/a&gt;&lt;/h4&gt;</content>
+    <author>
+      <name>ekoops</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/41296180?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/49986046/0.44.0-rc2</id>
+    <updated>2026-05-25T18:36:24Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/falcosecurity/falco/releases/tag/0.44.0-rc2"/>
+    <title>0.44.0-rc2</title>
+    <content type="html">&lt;p&gt;chore(cmake): bump libs to `0.25.2`&lt;/p&gt;
+
+&lt;p&gt;Signed-off-by: Leonardo Di Giovanna &amp;lt;leonardodigiovanna1@gmail.com&amp;gt;&lt;/p&gt;</content>
+    <author>
+      <name>ekoops</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/41296180?s=60&amp;v=4"/>
+  </entry>
+</feed>

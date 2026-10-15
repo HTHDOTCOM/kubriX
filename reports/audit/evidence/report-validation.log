@@ -1,0 +1,6 @@
+PASS: 81 vulnerable baseline images exactly covered by both requested summary tables.
+PASS: Original CRITICAL/HIGH totals match every recovered per-image JSON report.
+PASS: 3598 original package findings exported without truncation.
+PASS: All 541 unfixed package findings across phases retained with empty fixed versions.
+PASS: Same-database eliminated-ID lists agree with recorded counts.
+PASS: Every retained latest-scan JSON matches its SHA256 integrity manifest.

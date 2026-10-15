@@ -1,0 +1,2 @@
+2026-10-14T16:47:47Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-14T16:47:55Z	FATAL	Fatal error	run error: image scan error: scan error: scan failed: failed analysis: analyze error: pipeline error: failed to analyze layer (sha256:e0969ccb1e86ad9ed73afb69b3246c7780dbbfd07e6bbbb048e53ec5dcd1366e): walk error: failed to process the file: failed to analyze file: failed to analyze bin/rollouts-controller: unable to open bin/rollouts-controller: failed to open: failed to copy: unexpected EOF

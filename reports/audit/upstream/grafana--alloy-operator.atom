@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/grafana/alloy-operator/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/grafana/alloy-operator/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/grafana/alloy-operator/releases.atom"/>
+  <title>Release notes from alloy-operator</title>
+  <updated>2026-10-07T15:39:09Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/947011525/alloy-operator-0.8.0</id>
+    <updated>2026-10-07T15:44:42Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.8.0"/>
+    <title>alloy-operator-0.8.0</title>
+    <content type="html">&lt;p&gt;Chart released at &lt;a href=&quot;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.8.0&quot;&gt;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.8.0&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/947011525/alloy-operator-0.7.1</id>
+    <updated>2026-08-27T15:14:50Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.7.1"/>
+    <title>alloy-operator-0.7.1</title>
+    <content type="html">&lt;p&gt;Chart released at &lt;a href=&quot;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.7.1&quot;&gt;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.7.1&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/947011525/alloy-operator-0.7.0</id>
+    <updated>2026-08-24T17:25:22Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.7.0"/>
+    <title>alloy-operator-0.7.0</title>
+    <content type="html">&lt;p&gt;Chart released at &lt;a href=&quot;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.7.0&quot;&gt;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.7.0&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/947011525/alloy-operator-0.6.3</id>
+    <updated>2026-08-10T16:20:26Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.6.3"/>
+    <title>alloy-operator-0.6.3</title>
+    <content type="html">&lt;p&gt;Chart released at &lt;a href=&quot;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.6.3&quot;&gt;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.6.3&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/947011525/alloy-operator-0.6.2</id>
+    <updated>2026-07-22T15:10:40Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.6.2"/>
+    <title>alloy-operator-0.6.2</title>
+    <content type="html">&lt;p&gt;Chart released at &lt;a href=&quot;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.6.2&quot;&gt;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.6.2&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/947011525/alloy-operator-0.6.1</id>
+    <updated>2026-07-13T16:25:45Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.6.1"/>
+    <title>alloy-operator-0.6.1</title>
+    <content type="html">&lt;p&gt;Chart released at &lt;a href=&quot;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.6.1&quot;&gt;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.6.1&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/947011525/alloy-operator-0.6.0</id>
+    <updated>2026-07-13T16:27:23Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.6.0"/>
+    <title>alloy-operator-0.6.0</title>
+    <content type="html">&lt;p&gt;Chart released at &lt;a href=&quot;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.6.0&quot;&gt;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.6.0&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/947011525/alloy-operator-0.5.11</id>
+    <updated>2026-06-29T21:51:01Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.5.11"/>
+    <title>alloy-operator-0.5.11</title>
+    <content type="html">&lt;p&gt;Chart released at &lt;a href=&quot;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.5.11&quot;&gt;https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.5.11&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/947011525/alloy-crd-1.0.1</id>
+    <updated>2026-06-29T16:59:55Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/alloy-operator/releases/tag/alloy-crd-1.0.1"/>
+    <title>alloy-crd-1.0.1: Update Alloy CRD chart (#194)</title>
+    <content type="html">&lt;p&gt;Signed-off-by: Pete Wall &lt;a href=&quot;mailto:pete.wall@grafana.com&quot;&gt;pete.wall@grafana.com&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>petewall</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/2235675?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/947011525/alloy-operator-0.5.10</id>
+    <updated>2026-06-12T22:10:26Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.5.10"/>
+    <title>alloy-operator-0.5.10</title>
+    <content type="html">&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Update Alloy to 1.10.0 and Alloy Operator version to 0.5.10 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/petewall/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/petewall&quot;&gt;@petewall&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4652563362&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/grafana/alloy-operator/issues/188&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/grafana/alloy-operator/pull/188/hovercard&quot; href=&quot;https://github.com/grafana/alloy-operator/pull/188&quot;&gt;#188&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/grafana/alloy-operator/compare/alloy-operator-0.5.9...alloy-operator-0.5.10&quot;&gt;&lt;tt&gt;alloy-operator-0.5.9...alloy-operator-0.5.10&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>alloy-operator[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/7195757?s=60&amp;v=4"/>
+  </entry>
+</feed>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/kubevirt/kubevirt-velero-plugin/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/kubevirt/kubevirt-velero-plugin/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/kubevirt/kubevirt-velero-plugin/releases.atom"/>
+  <title>Release notes from kubevirt-velero-plugin</title>
+  <updated>2026-09-16T08:34:48Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/384077217/v0.9.1</id>
+    <updated>2026-09-16T09:16:49Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.9.1"/>
+    <title>v0.9.1</title>
+    <content type="html">&lt;p&gt;This release follows v0.9.0 and consists of 5 changes, contributed by&lt;br&gt;
+4 people, leading to 22 files changed, 1208 insertions(+), 21 deletions(-).&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.9.1&quot;&gt;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.9.1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built kubevirt-velero-plugin container is published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;p&gt;v0.9.1&lt;br&gt;
+Add IBA plugin to ensure that pod hooks are run for VM pods&lt;br&gt;
+NetworkAttachmentDefinition plugin to handle namespace mapping&lt;br&gt;
+Add NAD to KVObjectGraph&lt;br&gt;
+Allow VM machine type to be set dynamically&lt;/p&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;4 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;Scott Seago &amp;lt;sseago@redhat.com&amp;gt;
+Wesley Hayutin &amp;lt;weshayutin@gmail.com&amp;gt;
+Jathavedhan M &amp;lt;jathavedhan.m@ibm.com&amp;gt;
+Alvaro Romero &amp;lt;alromero@redhat.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;Scott Seago &amp;lt;sseago@redhat.com&amp;gt;
+Wesley Hayutin &amp;lt;weshayutin@gmail.com&amp;gt;
+Jathavedhan M &amp;lt;jathavedhan.m@ibm.com&amp;gt;
+Alvaro Romero &amp;lt;alromero@redhat.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirtkubevirt-velero-plugin/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/384077217/v0.8.1</id>
+    <updated>2026-09-16T09:44:41Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.8.1"/>
+    <title>v0.8.1</title>
+    <content type="html">&lt;p&gt;This release follows v0.8.0 and consists of 9 changes, contributed by&lt;br&gt;
+5 people, leading to 26 files changed, 1239 insertions(+), 24 deletions(-).&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.8.1&quot;&gt;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.8.1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built kubevirt-velero-plugin container is published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;p&gt;v0.8.1&lt;br&gt;
+NetworkAttachmentDefinition plugin to handle namespace mapping&lt;br&gt;
+Add IBA plugin to ensure that pod hooks are run for VM pods&lt;br&gt;
+Add NAD to KVObjectGraph&lt;br&gt;
+Bump Kubevirt to v1.6.0 and adapt failing tests&lt;br&gt;
+Allow VM machine type to be set dynamically&lt;/p&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;5 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;     4	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+     2	Wesley Hayutin &amp;lt;138787+weshayutin@users.noreply.github.com&amp;gt;
+     1	Alvaro Romero &amp;lt;alromero@redhat.com&amp;gt;
+     1	Carter Pewterschmidt &amp;lt;118891669+carterpewpew@users.noreply.github.com&amp;gt;
+     1	Scott Seago &amp;lt;sseago@redhat.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;     4	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+     2	Wesley Hayutin &amp;lt;138787+weshayutin@users.noreply.github.com&amp;gt;
+     1	Alvaro Romero &amp;lt;alromero@redhat.com&amp;gt;
+     1	Carter Pewterschmidt &amp;lt;118891669+carterpewpew@users.noreply.github.com&amp;gt;
+     1	Scott Seago &amp;lt;sseago@redhat.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirtkubevirt-velero-plugin/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>alromeros</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/52510206?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/384077217/v0.9.0</id>
+    <updated>2026-03-27T15:53:36Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.9.0"/>
+    <title>v0.9.0</title>
+    <content type="html">&lt;p&gt;This release follows v0.8.0 and consists of 11 changes, contributed by&lt;br&gt;
+7 people, leading to 2431 files changed, 128856 insertions(+), 92571 deletions(-).&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.9.0&quot;&gt;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.9.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built kubevirt-velero-plugin container is published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated Velero to v1.16.2 with CSI snapshot support and improved snapshot handling (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3288170445&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/378&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/378/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/378&quot;&gt;#378&lt;/a&gt;, &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4098072106&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/404&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/404/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/404&quot;&gt;#404&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Updated KubeVirt to v1.6.0 (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3297069162&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/380&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/380/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/380&quot;&gt;#380&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added PVC and VolumeSnapshot labeling with user data preservation (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3449794128&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/396&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/396/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/396&quot;&gt;#396&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed backup of CloudInit secrets (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3025384640&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/359&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/359/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/359&quot;&gt;#359&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Removed instance type and preference objects from backup graph to reduce backup size (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3027480528&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/360&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/360/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/360&quot;&gt;#360&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Improved multi-architecture support in end-to-end tests (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3333057038&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/384&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/384/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/384&quot;&gt;#384&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Various test stability improvements and bug fixes (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3362768716&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/387&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/387/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/387&quot;&gt;#387&lt;/a&gt;, &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;4151965729&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/409&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/409/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/409&quot;&gt;#409&lt;/a&gt;, &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3167347029&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/371&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/371/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/371&quot;&gt;#371&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added OADP maintainers (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2983709773&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/343&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/343/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/343&quot;&gt;#343&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;7 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;     4      alromeros &amp;lt;alromero@redhat.com&amp;gt;
+     2      Wesley Hayutin &amp;lt;138787+weshayutin@users.noreply.github.com&amp;gt;
+     1      Basavaraju Girriamma &amp;lt;bgirriam@redhat.com&amp;gt;
+     1      Lee Yarwood &amp;lt;lyarwood@redhat.com&amp;gt;
+     1      Michal Pryc &amp;lt;mpryc@redhat.com&amp;gt;
+     1      dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;
+     1      sshende-catalogicsoftware &amp;lt;66183996+sshende-catalogicsoftware@users.noreply.github.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;     4      alromeros &amp;lt;alromero@redhat.com&amp;gt;
+     2      Wesley Hayutin &amp;lt;138787+weshayutin@users.noreply.github.com&amp;gt;
+     1      Basavaraju Girriamma &amp;lt;bgirriam@redhat.com&amp;gt;
+     1      Lee Yarwood &amp;lt;lyarwood@redhat.com&amp;gt;
+     1      Michal Pryc &amp;lt;mpryc@redhat.com&amp;gt;
+     1      dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;
+     1      sshende-catalogicsoftware &amp;lt;66183996+sshende-catalogicsoftware@users.noreply.github.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirtkubevirt-velero-plugin/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/384077217/v0.8.0</id>
+    <updated>2025-04-29T15:51:31Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.8.0"/>
+    <title>v0.8.0</title>
+    <content type="html">&lt;p&gt;This release follows v0.7.0 and consists of 28 changes, contributed by&lt;br&gt;
+11 people, leading to 3769 files changed, 310333 insertions(+), 119014 deletions(-).&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.8.0&quot;&gt;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.8.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built kubevirt-velero-plugin container is published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;p&gt;v0.8.0&lt;br&gt;
+Bump github.com/vmware-tanzu/velero from 1.14.0 to 1.16.0 (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;3020616227&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/355&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/355/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/355&quot;&gt;#355&lt;/a&gt;)&lt;br&gt;
+Use &lt;code&gt;vm.Status.{Instancetype,Preference}Ref&lt;/code&gt; to backup and restore instance type related ControllerRevisions (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2932966408&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/333&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/333/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/333&quot;&gt;#333&lt;/a&gt;)&lt;br&gt;
+Do not skip PVC when building VMIs resources graph (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2995720177&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/349&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/349/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/349&quot;&gt;#349&lt;/a&gt;)&lt;br&gt;
+VM Object graph: Include backend PVC (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2789507835&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/321&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/321/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/321&quot;&gt;#321&lt;/a&gt;)&lt;br&gt;
+Generate new firmware UUID during restore (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2772665191&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/317&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/317/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/317&quot;&gt;#317&lt;/a&gt;)&lt;br&gt;
+MAC address cleanup (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2732941371&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/304&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/304/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/304&quot;&gt;#304&lt;/a&gt;)&lt;br&gt;
+Allow switching VM power state during restore  (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2738094534&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/306&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/306/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/306&quot;&gt;#306&lt;/a&gt;)&lt;br&gt;
+Remove usage of deprecated .spec.running field (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2735562381&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/305&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/305/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/305&quot;&gt;#305&lt;/a&gt;)&lt;br&gt;
+Fix report of velero restores (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2669009576&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/295&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/295/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/295&quot;&gt;#295&lt;/a&gt;)&lt;br&gt;
+Ignore VMIs from backup when owner VMs are excluded (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2466277165&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/273&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/273/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/273&quot;&gt;#273&lt;/a&gt;)&lt;br&gt;
+Implement KVGraph package to allow retrieving a defined list of vm-related objects (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2398710805&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/260&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/260/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/260&quot;&gt;#260&lt;/a&gt;)&lt;br&gt;
+Support VirtualMachineClusterInstancetype and VirtualMachineClusterPreference (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2406026375&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/261&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/261/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/261&quot;&gt;#261&lt;/a&gt;)&lt;br&gt;
+Pod-restore: skip restoring hotplug pod (&lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2408642266&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/262&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/262/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/262&quot;&gt;#262&lt;/a&gt;)&lt;/p&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;11 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;     9	alromeros &amp;lt;alromero@redhat.com&amp;gt;
+     5	Shelly Kagan &amp;lt;skagan@redhat.com&amp;gt;
+     4	dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;
+     3	Lee Yarwood &amp;lt;lyarwood@redhat.com&amp;gt;
+     1	Amos Mastbaum &amp;lt;68001528+amastbau@users.noreply.github.com&amp;gt;
+     1	Michael Henriksen &amp;lt;mhenriks@redhat.com&amp;gt;
+     1	Nestor Acuna Blanco &amp;lt;37973744+nestoracunablanco@users.noreply.github.com&amp;gt;
+     1	RamLavi &amp;lt;ralavi@redhat.com&amp;gt;
+     1	Scott Seago &amp;lt;sseago@redhat.com&amp;gt;
+     1	Shubham Pampattiwar &amp;lt;shubhampampattiwar7@gmail.com&amp;gt;
+     1	Tiger Kaovilai &amp;lt;passawit.kaovilai@gmail.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;     9	alromeros &amp;lt;alromero@redhat.com&amp;gt;
+     5	Shelly Kagan &amp;lt;skagan@redhat.com&amp;gt;
+     4	dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;
+     3	Lee Yarwood &amp;lt;lyarwood@redhat.com&amp;gt;
+     1	Amos Mastbaum &amp;lt;68001528+amastbau@users.noreply.github.com&amp;gt;
+     1	Michael Henriksen &amp;lt;mhenriks@redhat.com&amp;gt;
+     1	Nestor Acuna Blanco &amp;lt;37973744+nestoracunablanco@users.noreply.github.com&amp;gt;
+     1	RamLavi &amp;lt;ralavi@redhat.com&amp;gt;
+     1	Scott Seago &amp;lt;sseago@redhat.com&amp;gt;
+     1	Shubham Pampattiwar &amp;lt;shubhampampattiwar7@gmail.com&amp;gt;
+     1	Tiger Kaovilai &amp;lt;passawit.kaovilai@gmail.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirtkubevirt-velero-plugin/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/384077217/v0.7.1</id>
+    <updated>2025-01-23T16:36:26Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.7.1"/>
+    <title>v0.7.1</title>
+    <content type="html">&lt;p&gt;This release follows v0.7.0 and consists of 9 changes, contributed by&lt;br&gt;
+3 people, leading to 29 files changed, 2512 insertions(+), 551 deletions(-).&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.7.1&quot;&gt;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.7.1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built kubevirt-velero-plugin container is published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;p&gt;v0.7.1&lt;br&gt;
+Update object graphs to include all extra objects during backup and restore&lt;br&gt;
+Add label to optionally generate new firmware UUID during restore&lt;br&gt;
+Bugfix: Ignore VMIs from backup when owner VM is excluded&lt;br&gt;
+Support clearing MAC address by label&lt;br&gt;
+Allow switching VM run strategy during restore&lt;br&gt;
+Allow skipping restore-specific checks during backup&lt;br&gt;
+Support VirtualMachineClusterInstancetype and VirtualMachineClusterPreference&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog:&lt;/strong&gt; &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/compare/v0.7.0...v0.7.1&quot;&gt;&lt;tt&gt;v0.7.0...v0.7.1&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;3 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;     6	alromeros &amp;lt;alromero@redhat.com&amp;gt;
+     2	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+     1	Shelly Kagan &amp;lt;skagan@redhat.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;     6	alromeros &amp;lt;alromero@redhat.com&amp;gt;
+     2	kubevirt-bot &amp;lt;kubevirtbot@redhat.com&amp;gt;
+     1	Shelly Kagan &amp;lt;skagan@redhat.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirtkubevirt-velero-plugin/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/384077217/v0.7.0</id>
+    <updated>2024-06-20T10:09:54Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.7.0"/>
+    <title>v0.7.0</title>
+    <content type="html">&lt;p&gt;This release follows v0.6.0 and consists of 15 changes, contributed by&lt;br&gt;
+3 people, leading to 1114 files changed, 67315 insertions(+), 33549 deletions(-).&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.7.0&quot;&gt;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.7.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built kubevirt-velero-plugin container is published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;p&gt;Update velero version to v1.14&lt;br&gt;
+Improve tests and tests&#39; framework&lt;/p&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;3 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;     7	Shelly Kagan &amp;lt;skagan@redhat.com&amp;gt;
+     7	dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;
+     1	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;     7	Shelly Kagan &amp;lt;skagan@redhat.com&amp;gt;
+     7	dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;
+     1	Alex Kalenyuk &amp;lt;akalenyu@redhat.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirtkubevirt-velero-plugin/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What&#39;s Changed&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bump golang.org/x/net from 0.10.0 to 0.17.0 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1938843701&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/190&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/190/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/190&quot;&gt;#190&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump kubevirt.io/containerized-data-importer-api from 1.57.0 to 1.58.0 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2011041966&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/201&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/201/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/201&quot;&gt;#201&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump google.golang.org/grpc from 1.49.0 to 1.56.3 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;1962321864&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/196&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/196/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/196&quot;&gt;#196&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Test and env updates by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/ShellyKa13/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/ShellyKa13&quot;&gt;@ShellyKa13&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2082306425&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/208&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/208/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/208&quot;&gt;#208&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update velero and velero-plugin-for-csi to latest 1.13.0 and 0.7 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/ShellyKa13/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/ShellyKa13&quot;&gt;@ShellyKa13&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2118967792&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/219&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/219/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/219&quot;&gt;#219&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump kubevirt.io/api from 1.0.0 to 1.1.1 also on cluster-up by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/ShellyKa13/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/ShellyKa13&quot;&gt;@ShellyKa13&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2117127760&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/215&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/215/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/215&quot;&gt;#215&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Generalize problematic tests by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/ShellyKa13/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/ShellyKa13&quot;&gt;@ShellyKa13&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2108191838&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/212&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/212/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/212&quot;&gt;#212&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump github.com/onsi/gomega from 1.27.8 to 1.32.0 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2204866144&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/234&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/234/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/234&quot;&gt;#234&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Get rid of busybox dockerhub image usage in tests by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/akalenyu/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/akalenyu&quot;&gt;@akalenyu&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2204290259&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/231&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/231/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/231&quot;&gt;#231&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump github.com/onsi/ginkgo/v2 from 2.11.0 to 2.17.1 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2204864390&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/232&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/232/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/232&quot;&gt;#232&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump k8s.io/klog/v2 from 2.90.1 to 2.120.1 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2141490034&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/223&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/223/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/223&quot;&gt;#223&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump kubevirt.io/api from 1.1.1 to 1.2.0 by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;organization&quot; data-hovercard-url=&quot;/orgs/dependabot/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/dependabot&quot;&gt;@dependabot&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2230258289&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/238&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/238/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/238&quot;&gt;#238&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix test issues + increase number of nodes in the cluster by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/ShellyKa13/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/ShellyKa13&quot;&gt;@ShellyKa13&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2248123015&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/241&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/241/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/241&quot;&gt;#241&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add backup partner compatibility testing framework by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/ShellyKa13/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/ShellyKa13&quot;&gt;@ShellyKa13&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2275804054&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/247&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/247/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/247&quot;&gt;#247&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump velero library and deployment to 1.14 + go update and kubevirtci by &lt;a class=&quot;user-mention notranslate&quot; data-hovercard-type=&quot;user&quot; data-hovercard-url=&quot;/users/ShellyKa13/hovercard&quot; data-octo-click=&quot;hovercard-link-click&quot; data-octo-dimensions=&quot;link_type:self&quot; href=&quot;https://github.com/ShellyKa13&quot;&gt;@ShellyKa13&lt;/a&gt; in &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;2304499554&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/issues/249&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kubevirt/kubevirt-velero-plugin/pull/249/hovercard&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/pull/249&quot;&gt;#249&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/compare/v0.6.0...v0.7.0&quot;&gt;&lt;tt&gt;v0.6.0...v0.7.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/384077217/v0.6.2</id>
+    <updated>2024-02-14T16:53:30Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.6.2"/>
+    <title>v0.6.2</title>
+    <content type="html">&lt;p&gt;This release follows v0.6.1 and consists of 3 changes, contributed by&lt;br&gt;
+1 people, leading to 31 files changed, 313 insertions(+), 935 deletions(-).&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.6.2&quot;&gt;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.6.2&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built kubevirt-velero-plugin container is published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;update velero back to 1.12.Z also update velero-plugin-for-csi to match the velero version&lt;/li&gt;
+&lt;li&gt;Test and env updates&lt;/li&gt;
+&lt;li&gt;Generalize problematic tests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a class=&quot;commit-link&quot; href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/compare/v0.6.1...v0.6.2&quot;&gt;&lt;tt&gt;v0.6.1...v0.6.2&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;1 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;     3	Shelly Kagan &amp;lt;skagan@redhat.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;     3	Shelly Kagan &amp;lt;skagan@redhat.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirtkubevirt-velero-plugin/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/384077217/v0.6.1</id>
+    <updated>2023-11-07T21:11:17Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.6.1"/>
+    <title>v0.6.1</title>
+    <content type="html">&lt;p&gt;This release follows v0.6.0 and consists of 3 changes, contributed by&lt;br&gt;
+1 people, leading to 135 files changed, 20610 insertions(+), 6405 deletions(-).&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.6.1&quot;&gt;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.6.1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built kubevirt-velero-plugin container is published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;p&gt;v0.6.1&lt;br&gt;
+Use Velero 1.9.4&lt;br&gt;
+Test fixes&lt;/p&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;1 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;     3	Michael Henriksen &amp;lt;mhenriks@redhat.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;     3	Michael Henriksen &amp;lt;mhenriks@redhat.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirtkubevirt-velero-plugin/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/384077217/v0.6.0</id>
+    <updated>2023-10-11T20:27:42Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.6.0"/>
+    <title>v0.6.0</title>
+    <content>No content.</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/384077217/v0.5.0</id>
+    <updated>2023-02-23T07:36:39Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.5.0"/>
+    <title>v0.5.0</title>
+    <content type="html">&lt;p&gt;This release follows v0.4.0 and consists of 25 changes, contributed by&lt;br&gt;
+5 people, leading to 2830 files changed, 276185 insertions(+), 136712 deletions(-).&lt;/p&gt;
+&lt;p&gt;The source code and selected binaries are available for download at:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.5.0&quot;&gt;https://github.com/kubevirt/kubevirt-velero-plugin/releases/tag/v0.5.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pre-built kubevirt-velero-plugin container is published on Quay.io and can be viewed at:&lt;br&gt;
+&lt;a href=&quot;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&quot; rel=&quot;nofollow&quot;&gt;https://quay.io/repository/kubevirt/kubevirt-velero-plugin/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Notable changes&lt;/h2&gt;
+&lt;p&gt;Backup VM and VMI object graph&lt;br&gt;
+Consider excludeded resources by its full name&lt;br&gt;
+Add yamls to be used to make sure backup integration works properly&lt;br&gt;
+Adjust plugin to run with Datavolume garbage collection&lt;/p&gt;
+&lt;h2&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;5 people contributed to this release:&lt;/p&gt;
+&lt;div class=&quot;snippet-clipboard-content notranslate position-relative overflow-auto&quot; data-snippet-clipboard-copy-content=&quot;     5	Shelly Kagan &amp;lt;78472213+ShellyKa13@users.noreply.github.com&amp;gt;
+     3	Bartosz Rybacki &amp;lt;brybacki@redhat.com&amp;gt;
+     1	dalia-frank &amp;lt;65129017+dalia-frank@users.noreply.github.com&amp;gt;
+     1	menya &amp;lt;lxs137@hotmail.com&amp;gt;&quot;&gt;&lt;pre class=&quot;notranslate&quot;&gt;&lt;code&gt;     5	Shelly Kagan &amp;lt;78472213+ShellyKa13@users.noreply.github.com&amp;gt;
+     3	Bartosz Rybacki &amp;lt;brybacki@redhat.com&amp;gt;
+     1	dalia-frank &amp;lt;65129017+dalia-frank@users.noreply.github.com&amp;gt;
+     1	menya &amp;lt;lxs137@hotmail.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mailing list: &lt;a href=&quot;https://groups.google.com/forum/#!forum/kubevirt-dev&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!forum/kubevirt-dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirtkubevirt-velero-plugin/blob/main/hack/README.md&quot;&gt;How to contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kubevirt/kubevirt-velero-plugin/blob/main/LICENSE&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>kubevirt-bot</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/25687724?s=60&amp;v=4"/>
+  </entry>
+</feed>

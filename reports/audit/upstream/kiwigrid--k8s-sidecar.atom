@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/kiwigrid/k8s-sidecar/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/kiwigrid/k8s-sidecar/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/kiwigrid/k8s-sidecar/releases.atom"/>
+  <title>Release notes from k8s-sidecar</title>
+  <updated>2026-10-08T14:03:25Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/131828020/2.14.1</id>
+    <updated>2026-10-08T14:19:54Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kiwigrid/k8s-sidecar/releases/tag/2.14.1"/>
+    <title>v2.14.1</title>
+    <content type="html">&lt;h2&gt;📦 Dependencies&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;build(deps): bump kubernetes from 35.0.0 to 36.0.3
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5740901972&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/640&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/640/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/640&quot;&gt;#640&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;ℹ️ Notes&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;kubernetes&lt;/code&gt; 36 ships an additional asyncio client and makes &lt;code&gt;aiohttp&lt;/code&gt; a required dependency, although the sidecar only uses the synchronous client. As a result, the image now also contains &lt;code&gt;aiohttp&lt;/code&gt;, &lt;code&gt;multidict&lt;/code&gt;, &lt;code&gt;yarl&lt;/code&gt;, &lt;code&gt;frozenlist&lt;/code&gt;, &lt;code&gt;propcache&lt;/code&gt;, &lt;code&gt;aiosignal&lt;/code&gt;, &lt;code&gt;aiohappyeyeballs&lt;/code&gt; and &lt;code&gt;attrs&lt;/code&gt;, which you will see in SBOMs and vulnerability scans. The image grows from about 85 MB to 116 MB unpacked (25 → 29 MB compressed, amd64).&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/131828020/2.14.0</id>
+    <updated>2026-10-08T12:54:46Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kiwigrid/k8s-sidecar/releases/tag/2.14.0"/>
+    <title>v2.14.0</title>
+    <content type="html">&lt;h2&gt;🚀 Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: move to stable Python 3.14 base image, fix charset segfault, re-add s390x
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5761778179&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/654&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/654/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/654&quot;&gt;#654&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;🐛 Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: move to stable Python 3.14 base image, fix charset segfault, re-add s390x
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5761778179&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/654&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/654/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/654&quot;&gt;#654&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/131828020/2.13.4</id>
+    <updated>2026-10-08T12:33:44Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kiwigrid/k8s-sidecar/releases/tag/2.13.4"/>
+    <title>v2.13.4</title>
+    <content type="html">&lt;h2&gt;🚀 Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;build: drop Rust and C++ toolchain from the image build
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5760252816&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/653&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/653/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/653&quot;&gt;#653&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/131828020/2.13.3</id>
+    <updated>2026-10-07T11:52:16Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kiwigrid/k8s-sidecar/releases/tag/2.13.3"/>
+    <title>v2.13.3</title>
+    <content type="html">&lt;h2&gt;📦 Dependencies&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;build(deps): remove unused pyasn1 pin
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5744226925&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/652&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/652/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/652&quot;&gt;#652&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/131828020/2.13.2</id>
+    <updated>2026-10-07T11:15:03Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kiwigrid/k8s-sidecar/releases/tag/2.13.2"/>
+    <title>v2.13.2</title>
+    <content type="html">&lt;h2&gt;🐛 Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ci: serialize releases and only release on an explicit bump token
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5742162556&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/647&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/647/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/647&quot;&gt;#647&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ci: pin release changelog range to the tags of the current run
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5742907807&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/648&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/648/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/648&quot;&gt;#648&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ci: evaluate only the merge commit message for the release bump
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5743338744&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/651&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/651/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/651&quot;&gt;#651&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;💬 Other&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;docs: update tested Kubernetes range in README to v1.25-v1.37
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5743134049&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/649&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/649/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/649&quot;&gt;#649&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;📦 Dependencies&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;build(deps): bump kubernetes from 32.0.1 to 35.0.0
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5743184351&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/650&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/650/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/650&quot;&gt;#650&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/131828020/2.13.1</id>
+    <updated>2026-10-07T09:44:13Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kiwigrid/k8s-sidecar/releases/tag/2.13.1"/>
+    <title>v2.13.1</title>
+    <content type="html">&lt;h2&gt;📦 Dependencies&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;build(deps): bump requests from 2.33.1 to 2.34.2
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5740899919&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/638&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/638/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/638&quot;&gt;#638&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/131828020/2.13.0</id>
+    <updated>2026-10-07T09:47:56Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kiwigrid/k8s-sidecar/releases/tag/2.13.0"/>
+    <title>v2.13.0</title>
+    <content type="html">&lt;h2&gt;📦 Dependencies&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;build(deps-dev): bump setuptools from 83.0.0 to 84.0.0
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5740901786&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/639&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/639/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/639&quot;&gt;#639&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/131828020/2.12.0</id>
+    <updated>2026-10-07T09:47:55Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kiwigrid/k8s-sidecar/releases/tag/2.12.0"/>
+    <title>v2.12.0</title>
+    <content type="html">&lt;h2&gt;🐛 Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ci: stop release test workflow from pushing images to public registries
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5740809037&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/637&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/637/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/637&quot;&gt;#637&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ci: point Dependabot pip updates at pyproject.toml in repo root
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5740808025&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/636&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/636/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/636&quot;&gt;#636&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;📦 Dependencies&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;build(deps): bump python-json-logger from 4.1.0 to 4.2.0
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5740903179&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/641&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/641/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/641&quot;&gt;#641&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;build(deps): bump docker/bake-action from 7.3.0 to 7.4.0
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5740920383&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/644&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/644/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/644&quot;&gt;#644&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;build(deps): bump docker/build-push-action from 7.3.0 to 7.4.0
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5740921555&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/645&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/645/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/645&quot;&gt;#645&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;build(deps): bump the codeql-action group with 2 updates
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5740915895&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/642&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/642/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/642&quot;&gt;#642&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;build(deps): bump mikepenz/release-changelog-builder-action from 6.3.0 to 6.4.0
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5740917587&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/643&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/643/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/643&quot;&gt;#643&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ci: bump helm/kind-action to v1.15.1 and test against k8s 1.36/1.37
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5378539843&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/630&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/630/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/630&quot;&gt;#630&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;build(deps): bump docker/setup-qemu-action from 4.2.0 to 4.4.0
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5531755828&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/634&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/634/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/634&quot;&gt;#634&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;build(deps): bump docker/setup-buildx-action from 4.3.0 to 4.4.1
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5531758392&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/635&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/635/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/635&quot;&gt;#635&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;build(deps): bump softprops/action-gh-release from 3.0.2 to 3.0.3
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5378541166&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/631&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/631/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/631&quot;&gt;#631&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;build(deps): bump the codeql-action group with 2 updates
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5453926189&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/632&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/632/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/632&quot;&gt;#632&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/131828020/2.11.2</id>
+    <updated>2026-09-04T12:06:05Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kiwigrid/k8s-sidecar/releases/tag/2.11.2"/>
+    <title>v2.11.2</title>
+    <content type="html">&lt;h2&gt;🐛 Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: detect a stalled watch by tracking K8s contact per watcher thread
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5309558124&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/626&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/626/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/626&quot;&gt;#626&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/131828020/2.11.1</id>
+    <updated>2026-09-04T09:21:52Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/kiwigrid/k8s-sidecar/releases/tag/2.11.1"/>
+    <title>v2.11.1</title>
+    <content type="html">&lt;h2&gt;🐛 Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: pass folder_per_namespace to list_resources() in the SLEEP/resource_name watch loop
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5345234831&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/628&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/628/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/628&quot;&gt;#628&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;g-emoji class=&quot;g-emoji&quot; alias=&quot;warning&quot;&gt;⚠️&lt;/g-emoji&gt; Regression notice:&lt;br&gt;
+&lt;a href=&quot;https://github.com/kiwigrid/k8s-sidecar/releases/tag/2.11.0&quot;&gt;2.11.0&lt;/a&gt; broke &lt;code&gt;METHOD=SLEEP&lt;/code&gt; and single-namespace &lt;code&gt;RESOURCE_NAME&lt;/code&gt; watches: &lt;code&gt;list_resources()&lt;/code&gt; was called with one argument too few. &lt;a href=&quot;https://github.com/kiwigrid/k8s-sidecar/releases/tag/2.10.3&quot;&gt;2.10.3&lt;/a&gt; is the last unaffected release. Anyone on 2.11.0 should upgrade to 2.11.1 immediately. See &lt;a class=&quot;issue-link js-issue-link&quot; data-error-text=&quot;Failed to load title&quot; data-id=&quot;5345234831&quot; data-permission-text=&quot;Title is private&quot; data-url=&quot;https://github.com/kiwigrid/k8s-sidecar/issues/628&quot; data-hovercard-type=&quot;pull_request&quot; data-hovercard-url=&quot;/kiwigrid/k8s-sidecar/pull/628/hovercard&quot; href=&quot;https://github.com/kiwigrid/k8s-sidecar/pull/628&quot;&gt;#628&lt;/a&gt; for the full analysis.&lt;/p&gt;</content>
+    <author>
+      <name>github-actions[bot]</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/in/15368?s=60&amp;v=4"/>
+  </entry>
+</feed>

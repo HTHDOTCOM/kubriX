@@ -1,0 +1,6 @@
+2026-10-14T16:46:53Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-14T16:47:05Z	INFO	Detected OS	family="ubuntu" version="22.04"
+2026-10-14T16:47:05Z	INFO	[ubuntu] Detecting vulnerabilities...	os_version="22.04" pkg_num=10
+2026-10-14T16:47:05Z	INFO	Number of language-specific files	num=4
+2026-10-14T16:47:05Z	INFO	[gobinary] Detecting vulnerabilities...
+2026-10-14T16:47:05Z	WARN	Using severities from other vendors for some vulnerabilities. Read https://trivy.dev/docs/v0.76/guide/scanner/vulnerability#severity-selection for details.

@@ -1,0 +1,3 @@
+2026-10-14T16:47:29Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-10-14T16:47:29Z	FATAL	Fatal error	run error: image scan error: scan error: unable to initialize a scan service: unable to initialize artifact: unable to initialize container image: unable to find the specified image "icr.io/ibm-finops/agent@sha256:30cf33635211018c3de11a30c058130ceac83d5de41665f5586fe2ccb69df2f7" in ["remote"]: 1 error occurred:
+	* remote error: Get "https://icr.io/v2/": Forbidden
