@@ -240,7 +240,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/falco-exporter</code></h3>
-<h4>Vulnerabilities (60)</h4>
+<h4>Vulnerabilities (65)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -304,6 +304,20 @@
         <td>HIGH</td>
         <td>v0.7.0</td>
         <td>0.56.0</td>
+    </tr>
+    <tr>
+        <td><code>golang.org/x/net</code></td>
+        <td>CVE-2026-78669</td>
+        <td>HIGH</td>
+        <td>v0.7.0</td>
+        <td>0.60.0</td>
+    </tr>
+    <tr>
+        <td><code>golang.org/x/text</code></td>
+        <td>CVE-2026-56851</td>
+        <td>HIGH</td>
+        <td>v0.7.0</td>
+        <td>0.41.0</td>
     </tr>
     <tr>
         <td><code>golang.org/x/text</code></td>
@@ -669,6 +683,27 @@
         <td>v1.17.13</td>
         <td>1.25.13, 1.26.6, 1.27.0-rc.3</td>
     </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-78667</td>
+        <td>HIGH</td>
+        <td>v1.17.13</td>
+        <td>1.26.9, 1.27.2</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-78669</td>
+        <td>HIGH</td>
+        <td>v1.17.13</td>
+        <td>1.26.9, 1.27.2</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-97031</td>
+        <td>HIGH</td>
+        <td>v1.17.13</td>
+        <td>1.26.9, 1.27.2</td>
+    </tr>
 </table>
 <h4>No Misconfigurations found</h4>
 <h2>Image <code>docker.io/falcosecurity/falco:0.43.1</code></h2>
@@ -852,7 +887,7 @@
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/falcoctl</code></h3>
-<h4>Vulnerabilities (56)</h4>
+<h4>Vulnerabilities (61)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1058,6 +1093,20 @@
         <td>0.56.0</td>
     </tr>
     <tr>
+        <td><code>golang.org/x/net</code></td>
+        <td>CVE-2026-78669</td>
+        <td>HIGH</td>
+        <td>v0.48.0</td>
+        <td>0.60.0</td>
+    </tr>
+    <tr>
+        <td><code>golang.org/x/text</code></td>
+        <td>CVE-2026-56851</td>
+        <td>HIGH</td>
+        <td>v0.32.0</td>
+        <td>0.41.0</td>
+    </tr>
+    <tr>
         <td><code>golang.org/x/text</code></td>
         <td>CVE-2026-56852</td>
         <td>HIGH</td>
@@ -1253,6 +1302,27 @@
         <td>v1.25.6</td>
         <td>1.25.13, 1.26.6, 1.27.0-rc.3</td>
     </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-78667</td>
+        <td>HIGH</td>
+        <td>v1.25.6</td>
+        <td>1.26.9, 1.27.2</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-78669</td>
+        <td>HIGH</td>
+        <td>v1.25.6</td>
+        <td>1.26.9, 1.27.2</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-97031</td>
+        <td>HIGH</td>
+        <td>v1.25.6</td>
+        <td>1.26.9, 1.27.2</td>
+    </tr>
 </table>
 <h4>No Misconfigurations found</h4>
 <h2>Image <code>docker.io/falcosecurity/falcosidekick-ui:2.2.0</code></h2>
@@ -1261,7 +1331,7 @@
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>app/falcosidekick-ui</code></h3>
-<h4>Vulnerabilities (51)</h4>
+<h4>Vulnerabilities (56)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1430,6 +1500,20 @@
         <td>HIGH</td>
         <td>v0.14.0</td>
         <td>0.56.0</td>
+    </tr>
+    <tr>
+        <td><code>golang.org/x/net</code></td>
+        <td>CVE-2026-78669</td>
+        <td>HIGH</td>
+        <td>v0.14.0</td>
+        <td>0.60.0</td>
+    </tr>
+    <tr>
+        <td><code>golang.org/x/text</code></td>
+        <td>CVE-2026-56851</td>
+        <td>HIGH</td>
+        <td>v0.12.0</td>
+        <td>0.41.0</td>
     </tr>
     <tr>
         <td><code>golang.org/x/text</code></td>
@@ -1627,6 +1711,27 @@
         <td>v1.20.8</td>
         <td>1.25.13, 1.26.6, 1.27.0-rc.3</td>
     </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-78667</td>
+        <td>HIGH</td>
+        <td>v1.20.8</td>
+        <td>1.26.9, 1.27.2</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-78669</td>
+        <td>HIGH</td>
+        <td>v1.20.8</td>
+        <td>1.26.9, 1.27.2</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-97031</td>
+        <td>HIGH</td>
+        <td>v1.20.8</td>
+        <td>1.26.9, 1.27.2</td>
+    </tr>
 </table>
 <h4>No Misconfigurations found</h4>
 <h2>Image <code>docker.io/falcosecurity/falcosidekick:2.32.0</code></h2>
@@ -1791,7 +1896,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>app/falcosidekick</code></h3>
-<h4>Vulnerabilities (61)</h4>
+<h4>Vulnerabilities (66)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2039,6 +2144,20 @@
         <td>0.56.0</td>
     </tr>
     <tr>
+        <td><code>golang.org/x/net</code></td>
+        <td>CVE-2026-78669</td>
+        <td>HIGH</td>
+        <td>v0.43.0</td>
+        <td>0.60.0</td>
+    </tr>
+    <tr>
+        <td><code>golang.org/x/text</code></td>
+        <td>CVE-2026-56851</td>
+        <td>HIGH</td>
+        <td>v0.28.0</td>
+        <td>0.41.0</td>
+    </tr>
+    <tr>
         <td><code>golang.org/x/text</code></td>
         <td>CVE-2026-56852</td>
         <td>HIGH</td>
@@ -2227,11 +2346,32 @@
         <td>v1.25.1</td>
         <td>1.25.13, 1.26.6, 1.27.0-rc.3</td>
     </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-78667</td>
+        <td>HIGH</td>
+        <td>v1.25.1</td>
+        <td>1.26.9, 1.27.2</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-78669</td>
+        <td>HIGH</td>
+        <td>v1.25.1</td>
+        <td>1.26.9, 1.27.2</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-97031</td>
+        <td>HIGH</td>
+        <td>v1.25.1</td>
+        <td>1.26.9, 1.27.2</td>
+    </tr>
 </table>
 <h4>No Misconfigurations found</h4>
-<h2>Image <code>docker.io/falcosecurity/k8s-metacollector:0.1.4</code></h2>
+<h2>Image <code>docker.io/falcosecurity/k8s-metacollector:0.1.5</code></h2>
 
-<h3>Target <code>docker.io/falcosecurity/k8s-metacollector:0.1.4 (debian 13.6)</code></h3>
+<h3>Target <code>docker.io/falcosecurity/k8s-metacollector:0.1.5 (debian 13.7)</code></h3>
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>meta-collector</code></h3>
