@@ -160,7 +160,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>Node.js</code></h3>
-<h4>Vulnerabilities (277)</h4>
+<h4>Vulnerabilities (278)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1008,6 +1008,13 @@
         <td>HIGH</td>
         <td>5.0.0</td>
         <td>5.0.2</td>
+    </tr>
+    <tr>
+        <td><code>markdown-it</code></td>
+        <td>CVE-2026-111759</td>
+        <td>HIGH</td>
+        <td>14.1.1</td>
+        <td>15.0.2, 14.3.2</td>
     </tr>
     <tr>
         <td><code>multer</code></td>

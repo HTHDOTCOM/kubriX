@@ -887,7 +887,7 @@
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/falcoctl</code></h3>
-<h4>Vulnerabilities (61)</h4>
+<h4>Vulnerabilities (62)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -923,6 +923,13 @@
         <td>HIGH</td>
         <td>v4.1.3</td>
         <td>4.1.4</td>
+    </tr>
+    <tr>
+        <td><code>github.com/klauspost/compress</code></td>
+        <td>CVE-2026-63209</td>
+        <td>HIGH</td>
+        <td>v1.18.2</td>
+        <td>1.18.7</td>
     </tr>
     <tr>
         <td><code>github.com/moby/go-archive</code></td>
@@ -1896,7 +1903,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>app/falcosidekick</code></h3>
-<h4>Vulnerabilities (66)</h4>
+<h4>Vulnerabilities (67)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1939,6 +1946,13 @@
         <td>CRITICAL</td>
         <td>v5.7.6</td>
         <td>5.9.0</td>
+    </tr>
+    <tr>
+        <td><code>github.com/klauspost/compress</code></td>
+        <td>CVE-2026-63209</td>
+        <td>HIGH</td>
+        <td>v1.18.0</td>
+        <td>1.18.7</td>
     </tr>
     <tr>
         <td><code>github.com/rabbitmq/amqp091-go</code></td>
