@@ -111,7 +111,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>go/bin/app</code></h3>
-<h4>Vulnerabilities (21)</h4>
+<h4>Vulnerabilities (22)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -182,6 +182,13 @@
         <td>HIGH</td>
         <td>v1.79.3</td>
         <td>1.82.1</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-111943</td>
+        <td>HIGH</td>
+        <td>v1.26.4</td>
+        <td>1.26.10, 1.27.3</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -634,7 +641,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>go/bin/app</code></h3>
-<h4>Vulnerabilities (55)</h4>
+<h4>Vulnerabilities (56)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -876,6 +883,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2026-111943</td>
+        <td>HIGH</td>
+        <td>v1.24.11</td>
+        <td>1.26.10, 1.27.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2026-25679</td>
         <td>HIGH</td>
         <td>v1.24.11</td>
@@ -1033,7 +1047,7 @@
 <h2>Image <code>icr.io/kubecost/frontend:2.9.7</code></h2>
 
 <h3>Target <code>icr.io/kubecost/frontend:2.9.7 (redhat 9.8)</code></h3>
-<h4>Vulnerabilities (65)</h4>
+<h4>Vulnerabilities (68)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1310,6 +1324,13 @@
     </tr>
     <tr>
         <td><code>nginx</code></td>
+        <td>CVE-2026-93479</td>
+        <td>HIGH</td>
+        <td>2:1.20.1-28.el9_8.2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>nginx</code></td>
         <td>CVE-2026-97205</td>
         <td>HIGH</td>
         <td>2:1.20.1-28.el9_8.2</td>
@@ -1345,6 +1366,13 @@
     </tr>
     <tr>
         <td><code>nginx-core</code></td>
+        <td>CVE-2026-93479</td>
+        <td>HIGH</td>
+        <td>2:1.20.1-28.el9_8.2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>nginx-core</code></td>
         <td>CVE-2026-97205</td>
         <td>HIGH</td>
         <td>2:1.20.1-28.el9_8.2</td>
@@ -1377,6 +1405,13 @@
         <td>HIGH</td>
         <td>2:1.20.1-28.el9_8.2</td>
         <td>2:1.20.1-28.el9_8.3</td>
+    </tr>
+    <tr>
+        <td><code>nginx-filesystem</code></td>
+        <td>CVE-2026-93479</td>
+        <td>HIGH</td>
+        <td>2:1.20.1-28.el9_8.2</td>
+        <td></td>
     </tr>
     <tr>
         <td><code>nginx-filesystem</code></td>
@@ -1502,7 +1537,7 @@
 <h2>Image <code>icr.io/kubecost/modeling:v0.1.34</code></h2>
 
 <h3>Target <code>icr.io/kubecost/modeling:v0.1.34 (redhat 9.7)</code></h3>
-<h4>Vulnerabilities (72)</h4>
+<h4>Vulnerabilities (70)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1925,13 +1960,6 @@
         <td>3.12.13-2.el9_8</td>
     </tr>
     <tr>
-        <td><code>python3.12</code></td>
-        <td>CVE-2026-79824</td>
-        <td>HIGH</td>
-        <td>3.12.12-1.el9_7</td>
-        <td></td>
-    </tr>
-    <tr>
         <td><code>python3.12-libs</code></td>
         <td>CVE-2025-59375</td>
         <td>HIGH</td>
@@ -1988,13 +2016,6 @@
         <td>3.12.13-2.el9_8</td>
     </tr>
     <tr>
-        <td><code>python3.12-libs</code></td>
-        <td>CVE-2026-79824</td>
-        <td>HIGH</td>
-        <td>3.12.12-1.el9_7</td>
-        <td></td>
-    </tr>
-    <tr>
         <td><code>python3.12-pip-wheel</code></td>
         <td>CVE-2026-57585</td>
         <td>HIGH</td>
@@ -2018,7 +2039,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>Python</code></h3>
-<h4>Vulnerabilities (7)</h4>
+<h4>Vulnerabilities (8)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2033,6 +2054,13 @@
         <td>CRITICAL</td>
         <td>4.11.0</td>
         <td>4.14.2</td>
+    </tr>
+    <tr>
+        <td><code>certifi</code></td>
+        <td>GHSA-6q48-6c7w-9gw2</td>
+        <td>CRITICAL</td>
+        <td>2025.10.5</td>
+        <td>2026.10.19</td>
     </tr>
     <tr>
         <td><code>jaraco.context</code></td>
@@ -2081,7 +2109,7 @@
 <h2>Image <code>quay.io/prometheus/prometheus:v3.9.1</code></h2>
 
 <h3>Target <code>bin/prometheus</code></h3>
-<h4>Vulnerabilities (52)</h4>
+<h4>Vulnerabilities (53)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2302,6 +2330,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2026-111943</td>
+        <td>HIGH</td>
+        <td>v1.25.5</td>
+        <td>1.26.10, 1.27.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2026-25679</td>
         <td>HIGH</td>
         <td>v1.25.5</td>
@@ -2457,7 +2492,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>bin/promtool</code></h3>
-<h4>Vulnerabilities (50)</h4>
+<h4>Vulnerabilities (51)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2661,6 +2696,13 @@
         <td>HIGH</td>
         <td>v1.25.5</td>
         <td>1.24.12, 1.25.6</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-111943</td>
+        <td>HIGH</td>
+        <td>v1.25.5</td>
+        <td>1.26.10, 1.27.3</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>

@@ -240,7 +240,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/falco-exporter</code></h3>
-<h4>Vulnerabilities (65)</h4>
+<h4>Vulnerabilities (66)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -552,6 +552,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2026-111943</td>
+        <td>HIGH</td>
+        <td>v1.17.13</td>
+        <td>1.26.10, 1.27.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2026-25679</td>
         <td>HIGH</td>
         <td>v1.17.13</td>
@@ -709,7 +716,7 @@
 <h2>Image <code>docker.io/falcosecurity/falco:0.43.1</code></h2>
 
 <h3>Target <code>docker.io/falcosecurity/falco:0.43.1 (wolfi 20230201)</code></h3>
-<h4>Vulnerabilities (23)</h4>
+<h4>Vulnerabilities (27)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -745,6 +752,27 @@
         <td>HIGH</td>
         <td>1.37.0-r57</td>
         <td>1.38.0-r0</td>
+    </tr>
+    <tr>
+        <td><code>ca-certificates</code></td>
+        <td>CVE-2026-111943</td>
+        <td>HIGH</td>
+        <td>20251003-r4</td>
+        <td>20260909-r3</td>
+    </tr>
+    <tr>
+        <td><code>ca-certificates-bundle</code></td>
+        <td>CVE-2026-111943</td>
+        <td>HIGH</td>
+        <td>20251003-r4</td>
+        <td>20260909-r3</td>
+    </tr>
+    <tr>
+        <td><code>curl</code></td>
+        <td>CVE-2026-92392</td>
+        <td>HIGH</td>
+        <td>8.19.0-r5</td>
+        <td>8.23.0-r0</td>
     </tr>
     <tr>
         <td><code>jq</code></td>
@@ -817,6 +845,13 @@
         <td>3.6.3-r4</td>
     </tr>
     <tr>
+        <td><code>libcurl-openssl4</code></td>
+        <td>CVE-2026-92392</td>
+        <td>HIGH</td>
+        <td>8.19.0-r5</td>
+        <td>8.23.0-r0</td>
+    </tr>
+    <tr>
         <td><code>libssl3</code></td>
         <td>CVE-2026-31789</td>
         <td>CRITICAL</td>
@@ -887,7 +922,7 @@
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/falcoctl</code></h3>
-<h4>Vulnerabilities (62)</h4>
+<h4>Vulnerabilities (63)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1178,6 +1213,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2026-111943</td>
+        <td>HIGH</td>
+        <td>v1.25.6</td>
+        <td>1.26.10, 1.27.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2026-25679</td>
         <td>HIGH</td>
         <td>v1.25.6</td>
@@ -1338,7 +1380,7 @@
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>app/falcosidekick-ui</code></h3>
-<h4>Vulnerabilities (56)</h4>
+<h4>Vulnerabilities (57)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1584,6 +1626,13 @@
         <td>HIGH</td>
         <td>v1.20.8</td>
         <td>1.24.11, 1.25.5</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-111943</td>
+        <td>HIGH</td>
+        <td>v1.20.8</td>
+        <td>1.26.10, 1.27.3</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -1903,7 +1952,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>app/falcosidekick</code></h3>
-<h4>Vulnerabilities (67)</h4>
+<h4>Vulnerabilities (68)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2229,6 +2278,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2026-111943</td>
+        <td>HIGH</td>
+        <td>v1.25.1</td>
+        <td>1.26.10, 1.27.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2026-25679</td>
         <td>HIGH</td>
         <td>v1.25.1</td>
@@ -2389,7 +2445,23 @@
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>meta-collector</code></h3>
-<h4>No Vulnerabilities found</h4>
+<h4>Vulnerabilities (1)</h4>
+<table>
+    <tr>
+        <th>Package</th>
+        <th>ID</th>
+        <th>Severity</th>
+        <th>Installed Version</th>
+        <th>Fixed Version</th>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-111943</td>
+        <td>HIGH</td>
+        <td>v1.27.2</td>
+        <td>1.26.10, 1.27.3</td>
+    </tr>
+</table>
 <h4>No Misconfigurations found</h4>
 <h2>Image <code>docker.io/redis/redis-stack:7.2.0-v11</code></h2>
 

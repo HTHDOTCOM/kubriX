@@ -57,23 +57,7 @@
 <h2>Image <code>curlimages/curl:latest</code></h2>
 
 <h3>Target <code>curlimages/curl:latest (alpine 3.24.2)</code></h3>
-<h4>Vulnerabilities (1)</h4>
-<table>
-    <tr>
-        <th>Package</th>
-        <th>ID</th>
-        <th>Severity</th>
-        <th>Installed Version</th>
-        <th>Fixed Version</th>
-    </tr>
-    <tr>
-        <td><code>libssh2</code></td>
-        <td>CVE-2026-58050</td>
-        <td>HIGH</td>
-        <td>1.11.1-r3</td>
-        <td>1.11.1-r4</td>
-    </tr>
-</table>
+<h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h2>Image <code>quay.io/keycloak/keycloak-operator:26.8.1</code></h2>
 
@@ -89,7 +73,7 @@
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/provider</code></h3>
-<h4>Vulnerabilities (9)</h4>
+<h4>Vulnerabilities (10)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -139,6 +123,13 @@
         <td>HIGH</td>
         <td>v0.59.0</td>
         <td>0.60.0</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-111943</td>
+        <td>HIGH</td>
+        <td>v1.26.8</td>
+        <td>1.26.10, 1.27.3</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
