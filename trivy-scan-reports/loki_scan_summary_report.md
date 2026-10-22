@@ -227,7 +227,7 @@
 <h4>No Misconfigurations found</h4>
 <h2>Image <code>docker.io/library/memcached:1.6.45-alpine</code></h2>
 
-<h3>Target <code>docker.io/library/memcached:1.6.45-alpine (alpine 3.24.2)</code></h3>
+<h3>Target <code>docker.io/library/memcached:1.6.45-alpine (alpine 3.24.3)</code></h3>
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h2>Image <code>docker.io/nginxinc/nginx-unprivileged:1.31-alpine</code></h2>

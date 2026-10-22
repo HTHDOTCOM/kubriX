@@ -295,7 +295,7 @@
         <td>CVE-2025-59375</td>
         <td>HIGH</td>
         <td>2.5.0-1+deb12u1</td>
-        <td>2.5.0-1+deb12u4</td>
+        <td>2.5.0-1+deb12u5</td>
     </tr>
     <tr>
         <td><code>libexpat1</code></td>
@@ -330,7 +330,7 @@
         <td>CVE-2026-77214</td>
         <td>HIGH</td>
         <td>2.5.0-1+deb12u1</td>
-        <td></td>
+        <td>2.5.0-1+deb12u5</td>
     </tr>
     <tr>
         <td><code>libexpat1</code></td>
@@ -2088,7 +2088,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>Node.js</code></h3>
-<h4>Vulnerabilities (58)</h4>
+<h4>Vulnerabilities (60)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2288,6 +2288,13 @@
     </tr>
     <tr>
         <td><code>next</code></td>
+        <td>GHSA-2464-fhr4-w9xw</td>
+        <td>CRITICAL</td>
+        <td>15.2.3</td>
+        <td>15.5.28, 16.4.1</td>
+    </tr>
+    <tr>
+        <td><code>next</code></td>
         <td>GHSA-2xp9-vwfh-vxw4</td>
         <td>CRITICAL</td>
         <td>15.2.3</td>
@@ -2348,6 +2355,13 @@
         <td>HIGH</td>
         <td>15.2.3</td>
         <td>15.5.21, 16.2.11</td>
+    </tr>
+    <tr>
+        <td><code>next</code></td>
+        <td>CVE-2026-94482</td>
+        <td>HIGH</td>
+        <td>15.2.3</td>
+        <td>15.5.28, 16.4.1</td>
     </tr>
     <tr>
         <td><code>next</code></td>
@@ -2996,7 +3010,7 @@
         <td>CVE-2025-59375</td>
         <td>HIGH</td>
         <td>2.5.0-1+deb12u1</td>
-        <td>2.5.0-1+deb12u4</td>
+        <td>2.5.0-1+deb12u5</td>
     </tr>
     <tr>
         <td><code>libexpat1</code></td>
@@ -3031,7 +3045,7 @@
         <td>CVE-2026-77214</td>
         <td>HIGH</td>
         <td>2.5.0-1+deb12u1</td>
-        <td></td>
+        <td>2.5.0-1+deb12u5</td>
     </tr>
     <tr>
         <td><code>libexpat1</code></td>
