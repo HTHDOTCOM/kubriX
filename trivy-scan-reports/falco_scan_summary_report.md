@@ -919,23 +919,7 @@
 <h2>Image <code>docker.io/falcosecurity/falcoctl:0.12.2</code></h2>
 
 <h3>Target <code>docker.io/falcosecurity/falcoctl:0.12.2 (wolfi 20230201)</code></h3>
-<h4>Vulnerabilities (1)</h4>
-<table>
-    <tr>
-        <th>Package</th>
-        <th>ID</th>
-        <th>Severity</th>
-        <th>Installed Version</th>
-        <th>Fixed Version</th>
-    </tr>
-    <tr>
-        <td><code>ca-certificates-bundle</code></td>
-        <td>CVE-2026-111943</td>
-        <td>HIGH</td>
-        <td>20251003-r2</td>
-        <td>20260909-r3</td>
-    </tr>
-</table>
+<h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/falcoctl</code></h3>
 <h4>Vulnerabilities (63)</h4>

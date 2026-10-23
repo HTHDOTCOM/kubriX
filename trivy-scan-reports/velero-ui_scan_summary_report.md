@@ -1,7 +1,7 @@
 <h2>Image <code>docker.io/dserio83/velero-api:0.3.1</code></h2>
 
 <h3>Target <code>docker.io/dserio83/velero-api:0.3.1 (debian 12.11)</code></h3>
-<h4>Vulnerabilities (219)</h4>
+<h4>Vulnerabilities (220)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -183,6 +183,13 @@
         <td>CVE-2026-78410</td>
         <td>HIGH</td>
         <td>2.38.1-5+deb12u3</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>libbrotli1</code></td>
+        <td>CVE-2026-111497</td>
+        <td>CRITICAL</td>
+        <td>1.0.9-2+b6</td>
         <td></td>
     </tr>
     <tr>
@@ -2716,7 +2723,7 @@
 <h2>Image <code>docker.io/dserio83/velero-watchdog:0.1.8</code></h2>
 
 <h3>Target <code>docker.io/dserio83/velero-watchdog:0.1.8 (debian 12.10)</code></h3>
-<h4>Vulnerabilities (177)</h4>
+<h4>Vulnerabilities (178)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2898,6 +2905,13 @@
         <td>CVE-2026-78410</td>
         <td>HIGH</td>
         <td>2.38.1-5+deb12u3</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>libbrotli1</code></td>
+        <td>CVE-2026-111497</td>
+        <td>CRITICAL</td>
+        <td>1.0.9-2+b6</td>
         <td></td>
     </tr>
     <tr>
