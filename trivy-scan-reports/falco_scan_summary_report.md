@@ -716,7 +716,7 @@
 <h2>Image <code>docker.io/falcosecurity/falco:0.43.1</code></h2>
 
 <h3>Target <code>docker.io/falcosecurity/falco:0.43.1 (wolfi 20230201)</code></h3>
-<h4>Vulnerabilities (7)</h4>
+<h4>Vulnerabilities (29)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -761,6 +761,13 @@
         <td>20260909-r3</td>
     </tr>
     <tr>
+        <td><code>ca-certificates-bundle</code></td>
+        <td>CVE-2026-111943</td>
+        <td>HIGH</td>
+        <td>20251003-r4</td>
+        <td>20260909-r3</td>
+    </tr>
+    <tr>
         <td><code>curl</code></td>
         <td>CVE-2026-92392</td>
         <td>HIGH</td>
@@ -773,6 +780,153 @@
         <td>HIGH</td>
         <td>1.8.1-r4</td>
         <td>1.8.1-r5</td>
+    </tr>
+    <tr>
+        <td><code>libbrotlicommon1</code></td>
+        <td>CVE-2026-111497</td>
+        <td>HIGH</td>
+        <td>1.2.0-r2</td>
+        <td>1.2.0-r7</td>
+    </tr>
+    <tr>
+        <td><code>libbrotlidec1</code></td>
+        <td>CVE-2026-111497</td>
+        <td>HIGH</td>
+        <td>1.2.0-r2</td>
+        <td>1.2.0-r7</td>
+    </tr>
+    <tr>
+        <td><code>libcrypto3</code></td>
+        <td>CVE-2026-31789</td>
+        <td>CRITICAL</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.2-r0</td>
+    </tr>
+    <tr>
+        <td><code>libcrypto3</code></td>
+        <td>CVE-2026-14456</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.3-r5</td>
+    </tr>
+    <tr>
+        <td><code>libcrypto3</code></td>
+        <td>CVE-2026-28386</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.2-r0</td>
+    </tr>
+    <tr>
+        <td><code>libcrypto3</code></td>
+        <td>CVE-2026-28387</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.2-r0</td>
+    </tr>
+    <tr>
+        <td><code>libcrypto3</code></td>
+        <td>CVE-2026-28388</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.2-r0</td>
+    </tr>
+    <tr>
+        <td><code>libcrypto3</code></td>
+        <td>CVE-2026-28389</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.2-r0</td>
+    </tr>
+    <tr>
+        <td><code>libcrypto3</code></td>
+        <td>CVE-2026-28390</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.2-r0</td>
+    </tr>
+    <tr>
+        <td><code>libcrypto3</code></td>
+        <td>CVE-2026-45447</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.3-r0</td>
+    </tr>
+    <tr>
+        <td><code>libcrypto3</code></td>
+        <td>CVE-2026-54876</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.3-r4</td>
+    </tr>
+    <tr>
+        <td><code>libcurl-openssl4</code></td>
+        <td>CVE-2026-92392</td>
+        <td>HIGH</td>
+        <td>8.19.0-r5</td>
+        <td>8.23.0-r0</td>
+    </tr>
+    <tr>
+        <td><code>libssl3</code></td>
+        <td>CVE-2026-31789</td>
+        <td>CRITICAL</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.2-r0</td>
+    </tr>
+    <tr>
+        <td><code>libssl3</code></td>
+        <td>CVE-2026-14456</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.3-r5</td>
+    </tr>
+    <tr>
+        <td><code>libssl3</code></td>
+        <td>CVE-2026-28386</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.2-r0</td>
+    </tr>
+    <tr>
+        <td><code>libssl3</code></td>
+        <td>CVE-2026-28387</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.2-r0</td>
+    </tr>
+    <tr>
+        <td><code>libssl3</code></td>
+        <td>CVE-2026-28388</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.2-r0</td>
+    </tr>
+    <tr>
+        <td><code>libssl3</code></td>
+        <td>CVE-2026-28389</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.2-r0</td>
+    </tr>
+    <tr>
+        <td><code>libssl3</code></td>
+        <td>CVE-2026-28390</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.2-r0</td>
+    </tr>
+    <tr>
+        <td><code>libssl3</code></td>
+        <td>CVE-2026-45447</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.3-r0</td>
+    </tr>
+    <tr>
+        <td><code>libssl3</code></td>
+        <td>CVE-2026-54876</td>
+        <td>HIGH</td>
+        <td>3.6.1-r4</td>
+        <td>3.6.3-r4</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
