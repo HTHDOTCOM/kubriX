@@ -918,7 +918,7 @@
         <td>CVE-2026-84782</td>
         <td>HIGH</td>
         <td>3.0.16-1~deb12u1</td>
-        <td></td>
+        <td>3.0.22-1~deb12u2</td>
     </tr>
     <tr>
         <td><code>libsystemd0</code></td>
@@ -1100,7 +1100,7 @@
         <td>CVE-2026-84782</td>
         <td>HIGH</td>
         <td>3.0.16-1~deb12u1</td>
-        <td></td>
+        <td>3.0.22-1~deb12u2</td>
     </tr>
     <tr>
         <td><code>perl</code></td>
@@ -1609,7 +1609,7 @@
         <td>GHSA-6q48-6c7w-9gw2</td>
         <td>CRITICAL</td>
         <td>2025.1.31</td>
-        <td>2026.10.19</td>
+        <td>2026.10.18</td>
     </tr>
     <tr>
         <td><code>ecdsa</code></td>
@@ -1761,7 +1761,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/kubectl</code></h3>
-<h4>Vulnerabilities (38)</h4>
+<h4>Vulnerabilities (37)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1874,13 +1874,6 @@
         <td>HIGH</td>
         <td>v1.22.5</td>
         <td>1.24.11, 1.25.5</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-111943</td>
-        <td>HIGH</td>
-        <td>v1.22.5</td>
-        <td>1.26.10, 1.27.3</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -2527,7 +2520,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>app/node_modules/@esbuild/linux-x64/bin/esbuild</code></h3>
-<h4>Vulnerabilities (26)</h4>
+<h4>Vulnerabilities (25)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2556,13 +2549,6 @@
         <td>HIGH</td>
         <td>v1.23.7</td>
         <td>1.24.11, 1.25.5</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-111943</td>
-        <td>HIGH</td>
-        <td>v1.23.7</td>
-        <td>1.26.10, 1.27.3</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -3500,7 +3486,7 @@
         <td>CVE-2026-84782</td>
         <td>HIGH</td>
         <td>3.0.15-1~deb12u1</td>
-        <td></td>
+        <td>3.0.22-1~deb12u2</td>
     </tr>
     <tr>
         <td><code>libsystemd0</code></td>
@@ -3682,7 +3668,7 @@
         <td>CVE-2026-84782</td>
         <td>HIGH</td>
         <td>3.0.15-1~deb12u1</td>
-        <td></td>
+        <td>3.0.22-1~deb12u2</td>
     </tr>
     <tr>
         <td><code>perl</code></td>
@@ -4002,7 +3988,7 @@
         <td>GHSA-6q48-6c7w-9gw2</td>
         <td>CRITICAL</td>
         <td>2025.1.31</td>
-        <td>2026.10.19</td>
+        <td>2026.10.18</td>
     </tr>
     <tr>
         <td><code>h11</code></td>
