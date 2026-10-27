@@ -57,7 +57,7 @@
 <h2>Image <code>ghcr.io/suxess-it/sx-backstage:v1.51.2</code></h2>
 
 <h3>Target <code>ghcr.io/suxess-it/sx-backstage:v1.51.2 (wolfi 20230201)</code></h3>
-<h4>Vulnerabilities (21)</h4>
+<h4>Vulnerabilities (16)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -67,25 +67,18 @@
         <th>Fixed Version</th>
     </tr>
     <tr>
-        <td><code>libbrotlicommon1</code></td>
-        <td>CVE-2026-111497</td>
-        <td>HIGH</td>
-        <td>1.2.0-r3</td>
-        <td>1.2.0-r7</td>
+        <td><code>node-gyp</code></td>
+        <td>CVE-2026-109383</td>
+        <td>CRITICAL</td>
+        <td>13.0.1-r1</td>
+        <td>13.1.0-r1</td>
     </tr>
     <tr>
-        <td><code>libbrotlidec1</code></td>
-        <td>CVE-2026-111497</td>
-        <td>HIGH</td>
-        <td>1.2.0-r3</td>
-        <td>1.2.0-r7</td>
-    </tr>
-    <tr>
-        <td><code>libbrotlienc1</code></td>
-        <td>CVE-2026-111497</td>
-        <td>HIGH</td>
-        <td>1.2.0-r3</td>
-        <td>1.2.0-r7</td>
+        <td><code>node-gyp</code></td>
+        <td>CVE-2026-109829</td>
+        <td>CRITICAL</td>
+        <td>13.0.1-r1</td>
+        <td>13.1.0-r1</td>
     </tr>
     <tr>
         <td><code>node-gyp</code></td>
@@ -93,6 +86,34 @@
         <td>CRITICAL</td>
         <td>13.0.1-r1</td>
         <td>13.0.2-r1</td>
+    </tr>
+    <tr>
+        <td><code>node-gyp</code></td>
+        <td>CVE-2026-109841</td>
+        <td>HIGH</td>
+        <td>13.0.1-r1</td>
+        <td>13.1.0-r1</td>
+    </tr>
+    <tr>
+        <td><code>node-gyp</code></td>
+        <td>CVE-2026-109869</td>
+        <td>HIGH</td>
+        <td>13.0.1-r1</td>
+        <td>13.1.0-r1</td>
+    </tr>
+    <tr>
+        <td><code>node-gyp</code></td>
+        <td>CVE-2026-109924</td>
+        <td>HIGH</td>
+        <td>13.0.1-r1</td>
+        <td>13.1.0-r1</td>
+    </tr>
+    <tr>
+        <td><code>node-gyp</code></td>
+        <td>CVE-2026-109932</td>
+        <td>HIGH</td>
+        <td>13.0.1-r1</td>
+        <td>13.1.0-r1</td>
     </tr>
     <tr>
         <td><code>node-gyp</code></td>
@@ -109,11 +130,18 @@
         <td>13.0.2-r1</td>
     </tr>
     <tr>
-        <td><code>nodejs-22</code></td>
-        <td>CVE-2026-105481</td>
+        <td><code>node-gyp</code></td>
+        <td>CVE-2026-87018</td>
         <td>HIGH</td>
-        <td>22.22.3-r1</td>
-        <td>22.23.4-r0</td>
+        <td>13.0.1-r1</td>
+        <td>13.1.0-r1</td>
+    </tr>
+    <tr>
+        <td><code>node-gyp</code></td>
+        <td>CVE-2026-87029</td>
+        <td>HIGH</td>
+        <td>13.0.1-r1</td>
+        <td>13.1.0-r1</td>
     </tr>
     <tr>
         <td><code>nodejs-22</code></td>
@@ -125,20 +153,6 @@
     <tr>
         <td><code>nodejs-22</code></td>
         <td>CVE-2026-106069</td>
-        <td>HIGH</td>
-        <td>22.22.3-r1</td>
-        <td>22.23.4-r0</td>
-    </tr>
-    <tr>
-        <td><code>nodejs-22</code></td>
-        <td>CVE-2026-106072</td>
-        <td>HIGH</td>
-        <td>22.22.3-r1</td>
-        <td>22.23.4-r0</td>
-    </tr>
-    <tr>
-        <td><code>nodejs-22</code></td>
-        <td>CVE-2026-106074</td>
         <td>HIGH</td>
         <td>22.22.3-r1</td>
         <td>22.23.4-r0</td>
@@ -163,55 +177,6 @@
         <td>HIGH</td>
         <td>12.0.2-r2</td>
         <td>12.2.0-r1</td>
-    </tr>
-    <tr>
-        <td><code>py3-pip-wheel</code></td>
-        <td>CVE-2026-97687</td>
-        <td>HIGH</td>
-        <td>26.2.1-r0</td>
-        <td>26.2.1-r2</td>
-    </tr>
-    <tr>
-        <td><code>py3-pip-wheel</code></td>
-        <td>CVE-2026-97689</td>
-        <td>HIGH</td>
-        <td>26.2.1-r0</td>
-        <td>26.2.1-r2</td>
-    </tr>
-    <tr>
-        <td><code>py3.13-pip</code></td>
-        <td>CVE-2026-97687</td>
-        <td>HIGH</td>
-        <td>26.2.1-r0</td>
-        <td>26.2.1-r2</td>
-    </tr>
-    <tr>
-        <td><code>py3.13-pip</code></td>
-        <td>CVE-2026-97689</td>
-        <td>HIGH</td>
-        <td>26.2.1-r0</td>
-        <td>26.2.1-r2</td>
-    </tr>
-    <tr>
-        <td><code>py3.13-pip-base</code></td>
-        <td>CVE-2026-97687</td>
-        <td>HIGH</td>
-        <td>26.2.1-r0</td>
-        <td>26.2.1-r2</td>
-    </tr>
-    <tr>
-        <td><code>py3.13-pip-base</code></td>
-        <td>CVE-2026-97689</td>
-        <td>HIGH</td>
-        <td>26.2.1-r0</td>
-        <td>26.2.1-r2</td>
-    </tr>
-    <tr>
-        <td><code>python-3.13-base</code></td>
-        <td>CVE-2026-82049</td>
-        <td>HIGH</td>
-        <td>3.13.15-r1</td>
-        <td>3.13.15_git20260912-r0</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
@@ -2839,7 +2804,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>Python</code></h3>
-<h4>Vulnerabilities (8)</h4>
+<h4>Vulnerabilities (9)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2861,6 +2826,13 @@
         <td>CRITICAL</td>
         <td>2026.6.17</td>
         <td>2026.10.18</td>
+    </tr>
+    <tr>
+        <td><code>msgpack</code></td>
+        <td>CVE-2026-114613</td>
+        <td>HIGH</td>
+        <td>1.1.2</td>
+        <td>1.2.3</td>
     </tr>
     <tr>
         <td><code>msgpack</code></td>
