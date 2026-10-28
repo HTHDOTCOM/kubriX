@@ -56,24 +56,8 @@
 <h4>No Misconfigurations found</h4>
 <h2>Image <code>curlimages/curl:latest</code></h2>
 
-<h3>Target <code>curlimages/curl:latest (alpine 3.24.2)</code></h3>
-<h4>Vulnerabilities (1)</h4>
-<table>
-    <tr>
-        <th>Package</th>
-        <th>ID</th>
-        <th>Severity</th>
-        <th>Installed Version</th>
-        <th>Fixed Version</th>
-    </tr>
-    <tr>
-        <td><code>brotli-libs</code></td>
-        <td>CVE-2026-111497</td>
-        <td>HIGH</td>
-        <td>1.2.0-r1</td>
-        <td>1.2.1-r0</td>
-    </tr>
-</table>
+<h3>Target <code>curlimages/curl:latest (alpine 3.24.3)</code></h3>
+<h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h2>Image <code>quay.io/keycloak/keycloak-operator:26.8.1</code></h2>
 
@@ -126,7 +110,7 @@
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/provider</code></h3>
-<h4>Vulnerabilities (10)</h4>
+<h4>Vulnerabilities (11)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -176,6 +160,13 @@
         <td>HIGH</td>
         <td>v0.59.0</td>
         <td>0.60.0</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.26.8</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>

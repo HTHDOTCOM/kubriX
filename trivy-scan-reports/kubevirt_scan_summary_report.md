@@ -1,7 +1,7 @@
 <h2>Image <code>quay.io/kubevirt/cdi-operator:v1.62.0</code></h2>
 
 <h3>Target <code>usr/bin/cdi-operator</code></h3>
-<h4>Vulnerabilities (26)</h4>
+<h4>Vulnerabilities (27)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -16,6 +16,13 @@
         <td>CRITICAL</td>
         <td>v1.23.6</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.23.6</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -195,7 +202,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/csv-generator</code></h3>
-<h4>Vulnerabilities (26)</h4>
+<h4>Vulnerabilities (27)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -210,6 +217,13 @@
         <td>CRITICAL</td>
         <td>v1.23.6</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.23.6</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -473,7 +487,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/csv-generator</code></h3>
-<h4>Vulnerabilities (26)</h4>
+<h4>Vulnerabilities (27)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -488,6 +502,13 @@
         <td>CRITICAL</td>
         <td>v1.23.4</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.23.4</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -667,7 +688,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/virt-operator</code></h3>
-<h4>Vulnerabilities (26)</h4>
+<h4>Vulnerabilities (27)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -682,6 +703,13 @@
         <td>CRITICAL</td>
         <td>v1.23.4</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.23.4</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>

@@ -135,7 +135,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>bin/komoplane</code></h3>
-<h4>Vulnerabilities (44)</h4>
+<h4>Vulnerabilities (45)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -311,6 +311,13 @@
         <td>HIGH</td>
         <td>v0.31.0</td>
         <td>0.39.0</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.26.2</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>

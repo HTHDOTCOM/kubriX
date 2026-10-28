@@ -74,7 +74,7 @@
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/dex</code></h3>
-<h4>Vulnerabilities (5)</h4>
+<h4>Vulnerabilities (7)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -84,11 +84,25 @@
         <th>Fixed Version</th>
     </tr>
     <tr>
+        <td><code>github.com/go-jose/go-jose/v4</code></td>
+        <td>CVE-2026-116587</td>
+        <td>HIGH</td>
+        <td>v4.1.5</td>
+        <td>4.1.6</td>
+    </tr>
+    <tr>
         <td><code>golang.org/x/net</code></td>
         <td>CVE-2026-78669</td>
         <td>HIGH</td>
         <td>v0.59.0</td>
         <td>0.60.0</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.27.1</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -121,7 +135,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/docker-entrypoint</code></h3>
-<h4>Vulnerabilities (4)</h4>
+<h4>Vulnerabilities (5)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -129,6 +143,13 @@
         <th>Severity</th>
         <th>Installed Version</th>
         <th>Fixed Version</th>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.27.1</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -161,7 +182,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/gomplate</code></h3>
-<h4>Vulnerabilities (19)</h4>
+<h4>Vulnerabilities (21)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -176,6 +197,13 @@
         <td>HIGH</td>
         <td>v5.19.1</td>
         <td>5.19.2</td>
+    </tr>
+    <tr>
+        <td><code>github.com/go-jose/go-jose/v4</code></td>
+        <td>CVE-2026-116587</td>
+        <td>HIGH</td>
+        <td>v4.1.4</td>
+        <td>4.1.6</td>
     </tr>
     <tr>
         <td><code>golang.org/x/crypto</code></td>
@@ -218,6 +246,13 @@
         <td>HIGH</td>
         <td>v1.81.1</td>
         <td>1.82.1</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.26.5</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -327,7 +362,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/pebble</code></h3>
-<h4>Vulnerabilities (26)</h4>
+<h4>Vulnerabilities (27)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -377,6 +412,13 @@
         <td>HIGH</td>
         <td>v0.40.0</td>
         <td>0.60.0</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.26.2</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -521,7 +563,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/argocd</code></h3>
-<h4>Vulnerabilities (3)</h4>
+<h4>Vulnerabilities (4)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -529,6 +571,13 @@
         <th>Severity</th>
         <th>Installed Version</th>
         <th>Fixed Version</th>
+    </tr>
+    <tr>
+        <td><code>github.com/go-jose/go-jose/v4</code></td>
+        <td>CVE-2026-116587</td>
+        <td>HIGH</td>
+        <td>v4.1.4</td>
+        <td>4.1.6</td>
     </tr>
     <tr>
         <td><code>github.com/klauspost/compress</code></td>
@@ -554,7 +603,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/git-lfs</code></h3>
-<h4>Vulnerabilities (45)</h4>
+<h4>Vulnerabilities (46)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -702,6 +751,13 @@
         <td>CRITICAL</td>
         <td>v1.25.3</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.25.3</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -881,7 +937,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/helm</code></h3>
-<h4>Vulnerabilities (20)</h4>
+<h4>Vulnerabilities (21)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -938,6 +994,13 @@
         <td>HIGH</td>
         <td>v2.6.1</td>
         <td>2.6.2</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.26.4</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -1033,7 +1096,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/kustomize</code></h3>
-<h4>Vulnerabilities (29)</h4>
+<h4>Vulnerabilities (30)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1062,6 +1125,13 @@
         <td>CRITICAL</td>
         <td>v1.24.0</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.24.0</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>

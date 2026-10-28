@@ -240,7 +240,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/falco-exporter</code></h3>
-<h4>Vulnerabilities (66)</h4>
+<h4>Vulnerabilities (67)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -388,6 +388,13 @@
         <td>CRITICAL</td>
         <td>v1.17.13</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.17.13</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -784,14 +791,14 @@
     <tr>
         <td><code>libbrotlicommon1</code></td>
         <td>CVE-2026-111497</td>
-        <td>HIGH</td>
+        <td>CRITICAL</td>
         <td>1.2.0-r2</td>
         <td>1.2.0-r7</td>
     </tr>
     <tr>
         <td><code>libbrotlidec1</code></td>
         <td>CVE-2026-111497</td>
-        <td>HIGH</td>
+        <td>CRITICAL</td>
         <td>1.2.0-r2</td>
         <td>1.2.0-r7</td>
     </tr>
@@ -933,26 +940,10 @@
 <h2>Image <code>docker.io/falcosecurity/falcoctl:0.12.2</code></h2>
 
 <h3>Target <code>docker.io/falcosecurity/falcoctl:0.12.2 (wolfi 20230201)</code></h3>
-<h4>Vulnerabilities (1)</h4>
-<table>
-    <tr>
-        <th>Package</th>
-        <th>ID</th>
-        <th>Severity</th>
-        <th>Installed Version</th>
-        <th>Fixed Version</th>
-    </tr>
-    <tr>
-        <td><code>ca-certificates-bundle</code></td>
-        <td>CVE-2026-111943</td>
-        <td>HIGH</td>
-        <td>20251003-r2</td>
-        <td>20260909-r3</td>
-    </tr>
-</table>
+<h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/falcoctl</code></h3>
-<h4>Vulnerabilities (63)</h4>
+<h4>Vulnerabilities (65)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -981,6 +972,13 @@
         <td>HIGH</td>
         <td>v28.5.2+incompatible</td>
         <td></td>
+    </tr>
+    <tr>
+        <td><code>github.com/go-jose/go-jose/v4</code></td>
+        <td>CVE-2026-116587</td>
+        <td>HIGH</td>
+        <td>v4.1.3</td>
+        <td>4.1.6</td>
     </tr>
     <tr>
         <td><code>github.com/go-jose/go-jose/v4</code></td>
@@ -1243,6 +1241,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.25.6</td>
+        <td>1.26.9, 1.27.2</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2026-111943</td>
         <td>HIGH</td>
         <td>v1.25.6</td>
@@ -1410,7 +1415,7 @@
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>app/falcosidekick-ui</code></h3>
-<h4>Vulnerabilities (60)</h4>
+<h4>Vulnerabilities (61)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1635,6 +1640,13 @@
         <td>CRITICAL</td>
         <td>v1.20.8</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.20.8</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -2003,7 +2015,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>app/falcosidekick</code></h3>
-<h4>Vulnerabilities (68)</h4>
+<h4>Vulnerabilities (70)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2025,6 +2037,13 @@
         <td>HIGH</td>
         <td>v0.21.0</td>
         <td>0.24.0</td>
+    </tr>
+    <tr>
+        <td><code>github.com/go-jose/go-jose/v4</code></td>
+        <td>CVE-2026-116587</td>
+        <td>HIGH</td>
+        <td>v4.1.1</td>
+        <td>4.1.6</td>
     </tr>
     <tr>
         <td><code>github.com/go-jose/go-jose/v4</code></td>
@@ -2312,6 +2331,13 @@
         <td>CRITICAL</td>
         <td>v1.25.1</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2026-56857</td>
+        <td>CRITICAL</td>
+        <td>v1.25.1</td>
+        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
