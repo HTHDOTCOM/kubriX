@@ -4,7 +4,7 @@
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>operator/manager_amd64</code></h3>
-<h4>Vulnerabilities (6)</h4>
+<h4>Vulnerabilities (5)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -19,13 +19,6 @@
         <td>HIGH</td>
         <td>v0.58.0</td>
         <td>0.60.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.27.1</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -58,7 +51,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>operator/manager_arm64</code></h3>
-<h4>Vulnerabilities (6)</h4>
+<h4>Vulnerabilities (5)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -73,13 +66,6 @@
         <td>HIGH</td>
         <td>v0.58.0</td>
         <td>0.60.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.27.1</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>

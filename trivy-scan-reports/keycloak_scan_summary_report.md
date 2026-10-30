@@ -83,7 +83,7 @@
         <td>CVE-2026-91415</td>
         <td>HIGH</td>
         <td>1:25.0.4.1.1-1.1.el9</td>
-        <td></td>
+        <td>1:25.0.5.0.8-1.0.el9</td>
     </tr>
     <tr>
         <td><code>java-25-openjdk-headless</code></td>
@@ -97,7 +97,7 @@
         <td>CVE-2026-91415</td>
         <td>HIGH</td>
         <td>1:25.0.4.1.1-1.1.el9</td>
-        <td></td>
+        <td>1:25.0.5.0.8-1.0.el9</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
@@ -110,7 +110,7 @@
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/provider</code></h3>
-<h4>Vulnerabilities (11)</h4>
+<h4>Vulnerabilities (10)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -160,13 +160,6 @@
         <td>HIGH</td>
         <td>v0.59.0</td>
         <td>0.60.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>

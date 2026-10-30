@@ -1,7 +1,7 @@
 <h2>Image <code>xpkg.crossplane.io/crossplane/crossplane:v2.4.2</code></h2>
 
 <h3>Target <code>nix/store/rqbzgi3apx9jfsbrld3k85rwn8s8i2pd-crossplane-linux-amd64-v2.4.2/bin/crossplane</code></h3>
-<h4>Vulnerabilities (7)</h4>
+<h4>Vulnerabilities (6)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -23,13 +23,6 @@
         <td>HIGH</td>
         <td>v0.58.0</td>
         <td>0.60.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.7</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>

@@ -160,10 +160,31 @@
     </tr>
     <tr>
         <td><code>github.com/labstack/echo/v4</code></td>
-        <td>GHSA-cxf3-9h37-7rr8</td>
+        <td>CVE-2026-118264</td>
         <td>CRITICAL</td>
         <td>v4.10.2</td>
         <td>4.16.1</td>
+    </tr>
+    <tr>
+        <td><code>github.com/labstack/echo/v4</code></td>
+        <td>CVE-2026-118260</td>
+        <td>HIGH</td>
+        <td>v4.10.2</td>
+        <td>4.16.1</td>
+    </tr>
+    <tr>
+        <td><code>github.com/labstack/echo/v4</code></td>
+        <td>CVE-2026-118261</td>
+        <td>HIGH</td>
+        <td>v4.10.2</td>
+        <td>4.16.1</td>
+    </tr>
+    <tr>
+        <td><code>github.com/labstack/echo/v4</code></td>
+        <td>CVE-2026-118650</td>
+        <td>HIGH</td>
+        <td>v4.10.2</td>
+        <td>4.16.0</td>
     </tr>
     <tr>
         <td><code>github.com/labstack/echo/v4</code></td>
@@ -171,20 +192,6 @@
         <td>HIGH</td>
         <td>v4.10.2</td>
         <td>4.15.3</td>
-    </tr>
-    <tr>
-        <td><code>github.com/labstack/echo/v4</code></td>
-        <td>GHSA-f48p-c9v4-h7xv</td>
-        <td>HIGH</td>
-        <td>v4.10.2</td>
-        <td>4.16.1</td>
-    </tr>
-    <tr>
-        <td><code>github.com/labstack/echo/v4</code></td>
-        <td>GHSA-h7wr-284f-5qvc</td>
-        <td>HIGH</td>
-        <td>v4.10.2</td>
-        <td>4.16.1</td>
     </tr>
     <tr>
         <td><code>golang.org/x/crypto</code></td>
@@ -311,13 +318,6 @@
         <td>HIGH</td>
         <td>v0.31.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.2</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>

@@ -240,7 +240,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/falco-exporter</code></h3>
-<h4>Vulnerabilities (67)</h4>
+<h4>Vulnerabilities (66)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -388,13 +388,6 @@
         <td>CRITICAL</td>
         <td>v1.17.13</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.17.13</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -723,7 +716,7 @@
 <h2>Image <code>docker.io/falcosecurity/falco:0.43.1</code></h2>
 
 <h3>Target <code>docker.io/falcosecurity/falco:0.43.1 (wolfi 20230201)</code></h3>
-<h4>Vulnerabilities (29)</h4>
+<h4>Vulnerabilities (7)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -768,13 +761,6 @@
         <td>20260909-r3</td>
     </tr>
     <tr>
-        <td><code>ca-certificates-bundle</code></td>
-        <td>CVE-2026-111943</td>
-        <td>HIGH</td>
-        <td>20251003-r4</td>
-        <td>20260909-r3</td>
-    </tr>
-    <tr>
         <td><code>curl</code></td>
         <td>CVE-2026-92392</td>
         <td>HIGH</td>
@@ -788,162 +774,31 @@
         <td>1.8.1-r4</td>
         <td>1.8.1-r5</td>
     </tr>
-    <tr>
-        <td><code>libbrotlicommon1</code></td>
-        <td>CVE-2026-111497</td>
-        <td>CRITICAL</td>
-        <td>1.2.0-r2</td>
-        <td>1.2.0-r7</td>
-    </tr>
-    <tr>
-        <td><code>libbrotlidec1</code></td>
-        <td>CVE-2026-111497</td>
-        <td>CRITICAL</td>
-        <td>1.2.0-r2</td>
-        <td>1.2.0-r7</td>
-    </tr>
-    <tr>
-        <td><code>libcrypto3</code></td>
-        <td>CVE-2026-31789</td>
-        <td>CRITICAL</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.2-r0</td>
-    </tr>
-    <tr>
-        <td><code>libcrypto3</code></td>
-        <td>CVE-2026-14456</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.3-r5</td>
-    </tr>
-    <tr>
-        <td><code>libcrypto3</code></td>
-        <td>CVE-2026-28386</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.2-r0</td>
-    </tr>
-    <tr>
-        <td><code>libcrypto3</code></td>
-        <td>CVE-2026-28387</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.2-r0</td>
-    </tr>
-    <tr>
-        <td><code>libcrypto3</code></td>
-        <td>CVE-2026-28388</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.2-r0</td>
-    </tr>
-    <tr>
-        <td><code>libcrypto3</code></td>
-        <td>CVE-2026-28389</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.2-r0</td>
-    </tr>
-    <tr>
-        <td><code>libcrypto3</code></td>
-        <td>CVE-2026-28390</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.2-r0</td>
-    </tr>
-    <tr>
-        <td><code>libcrypto3</code></td>
-        <td>CVE-2026-45447</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.3-r0</td>
-    </tr>
-    <tr>
-        <td><code>libcrypto3</code></td>
-        <td>CVE-2026-54876</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.3-r4</td>
-    </tr>
-    <tr>
-        <td><code>libcurl-openssl4</code></td>
-        <td>CVE-2026-92392</td>
-        <td>HIGH</td>
-        <td>8.19.0-r5</td>
-        <td>8.23.0-r0</td>
-    </tr>
-    <tr>
-        <td><code>libssl3</code></td>
-        <td>CVE-2026-31789</td>
-        <td>CRITICAL</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.2-r0</td>
-    </tr>
-    <tr>
-        <td><code>libssl3</code></td>
-        <td>CVE-2026-14456</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.3-r5</td>
-    </tr>
-    <tr>
-        <td><code>libssl3</code></td>
-        <td>CVE-2026-28386</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.2-r0</td>
-    </tr>
-    <tr>
-        <td><code>libssl3</code></td>
-        <td>CVE-2026-28387</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.2-r0</td>
-    </tr>
-    <tr>
-        <td><code>libssl3</code></td>
-        <td>CVE-2026-28388</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.2-r0</td>
-    </tr>
-    <tr>
-        <td><code>libssl3</code></td>
-        <td>CVE-2026-28389</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.2-r0</td>
-    </tr>
-    <tr>
-        <td><code>libssl3</code></td>
-        <td>CVE-2026-28390</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.2-r0</td>
-    </tr>
-    <tr>
-        <td><code>libssl3</code></td>
-        <td>CVE-2026-45447</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.3-r0</td>
-    </tr>
-    <tr>
-        <td><code>libssl3</code></td>
-        <td>CVE-2026-54876</td>
-        <td>HIGH</td>
-        <td>3.6.1-r4</td>
-        <td>3.6.3-r4</td>
-    </tr>
 </table>
 <h4>No Misconfigurations found</h4>
 <h2>Image <code>docker.io/falcosecurity/falcoctl:0.12.2</code></h2>
 
 <h3>Target <code>docker.io/falcosecurity/falcoctl:0.12.2 (wolfi 20230201)</code></h3>
-<h4>No Vulnerabilities found</h4>
+<h4>Vulnerabilities (1)</h4>
+<table>
+    <tr>
+        <th>Package</th>
+        <th>ID</th>
+        <th>Severity</th>
+        <th>Installed Version</th>
+        <th>Fixed Version</th>
+    </tr>
+    <tr>
+        <td><code>ca-certificates-bundle</code></td>
+        <td>CVE-2026-111943</td>
+        <td>HIGH</td>
+        <td>20251003-r2</td>
+        <td>20260909-r3</td>
+    </tr>
+</table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/falcoctl</code></h3>
-<h4>Vulnerabilities (65)</h4>
+<h4>Vulnerabilities (64)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1241,13 +1096,6 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.25.6</td>
-        <td>1.26.9, 1.27.2</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
         <td>CVE-2026-111943</td>
         <td>HIGH</td>
         <td>v1.25.6</td>
@@ -1433,10 +1281,31 @@
     </tr>
     <tr>
         <td><code>github.com/labstack/echo/v4</code></td>
-        <td>GHSA-cxf3-9h37-7rr8</td>
+        <td>CVE-2026-118264</td>
         <td>CRITICAL</td>
         <td>v4.11.1</td>
         <td>4.16.1</td>
+    </tr>
+    <tr>
+        <td><code>github.com/labstack/echo/v4</code></td>
+        <td>CVE-2026-118260</td>
+        <td>HIGH</td>
+        <td>v4.11.1</td>
+        <td>4.16.1</td>
+    </tr>
+    <tr>
+        <td><code>github.com/labstack/echo/v4</code></td>
+        <td>CVE-2026-118261</td>
+        <td>HIGH</td>
+        <td>v4.11.1</td>
+        <td>4.16.1</td>
+    </tr>
+    <tr>
+        <td><code>github.com/labstack/echo/v4</code></td>
+        <td>CVE-2026-118650</td>
+        <td>HIGH</td>
+        <td>v4.11.1</td>
+        <td>4.16.0</td>
     </tr>
     <tr>
         <td><code>github.com/labstack/echo/v4</code></td>
@@ -1444,20 +1313,6 @@
         <td>HIGH</td>
         <td>v4.11.1</td>
         <td>4.15.3</td>
-    </tr>
-    <tr>
-        <td><code>github.com/labstack/echo/v4</code></td>
-        <td>GHSA-f48p-c9v4-h7xv</td>
-        <td>HIGH</td>
-        <td>v4.11.1</td>
-        <td>4.16.1</td>
-    </tr>
-    <tr>
-        <td><code>github.com/labstack/echo/v4</code></td>
-        <td>GHSA-h7wr-284f-5qvc</td>
-        <td>HIGH</td>
-        <td>v4.11.1</td>
-        <td>4.16.1</td>
     </tr>
     <tr>
         <td><code>golang.org/x/crypto</code></td>
@@ -1640,13 +1495,6 @@
         <td>CRITICAL</td>
         <td>v1.20.8</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.20.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -2015,7 +1863,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>app/falcosidekick</code></h3>
-<h4>Vulnerabilities (70)</h4>
+<h4>Vulnerabilities (69)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2331,13 +2179,6 @@
         <td>CRITICAL</td>
         <td>v1.25.1</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.25.1</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>

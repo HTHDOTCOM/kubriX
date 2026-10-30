@@ -1,7 +1,23 @@
 <h2>Image <code>docker.io/kubeshop/bitnami-mongodb:8.3.11</code></h2>
 
 <h3>Target <code>docker.io/kubeshop/bitnami-mongodb:8.3.11 (ubuntu 24.04)</code></h3>
-<h4>No Vulnerabilities found</h4>
+<h4>Vulnerabilities (1)</h4>
+<table>
+    <tr>
+        <th>Package</th>
+        <th>ID</th>
+        <th>Severity</th>
+        <th>Installed Version</th>
+        <th>Fixed Version</th>
+    </tr>
+    <tr>
+        <td><code>libbrotli1</code></td>
+        <td>CVE-2026-111497</td>
+        <td>HIGH</td>
+        <td>1.1.0-2build2</td>
+        <td>1.1.0-2ubuntu0.1</td>
+    </tr>
+</table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>Node.js</code></h3>
 <h4>Vulnerabilities (3)</h4>
@@ -37,7 +53,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>opt/bitnami/common/bin/render-template</code></h3>
-<h4>Vulnerabilities (5)</h4>
+<h4>Vulnerabilities (4)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -45,13 +61,6 @@
         <th>Severity</th>
         <th>Installed Version</th>
         <th>Fixed Version</th>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -84,7 +93,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>opt/bitnami/mongodb/bin/bsondump</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -225,13 +234,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -264,7 +266,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>opt/bitnami/mongodb/bin/mongodump</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -405,13 +407,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -444,7 +439,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>opt/bitnami/mongodb/bin/mongoexport</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -585,13 +580,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -624,7 +612,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>opt/bitnami/mongodb/bin/mongofiles</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -765,13 +753,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -804,7 +785,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>opt/bitnami/mongodb/bin/mongoimport</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -945,13 +926,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -984,7 +958,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>opt/bitnami/mongodb/bin/mongorestore</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1125,13 +1099,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -1164,7 +1131,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>opt/bitnami/mongodb/bin/mongostat</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1305,13 +1272,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -1344,7 +1304,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>opt/bitnami/mongodb/bin/mongotop</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1485,13 +1445,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -1524,7 +1477,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/bsondump</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1665,13 +1618,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -1704,7 +1650,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/mongodump</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1845,13 +1791,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -1884,7 +1823,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/mongoexport</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2025,13 +1964,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -2064,7 +1996,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/mongofiles</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2205,13 +2137,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -2244,7 +2169,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/mongoimport</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2385,13 +2310,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -2424,7 +2342,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/mongorestore</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2565,13 +2483,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -2604,7 +2515,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/mongostat</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2745,13 +2656,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -2784,7 +2688,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/mongotop</code></h3>
-<h4>Vulnerabilities (24)</h4>
+<h4>Vulnerabilities (23)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2925,13 +2829,6 @@
         <td>HIGH</td>
         <td>v0.33.0</td>
         <td>0.39.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -2999,7 +2896,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>bin/app</code></h3>
-<h4>Vulnerabilities (6)</h4>
+<h4>Vulnerabilities (5)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -3014,13 +2911,6 @@
         <td>HIGH</td>
         <td>v0.58.0</td>
         <td>0.60.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.27.1</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -3088,7 +2978,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/kubectl</code></h3>
-<h4>Vulnerabilities (7)</h4>
+<h4>Vulnerabilities (6)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -3110,13 +3000,6 @@
         <td>HIGH</td>
         <td>v0.40.0</td>
         <td>0.41.0</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.8</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -3786,7 +3669,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>opt/bitnami/common/bin/mc</code></h3>
-<h4>Vulnerabilities (51)</h4>
+<h4>Vulnerabilities (50)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -3962,13 +3845,6 @@
         <td>HIGH</td>
         <td>v1.79.3</td>
         <td>1.82.1</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.0</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -4155,7 +4031,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>opt/bitnami/common/bin/minio</code></h3>
-<h4>Vulnerabilities (75)</h4>
+<h4>Vulnerabilities (74)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -4502,13 +4378,6 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.0</td>
-        <td>1.26.9, 1.27.2</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
         <td>CVE-2026-111943</td>
         <td>HIGH</td>
         <td>v1.26.0</td>
@@ -4692,7 +4561,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/wait-for-port</code></h3>
-<h4>Vulnerabilities (27)</h4>
+<h4>Vulnerabilities (26)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -4707,13 +4576,6 @@
         <td>CRITICAL</td>
         <td>v1.25.0</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.25.0</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -4898,7 +4760,7 @@
 <h4>No Vulnerabilities found</h4>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/nats-server</code></h3>
-<h4>Vulnerabilities (5)</h4>
+<h4>Vulnerabilities (4)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -4906,13 +4768,6 @@
         <th>Severity</th>
         <th>Installed Version</th>
         <th>Fixed Version</th>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.27.1</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -4973,7 +4828,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/nats-server-config-reloader</code></h3>
-<h4>Vulnerabilities (13)</h4>
+<h4>Vulnerabilities (12)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -4981,13 +4836,6 @@
         <th>Severity</th>
         <th>Installed Version</th>
         <th>Fixed Version</th>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.26.5</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>

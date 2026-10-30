@@ -1761,7 +1761,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/local/bin/kubectl</code></h3>
-<h4>Vulnerabilities (39)</h4>
+<h4>Vulnerabilities (38)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1853,13 +1853,6 @@
         <td>CRITICAL</td>
         <td>v1.22.5</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.22.5</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -2102,7 +2095,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>Node.js</code></h3>
-<h4>Vulnerabilities (60)</h4>
+<h4>Vulnerabilities (59)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2229,13 +2222,6 @@
         <td>HIGH</td>
         <td>10.3.10</td>
         <td>11.1.0, 10.5.0</td>
-    </tr>
-    <tr>
-        <td><code>http-cache-semantics</code></td>
-        <td>CVE-2026-93748</td>
-        <td>HIGH</td>
-        <td>4.1.1</td>
-        <td></td>
     </tr>
     <tr>
         <td><code>ip</code></td>
@@ -2534,7 +2520,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>app/node_modules/@esbuild/linux-x64/bin/esbuild</code></h3>
-<h4>Vulnerabilities (27)</h4>
+<h4>Vulnerabilities (26)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -2549,13 +2535,6 @@
         <td>CRITICAL</td>
         <td>v1.23.7</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2026-56857</td>
-        <td>CRITICAL</td>
-        <td>v1.23.7</td>
-        <td>1.26.9, 1.27.2</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
