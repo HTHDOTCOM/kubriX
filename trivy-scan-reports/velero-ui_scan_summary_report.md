@@ -1,7 +1,7 @@
 <h2>Image <code>docker.io/dserio83/velero-api:0.3.1</code></h2>
 
 <h3>Target <code>docker.io/dserio83/velero-api:0.3.1 (debian 12.11)</code></h3>
-<h4>Vulnerabilities (212)</h4>
+<h4>Vulnerabilities (214)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -811,6 +811,20 @@
     <tr>
         <td><code>libsqlite3-0</code></td>
         <td>CVE-2026-11824</td>
+        <td>HIGH</td>
+        <td>3.40.1-2+deb12u1</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>libsqlite3-0</code></td>
+        <td>CVE-2026-119373</td>
+        <td>HIGH</td>
+        <td>3.40.1-2+deb12u1</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>libsqlite3-0</code></td>
+        <td>CVE-2026-119586</td>
         <td>HIGH</td>
         <td>3.40.1-2+deb12u1</td>
         <td></td>
@@ -2695,7 +2709,7 @@
 <h2>Image <code>docker.io/dserio83/velero-watchdog:0.1.8</code></h2>
 
 <h3>Target <code>docker.io/dserio83/velero-watchdog:0.1.8 (debian 12.10)</code></h3>
-<h4>Vulnerabilities (170)</h4>
+<h4>Vulnerabilities (172)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -3365,6 +3379,20 @@
     <tr>
         <td><code>libsqlite3-0</code></td>
         <td>CVE-2026-11824</td>
+        <td>HIGH</td>
+        <td>3.40.1-2+deb12u1</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>libsqlite3-0</code></td>
+        <td>CVE-2026-119373</td>
+        <td>HIGH</td>
+        <td>3.40.1-2+deb12u1</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>libsqlite3-0</code></td>
+        <td>CVE-2026-119586</td>
         <td>HIGH</td>
         <td>3.40.1-2+deb12u1</td>
         <td></td>

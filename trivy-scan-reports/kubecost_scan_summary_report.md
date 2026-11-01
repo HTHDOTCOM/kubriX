@@ -265,7 +265,7 @@
 <h2>Image <code>icr.io/kubecost/cost-model:2.9.7</code></h2>
 
 <h3>Target <code>icr.io/kubecost/cost-model:2.9.7 (redhat 9.8)</code></h3>
-<h4>Vulnerabilities (52)</h4>
+<h4>Vulnerabilities (53)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -350,6 +350,13 @@
         <td>HIGH</td>
         <td>2.68.4-19.el9_8.1</td>
         <td>2.68.4-19.el9_8.2</td>
+    </tr>
+    <tr>
+        <td><code>json-glib</code></td>
+        <td>CVE-2026-120194</td>
+        <td>HIGH</td>
+        <td>1.6.6-1.el9</td>
+        <td></td>
     </tr>
     <tr>
         <td><code>libacl</code></td>
@@ -1054,7 +1061,7 @@
 <h2>Image <code>icr.io/kubecost/frontend:2.9.7</code></h2>
 
 <h3>Target <code>icr.io/kubecost/frontend:2.9.7 (redhat 9.8)</code></h3>
-<h4>Vulnerabilities (70)</h4>
+<h4>Vulnerabilities (71)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1139,6 +1146,13 @@
         <td>HIGH</td>
         <td>2.68.4-19.el9_8.1</td>
         <td>2.68.4-19.el9_8.2</td>
+    </tr>
+    <tr>
+        <td><code>json-glib</code></td>
+        <td>CVE-2026-120194</td>
+        <td>HIGH</td>
+        <td>1.6.6-1.el9</td>
+        <td></td>
     </tr>
     <tr>
         <td><code>libacl</code></td>
@@ -1558,7 +1572,7 @@
 <h2>Image <code>icr.io/kubecost/modeling:v0.1.34</code></h2>
 
 <h3>Target <code>icr.io/kubecost/modeling:v0.1.34 (redhat 9.7)</code></h3>
-<h4>Vulnerabilities (73)</h4>
+<h4>Vulnerabilities (74)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -1678,6 +1692,13 @@
         <td>HIGH</td>
         <td>3.8.3-9.el9</td>
         <td>3.8.10-4.el9_8</td>
+    </tr>
+    <tr>
+        <td><code>json-glib</code></td>
+        <td>CVE-2026-120194</td>
+        <td>HIGH</td>
+        <td>1.6.6-1.el9</td>
+        <td></td>
     </tr>
     <tr>
         <td><code>libacl</code></td>
