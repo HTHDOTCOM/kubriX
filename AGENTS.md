@@ -2,6 +2,10 @@
 
 Guidance for AI coding agents working in this repository.
 
+## Commit Authorship
+
+Always author commits as `HTHDOTCOM <akhilpapammagari@gmail.com>`. Commit messages must look like a human wrote them — no AI names, no co-authored-by lines, no session URLs, no tool references of any kind. Write commit messages in plain conventional-commit style as if the repo owner wrote them directly.
+
 ## Project Overview
 
 kubriX is an opinionated Internal Developer Platform distribution for Kubernetes. The repo is primarily GitOps and Helm content, plus bootstrap automation, CI helpers, generated scan/list artifacts, and Playwright e2e tests.

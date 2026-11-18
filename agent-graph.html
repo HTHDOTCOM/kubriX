@@ -1,0 +1,481 @@
+<title>kubriX Architecture</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root {
+  --bg: #08090f;
+  --fg: #d8deff;
+  --panel: rgba(10,11,22,0.92);
+  --border: rgba(70,100,200,0.2);
+  --muted: rgba(170,185,240,0.5);
+  color-scheme: dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--fg);
+  font-family:'Inter',system-ui,sans-serif}
+
+#header{
+  position:absolute;top:0;left:0;right:0;
+  padding:14px max(16px,env(safe-area-inset-left,0px)) 10px;
+  background:var(--panel);border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  backdrop-filter:blur(12px);z-index:10
+}
+#header h1{font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--fg);white-space:nowrap;text-shadow:0 0 20px rgba(92,143,255,.5)}
+#header p{font-size:11px;color:var(--muted);white-space:nowrap}
+
+#filters{display:flex;gap:6px;flex-wrap:wrap}
+.fbtn{
+  background:rgba(255,255,255,.05);border:1px solid var(--border);
+  border-radius:16px;color:var(--muted);font-family:inherit;font-size:11px;
+  padding:4px 11px;cursor:pointer;transition:all .15s;white-space:nowrap
+}
+.fbtn:hover{background:rgba(255,255,255,.1);color:var(--fg)}
+.fbtn.active{background:rgba(92,143,255,.2);border-color:rgba(92,143,255,.6);color:#a8c4ff}
+
+#svg-wrap{position:absolute;inset:0;top:52px}
+svg{width:100%;height:100%}
+
+/* Node styles */
+.node rect{rx:6;cursor:pointer;stroke-width:1.5;transition:opacity .2s}
+.node text{pointer-events:none;fill:var(--fg);font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600}
+.node .badge{font-size:9px;fill:rgba(255,255,255,.55);font-weight:400;font-family:'Inter',sans-serif}
+.node.optional rect{stroke-dasharray:4 3}
+.node.dimmed rect{opacity:.12}
+.node.dimmed text{opacity:.12}
+.node.highlighted rect{stroke-width:2.5}
+
+/* Edge styles */
+.link{fill:none;stroke-width:1.2;marker-end:url(#arrow)}
+.link.bootstrap{stroke:#666;stroke-dasharray:5 3;opacity:.5}
+.link.uses{opacity:.5;transition:opacity .2s}
+.link.dimmed{opacity:.04}
+.link.highlighted{opacity:.95;stroke-width:2}
+
+/* Swimlanes */
+.swimlane rect{rx:4}
+.swimlane text{font-size:10px;font-family:'JetBrains Mono',monospace;fill:rgba(130,150,220,.35);letter-spacing:.08em}
+
+/* Tooltip */
+#tip{
+  position:absolute;background:var(--panel);border:1px solid var(--border);
+  border-radius:8px;padding:10px 14px;backdrop-filter:blur(12px);
+  pointer-events:none;display:none;max-width:260px;z-index:20;
+  box-shadow:0 4px 24px rgba(0,0,0,.5)
+}
+#tip h3{font-size:13px;font-weight:700;margin-bottom:3px}
+#tip .tcat{font-size:9px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}
+#tip p{font-size:11px;color:rgba(190,205,255,.8);line-height:1.6;margin-bottom:6px}
+#tip .tmeta{font-size:10px;color:var(--muted)}
+
+/* Legend */
+#legend{
+  position:absolute;bottom:max(14px,env(safe-area-inset-bottom,0px));
+  left:max(14px,env(safe-area-inset-left,0px));
+  background:var(--panel);border:1px solid var(--border);border-radius:8px;
+  padding:10px 14px;backdrop-filter:blur(10px);pointer-events:none
+}
+#legend .lh{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:7px}
+.lr{display:flex;align-items:center;gap:8px;margin-bottom:4px;font-size:10px;color:var(--muted)}
+.lr:last-child{margin-bottom:0}
+.ldot{width:10px;height:10px;border-radius:3px;flex-shrink:0}
+</style>
+
+<div id="header">
+  <div>
+    <h1>kubriX Architecture</h1>
+    <p>Platform components · sync-wave deployment order · functional dependencies</p>
+  </div>
+  <div id="filters">
+    <button class="fbtn active" data-profile="all">All</button>
+    <button class="fbtn" data-profile="core">Core</button>
+    <button class="fbtn" data-profile="observability">Observability</button>
+    <button class="fbtn" data-profile="delivery">Delivery</button>
+    <button class="fbtn" data-profile="portal">Portal</button>
+    <button class="fbtn" data-profile="security">Security</button>
+  </div>
+</div>
+
+<div id="svg-wrap"><svg id="svg"></svg></div>
+<div id="tip"></div>
+<div id="legend">
+  <div class="lh">Categories</div>
+  <div class="lr"><div class="ldot" style="background:#4a9eff"></div><span>Infrastructure</span></div>
+  <div class="lr"><div class="ldot" style="background:#ff6b7a"></div><span>Security</span></div>
+  <div class="lr"><div class="ldot" style="background:#26de81"></div><span>Observability</span></div>
+  <div class="lr"><div class="ldot" style="background:#ff9f43"></div><span>Delivery</span></div>
+  <div class="lr"><div class="ldot" style="background:#a29bfe"></div><span>Portal</span></div>
+  <div class="lr"><div class="ldot" style="background:#888"></div><span>Bootstrap</span></div>
+  <div style="height:5px"></div>
+  <div class="lh">Layout</div>
+  <div class="lr"><span>Top → bottom: deploy order</span></div>
+  <div class="lr"><span>Drag nodes · scroll to zoom</span></div>
+  <div class="lr"><span>Click node to highlight deps</span></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+<script>
+'use strict';
+
+// ── DATA ──────────────────────────────────────────────────────────────────────
+const CAT_COLOR = {
+  bootstrap:     '#888888',
+  infrastructure:'#4a9eff',
+  security:      '#ff6b7a',
+  observability: '#26de81',
+  delivery:      '#ff9f43',
+  portal:        '#a29bfe',
+};
+
+// Profiles: which app IDs are included
+const PROFILES = {
+  all: null, // null = show everything
+  core: new Set(['bootstrap','argocd-bs','prometheus-operator-crds','traefik','cert-manager',
+                 'crossplane','external-secrets','openbao','argocd','keycloak','cnpg','k8s-monitoring']),
+  observability: new Set(['bootstrap','argocd-bs','prometheus-operator-crds','traefik','cert-manager',
+                          'external-secrets','openbao','argocd','k8s-monitoring','loki','mimir','tempo',
+                          'grafana','minio','prometheus-blackbox','testkube']),
+  delivery: new Set(['bootstrap','argocd-bs','prometheus-operator-crds','traefik','cert-manager',
+                     'external-secrets','openbao','argocd','keycloak','cnpg','kargo','argo-rollouts',
+                     'testkube','backstage','team-onboarding']),
+  portal:   new Set(['bootstrap','argocd-bs','prometheus-operator-crds','traefik','cert-manager',
+                     'external-secrets','openbao','argocd','keycloak','cnpg','backstage','team-onboarding',
+                     'kargo','testkube']),
+  security: new Set(['bootstrap','argocd-bs','prometheus-operator-crds','traefik','cert-manager',
+                     'external-secrets','openbao','argocd','kyverno','falco','velero','minio','keycloak']),
+};
+
+const nodes = [
+  // Bootstrap layer
+  {id:'bootstrap',  label:'install-platform.sh', cat:'bootstrap',      wave:-20, desc:'Main bootstrap script. Installs Argo CD, templates the downstream repo, pushes GitOps config, and waits for the platform to converge.', opt:false},
+  {id:'argocd-bs',  label:'Argo CD (bootstrap)', cat:'bootstrap',      wave:-15, desc:'Argo CD is installed first by the script, then immediately becomes self-managed via GitOps. Everything else is deployed through it.', opt:false},
+
+  // Wave -12
+  {id:'metallb',    label:'MetalLB',              cat:'infrastructure', wave:-12, desc:'Bare-metal load balancer. Provides external IPs for Services of type LoadBalancer. Required for on-prem / kind clusters without a cloud LB.', opt:true},
+
+  // Wave -10
+  {id:'prometheus-operator-crds', label:'Prometheus CRDs', cat:'infrastructure', wave:-10, desc:'Installs Prometheus Operator CRDs (ServiceMonitor, PrometheusRule, etc.) before any app that references them. Must land first.', opt:false},
+  {id:'traefik',    label:'Traefik',              cat:'infrastructure', wave:-10, desc:'Ingress controller and edge router. All platform services (Argo CD, Backstage, Grafana, Keycloak…) are exposed through Traefik.', opt:false},
+  {id:'cert-manager',label:'cert-manager',        cat:'infrastructure', wave:-10, desc:'Automates TLS certificate provisioning via Let\'s Encrypt or mkcert for local clusters. Required by almost every HTTPS endpoint.', opt:false},
+  {id:'crossplane', label:'Crossplane',           cat:'infrastructure', wave:-10, desc:'Kubernetes-native cloud resource provisioning. Manage cloud infrastructure (databases, buckets, etc.) via K8s manifests.', opt:false},
+  {id:'external-secrets', label:'External\nSecrets', cat:'security',  wave:-10, desc:'Syncs secrets from OpenBao (or other stores) into Kubernetes Secrets. All apps pull credentials through ESO rather than storing them in Git.', opt:false},
+  {id:'external-dns',label:'External DNS',        cat:'infrastructure', wave:-10, desc:'Auto-creates DNS records for Ingress/Service resources. Optional — required for cloud environments with managed DNS.', opt:true},
+
+  // Wave -8
+  {id:'openbao',    label:'OpenBao',              cat:'security',      wave:-8,  desc:'Open-source HashiCorp Vault fork. Central secrets store for all platform credentials. Backstage, Grafana, and Argo CD tokens are stored here.', opt:false},
+  {id:'prometheus-blackbox', label:'Blackbox\nExporter', cat:'observability', wave:-8, desc:'HTTP/TCP/ICMP endpoint probing for external service availability monitoring.', opt:true},
+
+  // Wave 0 — platform
+  {id:'argocd',     label:'Argo CD',              cat:'delivery',      wave:0,   desc:'GitOps continuous delivery engine. Manages all platform applications as Argo CD Applications. Self-managed after the bootstrap.', opt:false},
+  {id:'k8s-monitoring', label:'k8s-monitoring',   cat:'observability', wave:0,   desc:'Grafana Alloy-based stack for cluster-level metrics, logs, and traces collection. Feeds into Grafana/Mimir/Loki/Tempo.', opt:false},
+  {id:'cnpg',       label:'CloudNativePG',        cat:'infrastructure', wave:0,  desc:'PostgreSQL operator. Provides managed Postgres clusters for Keycloak (identity DB) and Backstage (catalog DB).', opt:false},
+  {id:'keycloak',   label:'Keycloak',             cat:'security',      wave:0,   desc:'Identity & access management. SSO provider for Argo CD, Backstage, Grafana, Kargo, Testkube and Kubernetes itself via OIDC.', opt:false},
+  {id:'minio',      label:'MinIO',                cat:'infrastructure', wave:0,  desc:'S3-compatible object storage. Used as the backend for Loki (logs), Mimir (metrics), Tempo (traces), and Velero (backups).', opt:true},
+  {id:'loki',       label:'Loki',                 cat:'observability', wave:0,   desc:'Log aggregation backend. Receives logs from k8s-monitoring / Alloy and serves them to Grafana.', opt:false},
+  {id:'mimir',      label:'Mimir',                cat:'observability', wave:0,   desc:'Horizontally scalable, long-term Prometheus-compatible metrics storage.', opt:false},
+  {id:'tempo',      label:'Tempo',                cat:'observability', wave:0,   desc:'Distributed tracing backend. Collects spans from instrumented workloads and serves them to Grafana.', opt:false},
+  {id:'grafana',    label:'Grafana',              cat:'observability', wave:0,   desc:'Unified observability UI. Dashboards, log explorer, trace viewer, alert management. SSO via Keycloak.', opt:false},
+  {id:'kyverno',    label:'Kyverno',              cat:'security',      wave:0,   desc:'Kubernetes-native policy engine. Enforces security policies (image signing, resource limits, label standards) via admission webhooks.', opt:false},
+  {id:'falco',      label:'Falco',                cat:'security',      wave:0,   desc:'Runtime security and threat detection. Monitors syscalls to detect anomalous container behaviour in real time.', opt:true},
+  {id:'argo-rollouts', label:'Argo Rollouts',     cat:'delivery',      wave:0,   desc:'Progressive delivery controller. Enables canary and blue-green deployments with automated analysis and rollback.', opt:false},
+  {id:'kargo',      label:'Kargo',                cat:'delivery',      wave:0,   desc:'Promotion orchestration. Automates version promotion across environments (dev → staging → prod) with approval gates.', opt:false},
+  {id:'testkube',   label:'Testkube',             cat:'delivery',      wave:0,   desc:'Kubernetes-native test execution. Runs Playwright, k6, Postman and other test suites as K8s Jobs, with Argo CD integration.', opt:false},
+  {id:'backstage',  label:'Backstage',            cat:'portal',        wave:0,   desc:'Internal developer portal. Service catalog, software templates (scaffolding), TechDocs, and integrations with Argo CD, Kargo, Grafana.', opt:false},
+  {id:'team-onboarding', label:'Team Onboarding', cat:'portal',        wave:0,   desc:'kubriX Helm chart for self-service team and application onboarding. Creates namespaces, Kargo stages, Keycloak groups and Backstage entries.', opt:false},
+  {id:'velero',     label:'Velero',               cat:'infrastructure', wave:0,  desc:'Cluster backup and restore. Snapshots Kubernetes resources and persistent volumes to MinIO/S3.', opt:true},
+  {id:'kubecost',   label:'Kubecost',             cat:'observability', wave:0,   desc:'Kubernetes cost monitoring. Allocates cluster spend to namespaces, deployments and teams.', opt:true},
+  {id:'komoplane',  label:'Komoplane',            cat:'portal',        wave:0,   desc:'Web UI for Crossplane resources. Browse managed cloud resources and their status visually.', opt:true},
+];
+
+const links = [
+  // Bootstrap flow
+  {s:'bootstrap',     t:'argocd-bs',                type:'bootstrap'},
+  {s:'argocd-bs',     t:'metallb',                  type:'bootstrap'},
+  {s:'argocd-bs',     t:'prometheus-operator-crds', type:'bootstrap'},
+  {s:'argocd-bs',     t:'traefik',                  type:'bootstrap'},
+  {s:'argocd-bs',     t:'cert-manager',             type:'bootstrap'},
+  {s:'argocd-bs',     t:'crossplane',               type:'bootstrap'},
+  {s:'argocd-bs',     t:'external-secrets',         type:'bootstrap'},
+  {s:'argocd-bs',     t:'external-dns',             type:'bootstrap'},
+  {s:'argocd-bs',     t:'openbao',                  type:'bootstrap'},
+  {s:'argocd-bs',     t:'prometheus-blackbox',      type:'bootstrap'},
+  // Functional dependencies
+  {s:'external-secrets', t:'openbao',               type:'uses', label:'secret store'},
+  {s:'openbao',       t:'cert-manager',             type:'uses', label:'TLS certs'},
+  {s:'cnpg',          t:'prometheus-operator-crds', type:'uses', label:'metrics CRDs'},
+  {s:'keycloak',      t:'cnpg',                     type:'uses', label:'Postgres DB'},
+  {s:'keycloak',      t:'traefik',                  type:'uses', label:'ingress'},
+  {s:'keycloak',      t:'cert-manager',             type:'uses', label:'TLS'},
+  {s:'minio',         t:'traefik',                  type:'uses', label:'ingress'},
+  {s:'loki',          t:'minio',                    type:'uses', label:'S3 logs'},
+  {s:'mimir',         t:'minio',                    type:'uses', label:'S3 metrics'},
+  {s:'tempo',         t:'minio',                    type:'uses', label:'S3 traces'},
+  {s:'velero',        t:'minio',                    type:'uses', label:'S3 backup'},
+  {s:'grafana',       t:'keycloak',                 type:'uses', label:'SSO'},
+  {s:'grafana',       t:'loki',                     type:'uses', label:'logs'},
+  {s:'grafana',       t:'mimir',                    type:'uses', label:'metrics'},
+  {s:'grafana',       t:'tempo',                    type:'uses', label:'traces'},
+  {s:'grafana',       t:'k8s-monitoring',           type:'uses', label:'cluster metrics'},
+  {s:'argocd',        t:'keycloak',                 type:'uses', label:'SSO'},
+  {s:'argocd',        t:'traefik',                  type:'uses', label:'ingress'},
+  {s:'k8s-monitoring',t:'prometheus-operator-crds', type:'uses', label:'CRDs'},
+  {s:'kyverno',       t:'prometheus-operator-crds', type:'uses', label:'metrics CRDs'},
+  {s:'kubecost',      t:'prometheus-operator-crds', type:'uses', label:'metrics CRDs'},
+  {s:'argo-rollouts', t:'argocd',                   type:'uses', label:'integration'},
+  {s:'kargo',         t:'argocd',                   type:'uses', label:'sync trigger'},
+  {s:'kargo',         t:'keycloak',                 type:'uses', label:'SSO'},
+  {s:'testkube',      t:'keycloak',                 type:'uses', label:'SSO'},
+  {s:'testkube',      t:'traefik',                  type:'uses', label:'ingress'},
+  {s:'backstage',     t:'keycloak',                 type:'uses', label:'SSO'},
+  {s:'backstage',     t:'openbao',                  type:'uses', label:'secrets'},
+  {s:'backstage',     t:'argocd',                   type:'uses', label:'app status'},
+  {s:'backstage',     t:'grafana',                  type:'uses', label:'dashboards'},
+  {s:'backstage',     t:'kargo',                    type:'uses', label:'promotions'},
+  {s:'backstage',     t:'cnpg',                     type:'uses', label:'Postgres DB'},
+  {s:'backstage',     t:'traefik',                  type:'uses', label:'ingress'},
+  {s:'team-onboarding',t:'backstage',               type:'uses', label:'catalog'},
+  {s:'team-onboarding',t:'kargo',                   type:'uses', label:'pipelines'},
+  {s:'team-onboarding',t:'keycloak',                type:'uses', label:'groups'},
+  {s:'komoplane',     t:'crossplane',               type:'uses', label:'explorer UI'},
+];
+
+// ── LAYOUT CONSTANTS ──────────────────────────────────────────────────────────
+const WAVE_Y = {'-20':80, '-15':160, '-12':255, '-10':360, '-8':470, '0':610};
+const CAT_X_WEIGHT = {
+  bootstrap:0.5, infrastructure:0.22, security:0.37, observability:0.62, delivery:0.76, portal:0.90
+};
+// Node box sizing
+const NODE_W = 112, NODE_H = 32;
+
+// ── BUILD ──────────────────────────────────────────────────────────────────────
+const svg = d3.select('#svg');
+const W = () => document.getElementById('svg-wrap').clientWidth;
+const H = () => document.getElementById('svg-wrap').clientHeight;
+
+// Zoom container
+const root = svg.append('g').attr('class','root');
+svg.call(d3.zoom().scaleExtent([0.25,3]).on('zoom', e => root.attr('transform', e.transform)));
+
+// Arrow marker def
+const defs = svg.append('defs');
+function addMarker(id, color, opacity) {
+  defs.append('marker')
+    .attr('id', id)
+    .attr('viewBox','0 -4 8 8').attr('refX',8).attr('refY',0)
+    .attr('markerWidth',6).attr('markerHeight',6).attr('orient','auto')
+    .append('path').attr('d','M0,-4L8,0L0,4').attr('fill',color).attr('opacity',opacity||1);
+}
+addMarker('arrow',      'rgba(100,130,220,0.7)');
+addMarker('arrow-hi',   '#a0c4ff', 1);
+addMarker('arrow-out',  '#ff9050', 1);
+addMarker('arrow-in',   '#50bfff', 1);
+
+// Swimlanes
+const laneG = root.append('g').attr('class','lanes');
+const LANES = [
+  {wave:'-20', label:'Bootstrap', y:40},
+  {wave:'-15', label:'Argo CD install', y:120},
+  {wave:'-12', label:'Wave -12  (network)', y:215},
+  {wave:'-10', label:'Wave -10  (ingress · TLS · secrets)', y:315},
+  {wave:'-8',  label:'Wave -8   (identity · vault)', y:425},
+  {wave:'0',   label:'Wave 0    (platform apps)', y:530},
+];
+
+function drawLanes() {
+  const w = W(), h = H();
+  laneG.selectAll('*').remove();
+  LANES.forEach((l, i) => {
+    const y0 = l.y;
+    const y1 = i < LANES.length-1 ? LANES[i+1].y : h - 40;
+    laneG.append('rect')
+      .attr('x',0).attr('y',y0).attr('width',w).attr('height',y1-y0)
+      .attr('fill', i%2===0 ? 'rgba(255,255,255,0.012)' : 'rgba(0,0,0,0)');
+    laneG.append('text')
+      .attr('x',16).attr('y',y0+16)
+      .attr('class','lane-label')
+      .style('font-size','10px')
+      .style('font-family','JetBrains Mono,monospace')
+      .style('fill','rgba(100,120,200,0.3)')
+      .style('letter-spacing','.06em')
+      .text(l.label);
+  });
+}
+
+// Build node/link data
+const nodeById = {};
+nodes.forEach(n => {
+  nodeById[n.id] = n;
+  n.x = (CAT_X_WEIGHT[n.cat] || 0.5) * W() + (Math.random()-.5)*60;
+  n.y = (WAVE_Y[String(n.wave)] || 400);
+  n.w = NODE_W; n.h = NODE_H;
+});
+
+const linkData = links
+  .filter(l => nodeById[l.s] && nodeById[l.t])
+  .map(l => ({...l, source: nodeById[l.s], target: nodeById[l.t]}));
+
+// D3 force simulation
+const sim = d3.forceSimulation(nodes)
+  .force('link', d3.forceLink(linkData).id(d=>d.id).distance(90).strength(0.15))
+  .force('charge', d3.forceManyBody().strength(-220))
+  .force('x', d3.forceX(d => (CAT_X_WEIGHT[d.cat]||0.5) * W()).strength(0.4))
+  .force('y', d3.forceY(d => WAVE_Y[String(d.wave)] || 400).strength(0.85))
+  .force('collide', d3.forceCollide(72))
+  .alphaDecay(0.025);
+
+// Draw links
+const linkG = root.append('g').attr('class','link-layer');
+const linkSel = linkG.selectAll('path.link')
+  .data(linkData).enter().append('path')
+  .attr('class', d => 'link ' + d.type)
+  .attr('stroke', d => d.type === 'bootstrap' ? '#555' : CAT_COLOR[nodeById[d.s]?.cat||'infrastructure'])
+  .attr('marker-end','url(#arrow)');
+
+// Draw nodes
+const nodeG = root.append('g').attr('class','node-layer');
+const nodeSel = nodeG.selectAll('g.node')
+  .data(nodes).enter().append('g')
+  .attr('class', d => 'node' + (d.opt?' optional':''))
+  .call(d3.drag()
+    .on('start', (e,d) => { if(!e.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
+    .on('drag',  (e,d) => { d.fx=e.x; d.fy=e.y; })
+    .on('end',   (e,d) => { if(!e.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }));
+
+nodeSel.append('rect')
+  .attr('width', NODE_W).attr('height', NODE_H)
+  .attr('x', -NODE_W/2).attr('y', -NODE_H/2)
+  .attr('fill', d => CAT_COLOR[d.cat] + '22')
+  .attr('stroke', d => CAT_COLOR[d.cat])
+  .attr('rx', 6);
+
+nodeSel.append('text')
+  .attr('text-anchor','middle').attr('dominant-baseline','central')
+  .attr('dy', d => d.label.includes('\n') ? '-6' : '0')
+  .style('font-size','11px')
+  .style('fill',d => CAT_COLOR[d.cat])
+  .each(function(d) {
+    const lines = d.label.split('\n');
+    if (lines.length === 1) {
+      d3.select(this).text(d.label);
+    } else {
+      lines.forEach((line, i) => {
+        d3.select(this).append('tspan')
+          .attr('x',0).attr('dy', i===0 ? '-5' : '14')
+          .text(line);
+      });
+    }
+  });
+
+// Optional badge
+nodeSel.filter(d=>d.opt).append('text')
+  .attr('class','badge')
+  .attr('x', NODE_W/2 - 4).attr('y', -NODE_H/2 + 9)
+  .attr('text-anchor','end')
+  .style('font-size','8px')
+  .style('fill','rgba(180,195,255,.4)')
+  .text('opt');
+
+// Simulation tick
+sim.on('tick', () => {
+  linkSel.attr('d', d => {
+    const sx = d.source.x, sy = d.source.y;
+    const tx = d.target.x, ty = d.target.y;
+    const mx = (sx+tx)/2, my = (sy+ty)/2 - Math.abs(tx-sx)*0.15;
+    return `M${sx},${sy} Q${mx},${my} ${tx},${ty}`;
+  });
+  nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+});
+
+// ── INTERACTION ───────────────────────────────────────────────────────────────
+let selected = null;
+const tip = document.getElementById('tip');
+
+nodeSel.on('click', function(e, d) {
+  e.stopPropagation();
+  if (selected === d.id) { clearSel(); return; }
+  selected = d.id;
+
+  const outSet = new Set(links.filter(l=>l.s===d.id).map(l=>l.t));
+  const inSet  = new Set(links.filter(l=>l.t===d.id).map(l=>l.s));
+
+  nodeSel.attr('class', n => {
+    const cls = 'node' + (n.opt?' optional':'');
+    if (n.id===d.id||outSet.has(n.id)||inSet.has(n.id)) return cls+' highlighted';
+    return cls+' dimmed';
+  });
+
+  linkSel.attr('class', l => {
+    const base = 'link ' + l.type;
+    if (l.s===d.id) return base+' highlighted';
+    if (l.t===d.id) return base+' highlighted';
+    return base+' dimmed';
+  })
+  .attr('stroke', l => {
+    if (l.s===d.id) return '#ff9050';
+    if (l.t===d.id) return '#50bfff';
+    return l.type==='bootstrap' ? '#555' : CAT_COLOR[nodeById[l.s]?.cat||'infrastructure'];
+  })
+  .attr('marker-end', l => {
+    if (l.s===d.id) return 'url(#arrow-out)';
+    if (l.t===d.id) return 'url(#arrow-in)';
+    return 'url(#arrow)';
+  });
+});
+
+svg.on('click', clearSel);
+
+function clearSel() {
+  selected = null;
+  nodeSel.attr('class', d => 'node' + (d.opt?' optional':''));
+  linkSel.attr('class', d => 'link ' + d.type)
+    .attr('stroke', d => d.type==='bootstrap' ? '#555' : CAT_COLOR[nodeById[d.s]?.cat||'infrastructure'])
+    .attr('marker-end','url(#arrow)');
+  tip.style.display = 'none';
+}
+
+// Tooltip
+nodeSel.on('mouseover', function(e, d) {
+  const outCount = links.filter(l=>l.s===d.id).length;
+  const inCount  = links.filter(l=>l.t===d.id).length;
+  const catName  = d.cat.charAt(0).toUpperCase() + d.cat.slice(1);
+  tip.innerHTML = `
+    <h3 style="color:${CAT_COLOR[d.cat]}">${d.label.replace('\n',' ')}</h3>
+    <div class="tcat" style="color:${CAT_COLOR[d.cat]}88">${catName}${d.opt?' · optional':''} · wave ${d.wave}</div>
+    <p>${d.desc}</p>
+    <div class="tmeta">↗ ${outCount} outgoing · ↙ ${inCount} incoming</div>
+  `;
+  tip.style.display = 'block';
+})
+.on('mousemove', e => {
+  tip.style.left = (e.clientX + 14) + 'px';
+  tip.style.top  = Math.min(e.clientY - 10, window.innerHeight - tip.offsetHeight - 10) + 'px';
+})
+.on('mouseout', () => { if (!selected) tip.style.display = 'none'; });
+
+// ── PROFILE FILTER ────────────────────────────────────────────────────────────
+document.getElementById('filters').addEventListener('click', e => {
+  const btn = e.target.closest('.fbtn');
+  if (!btn) return;
+  const profile = btn.dataset.profile;
+  document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  clearSel();
+
+  const set = PROFILES[profile];
+  nodeSel.style('display', d => (!set || set.has(d.id)) ? '' : 'none');
+  linkSel.style('display', l => {
+    if (!set) return '';
+    return (set.has(l.s) && set.has(l.t)) ? '' : 'none';
+  });
+});
+
+// ── RESIZE ────────────────────────────────────────────────────────────────────
+function onResize() {
+  drawLanes();
+  sim.force('x', d3.forceX(d => (CAT_X_WEIGHT[d.cat]||0.5) * W()).strength(0.4));
+  sim.alpha(0.3).restart();
+}
+drawLanes();
+window.addEventListener('resize', onResize);
+</script>
